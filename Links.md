@@ -1,4 +1,6 @@
-Links to documents or resources in other locations. Some of these may require login.
+## Links to documents or resources in other locations. Some of these may require login.
+
+### LSST docs
 
 Science Requirements Document (all LSST) [LPM-17](http://ls.st/lpm-17)
 
@@ -8,8 +10,15 @@ Scheduler design doc [LTS-226](https://docushare.lsst.org/docushare/dsweb/Get/LT
 
 Observatory System Specification [LSE-30](http://ls.st/lse-30) (technical specs for LSST)
 
+### Scheduler
+
 Scheduler release [plan](https://confluence.lsstcorp.org/pages/viewpage.action?pageId=41781661)  (needs to be updated) <br>
 Another view of planned scheduler [capabilities](https://confluence.lsstcorp.org/display/SIM/SOCS-Scheduler+Capabilities)
 
 Survey Strategy Notes from Tiago on [confluence](https://confluence.lsstcorp.org/display/LTS/Survey+Strategy+-+Tiago+Ribeiro)
 
+### Community
+
+Observing Strategy Whitepaper [OSWP](https://github.com/LSSTScienceCollaborations/ObservingStrategy)
+
+Proposed Opsim [Experiments](https://github.com/LSSTScienceCollaborations/ObservingStrategy/blob/master/opsim/README.md)
