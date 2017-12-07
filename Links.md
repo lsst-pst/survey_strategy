@@ -1,4 +1,4 @@
-## Links to documents or resources in other locations. Some of these may require login.
+## Links to documents or resources in other locations.
 
 ### LSST docs
 
