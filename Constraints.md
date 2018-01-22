@@ -1,0 +1,52 @@
+## Constraints on the observing strategy ##
+
+Important! This is a work in progress. We are gathering constraints here, but these should not yet be considered finalized or comprehensive.
+
+
+### Pointing constraints ###
+
+- Elevation limits: 20 to 86.5 degrees.
+The upper limit is set by constraints on tracking due to the alt-az mount, the lower limit is set by physical constraints on the telescope.
+
+- Slew speeds and acceleration.
+There are constraints on the slew capabilities; these are encapsulated in the lsst-ts:ts_observatory_model software package. Roughly speaking, a close-by field requires 5s to slew to, a very distant field could take several minutes. Slews moving more than 9 degrees in elevation require a closed-optics-loop correction which takes an additional 20s.
+
+- Moon avoidance angle: 30 degrees.
+The current moon-avoidance angle is 30 degrees, based on scattered light simulations from systems engineering.
+This is not a physical constraint as much as a 'best practices to avoid scattered light' constraint.
+
+### Filter change constraints ###
+
+- Filter change time: 120s.
+
+- Number of filter changes.
+The total number of filter changes must be less than X. This translates to about 18 per night.
+
+- Available filters: 5.
+5 filters can be held in the filter changer at one time. The 6th filter must swap in and out. These filter swaps must be done in daytime, and are limited to X per 30 days.
+
+
+### Exposure constraints ###
+
+- Minimum exposure time: 5s.
+
+- Sequences of short exposures.
+Sequences of short exposures (<15s) without breaks (such as a 5s slew) can cause thermal problems for the camera. No more than X exposures of <15s should be taken without a slew or other pause. [??]
+
+
+### Data processing constraints ###
+
+- Data Management pipelines may be reconfigured for minisurvey processing, but special processing beyond this is the responsibility of the science community. (??)
+
+
+### Survey constraints ###
+
+- The footprint for the WFD must be at least X with X visits per field. The cadence for these observations is still flexible, and the footprint for the WFD may vary from X to X.
+
+- SRD requirements on WFD (implications about time baseline for WFD?)
+
+- Deep drilling field positions.
+4 of the potential deep drilling fields have been announced; these positions are fixed. The number of remaining deep drilling fields and their cadence of observations is still flexible.
+
+- Minisurvey observations.
+The current baseline includes Deep Drilling, North Ecliptic Spur, Galactic Plane, and South Celestial Pole regions as minisurveys. There are many good reasons to include these regions, however their observation (or even, lack of observation) is flexible and part of the driver for this call for white papers.
