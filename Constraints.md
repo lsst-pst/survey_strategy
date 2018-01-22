@@ -8,9 +8,9 @@ For the official requirements on the Telescope & Site subsystems, please see [LS
 ### Pointing constraints ###
 
 - Elevation limits: 20 to 86.5 degrees (with sidereal tracking).
-These elevation limits are based on constraints on sidereal tracking capabilities. The telescope can point anywhere from 0 to 90 degrees in elevation, but will only track from 20 to 86.5 degrees in elevation.
+These elevation limits are based on constraints on sidereal tracking capabilities. The telescope can point anywhere from 0 to 90 degrees in elevation, but will only track at elevations between 20 to 86.5 degrees.
 
-- Slew speeds and acceleration.
+- Slew times.
 There are constraints on the slew capabilities; these are encapsulated in the lsst-ts:ts_observatory_model software package. Roughly speaking, a close-by field requires 5s to slew to, a very distant field could take several minutes. Slews where the elevation changes by more than 9 degrees require a closed optics loop correction which takes an additional 36s (note: current simulations use a 20s delay for the closed optics loop correction and this is still the current requirement; there is a change-control request in progress to update this to 36s).
 
 - Moon avoidance angle: 30 degrees.
