@@ -20,15 +20,17 @@ This is not a physical constraint as much as a 'best practices to avoid scattere
 - Filter change time: 120s.
 
 - Number of filter changes.
-The total number of filter changes must be less than X. This translates to about 18 per night.
+The total number of filter changes must be less than 100,000 over 15 years. This translates to about 18 per night.
 
 - Available filters: 5.
-5 filters can be held in the filter changer at one time. The 6th filter must swap in and out. These filter swaps must be done in daytime, and are limited to X per 30 days.
+5 filters can be held in the filter changer at one time. The 6th filter must swap in and out. These filter swaps must be done in daytime, and are limited to 3000 over 15 years, or about once every two days.
 
 
 ### Exposure constraints ###
 
-- Minimum exposure time: 5s.
+- Minimum exposure time: 1s. It is not clear if the PSF is well-formed enough for difference imaging at this exposure time.
+
+- Maximum exposure time: Undetermined, however at 150s, stars will saturate at about 18.3. At this magnitude, it is unclear how many stars may overlap with existing catalogs for calibration or template purposes, nor is it clear the effect on CR rejection.
 
 - Sequences of short exposures.
 Sequences of short exposures (<15s) without breaks (such as a 5s slew) can cause thermal problems for the camera. No more than X exposures of <15s should be taken without a slew or other pause. [??]
