@@ -17,7 +17,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Lynne Jones
+Lynne Jones, 
 Owen Boberg
 }
 
@@ -65,22 +65,21 @@ The new \opsim v4 codebase makes significant changes when compared with the prev
 \begin{table}[htp]
 \caption{Short list of simulated surveys illustrating \opsim changes.}
 \begin{center}
-\begin{tabular}{ l | l }
-\opsim Run & Summary \\
+\begin{tabular}{ l | l | l }
+\opsim Run & Version & Summary \\
 \hline
-minion\_1016\_oldsky & Previous baseline, with old sky brightness values. \\
-minion\_1016\_newsky & Previous baseline, reprocessed with new \simsky values.\\
-astro-lsst-01\_2020 & \opsim v4 with all new features turned off (reproduce minion\_1016) \\
-colossus\_2432 & \opsim v4, with time-balancing added.\\
-astro-lsst-01\_2022 & \opsim v4, with time-balancing, restrict group visits, and $HA$ bonus=0.3, $HA_{max}$=3 \\
-
-% colossus\_2371 & \opsim v4 with all new features turned off (reproduce minion\_1016) \\
+minion\_1016\_oldsky & \opsim v3 & Previous baseline, with old sky brightness values. \\
+minion\_1016\_newsky &  & Previous baseline, reprocessed with new \simsky values.\\
+\hline
+astro-lsst-01\_2020 & \opsim v4  & All new features turned off (reproduce minion\_1016) \\
+colossus\_2432 &  & Add time-balancing (TB).\\
 % colossus\_2327 & Only group restriction added. \\
-% astro-lsst-01\_2013 & HA bonus = 0.5, HA_max = 3 \\
-% astro-lsst-01\_2021 & HA bonus = 0.5, HA_max = 6 \\
-% colossus\_2028 & HA bonus = 0.05, HA_max = 6 \\
-% colossus\_2399 & HA bonus = 0.5, HA_max = 6 \\
-% colossus\_2378 & HA bonus = 0.8, HA_max = 8 \\
+colossus\_2028 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus=0.05. \\
+astro-lsst-01\_2016 &  & TB, GV, Add airmass bonus, $X$ bonus = 0.5 \\
+astro-lsst-01\_2021 & & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=6 \\
+astro-lsst-01\_2013 &  & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=3 \\
+colossus\_2378 &  &  TB, GV, Add $HA$ bonus=0.8, $HA_{max}$=6 \\
+astro-lsst-01\_2022 &   & TB, GV, Add $HA$ bonus=0.3, $HA_{max}$=3 \\
 \end{tabular}
 \end{center}
 \label{default}
@@ -92,11 +91,13 @@ skybrightness reprocessing in minion\_1016
 
 similar skybrightness values in newer runs
 
+
+
 effects skybrightness itself, and also derived values; most strongly, affects total effective time of the survey / coadded depth, but also proper motion and parallax errors at faint ($r=24$) end.
 
 \section{Effect of changing the slewtime and filter change cost functions}
 
-compare minion\_1016 with astro-lsst-01\_2020 (slewtime histograms and filter change #'s)
+compare minion\_1016 with astro-lsst-01\_2020 (slewtime histograms and filter change numbers)
 
 the actual slew time will depend on further changing the next visit ranking via the bonus values
 
