@@ -1,0 +1,128 @@
+\documentclass[DM,lsstdraft,authoryear,toc]{lsstdoc}
+% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
+
+% Package imports go here.
+
+% Local commands go here.
+\newcommand{\opsim}{\texttt{OpSim}\,}
+\newcommand{\socs}{\texttt{SOCS}\,}
+\newcommand{\sched}{\texttt{Scheduler}\,}
+\newcommand{\simsky}{\texttt{sims\_skybrightness}\,}
+
+% To add a short-form title:
+% \title[Short title]{Title}
+\title{A New Baseline Operations Simulation}
+
+% Optional subtitle
+% \setDocSubtitle{A subtitle}
+
+\author{%
+Lynne Jones
+Owen Boberg
+}
+
+\setDocRef{TEST-000}
+
+\date{\today}
+
+% Optional: name of the document's curator
+% \setDocCurator{The Curator of this Document}
+
+\setDocAbstract{%
+We present an update to the baseline simulated survey, created using \opsim v4. The last operations simulation baseline simulated survey was minion\_1016, produced in 2016. This simulated survey was produced using \opsim v3. The changes include updates to the sky brightness, significant changes in the underlying opsim scheduling software, and the addition of new scheduler parameters. 
+}
+
+% Change history defined here.
+% Order: oldest first.
+% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
+% See LPM-51 for version number policy.
+\setDocChangeRecord{%
+  \addtohist{1}{YYY-MM-DD}{Unreleased.}{Lynne Jones}
+}
+
+\begin{document}
+
+% Create the title page.
+% Table of contents is added automatically with the "toc" class option.
+\maketitle
+
+\section{Overview}
+
+The new \opsim v4 codebase makes significant changes when compared with the previous \opsim v3 software. These include: 
+\begin{itemize}
+\item Separation of the telemetry and telescope control simulation software from the scheduler software. These two packages are now called \texttt{Simulated Observatory Control System} (\socs) and \texttt{Scheduler}. 
+\item Implement communication between \socs and \sched via DDS, a publish/subscribe protocol that will be used to communicate between various telescope control systems, including the scheduler code.
+\item Update the slew time cost function, to add further flexibility to prioritize short slews.
+\item Add an additional `cost' to changing the filter, to reduce the number of filter changes and in particular, fast filter changes.
+\item Add a per-filter skybrightness calculation, using the \simsky package to calculate skybrightness values. This updates the skybrightness values to a model that includes a much higher fidelity twilight component and which has been validated against all-sky measurements from the LSST site. It also means that for each visit, the skybrightness limit is compared against the actual skybrightness estimate in the individual filter, instead of just against the $V$ band skybrightness as in \opsim v3.
+\item Add the capability to restrict observations to a specified number of visits in a particular filter for a given field, per night. {\it E.g.}, limit visits for a given field to only 2 in $g$ band. This does not mean that no other visits to the same field will take place in the same night, but they would be in other filters which still have available groups. 
+\item Add the capability to balance observations between different proposals, as a function of progress toward the total number of requested observations. {\it E.g.}, space the 180 visits per field for the South Celestial Pole proposal over the entire survey, at the same pace as the 825 visits per field for the Wide Fast Deep proposal, so all proposals span the entire survey.
+\item Add the capability to add a per-proposal `airmass bonus`, which adds a preference for low-airmass observations to the observation ranking algorithm.
+\item Add the capability to add a per-proposal `Hour Angle bonus`, which adds a preference for low-hour angle observations to the observation ranking algorithm. 
+\end{itemize}
+
+
+\begin{table}[htp]
+\caption{Short list of simulated surveys illustrating \opsim changes.}
+\begin{center}
+\begin{tabular}{ l | l }
+\opsim Run & Summary \\
+\hline
+minion\_1016\_oldsky & Previous baseline, with old sky brightness values. \\
+minion\_1016\_newsky & Previous baseline, reprocessed with new \simsky values.\\
+astro-lsst-01\_2020 & \opsim v4 with all new features turned off (reproduce minion\_1016) \\
+colossus\_2432 & \opsim v4, with time-balancing added.\\
+astro-lsst-01\_2022 & \opsim v4, with time-balancing, restrict group visits, and $HA$ bonus=0.3, $HA_{max}$=3 \\
+
+% colossus\_2371 & \opsim v4 with all new features turned off (reproduce minion\_1016) \\
+% colossus\_2327 & Only group restriction added. \\
+% astro-lsst-01\_2013 & HA bonus = 0.5, HA_max = 3 \\
+% astro-lsst-01\_2021 & HA bonus = 0.5, HA_max = 6 \\
+% colossus\_2028 & HA bonus = 0.05, HA_max = 6 \\
+% colossus\_2399 & HA bonus = 0.5, HA_max = 6 \\
+% colossus\_2378 & HA bonus = 0.8, HA_max = 8 \\
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}
+
+\section{Summary of skybrightness changes}
+
+skybrightness reprocessing in minion\_1016
+
+similar skybrightness values in newer runs
+
+effects skybrightness itself, and also derived values; most strongly, affects total effective time of the survey / coadded depth, but also proper motion and parallax errors at faint ($r=24$) end.
+
+\section{Effect of changing the slewtime and filter change cost functions}
+
+compare minion\_1016 with astro-lsst-01\_2020 (slewtime histograms and filter change #'s)
+
+the actual slew time will depend on further changing the next visit ranking via the bonus values
+
+\section{Choosing the bonus values} 
+
+compare X bonus vs. HA bonus
+
+compare HA bonus values
+ 
+compare HA max values
+
+\section{New baseline survey recommention}
+
+srd values pass
+
+other big changes from minion\_1016
+
+\section{Reproducibility of new baseline survey and its evaluation}
+
+config files
+results of evaluation
+how they were produced
+where they can be found online
+
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\bibliography{lsst,lsst-dm,refs_ads,refs,books}
+
+\end{document}
