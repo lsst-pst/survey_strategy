@@ -15,8 +15,8 @@ The last operations simulation baseline simulated survey was minion_1016, produc
 **Links**
 
 
-#- Live drafts: https://test-000.lsst.io
-- GitHub: https://github.com/lsst-pst/survey-strategy/baseline-doc/
+- Live drafts: https://test-000.lsst.io
+- GitHub: https://github.com/lsst-pst/survey_strategy/ (see db/baseline-doc)
 
 ****
 
