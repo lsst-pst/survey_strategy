@@ -8,6 +8,7 @@
 \newcommand{\socs}{\texttt{SOCS}\,}
 \newcommand{\sched}{\texttt{Scheduler}\,}
 \newcommand{\simsky}{\texttt{sims\_skybrightness}\,}
+\newcommand{\magasq}{magnitude/arcsecond$^{2}$}
 
 % To add a short-form title:
 % \title[Short title]{Title}
@@ -73,19 +74,34 @@ minion\_1016\_newsky &  & Previous baseline, reprocessed with new \simsky values
 \hline
 astro-lsst-01\_2020 & \opsim v4  & All new features turned off (reproduce minion\_1016) \\
 colossus\_2432 &  & Add time-balancing (TB).\\
-% colossus\_2327 & Only group restriction added. \\
-colossus\_2028 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus=0.05. \\
+colossus\_2328 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus=0.05. \\
 astro-lsst-01\_2016 &  & TB, GV, Add airmass bonus, $X$ bonus = 0.5 \\
 astro-lsst-01\_2021 & & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=6 \\
 astro-lsst-01\_2013 &  & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=3 \\
 colossus\_2378 &  &  TB, GV, Add $HA$ bonus=0.8, $HA_{max}$=6 \\
 astro-lsst-01\_2022 &   & TB, GV, Add $HA$ bonus=0.3, $HA_{max}$=3 \\
-\end{tabular}
+% colossus_2327 & & no time balancing, yes grouped visits
+% colossus_2371 &  & no time balancing, no grouped visits
+% colossus_2399 & & TB, GV, HA bonus 0.5 HAmax 6 
+\end{tabular} 
 \end{center}
 \label{default}
 \end{table}
 
 \section{Summary of skybrightness changes}
+
+One of the major updates between \opsim v3 and v4 was the introduction of a higher fidelity sky brightness model, including a model for twilight. 
+
+The \opsim v3 model was based on \citet{1991PASP..103.1033K} (K\&S), which provides a $V$ band sky brightness based on field airmass, lunar distance, and lunar phase. The \opsim v3 model added varying color terms appropriate for different lunar phases, along with a significant (but constant) bump in skybrightness to 17.0 \magasq to model twilight. The $y$ band skybrightness was additionally modeled as constant at 17.3 \magasq during the night to reflect a lower sensitivity to lunar brightness.  The big jump in sky brightness during twilight, combined with sky brightness limits set in the configuration files, in practice typically prevented filters other than $z$ and $y$ band being used during twilight\footnote{Sometimes observations were taken with \opsim v3 which violated the specified sky brightness limits. These were usually due to calculating the sky brightness values prior to twilight and caching the results through the transition to twilight.}.
+
+\opsim v4 uses the \simsky package \citep{2016SPIE.9910E..1AY}, which is based on the ESO SkyCalc Sky Model Calculator  (v1.4) for non-twilight sky brightness calculations with an added empirical twilight sky model. The sky brightness calculated for each field depends on the field alt/az position, the lunar alt/az, the lunar phase, the sun alt/az, and the filter of the observation. It includes contributions from emission from the upper and lower atmosphere, scattered starlight, scattered moonlight, and zodiacal light, along with an additional component of scattered sunlight during twilight (sun altitude between -11 and -20 degrees). The transitions into and out of twilight are much smoother, and notably, the twilight sky can be darker than the specified sky brightness limits even in $u$ band near zenith. Thus in runs produced with \opsim v4.1, sometimes observations in $u$, $g$, $r$ or $i$ are taken during twilight due to a simple hard-limit on the sky brightness. It is possible to set these limits strictly enough to avoid this, however then some non-twilight observations at higher airmass, smaller distances to the moon, or at greater lunar phases, will also be ruled out, leaving significantly less flexibility in scheduling `normal' observations. In the future, the hard-limit will be replaced by a soft-constraint bonus, such as a preference for observations closer to the theoretical darkest sky brightness possible at a given time. 
+
+%https://community.lsst.org/t/comparing-eso-sky-model-to-current-opsim-sky-values/489/2
+%https://github.com/rhiannonlynne/notebooks/blob/master/skybright%20changes.ipynb
+
+To evaluate the effect of changing the sky brightness model, we first reprocessed the previous baseline, minion\_1016, using \simsky. 
+
+
 
 skybrightness reprocessing in minion\_1016
 
