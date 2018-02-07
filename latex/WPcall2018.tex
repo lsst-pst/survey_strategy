@@ -1,0 +1,166 @@
+\documentclass[DM,lsstdraft,toc,usenatbib]{lsstdoc}
+
+% Package imports go here
+\usepackage{amsmath}	% Advanced maths commands
+\usepackage{amssymb}
+\usepackage{gensymb}  % degree symbol 
+\usepackage{natbib}  % bibliography
+\usepackage{cprotect} 
+% Local commands go here
+
+%% Journal abbreviations
+%\bibliographystyle{aasjournal}
+
+\title[Call for LSST Cadence White Papers]{Call for White Papers on LSST Cadence Modifications} 
+
+\author{\v{Z}eljko Ivezi\'{c}, Lynne Jones, Tiago Ribiera, 
+             \\  the LSST Project Science Team, 
+              \\ and  the LSST Science Advisory Committee} 
+
+\setDocRef{Document-XXX}
+\date{\today}
+\setDocRevision{v0.1}
+\setDocStatus{draft}
+\setDocAbstract{%
+The LSST community is invited to play a key role in the refinement of LSST’s Observing Strategy 
+by submitting white papers that will describe proposed modifications of the current baseline
+cadence.
+}
+
+% Change history defined here. Will be inserted into
+% correct place with \maketitle
+% OLDEST FIRST: VERSION, DATE, DESCRIPTION, OWNER NAME
+\setDocChangeRecord{%
+\addtohist{1}{2018-06-30}{First released version.}{\v{Z}eljko Ivezi\'{c}}
+}
+
+\begin{document}
+
+% Create the title page
+% Table of contents will be added automatically if "toc" class option
+% is used.
+\maketitle
+
+\section{Introduction} 
+
+General context... evolving science, cadence...
+
+The Large Synoptic Survey Telescope is designed to provide an unprecedented optical 
+imaging dataset that will support investigations of our Solar System, Galaxy and Universe, 
+across half the sky and over ten years of repeated observation. LSST is constructing a 
+flexible scheduling system that can respond to the unexpected 
+and be re-optimized. A basic implementation of LSST's 10-year survey (simulations of 
+the observing strategy or ``cadence'') can deliver on a wide range of science. 
+However, exactly how the LSST observations will be taken is not yet finalized. Indeed, 
+it is anticipated tha the observing strategy will continue to be refined and optimized 
+during operations.
+
+The Community is playing a key role in the refinement of LSST’s Observing Strategy by 
+developing and analyzing metrics for simulated observing strategies.
+An open github community\footnote{
+https://github.com/LSSTScienceCollaborations/ObservingStrategy}
+is where this work is being assembled. How the detailed performance of the anticipated 
+science investigations is expected to depend on small changes to the LSST observing 
+strategy is explored in a living dynamically-evolving community white paper (the first
+version was published as arXiv:1708.04058 in August 2017). The main lessons 
+learned from the first version are: 1) The Project should implement, analyze and optimize 
+the rolling cadence idea (driven by supernovae, asteroids, short timescale variability),
+and 2) The Project should execute a systematic effort to further improve the ultimate 
+LSST cadence strategy (e.g. sky coverage optimization, u band depth, special surveys, 
+Deep Drilling Fields).
+
+Through the end of construction and commissioning, this community Observing Strategy 
+White Paper will remain a living document that is the vehicle for the community to 
+communicate to the LSST Project regarding the Wide-Fast-Deep and mini-survey observing 
+strategies. The LSST Project Scientist, \v{Z}eljko Ivezi\'{c}, will synthesize and act on the 
+results presented in this paper, with support from the Science Advisory Committee and 
+Survey Strategy Committee. He is responsible for cadence optimization efforts and is the 
+formal liaison between the community and the LSST Scheduler and Operations Simulation teams.
+
+
+
+
+\subsection{Motivation for this white paper call}
+
+We have tools, we are close to first light... 
+
+Given the``living'' white paper, explain why we need more white papers...
+
+
+\subsection{Timeline}
+
+Deadline, what will happen when afterwards...
+
+Produce, analyze and document a set of Observing Strategies and present to 
+the SAC for a final strategy recommendation (in 2020) to begin the survey.
+
+
+
+\section{How to submit a white paper?} 
+
+We need to provide a tex template... 
+
+
+\vskip 0.0in
+\newpage
+{\it Acknowledgments:} this document has greatly benefited from discussions between 
+the LSST Project Science Team, the LSST Science Advisory Committee and Kem Cook, 
+Phil Marshall, Steve Ridgway, Daniel Rothchild, Peter Yoachim and numerous other members 
+of the LSST Science Collaborations. 
+
+\appendix
+
+
+\section{Examples of Current Open Cadence Questions} 
+
+Summarize issues addressed in the living Observing Strategy White Paper, 
+including ``The top 10 questions''... 
+
+
+1) WFD 
+
+different bands in pairs of visits?
+
+dithering? 
+
+rolling cadence properties (RA vs. Dec rolling) 
+
+area vs. coverage tradeoff 
+
+
+
+
+
+\section{Cadence Constraints Imposed by the LSST System} 
+
+
+\section{Supplementary Materials} 
+
+\subsection{Useful publications and documents}
+
+\subsection{Useful websites}
+
+\subsection{Useful slide collections}
+
+
+\section{Communicating with LSST} 
+
+The Observing Strategy white paper, and calls for DDF and mini-survey white papers, 
+are the main mechanisms for providing scientific input about cadence. 
+\v{Z}eljko Ivezi\'{c} (ivezic at astro.washington.edu) is the point of contact.
+
+The LSST Science Advisory Committee (SAC) is charged with collecting and delivering 
+community input to the Project. Strategic and political issues should be communicated 
+via SAC (chair: Michael Strauss, strauss at astro.princeton.edu).
+
+Join a science collaboration –- a Data Management liaison is assigned to each Science Collaboration.
+Can utilize lsstc.slack.com.
+
+Open and archived discussions with the team (especially Data Management and Education and 
+Public Outreach) on community.lsst.org.
+
+\end{document} 
+
+ 
+
+

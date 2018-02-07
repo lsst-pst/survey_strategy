@@ -1,0 +1,13 @@
+\select@language {english}
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation for this white paper call}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Timeline}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}How to submit a white paper?}{2}{section.2}
+\contentsline {section}{\numberline {A}Examples of Current Open Cadence Questions}{3}{appendix.A}
+\contentsline {section}{\numberline {B}Cadence Constraints Imposed by the LSST System}{3}{appendix.B}
+\contentsline {section}{\numberline {C}Supplementary Materials}{3}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}Useful publications and documents}{3}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}Useful websites}{3}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}Useful slide collections}{3}{subsection.C.3}
+\contentsline {section}{\numberline {D}Communicating with LSST}{4}{appendix.D}
