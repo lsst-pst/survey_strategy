@@ -134,6 +134,24 @@ area vs. coverage tradeoff
 \section{Cadence Constraints Imposed by the LSST System} 
 
 
+\subsection{Hardware Constraints}
+
+Per LSST Document SPT-494 (from Dec 15, 2017), by the camera team:
+
+For planning observations and in-dome calibration exposures, there is interest in the relevant engineering constraints on filter exchanges, beyond what is captured in requirements. As the system is not yet completely built and characterized, the following represents our current understanding, based on the design and on engineering judgement. As such, some of the details should be considered preliminary and subject to change. Expanded ranges could be possible if there are strong scientific motivations along with sufficient resources during operations.
+
+The filter change mechanism is designed to undergo a total of 100,000 changes over its lifetime. Each filter is designed to support up to 30,000 changes over its lifetime.
+
+A maintenance cycle is anticipated, and this would nominally occur after 10,000 changes or one year, whichever is reached first. The actual need will be informed by experience during Integration \& Test and commissioning.
+
+During a given observing night, the system could support as many changes involving the 5 filters loaded in the carousel as desired, without any practical limitation beyond the two-minute change interval (which consists of 90 seconds for the exchange plus up to 30 seconds to put the camera into the required orientation). 
+
+Filter loader operations (swapping a filter in the carousel) will be done during daytime. The system is designed for 3000 loads over its lifetime. 
+
+
+\subsection{Software Constraints} 
+
+
 \section{Supplementary Materials} 
 
 \subsection{Useful publications and documents}
