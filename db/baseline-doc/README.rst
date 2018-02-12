@@ -1,13 +1,13 @@
-.. image:: https://img.shields.io/badge/test--000-lsst.io-brightgreen.svg
+.. image:: https://img.shields.io/badge/baseline-lsst.io-brightgreen.svg
    :target: https://test-000.lsst.io
-.. image:: https://travis-ci.org/lsst-sims/test-000.svg
-   :target: https://travis-ci.org/lsst-sims/test-000
+.. image:: https://travis-ci.org/lsst-sims/baseline.svg
+   :target: https://travis-ci.org/lsst-sims/baseline
 
 ####################################
 A New Baseline Operations Simulation
 ####################################
 
-TEST-000
+Baseline
 --------
 
 The last operations simulation baseline simulated survey was minion_1016, produced in 2016. This simulated survey was produced using Opsim v3. We present an update to the baseline simulated survey, created using Opsim v4. The changes include updates to the sky brightness , significant uchanges in the underlying opsim scheduling software, and the addition of new scheduler parameters. 
@@ -15,7 +15,6 @@ The last operations simulation baseline simulated survey was minion_1016, produc
 **Links**
 
 
-- Live drafts: https://test-000.lsst.io
 - GitHub: https://github.com/lsst-pst/survey_strategy/ (see db/baseline-doc)
 
 ****
