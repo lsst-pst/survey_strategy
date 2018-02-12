@@ -75,7 +75,6 @@ Here we present a select list (see Table \ref{tab:runlist}) of simulated surveys
 \hline
 minion\_1016\_oldsky & \opsim v3 & Previous baseline, with old sky brightness values. \\
 minion\_1016\_newsky &  & Previous baseline, reprocessed with new \simsky values.\\
-\hline
 astro-lsst-01\_2020 & \opsim v4  & All new features turned off (reproduce minion\_1016) \\
 colossus\_2432 &  & Add time-balancing (TB).\\
 colossus\_2328 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus=0.05. \\
@@ -103,7 +102,7 @@ The \opsim v3 model was based on \citet{1991PASP..103.1033K} (K\&S), which provi
 %https://community.lsst.org/t/comparing-eso-sky-model-to-current-opsim-sky-values/489/2
 %https://github.com/rhiannonlynne/notebooks/blob/master/skybright%20changes.ipynb
 
-To evaluate the effect of changing the sky brightness model, we first reprocessed the previous baseline, minion\_1016, using \simsky. The overall changes in skybrightness range between from very slight (in $r$ band) to almost a magnitude decrease in skybrightness (in $z$ band). In general, the sky brightness gets fainter; $r$ band is the only filter where it gets brighter, and this is a very small change. These changes are {\it after} including the observing conditions for each observation -- thus these results are averaged over a variety of lunar phases, airmass values, and field pointings. The effect the skybrightness reprocessing is consistent whether it is evaluated simply for all observations in a given bandpass or  for observations at a particular point in the sky in a given bandpass (see Tables~\ref{tab:medskybright} and \ref{tab:medhealpixskybright}. We see roughly similar skybrightness values in \opsim v4 run astro-lsst-01\_2020, which was intended to reproduce minion\_1016 behavior, as it did not use any additional new features introduced by \opsim v4, even though v4 is now choosing observations based on the actual \simsky values in each bandpass (see Figure~\ref{fig:skybrightness}). 
+To evaluate the effect of changing the sky brightness model, we first reprocessed the previous baseline, minion\_1016, using \simsky. The overall changes in skybrightness range between from very slight (in $r$ band) to almost a magnitude decrease in skybrightness (in $z$ band). In general, the sky brightness gets fainter; $r$ band is the only filter where it gets brighter, and this is a very small change (see Table~\ref{tab:medskybright}). These changes are {\it after} including the observing conditions for each observation -- thus these results are averaged over a variety of lunar phases, airmass values, and field pointings. The effect the skybrightness reprocessing is consistent whether it is evaluated simply for all observations in a given bandpass or  for observations at a particular point in the sky in a given bandpass. We see roughly similar skybrightness values in \opsim v4 run astro-lsst-01\_2020, which was intended to reproduce minion\_1016 behavior, as it did not use any additional new features introduced by \opsim v4, even though v4 is now choosing observations based on the actual \simsky values in each bandpass (see Figure~\ref{fig:skybrightness}). 
 
 \begin{table}[htp]
 \caption{Median skybrightness over all observations in each filter, in minion\_1016, before and after reprocessing with \simsky.}
@@ -123,23 +122,6 @@ Median skyBrightness WFD y band       &           17.300000 &           17.77462
 \label{tab:medskybright}
 \end{table}
 
-\begin{table}
-\caption{Median values of the median skybrightness per healpixel in each filter, in minion\_1016, before and after reprocessing with \simsky.}
-\begin{center}
-\begin{tabular}{lrrr}
-{} &  minion\_1016\_oldsky &  minion\_1016\_newsky &    Change \\
-\hline
-Median field skyBrightness WFD u band &           22.050596 &           22.705228 &  0.654632 \\
-Median field skyBrightness WFD g band &           21.778775 &           22.092901 &  0.314126 \\
-Median field skyBrightness WFD r band  &           21.072235 &           21.054685 & -0.017550 \\
-Median field skyBrightness WFD i band  &           19.912842 &           20.057440 &  0.144597 \\
-Median field skyBrightness WFD z band &           17.499369 &           18.643216 &  1.143847 \\
-Median field skyBrightness WFD y band  &           17.300000 &           17.773299 &  0.473299 \\
-\hline
-\end{tabular}
-\end{center}
-\label{tab:medhealpixskybright}
-\end{table}
 
 \begin{figure}[ht]
 \centering
@@ -150,18 +132,30 @@ Median field skyBrightness WFD y band  &           17.300000 &           17.7732
 \includegraphics[width=0.3\textwidth]{figures/skybrightness_z_band_ONED_ComboBinnedData}
 \includegraphics[width=0.3\textwidth]{figures/skybrightness_y_band_ONED_ComboBinnedData}
 %\vskip -0.2in
-\caption{Sky brightness histograms for minion\_1016 before (minion\_1016\_oldsky) and after (minion\_1016\_newsky) reprocessing with \simsky, and astro-lsst-01\_2020 skybrightness values. The values for astro-lsst-01\_2020 are very similar to the distribution seen in minion\_1016, even though \opsim v4 makes decisions for field pointings based on a knowledge of these skybrightness values in each filter at each pointing, information which was not available for \opsim v3. The changes in skybrightness, and resulting changes in 5-sigma limiting magnitudes, we see due to reprocessing minion\_1016 are thus reasonable to expect in new \opsim v4 runs.
+\caption{Sky brightness histograms for minion\_1016 before (minion\_1016\_oldsky) and after (minion\_1016\_newsky) reprocessing with \simsky, and astro-lsst-01\_2020 skybrightness values. The values for astro-lsst-01\_2020 are very similar to the distribution seen in minion\_1016, even though \opsim v4 makes decisions for field pointings based on a knowledge of these skybrightness values in each filter at each pointing, information which was not available for \opsim v3. The changes in skybrightness, and resulting changes in 5$\sigma$ limiting magnitudes, we see due to reprocessing minion\_1016 are thus reasonable to expect in new \opsim v4 runs.
 \label{fig:skybrightness}}
 \end{figure}
 
-The effect of these decreases in skybrightness are a resulting increase in the 5-sigma limiting depths. 
-XXX Add m5 changes here.
+The effect of these decreases in skybrightness are a resulting increase in the 5$\sigma$ limiting depths. There was, however, also an update in the expected throughput of the LSST system after the time of the original minion\_1016 limiting magnitude calculations, and this is also reflected in the change seen in the 5$\sigma$ depths. The throughput changes resulted in an overall decreased sensitivity, an effect which is strongest in the $u$ and $g$ bands. See Table~\ref{tab:m5depth} for the median 5\$sigma$ limiting magnitudes per visit in the WFD observations. 
 
-similar skybrightness values in newer runs
-
-
-
-effects skybrightness itself, and also derived values; most strongly, affects total effective time of the survey / coadded depth, but also proper motion and parallax errors at faint ($r=24$) end.
+\begin{table}[ht]
+\caption{Individual image 5$\sigma$ limiting magnitudes for minion\_1016 before and after reprocessing with \simsky, and astro-lsst-01\_2020. The changes in limiting magnitude correspond to 0.5 times the change in skybrightness, appropriate for the change in SNR, but there were additional changes in the expected throughput of the telescope included in the reprocessing that result in the final m5 changes being slightly smaller than expected.}
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+{} &  minion\_1016\_oldsky &  minion\_1016\_newsky &  astro-lsst-01\_2020 \\
+\hline
+Median m5 WFD u band &           23.137883 &           23.111817 &           23.079406 \\
+Median m5 WFD g band &           24.472729 &           24.545191 &           24.474827 \\
+Median m5 WFD r band &           24.153684 &           24.085377 &           24.072373 \\
+Median m5 WFD i band &           23.392901 &           23.470681 &           23.542878 \\
+Median m5 WFD z band &           22.223935 &           22.759990 &           22.720512 \\
+Median m5 WFD y band &           21.571697 &           21.800913 &           21.819558 \\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:m5depth}
+\end{table}
 
 \section{Effect of changing the slewtime and filter change cost functions}
 
@@ -171,12 +165,8 @@ the actual slew time will depend on further changing the next visit ranking via 
 
 \section{Choosing the bonus values} 
 
-compare X bonus vs. HA bonus
-
-compare HA bonus values
- 
-compare HA max values
-
+\opsim v4 provides the capability to choose observations that prefer low airmass (via the 'airmass bonus') or low hour angle angle (via the 'hour angle bonus'). We investigated ..
+(2 year blocks of X bonus vs 2 year blocks of HA bonus)
 
 
 \section{New baseline survey recommendation}
