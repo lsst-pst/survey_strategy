@@ -166,8 +166,8 @@ The slew time cost function changed slightly between \opsim v3 and v4, substitut
 \centering
 \includegraphics[width=0.4\textwidth]{figures/slewcost}
 \includegraphics[width=0.4\textwidth]{figures/slewtimes}
-\caption{Left: Slew time cost associated with a given slew time, using the default values for $t_{ref}$, $c_{ref}$, and $t_{max}$ (5s, 0.3, 150s). The slew time required is determined by the model of the telescope movement. The cost associated with that slew time is used in the ranking algorithm for choosing the next target in the scheduler. Right: The distribution of slew times in minion\_1016 and astro-lsst-01\_2020 (an \opsim v4 simulation run without new v4 features). 
-\label{fig:slewcost}
+\caption{Left: Slew time cost associated with a given slew time, using the default values for $t_{ref}$ (5s), $c_{ref}$ (0.3) and $t_{max}$ (150s). The slew time required is determined by the model of the telescope movement. The cost associated with that slew time is used in the ranking algorithm for choosing the next target in the scheduler. Right: The distribution of slew times in minion\_1016 and astro-lsst-01\_2020 (an \opsim v4 simulation run without new v4 features). 
+\label{fig:slewcost}}
 \end{figure}
 
 The filter change cost calculation was also changed between \opsim v3 and v4, in order to reduce the number of rapid filter changes. The result is that minion\_1016 has 14194 total filter changes, compared to 11213 for astro-lsst-01\_2020; over 20\% fewer filter changes in the new survey. The median number of filter changes per night is constant at 2 per night, however the mean decreased to 3.32 from 4.29. This is likely tied to the fact that astro-lsst-01\_2020 received many fewer deep drilling visits -- 59974 instead of 111472 in minion\_1016. 
