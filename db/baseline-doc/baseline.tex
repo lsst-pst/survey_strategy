@@ -58,14 +58,14 @@ The new \opsim v4 codebase makes significant changes when compared with the prev
 \item Implement communication between \socs and \sched via DDS, a publish/subscribe protocol that will be used to communicate between various telescope control systems, including the scheduler code.
 \item Update the slew time cost function, to add further flexibility to prioritize short slews.
 \item Add an additional `cost' to changing the filter, to reduce the number of filter changes and in particular, fast filter changes.
-\item Add a per-filter skybrightness calculation, using the \simsky package to calculate skybrightness values. This updates the skybrightness values to a model that includes a much higher fidelity twilight component and which has been validated against all-sky measurements from the LSST site. It also means that for each visit, the skybrightness limit is compared against the actual skybrightness estimate in the individual filter, instead of just against the $V$ band skybrightness as in \opsim v3.
+\item Add a per-filter sky brightness calculation, using the \simsky package to calculate sky brightness values. This updates the sky brightness values to a model that includes a much higher fidelity twilight component and which has been validated against all-sky measurements from the LSST site. It also means that for each visit, the sky brightness limit is compared against the actual sky brightness estimate in the individual filter, instead of just against the $V$ band sky brightness as in \opsim v3.
 \item Add the capability to restrict observations to a specified number of visits in a particular filter for a given field, per night. {\it E.g.}, limit visits for a given field to only 2 in $g$ band. This does not mean that no other visits to the same field will take place in the same night, but they would be in other filters which still have available groups. 
-\item Add the capability to balance observations between different proposals, as a function of progress toward the total number of requested observations. {\it E.g.}, space the 180 visits per field for the South Celestial Pole proposal over the entire survey, at the same pace as the 825 visits per field for the Wide Fast Deep proposal, so all proposals span the entire survey.
+\item Add the capability to balance observations between different proposals (`time balancing'), as a function of progress toward the total number of requested observations. {\it E.g.}, space the 180 visits per field for the South Celestial Pole proposal over the entire survey, at the same pace as the 825 visits per field for the Wide Fast Deep proposal, so all proposals span the entire survey.
 \item Add the capability to add a per-proposal `airmass bonus`, which adds a preference for low-airmass observations to the observation ranking algorithm.
 \item Add the capability to add a per-proposal `Hour Angle bonus`, which adds a preference for low-hour angle observations to the observation ranking algorithm. 
 \end{itemize}
 
-Here we present a select list (see Table \ref{tab:runlist}) of simulated surveys created with \opsim v3 and v4, to illustrate the effects of these new features. 
+Here we present a select list (see Table \ref{tab:runlist}) of simulated surveys created with \opsim v3 and v4, to illustrate the effects of these new features. First we compare minion\_1016 (the \opsim v3 baseline) with its original sky brightness and 5$\sigma$ limiting magnitudes to the same run, but with a newly calculated sky brightness value generated with the \simsky package and updated 5$\sigma$ limiting magnitudes, to generate an updated range of expected sky brightness and limiting magnitudes. Then we generated an \opsim v4 simulated survey without using the new features such as the time balancing or airmass or Hour Angle bonuses -- astro-lsst-01\_2020 -- to evaluate the general small changes between \opsim v3 and v4. We then generated a run adding time balancing to evaluate this effect, in colossus\_2432.  We compared a series of runs with varying airmass and hour angle bonuses to evaluate the effects of these bonuses, finding that a modest Hour Angle bonus worked the best for preserving survey uniformity while increasing the efficiency of the survey by obtaining observations in better conditions. We recommend adopting the new \opsim v4 simulated survey astro-lsst-01\_2022 as the new baseline run.
 
 \begin{table}[htp]
 \caption{Short list of simulated surveys illustrating \opsim changes.}
@@ -145,6 +145,7 @@ The effect of these decreases in sky brightness are a resulting increase in the 
 \hline
 {} &  minion\_1016\_oldsky &  minion\_1016\_newsky &  astro-lsst-01\_2020 \\
 \hline
+%\vskip -0.2in
 Median m5 WFD u band &           23.137883 &           23.111817 &           23.079406 \\
 Median m5 WFD g band &           24.472729 &           24.545191 &           24.474827 \\
 Median m5 WFD r band &           24.153684 &           24.085377 &           24.072373 \\
@@ -157,9 +158,21 @@ Median m5 WFD y band &           21.571697 &           21.800913 &           21.
 \label{tab:m5depth}
 \end{table}
 
-\section{Effect of changing the slewtime and filter change cost functions}
+\section{Effect of changing the slew time and filter change cost functions}
 
-compare minion\_1016 with astro-lsst-01\_2020 (slewtime histograms and filter change numbers)
+The slew time cost function changed slightly between \opsim v3 and v4, substituting an equation that is parametrized by $t_{ref}$, $c_{ref}$, and $t_{max}$, where $t_{ref}$ is intended to be the `reference' slew, $c_{ref}$ is the standard cost of that reference slew, and $t_{max}$ represents the time of a very long slew. The slew time cost function increases rapidly over a range of short slews, and then increases slowly when approaching $t_{max}$.  The cost associated with a range of slew times, with the standard parameters is illustrated in Figure~\ref{fig:slewcost}.  The resulting distribution of slew times in the \opsim v3 baseline, minion\_1016, and the \opsim v4 run with the major new features turned off, astro-lsst-01\_2020, are very similar for short slews, while once into the long slew regime, v4 allows longer slews more often.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{figures/slewcost}
+\includegraphics[width=0.4\textwidth]{figures/slewtimes}
+\caption{Left: Slew time cost associated with a given slew time, using the default values for $t_{ref}$, $c_{ref}$, and $t_{max}$ (5s, 0.3, 150s). The slew time required is determined by the model of the telescope movement. The cost associated with that slew time is used in the ranking algorithm for choosing the next target in the scheduler. Right: The distribution of slew times in minion\_1016 and astro-lsst-01\_2020 (an \opsim v4 simulation run without new v4 features). 
+\label{fig:slewcost}
+\end{figure}
+
+The filter change cost calculation was also changed between \opsim v3 and v4, in order to reduce the number of rapid filter changes. The result is that minion\_1016 has 14194 total filter changes, compared to 11213 for astro-lsst-01\_2020; over 20\% fewer filter changes in the new survey. The median number of filter changes per night is constant at 2 per night, however the mean decreased to 3.32 from 4.29. This is likely tied to the fact that astro-lsst-01\_2020 received many fewer deep drilling visits -- 59974 instead of 111472 in minion\_1016. 
+XX WHY? 
+
 
 the actual slew time will depend on further changing the next visit ranking via the bonus values
 
