@@ -22,7 +22,12 @@
 
 \author{%
 Lynne Jones, 
-Owen Boberg
+Owen Boberg,
+Tiago Ribeiro,
+Kem Cook,
+Andrew Heyer,
+\v{Z}eljko Ivezi\'{c}
+Colin Winslow
 }
 
 \setDocRef{baseline-opsim}
@@ -56,10 +61,10 @@ The new \opsim v4 codebase makes significant changes when compared with the prev
 \begin{itemize}
 \item Separation of the telemetry and telescope control simulation software from the scheduler software. These two packages are now called \texttt{Simulated Observatory Control System} (\socs) and \texttt{Scheduler}. 
 \item Implement communication between \socs and \sched via DDS, a publish/subscribe protocol that will be used to communicate between various telescope control systems, including the scheduler code.
-\item Update the slew time cost function, to add further flexibility to prioritize short slews.
-\item Add an additional `cost' to changing the filter, to reduce the number of filter changes and in particular, fast filter changes.
 \item Add a per-filter sky brightness calculation, using the \simsky package to calculate sky brightness values. This updates the sky brightness values to a model that includes a much higher fidelity twilight component and which has been validated against all-sky measurements from the LSST site. It also means that for each visit, the sky brightness limit is compared against the actual sky brightness estimate in the individual filter, instead of just against the $V$ band sky brightness as in \opsim v3.
-\item Add the capability to restrict observations to a specified number of visits in a particular filter for a given field, per night. {\it E.g.}, limit visits for a given field to only 2 in $g$ band. This does not mean that no other visits to the same field will take place in the same night, but they would be in other filters which still have available groups. 
+\item Update the slew time cost function, to add further flexibility to prioritize short slews.
+\item Add an additional cost to changing the filter, to reduce the number of filter changes and in particular, fast filter changes.
+%\item Add the capability to restrict observations to a specified number of visits in a particular filter for a given field, per night. {\it E.g.}, limit visits for a given field to only 2 in $g$ band. This does not mean that no other visits to the same field will take place in the same night, but they would be in other filters which still have available groups. 
 \item Add the capability to balance observations between different proposals (`time balancing'), as a function of progress toward the total number of requested observations. {\it E.g.}, space the 180 visits per field for the South Celestial Pole proposal over the entire survey, at the same pace as the 825 visits per field for the Wide Fast Deep proposal, so all proposals span the entire survey.
 \item Add the capability to add a per-proposal `airmass bonus`, which adds a preference for low-airmass observations to the observation ranking algorithm.
 \item Add the capability to add a per-proposal `Hour Angle bonus`, which adds a preference for low-hour angle observations to the observation ranking algorithm. 
@@ -142,10 +147,8 @@ The effect of these decreases in sky brightness are a resulting increase in the 
 \caption{Individual image 5$\sigma$ limiting magnitudes for minion\_1016 before and after reprocessing with \simsky, and astro-lsst-01\_2020. The changes in limiting magnitude correspond to 0.5 times the change in skybrightness, appropriate for the change in SNR, but there were additional changes in the expected throughput of the telescope included in the reprocessing that result in the final m5 changes being slightly smaller than expected.}
 \begin{center}
 \begin{tabular}{lrrr}
-\hline
 {} &  minion\_1016\_oldsky &  minion\_1016\_newsky &  astro-lsst-01\_2020 \\
 \hline
-%\vskip -0.2in
 Median m5 WFD u band &           23.137883 &           23.111817 &           23.079406 \\
 Median m5 WFD g band &           24.472729 &           24.545191 &           24.474827 \\
 Median m5 WFD r band &           24.153684 &           24.085377 &           24.072373 \\
@@ -164,17 +167,27 @@ The slew time cost function changed slightly between \opsim v3 and v4, substitut
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.4\textwidth]{figures/slewcost}
+\includegraphics[width=0.37\textwidth]{figures/slewcost}
 \includegraphics[width=0.4\textwidth]{figures/slewtimes}
 \caption{Left: Slew time cost associated with a given slew time, using the default values for $t_{ref}$ (5s), $c_{ref}$ (0.3) and $t_{max}$ (150s). The slew time required is determined by the model of the telescope movement. The cost associated with that slew time is used in the ranking algorithm for choosing the next target in the scheduler. Right: The distribution of slew times in minion\_1016 and astro-lsst-01\_2020 (an \opsim v4 simulation run without new v4 features). 
 \label{fig:slewcost}}
 \end{figure}
 
-The filter change cost calculation was also changed between \opsim v3 and v4, in order to reduce the number of rapid filter changes. The result is that minion\_1016 has 14194 total filter changes, compared to 11213 for astro-lsst-01\_2020; over 20\% fewer filter changes in the new survey. The median number of filter changes per night is constant at 2 per night, however the mean decreased to 3.32 from 4.29. This is likely tied to the fact that astro-lsst-01\_2020 received many fewer deep drilling visits -- 59974 instead of 111472 in minion\_1016. 
-XX WHY? 
+The filter change cost calculation was also changed between \opsim v3 and v4, in order to reduce the number of filter changes, particularly on a rapid timescale. The result is that astro-lsst-01\_2020 has 11213 total filter changes, compared to 14194 for minion\_1016; over 20\% fewer filter changes in the new survey. The overall number of filter changes in each of the new simulated surveys is similar; between 10,000 -- 12,000 filter changes over the lifetime of the survey. 
 
+\section{The addition of time-balancing}
 
-the actual slew time will depend on further changing the next visit ranking via the bonus values
+A significant problem in minion\_1016 was that different proposals within the simulated survey completed their observations at different rates. The proposals which requested fewer total visits than the WFD would reach their requested number of visits before the nominal survey baseline of 10 years, instead of spacing the visits out over time appropriately. \opsim v4 adds the capability to rank targets by the overall progress of each proposal towards its total goal number of visits. This means that the rate of acquiring visits for each proposal remains more uniform over the survey lifetime. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.3\textwidth]{figures/timebalancing_gp}
+\includegraphics[width=0.3\textwidth]{figures/timebalancing_scp}
+\includegraphics[width=0.3\textwidth]{figures/timebalancing_nes}
+\caption{The galactic plane proposal and south celestial pole proposal only request 30 visits per field, per filter. The north ecliptic spur proposal requests about 1/3 of the visits of the full WFD per field. In minion\_1016 and astro-lsst-01\_2020 (an \opsim v4 run without time balancing), these proposals obtained all of their observations only a few years into the survey. With time balancing turned on, the rate of acquiring observations is slower and visits are obtained throughout the simulated lifetime of LSST.
+\label{fig:timebalancing}}
+\end{figure}
+
 
 \section{Choosing the bonus values} 
 
