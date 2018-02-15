@@ -2,6 +2,7 @@
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
 
 % Package imports go here.
+\usepackage{booktabs}
 \usepackage{xspace}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -76,21 +77,23 @@ Here we present a select list (see Table \ref{tab:runlist}) of simulated surveys
 \caption{Short list of simulated surveys illustrating \opsim changes.}
 \begin{center}
 \begin{tabular}{ l | l | l }
+\toprule
 \opsim Run & Version & Summary \\
-\hline
+\midrule
 minion\_1016\_oldsky & \opsim v3 & Previous baseline, with old sky brightness values. \\
 minion\_1016\_newsky &  & Previous baseline, reprocessed with new \simsky values.\\
 astro-lsst-01\_2020 & \opsim v4  & All new features turned off (reproduce minion\_1016) \\
 colossus\_2432 &  & Add time-balancing (TB).\\
 colossus\_2328 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus=0.05. \\
 astro-lsst-01\_2016 &  & TB, GV, Add airmass bonus, $X$ bonus = 0.5 \\
-astro-lsst-01\_2021 & & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=6 \\
-astro-lsst-01\_2013 &  & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=3 \\
-colossus\_2378 &  &  TB, GV, Add $HA$ bonus=0.8, $HA_{max}$=6 \\
-astro-lsst-01\_2022 &   & TB, GV, Add $HA$ bonus=0.3, $HA_{max}$=3 \\
+astro-lsst-01\_2013 &  & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=3 hr\\
+colossus\_2378 &  &  TB, GV, Add $HA$ bonus=0.8, $HA_{max}$=6 hr\\
+astro-lsst-01\_2021 & & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=6  hr\\
+astro-lsst-01\_2022 &   & TB, GV, Add $HA$ bonus=0.3, $HA_{max}$=3 hr\\
 % colossus_2327 & & no time balancing, yes grouped visits
 % colossus_2371 &  & no time balancing, no grouped visits
 % colossus_2399 & & TB, GV, HA bonus 0.5 HAmax 6 
+\bottomrule
 \end{tabular} 
 \end{center}
 \label{tab:runlist}
@@ -113,15 +116,16 @@ To evaluate the effect of changing the sky brightness model, we first reprocesse
 \caption{Median skybrightness over all observations in each filter, in minion\_1016, before and after reprocessing with \simsky.}
 \begin{center}
 \begin{tabular}{lrrr}
-{} &  minion\_1016\_oldsky &  minion\_1016\_newsky &    Change \\
-\hline
+\toprule
+{} &  minion\_1016\_oldsky &  minion\_1016\_newsky &    Delta \\
+\midrule
 Median skyBrightness WFD u band       &           22.047386 &           22.706190 &  0.658804 \\
 Median skyBrightness WFD g band       &           21.777833 &           22.071565 &  0.293732 \\
 Median skyBrightness WFD r band       &           21.071279 &           21.027822 & -0.043457 \\
 Median skyBrightness WFD i band       &           19.903494 &           20.055430 &  0.151936 \\
 Median skyBrightness WFD z band       &           17.502343 &           18.646489 &  1.144146 \\
 Median skyBrightness WFD y band       &           17.300000 &           17.774622 &  0.474622 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \label{tab:medskybright}
@@ -147,15 +151,16 @@ The effect of these decreases in sky brightness are a resulting increase in the 
 \caption{Individual image 5$\sigma$ limiting magnitudes for minion\_1016 before and after reprocessing with \simsky, and astro-lsst-01\_2020. The changes in limiting magnitude correspond to 0.5 times the change in skybrightness, appropriate for the change in SNR, but there were additional changes in the expected throughput of the telescope included in the reprocessing that result in the final m5 changes being slightly smaller than expected.}
 \begin{center}
 \begin{tabular}{lrrr}
+\toprule
 {} &  minion\_1016\_oldsky &  minion\_1016\_newsky &  astro-lsst-01\_2020 \\
-\hline
+\midrule
 Median m5 WFD u band &           23.137883 &           23.111817 &           23.079406 \\
 Median m5 WFD g band &           24.472729 &           24.545191 &           24.474827 \\
 Median m5 WFD r band &           24.153684 &           24.085377 &           24.072373 \\
 Median m5 WFD i band &           23.392901 &           23.470681 &           23.542878 \\
 Median m5 WFD z band &           22.223935 &           22.759990 &           22.720512 \\
 Median m5 WFD y band &           21.571697 &           21.800913 &           21.819558 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \label{tab:m5depth}
@@ -189,7 +194,7 @@ A significant problem in minion\_1016 was that different proposals within the si
 \end{figure}
 
 
-\section{Choosing the bonus values} 
+\section{Effect of airmass and HA bonuses} 
 
 \opsim v4 provides the capability to choose observations that prefer low airmass (via the 'airmass bonus') or low hour angle angle (via the 'hour angle bonus'). We investigated ..
 (2 year blocks of X bonus vs 2 year blocks of HA bonus)
@@ -197,9 +202,11 @@ A significant problem in minion\_1016 was that different proposals within the si
 
 \section{New baseline survey recommendation}
 
-The SRD places requirements on the amount of sky which receives a given minimum number of visits (table 22) and the number of visits over a given minimum area (table 23). Together these specifications are that 18,000 square degrees should receive at least 825 visits (together known as the `fO' metrics). The performance of each of these simulated surveys regarding this important metric is shown in Figure~\ref{fig:srd}. The top panel in the figure illustrates the minimum number of visits an 18,000 sq degree area receives (Nvisits/825 line) and the amount of area covered which receives at least 825 visits (Area/18k sq deg line).  The bottom panel illustrates the changes in the number of visits in each simulated survey, together with the `effective time' of each survey. Effective time is defined as the equivalent amount of on-sky time a survey would require to reach the same limiting magnitudes as the total coadded depths, assuming all observations were actually taken in a fiducial set of observing conditions. If the actual observations are obtained in bad conditions (high airmass, bright sky backgrounds), the effective time is smaller; if observations are taken with good conditions, the effective time is larger.
+The SRD places requirements on the amount of sky which receives a given minimum number of visits (table 22) and the number of visits over a given minimum area (table 23). Together these specifications are that 18,000 square degrees should receive at least 825 visits (together known as the `fO' metrics). The performance of each of these simulated surveys regarding this important metric is shown in Figure~\ref{fig:srd}. The top panel in the figure illustrates the minimum number of visits an 18,000 sq degree area receives (`Nvisits/825' line) and the amount of area covered which receives at least 825 visits (`Area/18k sq deg' line).  The bottom panel illustrates the changes in the number of visits in each simulated survey, together with the `effective time' of each survey. Effective time is defined as the equivalent amount of on-sky time a survey would require to reach the same total coadded limiting magnitudes assuming all observations were actually taken in a fiducial set of observing conditions. If the simulated observations are obtained in bad conditions (high airmass, bright sky backgrounds), the effective time is smaller; if observations are taken with good conditions, the effective time is larger. We compare against minion\_1016\_newsky -- the minion\_1016 baseline run, after reprocessing with the \simsky package and recalculated m5 depths using the new throughput values, so that all runs are compared on the same footing.
 
-In the v3 baseline, minion\_1016, the SRD fO metric values were relatively high, as the overall number of visits was larger. With \opsim v4, the airmass or hour angle bonuses add preferences for observations in better conditions (closer to the meridian) but which result in longer slew times. This reduces the overall number of visits but increases the effective time of the survey. The fO metrics fail when these bonuses are set to particularly strong values, primarily because the observations are spread more unevenly over the sky. Observing close to the meridian in some regions of $RA$ is difficult due to the arrangement of the Deep Drilling fields and the North Ecliptic Spur. With a fewer number of overall visits, this pushes some areas down below the benchmark (825 visits) value, causing these fO metric values to fall below the required thresholds. 
+In the v3 baseline, minion\_1016, the SRD fO metric values were relatively high, as the overall number of visits was larger. With \opsim v4, the airmass or hour angle bonuses add preferences for observations in better conditions (closer to the meridian) but which result in longer slew times. This reduces the overall number of visits but increases the effective time of the survey. The fO metrics fail when these bonuses are set to particularly strong values, primarily because the observations are spread more unevenly over the sky (see Figure~\ref{fig:uniformity_all}.  Observing close to the meridian in some regions of $RA$ is difficult due to the arrangement of the Deep Drilling fields and the North Ecliptic Spur (see Figure~\ref{fig:uniformity_dd}. With a fewer number of overall visits, this pushes some areas down below the benchmark (825 visits) value, causing these fO metric values to fall below the required thresholds. 
+
+As discussed in the previous section, we prefer using the HA bonus parameter to achieve better uniformity over time than with the airmass bonus parameter. We also find here that we cannot use a strong HA bonus, due to the resulting non-uniformity in visit distribution across the sky in the WFD fields. We find that the configurations producing astro-lsst-01\_2021 ($HA$ bonus = 0.5, $HA_{max}$  = 6 hrs) and astro-lsst-01\_2022 ($HA$ bonus=0.3, $HA_{max}$ = 3 hrs) produce reasonable baseline runs; we choose astro-lsst-01\_2022 as the candidate baseline run as it performs slightly better in the effective time metric and produces a slightly smaller number of outliers in the $HA$ distribution.  A comparison of select top-level astro-lsst-01\_2022 statistics versus minion\_1016 is shown in Table~\ref{tab:baseline_comparison}. 
 
 \begin{figure}[ht]
 \centering
@@ -221,25 +228,73 @@ In the v3 baseline, minion\_1016, the SRD fO metric values were relatively high,
 \centering
 \includegraphics[width=0.6\textwidth]{figures/uniformity_dd}
 %\vskip -0.2in
-\caption{The nonuniformity in visits, when adding stronger preferences for observing near the meridian, is correlated with the locations of the Deep Drilling fields, four of which are clumped within 30 degrees in $RA$, as well as an increased width of the North Ecliptic Spur. Improved methods to make the distribution of visits across all ranges of $RA$ more uniform will need to be investigated in future simulated surveys. 
+\caption{The nonuniformity in visits, when adding stronger preferences for observing near the meridian, is correlated with the locations of the Deep Drilling fields, four of which are clumped within 30 degrees in $RA$, as well as an increased width of the North Ecliptic Spur. The bottom and top panels show the same information about the number of visits per healpix in astro-lsst-01\_2022, but scaled differently (top to show DD field locations, bottom to show nonuniformity). Improved methods to make the distribution of visits across all ranges of $RA$ more uniform will need to be investigated in future simulated surveys. 
 \label{fig:uniformity_dd}}
 \end{figure}
 
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.9\textwidth]{figures/astrometry}
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=0.9\textwidth]{figures/astrometry}
 %\vskip -0.2in
-\caption{
-\label{fig:astrometry}}
-\end{figure}
+%\caption{
+%\label{fig:astrometry}}
+%\end{figure}
+
+\begin{table}
+\caption{Comparison of select metrics from the \opsim v3 baseline run minion\_1016 and the \opsim v4 suggested baseline run update astro-lsst-01\_2022.}
+\small
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+{} &  minion\_1016\_newsky &  astro-lsst-01\_2022 &  Change (\%) \\
+\midrule
+fO(18k sq deg): Nvisits/825   &               1.076 &               1.013 &         -6 \\
+fO(825): Area/18k sq deg     &               1.003 &               1.003 &          0 \\
+Total Effective Time (years, 8 hr nights)                                         &               2.963 &               3.780 &         28 \\
+Total Number of Exposures                                &             2447931 &             2372700 &         -3 \\
+Fraction of total visits in WFD                      &               0.851 &               0.864 &          1 \\
+Mean Visits Per Night                   &             808.966 &             784.364 &         -3 \\
+Median NVisits WFD u band HealpixSlicer            &                  63 &                  62 &         -2 \\
+Median NVisits WFD g band HealpixSlicer            &                  88 &                  87 &         -1 \\
+Median NVisits WFD r band HealpixSlicer            &                 201 &                 200 &          0 \\
+Median NVisits WFD i band HealpixSlicer            &                 202 &                 199 &         -1 \\
+Median NVisits WFD z band HealpixSlicer            &                 180 &                 183 &          2 \\
+Median NVisits WFD y band HealpixSlicer            &                 181 &                 182 &          1 \\
+Median NVisits WFD all bands HealpixSlicer         &                 916 &                 912 &          0 \\
+Median CoaddM5 WFD u band HealpixSlicer            &              25.440 &              25.615 &          1 \\
+Median CoaddM5 WFD g band HealpixSlicer            &              27.051 &              27.110 &          0 \\
+Median CoaddM5 WFD r band HealpixSlicer            &              27.028 &              27.188 &          1 \\
+Median CoaddM5 WFD i band HealpixSlicer            &              26.432 &              26.613 &          1 \\
+Median CoaddM5 WFD z band HealpixSlicer            &              25.660 &              25.707 &          0 \\
+Median CoaddM5 WFD y band HealpixSlicer            &              24.695 &              24.892 &          1 \\
+Median Parallax @ 20.0 WFD HealpixSlicer           &               0.535 &               0.551 &          3 \\
+Median Parallax @ 24.0 WFD HealpixSlicer           &               7.038 &               6.320 &        -10 \\
+Median Proper Motion @ 20.0 WFD HealpixSlicer      &               0.162 &               0.149 &         -8 \\
+Median Proper Motion @ 24.0 WFD HealpixSlicer      &               2.138 &               1.713 &        -20 \\
+Area (sq deg) with > 800 visits within 30 minutes &            6388.932 &            5834.756 &         -9 \\
+Median Fraction of visits in pairs (15-60 min) in gri &               0.909 &               0.895 &         -2 \\
+Median value of Median Internight Gap (per healpix)  &               2.950 &               1.973 &        -33 \\
+Median seeingFWHMEff WFD r band                        &               0.912 &               0.853 &         -6 \\
+Median slewTime All visits                         &               4.756 &               5.175 &          9 \\
+Total Number of Filter Changes                    &               14194 &               10644 &        -25 \\
+Open Shutter Fraction                                &               0.735 &               0.716 &         -3 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{tab:baseline_comparison}
+\end{table}
 
 
+\section{Known issues}
 
+There are some known issues with astro-lsst-01\_2022, common to all \opsim v4 simulated surveys produced with \opsim v4.1.10. 
 
-srd values pass
+There are some visits with higher than expected seeingFwhmEff values - even as large as 4.1". This is because the configuration files specify a cutoff for `seeing', but the scheduler only knows about the zenith value of the seeing when deciding whether a visit could be scheduled or not (rather than the seeing at the location of the field). Thus, some visits have a seeingFwhmEff which exceeds the configuration parameters due to the airmass at which the field was observed -- the seeing at zenith at the same time was within the limits.
 
-other big changes from minion\_1016
+There are occasional $u$ band visits during twilight. This is because the filter for a particular visit is chosen based on a combination of what observations have already been obtained, what filter is currently in the camera and in use, and hard limits on the sky brightness. With the new \simsky values for sky brightness, the twilight sky background can be within the cutoff limits even for $u$ band -- especially near zenith and on particularly dark nights. Thus, observing in $u$ band during twilight doesn't violate any of the configuration constraints because the sky is dark enough to meet the constraint. It is impossible, with a simple hard constraint, to choose a value that permits observing in $u$ band at a wide range of airmasses and reasonable range of lunar phases, while rejecting $u$ band observations during twilight at zenith on dark nights. A similar condition exists for $g$ band.
+
+These issues will be addressed with updates in a future version of the scheduler. 
 
 \section{Reproducibility of new baseline survey and its evaluation}
 
