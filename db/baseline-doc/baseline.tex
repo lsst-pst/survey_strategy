@@ -26,8 +26,10 @@ Lynne Jones,
 Owen Boberg,
 Tiago Ribeiro, \\
 Kem Cook,
-Andrew Heyer,
+Francisco Delgado,
+Andrew Heyer, \\
 \v{Z}eljko Ivezi\'{c},
+Michael Reuter,
 Colin Winslow
 }
 
@@ -39,7 +41,7 @@ Colin Winslow
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-We present an update to the baseline simulated survey, created using \opsim v4. The last \opsim baseline simulated survey was minion\_1016, produced in 2016 using \opsim v3. The changes in the new baseline run include updates to the sky brightness, significant changes in the underlying opsim scheduling software, and the addition of new scheduler parameters. 
+We present an update to the baseline simulated survey, created using \opsim v4.1.0.10. The last \opsim baseline simulated survey was minion\_1016, produced in 2016 using \opsim v3.3.5 The changes in the new baseline run include updates to the sky brightness, significant changes in the underlying opsim scheduling software, and the addition of new scheduler parameters. 
 }
 
 % Change history defined here.
@@ -366,7 +368,18 @@ These issues will be addressed with updates in a future version of the scheduler
 
 \section{Reproducibility of new baseline survey and its evaluation}
 
-The astro-lsst-01\_2022  simulated survey was produced using \opsim v4, 4.1.0.10. The configuration parameters were left as the defaults for this version, with the exception that the airmass bonus was set to 0 for all proposals and the $HA$ bonus was set to 0.3, with $HA_{max}$ = 3 hrs for all proposals except Deep Drilling, where it was $HA$ bonus = 0.3 and $HA_{max}$ = 6 hrs. The details of all configuration parameters can be found in the sqlite output database, in the Config table, as well as in the github repo housing this document (\url{https://github.com/lsst-pst/survey_strategy/tree/master/db/baseline-doc/configs}). 
+The astro-lsst-01\_2022  simulated survey was produced using \opsim v4, 4.1.0.10.  This overarching package designation includes, specifically:
+\begin{itemize}
+\item Observatory model (ts\_observatory\_model) version 1.0.1
+\item Astro sky model (ts\_astrosky\_model) version 1.0.0
+\item Dateloc (ts\_dateloc) version 1.0.0
+\item Sky brightness model (sims\_skybrightness\_pre) version 2.3.7.sims
+\item Sky brightness precalculated file version 4f5efe2
+\item SOCS (sims\_ocs) version 1.0.1.10
+\item Scheduler (ts\_scheduler) version 1.1
+\end{itemize}
+
+The configuration parameters were left as the defaults for this version, with the exception that the airmass bonus was set to 0 for all proposals and the $HA$ bonus was set to 0.3, with $HA_{max}$ = 3 hrs for all proposals except Deep Drilling, where it was $HA$ bonus = 0.3 and $HA_{max}$ = 6 hrs. The details of all configuration parameters can be found in the sqlite output database, in the Config table, as well as in the github repo housing this document (\url{https://github.com/lsst-pst/survey_strategy/tree/master/db/baseline-doc/configs}). 
 
 The original output file astro-lsst-01\_2022 produced by v4.1.0.10 had a faulty value for seeingFwhmGeom, as a result of a bug in the \socs software. These values have been corrected in the \opsim v4 output files which have been made publicly available, with a comment placed into the Config table that this correction has been made. 
 
