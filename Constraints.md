@@ -41,14 +41,16 @@ Sequences of short exposures (<15s) without breaks (such as a 5s slew) can cause
 
 ### Data processing constraints ###
 
-- Data Management pipelines may be reconfigured for minisurvey processing, but special processing beyond this is the responsibility of the science community. (??)
+- Data Management pipelines may be reconfigured for minisurvey processing, but special processing beyond this is the responsibility of the science community. If your project requires special processing, details of this work should be described in the submitted white paper.
 
 
 ### Survey constraints ###
 
-- The footprint for the WFD must be at least X with X visits per field. The cadence for these observations is still flexible, and the footprint for the WFD may vary from X to X.
+- The footprint for the WFD must be at least 18,000 sq degrees with 825 visits per field (per SRD requirements). The cadence for these observations is still flexible and rolling cadence options will be considered. There are metrics in MAF (the `fOMetric`) that will evaluate if the footprint/visit requirement is met.
 
-- SRD requirements on WFD (implications about time baseline for WFD?)
+- Proper motion and parallax requirements impose some requirements on the overall cadence of the WFD. For example, a sufficient time baseline is required for proper motion measurements, requiring visits to a given field to be spread over many years. There are metrics in MAF for proper motion and parallax that will signal if these requirements are met.
+
+- Rapid revisit intervals, uniformly distributed on timescales between 40 seconds and 30 minutes, are required over at least 2000 sq degrees of the survey footprint. Note that these do not have to be consecutive visits, but this area must be sampled over these timescales over the lifetime of the survey. There are metrics in MAF regarding rapid revisits that will signal if this requirement is met.
 
 - Deep drilling field positions.
 4 of the potential deep drilling fields have been announced; these positions are fixed. The number of remaining deep drilling fields and their cadence of observations is still flexible.
