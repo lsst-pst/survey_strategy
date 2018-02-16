@@ -196,23 +196,36 @@ A significant problem in minion\_1016 was that different proposals within the si
 
 \section{Effect of airmass and HA bonuses} 
 
-\opsim v4 provides the capability to choose observations that prefer low airmass (via the 'airmass bonus') or low hour angle angle (via the 'hour angle bonus'). We investigated ..
+In a general sense, observations are most effective when obtained as near as possible to the meridian. This is where they have the lowest possible airmass, which results in smaller seeing values. Under dark sky conditions, this is also generally where the faintest sky background is found. Together these effects produce fainter limiting magnitudes near the meridian. In practice, additional considerations such as requirements to return to a field within a night or within a certain range of nights, the presence of the moon or galactic plane, and other constraints mean that observations away from the meridian can also be necessary. In \opsim v3, hard cutoff values for airmass limits were provided, but there was no way to `prefer' observations near the meridian. In \opsim v4, we now have the capability to choose observations that prefer low airmass (via the 'airmass bonus') or low hour angle angle (via the 'hour angle bonus'). 
+
+We investigated the effect of each of these bonus parameters, to determine how best to configure the scheduler. 
 (2 year blocks of X bonus vs 2 year blocks of HA bonus)
 
 
 \section{New baseline survey recommendation}
 
-The SRD places requirements on the amount of sky which receives a given minimum number of visits (table 22) and the number of visits over a given minimum area (table 23). Together these specifications are that 18,000 square degrees should receive at least 825 visits (together known as the `fO' metrics). The performance of each of these simulated surveys regarding this important metric is shown in Figure~\ref{fig:srd}. The top panel in the figure illustrates the minimum number of visits an 18,000 sq degree area receives (`Nvisits/825' line) and the amount of area covered which receives at least 825 visits (`Area/18k sq deg' line).  The bottom panel illustrates the changes in the number of visits in each simulated survey, together with the `effective time' of each survey. Effective time is defined as the equivalent amount of on-sky time a survey would require to reach the same total coadded limiting magnitudes assuming all observations were actually taken in a fiducial set of observing conditions. If the simulated observations are obtained in bad conditions (high airmass, bright sky backgrounds), the effective time is smaller; if observations are taken with good conditions, the effective time is larger. We compare against minion\_1016\_newsky -- the minion\_1016 baseline run, after reprocessing with the \simsky package and recalculated m5 depths using the new throughput values, so that all runs are compared on the same footing.
+The SRD places requirements on the amount of sky which receives a given minimum number of visits (table 22) and the number of visits over a given minimum area (table 23). Together these specifications are that 18,000 square degrees should receive at least 825 visits (together known as the `fO' metrics). The performance of each of these simulated surveys regarding this important metric is shown in Figure~\ref{fig:srd}. The top panel in the figure illustrates the minimum number of visits an 18,000 sq degree area receives (`Nvisits/825' line) and the amount of area covered which receives at least 825 visits (`Area/18k sq deg' line).  The bottom panel illustrates the changes in the number of visits in each simulated survey, together with the `normalized effective time' of each survey. Effective time is defined as the equivalent amount of on-sky time a survey would require to reach the same total coadded limiting magnitudes assuming all observations were actually taken in a fiducial set of observing conditions; Normalized effective time is this time divided by the actual time spent observing (thus it accounts for differences in the number of days on-sky, if downtime or weather changes between runs). If the simulated observations are obtained in bad conditions (high airmass, bright sky backgrounds), the effective time is smaller; if observations are taken with good conditions, the effective time is larger. We are comparing these values against minion\_1016\_newsky -- the minion\_1016 baseline run, after reprocessing with the \simsky package and recalculated m5 depths using the new throughput values, so that all runs are compared on the same footing.
 
 In the v3 baseline, minion\_1016, the SRD fO metric values were relatively high, as the overall number of visits was larger. With \opsim v4, the airmass or hour angle bonuses add preferences for observations in better conditions (closer to the meridian) but which result in longer slew times. This reduces the overall number of visits but increases the effective time of the survey. The fO metrics fail when these bonuses are set to particularly strong values, primarily because the observations are spread more unevenly over the sky (see Figure~\ref{fig:uniformity_all}.  Observing close to the meridian in some regions of $RA$ is difficult due to the arrangement of the Deep Drilling fields and the North Ecliptic Spur (see Figure~\ref{fig:uniformity_dd}. With a fewer number of overall visits, this pushes some areas down below the benchmark (825 visits) value, causing these fO metric values to fall below the required thresholds. 
 
 As discussed in the previous section, we prefer using the HA bonus parameter to achieve better uniformity over time than with the airmass bonus parameter. We also find here that we cannot use a strong HA bonus, due to the resulting non-uniformity in visit distribution across the sky in the WFD fields. We find that the configurations producing astro-lsst-01\_2021 ($HA$ bonus = 0.5, $HA_{max}$  = 6 hrs) and astro-lsst-01\_2022 ($HA$ bonus=0.3, $HA_{max}$ = 3 hrs) produce reasonable baseline runs; we choose astro-lsst-01\_2022 as the candidate baseline run as it performs slightly better in the effective time metric and produces a slightly smaller number of outliers in the $HA$ distribution.  A comparison of select top-level astro-lsst-01\_2022 statistics versus minion\_1016 is shown in Table~\ref{tab:baseline_comparison}. 
 
+Other changes we find with the new baseline run, astro-lsst-01\_2022, when compared with minion\_1016: 
+\begin{itemize}
+\item The non-uniformity of the visit coverage around the sky results in more fields not quite reaching the desired number of visits in all filters (i.e. the MAF `completeness' metric falls). This is undesirable, but given that the SRD requirement on fO is satisfied, this is a place for improvement but not for discarding the simulated survey. 
+\item The area which receives rapid revisits (revisits between 40 seconds to 30 minutes in time), in particular the area with uniform time coverage within this time span, falls. This is again undesirable, but the minimum amount of area that must be covered within this time frame according to the SRD is still satisfied. In addition, the implementation of this metric should be improved. 
+\item While the fraction of the total time spent on Deep Drilling remains approximately constant, the number of observations for some of the deep drilling fields fell considerably. The observations for Deep Drilling were not distributed evenly among all fields. This is a place for improvement in the scheduler.
+\item Visits are obtained near the meridian, with a much narrower range of hour angle. The western bias in observation is almost nonexistent. See Figure~\ref{fig:hour_angle_comparison}. 
+\item The parallax-DCR degeneracy decreases. This is due to observing near the meridian, thus decreasing DCR signal. This is a positive result.
+\item The median value of the maximum gap between visits increases. This implies the season length is (on average) shorter for most fields. At the same time, we see that the median value of the median gap between visits decreases, implying a slightly quicker revisit rate. These two effects are linked, and also tied to observing near the meridian. This is expected to be a positive result in this simulated survey.
+\end{itemize}
+In short, the implementation of the hour angle bonus in \opsim v4.1.0.10 increases non-uniformity in sky coverage, most likely linked to difficulties scheduling the non-WFD parts of the survey, particularly the deep drilling fields. However, this non-uniformity is balanced by improved conditions due to obtaining observations near the meridian. Visits in the WFD are also obtained over a shorter season each year, but at a more rapid cadence. 
+
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.9\textwidth]{figures/srd}
 %\vskip -0.2in
-\caption{The top panel in figure illustrates the minimum number of visits an 18,000 sq degree area receives (Nvisits/825 line) and the amount of area covered which receives at least 825 visits (Area/18k sq deg line).  The bottom panel illustrates the changes in the number of visits in each simulated survey, together with the `effective time' of each survey. Effective time is defined as the equivalent amount of on-sky time a survey would require to reach the same limiting magnitudes as the total coadded depths, assuming all observations were actually taken in a fiducial set of observing conditions. If the actual observations are obtained in bad conditions (high airmass, bright sky backgrounds), the effective time is smaller; if observations are taken with good conditions, the effective time is larger.
+\caption{The top panel in figure illustrates the minimum number of visits an 18,000 sq degree area receives (Nvisits/825 line) and the amount of area covered which receives at least 825 visits (Area/18k sq deg line).  The bottom panel illustrates the changes in the number of visits in each simulated survey, together with the `normalized effective time' of each survey. Effective time is defined as the equivalent amount of on-sky time a survey would require to reach the same limiting magnitudes as the total coadded depths, assuming all observations were actually taken in a fiducial set of observing conditions. If the actual observations are obtained in bad conditions (high airmass, bright sky backgrounds), the effective time is smaller; if observations are taken with good conditions, the effective time is larger.
 \label{fig:srd}}
 \end{figure}
 
@@ -251,7 +264,7 @@ As discussed in the previous section, we prefer using the HA bonus parameter to 
 \midrule
 fO(18k sq deg): Nvisits/825   &               1.076 &               1.013 &         -6 \\
 fO(825): Area/18k sq deg     &               1.003 &               1.003 &          0 \\
-Total Effective Time (years, 8 hr nights)                                         &               2.963 &               3.780 &         28 \\
+Normalized Teff                                    &               0.424 &               0.558 &         32 \\
 Total Number of Exposures                                &             2447931 &             2372700 &         -3 \\
 Fraction of total visits in WFD                      &               0.851 &               0.864 &          1 \\
 Mean Visits Per Night                   &             808.966 &             784.364 &         -3 \\
@@ -285,10 +298,19 @@ Open Shutter Fraction                                &               0.735 &    
 \label{tab:baseline_comparison}
 \end{table}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/hour_angle_comparison}
+%\vskip -0.2in
+\caption{Comparison of the hour angle distribution, per filter, in minion\_1016 (dotted lines) and astro-lsst-01\_2022 (solid lines). The known issue with western bias in minion\_1016 can clearly be seen. This does not occur in astro-lsst-01\_2022, which also has a much tighter distribution of hour angles. 
+\label{fig:hour_angle_comparison}}
+\end{figure}
+
+
 
 \section{Known issues}
 
-There are some known issues with astro-lsst-01\_2022, common to all \opsim v4 simulated surveys produced with \opsim v4.1.10. 
+There are some known issues with astro-lsst-01\_2022, common to all \opsim v4 simulated surveys produced with \opsim v4.1.0. to 4.1.0.10. 
 
 There are some visits with higher than expected seeingFwhmEff values - even as large as 4.1". This is because the configuration files specify a cutoff for `seeing', but the scheduler only knows about the zenith value of the seeing when deciding whether a visit could be scheduled or not (rather than the seeing at the location of the field). Thus, some visits have a seeingFwhmEff which exceeds the configuration parameters due to the airmass at which the field was observed -- the seeing at zenith at the same time was within the limits.
 
@@ -298,10 +320,11 @@ These issues will be addressed with updates in a future version of the scheduler
 
 \section{Reproducibility of new baseline survey and its evaluation}
 
-config files
-results of evaluation
-how they were produced
-where they can be found online
+The astro-lsst-01\_2022  simulated survey was produced using \opsim v4, 4.1.0.10. The configuration parameters were left as the defaults for this version, with the exception that the airmass bonus was set to 0 for all proposals and the $HA$ bonus was set to 0.3, with $HA_{max}$ = 3 hrs for all proposals except Deep Drilling, where it was $HA$ bonus = 0.3 and $HA_{max}$ = 6 hrs. The details of all configuration parameters can be found in the sqlite output database, in the Config table, as well as in the github repo housing this document (\url{https://github.com/lsst-pst/survey_strategy/tree/master/db/baseline-doc/configs}). 
+
+The original output file astro-lsst-01\_2022 produced by v4.1.0.10 had a faulty value for seeingFwhmGeom, as a result of a bug in the \socs software. These values have been corrected in the \opsim v4 output files which have been made publicly available, with a comment placed into the Config table that this correction has been made. 
+
+The simulated survey output database, astro-lsst-01\_2022.db, is available in the github repo housing this document, together with MAF analysis outputs. These MAF outputs can also be found online at \url{http://astro-lsst-01.washington.edu:8081}. 
 
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
