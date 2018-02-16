@@ -24,10 +24,10 @@
 \author{%
 Lynne Jones, 
 Owen Boberg,
-Tiago Ribeiro,
+Tiago Ribeiro, \\
 Kem Cook,
 Andrew Heyer,
-\v{Z}eljko Ivezi\'{c}
+\v{Z}eljko Ivezi\'{c},
 Colin Winslow
 }
 
@@ -39,7 +39,7 @@ Colin Winslow
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-We present an update to the baseline simulated survey, created using \opsim v4. The last operations simulation baseline simulated survey was minion\_1016, produced in 2016. This simulated survey was produced using \opsim v3. The changes include updates to the sky brightness, significant changes in the underlying opsim scheduling software, and the addition of new scheduler parameters. 
+We present an update to the baseline simulated survey, created using \opsim v4. The last \opsim baseline simulated survey was minion\_1016, produced in 2016 using \opsim v3. The changes in the new baseline run include updates to the sky brightness, significant changes in the underlying opsim scheduling software, and the addition of new scheduler parameters. 
 }
 
 % Change history defined here.
@@ -196,10 +196,33 @@ A significant problem in minion\_1016 was that different proposals within the si
 
 \section{Effect of airmass and HA bonuses} 
 
-In a general sense, observations are most effective when obtained as near as possible to the meridian. This is where they have the lowest possible airmass, which results in smaller seeing values. Under dark sky conditions, this is also generally where the faintest sky background is found. Together these effects produce fainter limiting magnitudes near the meridian. In practice, additional considerations such as requirements to return to a field within a night or within a certain range of nights, the presence of the moon or galactic plane, and other constraints mean that observations away from the meridian can also be necessary. In \opsim v3, hard cutoff values for airmass limits were provided, but there was no way to `prefer' observations near the meridian. In \opsim v4, we now have the capability to choose observations that prefer low airmass (via the 'airmass bonus') or low hour angle angle (via the 'hour angle bonus'). 
+In a general sense, observations are most effective when obtained as near as possible to the meridian. This is where they have the lowest possible airmass, which results in smaller seeing values. Under dark sky conditions, this is also generally where the faintest sky background is found. Together these effects produce fainter limiting magnitudes near the meridian. In practice, additional considerations such as requirements to return to a field within a night or within a certain range of nights, the presence of the moon or galactic plane, and other constraints mean that observations away from the meridian can also be necessary. In \opsim v3, hard cutoff values for airmass limits were provided, but there was no way to `prefer' observations near the meridian. In \opsim v4, we now have the capability to choose observations that prefer low airmass (via the 'airmass bonus') or low hour angle angle (via the 'hour angle bonus').
 
-We investigated the effect of each of these bonus parameters, to determine how best to configure the scheduler. 
-(2 year blocks of X bonus vs 2 year blocks of HA bonus)
+The bonus values are implemented as 
+\begin{eqnarray}
+X_{bonus} = w \frac {X_{max} - X}{X_{max} - 1}\\
+HA_{bonus} = w \left( 1 - \frac{| HA |}{HA_{max}} \right)
+\end{eqnarray}
+where $w$ in each case is the weight assigned to the bonus value, a configurable parameter ({\it i.e.} when referring to an airmass bonus of 0.5, the weight is set to 0.5). $X_{max}$ is always set to the maximum airmass allowed for each filter in the proposal, matching the cutoff airmass value. $HA_{max}$ is a configurable parameter for each proposal.
+
+We investigated the effect of each of these bonus parameters, to determine how best to configure the scheduler. We find that including either of these bonus parameters to the scheduler adds some non-uniformity to the resulting sky coverage. When choosing the field for the next visit, the scheduler balances (approximately):
+\begin{itemize}
+\item the number of visits already obtained at that field, compared to the number of visits obtained for all other fields in the proposal
+\item if the field currently needs a return visit (to make a pair within a night)
+\item the slew time required to get to that field
+\item any bonus value added to that field (the airmass or hour angle bonus).
+\end{itemize}
+Early in the survey, all fields have approximately the same number of visits and so the bonus values tend to be more important; later in the survey, any previous non-uniformities caused by weather or previous quirks in scheduling tend to be more important. Other sources of non-uniformity include the slew time (which is non-linear due to closed-loop optics correction requirements after elevation changes of 9 degrees) and revisiting fields or observing deep drilling fields. 
+
+In Figure~\ref{fig:nvisits_comp_maps}, the results of two comparable `strength' bonus values are shown. At the end of the ten year survey, the final uniformity in sky coverage is generally similar. However, the surveys do not progress with the same degree of uniformity; the airmass bonus, in particular, adds a predictable declination non-uniformity, as observations are preferred near the zenith (rather than just near the meridian). While both surveys suffer from non-uniformity at any given time, the non-uniformity as a result of the hour angle bonus is smaller. Thus we prefer to use the hour angle bonus to bias observations toward the meridian. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/nvisits_comp_maps}
+%\vskip -0.2in
+\caption{Comparison of the number of visits in distinct two year time periods throughout the ten year simulated survey lifetime, for two different simulated surveys. In the left column, astro-lsst-01\_2016 is a run with an airmass bonus weight of 0.5 and no $HA$ bonus. In the right columns, astro-lsst-01\_2021 is a run with no airmass bonus but an $HA$ bonus weight of 0.5, with $HA_{max}$ of 6 hours. There is significant non-uniformity with either bonus, however it is a larger effect with the airmass bonus and is, furthermore, strongly tied to the declination of the field.
+\label{fig:nvisits_comp_maps}}
+\end{figure}
 
 
 \section{New baseline survey recommendation}
@@ -215,7 +238,7 @@ Other changes we find with the new baseline run, astro-lsst-01\_2022, when compa
 \item The non-uniformity of the visit coverage around the sky results in more fields not quite reaching the desired number of visits in all filters (i.e. the MAF `completeness' metric falls). This is undesirable, but given that the SRD requirement on fO is satisfied, this is a place for improvement but not for discarding the simulated survey. 
 \item The area which receives rapid revisits (revisits between 40 seconds to 30 minutes in time), in particular the area with uniform time coverage within this time span, falls. This is again undesirable, but the minimum amount of area that must be covered within this time frame according to the SRD is still satisfied. In addition, the implementation of this metric should be improved. 
 \item While the fraction of the total time spent on Deep Drilling remains approximately constant, the number of observations for some of the deep drilling fields fell considerably. The observations for Deep Drilling were not distributed evenly among all fields. This is a place for improvement in the scheduler.
-\item Visits are obtained near the meridian, with a much narrower range of hour angle. The western bias in observation is almost nonexistent. See Figure~\ref{fig:hour_angle_comparison}. 
+\item Visits are obtained near the meridian, with a much narrower range of hour angle. The western bias in observation is almost nonexistent. See Figure~\ref{fig:hour_angle_comparison}.  This is a positive result, as it also increases the depth in each visit and decreases the seeing. It is linked with the increase in the effective time of the survey.
 \item The parallax-DCR degeneracy decreases. This is due to observing near the meridian, thus decreasing DCR signal. This is a positive result.
 \item The median value of the maximum gap between visits increases. This implies the season length is (on average) shorter for most fields. At the same time, we see that the median value of the median gap between visits decreases, implying a slightly quicker revisit rate. These two effects are linked, and also tied to observing near the meridian. This is expected to be a positive result in this simulated survey.
 \end{itemize}
@@ -300,12 +323,35 @@ Open Shutter Fraction                                &               0.735 &    
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.6\textwidth]{figures/hour_angle_comparison}
+\includegraphics[width=0.8\textwidth]{figures/hour_angle_comparison}
 %\vskip -0.2in
 \caption{Comparison of the hour angle distribution, per filter, in minion\_1016 (dotted lines) and astro-lsst-01\_2022 (solid lines). The known issue with western bias in minion\_1016 can clearly be seen. This does not occur in astro-lsst-01\_2022, which also has a much tighter distribution of hour angles. 
 \label{fig:hour_angle_comparison}}
 \end{figure}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_NVisits_u_band_HEAL_SkyMap}
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_NVisits_g_band_HEAL_SkyMap} \\
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_NVisits_r_band_HEAL_SkyMap}
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_NVisits_i_band_HEAL_SkyMap} \\
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_NVisits_z_band_HEAL_SkyMap}
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_NVisits_y_band_HEAL_SkyMap}
+\caption{Number of visits per filter for astro-lsst-01\_2022. 
+\label{fig:baseline_nvisits}}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_CoaddM5_u_band_HEAL_SkyMap}
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_CoaddM5_g_band_HEAL_SkyMap} \\
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_CoaddM5_r_band_HEAL_SkyMap} 
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_CoaddM5_i_band_HEAL_SkyMap}  \\
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_CoaddM5_z_band_HEAL_SkyMap}
+\includegraphics[width=0.4\textwidth]{figures/astro-lsst-01_2022_CoaddM5_y_band_HEAL_SkyMap}
+\caption{Coadded depth per filter for astro-lsst-01\_2022. 
+\label{fig:baseline_coadd}}
+\end{figure}
 
 
 \section{Known issues}
