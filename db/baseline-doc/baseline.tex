@@ -86,12 +86,12 @@ minion\_1016\_oldsky & \opsim v3 & Previous baseline, with old sky brightness va
 minion\_1016\_newsky &  & Previous baseline, reprocessed with new \simsky values.\\
 astro-lsst-01\_2020 & \opsim v4  & All new features turned off (reproduce minion\_1016) \\
 colossus\_2432 &  & Add time-balancing (TB).\\
-colossus\_2328 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus=0.05. \\
-astro-lsst-01\_2016 &  & TB, GV, Add airmass bonus, $X$ bonus = 0.5 \\
-astro-lsst-01\_2013 &  & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=3 hr\\
-colossus\_2378 &  &  TB, GV, Add $HA$ bonus=0.8, $HA_{max}$=6 hr\\
-astro-lsst-01\_2021 & & TB, GV, Add $HA$ bonus=0.5, $HA_{max}$=6  hr\\
-astro-lsst-01\_2022 &   & TB, GV, Add $HA$ bonus=0.3, $HA_{max}$=3 hr\\
+colossus\_2328 &  & TB, Add restrict group visits (GV), and mild $HA$ bonus weight =0.05. \\
+astro-lsst-01\_2016 &  & TB, GV, Add airmass bonus, $X$ bonus weight = 0.5 \\
+astro-lsst-01\_2013 &  & TB, GV, Add $HA$ bonus weight =0.5, $HA_{max}$=3 hr\\
+colossus\_2378 &  &  TB, GV, Add $HA$ bonus weight =0.8, $HA_{max}$=6 hr\\
+astro-lsst-01\_2021 & & TB, GV, Add $HA$ bonus weight =0.5, $HA_{max}$=6  hr\\
+astro-lsst-01\_2022 &   & TB, GV, Add $HA$ bonus weight =0.3, $HA_{max}$=3 hr\\
 % colossus_2327 & & no time balancing, yes grouped visits
 % colossus_2371 &  & no time balancing, no grouped visits
 % colossus_2399 & & TB, GV, HA bonus 0.5 HAmax 6 
@@ -109,6 +109,7 @@ The \opsim v3 model was based on \citet{1991PASP..103.1033K} (K\&S), which provi
 
 \opsim v4 uses the \simsky package \citep{2016SPIE.9910E..1AY}, which is based on the ESO SkyCalc Sky Model Calculator  (v1.4) for non-twilight sky brightness calculations with an added empirical twilight sky model. The sky brightness calculated for each field depends on the field alt/az position, the lunar alt/az, the lunar phase, the sun alt/az, and the filter of the observation. It includes contributions from emission from the upper and lower atmosphere, scattered starlight, scattered moonlight, and zodiacal light, along with an additional component of scattered sunlight during twilight (sun altitude between -11 and -20 degrees). The transitions into and out of twilight are much smoother, and notably, the twilight sky can be darker than the specified sky brightness limits even in $u$ band near zenith. Thus in runs produced with \opsim v4.1, sometimes observations in $u$, $g$, $r$ or $i$ are taken during twilight due to a simple hard-limit on the sky brightness. It is possible to set these limits strictly enough to avoid this, however then some non-twilight observations at higher airmass, smaller distances to the moon, or at greater lunar phases, will also be ruled out, leaving significantly less flexibility in scheduling `normal' observations. In the future, the hard-limit will be replaced by a soft-constraint bonus, such as a preference for observations closer to the theoretical darkest sky brightness possible at a given time. 
 
+%https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9910/1/An-optical-to-IR-sky-brightness-model-for-the-LSST/10.1117/12.2232947.full?SSO=1
 %https://community.lsst.org/t/comparing-eso-sky-model-to-current-opsim-sky-values/489/2
 %https://github.com/rhiannonlynne/notebooks/blob/master/skybright%20changes.ipynb
 
@@ -202,10 +203,10 @@ In a general sense, observations are most effective when obtained as near as pos
 
 The bonus values are implemented as 
 \begin{eqnarray}
-X_{bonus} = w \frac {X_{max} - X}{X_{max} - 1}\\
-HA_{bonus} = w \left( 1 - \frac{| HA |}{HA_{max}} \right)
+X_{bonus} = X_{bonus\, weight}  \frac {X_{max} - X}{X_{max} - 1}\\
+HA_{bonus} = HA_{bonus\, weight}  \left( 1 - \frac{| HA |}{HA_{max}} \right)
 \end{eqnarray}
-where $w$ in each case is the weight assigned to the bonus value, a configurable parameter ({\it i.e.} when referring to an airmass bonus of 0.5, the weight is set to 0.5). $X_{max}$ is always set to the maximum airmass allowed for each filter in the proposal, matching the cutoff airmass value. $HA_{max}$ is a configurable parameter for each proposal.
+where the bonus weight ($X_{bonus\, weight}$, $HA_{bonus\, weight}$) is the overall weight assigned to the bonus value, a configurable parameter ({\it i.e.} when referring to an airmass bonus of 0.5, the weight is set to 0.5). $X_{max}$ is always set to the maximum airmass allowed for each filter in the proposal, matching the cutoff airmass value. $HA_{max}$ is a configurable parameter for each proposal.
 
 We investigated the effect of each of these bonus parameters, to determine how best to configure the scheduler. We find that including either of these bonus parameters to the scheduler adds some non-uniformity to the resulting sky coverage. When choosing the field for the next visit, the scheduler balances (approximately):
 \begin{itemize}
@@ -233,7 +234,7 @@ The SRD places requirements on the amount of sky which receives a given minimum 
 
 In the v3 baseline, minion\_1016, the SRD fO metric values were relatively high, as the overall number of visits was larger. With \opsim v4, the airmass or hour angle bonuses add preferences for observations in better conditions (closer to the meridian) but which result in longer slew times. This reduces the overall number of visits but increases the effective time of the survey. The fO metrics fail when these bonuses are set to particularly strong values, primarily because the observations are spread more unevenly over the sky (see Figure~\ref{fig:uniformity_all}.  Observing close to the meridian in some regions of $RA$ is difficult due to the arrangement of the Deep Drilling fields and the North Ecliptic Spur (see Figure~\ref{fig:uniformity_dd}. With a fewer number of overall visits, this pushes some areas down below the benchmark (825 visits) value, causing these fO metric values to fall below the required thresholds. 
 
-As discussed in the previous section, we prefer using the HA bonus parameter to achieve better uniformity over time than with the airmass bonus parameter. We also find here that we cannot use a strong HA bonus, due to the resulting non-uniformity in visit distribution across the sky in the WFD fields. We find that the configurations producing astro-lsst-01\_2021 ($HA$ bonus = 0.5, $HA_{max}$  = 6 hrs) and astro-lsst-01\_2022 ($HA$ bonus=0.3, $HA_{max}$ = 3 hrs) produce reasonable baseline runs; we choose astro-lsst-01\_2022 as the candidate baseline run as it performs slightly better in the effective time metric and produces a slightly smaller number of outliers in the $HA$ distribution.  A comparison of select top-level astro-lsst-01\_2022 statistics versus minion\_1016 is shown in Table~\ref{tab:baseline_comparison}. 
+As discussed in the previous section, we prefer using the HA bonus parameter to achieve better uniformity over time than with the airmass bonus parameter. We also find here that we cannot use a strong HA bonus, due to the resulting non-uniformity in visit distribution across the sky in the WFD fields. We find that the configurations producing astro-lsst-01\_2021 ($HA$ bonus weight = 0.5, $HA_{max}$  = 6 hrs) and astro-lsst-01\_2022 ($HA$ bonus weight=0.3, $HA_{max}$ = 3 hrs) produce reasonable baseline runs; we choose astro-lsst-01\_2022 as the candidate baseline run as it performs slightly better in the effective time metric and produces a slightly smaller number of outliers in the $HA$ distribution.  A comparison of select top-level astro-lsst-01\_2022 statistics versus minion\_1016 is shown in Table~\ref{tab:baseline_comparison}. 
 
 Other changes we find with the new baseline run, astro-lsst-01\_2022, when compared with minion\_1016: 
 \begin{itemize}
@@ -363,6 +364,10 @@ There are some known issues with astro-lsst-01\_2022, common to all \opsim v4 si
 There are some visits with higher than expected seeingFwhmEff values - even as large as 4.1". This is because the configuration files specify a cutoff for `seeing', but the scheduler only knows about the zenith value of the seeing when deciding whether a visit could be scheduled or not (rather than the seeing at the location of the field). Thus, some visits have a seeingFwhmEff which exceeds the configuration parameters due to the airmass at which the field was observed -- the seeing at zenith at the same time was within the limits.
 
 There are occasional $u$ band visits during twilight. This is because the filter for a particular visit is chosen based on a combination of what observations have already been obtained, what filter is currently in the camera and in use, and hard limits on the sky brightness. With the new \simsky values for sky brightness, the twilight sky background can be within the cutoff limits even for $u$ band -- especially near zenith and on particularly dark nights. Thus, observing in $u$ band during twilight doesn't violate any of the configuration constraints because the sky is dark enough to meet the constraint. It is impossible, with a simple hard constraint, to choose a value that permits observing in $u$ band at a wide range of airmasses and reasonable range of lunar phases, while rejecting $u$ band observations during twilight at zenith on dark nights. A similar condition exists for $g$ band.
+
+The visits for astro-lsst-01\_2022, as with all \opsim v3 and v4 runs, are pinned to a fixed tesselation on the sky, without any translational dithering pattern. Different dithering patterns can be applied as an `after burner' via MAF, to smooth out visit coverage over the sky. Due to how these dither patterns may be applied, if visits are pushed out of the main footprint, the resulting values for the fO metrics may fall below the SRD requirements. Better dither patterns, or even better yet, folding dithers back into the scheduler directly, are required. 
+
+The camera rotator angle has maximum values at +/- 90 degrees, and must be set to an angle of 0 for filter changes. The current scheduler does not add any particular choice of orientation to the rotator angle, instead simply letting the rotator follow the sky during observations and then holding its angle unchanged during a slew. In addition, in the current scheduler algorithm, if a target would require moving the rotator beyond these limits, the target is simply skipped. In the future, it may be desirable to add a more sophisticated choice of rotator angles, to smooth the distribution of angles used for observing a given field. 
 
 These issues will be addressed with updates in a future version of the scheduler. 
 
