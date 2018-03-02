@@ -1,5 +1,7 @@
 ### Potential runs to prepare for white paper call ###
 
+Please note that this is a work in progress, a place to gather thoughts on what runs might be useful at the time of the call for white papers.
+
 Baseline
   WFD with 18,000 sq deg footprint; NES; SCP + GP with 30 visits/filter; DD with 5 fields with u + grizy sequences.
   astro-lsst-01_2022 (baseline_2018a)
