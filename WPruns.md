@@ -32,9 +32,9 @@ Rolling cadence - spherical harmonics
 Rolling cadence experiments - but all on/off vs. leave some percent of the background WFD "on"
 
 Pairs in the same filter, vs. pairs in different filters. 
-Single visits in a night.
-Triple visits in a night.
-TOO visits - X triggers per year, to search ? fields around a given field location to ? depth in ? filter
 
-If time:
-Targeted specific series of observations like previous DD white papers - SS target, 47 Tuc, Magellanic Clouds
+Single visits in a night.
+
+Triple visits in a night.
+
+TOO visits - X triggers per year, to search ? fields around a given field location to ? depth in ? filter
