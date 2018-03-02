@@ -2,7 +2,7 @@
 
 Important! This is a work in progress. We are gathering constraints here, but these should not yet be considered finalized or comprehensive.  There is also an important difference to consider between requirements (especially minimum specs) and expected performance, which could be better than those requirements. In cases where we do not have solid information on expected performance, we are quoting requirements.
 
-For the official requirements on the Telescope & Site subsystems, please see [LSE-60](https://docushare.lsst.org/docushare/dsweb/Get/LSE-60) and for the requirements for the Camera subsystem, please see [LSE-59](https://docushare.lsst.org/docushare/dsweb/Get/LSE-59). 
+For the official requirements on the Telescope & Site subsystems, please see [LSE-60](https://docushare.lsst.org/docushare/dsweb/Get/LSE-60) and for the requirements for the Camera subsystem, please see [LSE-59](https://docushare.lsst.org/docushare/dsweb/Get/LSE-59).  The filter constraints are described in [SPT-494](http://ls.st/SPT-494). 
 
 
 ### Pointing constraints ###
