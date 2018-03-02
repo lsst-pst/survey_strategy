@@ -393,6 +393,77 @@ The simulated survey output database, astro-lsst-01\_2022.db, is available in th
 \section{Details of astro-lsst-01\_2022}
 
 
+The Baseline Cadence, astro-lsst-01\_2022, has the following basic properties:
+\begin{enumerate}
+\item The total number of visits is 2,372,700, with 86.0\% spent on
+the main Wide, Fast, Deep (WFD) survey, 5.0\% on the
+North Ecliptic Spur proposal, 1.6\% on the Galactic Plane proposal, 2.0\%
+on the South Celestial Pole proposal, and 5.0\% on the Deep Drilling
+Cosmology proposal (5 fields).\footnote{The community-contributed white papers leading to the
+Deep Drilling fields defined in the Baseline Cadence can be found via
+\url{https://community.lsst.org/t/deep-drilling-whitepapers/732}.}
+
+\item The median number of visits per night is 785, the range is
+139 to 1082, with 3,025 observing nights. The mean slew time is 7.92
+seconds (median: 5.17 sec) and the total exposure time (after 10 years) is 71.2 Msec (total number of visits $\times$ mean exposure time).
+The surveying efficiency, or the median total open shutter time (per night)
+as a fraction of the observing time (the ratio of the open shutter time to
+the sum of the open shutter time, readout time and slew time) is 72\%.
+
+\item
+The 25\%-75\% quartiles for the number of filter changes per night are 1
+and 4, with the mean of 3.13 The total number of filter changes through the survey is 10,644.
+
+\item In the $r$ band, the median effective seeing for all proposals is 0.86 arcseconds.
+The median airmass of all visits, for all filters and all proposals is 1.08.
+The median single-visit $5\sigma$ depth for point sources in $r$ band in the WFD area is 24.27 (using the best
+current estimate of the fiducial depth at airmass of one, $m_5(r)=24.34$).
+The variation of the median airmass for the $r$
+band observations with the position on the sky is shown in
+\autoref{fig:baseline_airmass}.
+
+\item The median single-visit depths for WFD fields are (23.32, 24.63, 24.27,
+23.70, 22.79, 22.00) in the $ugrizy$ bands.
+
+\item For the 2,293 (overlapping) fields from the WFD area,
+the median number of visits in the $ugrizy$ bands is (61, 85, 194, 193, 180,
+179), respectively. These medians exceed the requested
+number of visits (design specification from the SRD\footnote{The LSST
+Science Requirements Document (SRD) is available as
+\url{http://ls.st/lpm-17}}) of (56, 80, 184, 184, 160, 160) in the $ugrizy$
+bands.
+
+\item The median coadded $5\sigma$ depth
+for point sources in the $ugrizy$ bands is (25.6, 27.1, 27.2, 26.6,
+25.7, 24.9), respectively, for the WFD area. The distribution
+of coadded depth across the sky is fairly uniform, as illustrated in \autoref{fig:baseline_coaddm5}.
+
+\item Restricted to the WFD fields, a unique area of
+18,000 square degrees received at least 836 visits per field (summed over bands;
+the SRD design value is 825).
+
+\item The median trigonometric parallax and proper motion errors are
+0.55 mas and 0.15 mas/yr, respectively, for bright sources (limited by
+assumed systematic errors in relative astrometry of 10 mas), and 6.3
+mas and 1.7 mas/yr for points sources with $r=24$ (assuming a flat
+spectral energy distribution), in the WFD fields. The variation of parallax
+and proper motion errors across the sky is visualized in \autoref{fig:baseline_parapm}.
+\end{enumerate}
+
+Here we only provide the basic
+performance parameters of the special proposals. 
+The North Ecliptic Spur proposal (5.0\% of the observing time) obtained  245 visits per field, summed over $griz$ bands. 
+These fields are placed along the northern part of the Ecliptic. 
+The Galactic Plane proposal (1.6\%) obtained (27, 27, 27, 27, 29, 30) visits in $ugrizy$, respectively, per field
+across the region extending in Galactic latitude 10 degrees
+from the Galactic center, with the boundary approaching the Galactic
+equator linearly with longitude, and the zone ending at $l=90$ deg.
+and at $l=270$ deg. 
+The South Celestial Pole proposal (2.0\%) obtained
+obtained (26, 26, 26, 26, 28, 38) visits in $ugrizy$, respectively, for fields centers with Dec $<-62.5$ deg. 
+The Deep Drilling proposal (5.0\%) included 5 fields, with each obtaining several thousand visits per band 
+as required for various cosmology investigations. The coadded $5\sigma$ depths for these fields are much 
+fainter than for the main survey: the median values are (27.9, 28.6, 28.7, 28.2, 27.8, 26.1) in the $ugrizy$ bands, respectively.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[ht]
@@ -400,7 +471,7 @@ The simulated survey output database, astro-lsst-01\_2022.db, is available in th
 \includegraphics[width=0.49\textwidth]{figures/astro-lsst-01_2022_Median_airmass_r_band_all_props_OPSI_SkyMap}
 \includegraphics[width=0.49\textwidth]{figures/astro-lsst-01_2022_Median_airmass_r_band_all_props_OPSI_Histogram}
 %\vskip -1.3in
-\caption{The median airmass in the $r$ band across the sky for simulated cadence
+\caption{The median airmass in the $r$ band across the sky for simulated survey
 astro-lsst-01\_2022 is shown in Aitoff projection of equatorial coordinates
 in the left panel. The red line shows the Ecliptic and the blue line shows the Galactic
 equator. The blue curve splits to enclose the so-called ``Galactic confusion zone''. The corresponding
@@ -436,102 +507,20 @@ fields, with a median $5\sigma$ depth of 28.7.}
 by the values for idealized perfectly optimized cadences (parallax: all the observations are taken
 at maximum parallax factor, resulting in a peak at the South Ecliptic pole; proper motion:
 a half of all visits are obtained on the first day and the rest on the last day of the survey),
-obtained for simulated cadence astro-lsst-01\_2022 are shown in Aitoff projection of equatorial
-coordinates.}
-\label{fig:baseline_parapm}
+obtained for simulated survey astro-lsst-01\_2022.
+\label{fig:baseline_parapm}}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-The Baseline Cadence,
-astro-lsst-01\_2022, has the following basic
-properties
-\begin{enumerate}
-\item The total number of visits is 2,372,700, with 86.0\% spent on
-the main Wide, Fast, Deep (WFD) survey, 5.0\% on the
-North Ecliptic Spur proposal, 1.6\% on the Galactic Plane proposal, 2.0\%
-on the South Celestial Pole proposal, and 5.0\% on the Deep Drilling
-Cosmology proposal (5 fields).\footnote{The community-contributed white papers leading to the
-Deep Drilling fields defined in the Baseline Cadence can be found via
-\url{https://community.lsst.org/t/deep-drilling-whitepapers/732}.}
-\item The median number of visits per night is 785, the range is
-139 to 1082, with 3,025 observing nights. The mean slew time is 7.92
-seconds (median: 5.17 sec) and the total exposure time (after 10 years) is 71.2 Msec (total number of visits $\times$ mean exposure time).
-The surveying efficiency, or the median total open shutter time (per night)
-as a fraction of the observing time (the ratio of the open shutter time to
-the sum of the open shutter time, readout time and slew time) is 72\%.
-\item
-The 25\%-75\% quartiles for the number of filter changes per night are 1
-and 4, with the mean of 3.13 The total number of filter changes through the survey is 10,644.
-\item In the $r$ band, the median effective seeing for all proposals is 0.86 arcsec.
-The median airmass for all filters and all proposals is 1.08.
-The median single-visit $5\sigma$ depth for point sources in $r$ band in the WFD area is 24.27 (using the best
-current estimate of the fiducial depth at airmass of one, $m_5(r)=24.39$,
-defined by the SRD Table 5). The variation of the median airmass for the $r$
-band observations with the position on the sky is shown in
-\autoref{fig:baseline_airmass}.
-\item The median single-visit depths for WFD fields are (23.32, 24.63, 24.27,
-23.70, 22.79, 22.00) in the $ugrizy$ bands.
-% \footnote{Note that these values
-% depend on externally supplied values for fiducial zenith dark time single-epoch
-% $5\sigma$ depths; the following values were used in analysis described
-% here: (23.62, 24.85, 24.39, 23.94, 23.36, 22.45) in the $ugrizy$
-% bands, respectively. These values are similar, but not identical, to the values
-% listed in Table 2 from the latest version (v3.1) of the LSST overview
-% paper: (23.68, 24.89, 24.43, 24.00, 23.45, 22.60). This discrepancy
-% is due to continuing improvements in the system performance estimates.}.
-% These values are shallower than
-% the zenith dark time values for three main reasons: the sky is expected to be
-% brighter for non-dark time and away from zenith, the sky brightness model
-% currently implemented in \OpSim has some shortcomings (a new model has been implemented for version 4),
-% and the moon avoidance is not as aggressive
-% as it could be (many observations are taken very close to the moon avoidance limit of 30 degrees,
-% rather than farther away where the sky is darker). As a result, the median limiting depths
-% above are brighter than typical zenith dark-time images by close
-% to 1 mag in the $z$ and $y$ bands, and a few tenths of a magnitude in the
-% $u$, $g$ and $i$ bands.
-\item For the 2,293 (overlapping) fields from the WFD area,
-the median number of visits in the $ugrizy$ bands is (61, 85, 194, 193, 180,
-179), respectively. These medians exceed the requested
-number of visits (design specification from the SRD\footnote{The LSST
-Science Requirements Document (SRD) is available as
-\url{http://ls.st/lpm-17}}) of (56, 80, 184, 184, 160, 160) in the $ugrizy$
-bands.
-\item The median coadded $5\sigma$ depth
-for point sources in the $ugrizy$ bands is (25.6, 27.1, 27.2, 26.6,
-25.7, 24.9), respectively, for the WFD area. The distribution
-of coadded depth across the sky is fairly uniform, as illustrated in \autoref{fig:baseline_coaddm5}.
-% Do we still need this FWHMgeom
-% \item For the 2,293 fields from the WFD area, the median
-% geometric FWHM for seeing is 0.78 arcsec in the $r$ band and 0.77 arcsec
-% in the $i$ band. The median airmass in the $urz$ bands is 1.25, 1.20 and 1.26
-% (the maximum allowed airmass for the WFD area was set to
-% 1.5).  The median sky brightness in the $ury$ bands is 22.0 mag/arcsec$^2$,
-% 21.1 mag/arcsec$^2$, and 17.3 mag/arcsec$^2$, respectively (for comparison, the
-% assumed dark sky brightness at zenith in the $ury$ bands is 23.0, 21.2 and 18.6
-% mag/arcsec$^2$).  The current model sky brightness in the $y$ band is biased
-% very high because most $y$ band (and many $z$ band) observations are taken in twilight where \OpSim currently uses a very simple (and bright) sky model.
-\item Restricted to the WFD fields, a unique area of
-18,000 square degrees received at least 835 visits per field (summed over bands;
-the SRD design value is 825).
-\item The median trigonometric parallax and proper motion errors are
-0.57 mas and 0.14 mas/yr, respectively, for bright sources (limited by
-assumed systematic errors in relative astrometry of 10 mas), and 5.1
-mas and 1.3 mas/yr for points sources with $r=24$ (assuming flat
-spectral energy distribution), over the WFD fields. The variation of parallax
-and proper motion errors across the sky is visualized in \autoref{fig:baseline_parapm}.
-\end{enumerate}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t!]
 \includegraphics[width=0.49\textwidth]{figures/astro-lsst-01_2022-ha_hist_per_filter.pdf}
 \includegraphics[width=0.49\textwidth]{figures/astro-lsst-01_2022_Mean_HA_r_band_all_props_OPSI_SkyMap.pdf}
 \caption{Histograms in the left panel show the distribution of hour angles (HA) in
-6 bands for all proposals from simulated cadence astro-lsst-01\_2022.
+6 bands for all proposals from simulated survey astro-lsst-01\_2022.
 The right panel shows the distribution across the sky of the mean HA for
-all observations in the $r$ band. }
-\label{fig:baseline_ha}
+all observations in the $r$ band. 
+\label{fig:baseline_ha}}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -541,7 +530,7 @@ all observations in the $r$ band. }
 \includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Nvisits_as_function_of_Alt_Az_all_observations_HEAL_SkyMap.pdf}
 \includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Nvisits_as_function_of_Alt_Az_r_WideFastDeep_HEAL_SkyMap.pdf}
 \vskip -0.1in
-\caption{The color-coded map in the left panel shows the visit count from the
+\caption{XXX REDO The color-coded map in the left panel shows the visit count from the
 Baseline Cadence simulation astro-lsst-01\_2022 in the equal-area Lambert projection of the
 horizontal coordinate system (altitude-azimuth), with north on top and west towards the
 right, for all six bands and proposals (Wide, Fast, Deep, Galactic Plane, Deep Drilling
@@ -568,26 +557,24 @@ $r$ band distribution across the sky is shown in the right panel.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t!]
 \vskip -0.0in
-\includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Median_Intra-Night_Gap_HEAL_SkyMap.pdf}
-\includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022-median_intra_night_gap_hist.pdf}
+\includegraphics[width=0.45\textwidth]{figures/astro-lsst-01_2022_Median_Intra-Night_Gap_HEAL_SkyMap.pdf}
+\includegraphics[width=0.45\textwidth]{figures/astro-lsst-01_2022-median_intra_night_gap_hist.pdf}
 \vskip -0.1in
-\caption{The median intra-night gap (or revisit time) is shown in Aitoff projection
-for all proposals and all filters for the Baseline Cadence astro-lsst-01\_2022.
-On average, when a field is observed multiple times in a night there is a 28 minute gap between the observations.}
-\label{fig:baseline_InterGapAll}
+\caption{The median intra-night gap (or revisit time) for all proposals and all filters for astro-lsst-01\_2022.
+The median gap between observations, when a field is observed multiple times in a night, is 28 minutes.
+\label{fig:baseline_InterGapAll}}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t!]
 \vskip -0.0in
-\includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Median_Inter-Night_Gap_HEAL_SkyMap.pdf}
-\includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Median_Inter-Night_Gap_HEAL_Histogram.pdf}
+\includegraphics[width=0.45\textwidth{figures/astro-lsst-01_2022_Median_Inter-Night_Gap_HEAL_SkyMap.pdf}
+\includegraphics[width=0.45\textwidth]{figures/astro-lsst-01_2022_Median_Inter-Night_Gap_HEAL_Histogram.pdf}
 \vskip -0.1in
-\caption{The median inter-night gap (or revisit time) is shown in Aitoff projection
-for all proposals and all filters for the Baseline Cadence astro-lsst-01\_2022.
-On average, fields in the main survey get revisited about every 2 days.}
-\label{fig:baseline_GapAll}
+\caption{The median inter-night gap (or revisit time)  for all proposals and all filters for astro-lsst-01\_2022.
+The median gap between nights with observations is 2 nights.
+\label{fig:baseline_GapAll}}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -598,8 +585,7 @@ On average, fields in the main survey get revisited about every 2 days.}
 \includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Median_Inter-Night_Gap_r_HEAL_SkyMap.pdf}
 \includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Median_Inter-Night_Gap_r_HEAL_Histogram.pdf}
 \vskip -0.1in
-\caption{The median inter-night gap for $r$ band visits is shown in Aitoff projection
-for all proposals for the Baseline Cadence astro-lsst-01\_2022.
+\caption{The median inter-night gap for $r$ band visits for all proposals for astro-lsst-01\_2022.
 On average, fields in the main survey get revisited in the $r$ band about every two weeks.}
 \label{fig:baseline_Gapr}
 \end{figure}
@@ -611,42 +597,12 @@ On average, fields in the main survey get revisited in the $r$ band about every 
 \includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Max_Inter-Night_Gap_all_bands_HEAL_SkyMap.pdf}
 \includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_Max_Inter-Night_Gap_all_bands_HEAL_Histogram.pdf}
 \vskip -0.1in
-\caption{The maximum inter-night gap (or revisit time) is shown in Aitoff projection
-for all proposals and all filters for the Baseline Cadence astro-lsst-01\_2022.}
+\caption{The maximum inter-night gap (or revisit time) for all proposals and all filters for astro-lsst-01\_2022.}
 \label{fig:baseline_MAXGapAll}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\vskip -0.0in
-\includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_SNAlert_non-dithered_HEAL_SkyMap.pdf}
-\includegraphics[angle=0,width=0.49\hsize,clip]{figures/astro-lsst-01_2022_SNAlert_non-dithered_HEAL_Histogram.pdf}
-\vskip -0.1in
 
-\caption{The fraction of simulated Type Ia SNe at a redshift of 0.5 detected
-pre-peak in any filter for the Baseline Cadence astro-lsst-01\_2022. About
-40\% of all such SNe from the main survey will be detected before their
-maximum brightness.}
-\label{fig:baseline_EarlySNe}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Here we only provide the basic
-performance parameters of the special proposals. The
-North Ecliptic Spur proposal (5.0\% of the observing time) obtained  245 visits per field, summed over $griz$ bands. These
-fields are placed along the northern part of the Ecliptic. The
-Galactic Plane proposal (1.6\%) obtained (27, 27, 27, 27, 29, 30) visits in $ugrizy$, respectively, per field
-across the region extending in Galactic latitude 10 degrees
-from the Galactic center, with the boundary approaching the Galactic
-equator linearly with longitude, and the zone ending at $l=90$ deg.
-and at $l=270$ deg. The South Celestial Pole proposal (2.0\%) obtained
-obtained (26, 26, 26, 26, 28, 38) visits in $ugrizy$, respectively, for fields centers with Dec $<
--62.5$ deg. The Deep Drilling proposal (5.0\%) included 5
-fields, with each obtaining several thousand visits per band as required for various cosmology investigations. The
-coadded $5\sigma$ depths for these fields are much fainter than for
-the main survey: the median values are (27.9, 28.6, 28.7, 28.2, 27.8,
-26.1) in the $ugrizy$ bands, respectively.
 
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
