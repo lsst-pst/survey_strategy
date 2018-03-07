@@ -11,7 +11,7 @@
 %% Journal abbreviations
 %\bibliographystyle{aasjournal}
 
-\title[Call for LSST Cadence White Papers]{Call for White Papers on LSST Cadence Modifications} 
+\title[Call for LSST Cadence White Papers]{Call for White Papers for LSST Cadence Optimization} 
 
 \author{\v{Z}eljko Ivezi\'{c}, Lynne Jones, Tiago Ribiera, 
              \\  the LSST Project Science Team, 
@@ -24,7 +24,7 @@
 \setDocAbstract{%
 The LSST community is invited to play a key role in the refinement of LSST’s Observing Strategy 
 by submitting white papers that will describe proposed modifications of the current baseline
-cadence.
+cadence, including both the main survey and the so-called ``deep drilling fields'' and mini surveys. 
 }
 
 % Change history defined here. Will be inserted into
@@ -43,20 +43,24 @@ cadence.
 
 \section{Introduction} 
 
-General context... evolving science, cadence...
-
-The Large Synoptic Survey Telescope is designed to provide an unprecedented optical 
+The Large Synoptic Survey Telescope (LSST) is designed to provide an unprecedented optical 
 imaging dataset that will support investigations of our Solar System, Galaxy and Universe, 
 across half the sky and over ten years of repeated observation. LSST is constructing a 
-flexible scheduling system that can respond to the unexpected 
-and be re-optimized. A basic implementation of LSST's 10-year survey (simulations of 
+flexible scheduling system that can respond to the unexpected and be re-optimized. 
+It has already been shown that a basic implementation of LSST's 10-year survey (simulations of 
 the observing strategy or ``cadence'') can deliver on a wide range of science. 
-However, exactly how the LSST observations will be taken is not yet finalized. Indeed, 
-it is anticipated tha the observing strategy will continue to be refined and optimized 
-during operations.
+Nevertheless, exactly how the LSST observations will be taken is not yet finalized and there
+are a number of open optimization questions. Indeed, it is anticipated that the observing strategy 
+will continue to be refined and optimized throughout operations. The main purpose of this 
+call for white papers to community interested in LSST science is to solicit detailed proposals
+for specific modifications of the current baseline cadence, including both the main survey and 
+the so-called ``deep drilling fields'' and mini surveys. 
 
-The Community is playing a key role in the refinement of LSST’s Observing Strategy by 
-developing and analyzing metrics for simulated observing strategies.
+
+\subsection{Community and LSST Observing Strategy}
+
+The LSST Community is playing a key role in the refinement of LSST’s Observing Strategy by 
+developing and analyzing metrics for quantifying the success of simulated observing strategies.
 An open github community\footnote{
 https://github.com/LSSTScienceCollaborations/ObservingStrategy}
 is where this work is being assembled. How the detailed performance of the anticipated 
@@ -66,39 +70,191 @@ version was published as arXiv:1708.04058 in August 2017). The main lessons
 learned from the first version are: 1) The Project should implement, analyze and optimize 
 the rolling cadence idea (driven by supernovae, asteroids, short timescale variability),
 and 2) The Project should execute a systematic effort to further improve the ultimate 
-LSST cadence strategy (e.g. sky coverage optimization, u band depth, special surveys, 
-Deep Drilling Fields).
+LSST cadence strategy (e.g., sky coverage optimization, u band depth optimization, special 
+surveys, Deep Drilling Fields). 
 
 Through the end of construction and commissioning, this community Observing Strategy 
-White Paper will remain a living document that is the vehicle for the community to 
+White Paper will remain a living document that is the vehicle for the community to broadly 
 communicate to the LSST Project regarding the Wide-Fast-Deep and mini-survey observing 
-strategies. The LSST Project Scientist, \v{Z}eljko Ivezi\'{c}, will synthesize and act on the 
-results presented in this paper, with support from the Science Advisory Committee and 
-Survey Strategy Committee. He is responsible for cadence optimization efforts and is the 
-formal liaison between the community and the LSST Scheduler and Operations Simulation teams.
-
-
+strategies. The LSST Project Scientist will periodically synthesize and act on the results presented 
+in this paper, with support from the Project Science Team, the Science Advisory Committee and 
+the Survey Strategy Committee. The Project Scientist is formally responsible for cadence optimization 
+efforts and is the formal liaison between the community and the LSST Scheduler and Operations 
+Simulation teams.
 
 
 \subsection{Motivation for this white paper call}
 
+The Observing Strategy White Paper is the main vehicle for the community to communicate to the LSST Project 
+while the baseline observing strategy continues to be improved. In addition, this call for white papers... 
+
+Given the``living'' Observing Strategy white paper, explain why we need more white papers...
+
+While baseline cadence meets the basic science requirements for the LSST survey, we know that it can be meaningfully improved!
+
+We need to define quantitative science drivers for the observing strategy of the LSST (e.g. the depth and 
+filters required for early science; the sky region, cadence and number of filters required to ``measure something'').
+The SRD is intentionally vague on these details. 
+
+Refer to Open Questions (Appendix A) 
+
+SAC: We recommend that the formal definitions of the boundaries of the
+     Wide-Fast-Deep survey be re-examined with the tools available with
+     the OpSim. The scientific goals and the parameters for the currently planned
+   mini-surveys need to be re-examined. The call for white papers on additional survey modes should go out
+   only after a reasonable set of Version 4 OpSim runs have been
+   performed, analyzed, and written up for the community. In
+   addition, they should have a clear statement of process, including
+   strict timelines and a description of the review and decision-making
+   process.   The project should consider having public events such as
+   Town Halls at the AAS meeting to describe the process and bring it
+   to closure. 
+
+
 We have tools, we are close to first light... 
 
-Given the``living'' white paper, explain why we need more white papers...
+Baseline cadence is described in detail in Sections 1.1 and 2.3 in the Observing Strategy White Paper 
 
 
-\subsection{Timeline}
+\subsection{General guidelines} 
 
-Deadline, what will happen when afterwards...
+The data from any given specialized survey will be treated exactly the same way as all LSST 
+data: the proposers will have no proprietary access to it.  Indeed, the final set of deep
+drilling fields and mini-surveys may be based on an amalgam of ideas from different white 
+papers; there will be no sense in which a given proposal must be accepted or rejected as-is.  
 
-Produce, analyze and document a set of Observing Strategies and present to 
-the SAC for a final strategy recommendation (in 2020) to begin the survey.
 
+Detailed proposals are solicited for specific modifications of the current baseline cadence, 
+including both the main survey and the so-called ``deep drilling fields'' and mini surveys. 
+Some important currently open cadence optimization questions are listed in Appendix A. 
+
+Also novel ideas, such as twilight observing and (hypothetical) narrow-bandpass surveys 
+
+
+Hardware, software and observing constraints are listed in Appendix B. In case of doubt,
+or specific questions not addressed in this document, please start discussion at 
+community.lsst.org (give a link in footnote). 
 
 
 \section{How to submit a white paper?} 
 
+
+\subsection{Who can submit a white paper?} 
+
+All members of scientific community interested in LSST science are eligible to 
+submit a white paper. We reiterate that the data from any given specialized survey 
+will be treated exactly the same way as all LSST data: the proposers will have no 
+proprietary access to it. There will be no formal ``acceptance'' of proposals; with
+the overall ranking priority advice provided to the Project by the SAC, the Project
+Science Team will implement several strategies that will be used as quantitative
+input (``a menu of options'') by the SAC when recommending the strategy to be
+used during the early phase of LSST survey. 
+
+
+
+\subsection{Requested input}
+
+Response will require science objectives, positions, depth, filters, cadence of observations, and metrics to demonstrate requirements
+  
+
+DDFs, mini-surveys (Northern Ecliptic Spur, Galactic Plane, South Celestial Pole) 
+
+descriptions in the overview paper
+
+We may want to allow proposers to flag their proposal as belonging to one of:
+\begin{itemize} 
+\item a specific pointing(s) that is (relatively) agnostic of the detailed observing strategy
+          (e.g., a science case enabled by deep precise multi-color photometry) 
+\item a specific observing strategy to enable specific time domain science, that is relatively 
+          agnostic of the pointing (e.g., search for extragalactic transient populations) 
+\item an integrated program with science that hinges on the pointing/detailed observing 
+          strategy combination (e.g., search for variable stars in the LMC/SMC) 
+\end{itemize}  
+
+refer to an example of DDF in tex template below
+
+Questions of
+mini-surveys and deep drilling fields are coupled at some level to
+wide-fast-deep: more time for the former means less for the latter,
+and some of the design decisions for the latter affect the science
+case for the former.  For example, how rolling cadence is done may
+allow some variable and transient science to happen that would
+otherwise be the focus of a deep drilling field, and changes in the
+main survey footprint will affect the definition of a Galactic Plane
+survey. 
+
+
+\subsection{TeX template for submission} 
+
 We need to provide a tex template... 
+
+ZI: it seems that submitting via pull requests to a github repo should be the easiest. 
+If undergrads can do it for their homeworks, our colleagues should be able to do it, too. 
+But whatever we do, we need to think about how to make it easy for us to handle them
+once submitted. 
+
+mention any restrictions on the length of the paper. 
+
+give an example as part of template, perhaps from the overview paper
+
+can we abstract the existing DDF strategies into this template form, too? 
+
+
+Explain how to submit by a pull request to Observing Strategy White Paper repo
+(a new dir? talk to Phil M.) 
+
+
+
+
+\subsection{Review process and timeline}
+
+Deadline, what will happen when afterwards...
+
+Project will establish a committee to evaluate competing survey strategy proposals and to propose 
+a survey strategy for commissioning and operation. The committee will be comprised of project and 
+non-project personnel with SAC making recommendations for committee membership. 
+
+Produce, analyze and document a set of Observing Strategies and present to 
+the SAC for a final strategy recommendation (in 2020) to begin the survey.
+
+Recommendations to the Director about DDF selection will be made by the SAC, as guided by selection criteria set by the Project Science Team (PST), e.g. in consideration of the limiting technical criteria. The Director can further consult with the PST
+
+In addition to merit ranking the proposals, the SAC should give suggestions for combining proposals into single DDF programs, and giving suggestions for maturation of the current notional extragalactic observing strategy.
+
+
+Advertise a session at LSST AHM 2018 to clarify details, exchange ideas, discuss baseline,
+coordinate teams that plan to submit white papers... 
+
+
+\section{Proposal ranking criteria} 
+
+There will be no formal ``acceptance'' of proposals; with the overall ranking priority 
+advice provided to the Project by the SAC, the Project Science Team will implement several 
+integrated observing strategies (simulated cadences) that will be used as quantitative input
+(``a menu of options'') by the SAC when recommending the strategy to be used during the 
+early phase of LSST survey. 
+
+
+Satisfy minimum technical requirements [evaluated by PST or designates], including coming in under a 
+``rule of thumb'' amount of total observing time ($<$1\%, e.g. 250-300 hours of time, including overhead)
+
+Ranking criteria for DDF selection [For the SAC to evaluate]:  
+
+(i) Select an ensemble that will maximally enable LSST’s diverse science objectives. Functionally, this means that Solar System and Milky Way science will be prioritized for pointing selection, with Time Domain science likely driving the detailed observing strategies;  
+
+(ii) Provide a legacy dataset that will inform the development of and/or add scientific value to data from other astronomical facilities;  
+
+(iii) Observable by other flagship facilities on ground and in space.
+
+
+
+Importance and robustness of proposed science programs
+
+Versatility of data set
+
+Observing efficiency (including the system safety considerations) 
+
+Consistency with the main four LSST science themes 
 
 
 \vskip 0.0in
@@ -111,13 +267,13 @@ of the LSST Science Collaborations.
 \appendix
 
 
-\section{Examples of Current Open Cadence Questions} 
+\section{Examples of current open cadence questions} 
 
 Summarize issues addressed in the living Observing Strategy White Paper, 
 including ``The top 10 questions''... 
 
 
-1) WFD 
+\subsection{The main Wide-Fast-Deep survey} 
 
 different bands in pairs of visits?
 
@@ -125,18 +281,100 @@ dithering?
 
 rolling cadence properties (RA vs. Dec rolling) 
 
-area vs. coverage tradeoff 
+area vs. coverage tradeoff  (``Pan-STARRS cadence'')
+
+minimizing the impact of read-out noise in u band
+
+abandon snaps?
+
+twilight observing? 
+
+
+\subsection{``Deep Drilling'' fields} 
+
+White papers available from  https://project.lsst.org/content/whitepapers32012
+
+4 locations already fixed (Elais-S1, CDF-S, XMM-LSS, Cosmos) 
+
+
+The detailed cadence for the four existing deep drilling fields, and the existence and parameters 
+for the current suggested mini-surveys (North Ecliptic Spur, the Galactic Plane, and the South 
+Celestial Cap) need justificatio and finalization, and therefore are also suitable topics for white papers.  
 
 
 
+\subsection{Galactic plane survey}
+
+Confusion issue (refer to software constraints in Appendix B). 
+
+The static science (such as the Rich bulge survey with DECam and Schlafly's DECAPS survey) 
+vs. time domain survey (e.g. Saha's RR Lyrae survey with DECam)  
+
+The footprint in the current baseline cadence extends to far north along the Galactic
+plane, to the region that can only be observed at relatively large airmass from Cerro Pachon 
+($X>1.4$ at Dec=$+15^\circ$). Originally, this extension was designed to extend longitudinal 
+coverage of the Galactic plane with Galactic structure studies in mind. With the advent of other 
+surveys (e.g. Pan-STARRS and DECAPS), the reasons for obtaining these less efficient observations 
+(due to unavoidable high airmass) are less compelling. Unless a strong case is made in submitted
+white papers, the Project is likely to limit the coverage of the Galactic plane to  Dec=$<7^\circ$). 
 
 
-\section{Cadence Constraints Imposed by the LSST System} 
+
+\subsection{Southern Celestial pole mini survey}
 
 
-\subsection{Hardware Constraints}
+LMC and SMC as the main drivers, but also calibration and legacy 
 
-Per LSST Document SPT-494 (from Dec 15, 2017), by the camera team:
+
+\subsection{Northern Ecliptic spur mini survey}
+
+NEOs vs. main belt vs. TNOs 
+
+
+\subsection{Twilight survey} 
+
+Copy relevant info from Stubbs document. 
+
+
+
+\section{Cadence constraints imposed by the LSST system} 
+
+
+\subsection{Observing and exposure time constraints}
+
+The LSST Science Requirements Document  ``...assumes a nominal 10-year duration with about 90\% 
+of the observing time allocated for the main LSST survey.'', and thus 10\% of observing time is left for 
+all other programs. However, if the system will perform better than expected, or if science priorities 
+will change over time, it is conceivable that 90\% could be modified and become as low as perhaps 80\%, 
+with the observing time for other programs thus doubled. At this time, details are TBD but the Project
+is developing flexible scheduling procedures to enable such modifications. 
+
+Minimum Exposure time: Science Requirements Document stretch goal is 1s; design spec is 5s.
+Short exposures might have problems with irregular PSFs and will have a lower efficiency due to
+finite read-out time (2 sec). Exposures much longer than standard 30 sec will cause fast asteroids
+to be trailed. In dark time, the u band exposures are not background limited with the standard
+exposure time (see Table 2 and related discussions in the LSST overview paper). 
+
+Read-out time 
+
+Slew time 
+
+Standard exposure sequence: 2x15 sec 
+
+
+\subsection{Limiting depth estimates and ``cadence scaling laws''} 
+
+Summarize here m5 expressions from the overview paper and the dependence
+of various measurement errors on time. 
+
+
+\subsection{Hardware constraints}
+
+
+Telescope altitude limit, the zenith exclusion zone 
+
+
+Per LSST Document SPT-494, the constraints on the filter exchange strategy are: 
 
 For planning observations and in-dome calibration exposures, there is interest in the relevant engineering constraints on filter exchanges, beyond what is captured in requirements. As the system is not yet completely built and characterized, the following represents our current understanding, based on the design and on engineering judgement. As such, some of the details should be considered preliminary and subject to change. Expanded ranges could be possible if there are strong scientific motivations along with sufficient resources during operations.
 
@@ -149,27 +387,69 @@ During a given observing night, the system could support as many changes involvi
 Filter loader operations (swapping a filter in the carousel) will be done during daytime. The system is designed for 3000 loads over its lifetime. 
 
 
-\subsection{Software Constraints} 
 
 
-\section{Supplementary Materials} 
+\subsection{Software constraints} 
+
+The Project will not take formal responsibility for specialized data reduction algorithms needed to process
+data, including that taken in ``non-standard'' modes; 
+   
+Refer to Melissa's doc on Special Programs 
+
+Mention crowded fields (and perhaps deblending?), document from Mario. 
+
+
+
+\section{Supplementary materials} 
+
 
 \subsection{Useful publications and documents}
 
-\subsection{Useful websites}
+Give a one-sentence summary and (shortened) URL:  
 
-\subsection{Useful slide collections}
+Overview paper
+
+Science Book, SRD 
+
+Observing Strategy White Paper 
+
+DMSR (LSE-61), DPDD (LSE-163), LDM-151 
+
+OpSim description?  
+
+MAF description?  
+
+Description of the new (v4) cadence 
+
+\subsection{Useful websites and slide collections}
+
+DDF webpage with white papers 
+
+community.lsst.org page for asking questions not addressed in this document 
+
+MAF outputs for the new baseline
+
+MAF outputs for cadences from Chapter 2 in Observing Strategy white paper (perhaps
+updated with v4)
+
+``Overview of the LSST Observing Strategy'' (Nov 16, 2015): ls.st/4yh
+
+``The LSST Deep-Drilling Fields: White Papers and Science Council Selected Fields'' (Aug 15, 2016): ls.st/wzy
+
+``Observing Strategy White Paper Status Report'' (Mar 5, 2017): ls.st/zj2
+
+``LSST Plans for Cadence Optimization'' (May 30, 2017): ls.st/ot2 
 
 
-\section{Communicating with LSST} 
+\subsection{How to communicate with LSST about LSST Observing Strategy?} 
 
-The Observing Strategy white paper, and calls for DDF and mini-survey white papers, 
-are the main mechanisms for providing scientific input about cadence. 
+In addition to this call for white paper, The Observing Strategy white paper (a living document), 
+is the main mechanisms for providing scientific input about cadence. 
 \v{Z}eljko Ivezi\'{c} (ivezic at astro.washington.edu) is the point of contact.
 
 The LSST Science Advisory Committee (SAC) is charged with collecting and delivering 
-community input to the Project. Strategic and political issues should be communicated 
-via SAC (chair: Michael Strauss, strauss at astro.princeton.edu).
+community input to the Project. Strategic and political issues about the LSST cadence should 
+be communicated via the SAC (chair: Michael Strauss, strauss at astro.princeton.edu).
 
 Join a science collaboration –- a Data Management liaison is assigned to each Science Collaboration.
 Can utilize lsstc.slack.com.
@@ -177,8 +457,22 @@ Can utilize lsstc.slack.com.
 Open and archived discussions with the team (especially Data Management and Education and 
 Public Outreach) on community.lsst.org.
 
+Mention again the session at LSST AHM 2018 
+
 \end{document} 
 
- 
 
+
+\section{SAC recommendations} 
+
+Aug 14 and Dec 8, 2017: 
+
+- single call for deep drilling fields and mini-surveys
+- reviewed by SAC 
+- distribute widely (e.g., the AAS newsletter, presentations at AAS meetings, social media)
+- make opsim4 outputs available well before the deadline (essentially when the call is issued) 
+- the LSST Communications team should develop a strategy for getting the word out, using social media, 
+      the AAS newsletter, targeted e-mailing, announcements at the AAS and other meetings, and so on.
+- there should be a continuing effort to solicit new metrics (or ideas for them) from the community. 
+- need to develop details for the review proces (the decisions on observing strategy must be as objective as possible) 
 
