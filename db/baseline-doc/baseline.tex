@@ -239,7 +239,7 @@ In the v3 baseline, minion\_1016, the SRD fO metric values (the minimum number o
 
 As discussed in the previous section, we prefer using the HA bonus parameter to achieve better uniformity over time than with the airmass bonus parameter. We also find here that we must limit the strength of the HA bonus, due to the resulting non-uniformity in visit distribution across the sky in the WFD fields. We find that the configurations producing astro-lsst-01\_2021 ($HA$ bonus weight = 0.5, $HA_{max}$  = 6 hrs) and astro-lsst-01\_2022 ($HA$ bonus weight=0.3, $HA_{max}$ = 3 hrs) produce reasonable baseline runs; we choose astro-lsst-01\_2022 as the candidate baseline run as it performs slightly better in the effective time metric and produces a slightly smaller number of outliers in the $HA$ distribution. 
 
-\textbf{We propose that astro-lsst-01\_2022 be adopted as the new baseline simulated survey and renamed ``baseline-2018a''.}
+\textbf{We propose that astro-lsst-01\_2022 be adopted as the new baseline simulated survey and renamed ``baseline2018a''.}
 
 
 \begin{figure}[ht]
@@ -268,7 +268,7 @@ As discussed in the previous section, we prefer using the HA bonus parameter to 
 \end{figure}
 
 
-\subsection{Comparison of astro-lsst-01\_2022 (aka baseline-2018a) to minion\_1016 (the 2016 baseline run)}
+\subsection{Comparison of astro-lsst-01\_2022 (aka baseline2018a) to minion\_1016 (the 2016 baseline run)}
 
 The SRD metrics for this new baseline run, the previous baseline run, and their goal values, are shown in Table~\ref{tab:srd-comparison}. An in-depth discussion of the SRD requirements and how these are implemented in MAF metrics, is provided at \url{https://smtn-010.lsst.io}. We find that the astro-lsst-01\_2022 run satisfies the SRD requirements for area and number of visits, as well as the area which receives rapid revisits.  The parallax and proper motion errors report by MAF metrics do not meet the SRD goal for r=24 objects, but do meet the goals described in the text for brighter objects (r=20.5 and r=22.4). We are investigating the cause of the problem with parallax and proper motion error estimates for fainter objects; these measurements are improved over the same values for the previous baseline however.
 
@@ -355,7 +355,7 @@ Open Shutter Fraction                      &                0.73 &              
 \end{table}
 
 
-\subsection{Details of astro-lsst-01\_2022 (aka baseline-2018a run)}
+\subsection{Details of astro-lsst-01\_2022 (aka baseline2018a run)}
 
 The proposed new baseline simulated survey, astro-lsst-01\_2022, has the following basic properties:
 
@@ -464,7 +464,7 @@ The configuration parameters were left as the defaults for this version, with th
 
 The original output file astro-lsst-01\_2022 produced by v4.1.0.10 had a faulty value for seeingFwhmGeom, as a result of a bug in the \socs software. These values have been corrected in the \opsim v4 output files which have been made publicly available, with a comment placed into the Config table that this correction has been made.
 
-The simulated survey output database, astro-lsst-01\_2022.db, is available in the github repo housing this document, together with MAF analysis outputs. These MAF outputs can also be found online at \url{http://astro-lsst-01.astro.washington.edu:8081}.
+The simulated survey output database for astro-lsst-01\_2022 -- {\underscore renamed to baseline2018a} -- is available in the github repo housing this document, together with MAF analysis outputs. These MAF outputs can also be found online at \url{http://astro-lsst-01.astro.washington.edu:8081}.
 
 %%%%%%%%%
 
