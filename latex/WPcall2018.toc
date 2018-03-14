@@ -1,28 +1,28 @@
 \select@language {english}
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Community and LSST Observing Strategy}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.1}LSST Community and LSST Observing Strategy}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Motivation for this white paper call}{2}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}General guidelines}{3}{subsection.1.3}
-\contentsline {section}{\numberline {2}How to submit a white paper?}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Requested input}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}TeX template for submission}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Review process and timeline}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {1.4}Review process and timeline}{4}{subsection.1.4}
+\contentsline {section}{\numberline {2}How to submit a white paper?}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Requested input}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}TeX template for submission}{6}{subsection.2.3}
 \contentsline {section}{\numberline {3}Proposal ranking criteria}{6}{section.3}
-\contentsline {section}{\numberline {A}Examples of current open cadence questions}{7}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{7}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}``Deep Drilling'' fields}{7}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Galactic plane survey}{8}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}Southern Celestial pole mini survey}{8}{subsection.A.4}
-\contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{8}{subsection.A.5}
-\contentsline {subsection}{\numberline {A.6}Twilight survey}{8}{subsection.A.6}
-\contentsline {section}{\numberline {B}Cadence constraints imposed by the LSST system}{8}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}Observing and exposure time constraints}{9}{subsection.B.1}
-\contentsline {subsection}{\numberline {B.2}Limiting depth estimates and ``cadence scaling laws''}{9}{subsection.B.2}
-\contentsline {subsection}{\numberline {B.3}Hardware constraints}{9}{subsection.B.3}
-\contentsline {subsection}{\numberline {B.4}Software constraints}{10}{subsection.B.4}
-\contentsline {section}{\numberline {C}Supplementary materials}{10}{appendix.C}
-\contentsline {subsection}{\numberline {C.1}Useful publications and documents}{11}{subsection.C.1}
-\contentsline {subsection}{\numberline {C.2}Useful websites and slide collections}{11}{subsection.C.2}
-\contentsline {subsection}{\numberline {C.3}How to communicate with LSST about LSST Observing Strategy?}{12}{subsection.C.3}
+\contentsline {section}{\numberline {A}Examples of current open cadence questions}{8}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{8}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}``Deep Drilling'' fields}{8}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Galactic plane survey}{9}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Southern Celestial pole mini survey}{9}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{9}{subsection.A.5}
+\contentsline {subsection}{\numberline {A.6}Twilight survey}{9}{subsection.A.6}
+\contentsline {section}{\numberline {B}Cadence constraints imposed by the LSST system}{9}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Observing and exposure time constraints}{10}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Limiting depth estimates and ``cadence scaling laws''}{10}{subsection.B.2}
+\contentsline {subsection}{\numberline {B.3}Hardware constraints}{10}{subsection.B.3}
+\contentsline {subsection}{\numberline {B.4}Software constraints}{11}{subsection.B.4}
+\contentsline {section}{\numberline {C}Supplementary materials}{11}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}Useful publications and documents}{12}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}Useful websites and slide collections}{12}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}How to communicate with LSST about LSST Observing Strategy?}{13}{subsection.C.3}
