@@ -120,7 +120,7 @@ be easily abandoned (the LSST Science Requirements Document states that ``the ad
 strategy will not jeopardize the goals of any of the four main science themes''). 
 
 Detailed proposals are also solicited for novel ideas, such as twilight observing and (hypothetical) 
-narrow-bandpass surveys, as well as synergies with other major surveys (e.g., Euclid). At this 
+narrow-bandpass surveys, as well as synergies with other major surveys (e.g., WFIRST, Euclid). At this 
 time we do not solicit proposals for optimizing observations during commissioning period. Once 
 the start of commissioning surveys is known with adequate accuracy (1-2 months), the Project will 
 solicit detailed suggestions in due time. 
@@ -157,13 +157,14 @@ on specific observing strategy to be used at the start of LSST survey (anticipat
 In developing their recommendations to the Director, the SAC will be guided by selection 
 criteria set by the Project Science Team  (e.g., in consideration of the limiting technical criteria,
 such as those discussed in Appendix B). The Director can further consult with the Project Science 
-Team about the SAC cadence recommendations. 
+Team about the SAC cadence recommendations. A baseline simulation that reproduces 
+adopted strategy, and its detailed performance analysis, will be published in 2021. 
 
 Soon after the November 2018 submission deadline, members of the Science Advisory 
-Committee, with technical support from the Project\footnote{The Project will establish a Survey Strategy Committee to evaluate competing 
-survey strategy proposals and to propose a survey strategy for commissioning and operation. 
-The committee will be comprised of both project and non-project personnel, with SAC making 
-recommendations for committee membership.}, will 
+Committee, with technical support from the Project\footnote{The Project will establish a Survey 
+Strategy Committee to evaluate competing survey strategy proposals and to propose a survey 
+strategy for commissioning and operation. The committee will be comprised of both project and 
+non-project personnel, with SAC making recommendations for committee membership.}, will 
 triage white papers and decide which of them meet the criteria of scientific excellence and 
 technical feasibility for further quantitative analysis (including suggestions for combining 
 proposals into single programs, and giving suggestions for maturation of the current notional 
@@ -171,10 +172,10 @@ extragalactic observing strategy).
 
 We anticipate that the resulting list of observing strategies that will be simulated and analyzed 
 (the ``menu'' above) will be available by April 2019. Simulated surveys and Metric Analysis 
-Framework (MAF) analysis will become available by the end of 2019. The preparation of the final 
-cadence report for the LSST Science Advisory Committee, in a close collaboration between 
-the Project and the Observing Strategy github community and Science Collaborations, will take 
-place during early 2020.  
+Framework (MAF\footnote{https://sims-maf.lsst.io}) analysis will become available by the end 
+of 2019. The preparation of the final cadence report for the LSST Science Advisory Committee, 
+in a close collaboration between the Project and the Observing Strategy github community and 
+Science Collaborations, will take place during early 2020.  
 
 An overall aim of the Project and all stakeholders is to make this process transparent and to base 
 all decisions on quantitative input and pre-defined criteria to the maximum extent possible. 
@@ -188,15 +189,14 @@ at the LSST 2018 All-hands meeting (Tucson, Aug 13-17).
 
 \subsection{Who can submit a white paper?} 
 
-All members of scientific community interested in LSST science are eligible to 
-submit a white paper. We reiterate that the data from any given specialized survey 
-will be treated exactly the same way as all LSST data: the proposers will have no 
-proprietary access to it. There will be no formal ``acceptance'' of proposals; with
-the overall ranking priority advice provided to the Project by the SAC, the Project
-Science Team will implement several strategies that will be used as quantitative
-input (``a menu of options'') by the SAC when recommending the strategy to be
-used during the early phase of LSST survey. 
-
+All members of scientific community interested in LSST science can submit a white paper. 
+We reiterate that the data from any given specialized survey will be treated exactly the same 
+way as all LSST data: the proposers will have no proprietary access to it. There will be no 
+formal ``acceptance'' of proposals; with the overall ranking priority advice provided to the 
+Project by the Science Advisory Committee, the Project Team will implement a number of
+different strategies that will be used as quantitative input (``a menu of options'') by the 
+Science Advisory Committee when recommending the strategy to be used during the initial 
+phase of LSST survey. 
 
 
 \subsection{Requested input}
@@ -255,33 +255,24 @@ Explain how to submit by a pull request to Observing Strategy White Paper repo
 
 \section{Proposal ranking criteria} 
 
-There will be no formal ``acceptance'' of proposals; with the overall ranking priority 
-advice provided to the Project by the SAC, the Project Science Team will implement several 
-integrated observing strategies (simulated cadences) that will be used as quantitative input
-(``a menu of options'') by the SAC when recommending the strategy to be used during the 
-early phase of LSST survey. 
+We anticipate that the adopted observing strategy will be based on an amalgam of ideas from 
+different white papers; therefore, there will be no formal ``acceptance'' of proposals. The
+overall ranking priority advice provided to the Project by the Science Advisory Committee 
+will be based on the following considerations: 
+\begin{itemize}
+\item {\bf Science} Importance and robustness of proposed science program, and its 
+                               consistency with the main four LSST science themes. 
+\item {\bf Versatility} The ability of proposed dataset to maximally enable LSST’s diverse science objectives. 
+          Functionally, this means that Solar System and Milky Way science will be prioritized for pointing selection,
+          with Time Domain science likely driving the temporal sampling window, and extragalactic science driving 
+          the sky coverage and coadded depth. Programs proposing datasets that are of interest to other astronomical 
+          facilities (e.g., observable by other flagship facilities on ground and in space) will be ranked high. 
+\item {\bf Efficiency} Observing efficiency (including the system safety considerations).  Deep-drilling field 
+          programs should be feasible from the hardware and software point of view (see Appendix B) and should 
+          come in under ``rule of thumb'' amount of total observing time ($<$1\%, e.g. 250-300 hours of time,
+          including overhead). 
+\end{itemize} 
 
-
-Satisfy minimum technical requirements [evaluated by PST or designates], including coming in under a 
-``rule of thumb'' amount of total observing time ($<$1\%, e.g. 250-300 hours of time, including overhead)
-
-Ranking criteria for DDF selection [For the SAC to evaluate]:  
-
-(i) Select an ensemble that will maximally enable LSST’s diverse science objectives. Functionally, this means that Solar System and Milky Way science will be prioritized for pointing selection, with Time Domain science likely driving the detailed observing strategies;  
-
-(ii) Provide a legacy dataset that will inform the development of and/or add scientific value to data from other astronomical facilities;  
-
-(iii) Observable by other flagship facilities on ground and in space.
-
-
-
-Importance and robustness of proposed science programs
-
-Versatility of data set
-
-Observing efficiency (including the system safety considerations) 
-
-Consistency with the main four LSST science themes 
 
 
 \vskip 0.0in
@@ -294,83 +285,159 @@ of the LSST Science Collaborations.
 \appendix
 
 
-\section{Examples of current open cadence questions} 
+\section{Examples of open cadence optimization questions} 
 
-Summarize issues addressed in the living Observing Strategy White Paper, 
-including ``The top 10 questions''... 
-
+Quantitative optimization of the LSST observing strategy requires many 
+detailed decisions to be made, often with only an indirect science justification,
+or with conflicting science drivers.  The most significant open questions and associated tradeoffs are listed below
+for the main survey and each mini survey. 
 
 \subsection{The main Wide-Fast-Deep survey} 
 
-SAC:  We recommend that the formal definitions of the boundaries of the
-     Wide-Fast-Deep survey be re-examined with the tools available with
-     the OpSim. 
+The baseline cadence optimizes the amount of sky covered in any given night (subject to 
+the constraint of observing at airmass less than 1.4 throughout), and allows the entire sky 
+visible at any time of the year to be covered in about three nights. The cadence is designed 
+to give uniform coverage at any given time, and to reach the survey goals for measuring 
+stellar parallax and proper motion, and the number of visits (825 visits, summed over the 
+six filters). In the baseline implementation, the main survey covers about 18,000 deg$^2$ of 
+high Galactic latitude sky, and spends about 85\% of the available observing time. 
 
-
-different bands in pairs of visits?
-
-dithering? 
-
-rolling cadence properties (RA vs. Dec rolling) 
-
-area vs. coverage tradeoff  (``Pan-STARRS cadence'')
-
-minimizing the impact of read-out noise in u band
-
-abandon snaps?
-
-twilight observing? 
+Open questions and optimization options associated with the main survey are as follows: 
+\begin{itemize}
+\item With the current declination boundaries at Dec = $-65^\circ$ and Dec = $+5^\circ$,
+the main survey area includes about 19,000 deg$^\circ$ (without the Galactic plane 
+confusion zone, see \ref{sec:GP}). These boundaries were set to optimize the number of
+detected galaxies and galaxies useful for cosmological studies. These galaxy counts 
+stay within 5-10\% from the current baseline values even with a much larger survey area. 
+For example, Section 2.4 in the Observing Strategy white paper describes a cadence simulation 
+that covers 27,400 deg$^2$ to about 0.15 mag shallower coadded depth than in baseline 
+cadence (airmass limit is relaxed to 1.5 and declination boundaries are at Dec = $-78^\circ$ 
+and Dec = $+18^\circ$, with the mean number of visits per field about 20\% smaller that
+in baseline cadence). This tradeoff between the sky coverage and coadded depth is still
+open to optimization and it is important to receive science-driven optimization arguments
+from all science programs. 
+\item The observing time allocation per band listed in the Science Requirements Document
+(Table 24) is given only as an illustration. Further optimization of this allocation for the main 
+survey, and different fractional allocations for mini surveys, are likely possible. 
+\item A ``rolling cadence'' (as opposed to uniform temporal sampling) can provide enhanced
+sampling rates over a part of the survey, or the entire survey for a designated time, at the
+cost of reduced sampling rate the rest of the time (while maintaining the nominal total 
+visit counts). While it is known that science programs such as supernovae, asteroids, and
+short-timescale stellar variability would benefit from rolling cadence, detailed cadence
+parameters have not been optimized yet (e.g., ``rolling'' in RA vs. Dec). 
+\item Current baseline cadence obtains two visits per night (within 15-60 minutes) in 
+order to enable easy linking of asteroid detections, and robust identification of rapid 
+photometric transients. Whether the two visits on the same night should be obtained 
+in the same filter or in different filters has not been decided yet (e.g., in the context
+of photometric transients, same filters would provide a more accurate measurement
+of the brightness change, while different filters would provide a color constraint). 
+\item Current baseline cadence assumes that a visit is composed of two 15-second
+exposures, the so-called snaps. While snaps enable search for very rapid variability,
+and help with cosmic ray rejection, there are compelling arguments to abandon
+them, with observing efficiency being the main argument. 
+\end{itemize}
 
 
 \subsection{``Deep Drilling'' fields} 
 
-White papers available from  https://project.lsst.org/content/whitepapers32012
+The Deep Drilling (DD) fields are single pointings that are observed in extended sequences. 
+In the first call for white papers on cadence optimization, the Project has received 
+8 white papers from the community\footnote{These white papers are available from 
+https://project.lsst.org/content/whitepapers32012}. These proposals often include certain 
+filter combinations to ensure that near-simultaneous color information is available for 
+variable and transient objects. 
 
-4 locations already fixed (Elais-S1, CDF-S, XMM-LSS, Cosmos) 
+Four of the LSST DD fields have been selected and announced (Elias S1, 
+XMM-LSS, Extended Chandra Deep Field-South, and COSMOS). It is guaranteed that they 
+will be observed with deeper coverage and more frequent temporal sampling than the main 
+survey fields, but details are still open. It is expected that there will be more DD fields 
+selected for the final survey. 
 
 
-The detailed cadence for the four existing deep drilling fields, and the existence and parameters 
-for the current suggested mini-surveys (North Ecliptic Spur, the Galactic Plane, and the South 
-Celestial Cap) need justificatio and finalization, and therefore are also suitable topics for white papers.  
+\subsection{Galactic plane survey \label{sec:GP}}
 
+The baseline main survey excludes observations at low Galactic latitudes, where the high 
+stellar density leads to a confusion limit at much brighter magnitudes than those attained 
+at high Galactic latitudes. Assuming median seeing, this confusion limit corresponds to a
+source density of about 1-2 million per deg$^2$. The current boundary of this ``Galactic
+confusion zone'' starts at $|b|=10^\circ$ towards $l=0^\circ$ and linearly drops to $b=0^\circ$
+at $l=90^\circ$ and $l=270^\circ$. Along this boundary, the confusion limit is reached at a
+depth of $i \sim 26$; therefore, the useful coadded depth is at least 1-2 magnitudes 
+shallower than for the main survey. Within this boundary, the fraction of galaxies is only
+a few percent and an assumption that all sources are stars works well. For example, 
+DECAPS survey generated a catalog with 2 billion sources in the Southern Galactic Plane
+to a depth of about $r=23$ (with seeing around 1 arcsecond; Schlafly et al. 2018, 
+arXiv:1710.01309). 
 
+As guidance, stellar count simulations with the TRILEGAL code (Girardi et al. 2005, 
+arXiv:astro-ph/050404) show that to the depth of $r=27.5$ there are about 2 billion
+stars in the main survey area, with another 5 billion stars in the Galactic confusion 
+zone. Of the latter, about 3 billion are brighter than $r=24.5$.  
 
-\subsection{Galactic plane survey}
-
-Confusion issue (refer to software constraints in Appendix B). 
-
-The static science (such as the Rich bulge survey with DECam and Schlafly's DECAPS survey) 
-vs. time domain survey (e.g. Saha's RR Lyrae survey with DECam)  
+The current strawman implementation of the Galactic confusion zone coverage allocates 
+30 observations in each of the six filters. Detailed optimization of this strategy has not 
+been done yet. In particular, science-driven input is needed for both ``static science''
+programs (e.g., The Blanco DECam Bulge Survey, BDBS Collaboration) and  time domain
+surveys (e.g., Gould 2013, arXiv:1304.3455). 
 
 The footprint in the current baseline cadence extends to far north along the Galactic
-plane, to the region that can only be observed at relatively large airmass from Cerro Pachon 
-($X>1.4$ at Dec=$+15^\circ$). Originally, this extension was designed to extend longitudinal 
-coverage of the Galactic plane with Galactic structure studies in mind. With the advent of other 
-surveys (e.g. Pan-STARRS and DECAPS), the reasons for obtaining these less efficient observations 
-(due to unavoidable high airmass) are less compelling. Unless a strong case is made in submitted
-white papers, the Project is likely to limit the coverage of the Galactic plane to  Dec=$<7^\circ$). 
-
+plane, to the region that can only be observed at relatively large airmass from the LSST
+site at Cerro Pach\'on ($X>1.4$ at Dec=$+15^\circ$). Originally, this extension was designed 
+to extend longitudinal coverage of the Galactic plane with Galactic structure studies in mind. 
+With the advent of other surveys (e.g., Pan-STARRS and DECAPS), the reasons for obtaining 
+these less efficient observations (due to unavoidable high airmass) are less compelling. 
+Unless a strong case is made in submitted white papers, the Project is likely to limit the 
+coverage of the Galactic plane to Dec=$<+5^\circ$. 
 
 
 \subsection{Southern Celestial pole mini survey}
 
+The airmass limit of 1.4 adopted for the main survey restricts observations to $Dec > -75^\circ$,
+thus missing large fraction of both the Magellanic Clouds. To allow coverage of the Large and 
+Small Magellanic Clouds, baseline cadence uses relaxed limits on airmass and seeing for the 
+700 deg$^2$ region around the South Celestial Pole, but with fewer observations that for the
+main survey. 
 
-LMC and SMC as the main drivers, but also calibration and legacy 
+Detailed optimization of this strategy has not been done yet. Given recent informative observations 
+obtained by the SMASH survey (Nidever et al. 2017, arXiv:1701.00502), as well as calibration 
+and legacy aspects of this mini survey, a white paper with more detailed cadence prescriptions
+would greatly with further cadence optimization and help retain this mini survey. 
 
 
 \subsection{Northern Ecliptic spur mini survey}
 
-NEOs vs. main belt vs. TNOs 
+The universal cadence provides most of LSST’s power for detecting Near Earth Objects (NEO) and 
+Kuiper Belt Objects (KBOs) and naturally incorporates the southern half of the ecliptic within its 
+18,000 deg$^2$ sky area. Additional coverage of a crescent within 10 degrees of the Northern ecliptic 
+plane would sample the full azimuthal distribution of TNOs, crucial for understanding the different 
+dynamical families in which they fall, and would improve the light curve sampling and completeness
+of asteroid populations in the inner Solar System. The baseline cadence covers this region using the 
+$r$ and $i$ filters only, along with more relaxed limits on airmass and seeing. A more detailed 
+and robust science justification based on both TNO and main-belt/NEO asteroid populations is 
+needed to retain this mini survey. 
+
 
 
 \subsection{Twilight survey} 
 
 Copy relevant info from Stubbs document. 
 
+twilight observing?  ref to Stubbs writeup and Sec 10.2.1 in OSWP: 
+
+NEOs on very Earth-like orbits are relatively unlikely to come to opposition, and therefore are 
+relatively unlikely to appear in data obtained in the wide-fast-deep survey. These objects are 
+particularly interesting since, having very Earth-like orbits, they are the most likely objects to
+be Earth impactors. These objects are most likely to be detected in a twilight survey that looks 
+at the ``sweetspot'' -- a location at around 60$\circ$ Solar elongation that is only visible at 
+twilight. Because these sweetspot fields are only visible for 30–60 twilight minutes each night, 
+a special cadence is required to find and link these objects to determine their orbits. These 
+observations would be best carried out in the $z$ filter (because the observations are made in 
+twilight, when the sky is still relatively bright). 
+
+10.3 Short Exposure Surveying to increase dynamic range by 5 mag with bright sources (to $r$ = 11-12) 
 
 
 \section{Cadence constraints imposed by the LSST system} 
-
 
 \subsection{Observing and exposure time constraints}
 
@@ -504,4 +571,30 @@ Aug 14 and Dec 8, 2017:
       the AAS newsletter, targeted e-mailing, announcements at the AAS and other meetings, and so on.
 - there should be a continuing effort to solicit new metrics (or ideas for them) from the community. 
 - need to develop details for the review proces (the decisions on observing strategy must be as objective as possible) 
+
+
+
+ZI: modified cadences:
+
+1) Large Area
+    Maximize the main survey area (``Pan-STARRS'', 27,400 deg$^2$):
+    X<1.5, DecMin=$-78^\circ$ and DecMax = $+18^\circ$, 
+    No mini surveys, but yes for DDFs   
+
+2) Many Visits 
+    20 sec visits with single snap, and 40 sec in the u band 
+
+Stretch: 
+
+3) Many DDFs ?? 
+    24 DDFs, 12 observed every night, with out-in replacement every 2 weeks 
+    standard visit or deeper? 1 or more filters per night? 
+
+
+
+
+Stubbs white papers:
+- snaps or no snaps
+- narrow-band filters
+- twilight observing 
 
