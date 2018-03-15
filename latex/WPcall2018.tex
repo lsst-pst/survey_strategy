@@ -119,8 +119,9 @@ the overall four LSST science themes remain the cornerstones of the LSST survey 
 be easily abandoned (the LSST Science Requirements Document states that ``the adopted observing 
 strategy will not jeopardize the goals of any of the four main science themes''). 
 
-Detailed proposals are also solicited for novel ideas, such as twilight observing and (hypothetical) 
-narrow-bandpass surveys, as well as synergies with other major surveys (e.g., WFIRST, Euclid). At this 
+Detailed proposals are also solicited for novel ideas, such as twilight observing (see \S~ref{}) and 
+(hypothetical) narrow-bandpass surveys\footnote{LINK to white paper by Stubbs}, as well as synergies 
+with other major surveys (e.g., WFIRST, Euclid). At this 
 time we do not solicit proposals for optimizing observations during commissioning period. Once 
 the start of commissioning surveys is known with adequate accuracy (1-2 months), the Project will 
 solicit detailed suggestions in due time. 
@@ -255,6 +256,10 @@ Explain how to submit by a pull request to Observing Strategy White Paper repo
 
 \section{Proposal ranking criteria} 
 
+The ultimate LSST observing strategy will aim to deliver a cutting-edge data set to enable
+the four LSST's cornerstone scientific programs, while at the same time maximizing the 
+science possible with specialized observing using about 10\% of the total observing time. 
+
 We anticipate that the adopted observing strategy will be based on an amalgam of ideas from 
 different white papers; therefore, there will be no formal ``acceptance'' of proposals. The
 overall ranking priority advice provided to the Project by the Science Advisory Committee 
@@ -273,6 +278,10 @@ will be based on the following considerations:
           including overhead). 
 \end{itemize} 
 
+MENTION uniqueness of LSST instrument as an extra plus 
+
+It is inevitable that some science drivers will be in conflict. The Project and the Science Advisory Commiitee
+will make the proposal ranking process transparent to the maximum extent possible. 
 
 
 \vskip 0.0in
@@ -351,8 +360,9 @@ Four of the LSST DD fields have been selected and announced (Elias S1,
 XMM-LSS, Extended Chandra Deep Field-South, and COSMOS). It is guaranteed that they 
 will be observed with deeper coverage and more frequent temporal sampling than the main 
 survey fields, but details are still open. It is expected that there will be more DD fields 
-selected for the final survey. 
+selected for the final survey (plausible but not prescriptive range is 5-10). 
 
+POINT OUT THAT SCIENCE needs to be matched to 10 sq.deg. field 
 
 \subsection{Galactic plane survey \label{sec:GP}}
 
@@ -413,13 +423,38 @@ plane would sample the full azimuthal distribution of TNOs, crucial for understa
 dynamical families in which they fall, and would improve the light curve sampling and completeness
 of asteroid populations in the inner Solar System. The baseline cadence covers this region using the 
 $r$ and $i$ filters only, along with more relaxed limits on airmass and seeing. A more detailed 
-and robust science justification based on both TNO and main-belt/NEO asteroid populations is 
-needed to retain this mini survey. 
+and robust science justification addressing both outer Solar System (e.g., TNOs) and inner Solar
+System (e.g., main-belt and NEO asteroids) populations is needed to retain this mini survey. 
 
 
 
 \subsection{Twilight survey} 
 
+
+The short read-out time enables taking short-exposure images during twilight time that would otherwise go unused. 
+Assuming exposure time of 1 second (the current stretch goal from the LSST Science Requirements Document; the
+design value is 5 second), 
+
+
+, together with short exposures, 
+
+
+The implementation of this would simply entail taking short-exposure images during twilight time that would otherwise go unused. 
+
+
+From Section 10.3 in OSWP: 
+
+The current LSST requirements stipulate a minimum exposure time of 5 seconds, with an expected default exposure time of 15 seconds. This document advocates for decreasing the minimum expo- sure time requirement from 5 to 0.1 seconds. This would increase the dynamic range for bright sources (compared to the default 15 sec time) by about 5 magnitudes, to a total of 13 astronomical magnitudes (where dynamic range is the difference between the brightest unsaturated source and the faintest point source detectable at 5 sigma). This is a large factor, and would enable a wide range of science goals,
+
+One interesting aspect of this is that it would allow us to operate the LSST system during twilight times that would otherwise saturate the array due to background sky brightness. This would allow a number of the goals described below to be carried out without impacting the primary survey by conducting observations during twilight sky conditions that would saturate the array at longer exposure times.
+
+
+A Bright Star Survey for Galactic Science.
+
+It is vitally important that we obtain these nearby-SN light curves on the same photometric system, reduced with the same data reduction pipeline, as the distant sample. This means we really must 
+We stress that this twilight SN followup campaign can be accomplished without impacting the main survey, during the roughly 20 minutes per night of twilight that would otherwise unusable at the default exposure time. 
+
+x
 Copy relevant info from Stubbs document. 
 
 twilight observing?  ref to Stubbs writeup and Sec 10.2.1 in OSWP: 
@@ -437,34 +472,9 @@ twilight, when the sky is still relatively bright).
 10.3 Short Exposure Surveying to increase dynamic range by 5 mag with bright sources (to $r$ = 11-12) 
 
 
+
+
 \section{Cadence constraints imposed by the LSST system} 
-
-\subsection{Observing and exposure time constraints}
-
-The LSST Science Requirements Document  ``...assumes a nominal 10-year duration with about 90\% 
-of the observing time allocated for the main LSST survey.'', and thus 10\% of observing time is left for 
-all other programs. However, if the system will perform better than expected, or if science priorities 
-will change over time, it is conceivable that 90\% could be modified and become as low as perhaps 80\%, 
-with the observing time for other programs thus doubled. At this time, details are TBD but the Project
-is developing flexible scheduling procedures to enable such modifications. 
-
-Minimum Exposure time: Science Requirements Document stretch goal is 1s; design spec is 5s.
-Short exposures might have problems with irregular PSFs and will have a lower efficiency due to
-finite read-out time (2 sec). Exposures much longer than standard 30 sec will cause fast asteroids
-to be trailed. In dark time, the u band exposures are not background limited with the standard
-exposure time (see Table 2 and related discussions in the LSST overview paper). 
-
-Read-out time 
-
-Slew time 
-
-Standard exposure sequence: 2x15 sec 
-
-
-\subsection{Limiting depth estimates and ``cadence scaling laws''} 
-
-Summarize here m5 expressions from the overview paper and the dependence
-of various measurement errors on time. 
 
 
 \subsection{Hardware constraints}
@@ -501,10 +511,119 @@ Mention crowded fields (and perhaps deblending?), document from Mario.
 
 
 
+\subsection{Observing efficiency constraints and  ``cadence scaling laws''}
+
+The LSST Science Requirements Document  ``...assumes a nominal 10-year duration with about 90\% 
+of the observing time allocated for the main LSST survey.'', and thus 10\% of observing time is left for 
+all other programs. However, if the system will perform better than expected, or if science priorities 
+will change over time, it is conceivable that 90\% could be modified and become as low as perhaps 80\%, 
+with the observing time for other programs thus doubled. At this time, details are TBD but the Project
+is developing flexible scheduling procedures to enable such modifications. 
+
+Weather uncertainty is ~10\% and we still have not built the system 
+
+Minimum Exposure time: Science Requirements Document stretch goal is 1s; design spec is 5s.
+Short exposures might have problems with irregular PSFs and will have a lower efficiency due to
+finite read-out time (2 sec). Exposures much longer than standard 30 sec will cause fast asteroids
+to be trailed. In dark time, the u band exposures are not background limited with the standard
+exposure time (see Table 2 and related discussions in the LSST overview paper). 
+
+Read-out time 
+
+Slew time 
+
+Standard exposure sequence: 2x15 sec 
+
+
+\subsection{Limiting depth and uncertainty estimates,  and ``cadence scaling laws''} 
+
+How to estimate limiting imaging depth for a given exposure time and other observing parameters
+is discussed in Section 3.2 in the LSST Overview paper (see \ref{sec:pubs}). Tradeoffs between 
+exposure time per visit, single-visit depth, the mean revisit time, and the total number of visits,
+as well as justification for the adopted standard exposure time of 30 sec, are discussed in Section 
+2.2 from the same paper. The improvement in measurement uncertainties as the surveys progresses
+(as a function of time, $t$) can be approximately summarized as follows. 
+
+The coadded depth (the 5$\sigma$ depth for point sources), $m_5^{\rm coadd}$, scales 
+with time as (see eq.~6 in the overview paper)  
+\begin{equation} 
+         m_5^{\rm coadd}  = m_5^{\rm coadd, Final}  + 1.25 \, \log_{10}\left({t \over 10 \, {\rm yrs}}\right) 
+\end{equation} 
+where $m_5^{\rm coadd, Final}$ is the target depth achieved with 10-year survey (with
+airmass and other losses taken into account, $m_5^{\rm coadd, Final}=27.2$ for the $r$ band). 
+
+The photometric errors (inverse signal-to-noise ratio) at the faint limit of the so-called 
+``gold'' galaxy sample (4 billion galaxies with $i<25.3$ which will be used for cosmological
+programs, see Section 3.7.2 in the LSST Science Book), is computed from (see eq. 5 and Table 1 
+in the overview paper):
+\begin{equation} 
+                \sigma_{i=25} = 0.04 \, \left({t \over 10 \, {\rm yrs}}\right)^{-1/2} {\rm mag.}
+\end{equation}
+
+The volume of the 5-dimensional color space per source with $i=25$,  which controls the ability 
+to classify sources using colors (including photometric redshift estimates for galaxies and star/quasar
+separation, for example) is computed assuming uncorrelated color errors, as proportional
+to $\sigma^5_{i=25}$, and normalized by the value corresponding to 10-year survey. 
+
+The trigonometric parallax accuracy for a point source with $r$=24 (see section 3.3.3 in the 
+overview paper) scales with time as 
+\begin{equation}
+        \sigma_\pi = 3.0 \,  \left({t \over 10 \, {\rm yrs}}\right)^{-1/2}  \,\,  {\rm mas.} 
+\end{equation}
+
+The proper motion accuracy for a point source with $r$=24 (see section 3.2.3 in the overview paper)
+scales with time as 
+\begin{equation}
+        \sigma_\mu = 1.0 \,  \left({t \over 10 \, {\rm yrs}}\right)^{-3/2}   \,\, {\rm mas/yr.} 
+\end{equation}
+Note the very strong dependence of  $\sigma_\mu$ on time ($t^{-1/2}$ comes from the
+increase in the square root of the number of visits, analogously to $\sigma_\pi$, and 
+an additional $t^{-1}$ from the linear increase in temporal baseline).  In both expressions,
+the number of visits is assumed proportional to time, with a value of 825 corresponding to the 
+main deep-wide-fast 10-year survey. 
+
+The behavior of these quantities as a function of time is summarized in Table 3. While 
+the coadded depth and $\sigma$($i$=25) rapidly improve during the first few years, 
+several important quantities continue to show marked improvement between the survey 
+years 8 and 10: most notably, the color volume per source for faint sources ($i=25$) 
+shrinks by a factor of 1.7.  Substantial improvement is also seen for proper motions, 
+with errors larger by 40\%, after 8 years than at the end of the 10-year survey.  
+
+\begin{table}
+\caption{Various science metrics as functions of survey duration.}
+\begin{tabular}{|l|r|r|r|r|r|r|}
+\hline     
+          Quantity                          &     Year 1   &    Y3  &     Y5  &     Y8   &     Year 10   \\
+\hline  
+    $r_5$ coadd$^a$                   &       26.0    &      26.5   &      26.8    &      27.1    &          27.2     \\
+    $\sigma$($i$=25)$^b$         &     0.12    &     0.07    &      0.06    &    0.05      &        0.04        \\     
+    color vol.$^c$                        &       316     &       20     &        6      &    1.7        &           1       \\
+     \# of visits$^d$                    &          83     &     248     &      412     &    660      &          825      \\  
+    $\sigma_\pi$ ($r$=24)$^e$   &        9.5     &      5.5     &        4.2    &     3.3       &          3.0      \\ 
+    $\sigma_\mu$ ($r$=24) $^f$  &  32   &      6.1    &     2.8   &     1.4   &     1.0     \\
+\hline                         
+\end{tabular}
+\\ \vskip 0.05in
+$^a$ The coadded depth in the $r$ band (AB, 5$\sigma$; point sources).  \\
+$^b$ The photometric error for a point source with $i=25$. \\
+$^c$ The volume of the 5-dimensional color space, normalized by the final value. \\
+$^d$ The number of visits per sky position (summed over all bands). \\
+$^e$ The trigonometric parallax accuracy for a point source with $r$=24 (milliarcsec). \\ 
+$^f$  The proper motion accuracy for a point source with $r$=24 (milliarcsec/yr).  \\
+%\vskip 0.2in          
+\end{table}
+
+
+
+
+
+
+
+
 \section{Supplementary materials} 
 
 
-\subsection{Useful publications and documents}
+\subsection{Useful publications and documents \label{sec:pubs}}
 
 The \href{https://www.lsst.org/content/lsst-science-drivers-reference-design-and-anticipated-data-products}{LSST Overview paper} provides a short summary of the four primary science drivers, as well as the expected performance of LSST in terms of throughputs, and calibration. 
 It also discusses survey constraints and tradeoffs.  Available as \url{http://ls.st/pif}
@@ -525,7 +644,7 @@ The \href{https://github.com/lsst-pst/survey_strategy/blob/master/db/baseline-do
 
 \subsection{Useful websites and slide collections}
 
-{\it Note that these websites are still in development}
+{\it Note that these websites are still in development.}
 
 Documentation about MAF, including a high-level overview and descriptions of current standard metric analyses, is available at \url{http://sims-maf.lsst.io}. 
 The outputs of MAF analyses for the new baseline survey, as well as runs demonstrating potential options for mini surveys and Deep 
