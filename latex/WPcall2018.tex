@@ -118,9 +118,8 @@ the primary four LSST science themes remain the cornerstones of the LSST survey 
 be easily abandoned (the LSST Science Requirements Document states that ``the adopted observing 
 strategy will not jeopardize the goals of any of the four main science themes''). 
 
-Detailed proposals are also solicited for novel ideas, such as twilight observing (see \S~ref{}) and 
-(hypothetical) narrow-bandpass surveys\footnote{LINK to white paper by Stubbs}, as well as synergies 
-with other major surveys ({\it e.g.}, WFIRST, Euclid). 
+Detailed proposals are also solicited for novel ideas, such as TOOs, twilight observing (see \S~ref{sec:twilight}) and 
+(hypothetical) narrow-bandpass surveys, as well as synergies with other major surveys ({\it e.g.}, WFIRST, Euclid). 
 
 At this time we are not soliciting proposals to optimize observations during the commissioning period.
 A call for commissioning proposals will be issued once the start date of commissioning is known with adequate accuracy (1-2 months). 
@@ -211,21 +210,20 @@ The current list of surveys, for which quantitative optimization input is reques
 \item South Celestial Pole (SCP) mini-survey.
 \end{itemize}
 
-We seek science-driven input for cadence properties such as optimal visit exposure time,
+We seek science-driven input for survey strategy questions such as optimal visit exposure time,
 coadded per-bandpass imaging depth, the sky coverage, temporal coverage, observing
-rules, etc.; for detailed discussion, please see Appendix A. For some special programs, 
+rules, etc.; for a detailed discussion, please see Appendix A. For some special programs, 
 e.g., target-of-opportunity (ToO) observations, it is important that reasonable
-information is provided to enable proper simulations to be conducted, as well as estimation
-of total observing time allocation.
+information is provided to enable proper simulations to be conducted, as well as an estimation
+of total observing time allocation. The TeX template
 
 In addition to existing surveys listed above, we also seek input on new mini-survey ideas 
 to replace and/or enhance the current programs, including special ToO programs. We also 
 solicit novel ideas, such as twilight observing (see \S~ref{sec:twilight}) 
 and (hypothetical) narrow-bandpass surveys\footnote{This idea is somewhat hypothetical 
 because it implies that additional hardware would be procured. For more details and 
-discussion of science drivers, please see XXX I pushed white paper by Chris 
-NarrowbandLSSTfilters\_Stubbs.pdf but we need a better home for it...}, as well as observing 
-synergies with other major surveys (e.g., WFIRST, Euclid). 
+discussion of science drivers, please see the \href{http://ls.st/741}{Narrow band LSST filters} white paper at \url{http://ls.st/741}}, 
+as well as observing synergies with other major surveys (e.g., WFIRST, Euclid). 
 
 It would greatly help if each white paper could be assigned to one of the following
 categories:  
@@ -255,24 +253,26 @@ definition of a Galactic Plane survey.
 
 \subsection{TeX template for submission} 
 
-A submission template and an example of the submission, with instructions about
-all the required information, can be found in a Github repository\footnote{\url{https://github.com/lsst-pst/survey_strategy}}. 
+Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what can be learned if the observations were obtained. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. The Performance Evaluation section must contain methods to evaluate the effectiveness of the survey strategy modifications, particularly in light of the potential effect of survey strategy changes proposed in other white papers. It is unlikely that any given proposal will be able to accomplished in its `ideal' form, thus metrics (along with threshold values for these figures of merit) to evaluate the science performance of non-ideal simulations are crucial. 
+
+The submission template and an example of the submission, with instructions about
+all the required information, can be found in the git repository hosted at \href{https://github.com/lsst-pst/survey_strategy_wp}{lsst-pst/survey\_strategy\_wp}\footnote{\url{https://github.com/lsst-pst/survey_strategy_wp}}.
 The submission process includes the following steps
 %
 \begin{enumerate}
 \item Fork the repository using your (the PI's, or a selected collaborator's)  Github account.
 \item Clone the forked repository to your local machine.
-\item Create a directory under proposal with the PI name as LASTNAME\_FIRSTNAME\_NUMBER,
+\item Create a directory with the PI name as LASTNAME\_FIRSTNAME\_NUMBER,
 where NUMBER is a counter for multiple proposals submitted by the same person (or the case
 of two people with the same name). 
-\item Copy the contents of the directory \texttt{proposal/template/} to the directory created in the last step.
+\item Copy the template to the directory created in the last step.
 \item Fill the latex template file with the proposal information. It is possible to make intermediate 
           commits to keep track of the changes to the proposal and share it with collaborators.
 \item Once the proposal is ready, make a Pull Request (PR) to the master branch of the main repository. 
 \item A team member will accept your PR, or contact you in case of problems. 
 \end{enumerate}
 
-In case of ambiguity, please ask questions on LSST Community\footnote{\url{http://community.lsst.org}}. 
+For additional help or questions, please ask on \href{https://community.lsst.org/c/sci}{LSST Community}\footnote{\url{http://community.lsst.org/c/sci}}. 
 
 
 \section{Proposal ranking criteria} 
@@ -289,10 +289,10 @@ will be based on the following considerations:
 \item {\bf Science} Importance and robustness of proposed science program, including 
            its match to the unique abilities of the LSST system, and its consistency with the 
            main four LSST science themes. 
-\item {\bf Versatility} The ability of proposed dataset to maximally enable LSST’s diverse science objectives. 
+\item {\bf Versatility} The ability of proposed dataset to maximally enable LSST's diverse science objectives. 
           Functionally, this means that Solar System and Milky Way science will be prioritized for pointing selection,
           with Time Domain science likely driving the temporal sampling window, and extragalactic science driving 
-          the sky coverage and coadded depth. Programs proposing datasets that are of interest to other astronomical 
+          the sky coverage and co-added depth. Programs proposing datasets that are of interest to other astronomical 
           facilities (e.g., observable by other flagship facilities on ground and in space) will be ranked high. 
 \item {\bf Efficiency} Observing efficiency (including the system safety considerations).  Deep-drilling field 
           programs should be feasible from the hardware and software point of view (see Appendix B) and should 
