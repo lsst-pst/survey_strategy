@@ -25,4 +25,4 @@
 \contentsline {section}{\numberline {C}Supplementary materials}{11}{appendix.C}
 \contentsline {subsection}{\numberline {C.1}Useful publications and documents}{12}{subsection.C.1}
 \contentsline {subsection}{\numberline {C.2}Useful websites and slide collections}{12}{subsection.C.2}
-\contentsline {subsection}{\numberline {C.3}How to communicate with LSST about LSST Observing Strategy?}{13}{subsection.C.3}
+\contentsline {subsection}{\numberline {C.3}Communication about the LSST survey strategy}{13}{subsection.C.3}
