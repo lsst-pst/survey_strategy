@@ -202,28 +202,44 @@ phase of LSST survey.
 
 \subsection{Requested input}
 
-Response will require science objectives, positions, depth, filters, cadence of observations, and metrics to demonstrate requirements
-  
+% Response will require \textsc{?}ience objectives, positions, depth, filters, cadence 
+% of observations, and metrics to demonstrate requirements
 
-DDFs, mini-surveys (Northern Ecliptic Spur, Galactic Plane, South Celestial Pole) 
+The current list of surveys, for which input is requested are:
+%
+\begin{itemize}
+\item the main Wide-Fast-Deep (WFD) survey,
+\item the Deep Drilling (DD) mini-survey,
+\item Northern Ecliptic Spur (NES) mini-survey, 
+\item Galactic Plane (GP) mini-survey, and
+\item South Celestial Pole (SCP) mini-survey.
+\end{itemize}
+%
+Input on possible new mini-surveys to replace and/or enhance the current 
+list of projects and, special programs (e.g. ToO) are also welcome.  
 
-descriptions in the overview paper
-
-We may want to allow proposers to flag their proposal as belonging to one of:
+The main points of interests are:
+%
 \begin{itemize} 
-\item a specific pointing(s) that is (relatively) agnostic of the detailed observing strategy
-          (e.g., a science case enabled by deep precise multi-color photometry) 
-\item a specific observing strategy to enable specific time domain science, that is relatively 
-          agnostic of the pointing (e.g., search for extragalactic transient populations) 
-\item an integrated program with science that hinges on the pointing/detailed observing 
-          strategy combination (e.g., search for variable stars in the LMC/SMC) 
+\item a specific observing strategy to enable specific time domain science, 
+	that is relatively agnostic to pointing (e.g., a science case enabled 
+	by deep precise multi-color photometry). 
+\item a specific pointing(s) that is (relatively) agnostic of the detailed observing 
+	strategy (e.g., a science case enabled by deep precise multi-color 
+	photometry) 
+\item an integrated program with science that hinges on the pointing/detailed 
+	observing strategy combination (e.g., search for variable stars in the 
+	LMC/SMC) 
 \end{itemize}  
 
-refer to an example of DDF in tex template below
+% refer to an example of DDF in tex template below
 
+It is 
+important to keep in mind that the total time allocated to all the mini-surveys 
+(including DD) shall not exceed $20\%$ of the allocable observing time.
 Questions of
-mini-surveys and deep drilling fields are coupled at some level to
-wide-fast-deep: more time for the former means less for the latter,
+mini-surveys and DD fields are coupled at some level to
+WFD: more time for the former means less for the latter,
 and some of the design decisions for the latter affect the science
 case for the former.  For example, how rolling cadence is done may
 allow some variable and transient science to happen that would
@@ -231,28 +247,43 @@ otherwise be the focus of a deep drilling field, and changes in the
 main survey footprint will affect the definition of a Galactic Plane
 survey. 
 
+For some special programs, e.g. ToO, it is important that reasonable
+information is provided to enable proper simulations to be conducted, 
+as well as estimation of total observing time allocation.
 
 \subsection{TeX template for submission} 
 
-We need to provide a tex template... 
+A template and an example of the submission form, with instructions on
+the required information, can be found on the survey strategy call for white
+papers Github repository 
+(\url{https://github.com/lsst-pst/survey_strategy}).
 
-ZI: it seems that submitting via pull requests to a github repo should be the easiest. 
-If undergrads can do it for their homeworks, our colleagues should be able to do it, too. 
-But whatever we do, we need to think about how to make it easy for us to handle them
-once submitted. 
-
-mention any restrictions on the length of the paper. 
-
-give an example as part of template, perhaps from the overview paper
-
-can we abstract the existing DDF strategies into this template form, too? 
-
-
-Explain how to submit by a pull request to Observing Strategy White Paper repo
-(a new dir? talk to Phil M.) 
+The submission process is going to be done through this repository,
+and consists of;
+%
+\begin{enumerate}
+\item Fork the repository on the PI's (or a selected collaborator)  Github account.
+\item Clone the forked repository on your local machine.
+\item Create a directory under proposal with the PI name as LASTNAME\_FIRSTNAME\_INSTITUTION. In case of duplicate directories, we may request changes during the review process later.
+\item Copy the contents of the directory \texttt{proposal/template/} to the directory created on the last step.
+\item Fill the latex template file with the proposal information. It is possible to make intermediate commits to keep track of the changes to the proposal and share it with collaborators.
+\item Once the proposal is ready, make a Pull Request to the master branch of the main repository. 
+\end{enumerate}
 
 
+% ZI: it seems that submitting via pull requests to a github repo should be the easiest. 
+% If undergrads can do it for their homeworks, our colleagues should be able to do it, too. 
+% But whatever we do, we need to think about how to make it easy for us to handle them
+% once submitted. 
 
+% mention any restrictions on the length of the paper. 
+
+% give an example as part of template, perhaps from the overview paper
+
+% can we abstract the existing DDF strategies into this template form, too? 
+
+%Explain how to submit by a pull request to Observing Strategy White Paper repo
+% (a new dir? talk to Phil M.) 
 
 \section{Proposal ranking criteria} 
 
@@ -621,7 +652,7 @@ $^f$  The proper motion accuracy for a point source with $r$=24 (milliarcsec/yr)
 
 
 \section{Supplementary materials} 
-
+\label{append:supplemental}
 
 \subsection{Useful publications and documents \label{sec:pubs}}
 
