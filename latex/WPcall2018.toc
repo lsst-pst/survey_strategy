@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2}How to submit a white paper?}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Requested input}{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}TeX template for submission}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}TeX template for submission}{7}{subsection.2.3}
 \contentsline {section}{\numberline {3}Proposal ranking criteria}{7}{section.3}
 \contentsline {section}{\numberline {A}Examples of open cadence optimization questions}{9}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{9}{subsection.A.1}
@@ -16,11 +16,11 @@
 \contentsline {subsection}{\numberline {A.3}Galactic plane survey }{11}{subsection.A.3}
 \contentsline {subsection}{\numberline {A.4}Southern Celestial pole mini survey}{12}{subsection.A.4}
 \contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{12}{subsection.A.5}
-\contentsline {subsection}{\numberline {A.6}Twilight survey}{12}{subsection.A.6}
-\contentsline {section}{\numberline {B}Cadence constraints imposed by the LSST system}{14}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}Hardware constraints}{14}{subsection.B.1}
+\contentsline {subsection}{\numberline {A.6}Twilight survey }{12}{subsection.A.6}
+\contentsline {section}{\numberline {B}Cadence constraints imposed by the LSST system}{13}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Hardware constraints}{13}{subsection.B.1}
 \contentsline {subsection}{\numberline {B.2}Software constraints}{15}{subsection.B.2}
-\contentsline {subsection}{\numberline {B.3}Observing efficiency constraints and ``cadence scaling laws''}{15}{subsection.B.3}
+\contentsline {subsection}{\numberline {B.3}Observing efficiency constraints and ``cadence scaling laws''}{16}{subsection.B.3}
 \contentsline {subsection}{\numberline {B.4}Limiting depth and uncertainty estimates, and ``cadence scaling laws''}{16}{subsection.B.4}
 \contentsline {section}{\numberline {C}Supplementary materials}{18}{appendix.C}
 \contentsline {subsection}{\numberline {C.1}Useful publications and documents }{18}{subsection.C.1}

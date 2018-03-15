@@ -196,8 +196,7 @@ way as all LSST data: the proposers will have no proprietary access to it. There
 formal ``acceptance'' of proposals; with the overall ranking priority advice provided to the 
 Project by the Science Advisory Committee, the Project Team will implement a number of
 different strategies that will be used as quantitative input (``a menu of options'') by the 
-Science Advisory Committee when recommending the strategy to be used during the initial 
-phase of LSST survey. 
+Science Advisory Committee when recommending strategy for the initial phase of LSST survey. 
 
 
 \subsection{Requested input}
@@ -205,85 +204,78 @@ phase of LSST survey.
 % Response will require \textsc{?}ience objectives, positions, depth, filters, cadence 
 % of observations, and metrics to demonstrate requirements
 
-The current list of surveys, for which input is requested are:
-%
+The current list of surveys, for which quantitative optimization input is requested are:
 \begin{itemize}
 \item the main Wide-Fast-Deep (WFD) survey,
-\item the Deep Drilling (DD) mini-survey,
+\item the Deep Drilling (DD) fields,
 \item Northern Ecliptic Spur (NES) mini-survey, 
 \item Galactic Plane (GP) mini-survey, and
 \item South Celestial Pole (SCP) mini-survey.
 \end{itemize}
-%
-Input on possible new mini-surveys to replace and/or enhance the current 
-list of projects and, special programs (e.g. ToO) are also welcome.  
 
-The main points of interests are:
-%
+We seek science-driven input for cadence properties such as optimal visit exposure time,
+coadded per-bandpass imaging depth, the sky coverage, temporal coverage, observing
+rules, etc.; for detailed discussion, please see Appendix A. For some special programs, 
+e.g., target-of-opportunity (ToO) observations, it is important that reasonable
+information is provided to enable proper simulations to be conducted, as well as estimation
+of total observing time allocation.
+
+In addition to existing surveys listed above, we also seek input on new mini-survey ideas 
+to replace and/or enhance the current programs, including special ToO programs. We also 
+solicit novel ideas, such as twilight observing (see \S~ref{sec:twilight}) 
+and (hypothetical) narrow-bandpass surveys\footnote{This idea is somewhat hypothetical 
+because it implies that additional hardware would be procured. For more details and 
+discussion of science drivers, please see XXX I pushed white paper by Chris 
+NarrowbandLSSTfilters\_Stubbs.pdf but we need a better home for it...}, as well as observing 
+synergies with other major surveys (e.g., WFIRST, Euclid). 
+
+It would greatly help if each white paper could be assigned to one of the following
+categories:  
 \begin{itemize} 
 \item a specific observing strategy to enable specific time domain science, 
 	that is relatively agnostic to pointing (e.g., a science case enabled 
-	by deep precise multi-color photometry). 
+	by relatively deep precise time-resolved multi-color photometry). 
 \item a specific pointing(s) that is (relatively) agnostic of the detailed observing 
-	strategy (e.g., a science case enabled by deep precise multi-color 
+	strategy (e.g., a science case enabled by very deep precise multi-color 
 	photometry) 
 \item an integrated program with science that hinges on the pointing/detailed 
 	observing strategy combination (e.g., search for variable stars in the 
-	LMC/SMC) 
+	LMC/SMC). 
 \end{itemize}  
+If a specific white paper does not fit any of these categories, please state so.
 
-% refer to an example of DDF in tex template below
+We reiterate that that the observing time allocated to all the mini-surveys 
+(including DD) is ``about'' 10\%, and is unlikely to exceed 20\% of the total available
+observing time. We note that implementation details for mini-surveys and DD fields 
+are coupled at some level to the main survey: more time for the former means less 
+for the latter, and some of the design decisions for the latter affect the science
+case for the former.  For example, some rolling cadence strategies for the main survey  
+may allow some variable and transient science to happen that would otherwise be the 
+focus of a deep drilling field, and changes in the main survey footprint will affect the 
+definition of a Galactic Plane survey. 
 
-It is 
-important to keep in mind that the total time allocated to all the mini-surveys 
-(including DD) shall not exceed $20\%$ of the allocable observing time.
-Questions of
-mini-surveys and DD fields are coupled at some level to
-WFD: more time for the former means less for the latter,
-and some of the design decisions for the latter affect the science
-case for the former.  For example, how rolling cadence is done may
-allow some variable and transient science to happen that would
-otherwise be the focus of a deep drilling field, and changes in the
-main survey footprint will affect the definition of a Galactic Plane
-survey. 
-
-For some special programs, e.g. ToO, it is important that reasonable
-information is provided to enable proper simulations to be conducted, 
-as well as estimation of total observing time allocation.
 
 \subsection{TeX template for submission} 
 
-A template and an example of the submission form, with instructions on
-the required information, can be found on the survey strategy call for white
-papers Github repository 
-(\url{https://github.com/lsst-pst/survey_strategy}).
-
-The submission process is going to be done through this repository,
-and consists of;
+A submission template and an example of the submission, with instructions about
+all the required information, can be found in a Github repository\footnote{\url{https://github.com/lsst-pst/survey_strategy}}. 
+The submission process includes the following steps
 %
 \begin{enumerate}
-\item Fork the repository on the PI's (or a selected collaborator)  Github account.
-\item Clone the forked repository on your local machine.
-\item Create a directory under proposal with the PI name as LASTNAME\_FIRSTNAME\_INSTITUTION. In case of duplicate directories, we may request changes during the review process later.
-\item Copy the contents of the directory \texttt{proposal/template/} to the directory created on the last step.
-\item Fill the latex template file with the proposal information. It is possible to make intermediate commits to keep track of the changes to the proposal and share it with collaborators.
-\item Once the proposal is ready, make a Pull Request to the master branch of the main repository. 
+\item Fork the repository using your (the PI's, or a selected collaborator's)  Github account.
+\item Clone the forked repository to your local machine.
+\item Create a directory under proposal with the PI name as LASTNAME\_FIRSTNAME\_NUMBER,
+where NUMBER is a counter for multiple proposals submitted by the same person (or the case
+of two people with the same name). 
+\item Copy the contents of the directory \texttt{proposal/template/} to the directory created in the last step.
+\item Fill the latex template file with the proposal information. It is possible to make intermediate 
+          commits to keep track of the changes to the proposal and share it with collaborators.
+\item Once the proposal is ready, make a Pull Request (PR) to the master branch of the main repository. 
+\item A team member will accept your PR, or contact you in case of problems. 
 \end{enumerate}
 
+In case of ambiguity, please ask questions on LSST Community\footnote{\url{http://community.lsst.org}}. 
 
-% ZI: it seems that submitting via pull requests to a github repo should be the easiest. 
-% If undergrads can do it for their homeworks, our colleagues should be able to do it, too. 
-% But whatever we do, we need to think about how to make it easy for us to handle them
-% once submitted. 
-
-% mention any restrictions on the length of the paper. 
-
-% give an example as part of template, perhaps from the overview paper
-
-% can we abstract the existing DDF strategies into this template form, too? 
-
-%Explain how to submit by a pull request to Observing Strategy White Paper repo
-% (a new dir? talk to Phil M.) 
 
 \section{Proposal ranking criteria} 
 
@@ -312,26 +304,25 @@ will be based on the following considerations:
 
 As always, the science program properties such as importance and robustness are open
 to interpretation. It is inevitable that some science drivers will be in conflict, and even
-observing efficiency may not be an defined in absolute sense. The Project and the Science Advisory 
+observing efficiency may not be defined in an absolute sense. The Project and the Science Advisory 
 Committee will strive to make the proposal ranking process transparent to the maximum extent possible. 
 
 
-\vskip 0.0in
-\newpage
+\vskip 0.2in 
 {\it Acknowledgments:} this document has greatly benefited from discussions between 
 the LSST Project Science Team, the LSST Science Advisory Committee and Kem Cook, 
 Phil Marshall, Steve Ridgway, Daniel Rothchild, Peter Yoachim and numerous other members 
 of the LSST Science Collaborations. 
 
+\newpage
 \appendix
-
-
 \section{Examples of open cadence optimization questions} 
 
 Quantitative optimization of the LSST observing strategy requires many 
 detailed decisions to be made, often with only an indirect science justification,
-or with conflicting science drivers.  The most significant open questions and associated tradeoffs are listed below
-for the main survey and each mini survey. 
+or with conflicting science drivers.  The most significant open questions and associated 
+tradeoffs are listed below for the main survey and each mini survey. 
+
 
 \subsection{The main Wide-Fast-Deep survey} 
 
@@ -346,7 +337,7 @@ high Galactic latitude sky, and spends about 85\% of the available observing tim
 Open questions and optimization options associated with the main survey are as follows: 
 \begin{itemize}
 \item With the current declination boundaries at Dec = $-65^\circ$ and Dec = $+5^\circ$,
-the main survey area includes about 19,000 deg$^\circ$ (without the Galactic plane 
+the main survey area includes about 18,000 deg$^\circ$ (without the Galactic plane 
 confusion zone, see \ref{sec:GP}). These boundaries were set to optimize the number of
 detected galaxies and galaxies useful for cosmological studies. These galaxy counts 
 stay within 5-10\% from the current baseline values even with a much larger survey area. 
@@ -435,16 +426,15 @@ coverage of the Galactic plane to Dec=$<+5^\circ$.
 
 \subsection{Southern Celestial pole mini survey}
 
-The airmass limit of 1.4 adopted for the main survey restricts observations to $Dec > -75^\circ$,
-thus missing large fraction of both the Magellanic Clouds. To allow coverage of the Large and 
-Small Magellanic Clouds, baseline cadence uses relaxed limits on airmass and seeing for the 
-700 deg$^2$ region around the South Celestial Pole, but with fewer observations that for the
-main survey. 
+Due to its southern declination limit ($Dec > -65^\circ$), the main survey misses large fraction
+of both the Magellanic Clouds. To allow coverage of the Large and Small Magellanic Clouds, 
+baseline cadence uses relaxed limits on airmass and seeing for the $\sim$2,000 deg$^2$ region 
+around the South Celestial Pole, but with fewer observations that for the main survey. 
 
 Detailed optimization of this strategy has not been done yet. Given recent informative observations 
 obtained by the SMASH survey (Nidever et al. 2017, arXiv:1701.00502), as well as calibration 
 and legacy aspects of this mini survey, a white paper with more detailed cadence prescriptions
-would greatly with further cadence optimization and help retain this mini survey. 
+would greatly inform further cadence optimization and help retain this mini survey. 
 
 
 \subsection{Northern Ecliptic spur mini survey}
@@ -455,93 +445,119 @@ Kuiper Belt Objects (KBOs) and naturally incorporates the southern half of the e
 plane would sample the full azimuthal distribution of TNOs, crucial for understanding the different 
 dynamical families in which they fall, and would improve the light curve sampling and completeness
 of asteroid populations in the inner Solar System. The baseline cadence covers this region using the 
-$r$ and $i$ filters only, along with more relaxed limits on airmass and seeing. A more detailed 
+$griz$ filters only, along with more relaxed limits on airmass and seeing. A more detailed 
 and robust science justification addressing both outer Solar System (e.g., TNOs) and inner Solar
 System (e.g., main-belt and NEO asteroids) populations is needed to retain this mini survey. 
 
 
 
-\subsection{Twilight survey} 
+\subsection{Twilight survey \label{sec:twilight}} 
 
-FINISH ME! 
+LSST's short read-out time (2 sec) enables efficient taking of short-exposure images during twilight time 
+that would otherwise go unused. Science drivers and technical details are discussed in Section 10.3 in the 
+Observing Strategy white paper (arXiv:1708.04058); the former include a bright star survey for Galactic
+science, obtaining light curves for nearby supernovae, and observations of near-Earth asteroids towards
+so-called ```sweet spots'' (on the Ecliptic, at Solar elongation of $\sim60^\circ$). This cadence has not 
+been simulated yet because sufficiently detailed and accurate sky brightness model, that includes twilight 
+effects, has become available only recently (Yoachim et al. 2016, Proc. SPIE, 9910-48, 99101A-1). 
 
-The short read-out time enables taking short-exposure images during twilight time that would otherwise go unused. 
-Assuming exposure time of 1 second (the current stretch goal from the LSST Science Requirements Document; the
-design value is 5 second), 
+The Project plans to simulate twilight observing in the next round of simulations (scheduled for late 2018). 
+Assuming exposure time of 1 second (the stretch goal from the LSST Science Requirements Document, 
+which is already met and corresponds to the Camera baseline requirement), the saturation limit would 
+improve by about 3 mag (relative to 15-sec exposures; in the $r$ band from about $r=16$ to $r=13$),
+with about 1.5 mag loss of limiting depth. The improvement in dynamic range of 1.5 mag would gradually
+diminish and eventually dynamic range would vanish as the sky brightness increases. About 20-30 minutes
+of additional observing time could be utilized during twilight before dynamic brightness range becomes
+too small. Assuming 7-sec visits (1 sec exposure + 1 sec for shutter + 5 sec for read and slew), about 
+2,000 deg$^2$ of sky could be imaged in 25 minutes (assuming no filter changes). Alternatively, over 
+350 exposures (1 sec + 1 sec + 2 sec) of the same field could be obtained instead. Further science 
+justification and ideas for utilizing twilight time would be valuable. 
 
-
-, together with short exposures, 
-
-
-The implementation of this would simply entail taking short-exposure images during twilight time that would otherwise go unused. 
-
-
-From Section 10.3 in OSWP: 
-
-The current LSST requirements stipulate a minimum exposure time of 5 seconds, with an expected default exposure time of 15 seconds. This document advocates for decreasing the minimum expo- sure time requirement from 5 to 0.1 seconds. This would increase the dynamic range for bright sources (compared to the default 15 sec time) by about 5 magnitudes, to a total of 13 astronomical magnitudes (where dynamic range is the difference between the brightest unsaturated source and the faintest point source detectable at 5 sigma). This is a large factor, and would enable a wide range of science goals,
-
-One interesting aspect of this is that it would allow us to operate the LSST system during twilight times that would otherwise saturate the array due to background sky brightness. This would allow a number of the goals described below to be carried out without impacting the primary survey by conducting observations during twilight sky conditions that would saturate the array at longer exposure times.
-
-
-A Bright Star Survey for Galactic Science.
-
-It is vitally important that we obtain these nearby-SN light curves on the same photometric system, reduced with the same data reduction pipeline, as the distant sample. This means we really must 
-We stress that this twilight SN followup campaign can be accomplished without impacting the main survey, during the roughly 20 minutes per night of twilight that would otherwise unusable at the default exposure time. 
-
-x
-Copy relevant info from Stubbs document. 
-
-twilight observing?  ref to Stubbs writeup and Sec 10.2.1 in OSWP: 
-
-NEOs on very Earth-like orbits are relatively unlikely to come to opposition, and therefore are 
-relatively unlikely to appear in data obtained in the wide-fast-deep survey. These objects are 
-particularly interesting since, having very Earth-like orbits, they are the most likely objects to
-be Earth impactors. These objects are most likely to be detected in a twilight survey that looks 
-at the ``sweetspot'' -- a location at around 60$\circ$ Solar elongation that is only visible at 
-twilight. Because these sweetspot fields are only visible for 30–60 twilight minutes each night, 
-a special cadence is required to find and link these objects to determine their orbits. These 
-observations would be best carried out in the $z$ filter (because the observations are made in 
-twilight, when the sky is still relatively bright). 
-
-10.3 Short Exposure Surveying to increase dynamic range by 5 mag with bright sources (to $r$ = 11-12) 
-
-
-
+The shortest exposure stretch goal in the Camera baseline requirements is set to 0.1 sec. Science-driven
+studies that would advocate pursuing this goal would be a welcome contribution; twilight observing
+would especially benefit from shorter exposures. 
+ 
 
 \section{Cadence constraints imposed by the LSST system} 
 
 
 \subsection{Hardware constraints}
 
+Several hard constraints prevent observations in certain directions. The telescope altitude limit
+prevents observations at altitudes below 20$^\circ$.  As a consequence of alt-az mount, there
+is also a zenith exclusion zone with a radius of 3.5$^\circ$. 
 
-Telescope altitude limit, the zenith exclusion zone 
+LSST telescope mount uses direct drive motors and there should not be any mechanical limits 
+on slewing from the mount.  However, there are observing efficiency considerations: the slew time 
+depends on slew distance. Approximately\footnote{Precise values can be obtained using
+method ``get\_approximate\_slewdelay'' from ts.observatory.model}, in the azimuth direction, 
+\begin{equation}
+             t_{slew}^{Az} = C^{Az} + 0.66 \, {\rm sec/deg} * \delta Az ({\rm deg}),  
+\end{equation} 
+where $C^{Az} = 3$ sec (note that even when the telescope doesn't move, there is an overhead
+of 2 sec due to read-out time). For slewing in altitude
+\begin{equation}
+             t_{slew}^{Alt} = C^{Alt} + 0.57 \, {\rm sec/deg} * \delta Alt ({\rm deg}),  
+\end{equation} 
+where $C^{Alt} = 3$ sec for slews below 9$^\circ$ and $C^{Alt} = 36$ sec for longer slews (because 
+of the need to recompute optics corrections). In baseline cadence, about 2\% of slews move
+in altitude more than 9$^\circ$. 
 
+The shortest exposure time is 1 second, with the shortest exposure stretch goal in the Camera 
+baseline requirements set to 0.1 sec. Science-driven studies that would advocate pursuing this 
+goal would be a welcome contribution (see \ref{sec:twilight}). For exposures shorter than 
+about 10 sec, the seeing due to atmospheric turbulence may be harder to characterize (more
+irregular) than for longer exposures, and moving objects may trail in long exposures (for more
+details see Section 5.1.4 in Jones et al. 2018; Icarus 303, 181). Short exposures will have a low
+observing efficiency due to finite read-out time (2 sec) and the shutter open/close time (1 sec). 
 
-Per LSST Document SPT-494, the constraints on the filter exchange strategy are: 
-
-For planning observations and in-dome calibration exposures, there is interest in the relevant engineering constraints on filter exchanges, beyond what is captured in requirements. As the system is not yet completely built and characterized, the following represents our current understanding, based on the design and on engineering judgement. As such, some of the details should be considered preliminary and subject to change. Expanded ranges could be possible if there are strong scientific motivations along with sufficient resources during operations.
-
-The filter change mechanism is designed to undergo a total of 100,000 changes over its lifetime. Each filter is designed to support up to 30,000 changes over its lifetime.
-
-A maintenance cycle is anticipated, and this would nominally occur after 10,000 changes or one year, whichever is reached first. The actual need will be informed by experience during Integration \& Test and commissioning.
-
-During a given observing night, the system could support as many changes involving the 5 filters loaded in the carousel as desired, without any practical limitation beyond the two-minute change interval (which consists of 90 seconds for the exchange plus up to 30 seconds to put the camera into the required orientation). 
-
-Filter loader operations (swapping a filter in the carousel) will be done during daytime. The system is designed for 3000 loads over its lifetime. 
-
-
+There are important constraints on the filter exchange strategy. As the system is not yet completely 
+built and characterized, the following represents current understanding, based on the design and on 
+engineering judgement. As such, some of the details should be considered preliminary and subject 
+to change. Expanded ranges could be possible if there are strong scientific motivations along with
+sufficient resources during operations.
+\begin{itemize}
+\item The filter change mechanism is designed to undergo a total of 100,000 changes over its lifetime. 
+\item Each filter is designed to support up to 30,000 changes over its lifetime.
+\item A maintenance cycle is anticipated, and this would nominally occur after 10,000 changes or 
+          one year, whichever is reached first. 
+\item During a given observing night, the system could support as many changes involving the 5 filters 
+          loaded in the carousel as desired, without any practical limitation beyond the two-minute change 
+          interval (which consists of 90 seconds for the exchange plus up to 30 seconds to put the camera
+          into the required orientation). 
+\item Filter loader operations (swapping a filter in the carousel) will be done during daytime. The system 
+          is designed for 3000 loads over its lifetime. 
+\end{itemize} 
 
 
 \subsection{Software constraints} 
 
-Double check DMTN-065
+The LSST Science Requirements Document specifies that ``As a general principle, the measurement errors
+for fundamental quantities, such as astrometry, photometry and image size, should not be dominated by 
+algorithmic performance.''. Data products that LSST will produce are described in LSST Data Products
+Definition Document (ls.st/dpdd) and more algorithmic detail is provided in LSST Data Management 
+Science Pipelines Design document (ls.st/ldm-151). 
 
-The Project will not take formal responsibility for specialized data reduction algorithms 
-needed to process data, including that taken in ``non-standard'' modes; 
-   
-Refer to Melissa's doc on Special Programs 
+However, the Project will not take formal responsibility for specialized data reduction algorithms 
+needed to process data, including that taken in ``non-standard'' modes; detailed discussion is 
+available in Data Management and LSST Special Programs document (ls.st/dmtn-065) and should
+be perused when proposing non-standard observing sequences. We also strongly recommend to 
+consult Sections 5 and 6 in LSST Data Products Definition Document. If a proposed dataset will 
+require special processing, a plan to obtain necessary software and compute resources needs to be 
+provided. 
 
-Mention crowded fields (and perhaps deblending?), document from Mario. 
+There is an additional caveat regarding crowded field processing (see also Section \ref{sec:GP}). 
+
+
+4.2.5 Crowded Field Photometry
+A fraction of LSST imaging will cover areas of high object (mostly stellar) density. These include the Galactic plane, the Large and Small Magellanic Clouds, and a number of globular clusters (among others).
+
+LSST image processing and measurement software, although primarily designed to operate in non-crowded regions, is expected to perform well in areas of crowding. The current LSST applications development plan envisions making the deblender aware of Galactic longitude and latitude, and permitting it to use that information as a prior when deciding how to de- blend objects. While not guaranteed to reach the accuracy or completeness of purpose-built crowded field photometry codes, we expect this approach will yield acceptable results even
+
+in areas of moderately high crowding.
+Note that this discussion only pertains to processing of direct images. Crowding is not ex- pected to significantly impact the quality of data products derived from difference images (i.e., Prompt products).
+
+
 
 
 
@@ -554,7 +570,9 @@ will change over time, it is conceivable that 90\% could be modified and become 
 with the observing time for other programs thus doubled. At this time, details are TBD but the Project
 is developing flexible scheduling procedures to enable such modifications. 
 
-Weather uncertainty is ~10\% and we still have not built the system 
+We note that the uncertainty in our system performance estimates due to weather is about 10\%.
+In addition, the system has not been built yet and many hardware performance parameters are
+still taken at their design values.  
 
 Minimum Exposure time: Science Requirements Document stretch goal is 1s; design spec is 5s.
 Short exposures might have problems with irregular PSFs and will have a lower efficiency due to
@@ -572,7 +590,7 @@ Standard exposure sequence: 2x15 sec
 \subsection{Limiting depth and uncertainty estimates,  and ``cadence scaling laws''} 
 
 How to estimate limiting imaging depth for a given exposure time and other observing parameters
-is discussed in Section 3.2 in the LSST Overview paper (see \ref{sec:pubs}). Tradeoffs between 
+is discussed in detail in Section 3.2 in the LSST Overview paper (see \ref{sec:pubs}). Tradeoffs between 
 exposure time per visit, single-visit depth, the mean revisit time, and the total number of visits,
 as well as justification for the adopted standard exposure time of 30 sec, are discussed in Section 
 2.2 from the same paper. The improvement in measurement uncertainties as the surveys progresses
@@ -673,7 +691,9 @@ The \href{http://ls.st/ldm-151}{LSST Data Management Science Pipelines Design} (
 %The \href{http://ls.st/lse-61}{LSST Data Management System Requirements} (DMSR) document details the official requirements for LSST's data management processing. This is a higher level of detail than the DPDD on the characteristics and specifications of individual data products but does not describe how these data products are created. \url{http://ls.st/lse-61}
 
 The \href{https://github.com/lsst-pst/survey_strategy/blob/master/db/baseline-doc/baseline.pdf}{baseline simulated survey} document describes the new features enabled in Opsim v4, as well as characteristics of the updated baseline simulated survey. 
-{\bf XXX: LINK WILL ADDED HERE!}
+{\bf XXX: LINK WILL BE ADDED HERE!}
+
+{\bf XXX: WE WILL PROBABLY ADD A LINK TO A FEW MORE SIMULATED SURVEYS.}
 
 
 \subsection{Useful websites and slide collections}
@@ -708,9 +728,11 @@ The LSST Science Advisory Committee (SAC) is charged with collecting and deliver
 
 In addition to this call for white papers, the Observing Strategy white paper\footnote{A living document available at https://github.com/LSSTScienceCollaborations/ObservingStrategy} provides a coordinated mechanism for providing scientific input about survey strategy. LSST science collaborations are also official channels for communication with the LSST project --- a Data Management liaison is assigned to each Science Collaboration to answer specific questions about data products generated by the project.
 
-There will be public (open and archived) discussions with the survey strategy team, as well as LSST Data Management and LSST Education and Public Outreach teams, on \href{http://community.lsst.org}{LSST Community} (\url{http://community.lsst.org}). 
+There will be public (open and archived) discussions with the Survey Strategy team, as well as with LSST Data Management 
+and LSST Education and Public Outreach teams, on \href{http://community.lsst.org}{LSST Community} (\url{http://community.lsst.org}). 
 
-Throughput the survey strategy design process there will be open meetings. The first of these will be at the LSST All Hands Meeting 2018 in Tucson, AZ (August 13-17, 2018). 
+Throughout the survey strategy design process there will be open community meetings. The first of these will be 
+at the LSST All Hands Meeting 2018 in Tucson, AZ (August 13-17, 2018). 
 
 \end{document} 
 
@@ -728,7 +750,6 @@ Aug 14 and Dec 8, 2017:
       the AAS newsletter, targeted e-mailing, announcements at the AAS and other meetings, and so on.
 - there should be a continuing effort to solicit new metrics (or ideas for them) from the community. 
 - need to develop details for the review proces (the decisions on observing strategy must be as objective as possible) 
-
 
 
 ZI: modified cadences:
