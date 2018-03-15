@@ -478,8 +478,7 @@ studies that would advocate pursuing this goal would be a welcome contribution; 
 would especially benefit from shorter exposures. 
  
 
-\section{Cadence constraints imposed by the LSST system} 
-
+\section{Constraints on cadence imposed by the LSST system} 
 
 \subsection{Hardware constraints}
 
@@ -547,21 +546,21 @@ require special processing, a plan to obtain necessary software and compute reso
 provided. 
 
 There is an additional caveat regarding crowded field processing (see also Section \ref{sec:GP}). 
+A fraction of LSST imaging will cover areas of high object (mostly stellar) densit, such as the 
+Galactic plane, the Large and Small Magellanic Clouds, and a number of globular clusters (among 
+others). LSST image processing and measurement software, although primarily designed to operate 
+in non-crowded regions, is expected to perform well in areas of crowding. The current LSST applications 
+development plan envisions making the deblender aware of Galactic longitude and latitude, and 
+permitting it to use that information as a prior when deciding how to deblend objects. While not 
+guaranteed to reach the accuracy or completeness of purpose-built crowded field photometry codes, 
+we expect this approach will yield acceptable results even in areas of moderately high crowding.
+
+The above discussion only pertains to processing of direct images. Crowding is not expected to 
+significantly impact the quality of data products derived from difference images (i.e., Prompt 
+products).
 
 
-4.2.5 Crowded Field Photometry
-A fraction of LSST imaging will cover areas of high object (mostly stellar) density. These include the Galactic plane, the Large and Small Magellanic Clouds, and a number of globular clusters (among others).
-
-LSST image processing and measurement software, although primarily designed to operate in non-crowded regions, is expected to perform well in areas of crowding. The current LSST applications development plan envisions making the deblender aware of Galactic longitude and latitude, and permitting it to use that information as a prior when deciding how to de- blend objects. While not guaranteed to reach the accuracy or completeness of purpose-built crowded field photometry codes, we expect this approach will yield acceptable results even
-
-in areas of moderately high crowding.
-Note that this discussion only pertains to processing of direct images. Crowding is not ex- pected to significantly impact the quality of data products derived from difference images (i.e., Prompt products).
-
-
-
-
-
-\subsection{Observing efficiency constraints and  ``cadence scaling laws''}
+\subsection{Observing efficiency constraints} 
 
 The LSST Science Requirements Document  ``...assumes a nominal 10-year duration with about 90\% 
 of the observing time allocated for the main LSST survey.'', and thus 10\% of observing time is left for 
@@ -574,20 +573,22 @@ We note that the uncertainty in our system performance estimates due to weather 
 In addition, the system has not been built yet and many hardware performance parameters are
 still taken at their design values.  
 
-Minimum Exposure time: Science Requirements Document stretch goal is 1s; design spec is 5s.
-Short exposures might have problems with irregular PSFs and will have a lower efficiency due to
-finite read-out time (2 sec). Exposures much longer than standard 30 sec will cause fast asteroids
-to be trailed. In dark time, the u band exposures are not background limited with the standard
-exposure time (see Table 2 and related discussions in the LSST overview paper). 
+Sustained observing with exposures much shorter exposures than standard visits will result
+in diminished observing efficiency. Given total visit exposure time $t_{vis}$ (30 sec for standard
+visits), with two exposures/readouts per visit, and assuming a slew and settle time of 5 sec 
+(also including the second readout) ), the observing efficiency can be computed as 
+\begin{equation}
+     \epsilon = \left( {t_{vis} \over t_{vis} + 9 \, \mathrm{sec}}\right).
+\end{equation}
+To maintain efficiency losses below $\sim$30\% (i.e., at least below the limit set by the weather patterns),
+and to minimize the read noise impact, $t_{vis} > 20$ seconds is required for sustained observing. 
 
-Read-out time 
-
-Slew time 
-
-Standard exposure sequence: 2x15 sec 
+Variations in exposure time affect not only the limiting depth, but also the total number of 
+acquired visits and revisit time because the total observing time is finite. For more detailed 
+discussion of these tradeoffs, please peruse Section 2.2.2 in the Overview paper. 
 
 
-\subsection{Limiting depth and uncertainty estimates,  and ``cadence scaling laws''} 
+\subsection{Limiting depth and uncertainty estimates}  
 
 How to estimate limiting imaging depth for a given exposure time and other observing parameters
 is discussed in detail in Section 3.2 in the LSST Overview paper (see \ref{sec:pubs}). Tradeoffs between 
@@ -664,11 +665,6 @@ $^e$ The trigonometric parallax accuracy for a point source with $r$=24 (milliar
 $^f$  The proper motion accuracy for a point source with $r$=24 (milliarcsec/yr).  \\
 %\vskip 0.2in          
 \end{table}
-
-
-
-
-
 
 
 
