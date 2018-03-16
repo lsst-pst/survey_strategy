@@ -6,8 +6,11 @@ Baseline
   WFD with 18,000 sq deg footprint; NES; SCP + GP with 30 visits/filter; DD with 5 fields with u + grizy sequences.
   astro-lsst-01_2022 (baseline_2018a)
 
-WFD only
-  WFD with XX sq deg footprint, in pairs. 
+WFD + DD
+  WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18) 
+  
+"Many visits"
+  20s visits with single snap, 40s visits in u band
  
 GP at WFD cadence
   Similar to baseline, but remove GP proposal and just run WFD over the galactic plane range of RA.
@@ -35,7 +38,7 @@ Pairs in the same filter, vs. pairs in different filters.
 
 Single visits in a night.
 
-Triple visits in a night.
+Triple visits in a night (perhaps). 
 
 TOO visits - X triggers per year, to search ? fields around a given field location to ? depth in ? filter
 
