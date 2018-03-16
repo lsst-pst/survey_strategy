@@ -600,23 +600,25 @@ Variations in exposure time affect not only the limiting depth, but also the tot
 acquired visits and revisit time because the total observing time is finite. For more detailed 
 discussion of these tradeoffs, please peruse Section 2.2.2 in the Overview paper. 
 
+The number of filter changes and size of slews also affects efficiency. 
 
 \subsection{Limiting depth and uncertainty estimates}  
 
-How to estimate limiting imaging depth for a given exposure time and other observing parameters
+Methods for estimating individual image depth ($5\sigma$ point source magnitude limits) for a given exposure time and other observing parameters
 is discussed in detail in Section 3.2 in the LSST Overview paper (see \ref{sec:pubs}). Tradeoffs between 
 exposure time per visit, single-visit depth, the mean revisit time, and the total number of visits,
 as well as justification for the adopted standard exposure time of 30 sec, are discussed in Section 
 2.2 from the same paper. The improvement in measurement uncertainties as the surveys progresses
 (as a function of time, $t$) can be approximately summarized as follows. 
 
-The coadded depth (the 5$\sigma$ depth for point sources), $m_5^{\rm coadd}$, scales 
+The co-added depth (the 5$\sigma$ depth for point sources), $m_5^{\rm co-add}$, scales 
 with time as (see eq.~6 in the overview paper)  
 \begin{equation} 
-         m_5^{\rm coadd}  = m_5^{\rm coadd, Final}  + 1.25 \, \log_{10}\left({t \over 10 \, {\rm yrs}}\right) 
+         m_5^{\rm co-add}  = m_5^{\rm co-add, Final}  + 1.25 \, \log_{10}\left({t \over 10 \, {\rm yrs}}\right) 
 \end{equation} 
-where $m_5^{\rm coadd, Final}$ is the target depth achieved with 10-year survey (with
-airmass and other losses taken into account, $m_5^{\rm coadd, Final}=27.2$ for the $r$ band). 
+where $m_5^{\rm co-add, Final}$ is the target depth achieved with 10-year survey. With
+airmass and other losses taken into account, $m_5^{\rm co-add, Final}=27.2$ for the $r$ band
+in the baseline simulated survey. 
 
 The photometric errors (inverse signal-to-noise ratio) at the faint limit of the so-called 
 ``gold'' galaxy sample (4 billion galaxies with $i<25.3$ which will be used for cosmological
@@ -649,7 +651,7 @@ the number of visits is assumed proportional to time, with a value of 825 corres
 main deep-wide-fast 10-year survey. 
 
 The behavior of these quantities as a function of time is summarized in Table 3. While 
-the coadded depth and $\sigma$($i$=25) rapidly improve during the first few years, 
+the co-added depth and $\sigma$($i$=25) rapidly improve during the first few years, 
 several important quantities continue to show marked improvement between the survey 
 years 8 and 10: most notably, the color volume per source for faint sources ($i=25$) 
 shrinks by a factor of 1.7.  Substantial improvement is also seen for proper motions, 
@@ -670,7 +672,7 @@ with errors larger by 40\%, after 8 years than at the end of the 10-year survey.
 \hline                         
 \end{tabular}
 \\ \vskip 0.05in
-$^a$ The coadded depth in the $r$ band (AB, 5$\sigma$; point sources).  \\
+$^a$ The co-added depth in the $r$ band (AB, 5$\sigma$; point sources).  \\
 $^b$ The photometric error for a point source with $i=25$. \\
 $^c$ The volume of the 5-dimensional color space, normalized by the final value. \\
 $^d$ The number of visits per sky position (summed over all bands). \\
