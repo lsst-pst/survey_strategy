@@ -331,9 +331,9 @@ encouraged to address these questions.
 
 The baseline survey strategy optimizes the amount of sky covered in any given night (subject to 
 the constraint of observing at airmass less than 1.4 throughout and gathering pairs of visits in each night), and allows the entire sky 
-visible at any time of the year to be covered in about three nights. The cadence is designed 
-to give uniform coverage at any given time, and to reach the survey goals for measuring 
-stellar parallax and proper motion, and the number of visits (825 visits, summed over the 
+visible at any time of the year to be covered in about three nights. The basic strategy is designed 
+to give roughly uniform coverage at any given time, and to reach the survey goals for measuring 
+stellar parallax and proper motion, and the number of visits per field (825 visits, summed over the 
 six filters). In the baseline implementation, the main survey covers about 18,000 deg$^2$ of 
 high Galactic latitude sky, and spends about 85\% of the available observing time. 
 
@@ -343,45 +343,47 @@ Open questions and optimization options associated with the main survey are as f
 the main survey area includes about 18,000 deg$^\circ$ (without the Galactic plane 
 confusion zone, see \ref{sec:GP}). These boundaries were set to optimize the number of
 detected galaxies and galaxies useful for cosmological studies. These galaxy counts 
-stay within 5-10\% from the current baseline values even with a much larger survey area. 
-For example, Section 2.4 in the Observing Strategy white paper describes a cadence simulation 
-that covers 27,400 deg$^2$ to about 0.15 mag shallower coadded depth than in baseline 
-cadence (airmass limit is relaxed to 1.5 and declination boundaries are at Dec = $-78^\circ$ 
+stay within 5-10\% of the current baseline values even with a much larger survey area. 
+For example, Section 2.4 in the Observing Strategy white paper describes a simulated survey
+that covers 27,400 deg$^2$ to about 0.15 mag shallower co-added depth than in the baseline 
+survey (the airmass limit is relaxed to 1.5 and declination boundaries are at Dec = $-78^\circ$ 
 and Dec = $+18^\circ$, with the mean number of visits per field about 20\% smaller that
-in baseline cadence). This tradeoff between the sky coverage and coadded depth is still
+in baseline survey). This tradeoff between the sky coverage and co-added depth is still
 open to optimization and it is important to receive science-driven optimization arguments
 from all science programs. 
-\item The observing time allocation per band listed in the Science Requirements Document
+\item The observing time allocation per band (number of visits per filter) listed in the Science Requirements Document
 (Table 24) is given only as an illustration. Further optimization of this allocation for the main 
 survey, and different fractional allocations for mini surveys, are likely possible. 
 \item A ``rolling cadence'' (as opposed to uniform temporal sampling) can provide enhanced
-sampling rates over a part of the survey, or the entire survey for a designated time, at the
+sampling rates over a part of the survey for a designated time, at the
 cost of reduced sampling rate the rest of the time (while maintaining the nominal total 
-visit counts). While it is known that science programs such as supernovae, asteroids, and
+visit counts). While it is likely that science programs such as supernovae, asteroids, and
 short-timescale stellar variability would benefit from rolling cadence, detailed cadence
-parameters have not been optimized yet (e.g., ``rolling'' in RA vs. Dec). 
-\item Current baseline cadence obtains two visits per night (within 15-60 minutes) in 
+parameters have not been optimized yet ({\it e.g.}, how much of the 
+survey area to ``roll'' at once and how long to ``roll' for, or whether to ``roll'' in RA or Dec). 
+\item The current baseline survey strategy obtains two visits per night (within 15-60 minutes) in 
 order to enable easy linking of asteroid detections, and robust identification of rapid 
 photometric transients. Whether the two visits on the same night should be obtained 
 in the same filter or in different filters has not been decided yet (e.g., in the context
 of photometric transients, same filters would provide a more accurate measurement
 of the brightness change, while different filters would provide a color constraint). 
-\item Current baseline cadence assumes that a visit is composed of two 15-second
+\item The current baseline survey strategy assumes that a visit is composed of two 15-second
 exposures, the so-called snaps. While snaps enable search for very rapid variability,
 and help with cosmic ray rejection, there are compelling arguments to abandon
 them, with observing efficiency being the main argument. 
 \end{itemize}
+White papers addressing these optimization efforts are encouraged.
 
 
 \subsection{``Deep Drilling'' fields} 
 
 The Deep Drilling (DD) fields are single pointings that are observed in extended sequences. 
-In the first call for white papers on cadence optimization, the Project has received 
+In the first call for white papers in 2011 on survey strategy optimization, the Project received 
 8 white papers from the community\footnote{These white papers are available from 
 https://project.lsst.org/content/whitepapers32012}. These proposals often include certain 
 filter combinations to ensure that near-simultaneous color information is available for 
-variable and transient objects. Science programs proposed in most DD proposals are well 
-matched to the size of LSST field of view (9.6 deg$^2$). However, it is plausible that some
+variable and transient objects. While science programs suggested in DD proposals are ideally well 
+matched to the size of LSST field of view (9.6 deg$^2$), it is plausible that some
 programs may require several fields. 
 
 Four of the LSST DD fields have been selected and announced (Elias S1, 
@@ -389,6 +391,13 @@ XMM-LSS, Extended Chandra Deep Field-South, and COSMOS). It is guaranteed that t
 will be observed with deeper coverage and more frequent temporal sampling than the main 
 survey fields, but details are still open. It is expected that there will be more DD fields 
 selected for the final survey (a plausible but not prescriptive range is 5-10). 
+
+The observing sequences for these DD fields are not well determined. The current baseline
+cadence includes sequences of $grizy$ observations during bright time, and sequences of $u$ 
+band observations during dark time. The large number of filter changes in the bright time sequences
+are inefficient and the large gap in multi-color sampling during dark time is likely problematic 
+for variable and transient characterization. White papers addressing improved cadences for DD 
+sequences are desirable.
 
 
 \subsection{Galactic plane survey \label{sec:GP}}
@@ -417,7 +426,7 @@ been done yet. In particular, science-driven input is needed for both ``static s
 programs (e.g., The Blanco DECam Bulge Survey, BDBS Collaboration) and  time domain
 surveys (e.g., Gould 2013, arXiv:1304.3455). 
 
-The footprint in the current baseline cadence extends to far north along the Galactic
+The footprint in the current baseline survey strategy extends to far north along the Galactic
 plane, to the region that can only be observed at relatively large airmass from the LSST
 site at Cerro Pach\'on ($X>1.4$ at Dec=$+15^\circ$). Originally, this extension was designed 
 to extend longitudinal coverage of the Galactic plane with Galactic structure studies in mind. 
@@ -431,7 +440,7 @@ coverage of the Galactic plane to Dec=$<+5^\circ$.
 
 Due to its southern declination limit ($Dec > -65^\circ$), the main survey misses large fraction
 of both the Magellanic Clouds. To allow coverage of the Large and Small Magellanic Clouds, 
-baseline cadence uses relaxed limits on airmass and seeing for the $\sim$2,000 deg$^2$ region 
+baseline survey strategy uses relaxed limits on airmass and seeing for the $\sim$2,000 deg$^2$ region 
 around the South Celestial Pole, but with fewer observations that for the main survey. 
 
 Detailed optimization of this strategy has not been done yet. Given recent informative observations 
@@ -442,16 +451,15 @@ would greatly inform further cadence optimization and help retain this mini surv
 
 \subsection{Northern Ecliptic spur mini survey}
 
-The universal cadence provides most of LSST’s power for detecting Near Earth Objects (NEO) and 
+The main survey footprint provides most of LSST's power for detecting Near Earth Objects (NEO) and 
 Kuiper Belt Objects (KBOs) and naturally incorporates the southern half of the ecliptic within its 
-18,000 deg$^2$ sky area. Additional coverage of a crescent within 10 degrees of the Northern ecliptic 
+18,000 deg$^2$ sky area. Additional coverage of a crescent reaching to +10 degrees of the Northern ecliptic 
 plane would sample the full azimuthal distribution of TNOs, crucial for understanding the different 
 dynamical families in which they fall, and would improve the light curve sampling and completeness
-of asteroid populations in the inner Solar System. The baseline cadence covers this region using the 
+of asteroid populations in the inner Solar System. The baseline survey strategy covers this region using the 
 $griz$ filters only, along with more relaxed limits on airmass and seeing. A more detailed 
 and robust science justification addressing both outer Solar System (e.g., TNOs) and inner Solar
-System (e.g., main-belt and NEO asteroids) populations is needed to retain this mini survey. 
-
+System (e.g., main-belt and NEO asteroids) populations is needed to retain and improve this mini survey. 
 
 
 \subsection{Twilight survey \label{sec:twilight}} 
@@ -465,23 +473,23 @@ been simulated yet because sufficiently detailed and accurate sky brightness mod
 effects, has become available only recently (Yoachim et al. 2016, Proc. SPIE, 9910-48, 99101A-1). 
 
 The Project plans to simulate twilight observing in the next round of simulations (scheduled for late 2018). 
-Assuming exposure time of 1 second (the stretch goal from the LSST Science Requirements Document, 
+Assuming exposure times of 1 second (the stretch goal from the LSST Science Requirements Document, 
 which is already met and corresponds to the Camera baseline requirement), the saturation limit would 
-improve by about 3 mag (relative to 15-sec exposures; in the $r$ band from about $r=16$ to $r=13$),
+improve by about 3 mag relative to 15-sec exposures; in the $r$ band from about $r=16$ to $r=13$,
 with about 1.5 mag loss of limiting depth. The improvement in dynamic range of 1.5 mag would gradually
 diminish and eventually dynamic range would vanish as the sky brightness increases. About 20-30 minutes
 of additional observing time could be utilized during twilight before dynamic brightness range becomes
 too small. Assuming 7-sec visits (1 sec exposure + 1 sec for shutter + 5 sec for read and slew), about 
 2,000 deg$^2$ of sky could be imaged in 25 minutes (assuming no filter changes). Alternatively, over 
-350 exposures (1 sec + 1 sec + 2 sec) of the same field could be obtained instead. Further science 
-justification and ideas for utilizing twilight time would be valuable. 
+350 exposures (1 sec + 1 sec + 2 sec) of the same field could be obtained instead.  White papers addressing
+the science justification and strategies for using twilight time are desired.
 
 The shortest exposure stretch goal in the Camera baseline requirements is set to 0.1 sec. Science-driven
 studies that would advocate pursuing this goal would be a welcome contribution; twilight observing
 would especially benefit from shorter exposures. 
  
 
-\section{Constraints on cadence imposed by the LSST system} 
+\section{Constraints on survey strategy imposed by the LSST system} 
 
 \subsection{Hardware constraints}
 
@@ -502,12 +510,11 @@ of 2 sec due to read-out time). For slewing in altitude
              t_{slew}^{Alt} = C^{Alt} + 0.57 \, {\rm sec/deg} * \delta Alt ({\rm deg}),  
 \end{equation} 
 where $C^{Alt} = 3$ sec for slews below 9$^\circ$ and $C^{Alt} = 36$ sec for longer slews (because 
-of the need to recompute optics corrections). In baseline cadence, about 2\% of slews move
+of the need to recompute optics corrections). In the baseline simulated survey, about 2\% of slews move
 in altitude more than 9$^\circ$. 
 
 The shortest exposure time is 1 second, with the shortest exposure stretch goal in the Camera 
-baseline requirements set to 0.1 sec. Science-driven studies that would advocate pursuing this 
-goal would be a welcome contribution (see \ref{sec:twilight}). For exposures shorter than 
+baseline requirements set to 0.1 sec. For exposures shorter than 
 about 10 sec, the seeing due to atmospheric turbulence may be harder to characterize (more
 irregular) than for longer exposures, and moving objects may trail in long exposures (for more
 details see Section 5.1.4 in Jones et al. 2018; Icarus 303, 181). Short exposures will have a low
@@ -544,9 +551,9 @@ However, the Project will not take formal responsibility for specialized data re
 needed to process data, including that taken in ``non-standard'' modes; detailed discussion is 
 available in Data Management and LSST Special Programs document (ls.st/dmtn-065) and should
 be perused when proposing non-standard observing sequences. We also strongly recommend to 
-consult Sections 5 and 6 in LSST Data Products Definition Document. If a proposed dataset will 
-require special processing, a plan to obtain necessary software and compute resources needs to be 
-provided. 
+consult Sections 5 and 6 in the \href{http://ls.st/dpdd}{LSST Data Products Definition Document}. If a proposed dataset will 
+require special processing, a plan to obtain necessary software and compute resources must be 
+provided in the white paper proposal.
 
 There is an additional caveat regarding crowded field processing (see also Section \ref{sec:GP}). 
 A fraction of LSST imaging will cover areas of high object (mostly stellar) densit, such as the 
