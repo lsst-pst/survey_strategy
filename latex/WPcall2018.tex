@@ -536,6 +536,9 @@ sufficient resources during operations.
           into the required orientation). 
 \item Filter loader operations (swapping a filter in the carousel) will be done during daytime. The system 
           is designed for 3000 loads over its lifetime. 
+\item The currently implemented filter-swap strategy is to replace one of the $z$ or $y$ (whichever has 
+	the largest overall progress) by the $u$ band when the moon brightness is lower than $20\%$. The 
+	process is reversed when the moon is above the same threshold. 	
 \end{itemize} 
 
 
