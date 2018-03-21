@@ -287,7 +287,7 @@ science possible with specialized observing using about 10\% of the total observ
 We anticipate that the adopted observing strategy will be based on an amalgam of ideas from 
 different white papers; therefore, there will be no formal ``acceptance'' of proposals. The
 overall ranking priority advice provided to the Project by the Science Advisory Committee 
-will be based on the following considerations\footenote{The PST is expected to review these ranking criteria before the call for white papers is published.}: 
+will be based on the following considerations\footnote{The PST is expected to review these ranking criteria before the call for white papers is published.}: 
 \begin{itemize}
 \item {\bf Science} Importance and robustness of proposed science program, including 
            its match to the unique abilities of the LSST system, and its consistency with the 
@@ -690,7 +690,9 @@ $^f$  The proper motion accuracy for a point source with $r$=24 (milliarcsec/yr)
 \section{Supplementary materials} 
 \label{append:supplemental}
 
-\subsection{Useful publications and documents \label{sec:pubs}}
+\subsection{Useful publications and websites \label{sec:pubs}}
+
+{\it Note that various websites and documents references here are still in development (if not an official LSST change control document).}
 
 The \href{https://www.lsst.org/content/lsst-science-drivers-reference-design-and-anticipated-data-products}{LSST Overview paper} provides a short summary of the four primary science drivers, as well as the expected performance of LSST in terms of throughputs, and calibration. 
 It also discusses high-level survey constraints and tradeoffs.  Available as \url{http://ls.st/pif}
@@ -705,25 +707,16 @@ The \href{http://ls.st/ldm-151}{LSST Data Management Science Pipelines Design} (
 
 %The \href{http://ls.st/lse-61}{LSST Data Management System Requirements} (DMSR) document details the official requirements for LSST's data management processing. This is a higher level of detail than the DPDD on the characteristics and specifications of individual data products but does not describe how these data products are created. \url{http://ls.st/lse-61}
 
-The \href{https://github.com/lsst-pst/survey_strategy/blob/master/db/baseline-doc/baseline.pdf}{baseline simulated survey} document describes the new features enabled in Opsim v4, as well as characteristics of the updated baseline simulated survey. 
-{\bf XXX: LINK WILL BE ADDED HERE!}
-
-{\bf XXX: We will probably add a link to a report comparing a few additional simulated surveys here.  (the link to MAF analysis of these would be below)}.
-
-
-\subsection{Useful websites and slide collections}
-
-{\it Note that these websites are still in development.}
+Documentation about OpSim (SOCS and Scheduler), including a high-level overview and description of scheduling options, is available at \url{http://sims-opsim.lsst.io}.
 
 Documentation about MAF, including a high-level overview and descriptions of current standard metric analyses, is available at \url{http://sims-maf.lsst.io}. 
+
+The \href{https://github.com/lsst-pst/survey_strategy/blob/master/db/baseline-doc/baseline.pdf}{baseline simulated survey} document describes the new features enabled in Opsim v4, as well as characteristics of the updated baseline simulated survey. 
+
 The outputs of MAF analyses for the new baseline survey, as well as runs demonstrating potential options for mini surveys and Deep 
 Drilling fields (a subset of the runs described in Chapter 2 of the OSWP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}. 
 
-Documentation about OpSim (SOCS and Scheduler), including a high-level overview and description of scheduling options, is available at \url{http://sims-opsim.lsst.io}.
-
 A short description of the current Deep Drilling fields and links to further materials (including white papers submitted in response to the 2011 call for input on the DD strategy) are available on the LSST website at \href{https://www.lsst.org/scientists/survey-design/ddf}{http://ls.st/57q}. Additional posts on LSST Community can be found by searching for \href{https://community.lsst.org/search?q=deep%20drilling}{`deep drilling'}. 
-
-An open, searchable resource for asking questions not addressed in this document is available on \href{http://community.lsst.org}LSST Community, in the Science category, SurveyStrategy subcategory. Team members will monitor and respond in a timely manner to questions posted there.  Please go to \url{http://community.lsst.org}
 
 Additional information is available in the following presentations:
 \begin{itemize}
@@ -743,14 +736,29 @@ The LSST Science Advisory Committee (SAC) is charged with collecting and deliver
 
 In addition to this call for white papers, the Observing Strategy white paper\footnote{A living document available at https://github.com/LSSTScienceCollaborations/ObservingStrategy} provides a coordinated mechanism for providing scientific input about survey strategy. LSST science collaborations are also official channels for communication with the LSST project --- a Data Management liaison is assigned to each Science Collaboration to answer specific questions about data products generated by the project.
 
-There will be public (open and archived) discussions with the Survey Strategy team, as well as with LSST Data Management 
-and LSST Education and Public Outreach teams, on \href{http://community.lsst.org}{LSST Community} (\url{http://community.lsst.org}). 
+An open, searchable resource for asking questions not addressed in this document is available on \href{http://community.lsst.org}{LSST Community}, in the Science category, SurveyStrategy subcategory. Team members will monitor and respond in a timely manner to questions posted there.  Please go to \url{http://community.lsst.org}
 
 There is a mailing list available (email: lsst-survey-strategy at lsstcorp.org) to contact the survey strategy team in case of specific 
 questions and/or concerns. Messages posted to the mailing list are broadcasted to the survey strategy team and archived. 
 
 Throughout the survey strategy design process there will be open community meetings. The first of these will be 
 at the LSST All Hands Meeting 2018 in Tucson, AZ (August 13-17, 2018). 
+
+\subsection{Additional Simulated Survey Strategies}
+
+By the time this call for white papers is officially released, we anticipate that we will provide several more sample simulated surveys for the community to use as test cases. These modified survey strategies will include (approximately): 
+\begin{itemize}
+\item The baseline survey strategy, with the main survey having a 18,000 sq deg footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling minisurveys operating in the current example baseline survey strategy manner. 
+\item A survey with a much larger main survey footprint (27,000 deg sq -- defined by X<1.5 and  declination limits -78 to +18) and only the Deep Drilling minisurvey. 
+\item A survey strategy with `more visits': each visit being 20 seconds long with a single exposure per visit, 40 second visits in the $u$ band.
+\item A survey similar to the current baseline, with the Galactic Plane at the main survey cadence (and the northern tip of the galactic plane minisurvey removed).
+\item A survey similar to the current baseline, but with additional Deep Drilling fields.
+\item A survey similar to the current baseline, but with a modified cadence for Deep Drilling fields (ideally: observe in only 3 filters per night, but with a shorter gap between nights; rotating among the 3 filters used in each night).
+\item Rolling cadence simulations in the main survey -- concentrating observations in bands of declination in some simulations, and in bands of RA in other simulations
+\item A survey similar to the current baseline, but obtaining pairs of visits in different filters (vs. the same filter).
+\item A survey similar to the current baseline, but only observing in single visits per night.
+\item A survey similar to the current baseline, but adding ToO trigger events.
+\end{itemize}
 
 \end{document} 
 
@@ -768,24 +776,6 @@ Aug 14 and Dec 8, 2017:
       the AAS newsletter, targeted e-mailing, announcements at the AAS and other meetings, and so on.
 - there should be a continuing effort to solicit new metrics (or ideas for them) from the community. 
 - need to develop details for the review process (the decisions on observing strategy must be as objective as possible) 
-
-
-ZI: modified cadences:
-
-1) Large Area
-    Maximize the main survey area (``Pan-STARRS'', 27,400 deg$^2$):
-    X<1.5, DecMin=$-78^\circ$ and DecMax = $+18^\circ$, 
-    No mini surveys, but yes for DDFs   
-
-2) Many Visits 
-    20 sec visits with single snap, and 40 sec in the u band 
-
-Stretch: 
-
-3) Many DDFs ?? 
-    24 DDFs, 12 observed every night, with out-in replacement every 2 weeks 
-    standard visit or deeper? 1 or more filters per night? 
-
 
 
 
