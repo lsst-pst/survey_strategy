@@ -554,16 +554,16 @@ algorithmic performance.''. Data products that LSST will produce are described i
 Definition Document (ls.st/dpdd) and more algorithmic detail is provided in LSST Data Management 
 Science Pipelines Design document (ls.st/ldm-151). 
 
-However, the Project will not take formal responsibility for specialized data reduction algorithms 
+The Project will not take formal responsibility for specialized data reduction algorithms 
 needed to process data, including that taken in ``non-standard'' modes; detailed discussion is 
 available in Data Management and LSST Special Programs document (ls.st/dmtn-065) and should
-be perused when proposing non-standard observing sequences. We also strongly recommend to 
+be perused when proposing non-standard observing sequences. In addition, we strongly recommend to 
 consult Sections 5 and 6 in the \href{http://ls.st/dpdd}{LSST Data Products Definition Document}. If a proposed dataset will 
 require special processing, a plan to obtain necessary software and compute resources must be 
 provided in the white paper proposal.
 
 There is an additional caveat regarding crowded field processing (see also Section \ref{sec:GP}). 
-A fraction of LSST imaging will cover areas of high object (mostly stellar) densit, such as the 
+A fraction of LSST imaging will cover areas of high object (mostly stellar) density, such as the 
 Galactic plane, the Large and Small Magellanic Clouds, and a number of globular clusters (among 
 others). LSST image processing and measurement software, although primarily designed to operate 
 in non-crowded regions, is expected to perform well in areas of crowding. The current LSST applications 
@@ -586,11 +586,11 @@ will change over time, it is conceivable that 90\% could be modified and become 
 with the observing time for other programs thus doubled. At this time, details are TBD but the Project
 is developing flexible scheduling procedures to enable such modifications. 
 
-We note that the uncertainty in our system performance estimates due to weather is about 10\%.
+We note that the uncertainty in our system performance estimates due to weather and solar activity is about 10\%.
 In addition, the system has not been built yet and many hardware performance parameters are
 still taken at their design values.  
 
-Sustained observing with exposures much shorter than standard visits will result
+Sustained observing, such as the main survey, with exposures much shorter than standard visits will result
 in diminished observing efficiency. Given total visit exposure time $t_{vis}$ (30 sec for standard
 visits), with two exposures/readouts per visit, and assuming a slew and settle time of 5 sec 
 (also including the second readout) ), the observing efficiency can be computed as 
@@ -600,7 +600,7 @@ visits), with two exposures/readouts per visit, and assuming a slew and settle t
 To maintain efficiency losses below $\sim$30\% (i.e., at least below the limit set by the weather patterns),
 and to minimize the read noise impact, $t_{vis} > 20$ seconds is required for sustained observing. 
 
-Variations in exposure time affect not only the limiting depth, but also the total number of 
+Variations in exposure time for the main survey affect not only the limiting depth, but also the total number of 
 acquired visits and revisit time because the total observing time is finite. For more detailed 
 discussion of these tradeoffs, please peruse Section 2.2.2 in the Overview paper. 
 
@@ -612,8 +612,8 @@ Methods for estimating individual image depth ($5\sigma$ point source magnitude 
 is discussed in detail in Section 3.2 in the LSST Overview paper (see \ref{sec:pubs}). Tradeoffs between 
 exposure time per visit, single-visit depth, the mean revisit time, and the total number of visits,
 as well as justification for the adopted standard exposure time of 30 sec, are discussed in Section 
-2.2 from the same paper. The improvement in measurement uncertainties as the surveys progresses
-(as a function of time, $t$) can be approximately summarized as follows. 
+2.2 from the same paper. The improvement in measurement uncertainties as the surveys progresses,
+as a function of time $t$, can be approximately summarized as follows. 
 
 The co-added depth (the 5$\sigma$ depth for point sources), $m_5^{\rm co-add}$, scales 
 with time as (see eq.~6 in the overview paper)  
@@ -783,4 +783,31 @@ Stubbs white papers:
 - snaps or no snaps
 - narrow-band filters
 - twilight observing 
+
+
+
+ZI: modified cadences:
+
+1) Large Area
+    Maximize the main survey area (``Pan-STARRS'', 27,400 deg$^2$):
+    X<1.5, DecMin=$-78^\circ$ and DecMax = $+18^\circ$, 
+    No mini surveys, but yes for DDFs   
+
+2) same as baseline, but no more than 1 visit per night
+
+
+3) Many Visits 
+    20 sec visits with single snap, and 40 sec in the u band 
+
+4) Pairs with the same vs. different filters 
+
+5) Some variations of rolling cadence
+
+
+Stretch: 
+
+6) Many DDFs ?? 
+    24 DDFs, 12 observed every night, with out-in replacement every 2 weeks 
+    standard visit or deeper? 1 or more filters per night? 
+
 
