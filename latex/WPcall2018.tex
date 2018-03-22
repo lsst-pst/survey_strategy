@@ -102,9 +102,9 @@ white paper, arXiv:1708.04058). The LSST Science Requirements Document\footnote{
 is intentionally vague on survey strategy details because it recognized that science evolves and that the 
 initial, by now more than a decade old, survey strategy will have to be re-optimized closer to first 
 light. With LSST first light expected in 2020, now is the time to undertake the final pre-commissioning
-optimization\footnote{"Optimization is loosely used here. We are attempting to create the best survey strategy possible,
-but this is not a formal optimization effort in part because the definition of an `optimized' survey is difficult to define. Another way
-of looking at this effort is that we are attempting to minimize the unhappiness of the LSST community with the survey strategy.}
+optimization\footnote{``Optimization'' is loosely used here. We are attempting to create the best survey strategy possible,
+but this is not a formal optimization effort in part because the concept of an ``optimized'' survey is difficult to define. Another way
+of looking at this effort is that we are attempting to ``minimize the unhappiness of the broad LSST community with the survey strategy''.}
 of the LSST baseline observing strategy. We seek science-driven input for cadence 
 properties such as per-bandpass imaging depth, the sky coverage, temporal coverage, observing
 rules, etc., as summarized in Appendix A. Investigations of a limited number of such survey strategy 
@@ -121,8 +121,9 @@ the primary four LSST science themes remain the cornerstones of the LSST survey 
 be easily abandoned (the LSST Science Requirements Document states that ``the adopted observing 
 strategy will not jeopardize the goals of any of the four main science themes''). 
 
-Detailed proposals are also solicited for novel ideas, such as TOOs, twilight observing (see \S~ref{sec:twilight}) and 
-(hypothetical) narrow-bandpass surveys, as well as synergies with other major surveys ({\it e.g.}, WFIRST, Euclid). 
+Detailed proposals are also solicited for novel ideas, such as TOOs, twilight observing (see \S~\ref{sec:twilight}) and 
+(hypothetical\footnote{See \S~\ref{sec:reqinput} for details.}) narrow-bandpass surveys, as well as synergies 
+with other major surveys ({\it e.g.}, WFIRST, Euclid). 
 
 At this time we are not soliciting proposals to optimize observations during the commissioning period.
 A call for commissioning proposals will be issued once the start date of commissioning is known with adequate accuracy (1-2 months). 
@@ -202,7 +203,7 @@ different strategies that will be used as quantitative input (``a menu of option
 Science Advisory Committee when recommending strategy for the initial phase of LSST survey. 
 
 
-\subsection{Requested input}
+\subsection{Requested input \label{sec:reqinput}}
 
 The current list of surveys, for which quantitative optimization input is requested are:
 \begin{itemize}
@@ -218,11 +219,12 @@ co-added per-bandpass imaging depth, the sky coverage, temporal coverage, observ
 rules, etc.; for a detailed discussion, please see Appendix A. For some special programs, 
 e.g., target-of-opportunity (ToO) observations, it is important that reasonable
 information is provided to enable proper simulations to be conducted, as well as an estimation
-of total observing time allocation. The TeX template
+of total observing time allocation. The TeX submission template described in \S~\ref{sec:textemplate} 
+provides further submission details. 
 
 In addition to existing surveys listed above, we also seek input on new mini-survey ideas 
 to replace and/or enhance the current programs, including special ToO programs. We also 
-solicit novel ideas, such as twilight observing (see \S~ref{sec:twilight}) 
+solicit novel ideas, such as twilight observing (see \S~\ref{sec:twilight}) 
 and (hypothetical) narrow-bandpass surveys\footnote{This idea is somewhat hypothetical 
 because it implies that additional hardware would be procured. For more details and 
 discussion of science drivers, please see the \href{http://ls.st/741}{Narrow band LSST filters} white paper at \url{http://ls.st/741}}, 
@@ -254,13 +256,13 @@ focus of a deep drilling field, and changes in the main survey footprint will af
 definition of a Galactic Plane survey. 
 
 
-\subsection{TeX template for submission} 
+\subsection{TeX template for submission \label{sec:textemplate}} 
 
-Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what can be learned if the observations were obtained. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. The Performance Evaluation section must contain methods to evaluate the effectiveness of the survey strategy modifications, particularly in light of the potential effect of survey strategy changes proposed in other white papers. It is unlikely that any given proposal will be able to accomplished in its `ideal' form, thus metrics (along with threshold values for these figures of merit) to evaluate the science performance of non-ideal simulations are crucial. 
+Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what can be learned if the proposed observations were obtained. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. The Performance Evaluation section must contain methods to evaluate the effectiveness of the survey strategy modifications, particularly in light of the potential effect of survey strategy changes proposed in other white papers. It is unlikely that any given proposal will be able to accomplished in its ``ideal'' form, thus metrics (along with threshold values for these figures of merit) to evaluate the science performance of non-ideal simulations are crucial. 
 
 The submission template and an example of the submission, with instructions about
 all the required information, can be found in the git repository hosted at \href{https://github.com/lsst-pst/survey_strategy_wp}{lsst-pst/survey\_strategy\_wp}\footnote{\url{https://github.com/lsst-pst/survey_strategy_wp}}.
-The submission process includes the following steps
+The submission process includes the following steps: 
 %
 \begin{enumerate}
 \item Fork the repository using your (the PI's, or a selected collaborator's)  Github account.
@@ -363,7 +365,7 @@ cost of reduced sampling rate the rest of the time (while maintaining the nomina
 visit counts). While it is likely that science programs such as supernovae, asteroids, and
 short-timescale stellar variability would benefit from rolling cadence, detailed cadence
 parameters have not been optimized yet ({\it e.g.}, how much of the 
-survey area to ``roll'' at once and how long to ``roll' for, or whether to ``roll'' in RA or Dec). 
+survey area to ``roll'' at once and how long to ``roll'' for, or whether to ``roll'' in RA or Dec). 
 \item The current baseline survey strategy obtains two visits per night (within 15-60 minutes) in 
 order to enable easy linking of asteroid detections, and robust identification of rapid 
 photometric transients. Whether the two visits on the same night should be obtained 
@@ -372,10 +374,11 @@ of photometric transients, same filters would provide a more accurate measuremen
 of the brightness change, while different filters would provide a color constraint). 
 \item The current baseline survey strategy assumes that a visit is composed of two 15-second
 exposures, the so-called snaps. While snaps enable search for very rapid variability,
-and help with cosmic ray rejection, there are compelling arguments to abandon
-them, with observing efficiency being the main argument. 
+and help with cosmic ray rejection, there are compelling technical arguments to abandon
+them, with observing efficiency being the main argument. Arguments for retaining the
+snaps would be very useful in further optimization of the main survey strategy. 
 \end{itemize}
-White papers addressing these optimization efforts are encouraged.
+White papers addressing all or some of these optimization efforts are strongly encouraged.
 
 
 \subsection{``Deep Drilling'' fields} 
@@ -421,13 +424,14 @@ arXiv:1710.01309).
 As guidance, stellar count simulations with the TRILEGAL code (Girardi et al. 2005, 
 arXiv:astro-ph/050404) show that to the depth of $r=27.5$ there are about 2 billion
 stars in the main survey area, with another 5 billion stars in the Galactic confusion 
-zone. Of the latter, about 3 billion are brighter than $r=24.5$.  
+zone. Of the latter, about 3 billion are brighter than $r=24.5$.   XXX ZI: this is based
+on Galfast simulations and will be updated with TRILEGAL results. 
 
 The current strawman implementation of the Galactic confusion zone coverage allocates 
 30 observations in each of the six filters. Detailed optimization of this strategy has not 
 been done yet. In particular, science-driven input is needed for both ``static science''
-programs (e.g., The Blanco DECam Bulge Survey, BDBS Collaboration) and  time domain
-surveys (e.g., Gould 2013, arXiv:1304.3455). 
+programs (e.g., The Blanco DECam Bulge Survey, BDBS Collaboration; DECAPS survey) 
+and  time domain surveys (e.g., Gould 2013, arXiv:1304.3455). 
 
 The footprint in the current baseline survey strategy extends to far north along the Galactic
 plane, to the region that can only be observed at relatively large airmass from the LSST
@@ -449,7 +453,8 @@ around the South Celestial Pole, but with fewer observations that for the main s
 Detailed optimization of this strategy has not been done yet. Given recent informative observations 
 obtained by the SMASH survey (Nidever et al. 2017, arXiv:1701.00502), as well as calibration 
 and legacy aspects of this mini survey, a white paper with more detailed cadence prescriptions
-would greatly inform further cadence optimization and help retain this mini survey. 
+(e.g., is it necessary to extend the coverage all the way to the South Celestial pole?) would greatly 
+inform further cadence optimization and help retain this mini survey. 
 
 
 \subsection{Northern Ecliptic spur mini survey}
@@ -461,7 +466,7 @@ plane would sample the full azimuthal distribution of TNOs, crucial for understa
 dynamical families in which they fall, and would improve the light curve sampling and completeness
 of asteroid populations in the inner Solar System. The baseline survey strategy covers this region using the 
 $griz$ filters only, along with more relaxed limits on airmass and seeing. A more detailed 
-and robust science justification addressing both outer Solar System (e.g., TNOs) and inner Solar
+and robust science-driven justification addressing both outer Solar System (e.g., TNOs) and inner Solar
 System (e.g., main-belt and NEO asteroids) populations is needed to retain and improve this mini survey. 
 
 
@@ -471,7 +476,7 @@ LSST's short read-out time (2 sec) enables efficient taking of short-exposure im
 that would otherwise go unused. Science drivers and technical details are discussed in Section 10.3 in the 
 Observing Strategy white paper (arXiv:1708.04058); the former include a bright star survey for Galactic
 science, obtaining light curves for nearby supernovae, and observations of near-Earth asteroids towards
-so-called ```sweet spots'' (on the Ecliptic, at Solar elongation of $\sim60^\circ$). This cadence has not 
+so-called ``sweet spots'' (on the Ecliptic, at Solar elongations of $\sim60^\circ$). This cadence has not 
 been simulated yet because sufficiently detailed and accurate sky brightness model, that includes twilight 
 effects, has become available only recently (Yoachim et al. 2016, Proc. SPIE, 9910-48, 99101A-1). 
 
@@ -592,8 +597,8 @@ still taken at their design values.
 
 Sustained observing, such as the main survey, with exposures much shorter than standard visits will result
 in diminished observing efficiency. Given total visit exposure time $t_{vis}$ (30 sec for standard
-visits), with two exposures/readouts per visit, and assuming a slew and settle time of 5 sec 
-(also including the second readout) ), the observing efficiency can be computed as 
+visits), with two exposures/readouts (snaps) per visit, and assuming a slew and settle time of 5 sec 
+(also including the second readout), the observing efficiency can be computed as 
 \begin{equation}
      \epsilon = \left( {t_{vis} \over t_{vis} + 9 \, \mathrm{sec}}\right).
 \end{equation}
@@ -748,16 +753,17 @@ at the LSST All Hands Meeting 2018 in Tucson, AZ (August 13-17, 2018).
 
 By the time this call for white papers is officially released, we anticipate that we will provide several more sample simulated surveys for the community to use as test cases. These modified survey strategies will include (approximately): 
 \begin{itemize}
-\item The baseline survey strategy, with the main survey having a 18,000 sq deg footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling minisurveys operating in the current example baseline survey strategy manner. 
-\item A survey with a much larger main survey footprint (27,000 deg sq -- defined by X<1.5 and  declination limits -78 to +18) and only the Deep Drilling minisurvey. 
-\item A survey strategy with `more visits': each visit being 20 seconds long with a single exposure per visit, 40 second visits in the $u$ band.
+\item The baseline survey strategy, with the main survey having a 18,000 deg$^2$ footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling minisurveys operating in the current example baseline survey strategy manner. 
+\item A survey with a much larger main survey footprint (27,000 deg$^2$ -- defined by airmass limit $X<1.5$ and declination limits 
+$-78<$ Dec $< +18$, and including only the Deep Drilling mini-survey (and no other mini surveys).
+\item A survey strategy with `more visits': each visit being 20 seconds long with a single exposure per visit, and 40 second visits in the $u$ band (and probably another similar survey with exposures of 40 sec and 60 sec, respectively). 
 \item A survey similar to the current baseline, with the Galactic Plane at the main survey cadence (and the northern tip of the galactic plane minisurvey removed).
 \item A survey similar to the current baseline, but with additional Deep Drilling fields.
 \item A survey similar to the current baseline, but with a modified cadence for Deep Drilling fields (ideally: observe in only 3 filters per night, but with a shorter gap between nights; rotating among the 3 filters used in each night).
-\item Rolling cadence simulations in the main survey -- concentrating observations in bands of declination in some simulations, and in bands of RA in other simulations
+\item Rolling cadence simulations in the main survey -- concentrating observations in bands of declination in some simulations, and in bands of R.A. in other simulations
 \item A survey similar to the current baseline, but obtaining pairs of visits in different filters (vs. the same filter).
-\item A survey similar to the current baseline, but only observing in single visits per night.
-\item A survey similar to the current baseline, but adding ToO trigger events.
+\item A survey similar to the current baseline, but only observing with single visits per night.
+%\item A survey similar to the current baseline, but adding random ToO trigger events.
 \end{itemize}
 
 \end{document} 
@@ -791,13 +797,13 @@ ZI: modified cadences:
 1) Large Area
     Maximize the main survey area (``Pan-STARRS'', 27,400 deg$^2$):
     X<1.5, DecMin=$-78^\circ$ and DecMax = $+18^\circ$, 
-    No mini surveys, but yes for DDFs   
+    No mini surveys, but include DDFs   
 
 2) same as baseline, but no more than 1 visit per night
 
-
 3) Many Visits 
     20 sec visits with single snap, and 40 sec in the u band 
+    40 sec visits with single snap, and 60 sec in the u band 
 
 4) Pairs with the same vs. different filters 
 
