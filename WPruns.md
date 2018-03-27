@@ -17,11 +17,7 @@ GP at WFD cadence
   
 Extra DD fields
   Similar to baseline, but increase the number of DD fields
-  
-DD fields with alternate cadence
-  Similar to baseline, with 5(?) DD fields, but observed in only 3 filters each night, shorter gap between nights. 
-  Rotate among the 3 filters being used.
-  
+    
 Rolling cadence - dec bands
   Like baseline, but split sky into (2 or 3) bands of declination, observe the dec band every (2 or 3) years.
   
@@ -40,5 +36,8 @@ Single visits in a night.
 
 Triple visits in a night (perhaps). 
 
+DD fields with alternate cadence
+  Similar to baseline, with 5(?) DD fields, but observed in only 3 filters each night, shorter gap between nights. 
+  Rotate among the 3 filters being used.  (perhaps)
 
 Any other runs from https://github.com/LSSTScienceCollaborations/ObservingStrategy/tree/master/opsim?
