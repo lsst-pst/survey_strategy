@@ -40,6 +40,5 @@ Single visits in a night.
 
 Triple visits in a night (perhaps). 
 
-TOO visits - X triggers per year, to search ? fields around a given field location to ? depth in ? filter
 
 Any other runs from https://github.com/LSSTScienceCollaborations/ObservingStrategy/tree/master/opsim?
