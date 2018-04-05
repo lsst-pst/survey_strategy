@@ -129,9 +129,10 @@ The LSST \href{SRD}{http://ls.st/srd}\footnote{See ls.st/srd}
 is intentionally vague on survey strategy details because it recognized that science evolves and that the 
 initial, by now more than a decade old, survey strategy will have to be re-optimized closer to first 
 light. With LSST first light expected in 2020, now is the time to undertake the final pre-commissioning
-optimization\footnote{``Optimization'' is loosely used here. We are attempting to create the best survey strategy possible,
-but this is not a formal optimization effort in part because the concept of an ``optimized'' survey is difficult to define. Another way
-of looking at this effort is that we are attempting to ``minimize the unhappiness of the broad LSST community with the survey strategy''.}
+optimization\footnote{``Optimization'' used here does not imply its strict mathematical meaning. 
+We are attempting to create the best survey strategy possible, but this is not a formal optimization 
+effort of an objective function in part because the concept of an ``optimized'' survey is difficult to 
+define mathematically.}
 of the LSST baseline observing strategy. We seek science-driven input for cadence 
 properties such as per-bandpass imaging depth, the sky coverage, temporal coverage, observing
 rules, etc., as summarized in Appendix A. Investigations of a limited number of such survey strategy 
@@ -146,7 +147,9 @@ both the main survey and the so-called ``deep drilling fields'' and mini surveys
 specific limitations on what kind of science programs will be considered, but please note that 
 the primary four LSST science themes remain the cornerstones of the LSST survey and cannot 
 be easily abandoned (the LSST Science Requirements Document states that ``the adopted observing 
-strategy will not jeopardize the goals of any of the four main science themes''). 
+strategy will not jeopardize the goals of any of the four main science themes''). In addition, 
+LSST's large etendu\'e is a unique resource and science goals which can be carried out with other 
+telescopes (e.g., single object investigations) will not be viewed favorably.
 
 Detailed proposals are also solicited for novel ideas, such as TOOs, twilight observing (see \S~\ref{sec:twilight}) and 
 (hypothetical\footnote{See \S~\ref{sec:reqinput} for details.}) narrow-bandpass surveys, as well as synergies 
@@ -221,7 +224,7 @@ at the LSST 2018 All-hands meeting (Tucson, Aug 13-17).
 
 \subsection{Who can submit a white paper?} 
 
-All members of scientific community interested in LSST science can submit a white paper. 
+All members of the scientific community interested in LSST science can submit a white paper. 
 We reiterate that the data from any given specialized survey will be treated exactly the same 
 way as all LSST data: the proposers will have no proprietary access to it. There will be no 
 formal ``acceptance'' of proposals; with the overall ranking priority advice provided to the 
@@ -362,12 +365,13 @@ encouraged to address these questions.
 \subsection{The main Wide-Fast-Deep survey} 
 
 The baseline survey strategy optimizes the amount of sky covered in any given night (subject to 
-the constraint of observing at airmass less than 1.4 throughout and gathering pairs of visits in each night), and allows the entire sky 
-visible at any time of the year to be covered in about three nights. The basic strategy is designed 
-to give roughly uniform coverage at any given time, and to reach the survey goals for measuring 
-stellar parallax and proper motion, and the number of visits per field (825 visits, summed over the 
-six filters). In the baseline implementation, the main survey covers about 18,000 deg$^2$ of 
-high Galactic latitude sky, and spends about 85\% of the available observing time. 
+the constraint of observing at airmass less than 1.5 and gathering pairs of visits in each night), 
+and allows the entire sky visible at any time of the year to be covered in about three nights. 
+The basic strategy is designed to give roughly uniform coverage at any given time, and to reach
+the survey goals for measuring stellar parallax and proper motion, and the number of visits per 
+field (825 visits, summed over the six filters). In the baseline implementation, the main survey 
+covers about 18,000 deg$^2$ of high Galactic latitude sky, and spends about 85\% of the available 
+observing time. 
 
 Open questions and optimization options associated with the main survey are as follows: 
 \begin{itemize}
@@ -399,6 +403,8 @@ photometric transients. Whether the two visits on the same night should be obtai
 in the same filter or in different filters has not been decided yet (e.g., in the context
 of photometric transients, same filters would provide a more accurate measurement
 of the brightness change, while different filters would provide a color constraint). 
+\item The current strategy for the main survey which obtains two visits per night could be 
+modified to obtain a single visit, or more than two visits, per night. 
 \item The current baseline survey strategy assumes that a visit is composed of two 15-second
 exposures, the so-called snaps. While snaps enable search for very rapid variability,
 and help with cosmic ray rejection, there are compelling technical arguments to abandon
@@ -475,7 +481,7 @@ coverage of the Galactic plane to Dec=$<+5^\circ$.
 Due to its southern declination limit ($Dec > -65^\circ$), the main survey misses large fraction
 of both the Magellanic Clouds. To allow coverage of the Large and Small Magellanic Clouds, 
 baseline survey strategy uses relaxed limits on airmass and seeing for the $\sim$2,000 deg$^2$ region 
-around the South Celestial Pole, but with fewer observations that for the main survey. 
+around the South Celestial Pole, but with fewer observations than for the main survey. 
 
 Detailed optimization of this strategy has not been done yet. Given recent informative observations 
 obtained by the SMASH survey (Nidever et al. 2017, arXiv:1701.00502), as well as calibration 
@@ -516,17 +522,18 @@ diminish and eventually dynamic range would vanish as the sky brightness increas
 of additional observing time could be utilized during twilight before dynamic brightness range becomes
 too small. Assuming 7-sec visits (1 sec exposure + 1 sec for shutter + 5 sec for read and slew), about 
 2,000 deg$^2$ of sky could be imaged in 25 minutes (assuming no filter changes). Alternatively, over 
-350 exposures (1 sec + 1 sec + 2 sec) of the same field could be obtained instead.  White papers addressing
-the science justification and strategies for using twilight time are desired.
+350 exposures (1 sec + 1 sec + 2 sec) of the same field could be obtained instead.  Detailed strategies
+should consider limitations on the number of filter changes (see \S~\ref{sec:HW}). 
+White papers addressing the science justification and strategies for using twilight time are desired.
 
 The shortest exposure stretch goal in the Camera baseline requirements is set to 0.1 sec. Science-driven
-studies that would advocate pursuing this goal would be a welcome contribution; twilight observing
-would especially benefit from shorter exposures. 
+studies that would advocate pursuing this goal would be a welcome contribution to further system
+optimization; twilight observing would especially benefit from shorter exposures. 
  
 
 \section{Constraints on survey strategy imposed by the LSST system} 
 
-\subsection{Hardware constraints}
+\subsection{Hardware constraints \label{sec:HW}}
 
 Several hard constraints prevent observations in certain directions. The telescope altitude limit
 prevents observations at altitudes below 20$^\circ$.  As a consequence of alt-az mount, there
