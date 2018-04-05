@@ -506,19 +506,23 @@ prevents observations at altitudes below 20$^\circ$.  As a consequence of alt-az
 is also a zenith exclusion zone with a radius of 3.5$^\circ$. 
 
 LSST telescope mount uses direct drive motors and there should not be any mechanical limits 
-on slewing from the mount.  However, there are observing efficiency considerations: the slew time 
-depends on slew distance. Approximately\footnote{Precise values can be obtained using
+on slewing from the mount.  However, there are observing efficiency considerations: the minimum
+slew time (as soon as the telescope moves at all) is 3 seconds, due to readout (2s) plus settle time requirements (1s). 
+Otherwise, the slew time depends on slew distance. Approximately\footnote{Precise values can be obtained using
 method ``get\_approximate\_slewdelay'' from ts.observatory.model}, in the azimuth direction, 
+\begin{eqnarray}
+             t_{slew}^{Az} = 0.66 \, {\rm sec/deg} * \delta Az ({\rm deg}) + C^{Az} \\
+             t_{slew}^{Az}_{\rm min} = 3\, {\rm sec}
+\end{eqnarray} 
+where $C^{Az} = -2$ sec (this is negative because of dome crawl; however, the minimum
+slew time is still 3 seconds due to readout and telescope settle time). For slewing in altitude
 \begin{equation}
-             t_{slew}^{Az} = C^{Az} + 0.66 \, {\rm sec/deg} * \delta Az ({\rm deg}),  
+             t_{slew}^{Alt} = 0.57 \, {\rm sec/deg} * \delta Alt ({\rm deg}) + C^{Alt} ,  
 \end{equation} 
-where $C^{Az} = 3$ sec (note that even when the telescope doesn't move, there is an overhead
-of 2 sec due to read-out time). For slewing in altitude
-\begin{equation}
-             t_{slew}^{Alt} = C^{Alt} + 0.57 \, {\rm sec/deg} * \delta Alt ({\rm deg}),  
-\end{equation} 
-where $C^{Alt} = 3$ sec for slews below 9$^\circ$ and $C^{Alt} = 36$ sec for longer slews (because 
-of the need to recompute optics corrections). In the baseline simulated survey, about 2\% of slews move
+where $C^{Alt} = 3$ sec for slews below 9$^\circ$ and $C^{Alt} = 37$ sec for longer slews (because 
+of the need to recompute optics corrections for slews larger than 9 degrees in altitude). 
+The dome is assumed to crawl in the azimuth direction, but not in altitude. 
+In the baseline simulated survey, about 2\% of slews move
 in altitude more than 9$^\circ$. 
 
 The shortest exposure time is 1 second, with the shortest exposure stretch goal in the Camera 
