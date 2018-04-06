@@ -1,28 +1,28 @@
 \select@language {english}
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}LSST community and LSST observing strategy}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Motivation for this white paper call}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}General guidelines}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Review process and timeline}{4}{subsection.1.4}
-\contentsline {section}{\numberline {2}White paper submission guidelines}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Requested input }{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}TeX template for submission }{7}{subsection.2.3}
-\contentsline {section}{\numberline {3}Proposal ranking criteria}{8}{section.3}
-\contentsline {section}{\numberline {A}Examples of open survey strategy optimization questions}{10}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{10}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}``Deep Drilling'' fields}{11}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Galactic plane survey }{12}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}Southern Celestial pole mini survey}{13}{subsection.A.4}
-\contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{13}{subsection.A.5}
-\contentsline {subsection}{\numberline {A.6}Twilight survey }{14}{subsection.A.6}
-\contentsline {section}{\numberline {B}Constraints on survey strategy imposed by the LSST system}{15}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}Hardware constraints }{15}{subsection.B.1}
-\contentsline {subsection}{\numberline {B.2}Software constraints}{16}{subsection.B.2}
-\contentsline {subsection}{\numberline {B.3}Observing efficiency constraints}{17}{subsection.B.3}
-\contentsline {subsection}{\numberline {B.4}Limiting depth and uncertainty estimates}{18}{subsection.B.4}
-\contentsline {section}{\numberline {C}Supplementary materials}{19}{appendix.C}
-\contentsline {subsection}{\numberline {C.1}Useful publications and websites }{19}{subsection.C.1}
-\contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{22}{subsection.C.2}
-\contentsline {subsection}{\numberline {C.3}Additional Simulated Survey Strategies}{23}{subsection.C.3}
+\contentsline {subsection}{\numberline {1.1}LSST community and LSST observing strategy}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Motivation for this white paper call}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}General guidelines}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Review process and timeline}{6}{subsection.1.4}
+\contentsline {section}{\numberline {2}White paper submission guidelines}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Requested input }{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}TeX template for submission }{9}{subsection.2.3}
+\contentsline {section}{\numberline {3}Proposal ranking criteria}{10}{section.3}
+\contentsline {section}{\numberline {A}Examples of open survey strategy optimization questions}{12}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{12}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}``Deep Drilling'' fields}{13}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Galactic plane survey }{14}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Southern Celestial pole mini survey}{15}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{15}{subsection.A.5}
+\contentsline {subsection}{\numberline {A.6}Twilight survey }{16}{subsection.A.6}
+\contentsline {section}{\numberline {B}Constraints on survey strategy imposed by the LSST system}{17}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Hardware constraints }{17}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Software constraints}{18}{subsection.B.2}
+\contentsline {subsection}{\numberline {B.3}Observing efficiency constraints}{19}{subsection.B.3}
+\contentsline {subsection}{\numberline {B.4}Limiting depth and uncertainty estimates}{20}{subsection.B.4}
+\contentsline {section}{\numberline {C}Supplementary materials}{21}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}Useful publications and websites }{22}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{24}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}Additional Simulated Survey Strategies}{25}{subsection.C.3}
