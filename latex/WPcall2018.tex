@@ -302,21 +302,6 @@ to replace and/or enhance the current programs, including special ToO programs. 
 solicit novel ideas, such as twilight observing (see \S~\ref{sec:twilight}),
 as well as observing synergies with other major surveys (e.g., WFIRST, Euclid). 
 
-It would greatly help if each white paper could be assigned to one of the following
-categories:  
-\begin{itemize} 
-\item a specific observing strategy to enable specific time domain science, 
-	that is relatively agnostic to where the telescope is pointed (e.g., a science case enabled 
-	by relatively deep precise time-resolved multi-color photometry). 
-\item a specific pointing or set of pointings that is (relatively) agnostic of the detailed observing 
-	strategy or cadence, (e.g., a science case enabled by very deep precise multi-color 
-	photometry)
-\item an integrated program with science that hinges on the combination of pointing/detailed 
-	observing strategy combination (e.g., search for variable stars in the 
-	LMC/SMC). 
-\end{itemize}  
-If a specific white paper does not fit any of these categories, please state so.
-
 We reiterate that that the observing time allocated to {\bf all} the mini-surveys 
 (including DD) is ``about'' 10\%, and is unlikely to exceed 20\% of the total available
 observing time. We note that implementation details for mini-surveys (especially DD fields)
@@ -332,6 +317,20 @@ crossovers.
 \subsection{TeX template for submission \label{sec:textemplate}} 
 
 Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what can be learned if the proposed observations were obtained, relative to some baseline. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations\footnote{For more information on how survey simulations are created, please see the documentation on OpSim at \href{http://sims-opsim.lsst.io}{http://sims-opsim.lsst.io}.} to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. The Performance Evaluation section must contain methods to evaluate the effectiveness of the survey strategy modifications, particularly in light of the potential effect of survey strategy changes proposed in other white papers. It is unlikely that any given proposal will be carried out in its ``ideal'' form, thus metrics (along with threshold values for these figures of merit) to evaluate the science performance of non-ideal simulations are crucial. The TeX submission template should help with further instructions for each of these areas.
+
+The submission template requests each white paper to self-assign to one of the following categories:
+\begin{itemize} 
+\item a specific observing strategy to enable specific time domain science, 
+	that is relatively agnostic to where the telescope is pointed (e.g., a science case enabled 
+	by relatively deep precise time-resolved multi-color photometry). 
+\item a specific pointing or set of pointings that is (relatively) agnostic of the detailed observing 
+	strategy or cadence, (e.g., a science case enabled by very deep precise multi-color 
+	photometry)
+\item an integrated program with science that hinges on the combination of pointing/detailed 
+	observing strategy combination (e.g., search for variable stars in the 
+	LMC/SMC). 
+\end{itemize}  
+If a specific white paper does not fit any of these categories, please state so.
 
 The submission template and an example of the submission, with instructions about
 all the required information, can be found in the git repository hosted at \href{https://github.com/lsst-pst/survey_strategy_wp}{lsst-pst/survey\_strategy\_wp}\footnote{\url{https://github.com/lsst-pst/survey_strategy_wp}}.
@@ -370,7 +369,8 @@ will be based on the following considerations\footnote{The PST is expected to re
            other astronomical facilities, or a multitude of science goals enabled by the same survey strategy. 
 \item {\bf Feasibility} Programs must be feasible from the hardware and software point of view (see Appendix B),
          specifically including any special data processing required. The complexity of the program, in terms of additional
-         requirements on hardware and software beyond the baseline requirements, will also be considered.
+         requirements on hardware and software beyond the baseline requirements, will also be considered. 
+         The Project Science Team (PST) will conduct a technical check on submitted white papers.
 \item {\bf Time requested} The amount of time (including overheads) required should be justified by 
         the associated science. 
 \end{itemize} 
@@ -397,6 +397,15 @@ or with conflicting science drivers.  The current most significant open question
 tradeoffs are listed below for the main survey and each mini survey. White papers are specifically 
 encouraged to address these questions.
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{Nvisits_gri}
+\caption{The current baseline survey includes the main Wide-Fast-Deep survey and four mini-surveys:
+the North Ecliptic Spur, the Galactic Plane, the South Celestial Pole, and the Deep Drilling fields. This figures
+demonstrates their footprint in the current baseline simulated survey and the number of visits in $gri$ bands.
+We are seeking suggestions for modification of the survey strategy, especially suggestions for changes to the
+mini-surveys.}
+\end{figure}
 
 \subsection{The main Wide-Fast-Deep survey} 
 
@@ -444,10 +453,10 @@ of the brightness change, while different filters would provide a color constrai
 \item The current strategy for the main survey which obtains two visits per night could be 
 modified to obtain a single visit, or more than two visits, per night. 
 \item The current baseline survey strategy assumes that a visit is composed of two 15-second
-exposures, the so-called snaps. While snaps enable search for very rapid variability,
-and help with cosmic ray rejection, there are compelling technical arguments to abandon
-them, with observing efficiency being the main argument. Arguments for retaining the
-snaps would be very useful in further optimization of the main survey strategy. 
+exposures, the so-called snaps (2x15s visits). While 2x15s visits enable search for very rapid variability,
+and help with cosmic ray rejection, there are compelling technical arguments to change to 
+single exposure 30 second visits, with observing efficiency being the main argument. Arguments for retaining the
+2x15s visits would be very useful in further optimization of the main survey strategy. 
 \end{itemize}
 White papers addressing all or some of these optimization efforts are strongly encouraged.
 
@@ -582,11 +591,11 @@ optimization; twilight observing could especially benefit from shorter exposures
 
 \subsection{Hardware constraints \label{sec:HW}}
 
-Several hard constraints prevent observations in certain directions. The telescope altitude limit
-prevents observations at altitudes below 20$^\circ$.  As a consequence of alt-az mount, there
+Several hard constraints prevent observations in certain alt-az directions. The telescope altitude limit
+prevents observations at altitudes below 20$^\circ$.  As a consequence of the alt-az mount, there
 is also a zenith exclusion zone with a radius of 3.5$^\circ$. 
 
-LSST telescope mount uses direct drive motors and there should not be any mechanical limits 
+The LSST telescope mount uses direct drive motors and there should not be any mechanical limits 
 on slewing from the mount.  However, there are observing efficiency considerations: the minimum
 slew time (as soon as the telescope moves at all) is 3 seconds, due to readout (2s) plus settle time requirements (1s). 
 Otherwise, the slew time depends on slew distance. Approximately\footnote{Precise values can be obtained using
@@ -606,12 +615,12 @@ The dome is assumed to crawl in the azimuth direction, but not in altitude.
 In the baseline simulated survey, about 2\% of slews move
 in altitude more than 9$^\circ$. 
 
-The shortest exposure time is 1 second, with the shortest exposure stretch goal in the Camera 
+The shortest exposure time is assumed to be 1 second, with the shortest exposure stretch goal in the Camera 
 baseline requirements set to 0.1 sec. For exposures shorter than 
 about 10 sec, the seeing due to atmospheric turbulence may be harder to characterize (more
 irregular) than for longer exposures, and moving objects may trail in long exposures (for more
 details see Section 5.1.4 in Jones et al. 2018; Icarus 303, 181). Short exposures will have a low
-observing efficiency due to finite read-out time (2 sec) and the shutter open/close time (1 sec). 
+observing efficiency due to the finite read-out time (2 sec). % and the shutter open/close time (1 sec). 
 
 There are important constraints on the filter exchange strategy. As the system is not yet completely 
 built and characterized, the following represents current understanding, based on the design and on 
@@ -620,9 +629,9 @@ to change. Expanded ranges could be possible if there are strong scientific moti
 sufficient resources during operations.
 \begin{itemize}
 \item The filter change mechanism is designed to undergo a total of 100,000 changes over its lifetime 
-	(about 27 changes per day of the survey, 17 during the night and 10 for daylight calibrations). 
+	(an average of about 17 changes per night of the survey, after accounting for necessary calibration activities). 
 \item Each filter is designed to support up to 30,000 changes over its lifetime.
-\item A maintenance cycle is anticipated, and this would nominally occur after 10,000 changes or 
+\item A maintenance cycle to the filter exchange mechanism is anticipated, and this would nominally occur after 10,000 changes or 
           one year, whichever is reached first. 
 \item During a given observing night, the system could support as many changes involving the 5 filters 
           loaded in the carousel as desired, without any practical limitation beyond the two-minute change 
@@ -632,7 +641,7 @@ sufficient resources during operations.
           is designed for 3000 loads over its lifetime. 
 \item The currently implemented filter-swap strategy is to replace one of the $z$ or $y$ 
 	by the $u$ band at the start of dark time, when the lunar phase reaches $20\%$. The 
-	process is reversed at the end of dark time when the lunar phase is above the same threshold. 	
+	process is reversed at the end of dark time when the lunar phase is above the same threshold.
 \end{itemize} 
 
 
