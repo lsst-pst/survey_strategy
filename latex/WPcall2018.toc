@@ -7,10 +7,10 @@
 \contentsline {subsection}{\numberline {1.4}Review process and timeline}{6}{subsection.1.4}
 \contentsline {section}{\numberline {2}White paper submission guidelines}{7}{section.2}
 \contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Requested input }{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}TeX template for submission }{8}{subsection.2.3}
-\contentsline {section}{\numberline {3}Proposal ranking criteria}{10}{section.3}
-\contentsline {section}{\numberline {A}Examples of open survey strategy optimization questions}{12}{appendix.A}
+\contentsline {subsection}{\numberline {2.2}Requested input }{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}TeX template for submission }{9}{subsection.2.3}
+\contentsline {section}{\numberline {3}White paper ranking criteria }{10}{section.3}
+\contentsline {section}{\numberline {A}Examples of open survey strategy optimization questions }{12}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{12}{subsection.A.1}
 \contentsline {subsection}{\numberline {A.2}``Deep Drilling'' fields}{14}{subsection.A.2}
 \contentsline {subsection}{\numberline {A.3}Galactic plane survey }{15}{subsection.A.3}
@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {B.2}Software constraints}{19}{subsection.B.2}
 \contentsline {subsection}{\numberline {B.3}Observing efficiency constraints}{20}{subsection.B.3}
 \contentsline {subsection}{\numberline {B.4}Limiting depth and uncertainty estimates}{21}{subsection.B.4}
-\contentsline {section}{\numberline {C}Supplementary materials}{22}{appendix.C}
+\contentsline {section}{\numberline {C}Supplementary materials }{23}{appendix.C}
 \contentsline {subsection}{\numberline {C.1}Useful publications and websites }{23}{subsection.C.1}
 \contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{25}{subsection.C.2}
-\contentsline {subsection}{\numberline {C.3}Additional Simulated Survey Strategies}{26}{subsection.C.3}
+\contentsline {subsection}{\numberline {C.3}Additional Simulated Survey Strategies }{26}{subsection.C.3}
