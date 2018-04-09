@@ -55,9 +55,9 @@ The Large Synoptic Survey Telescope (LSST) will provide an unprecedented optical
 imaging dataset that will support investigations of our Solar System, Galaxy and Universe, 
 across half the sky and over ten years of repeated observation. LSST observations will be
 scheduled automatically, with the scheduling algorithm designed to address all science goals 
-and maximize observing efficiency for given observing constraints (please see Section~\ref{sec:supp}
+and maximize observing efficiency for given observing constraints (please see Appendix~\ref{sec:supp}
 for a list of most relevant references). LSST is constructing a 
-flexible scheduling system that can respond to the unexpected and be re-optimized as the survey progresses.. 
+flexible scheduling system that can respond to the unexpected and be re-optimized as the survey progresses.
 It has already been shown through simulated surveys that a basic implementation of LSST's 
 10-year observing strategy can meet the basic requirements
 described in the LSST Science Requirements Document (\href{http://ls.st/srd}{SRD}\footnote{The LSST Science 
@@ -71,31 +71,32 @@ for the core LSST science goals:
 \end{itemize}
 A brief introduction to the baseline survey strategy, expanded background of the primary LSST science 
 goals, and concise descriptions of how these goals drive the basic survey strategy and data processing
-requirements is provided in the \href{http://ls.st/pif}{LSST Overview paper}\footnote{The LSST Overview 
+requirements are provided in the \href{http://ls.st/pif}{LSST Overview paper}\footnote{The LSST Overview 
 paper is a living document available at \href{http://ls.st/pif}{http://ls.st/pif}.}.
 This current baseline survey strategy, as represented in the reference survey simulation, includes (for
 more details, please see Appendix A): 
 \begin{itemize}
-\item The main ``wide-deep-fast'' survey covers $\sim$18,000 deg$^2$ of sky within equatorial declination
+\item The main ``wide-fast-deep'' survey covers $\sim$18,000 deg$^2$ of sky within equatorial declination
 range $-62^\circ < \delta < +2^\circ$, and excluding the $\sim$900 deg$^2$ large central portion of the Galactic 
 plane. Within the main survey, two visits\footnote{A `visit' here is an LSST default visit, which 
-consists of back-to-back 15 sec exposures. 1 visit = 2x15 sec exposures, for a total of 30 sec of on-sky exposure time.} 
-are acquired in each night, every three to four nights throughout the period the field is visible in each year. Each
+consists of back-to-back 15 sec exposures, for a total of 30 sec of on-sky exposure time.} 
+per field are acquired in each night, every three to four nights throughout the period the field is visible in each year. Each
 field in the main survey receives about 825 visits throughout the ten years of the LSST survey. The quantitative SRD 
 constraints on area coverage, number of visits, parallax and proper motion errors, and rapid-revisit rate apply to 
 visits obtained in the main survey.
-\item The North Ecliptic Spur covering the area from $\delta = +2^\circ$ up to $10^\circ$ north of the Ecliptic plane, 
-intended to observe the entire Ecliptic plane for purposes of inventorying the Solar System. This area is observed on
-a schedule similar to the main survey, although with a smaller number of total visits per field.
-\item The Galactic Plane covers the central portion of the Galactic plane which is not included in the main survey, although at a 
-much reduced rate and with a smaller total number of observations per field (30 visits per field and per filter). There is no 
-requirement for pairs of visits in each night in this area.
-\item The South Celestial Pole covers the region south of the main survey, to the south celestial pole. This is observed with
-a strategy similar to the Galactic Plane, with 30 visits per field per filter, and including not requiring pairs of visits. 
+\item The North Ecliptic Spur mini survey covers the area from $\delta = +2^\circ$ up to $10^\circ$ north of the Ecliptic plane
+and is intended to observe the entire Ecliptic plane for purposes of inventorying the Solar System. This area is observed on
+a schedule similar to the main survey, although with a smaller total number of visits per field.
+\item The Galactic Plane mini survey covers the central portion of the Galactic plane which is not included in the main survey, 
+although at a much reduced rate and with a smaller total number of observations per field (30 visits per field and per filter). 
+There is no requirement for pairs of visits in each night in this area.
+\item The South Celestial Pole mini survey covers the region south of the main survey, to the South Celestial Pole. 
+This mini survey is observed with a strategy similar to the Galactic Plane mini survey, with 30 visits per field per filter, 
+and without requiring pairs of visits. 
 \item The Deep Drilling Fields are five specific field pointings which are observed with a much denser sampling rate. These fields
 are observed every three to four days, but in a sequence of multiple $grizy$ exposures during gray and bright time, and then
 multiple sequential $u$ band exposures during dark time. The current deep drilling fields are aimed at extragalactic
-science, providing a `gold sample' to calibrate the main survey, and to discover SNIa. 
+science, providing a `gold sample' to calibrate the main survey, and to discover Type Ia supernovae. 
 \end{itemize}
 For the main survey, the SRD requires a footprint of 18,000 deg$^2$, with 825 visits per field (see SRD Tables~22 and 23). 
 The timing of visits in the main survey is somewhat constrained by implications from the required 
@@ -117,7 +118,7 @@ Indeed, it is anticipated that the survey strategy
 will continue to be refined and optimized throughout operations. The main purpose of this 
 call for white papers is to solicit detailed proposals from communities interested in LSST science
 for specific modifications of the current baseline survey strategy (for illustrative examples, 
-please see Section~\ref{sec:surveys}). 
+please see Appendix~\ref{sec:surveys}). 
 
 
 \subsection{LSST community and LSST observing strategy}
@@ -171,7 +172,7 @@ solicit detailed technical white papers for specific modifications of the curren
 As discussed in more detail in Appendix A, analysis to date indicates that the baseline 
 survey strategy, while meeting the basic science requirements for the LSST survey, can be meaningfully 
 improved\footnote{The current, as-simulated, baseline survey strategy is described in detail in Sections 1.1 
-and 2.3 in the COSEP, \href{http://ls.st/o5k}{http://ls.st/o5k}).}.
+and 2.3 in the COSEP, \href{http://ls.st/o5k}{http://ls.st/o5k}.}.
 The LSST \href{http://ls.st/srd}{SRD}
 provides minimal constraints on the survey strategy details because it recognized that science evolves and that the 
 initial, by now more than a decade old, survey strategy will have to be re-optimized closer to first 
@@ -201,7 +202,7 @@ deep drilling fields), and the cadence or number of visits in any mini survey ar
 particular survey strategy for a given mini survey in the current baseline should not be taken to imply that it will be present in the same way in the final 
 survey strategy. 
 
-Detailed white papers are also solicited for novel ideas, such as twilight observing (see \S~\ref{sec:twilight}), 
+Detailed white papers are also solicited for novel ideas, such as twilight observing (see Appendix~\ref{sec:twilight}), 
 as well as synergies with other major surveys ({\it e.g.}, WFIRST, Euclid). In addition, white papers for programs
 which leverage LSST's unique large \'{e}tendue are more compelling than {\it e.g.,} single object investigations.  
 At this time we are not soliciting proposals to optimize observations during the commissioning period.
@@ -304,7 +305,7 @@ guarantee its existence in the same form in the final survey strategy.
 
 In addition to existing surveys listed above, we also seek input on new mini survey ideas 
 to replace and/or enhance the current programs, including special ``Target of Opportunity'' (ToO) 
-programs. We also solicit novel ideas, such as twilight observing (see \S~\ref{sec:twilight}),
+programs. We also solicit novel ideas, such as twilight observing (see Appendix~\ref{sec:twilight}),
 as well as observing synergies with other major surveys (e.g., WFIRST, Euclid). 
 
 We reiterate that that the observing time allocated to {\bf all} the mini surveys 
@@ -375,7 +376,7 @@ will be based on the following considerations:
 \item {\bf Feasibility} Programs must be feasible from the hardware and software point of view (see Appendix B),
          specifically including any special data processing required. The complexity of the program, in terms of additional
          requirements on hardware and software beyond the baseline requirements, will also be considered. 
-         The Project Science Team (PST) will conduct a technical check on submitted white papers.
+         The Project Science Team will conduct a technical check on submitted white papers.
 \item {\bf Time requested} The amount of time (including overheads) required should be justified by 
         the associated science. 
 \end{itemize} 
@@ -426,8 +427,8 @@ observing time (based on current survey simulations).
 Open questions and optimization options associated with the main survey are as follows: 
 \begin{itemize}
 \item With the current declination boundaries at $\delta = -62^\circ$ and $\delta = +2^\circ$,
-the main survey area includes about 18,000 deg$2$ (without the Galactic plane 
-confusion zone, see \ref{sec:GP}). These boundaries were set to optimize the number of
+the main survey area includes about 18,000 deg$^2$ (without the Galactic plane 
+confusion zone, see Appendix~\ref{sec:GP}). These boundaries were set to optimize the number of
 detected galaxies and galaxies useful for cosmological studies. These galaxy counts 
 stay within 5-10\% of the current baseline values even with a much larger survey area. 
 For example, Section 2.4 in the Observing Strategy white paper describes a simulated survey
@@ -511,9 +512,9 @@ arXiv:1710.01309). While the confusion limit is relevant for the coadded depth, 
 studies using photometry from single images can still benefit from additional visits in this region.
 
 As guidance, stellar count simulations with the TRILEGAL code (Girardi et al. 2005, 
-arXiv:astro-ph/050404) show that to the depth of $r=27.5$ there are about 2 billion
-stars in the main survey area, with another 5 billion stars in the Galactic confusion 
-zone. Of the latter, about 3 billion are brighter than $r=24.5$.  
+arXiv:astro-ph/050404) show that to the depth of $r=27.5$ there are about 6 billion
+stars in the main survey area, with another 13 billion stars in the Galactic confusion 
+zone. Of the latter, about 6 billion are brighter than $r=24.5$.  
 
 The current strawman implementation of the Galactic confusion zone coverage allocates 
 30 observations in each of the six filters. Detailed optimization of this strategy has not 
@@ -585,7 +586,7 @@ of additional observing time could be utilized during twilight before the dynami
 too small. Assuming 7-sec visits (1 sec exposure + 1 sec for shutter + 5 sec for read and slew), about 
 2,000 deg$^2$ of sky could be imaged in 25 minutes (assuming no filter changes). Alternatively, over 
 350 exposures (1 sec + 1 sec + 2 sec) of the same field could be obtained instead.  Detailed strategies
-should consider limitations on the number of filter changes (see \S~\ref{sec:HW}). 
+should consider limitations on the number of filter changes (see Appendix~\ref{sec:HW}). 
 White papers addressing the science justification and strategies for using twilight time are desired.
 
 The shortest exposure stretch goal in the Camera baseline requirements is set to 0.1 sec. Science-driven
@@ -663,12 +664,12 @@ The Project will not take formal responsibility for specialized data reduction a
 needed to process data, including that taken in ``non-standard'' modes; detailed discussion is 
 available in the Data Management and LSST Special Programs document (ls.st/dmtn-065) and should
 be perused when proposing non-standard observing sequences. In addition, we strongly recommend 
-white paper authors to 
+to white paper authors to 
 consult Sections 5 and 6 in the \href{http://ls.st/dpdd}{LSST Data Products Definition Document}. If 
 a proposed dataset will require special processing, a plan to obtain necessary software and compute resources 
 must be provided in the white paper. 
 
-There is an additional caveat regarding crowded field processing (see also Section \ref{sec:GP}). 
+There is an additional caveat regarding crowded field processing (see also Appendix~\ref{sec:GP}). 
 A fraction of LSST imaging will cover areas of high object (mostly stellar) density, such as the 
 Galactic plane, the Large and Small Magellanic Clouds, and a number of globular clusters (among 
 others). LSST image processing and measurement software, although primarily designed to operate 
@@ -741,7 +742,7 @@ in the overview paper):
                 \sigma_{i=25} = 0.04 \, \left({t \over 10 \, {\rm yrs}}\right)^{-1/2} {\rm mag.}
 \end{equation}
 
-The volume of the 5-dimensional color space per source with $i=25$,  which controls the ability 
+The volume of the 5-dimensional color error space per source with $i=25$,  which controls the ability 
 to classify sources using colors (including photometric redshift estimates for galaxies and star/quasar
 separation, for example) is computed assuming uncorrelated color errors, as proportional
 to $\sigma^5_{i=25}$, and normalized by the value corresponding to the 10-year survey. 
@@ -818,7 +819,8 @@ The \href{http://ls.st/ldm-151}{LSST Data Management Science Pipelines Design} (
 
 %The \href{http://ls.st/lse-61}{LSST Data Management System Requirements} (DMSR) document details the official requirements for LSST's data management processing. This is a higher level of detail than the DPDD on the characteristics and specifications of individual data products but does not describe how these data products are created. \url{http://ls.st/lse-61}
 
-Documentation about OpSim (SOCS and Scheduler), including a high-level overview and description of scheduling options, is available at \url{http://sims-opsim.lsst.io}.
+Documentation about OpSim (Operations Simulator, which consists of the Simulated Observatory Control System and 
+Scheduler), including a high-level overview and description of scheduling options, is available at \url{http://sims-opsim.lsst.io}.
 
 Documentation about MAF, including a high-level overview and descriptions of current standard metric analyses, is available at \url{http://sims-maf.lsst.io}. 
 
@@ -836,7 +838,7 @@ Additional information is available in the following presentations:
 \item ``Observing Strategy White Paper Status Report'' (Mar 5, 2017): \url{http://ls.st/zj2}
 \item ``LSST Plans for Cadence Optimization'' (May 30, 2017): \url{http://ls.st/ot2}
 \item ``Special Programs'' (Aug 15, 2017): \url{http://ls.st/10o}
-\end{itemize}.
+\end{itemize}
 
 
 \subsection{Communication about the LSST survey strategy} 
