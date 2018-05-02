@@ -22,13 +22,19 @@
 \setDocRevision{v0.1}
 \setDocStatus{draft}
 \setDocAbstract{%
-The LSST community is invited to play a key role in the refinement of LSST's Observing Strategy 
-by submitting white papers that will describe proposed modifications of the current baseline
-survey strategy, including both the main survey and the so-called ``deep drilling fields'' and mini surveys.
-While the footprint of the main LSST survey (18,000 sq degrees) is fairly well-defined, the cadence of observations within
-this footprint has significant flexibility available. Further, approximately 10\% of the total 
-LSST survey time will be available for `deep drilling fields' and mini surveys, and the strategies and time balance for these 
-additional surveys are not yet finalized.
+The LSST community is invited to play a key role in the definition of LSST's Observing Strategy 
+by submitting white papers to help refine the cadence of observation in the `main survey' and 
+fully define the use of the remaining 10\% of available time, distributed among a variety of `mini-surveys'. 
+
+The LSST Science Requirements Document (SRD) places minimal constraints on the observing strategy, 
+recognizing that science evolves and that the initial (by now more than a decade old) survey strategy 
+would have to be redefined closer to first light. With LSST first light expected in 2020, now is the time 
+to undertake the final pre-commissioning planning for the initial LSST observing strategy. While
+the existing candidate baseline survey strategy has been primarily defined by the LSST Project, the final planning
+must be undertaken hand-in-hand with the community. 
+
+<summary of what must be kept, what is open to change, how much time 10-20\%>
+<combine white papers>
 
 We are soliciting white papers to help plan these aspects of the LSST 
 survey strategy. The deadline for these white papers is November 30, 2018.
@@ -56,11 +62,11 @@ imaging dataset that will support investigations of our Solar System, Galaxy and
 across half the sky and over ten years of repeated observation. LSST observations will be
 scheduled automatically, with the scheduling algorithm designed to address all science goals 
 and maximize observing efficiency for given observing constraints (please see Appendix~\ref{sec:supp}
-for a list of most relevant references). LSST is constructing a 
+for a list of most relevant references describing LSST and its operations). LSST is constructing a 
 flexible scheduling system that can respond to the unexpected and be re-optimized as the survey progresses.
-It has already been shown through simulated surveys that a basic implementation of LSST's 
-10-year observing strategy can meet the basic requirements
-described in the LSST Science Requirements Document (\href{http://ls.st/srd}{SRD}\footnote{The LSST Science 
+
+Any implementation of LSST's 10-year observing strategy must meet the basic requirements described in the 
+LSST Science Requirements Document (\href{http://ls.st/srd}{SRD}\footnote{The LSST Science 
 Requirements Document (SRD) is available at \href{http://ls.st/srd}{http://ls.st/srd}})
 for the core LSST science goals:
 \begin{itemize}
@@ -69,56 +75,82 @@ for the core LSST science goals:
 \item exploring the transient optical sky, and
 \item mapping the Milky Way.
 \end{itemize}
-A brief introduction to the baseline survey strategy, expanded background of the primary LSST science 
+However, in practice, the SRD intentionally places minimal quantitative constraints on the observing strategy,
+primarily requiring:
+\begin{itemize} 
+\item A footprint for the `main survey' of at least 18,000 square degrees which must
+obtain at least 825 visits per field (see SRD Tables 22 and 23), which places a minimum constraint on the time required to complete 
+the main survey. Simulated surveys indicate this means that the main survey typically requires 85--90\% of the available time to 
+reach this benchmark; even with scheduling improvements, it is unlikely that the goals of the main survey could be met with a time allocation
+significantly below 80\%. 
+\item Parallax and proper motion accuracies of 3~mas and 1~mas/yr at $r=24$, respectively (see SRD Table 26), which places
+a light constraint on distributing visits throughout the lifetime of the survey and throughout a season.
+\item Rapid revisits (40 seconds to 30 minutes) must be acquired over an area of at least 2000 square degrees (see SRD table 25) for
+very fast transient discovery; this requirement can usually be satisfied via field overlaps when surveying contiguous areas of sky. 
+\end{itemize}
+This leaves significant flexibility in the detailed cadence of observations within
+the main survey footprint, including the distribution of visits within a season (or between seasons), the distribution between filters and 
+the definition of a `visit' itself. Furthermore, these constraints apply to the main survey, which is expected to
+require at most 90\% of the observing time; the use of the remaining time in mini-surveys is not constrained in the SRD.
+
+A brief introduction to the current candidate baseline survey strategy, expanded background of the primary LSST science 
 goals, and concise descriptions of how these goals drive the basic survey strategy and data processing
 requirements are provided in the \href{http://ls.st/pif}{LSST Overview paper}\footnote{The LSST Overview 
 paper is a living document available at \href{http://ls.st/pif}{http://ls.st/pif}.}.
-This current baseline survey strategy, as represented in the reference survey simulation, includes (for
-more details, please see Appendix A): 
+This current candidate baseline survey strategy, as represented in the reference survey simulation, includes the main survey and
+several candidate mini-surveys (for more details, please see Appendix A): 
 \begin{itemize}
-\item The main ``wide-fast-deep'' survey covers $\sim$18,000 deg$^2$ of sky within equatorial declination
-range $-62^\circ < \delta < +2^\circ$, and excluding the $\sim$900 deg$^2$ large central portion of the Galactic 
+\item The {\bf main ``wide-fast-deep'' survey}, which covers $\sim$18,000 deg$^2$ of sky within equatorial declination
+range $-62^\circ < \delta < +2^\circ$, and excluding the central portion of the Galactic 
 plane. Within the main survey, two visits\footnote{A `visit' here is an LSST default visit, which 
-consists of back-to-back 15 sec exposures, for a total of 30 sec of on-sky exposure time.} 
-per field are acquired in each night, every three to four nights throughout the period the field is visible in each year. Each
-field in the main survey receives about 825 visits throughout the ten years of the LSST survey. The quantitative SRD 
-constraints on area coverage, number of visits, parallax and proper motion errors, and rapid-revisit rate apply to 
-visits obtained in the main survey.
-\item The North Ecliptic Spur mini survey covers the area from $\delta = +2^\circ$ up to $10^\circ$ north of the Ecliptic plane
-and is intended to observe the entire Ecliptic plane for purposes of inventorying the Solar System. This area is observed on
-a schedule similar to the main survey, although with a smaller total number of visits per field.
-\item The Galactic Plane mini survey covers the central portion of the Galactic plane which is not included in the main survey, 
-although at a much reduced rate and with a smaller total number of observations per field (30 visits per field and per filter). 
-There is no requirement for pairs of visits in each night in this area.
-\item The South Celestial Pole mini survey covers the region south of the main survey, to the South Celestial Pole. 
-This mini survey is observed with a strategy similar to the Galactic Plane mini survey, with 30 visits per field per filter, 
-and without requiring pairs of visits. 
-\item The Deep Drilling Fields are five specific field pointings which are observed with a much denser sampling rate. These fields
+consists of back-to-back 15 sec exposures, for a total of 30 sec of on-sky exposure time. These back-to-back exposures are always
+in the same filter, separated only by the 2 second readout time.} 
+per field (in either the same or different filters) are acquired in each night, to allow identification of moving objects, rapidly varying transients, and improve
+the reliability of the alert stream. These pairs of visits are repeated every three to four nights throughout the period the field is visible in each year. Each
+field in the main survey receives about 825 visits throughout the ten years of the LSST survey, spread over the six LSST filters 
+$ugrizy$. The quantitative SRD constraints on area coverage, number of visits, parallax and proper motion errors, and 
+rapid-revisit rate (40 seconds -- 30 minutes) apply to visits obtained in the main survey. 
+In the current reference simulation, the main survey uses 86.4\% of the available time.
+\item The {\bf North Ecliptic Spur candidate mini survey} covers the area north of $\delta = +2^\circ$ to $10^\circ$ north of the Ecliptic plane
+and is intended to observe the entire Ecliptic plane for purposes of inventorying the minor bodies in the Solar System. This area ($\sim$ 4160 deg$^2$) 
+is observed on a schedule similar to the main survey, although with a smaller total number of visits per field and only in filters $griz$. 
+As implemented in the current reference simulation, the North Ecliptic Spur mini-survey uses about 5.5\% of the available time. 
+\item The {\bf Galactic Plane candidate mini survey} covers the central portion of the Galactic plane which is not included in the main survey, 
+centered around $|l| = 0^\circ$ and covering $\sim$ 1860 deg$^2$.  It is observed at a much reduced rate compared to the main survey, 
+and with a smaller total number of observations per field (30 visits per field and per filter, in $ugrizy$), so as to
+provide astrometry and photometry of stars toward the galactic center but without reaching the confusion limit of the coadded images.
+There is no requirement for pairs of visits in each night in this area. As implemented in the current reference simulation, the Galactic Plane mini-survey uses
+about 1.6\% of the available time.
+\item The {\bf South Celestial Pole candidate mini-survey} covers the region south of the main survey, to the South Celestial Pole, $\sim$ 2315 deg$^2$,
+including the Magellanic Clouds. 
+This mini survey is observed with a strategy similar to the Galactic Plane mini-survey, with 30 visits per field per filter in $ugrizy$, 
+and without requiring pairs of visits. This provides coverage of the Magellanic clouds, but without committing extensive time as these fields are
+at high airmasses from the LSST site. As implemented in the current reference simulation, the South Celestial Pole mini-survey uses
+about 2.0\% of the available time.
+\item The {\bf Deep Drilling Field candidate mini-survey} is implemented as five specific field pointings $\sim$ 50 deg$^2$, 
+which are observed with a much denser sampling rate. These fields
 are observed every three to four days, but in a sequence of multiple $grizy$ exposures during gray and bright time, and then
 multiple sequential $u$ band exposures during dark time. The current deep drilling fields are aimed at extragalactic
 science, providing a `gold sample' to calibrate the main survey, and to discover Type Ia supernovae. 
+As implemented in the current reference simulation, the Deep Drilling Fields mini-survey uses about 4.6\% of the available time.
 \end{itemize}
-For the main survey, the SRD requires a footprint of 18,000 deg$^2$, with 825 visits per field (see SRD Tables~22 and 23). 
-The timing of visits in the main survey is somewhat constrained by implications from the required 
-parallax and proper motion accuracies (3~mas and 1.0~mas/yr at $r=24$, respectively; see SRD Table 26), but these primarily 
-affect the overall time baseline for visits.  There is an additional requirement that at least 2,000 deg$^2$ receives rapid time 
-sampling between 40~seconds and 30~minutes, which can usually be satisfied with field overlaps when surveying contiguous regions
-of sky. There are no other explicit SRD-level constraints on the survey strategy. 
 
 Due to the desire for multi-wavelength precursor observations for the deep drilling fields, and the limited lifetime of relevant 
-space-based observatories, the locations of four of the Deep Drilling fields have been finalized\footnote{The locations
-of these four deep fields were announced in 2012. The LSST e-news coverage is available at 
-\href{https://www.lsst.org/News/enews/deep-drilling-201202.html}{https://www.lsst.org/News/enews/deep-drilling-201202.html}.}. 
+space-based observatories, the locations of four of the Deep Drilling fields have been finalized, while any remaining field locations 
+have yet to be specified. The locations of these four deep fields were announced in 2012, as the result of a community driven process 
+with the goal of obtaining multi-wavelength
+coverage by ground and space-based facilities some of which may not exist at the start of the LSST survey.
 These fields are intended to coincide with multi-wavelength surveys targeting the ELAIS-S1, XMM-LSS, Extended Chandra Deep Field-South, 
-and COSMOS pointings. 
+and COSMOS pointings. The cadence of observations within these (or any) deep drilling fields is not finalized, although the coadded
+depth may be expected to be at least one magnitude deeper than the LSST main survey in each filter.
 
-The detailed LSST survey strategy is not yet finalized and there
-are a number of open optimization questions (for detailed discussion, please see Section~\ref{sec:optimization}). 
-Indeed, it is anticipated that the survey strategy 
-will continue to be refined and optimized throughout operations. The main purpose of this 
-call for white papers is to solicit detailed proposals from communities interested in LSST science
-for specific modifications of the current baseline survey strategy (for illustrative examples, 
-please see Appendix~\ref{sec:surveys}). 
+Beyond the SRD constraints and commitment to the four deep drilling fields, the survey strategy as implemented in the candidate baseline 
+above should not be considered guaranteed; for illustrative examples of some alternate survey strategies, please see Appendix~\ref{sec:surveys}.
+All of the candidate mini-surveys and the cadence in the main survey will be re-evaluated on the basis of community input in the next 
+step of planning for the initial LSST survey strategy. Much of the existing survey strategy 
+has been based on a mix of community and project input, but the overall balance has been project-driven. 
+The main purpose of this call for white papers is to solicit detailed input from the community interested in 
+LSST science in order to design the optimum overall survey strategy. 
 
 
 \subsection{LSST community and LSST observing strategy}
@@ -406,7 +438,7 @@ encouraged to address these questions.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{Nvisits_gri}
-\caption{The current baseline survey includes the main Wide-Fast-Deep survey and four mini surveys:
+\caption{The current baseline survey includes the main Wide-Fast-Deep survey and four candidate mini surveys:
 the North Ecliptic Spur, the Galactic Plane, the South Celestial Pole, and the Deep Drilling fields. This figures
 demonstrates their footprint in the current baseline simulated survey and the number of visits in $gri$ bands.
 We are seeking suggestions for modification of the survey strategy, especially suggestions for changes to the
@@ -421,7 +453,7 @@ and allows the entire sky visible at any time of the year to be covered in about
 The basic strategy is designed to give roughly uniform coverage over the sky at any given time, and to reach
 the survey goals for measuring stellar parallax and proper motion, and the number of visits per 
 field (825 visits, summed over the six filters). In the baseline implementation, the main survey 
-covers about 18,000 deg$^2$ of high galactic latitude sky, and uses about 85\% of the available 
+covers about 18,000 deg$^2$ of high galactic latitude sky, and uses about 86\% of the available 
 observing time (based on current survey simulations). 
 
 Open questions and optimization options associated with the main survey are as follows: 
