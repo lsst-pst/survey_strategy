@@ -17,7 +17,7 @@
                  the LSST Project Science Team, \\
                  and  the LSST Science Advisory Committee} 
 
-\setDocRef{Document-XXX}
+\setDocRef{Document-28382}
 \date{\today}
 \setDocRevision{v0.1}
 \setDocStatus{draft}
@@ -25,19 +25,19 @@
 The LSST community is invited to play a key role in the definition of LSST's Observing Strategy 
 by submitting white papers to help refine the cadence of observation in the `main survey' and 
 fully define the use of the remaining 10\% of available time, distributed among a variety of `mini surveys'. 
-
 The LSST Science Requirements Document (SRD) places minimal constraints on the observing strategy, 
 recognizing that science evolves and that the initial (by now more than a decade old) survey strategy 
 would have to be redefined closer to first light. With LSST first light expected in 2020, now is the time 
 to undertake the final pre-commissioning planning for the initial LSST observing strategy. While
 the existing candidate baseline survey strategy has been primarily defined by the LSST Project, the final planning
-must be undertaken hand-in-hand with the community. 
+must be undertaken hand-in-hand with the community. We seek science-driven input for cadence 
+properties such as per-bandpass imaging depth, the sky coverage, temporal coverage, and observing
+rules. There are no specific limitations on what kind of science programs will be considered, except that 
+the primary four LSST science themes remain the cornerstones of the LSST survey and must be
+maintained. We are soliciting white papers to help plan these aspects of the LSST 
+survey strategy. 
 
-{\bf<summary of what must be kept, what is open to change, how much time 10-20\%>
-<comment that we will combine white papers (?)>}
-
-We are soliciting white papers to help plan these aspects of the LSST 
-survey strategy. The deadline for these white papers is November 30, 2018.
+The deadline for these white papers is November 30, 2018.
 }
 
 % Change history defined here. Will be inserted into
@@ -91,7 +91,7 @@ very fast transient discovery; this requirement can usually be satisfied via fie
 This leaves significant flexibility in the detailed cadence of observations within
 the main survey footprint, including the distribution of visits within a season (or between seasons), the distribution between filters and 
 the definition of a `visit' itself. Furthermore, these constraints apply to the main survey, which is expected to
-require at most 90\% of the observing time; the use of the remaining time in mini surveys is not constrained in the SRD.
+require about 90\% of the observing time; the use of the remaining time in mini surveys is not constrained in the SRD.
 
 A brief introduction to the baseline survey strategy, expanded background of the primary LSST science 
 goals, and concise descriptions of how these goals drive the basic survey strategy and data processing
@@ -103,7 +103,7 @@ includes the main survey and several candidate mini surveys (for more details, p
 \item The {\bf main ``wide-fast-deep'' survey}, which covers $\sim$18,000 deg$^2$ of sky within equatorial declination
 range $-62^\circ < \delta < +2^\circ$, and excluding the central portion of the Galactic 
 plane. Within the main survey, two visits\footnote{A `visit' here is an LSST default visit, which 
-consists of back-to-back 15 sec exposures, for a total of 30 sec of on-sky exposure time. These back-to-back exposures are always
+consists of two back-to-back 15 sec exposures, for a total of 30 sec of on-sky exposure time. These back-to-back exposures are always
 in the same filter, separated only by the 2 second readout time.} 
 per field (in either the same or different filters) are acquired in each night, to allow identification of moving objects, rapidly varying transients, and improve
 the reliability of the alert stream. These pairs of visits are repeated every three to four nights throughout the period the field is visible in each year. Each
@@ -192,12 +192,12 @@ Through the end of construction and commissioning, the COSEP will remain a livin
 and the main vehicle for the community to broadly communicate to the LSST Project regarding 
 the scientific repercussions of various observing strategies. It will serve as a repository
 of metrics, with performance evaluations of existing simulated surveys. Periodically, the LSST
-Project Scientist, with support from the Project Science Team (PST) and the Science Advisory Council (SAC), 
+Project Scientist, with support from the Project Science Team (PST) and the Science Advisory Committee (SAC), 
 will review these metrics and evaluations, to fold updates into the survey optimization efforts.
 
 While the COSEP will continue to provide the means to update evaluations of the survey strategy, the white 
 papers solicited in this call are intended to provide the LSST science community with an opportunity 
-to propose more significant, detailed, modifications of the LSST survey strategy, including broad changes in
+to propose more significant, and detailed, modifications of the LSST survey strategy, including broad changes in
 the mini surveys.
 
 We anticipate the performance evaluation components of the white papers solicited here will also be added to the COSEP, to
@@ -212,8 +212,7 @@ solicit detailed technical white papers for specific modifications of the curren
 As discussed in more detail in Appendix A, analysis to date indicates that the baseline candidate
 survey strategy, while meeting the basic science requirements for the LSST survey, can be meaningfully 
 improved\footnote{The current, as-simulated, baseline survey strategy is described in detail in Sections 1.1 
-and 2.3 in the \href{http://ls.st/o5k}{COSEP}.}
-The LSST \href{http://ls.st/srd}{SRD}
+and 2.3 in the \href{http://ls.st/o5k}{COSEP}.}. The LSST \href{http://ls.st/srd}{SRD}
 provides minimal constraints on the survey strategy details because it recognized that science evolves and that the 
 initial, by now more than a decade old, survey strategy will have to be re-optimized closer to first 
 light. With LSST first light expected in 2020, now is the time to undertake the final pre-commissioning
@@ -283,10 +282,11 @@ Soon after the November 2018 submission deadline, members of the LSST Science Ad
 with technical support from the Project, 
 will undertake an initial review and decide which submitted white papers meet the criteria of scientific excellence and 
 technical feasibility for further analysis. These criteria are discussed in Section~\ref{sec:ranking}. The SAC will publish 
-a short summary of the results of this initial review, including a list of all white papers to be considered for further simulations.
+a short summary of the results of this initial review, including a list of all white papers to be considered for further 
+simulations, by April 2019. 
 
 The input from the submitted white papers will be used to design multiple
-options in observing strategies and the Project team will generate a series of
+options in observing strategies, and the Project team will generate a series of
 simulations based on these survey strategies. These multiple simulated surveys will address 
 varying science drivers and will form a ``menu'' of possible survey strategies (e.g., a main 
 survey with 18,000 deg$^2$ of sky coverage vs. a main survey with sky coverage of 23,000 deg$^2$, perhaps to a
@@ -295,7 +295,7 @@ white papers and in the COSEP will be used to generate quantitative assessments 
 During this process, the authors of the submitted white papers will be kept informed as to how 
 their suggested survey strategy has been implemented into simulated surveys, combined with other suggested
 survey strategies, and how the resulting simulated surveys are performing with respect to their submitted performance metrics.
-We will also publish a monthly update on the \href{https://community.lsst.org/c/sci}{LSST Community}\footnote{\url{http://community.lsst.org/c/sci}}
+We will also publish monthly updates on the \href{https://community.lsst.org/c/sci}{LSST Community}\footnote{\url{http://community.lsst.org/c/sci/survey-strategy}}
 forum.
 
 We anticipate that the list of observing strategies that will be simulated and analyzed 
@@ -329,7 +329,7 @@ and coordinate teams that plan to submit white papers.
 \begin{tabular}{l|l}
 White paper submission deadline & Nov 30, 2018 \\
 List of to-be-simulated survey strategies & April 2019 \\
-Simulated survey strategies available & Late 2019 \\
+Simulated survey strategies available & End of 2019 \\
 Survey Strategy Committee (SSC) established & Early 2020 \\
 Advisory report from Project to SSC & Early 2020 \\
 SSC report on official initial LSST survey strategy & Early 2021 \\
@@ -401,7 +401,7 @@ all the required information, can be found in the git repository hosted at \href
 To submit white papers, please email the compiled PDF to \href{lsst-survey-strategy@lsstcorp.org}{lsst-survey-strategy@lsstcorp.org}. An acknowledgement
 of the receipt of each white paper will be returned within 48 hours.
 
-For additional help or questions, please ask on \href{https://community.lsst.org/c/sci}{LSST Community}\footnote{\url{http://community.lsst.org/c/sci}}. 
+For additional help or questions, please ask on \href{https://community.lsst.org/c/sci}{LSST Community}\footnote{\url{http://community.lsst.org/c/sci/survey-strategy}}. 
 
 
 \section{White paper ranking criteria \label{sec:ranking}} 
@@ -476,7 +476,8 @@ Open questions and optimization options associated with the main survey are as f
 the main survey area includes about 18,000 deg$^2$ (without the Galactic plane 
 confusion zone, see Appendix~\ref{sec:GP}). These boundaries were set to optimize the number of
 detected galaxies useful for cosmological studies, including weak lensing, with the declination
-limits defined by an airmass limit of 1.4. These galaxy counts 
+limits defined by an airmass limit of 1.18 (the maximum value of the minimum achievable airmass;
+the maximum allowed observation airmass is set to 1.4). These galaxy counts 
 stay within 5-10\% of the current baseline values even with a much larger survey area. 
 For example, Section 2.4 in the Observing Strategy white paper describes a simulated survey
 that covers 27,400 deg$^2$ to about 0.15 mag shallower co-added depth than in the baseline 
@@ -511,8 +512,8 @@ exposures, the so-called snaps. While 2x15 sec visits enable search for very rap
 and help with cosmic ray rejection, there are compelling technical arguments -- including observing efficiency -- 
 to adopt single-exposure 30 second visits. Arguments for 
 retaining the 2x15 sec visits would be very useful in further optimization of the main survey strategy. 
-More details on the detector performance are available at {\bf XXX - should we add a section here on detector performance,
-readnoise \& 5sigma? or is there a doc we can link to?}.
+The impact of read-out noise and other parameters on limiting depth is quantitatively
+discussed in the LSST Overview paper (see Section 3.2.1). 
 \end{itemize}
 White papers addressing all or some of these optimization efforts are strongly encouraged.
 
@@ -552,8 +553,8 @@ confusion zone'' starts at $|b|=10^\circ$ towards $l=0^\circ$ and linearly drops
 at $l=90^\circ$ and $l=270^\circ$. Along this boundary, the confusion limit is reached at a
 depth of $i \sim 26$; therefore, the useful coadded depth is at least 1-2 magnitudes 
 shallower than for the main survey and the total number of visits in this region is thus fewer. 
-Within this boundary, the fraction of galaxies is only
-a few percent (including extinction) and an assumption that all sources are stars works quite well. 
+Within this boundary, the fraction of galaxies is only a few percent (due to heavy flux extinction 
+by interstellar dust) and an assumption that all sources are stars works quite well. 
 Crowding is not expected to significantly impact the quality of data products derived from difference images
 ({\it i.e.} Prompt data products). 
 
@@ -862,7 +863,7 @@ The \href{http:/ls.st/srd}{LSST Science Requirements Document} (SRD) describes t
 
 The \href{http://ls.st/dpdd}{LSST Data Products Definition Document} (DPDD) describes the data products that LSST will provide, with some high-level background on how they will be produced. If you want to know what will be contained in various catalogs, this is a good place to look. Available as \url{http://ls.st/dpdd}
 
-The \href{http://ls.st/ldm-151}{LSST Data Management Science Pipelines Design} (LDM-151) document describes the LSST data management processing pipelines. This provides details of how and when images will be processed and catalogs will be generated, including information on the algorithms used in each processing stage. If you want to know more about the details of a value in an output catalog and how it will be calculated, this is the place to look. Available as \url{http://ls.st/ldm-151}
+The \href{http://ls.st/ldm-151}{LSST Data Management Science Pipelines Design} (LDM-151) document describes the LSST data management processing pipelines. This provides details of how and when images will be processed and catalogs will be generated, including information on the algorithms used in each processing stage. If you want to know more about the details of a value in an output catalog and how it will be calculated, this is the place to look. This document will be periodically updated as processing algorithms are improved. Available as \url{http://ls.st/ldm-151}
 
 %The \href{http://ls.st/lse-61}{LSST Data Management System Requirements} (DMSR) document details the official requirements for LSST's data management processing. This is a higher level of detail than the DPDD on the characteristics and specifications of individual data products but does not describe how these data products are created. \url{http://ls.st/lse-61}
 
@@ -874,7 +875,7 @@ The \href{https://github.com/lsst-pst/survey_strategy/blob/master/db/baseline-do
 Documentation about the LSST Metrics Analysis Framework (MAF), including a high-level overview and descriptions of current standard metric analyses, is available at \url{http://sims-maf.lsst.io}. 
 
 The outputs of MAF analyses for the 2018a baseline survey, as well as runs demonstrating potential options for mini surveys and Deep 
-Drilling fields (a subset of the runs described in Chapter 2 of the OSWP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}. 
+Drilling fields (a subset of the runs described in Chapter 2 of the COSEP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}. 
 
 A short description of the current Deep Drilling fields and links to further materials (including white papers submitted in response to the 2011 call for input on the DD strategy) are available on the LSST website at \href{https://www.lsst.org/scientists/survey-design/ddf}{http://ls.st/57q}. Additional posts on LSST Community can be found by searching for \href{https://community.lsst.org/search?q=deep%20drilling}{`deep drilling'}. 
 
@@ -897,23 +898,25 @@ The LSST Science Advisory Committee (SAC) (\url{https://project.lsst.org/groups/
 In addition to this call for white papers, the Community Observing Strategy Evaluation Paper\footnote{A living document available at https://github.com/LSSTScienceCollaborations/ObservingStrategy} provides a coordinated mechanism for providing scientific input about survey strategy. LSST science collaborations are also official channels for communication with the LSST project --- a Data Management 
 liaison\footnote{For the list of Science Collaboration contacts and corresponding Data Management Liaisons, please see http://ls.st/uj6}  is assigned to each Science Collaboration to answer specific questions about data products generated by the project.
 
-An open, searchable resource for asking questions not addressed in this document is available on \href{http://community.lsst.org}{LSST Community}, in the Science category, SurveyStrategy subcategory. Team members will monitor and respond in a timely manner to questions posted there. Please go to \url{http://community.lsst.org}
+An open, searchable resource for asking questions not addressed in this document is available on \href{http://community.lsst.org}{LSST Community}, in the Science category, SurveyStrategy subcategory. Team members will monitor and respond in a timely manner to questions posted there. Please go to \url{http://community.lsst.org/c/sci/survey-strategy}
 
 There is a mailing list available (email: lsst-survey-strategy at lsstcorp.org) to contact the survey strategy team in case of specific 
 questions and/or concerns. Messages posted to the mailing list are broadcasted to the survey strategy team and archived. 
+The same list will be used for white paper submission (see Section 2.3). 
 
 Throughout the survey strategy design process there will be open community meetings. The first of these will be 
 at the LSST All Hands Meeting 2018 in Tucson, AZ (August 13-17, 2018). 
 
 Note that our teams cannot support individuals or groups wishing to run the Operations Simulator themselves. 
-It is not required that authors of white papers run the proposed simulations themselves. We will provide docker images (as well as the source code)
+It is not required that authors of white papers run the proposed simulations themselves. We will provide Docker images (as well as the source code)
 and corresponding documentation on running OpSim; however, the Project does not have resources to provide help desk facilities on this topic. 
 
 
 \subsection{Additional Simulated Survey Strategies \label{sec:surveys}}
 
-By the time this call for white papers is officially released, we anticipate that we will provide a set of
-simulated surveys for the community to use as test cases. These simulated survey strategies will include (approximately): 
+By the time this call for white papers is officially released (June 30, 2018), we anticipate that we will provide a set of
+simulated surveys for the community to use as test cases. These simulated survey strategies will include (approximately
+and subject to last-minute updates): 
 \begin{itemize}
 \item The baseline survey strategy, with the main survey having a 18,000 deg$^2$ footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling mini surveys operating in the current example baseline survey strategy manner. 
 \item A survey with a much larger main survey footprint (27,000 deg$^2$), defined by airmass limit $X<1.5$ and declination limits 

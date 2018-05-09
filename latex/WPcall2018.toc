@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{18}{subsection.A.5}
 \contentsline {subsection}{\numberline {A.6}Twilight survey }{19}{subsection.A.6}
 \contentsline {section}{\numberline {B}Constraints on survey strategy imposed by the LSST system}{19}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}Hardware constraints }{19}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.1}Hardware constraints }{20}{subsection.B.1}
 \contentsline {subsection}{\numberline {B.2}Software constraints}{21}{subsection.B.2}
 \contentsline {subsection}{\numberline {B.3}Observing efficiency constraints}{22}{subsection.B.3}
 \contentsline {subsection}{\numberline {B.4}Limiting depth and uncertainty estimates}{23}{subsection.B.4}
