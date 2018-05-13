@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Ongoing community feedback: The LSST Community Observing Strategy Evaluation Paper (COSEP)}{4}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Motivation for this white paper call}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}General guidelines}{6}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.3}General guidelines}{7}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Review process and timeline}{8}{subsection.1.4}
 \contentsline {section}{\numberline {2}White paper submission guidelines}{10}{section.2}
 \contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{10}{subsection.2.1}
@@ -18,10 +18,9 @@
 \contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{18}{subsection.A.5}
 \contentsline {subsection}{\numberline {A.6}Twilight survey }{19}{subsection.A.6}
 \contentsline {section}{\numberline {B}Constraints on survey strategy imposed by the LSST system}{19}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}Hardware constraints }{20}{subsection.B.1}
-\contentsline {subsection}{\numberline {B.2}Software constraints}{21}{subsection.B.2}
-\contentsline {subsection}{\numberline {B.3}Observing efficiency constraints}{22}{subsection.B.3}
-\contentsline {subsection}{\numberline {B.4}Limiting depth and uncertainty estimates}{23}{subsection.B.4}
+\contentsline {subsection}{\numberline {B.1}Hardware and software constraints }{20}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Observing efficiency constraints}{22}{subsection.B.2}
+\contentsline {subsection}{\numberline {B.3}Limiting depth and uncertainty estimates}{23}{subsection.B.3}
 \contentsline {section}{\numberline {C}Supplementary materials }{25}{appendix.C}
 \contentsline {subsection}{\numberline {C.1}Useful publications and websites }{25}{subsection.C.1}
 \contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{27}{subsection.C.2}
