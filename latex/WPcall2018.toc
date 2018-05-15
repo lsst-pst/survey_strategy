@@ -7,9 +7,9 @@
 \contentsline {subsection}{\numberline {1.4}Review process and timeline}{8}{subsection.1.4}
 \contentsline {section}{\numberline {2}White paper submission guidelines}{10}{section.2}
 \contentsline {subsection}{\numberline {2.1}Who can submit a white paper?}{10}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Requested input }{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}TeX template for submission }{11}{subsection.2.3}
-\contentsline {section}{\numberline {3}White paper ranking criteria }{12}{section.3}
+\contentsline {subsection}{\numberline {2.2}Requested input }{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}TeX template for submission }{12}{subsection.2.3}
+\contentsline {section}{\numberline {3}White paper ranking criteria }{13}{section.3}
 \contentsline {section}{\numberline {A}Examples of open survey strategy optimization questions }{14}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{14}{subsection.A.1}
 \contentsline {subsection}{\numberline {A.2}``Deep Drilling'' fields}{16}{subsection.A.2}
