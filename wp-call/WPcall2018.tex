@@ -23,28 +23,29 @@
 \setDocStatus{draft}
 \setDocAbstract{%
 The LSST community is invited to play a key role in the definition of LSST's Observing Strategy 
-by submitting white papers to help refine the cadence of observation in the `main survey' and 
-fully define the use of the remaining 10-20\% of available time, distributed among a variety of 
-`mini surveys' (including the so-called `Deep Drilling fields' and `Target of Opportunity' programs).
+by submitting white papers to help refine the `main survey' and fully define the use of 10-20\% 
+of time expected to be devoted to various `mini surveys' (including the so-called `Deep Drilling 
+fields' and `Target of Opportunity' programs).
 The LSST Science Requirements Document (SRD) places minimal constraints on the observing strategy, 
 recognizing that science evolves and that the initial (by now more than a decade old) survey strategy 
 would have to be redefined closer to first light. With LSST first light expected in 2020, and the LSST operations
 phase starting in 2022, now is the time to undertake the final planning for the initial LSST observing strategy. While
 the existing candidate baseline survey strategy has been primarily defined by the LSST Project, the final planning
-must be undertaken hand-in-hand with the community. We seek science-driven input for cadence 
-properties such as per-bandpass imaging depth, the sky coverage, temporal coverage, and observing
-rules. There are no specific limitations on what kind of science programs will be considered, except that 
-the four primary LSST science themes must remain the cornerstones of the LSST survey.  This document
-is a solicitation for white papers to help plan these aspects of the LSST survey strategy. 
+must be undertaken hand-in-hand with the community. We seek science-driven input for observing strategy
+properties such as the sky coverage, per-bandpass imaging depth, temporal coverage, and various detailed
+observing constraints. There are no specific limitations on what kind of science programs will be considered, 
+except that the four primary LSST science themes must remain the cornerstones of the LSST survey.  
+This document is a solicitation for white papers to help plan these aspects of the LSST survey strategy. 
 
-The deadline for these white papers is November 30, 2018.
+The deadline for white paper submission is November 30, 2018.
 }
 
 % Change history defined here. Will be inserted into
 % correct place with \maketitle
 % OLDEST FIRST: VERSION, DATE, DESCRIPTION, OWNER NAME
 \setDocChangeRecord{%
-\addtohist{1}{2018-06-30}{First released version.}{\v{Z}eljko Ivezi\'{c}}
+\addtohist{1}{2018-05-16}{First internally circulated version.}{\v{Z}eljko Ivezi\'{c}}
+\addtohist{2}{2018-06-30}{First released version.}{\v{Z}eljko Ivezi\'{c}}
 }
 
 \begin{document}
@@ -81,7 +82,7 @@ primarily requiring:
 \item A footprint for the `main survey' of at least 18,000 deg$^2$ over which there must be
 at least 825 30-second visits per 9.6 deg$^2$ field, summed over all six filters, $ugrizy$ (see SRD 
 Tables 22 and 23), which places a minimum constraint on the time required to complete 
-the main survey. Simulated surveys indicate this means that the main survey typically requires 85--90\% 
+the main survey. Simulated surveys indicate that the main survey typically requires 85--90\% 
 of the available time (10 years) to reach this benchmark; even with scheduling improvements, it is unlikely 
 that the goals of the main survey could be met with a time allocation significantly below 80\%. 
 \item Parallax and proper motion $1\sigma$ accuracies of 3~mas and 1~mas/yr per coordinate at $r=24$, 
@@ -105,7 +106,8 @@ in Section C.1 here).
 This current candidate baseline survey strategy, as represented in the reference survey simulation (baseline2018a), 
 includes the main survey and several candidate mini surveys (for more details, please see Appendix A): 
 \begin{itemize}
-\item The {\bf main ``wide-fast-deep'' survey}, which covers $\sim$18,000 deg$^2$ of sky within equatorial declination
+\item The {\bf main ``wide-fast-deep'' survey}, which covers $\sim$18,000 deg$^2$ of sky within
+the equatorial declination
 range $-62^\circ < \delta < +2^\circ$, and excluding the central portion of the Galactic 
 plane. Within the main survey, two visits\footnote{A `visit' here is an LSST default visit, which 
 consists of two back-to-back 15 sec exposures, for a total of 30 sec of on-sky exposure time. These back-to-back exposures are always
@@ -116,22 +118,6 @@ field in the main survey receives about 825 visits throughout the ten years of t
 $ugrizy$. The quantitative SRD constraints on area coverage, number of visits, parallax and proper motion errors, and 
 rapid-revisit rate (40 seconds -- 30 minutes) apply to visits obtained in the main survey. 
 In the current reference simulation, the main survey uses 86.4\% of the available time.
-\item The {\bf North Ecliptic Spur candidate mini survey} covers the area north of $\delta = +2^\circ$ to $10^\circ$ north of the Ecliptic plane
-and is intended to observe the entire Ecliptic plane for purposes of inventorying the minor bodies in the Solar System. This area ($\sim$ 4160 deg$^2$) 
-is observed on a schedule similar to the main survey, although with a smaller total number of visits per field and only in filters $griz$. 
-As implemented in the current reference simulation, the North Ecliptic Spur mini survey uses about 5.5\% of the available time. 
-\item The {\bf Galactic Plane candidate mini survey} covers the central portion of the Galactic plane which is not included in the main survey, 
-centered around $|l| = 0^\circ$ and covering $\sim$ 1860 deg$^2$.  It is observed at a much reduced rate compared to the main survey, 
-and with a smaller total number of observations per field (30 visits per field and per filter, in $ugrizy$), so as to
-provide astrometry and photometry of stars toward the galactic center but without reaching the confusion limit in the coadded images.
-There is no requirement for pairs of visits in each night in this area. As implemented in the current reference simulation, the Galactic Plane mini survey uses
-about 1.6\% of the available time.
-\item The {\bf South Celestial Pole candidate mini survey} covers the region south of the main survey, to the South Celestial Pole, $\sim$ 2315 deg$^2$,
-including the Magellanic Clouds. 
-This mini survey is observed with a strategy similar to the Galactic Plane mini survey, with 30 visits per field per filter in $ugrizy$, 
-and without requiring pairs of visits. This provides coverage of the Magellanic clouds, but without committing extensive time as these fields are
-at high airmasses from the LSST site. As implemented in the current reference simulation, the South Celestial Pole mini survey uses
-about 2.0\% of the available time.
 \item The {\bf Deep Drilling Field candidate mini survey} is implemented as five specific field pointings $\sim$ 50 deg$^2$, 
 which are observed with a much denser sampling rate. These fields
 are observed every three to four days, but in a sequence of multiple $grizy$ exposures during gray and bright time, and then
@@ -139,13 +125,33 @@ multiple sequential $u$ band exposures during dark time. The current deep drilli
 science, providing a `gold sample' to calibrate the main survey, and to discover Type Ia supernovae. 
 As implemented in the current reference simulation, the Deep Drilling Fields mini survey uses about 4.6\% of the available time
 and the resulting co-added depth is typically about 1 magnitude deeper than the main ``wide-fast-deep'' survey. 
+\item The {\bf Galactic Plane candidate mini survey} covers the central portion of the Galactic plane that is not included in the main survey, 
+centered around $|l| = 0^\circ$ and covering $\sim$ 1860 deg$^2$.  It is observed at a much reduced rate compared to the main survey, 
+and with a smaller total number of observations per field (30 visits per field and per filter, in $ugrizy$), so as to
+provide astrometry and photometry of stars toward the Galactic center but without reaching the confusion limit in the coadded images.
+There is no requirement for pairs of visits in each night in this area. As implemented in the current reference simulation, the Galactic Plane mini survey uses
+about 1.6\% of the available time.
+\item The {\bf North Ecliptic Spur candidate mini survey} covers the area north of $\delta = +2^\circ$ to $10^\circ$ north of the Ecliptic plane
+and is intended to observe the entire Ecliptic plane for the purpose of inventorying the minor bodies in the Solar System. This area ($\sim$ 4160 deg$^2$) 
+is observed on a schedule similar to the main survey, although with a smaller total number of visits per field and only in filters $griz$. 
+As implemented in the current reference simulation, the North Ecliptic Spur mini survey uses about 5.5\% of the available time. 
+\item The {\bf South Celestial Pole candidate mini survey} covers the region south of the main survey, to the South Celestial Pole, $\sim$ 2315 deg$^2$,
+including the Magellanic Clouds. 
+This mini survey is observed with a strategy similar to the Galactic Plane mini survey, with 30 visits per field per filter in $ugrizy$, 
+and without requiring pairs of visits. This provides coverage of the Magellanic clouds, but without committing extensive time as these fields are
+at high airmasses from the LSST site. As implemented in the current reference simulation, the South Celestial Pole mini survey uses
+about 2.0\% of the available time.
 \end{itemize}
 
-The locations of four of the Deep Drilling fields have been finalized and announced to the community
-in 2012, while any remaining field locations 
-have yet to be specified. The locations of these four deep fields were the result of a community driven process 
-with the goal of obtaining multi-wavelength
-coverage by ground and space-based facilities some of which may not exist at the start of the LSST survey.
+The locations of four of the Deep Drilling fields, which are included among the five fields in the current reference simulation, 
+have been finalized and announced to the community\footnote{For details, including the field center coordinates, 
+please see http://ls.st/bki} in 2012, while any remaining field locations 
+have yet to be specified. The locations of these four deep fields\footnote{Note that three of these four fields are
+closely spaced in Right Ascension: 0$^h$38$^m$, 2$^h$23$^m$, and 3$^h$33$^m$.} were 
+the result of a community driven process 
+with the goal of obtaining multi-wavelength coverage by ground and space-based facilities,  some of which may 
+not exist at the start of the LSST survey\footnote{This approach indeed worked: a lot of additional Spitzer and XMM-Newton 
+data were gathered!}.
 These fields are intended to coincide with multi-wavelength surveys targeting the ELAIS-S1, XMM-LSS, Extended Chandra Deep Field-South, 
 and COSMOS pointings. The cadence of observations within these (or any) deep drilling fields is not finalized, although the coadded
 depth may be expected to be at least one magnitude deeper than the LSST main survey in each filter.
@@ -208,8 +214,8 @@ papers solicited in this call are intended to provide the LSST science community
 to propose more significant, and detailed, modifications of the LSST survey strategy, including broad changes in
 the mini surveys.
 
-We anticipate the performance evaluation components of the white papers solicited here will also be added to the COSEP, to
-provide a comprehensive reference point for survey strategy evaluation. 
+We anticipate that the performance evaluation components of the white papers solicited here will also 
+be added to the COSEP, to provide a comprehensive reference point for survey strategy evaluation. 
 
 \subsection{Motivation for this white paper call}
 
@@ -238,7 +244,7 @@ in various supplementary materials listed in Appendix C).
 \subsection{General guidelines} 
 
 We solicit detailed white papers for specific modifications of the current baseline survey strategy, including 
-both the main survey and the so-called ``deep drilling fields'' and other mini surveys. There are no 
+both the main survey and the deep drilling fields and other mini surveys. There are no 
 specific limitations on what kind of science programs will be considered, but please note that 
 the primary four LSST science themes remain the cornerstones of the LSST survey and must be
 maintained. Indeed, the LSST SRD states that ``the adopted observing 
@@ -254,7 +260,7 @@ will be welcome.
 The detailed cadence of visits in the main survey, the footprint for any other mini survey (except the location of the four pre-announced
 deep drilling fields), and the cadence or number of visits in any mini survey are open topics for optimization. The existence of a 
 particular survey strategy for a given mini survey in the current baseline should not be taken to imply that it will be present in the same way in the final 
-survey strategy. Science justification and accompanying scientific performance metrics which support a given mini survey are highly encouraged.
+survey strategy. Science justification and accompanying scientific performance metrics that support a given mini survey are highly encouraged.
 
 Detailed white papers are also solicited for novel ideas, such as twilight observing (see Appendix~\ref{sec:twilight}), 
 as well as changes to the survey strategy that would create synergies with other major surveys ({\it e.g.}, WFIRST, Euclid). 
@@ -263,13 +269,13 @@ White papers should emphasize programs leveraging LSST's unique large \'{e}tendu
 At this time we are not soliciting proposals to optimize observations during the commissioning period.
 
 Technical constraints imposed by the system and observing conditions are summarized in 
-Appendix B. Links to the description of LSST data processing and pipelines are included in Appendix~\ref{append:supplemental}.
-If a proposed dataset will require special processing beyond what standard LSST software will provide, a plan to obtain necessary software and compute resources 
-must be provided in the white paper. In cases that require more detail, or in case of specific questions not addressed in this 
-document, please start a discussion at \href{http://community.lsst.org}{community.lsst.org}\footnote{\url{https://community.lsst.org/c/sci/survey-strategy}}.
+Appendix B. Links to the description of LSST data processing and pipelines are included in Appendix~\ref{append:supplemental}. If a proposed dataset will require special processing beyond 
+what standard LSST software will provide, a plan to obtain necessary software and computational resources 
+must be provided in the white paper. In cases that require more detail, or in case of specific questions not 
+addressed in this document, please start a discussion at \href{http://community.lsst.org}{community.lsst.org}\footnote{\url{https://community.lsst.org/c/sci/survey-strategy}}.
 
 The LSST Science Requirements Document states that ``the adopted baseline design assumes a 
-nominal 10-year duration with about 90\% of the observing time allocated for the main LSST survey.'',
+nominal 10-year duration with about 90\% of the observing time allocated for the main LSST survey'',
 and further clarifies that ``The remaining 10\% of observing time will be used to obtain improved 
 coverage of parameter space\dots''. While the detailed time allocation will eventually depend on currently unknown system
 performance parameters, it is unlikely that the goals of the main survey could be met with a time allocation
@@ -279,7 +285,7 @@ than the main survey could significantly exceed 10\% (perhaps by as much as a fa
 no firm commitments beyond this statement of plausibility can be made at this time. 
 
 The data from any given specialized survey will be treated in exactly the same way as all LSST 
-data: there is no special proprietary access or ownership for any subset of the data from LSST. The final set of the so-called
+data: there is no special proprietary access or ownership for any subset of the data from LSST. The final set of 
 deep-drilling fields and other mini surveys are likely to be based on an amalgam of ideas from different 
 white papers; a survey strategy described in a given white paper need not be accepted or rejected without adaptation.
 
@@ -351,7 +357,7 @@ Advisory report from Project to SSC & Early 2020 \\
 SSC report on official initial LSST survey strategy & Early 2021 \\
 Baseline simulation of initial LSST survey strategy & Mid 2021 \\
 Start of LSST Operations & 2022 \\
-Regural survey reviews by the SSC & 2022-2032 \\
+Regular survey reviews by the SSC & 2022-2032 \\
 \end{tabular}
 \end{center}
 \end{table}
@@ -362,7 +368,9 @@ Regural survey reviews by the SSC & 2022-2032 \\
 
 \subsection{Who can submit a white paper?} 
 
-All members of the scientific community interested in LSST science can submit a white paper. 
+All members of the scientific community interested in LSST science\footnote{Scientists from the U.S., Chile,
+and international partners have LSST data rights; there is no need to have LSST data rights to submit 
+a white paper.} can submit a white paper.
 We encourage the LSST Science Collaborations to submit white papers resulting from collaborative
 work among their members.
 We reiterate that the data from any given specialized survey will be treated exactly the same 
@@ -375,14 +383,22 @@ Survey Strategy Committee when recommending strategy for the initial phase of th
 
 \subsection{Requested input \label{sec:reqinput}}
 
-The current candidate baseline survey strategy (as represented in the reference survey simulation) includes:
+The current candidate baseline survey strategy (as represented in the reference survey simulation baseline2018a) 
+includes:
+\begin{enumerate}
+\item {\bf Committed Surveys} (white papers should be submitted to optimize the design of these):
 \begin{itemize}
 \item the main Wide-Fast-Deep (WFD) survey,
-\item the candidate Northern Ecliptic Spur (NES) mini survey, 
-\item the candidate Galactic Plane (GP) mini survey,
-\item the candidate South Celestial Pole (SCP) mini survey, and
-\item the candidate Deep Drilling (DD) fields mini survey,
+\item the Deep Drilling (DD) fields mini survey,
 \end{itemize}
+\item {\bf Candidate Mini Surveys} (must be proposed and selected in white paper process):
+\begin{itemize}
+\item the candidate Galactic Plane (GP) mini survey,
+\item the candidate Northern Ecliptic Spur (NES) mini survey, and
+\item the candidate South Celestial Pole (SCP) mini survey. 
+\end{itemize}
+\end{enumerate}
+
 Quantitative, science-driven optimization input is requested for each of the above, as well as 
 for survey strategy questions such as optimal visit exposure time,
 co-added per-bandpass imaging depth, the sky coverage, temporal coverage, observing
@@ -395,7 +411,7 @@ to replace, supplement, and/or enhance the current programs, including special `
 programs. We also solicit novel ideas, such as twilight observing (see Appendix~\ref{sec:twilight}),
 as well as observing synergies with other major surveys (e.g., WFIRST, Euclid). 
 
-We reiterate that that the observing time allocated to {\bf all} the mini surveys 
+We reiterate that the observing time allocated to {\bf all} the mini surveys 
 (including DD fields) is ``about'' 10\%, per SRD design, and is unlikely to exceed 20\% of the total available
 observing time; in the current candidate baseline, the mini surveys use about 14\% of the available time. 
 We note that implementation details for mini surveys (especially DD fields)
@@ -410,7 +426,7 @@ to help illustrate some of these potential crossovers.
 
 \subsection{TeX template for submission \label{sec:textemplate}} 
 
-Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what can be learned if the proposed observations were obtained, relative to some baseline. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations\footnote{For more information on how survey simulations are created, please see the documentation on OpSim at \href{http://sims-opsim.lsst.io}{http://sims-opsim.lsst.io}.} to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. 
+Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what could be learned if the proposed observations were obtained, relative to some baseline. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations\footnote{For more information on how survey simulations are created, please see the documentation on OpSim at \href{http://sims-opsim.lsst.io}{http://sims-opsim.lsst.io}.} to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. 
 
 The Performance Evaluation section must contain methods to evaluate the effectiveness of the survey strategy modifications, particularly in light of the potential effect of survey strategy changes proposed in other white papers. It is unlikely that any proposed cadence modification suggested in white papers will be carried out in its original form; thus metrics (along with threshold values for these figures of merit) to evaluate the science performance of non-ideal simulations are crucial.  Note that each white paper does not need to solve or address the global optimization problem, nor does it need to supply performance criteria across all science goals\footnote{Note that 
 the Project team cannot support individuals or groups wishing to run the Operations Simulator themselves. It is not required that authors of white papers run the proposed simulations themselves.}. The TeX submission template gives further instructions for each of these areas.
@@ -436,7 +452,7 @@ will be based on the following considerations:
 \begin{itemize}
 \item {\bf Science} Importance and legacy value of the proposed science program, including 
            its match to the unique abilities of the LSST system, and its consistency with the 
-           main four LSST science themes. This could be a single strong science goal, synergies with
+           four main LSST science themes. This could be a single strong science goal, synergies with
            other astronomical facilities, or a multitude of science goals enabled by the same survey strategy. 
 \item {\bf Feasibility} Programs must be feasible from the hardware and software point of view (see Appendix B),
          specifically including any special data processing required. The complexity of the program, in terms of additional
@@ -545,13 +561,16 @@ White papers addressing all or some of these optimization efforts are strongly e
 The Deep Drilling (DD) fields are single pointings that are observed in extended sequences. 
 In the first call for white papers in 2011 on survey strategy optimization, the Project received 
 8 white papers from the community\footnote{These white papers are available from 
-https://project.lsst.org/content/whitepapers32012}. Many of these proposals include specific 
+https://project.lsst.org/content/whitepapers32012}. 
+These white papers described excellent early ideas that helped design the current baseline 
+cadence simulation; however, to receive full consideration, these ideas will have to be 
+resubmitted as new white papers. Many of these early proposals include specific 
 filter combinations to ensure that near-simultaneous color information is available for 
 variable and transient objects. While science programs suggested in DD proposals are ideally well 
 matched to the size of LSST field of view (9.6 deg$^2$), it is plausible that some
 programs may require several fields. 
 
-Four of the LSST DD fields have been selected and announced (Elais S1, 
+Four of the LSST DD fields have been selected and announced\footnote{Please see http://ls.st/bki} (Elais S1, 
 XMM-LSS, Extended Chandra Deep Field-South, and COSMOS). It is guaranteed that they 
 will be observed with deeper coverage and more frequent temporal sampling than the main 
 survey fields, but details are still open and no minimums have been set. White papers detailing additional DD fields and their
@@ -1010,3 +1029,18 @@ Stretch:
     standard visit or deeper? 1 or more filters per night? 
 
 
+
+===== DISSEMINATION =====  
+
+* details in Jason Kalirai's email from May 14 
+
+0) in addition to sending announcement to LSST-world exploder, 
+
+1) write a short article for AAS News Digest  (with links to docs in LSST Docushare) 
+
+2) also send it to email exploders: STScI, NOAO, IPAC, SDSS and the WFIRST SITs.
+ 
+3) also email it to department heads to forward to their faculty, postdocs, and students
+
+4) post on social media: Facebook Astronomers and LSST, LSST tweeter account, 
+ 

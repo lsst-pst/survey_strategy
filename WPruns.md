@@ -26,11 +26,9 @@ Rolling cadence - ra bands
   (split sky into 2 or 3 sections of RA and observe these bands every 2 or 3 years)
   
 Rolling cadence - spherical harmonics
-  Make spherical harmonics style masks and turn these on/off
+  Make spherical harmonics style masks and turn these on/off (to be done with FBS, but not for end of June). 
   
 Rolling cadence experiments - but all on/off vs. leave some percent of the background WFD "on"
-
-Pairs in the same filter, vs. pairs in different filters. 
 
 Single visits in a night.
 
@@ -38,6 +36,6 @@ Triple visits in a night (perhaps).
 
 DD fields with alternate cadence
   Similar to baseline, with 5(?) DD fields, but observed in only 3 filters each night, shorter gap between nights. 
-  Rotate among the 3 filters being used.  (perhaps)
+  Rotate among the 3 filters being used.  (sorry - this probably won't happen in time for June). 
 
 Any other runs from https://github.com/LSSTScienceCollaborations/ObservingStrategy/tree/master/opsim?

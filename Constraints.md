@@ -46,14 +46,25 @@ Sequences of short exposures (<15s) without breaks (such as a 5s slew) can cause
 
 ### Survey constraints ###
 
-- The footprint for the WFD must be at least 18,000 sq degrees with 825 visits per field (per SRD requirements). The cadence for these observations is still flexible and rolling cadence options will be considered. There are metrics in MAF (the `fOMetric`) that will evaluate if the footprint/visit requirement is met.
+- The footprint for the WFD must be at least 18,000 sq degrees with a median of 825 visits per field (per SRD requirements). The cadence for these observations is still flexible and rolling cadence options will be considered. (3.4.0.1, tables 22 and 23).
 
-- Proper motion and parallax requirements impose some requirements on the overall cadence of the WFD. For example, a sufficient time baseline is required for proper motion measurements, requiring visits to a given field to be spread over many years. There are metrics in MAF for proper motion and parallax that will signal if these requirements are met.
+- Proper motion and parallax requirements (PM accuracy <= 1 mas/yr and parallax accuracy <= 3 mas at r=24) impose some requirements on the overall cadence of the WFD. For example, a sufficient time baseline is required for proper motion measurements, requiring visits to a given field to be spread over many years. (3.4.0.2, table 26). 
 
-- Rapid revisit intervals, uniformly distributed on timescales between 40 seconds and 30 minutes, are required over at least 2000 sq degrees of the survey footprint. Note that these do not have to be consecutive visits, but this area must be sampled over these timescales over the lifetime of the survey. There are metrics in MAF regarding rapid revisits that will signal if this requirement is met.
+- Rapid revisit intervals, uniformly distributed on timescales between 40 seconds and 30 minutes, are required over at least 2000 sq degrees of the survey footprint. Note that these do not have to be consecutive visits, but this area must be sampled over these timescales over the lifetime of the survey. (3.4.0.2, table 25).
+
+- In the WFD, the single visit r band visit depth distribution requires that no more than 10% of the visits have a limiting magnitude more than 0.3 magnitudes brighter than the dark-sky, zenith r band depth. (3.3.2.1, table 5).
+
+- In the WFD, no more than 10% of the r and i band visits should have delivered seeing more than 1.1", and the median delivered seeing should be 0.56" (for atmospheric seeing 0.44"), 0.69" (for atmospheric seeing 0.60"), and 0.87" (for atmospheric seeing 0.80").
+
+There are metrics in MAF (called in the `run_srd.py` script) that will signal if these requirements are met.
 
 - Deep drilling field positions.
-4 of the potential deep drilling fields have been announced; these positions are fixed. The number of remaining deep drilling fields and their cadence of observations is still flexible.
+4 of the potential deep drilling fields have been announced; these positions are fixed. The number of remaining deep drilling fields and their cadence of observations is still flexible. In general, these fields are expected to have coadded limiting magnitudes at least one magnitude deeper than the WFD, but even this is loosely specified. 
 
-- Minisurvey observations.
-The current baseline includes Deep Drilling, North Ecliptic Spur, Galactic Plane, and South Celestial Pole regions as minisurveys. There are many good reasons to include these regions, however their observation (or even, lack of observation) is flexible and part of the driver for this call for white papers.
+- Mini-survey observations.
+The current baseline includes Deep Drilling, North Ecliptic Spur, Galactic Plane, and South Celestial Pole regions as minisurveys. There are many good reasons to include these regions, however their presence is flexible and part of the driver for this call for white papers. Without explicit justification and methods to measure the scientific performance of these mini-surveys, it is likely that their time will be redirected to other needs.
+
+- It is unlikely that the SRD requirements on the WFD (in particular, covering 18,000 sq deg with a median of 825 visits) can be met with less than 80% of the total survey time. The window of time required for the WFD is thus likely to be between 80-90%, with current simulations using about 86% of the total time for WFD.
+
+
+
