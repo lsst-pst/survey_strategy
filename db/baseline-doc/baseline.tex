@@ -63,9 +63,9 @@ We present an update to the baseline simulated survey, created using \opsim v4.1
 
 The new \opsim v4 codebase makes significant changes when compared with the previous \opsim v3 software. These include:
 \begin{itemize}
-\item Separating the telemetry and telescope control simulation software from the scheduler software. These two packages are now called \texttt{Simulated Observatory Control System} (\socs) and \texttt{Scheduler}.
+\item Separating the telemetry and telescope control simulation software from the scheduler software. These two packages are now called \texttt{Simulated Observatory Control System} (\socs) \citep{2016SPIE.9911E..25R} and \texttt{Scheduler} \citep{2016SPIE.9910E..13D}.
 \item Implementing communication between \socs and \sched via DDS, a publish/subscribe protocol that will be used to communicate between various telescope control systems, including the scheduler code.
-\item Adding a per-filter sky brightness calculation, using the \simsky package to calculate sky brightness values. This updates the sky brightness values to a model that includes a much higher fidelity twilight component and which has been validated against all-sky measurements from the LSST site. It also means that for each visit, the sky brightness limit is compared against the actual sky brightness estimate in the individual filter, instead of just against the $V$ band sky brightness as in \opsim v3.
+\item Adding a per-filter sky brightness calculation, using the \simsky package to calculate sky brightness values. This updates the sky brightness values to a model that includes a much higher fidelity twilight component and which has been validated against all-sky measurements from the LSST site \citep{2016SPIE.9910E..1AY}. It also means that for each visit, the sky brightness limit is compared against the actual sky brightness estimate in the individual filter, instead of just against the $V$ band sky brightness as in \opsim v3.
 \item Updating the slew time cost function, to add further flexibility to prioritize short slews.
 \item Updating the cost function for changing the filter, to reduce the number of filter changes and in particular, fast filter changes, based on the time since the last filter change.
 %\item Add the capability to restrict observations to a specified number of visits in a particular filter for a given field, per night. {\it E.g.}, limit visits for a given field to only 2 in $g$ band. This does not mean that no other visits to the same field will take place in the same night, but they would be in other filters which still have available groups.
@@ -456,7 +456,7 @@ The astro-lsst-01\_2022  simulated survey was produced using \opsim v4, 4.1.0.10
 \item Sky brightness model (sims\_skybrightness\_pre) version 2.3.7.sims
 \item Sky brightness precalculated file version 4f5efe2
 \item M5 constants (sims\_utils) version 2.5.0 
-\item SOCS (sims\_ocs) version 1.0.1.10
+\item SOCS (sims\_ocs) version 1.0.10
 \item Scheduler (ts\_scheduler) version 1.1
 \end{itemize}
 
