@@ -12,15 +12,15 @@
 \contentsline {section}{\numberline {3}White paper ranking criteria }{13}{section.3}
 \contentsline {section}{\numberline {A}Examples of open survey strategy optimization questions }{15}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}The main Wide-Fast-Deep survey}{15}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}``Deep Drilling'' mini surveys}{17}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.2}``Deep Drilling'' mini surveys}{18}{subsection.A.2}
 \contentsline {subsection}{\numberline {A.3}Galactic plane mini survey }{18}{subsection.A.3}
 \contentsline {subsection}{\numberline {A.4}Southern Celestial pole mini survey}{19}{subsection.A.4}
-\contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{19}{subsection.A.5}
+\contentsline {subsection}{\numberline {A.5}Northern Ecliptic spur mini survey}{20}{subsection.A.5}
 \contentsline {subsection}{\numberline {A.6}Twilight survey }{20}{subsection.A.6}
 \contentsline {section}{\numberline {B}Constraints on survey strategy imposed by the LSST system}{21}{appendix.B}
 \contentsline {subsection}{\numberline {B.1}Hardware and software constraints }{21}{subsection.B.1}
-\contentsline {subsection}{\numberline {B.2}Observing efficiency constraints}{23}{subsection.B.2}
-\contentsline {subsection}{\numberline {B.3}Limiting depth and uncertainty estimates}{24}{subsection.B.3}
+\contentsline {subsection}{\numberline {B.2}Observing efficiency constraints}{24}{subsection.B.2}
+\contentsline {subsection}{\numberline {B.3}Limiting depth and uncertainty estimates}{25}{subsection.B.3}
 \contentsline {section}{\numberline {C}Supplementary materials }{27}{appendix.C}
 \contentsline {subsection}{\numberline {C.1}Useful publications and websites }{27}{subsection.C.1}
 \contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{29}{subsection.C.2}

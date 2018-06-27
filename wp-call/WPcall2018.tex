@@ -549,18 +549,37 @@ modified to obtain a single visit, or more than two visits, per night.
 \item The current baseline survey strategy assumes that a visit is composed of two 15-second
 exposures, the so-called snaps. While 2x15 sec visits enable search for very rapid variability,
 and help with cosmic ray rejection, there are compelling technical arguments -- including observing efficiency -- 
-to adopt single-exposure 30 second visits. Arguments for or against retaining the 2x15 sec visits 
+to adopt single-exposure 30 second visits.  The effect of varying the exposure time and number of snaps in a 
+visit can be calculated from details available in the LSST overview paper, but a summary of the effect on the $5\sigma$ limiting magnitude 
+is shown in Table~\ref{m5.tab}. Arguments for or against retaining the 2x15 sec visits 
 would be very useful in further optimization of the main survey strategy. 
 The impact of read-out noise and other parameters on limiting depth is quantitatively
 discussed in the LSST Overview paper (see Section 3.2.1). 
 \end{itemize}
 White papers addressing all or some of these optimization efforts are strongly encouraged.
 
+\begin{table}[htbp]
+\centering
+\caption{Changes in $5\sigma$ limiting magnitude when varying the exposure time and number of snaps per visit.}
+\begin{tabular}{lrrrrrr}
+\hline
+{$N_{exp}$ x $T_{exp}$} &      u &      g &      r &      i &      z &      y \\
+\hline
+2x15 &  0.000 &  0.000 &  0.000 &  0.000 &  0.000 &  0.000 \\
+1x20 & -0.129 & -0.186 & -0.202 & -0.207 & -0.211 & -0.214 \\
+1x30 &  0.216 &  0.078 &  0.044 &  0.033 &  0.023 &  0.017 \\
+1x40 &  0.447 &  0.259 &  0.214 &  0.199 &  0.186 &  0.179 \\
+2x30 &  0.601 &  0.460 &  0.425 &  0.413 &  0.402 &  0.396 \\
+\hline
+\end{tabular}\\ \vskip 0.05in
+\label{m5.tab}
+\end{table}
+
 
 \subsection{``Deep Drilling'' mini surveys} 
 
 The Deep Drilling (DD) mini surveys are a set of mini surveys, each consisting of a field (a single pointing) 
-that is observed in extended sequences. 
+that is observed in extended sequences, potentially with specified dithering patterns.
 In the first call for white papers in 2011 on survey strategy optimization, the Project received 
 8 white papers from the community\footnote{These white papers are available from 
 https://project.lsst.org/content/whitepapers32012}. 
@@ -916,13 +935,13 @@ The \href{http://ls.st/ldm-151}{LSST Data Management Science Pipelines Design} (
 
 %The \href{http://ls.st/lse-61}{LSST Data Management System Requirements} (DMSR) document details the official requirements for LSST's data management processing. This is a higher level of detail than the DPDD on the characteristics and specifications of individual data products but does not describe how these data products are created. \url{http://ls.st/lse-61}
 
-Documentation about the LSTS Operations Simulator (OpSim), which consists of the Simulated Observatory Control System and 
-Scheduler, including a high-level overview and description of scheduling options, is available at \url{http://sims-opsim.lsst.io}.
+Documentation about the LSST Operations Simulator (OpSim), which consists of the Simulated Observatory Control System (SOCS) and 
+Scheduler is available at \url{https://lsst-sims.github.io/sims_ocs/}.   
+Documentation about the LSST Metrics Analysis Framework (MAF) is available at \url{http://sims-maf.lsst.io}.  Documentation about running
+OpSim and MAF via docker is available at \url{http://ls.st/40m}.
 
 The 2018 baseline simulated survey document describes the recent, post-COSEP, features enabled in OpSim, as well 
-as characteristics of the updated baseline simulated survey. This documents is available at \url{http://ls.st/od6}.
-
-Documentation about the LSST Metrics Analysis Framework (MAF), including a high-level overview and descriptions of current standard metric analyses, is available at \url{http://sims-maf.lsst.io}. 
+as characteristics of the updated baseline simulated survey. This document is available at \url{http://ls.st/3q5}.
 
 The outputs of MAF analyses for the 2018a baseline survey, as well as runs demonstrating potential options for mini surveys and Deep 
 Drilling fields (a subset of the runs described in Chapter 2 of the COSEP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}. 
@@ -972,12 +991,14 @@ and subject to last-minute updates):
 \item The baseline survey strategy, with the main survey having a 18,000 deg$^2$ footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling mini surveys operating in the current example baseline survey strategy manner (i.e., no ``rolling''). 
 \item A survey with a much larger main survey footprint (27,000 deg$^2$), defined by airmass limit $X<1.5$ and declination limits 
 $-78^\circ< \delta < +18^\circ$, and including only the four-field Deep Drilling mini survey (and no other mini surveys).
-\item A survey strategy allowing more overall visits by making each visit shorter: each visit being 20 sec long with a single exposure per visit in $g$, $r$, $i$, $z$ and $y$, and 40 sec visits in the $u$ band (and another similar survey with fewer visits, but with exposures of 40 sec and 60 sec, respectively). These variable visit times XXX
+\item A survey strategy allowing more overall visits by making each visit shorter and without snaps: each visit being 20 sec long with a single exposure per visit in $g$, $r$, $i$, $z$ and $y$, and 40 sec visits in the $u$ band.  
 \item A survey similar to the current baseline, with the Galactic Plane at the main survey cadence (and the northern portion of the Galactic plane mini survey with $\delta>2^\circ$ removed).
-\item A survey similar to the current baseline, but with additional (to-be-defined) Deep Drilling fields.
-\item A few examples of ``rolling cadence'' simulations of the main survey -- concentrating observations in bands of declination over varying numbers of years.
 \item A survey similar to the current baseline, but only observing with single visits per night.
+\item A survey similar to the current baseline, but adding more Deep Drilling mini surveys to increase the number of DD fields to 9 (from 5). 
+\item A few examples of ``rolling cadence'' simulations of the main survey -- concentrating observations in bands of declination over varying numbers of years.
 \end{itemize}
+
+
 
 \end{document} 
 
