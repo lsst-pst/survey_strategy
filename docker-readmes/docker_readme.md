@@ -8,4 +8,4 @@ https://github.com/lsst-dm/wom_pub_presentations/blob/master/EUROPE3-2018/StackD
 
 More information on the MAF and OpSim docker containers and how to run MAF/Opsim within 
 these containers is available in the specific READMEs in this directory: [MAF](maf_docker_readme.md) and
-[OpSim](opsim_docker_readme.md). 
+[OpSim](opsim4_docker_readme.md). 
