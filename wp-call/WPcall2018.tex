@@ -203,9 +203,9 @@ in baseline2018a simulation include optimizations in observing closer to the mer
 balancing of the rate of observations in the mini surveys over the survey lifetime.
 
 Through the end of construction and commissioning, the COSEP will remain a living document 
-to which the community continues to be welcome to contribute. It will be the main vehicle for the 
+to which the community continues to be welcome to contribute, as the main vehicle for the 
 community to broadly communicate to the LSST Project regarding 
-the scientific repercussions of various observing strategies after this call for white papers. It will serve as a repository
+the scientific repercussions of various observing strategies. It will serve as a repository
 of metrics, with performance evaluations of existing simulated surveys. Periodically, the LSST
 Project Scientist, with support from the Project Science Team (PST) and the Science Advisory Committee (SAC), 
 will review these metrics and evaluations, to fold updates into the survey optimization efforts.
@@ -310,11 +310,12 @@ varying science drivers and will form a ``menu'' of possible survey strategies (
 survey with 18,000 deg$^2$ of sky coverage vs. a main survey with sky coverage of 23,000 deg$^2$, perhaps to a
 somewhat shallower depth). The performance evaluation criteria submitted as part of the 
 white papers and in the COSEP will be used to generate quantitative assessments to compare these strategies.
-During this process, the authors of the submitted white papers will be kept informed as to how 
-their suggested survey strategy has been implemented into simulated surveys, combined with other suggested
-survey strategies, and how the resulting simulated surveys are performing with respect to their submitted performance metrics.
+During this process, the Project team will keep a public list of simulations in progress and notify authors
+of the submitted white papers as to how their suggested survey strategy has been implemented
+in these simulated surveys or combined with other suggested survey strategies.
 We will also publish monthly updates on the \href{https://community.lsst.org/c/sci}{LSST Community}\footnote{\url{http://community.lsst.org/c/sci/survey-strategy}}
-forum.
+forum, an open and searchable forum platform for communication between the 
+LSST Project and the astronomical community.
 
 We anticipate that the list of observing strategies that will be simulated and analyzed 
 (the ``menu'' above) will be available by April 2019. Simulated survey outputs, generated via the LSST 
@@ -537,7 +538,12 @@ order to enable easy linking of asteroid detections, and robust identification o
 photometric transients. Whether the two visits on the same night should be obtained 
 in the same filter or in different filters has not been decided yet (e.g., in the context
 of photometric transients, same filters would provide a more accurate measurement
-of the brightness change, while different filters would provide a color constraint). 
+of the brightness change, while different filters would provide a color constraint). The current
+baseline survey strategy places no preference on whether pairs are obtained in the same or different
+filters, which results in most pairs being in the same filter due to the additional time penalty in
+changing the filter. The candidate baseline survey has just under 11,000 filter changes over the 
+ten years of the survey, with an average of 3 filter changes per night; about 7000 of these changes 
+can be attributed to the WFD portion of the survey.
 \item The current strategy for the main survey which obtains two visits per night could be 
 modified to obtain a single visit, or more than two visits, per night. 
 \item The current baseline survey strategy assumes that a visit is composed of two 15-second
@@ -716,27 +722,28 @@ details see Section 5.1.4 in Jones et al. 2018; Icarus 303, 181). Short exposure
 observing efficiency due to the finite read-out time (2 sec). % and the shutter open/close time (1 sec). 
 
 There are important constraints on the filter exchange strategy. As the system is not yet completely 
-built and characterized, the following represents current understanding, based on the design and on 
+built and characterized, the following represents current understanding of the limitations on filter 
+loads (swaps in and out of the carousel, done during the daytime) and filter changes (swaps within
+the carousel, done between exposures within a night), based on the design and on 
 engineering judgement. As such, some of the details should be considered preliminary and subject 
 to change. Expanded ranges could be possible if there are strong scientific motivations along with
-sufficient resources during operations.
+sufficient resources during operations. 
 \begin{itemize}
-\item LSST has 6 filters ($ugrizy$), of which five can be loaded into the filter exchange carousel and
-will be available on any given night. 
-\item Filter loader operations (swapping a filter in the carousel) will be done during daytime. The system 
-          is designed for 3000 loads over its lifetime. 
-\item The currently implemented filter-swap strategy is to replace during the day one of the $z$ or $y$ 
+\item LSST has 6 filters ($ugrizy$), of which 5 can be loaded into the filter exchange carousel. Only 5 out of
+the 6 filters will be available on any given night. 
+\item Filter load operations (swapping a filter into or out of the carousel, to change the set of five available filters) 
+	will be done during daytime. The system is designed for 3000 loads over its lifetime. 
+\item The currently implemented filter load strategy is to replace during the day one of the $z$ or $y$ 
 	by the $u$ band at the start of dark time, when the lunar phase reaches $20\%$. The 
 	process is reversed at the end of dark time when the lunar phase is above the same threshold.
-\item During a given observing night, the system could support as many changes involving the 5 filters 
-          loaded in the carousel as desired, without any practical limitation beyond the two-minute change 
-          interval (which consists of 90 seconds for the exchange plus up to 30 seconds to put the camera
-          into the required orientation). 
-\item The filter change mechanism is designed to undergo a total of 100,000 changes over its lifetime 
+\item During a given observing night, the system could support as many filter changes (changes within a night, 
+	involving the 5 filters already loaded in the carousel) as desired, without any practical limitation beyond 
+	the two-minute change interval (which consists of 90 seconds for the exchange plus up to 30 seconds 
+	to put the camera into the required orientation). 
+\item The carousel filter change mechanism is designed to undergo a total of 100,000 filter changes over its lifetime 
 	(an average of about 17 changes per night of the survey, after accounting for necessary calibration activities). 
 \item Each individual filter is designed to support up to 30,000 changes over its lifetime.
-\item A maintenance cycle to the filter exchange mechanism is anticipated, and this would nominally occur after 10,000 changes or 
-          one year, whichever is reached first. 
+\item A maintenance cycle to the filter exchange mechanism is anticipated, and this would nominally occur after 10,000 filter changes or one year, whichever is reached first. 
 \end{itemize} 
 
 
@@ -965,7 +972,7 @@ and subject to last-minute updates):
 \item The baseline survey strategy, with the main survey having a 18,000 deg$^2$ footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling mini surveys operating in the current example baseline survey strategy manner (i.e., no ``rolling''). 
 \item A survey with a much larger main survey footprint (27,000 deg$^2$), defined by airmass limit $X<1.5$ and declination limits 
 $-78^\circ< \delta < +18^\circ$, and including only the four-field Deep Drilling mini survey (and no other mini surveys).
-\item A survey strategy allowing more overall visits by making each visit shorter: each visit being 20 sec long with a single exposure per visit, and 40 sec visits in the $u$ band (and another similar survey with fewer visits, but with exposures of 40 sec and 60 sec, respectively). 
+\item A survey strategy allowing more overall visits by making each visit shorter: each visit being 20 sec long with a single exposure per visit in $g$, $r$, $i$, $z$ and $y$, and 40 sec visits in the $u$ band (and another similar survey with fewer visits, but with exposures of 40 sec and 60 sec, respectively). These variable visit times XXX
 \item A survey similar to the current baseline, with the Galactic Plane at the main survey cadence (and the northern portion of the Galactic plane mini survey with $\delta>2^\circ$ removed).
 \item A survey similar to the current baseline, but with additional (to-be-defined) Deep Drilling fields.
 \item A few examples of ``rolling cadence'' simulations of the main survey -- concentrating observations in bands of declination over varying numbers of years.
