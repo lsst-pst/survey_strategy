@@ -96,37 +96,46 @@ kraken\_2026  &   &  dome crawl, CL delay 36 seconds\\
 
 \section{Crawling dome model}
 
-In real-time operation, dome crawling (or dome creep) takes advantage of the slightly oversized dome slit to reposition the dome in advance.
-The idea derives from the fact that the dome is slower than the telescope, which could cause an important loss of efficiency if not treated properly.
-At the same time, the LSST dome also operates as a light baffle, so there's some constraint to how large it can be. To mitigate the slew problem
-without compromising light baffling, the dome slit was designed to accommodate a telescope slew of 4 degrees in azimuth without the need to
-move the dome. Furthermore, this also allows the dome to start a slew before the end of the current visit, so that it is already at maximum speed
-once the shutter closes and the telescope start to slew to the next visit. One important caveat for this mode of operation is that the dome control
-system should know in advance where the next slew is going to be, so it can reposition or start moving the dome in advance.
+ A tech note describing the implementation of dome crawling will soon be released. Here we provide only a high-level summary.
+ 
+Dome crawling (or dome creep) refers to moving the dome slightly during an exposure. As the LSST dome slit is slightly oversized 
+compared to the telescope field of view ($7.5^{\circ}$ vs. $3.5^{\circ}$), this can be done without any penalty due to vignetting the telescope. 
+In real-time operations, LSST will use dome crawling in the azimuth direction to reposition the dome slightly in advance of an exposure; this 
+increases the efficiency of slews because the dome is slower (in acceleration and max velocity) than the telescope. 
+As the LSST dome also operates as a light baffle, there is a constraint to the maximum amount of this oversizing of the dome slit. 
+To mitigate the slower dome speeds without compromising light baffling, the dome slit was designed to accommodate a telescope slew of 
+$4^\circ$ in azimuth without the need to move the dome. In dome crawling mode, this also allows the dome to start a slew before the end
+of the current visit and finish a slew during the next visit. Because the dome reaches its maximum speed (max speed = $1.5^\circ$/s,
+max acceleration = $0.75^\circ$/s$^2$) by the time it travels $3^\circ$, this implies that it is already at maximum speed once the shutter closes
+and the telescope starts to slew to the next visit. One important caveat for this mode of operation is that the dome control
+system must know in advance where the next visit is going to be, so it can reposition or start moving the dome in advance; the knowledge
+of the location of the next visit location is also a requirement for LSST Data Management.
 
- A tech note describing the implementation of dome crawling will soon be released. Here we provide only a high-level summary of its contents.
+The implementation of dome crawling in the observatory model (ts\_observatory\_model) works by adding a "free range" parameter to the kinematic model.
+The free range parameter describes the size of the maximum possible slew before vignetting the telescope; this is equivalent to how 
+far the telescope can move before requiring an actual slew. Any slew that would fall in this free range will have a
+zero second delay. For slews outside of the free range, the kinematic model computes the speed achieved by accelerating over the free range 
+(and the dome speed required at the end of the slew so it can decelerate to a stop in that same free range), then assumes that the time required to 
+accelerate to that initial speed (and decelerate from the maximum speed) can be assumed to occur during the on-sky exposure time.  
+This essentially shortens the actual total travel distance by up to two times the free range parameter and allows the system to travel at a higher average speed. 
 
-The implementation of dome crawling on the observatory model works by adding a "free range" parameter to the kinematic model.
-This parameter describes how far a movement can happen before the actual slew starts. Any slew that would fall in this free range will have a
-zero second delay. For slews outside of the "free range", the kinematic model computes the speed achieved by accelerating over that distance,
-and what speed the dome needs to be by the end of the slew so it can decelerate to a stop in that same distance. This essentially shortens the
-actual total travel distance by this free range parameter and allows the system to travel at a higher average speed. The crawling dome model also
-eliminates the dome settle time, which was originally used to ensure that the dome and telescope were aligned to millimeter precision.
+The crawling dome model also eliminates the dome settle time, which was originally used to ensure that the dome and telescope were aligned to millimeter precision.
 
 \section{A note about airmass}
 
-The airmass values in an \opsim database are extrapolated in time and sky position from simulated skymaps generated
+The airmass values in an \opsim database are extrapolated in time and sky position from data in simulated skymaps generated
 by sims\_skybrightness\_pre, and not calculated from the altitude of a visit at the time of observation.
-In previous simulations, including baseline2018a, these sky map where generated on OpSim fields that are
-based on a list of positions that are nailed to the sky. For all simulations since baseline2018a
+In previous simulations, including baseline2018a, these sky maps were generated on exactly the same basis as the OpSim field tesselation
+(a list of field positions that are nailed to the sky in fixed locations). For all simulations since baseline2018a
 (e.g. pontus\_2003 and kraken\_2026), the sims\_skybrightness\_pre data were generated on HealPix
-sky maps. Through the analysis of these new runs we discovered that extrapolated airmass values
+sky maps, not the OpSim field tesselation. Through the analysis of these new runs we discovered that extrapolated airmass values
 from the HealPix maps can result in normalized airmass values that are slightly less than one. The normalized
 airmass is the airmass of a field divided by the minimum possible airmass of that field given the location
 of the observatory. Since we are seeing normalized airmass values less than one, this indicates that the
-extrapolated airmass values are sometimes coming out less than their minimum possible value.
+extrapolated airmass values are sometimes coming out less than their minimum possible value, the result of
+choosing a HealPix location that does not exactly match the center of an OpSim field.
 
-We want to emphasize that this is a very small effect, but it also needs to be addressed here for transparency and
+This is a very small effect, but is documented here for transparency and
 completeness.  In \autoref{fig:airmass_diff} we plot the median difference between the airmass as reported in the kraken\_2026
 \opsim database and the airmass calculated using the altitude of the visit at the time of observation. The median airmass
 difference in all bands across the sky is only 0.0004 with and RMS of 0.009.
@@ -148,8 +157,8 @@ There are not many major changes to the overall behavior and performance of the 
 relative to baseline2018. The largest effect is seen in the slew time distributions (see Figure \ref{fig:slew_diff}) and statistics summarized in
 Table \ref{tab:slewtime-comparison}. This comparison shows that by enabling a crawling dome, the mean
 slew time decreases by 15 $\%$, and the median slew time decreases by 17 $\%$, relative to baseline2018a.
-The shorter median and mean slew times have the added benefit of increasing the total number of
-observations of the course of the entire survey. Including dome crawl increases the total number of visits in
+The shorter median and mean slew times have the effect of increasing the total number of
+visits over the lifetime of the survey. Including dome crawl increases the total number of visits in
 pontus\_2003 by 3 $\%$, relative to baseline2018a. Including the longer CL delay in kraken\_2026, in addition to
 dome crawl, results in 3,539 fewer visits relative to pontus\_2003, which is only a loss of $0.1\%$ over course of the
 entire survey. For the reminder of this document we will focus on the comparison of kraken\_2026
@@ -160,6 +169,7 @@ more realistic given it a hardware constraint rather than tunable characteristic
 \begin{table}[htp]
 \caption{Comparison of slew time statistics between baseline2018a and the new simulations with dome crawl.}
 \begin{center}
+\vskip 0.2in
 \small
 \begin{tabular}{lrrr}
 \toprule
@@ -189,6 +199,7 @@ the slew distance histograms are shown in the right panel.}
 \caption{Comparison of NVisits statistics between baseline2018a and the new simulations with dome crawl.}
 \begin{center}
 \small
+\vskip 0.2in
 \begin{tabular}{lrrr}
 \toprule
 {}                                        &   baseline2018a  &   pontus\_2003     &  kraken\_2026   \\
@@ -239,6 +250,7 @@ and kraken\_2026.
 \begin{table}
 \caption{Comparison of select metrics between baseline2018a and kraken\_2026.}
 \small
+\vskip 0.2in
 \begin{tabular}{lrr}
 \toprule
 {}                                                     &   baseline2018a &   kraken\_2026 \\
@@ -372,11 +384,13 @@ The configuration parameters were left as the defaults for this version, with th
 for all proposals except Deep Drilling, where it was $HA$ bonus = 0.3 and $HA_{max}$ = 6 hrs. The configuration also used the
 crawling dome model, and the closed loop active optics delay was increased from 20 seconds to 36 seconds.
 These two changes in configuration are the only difference between kraken\_2026 and baseline2018a.
-The details of all configuration parameters can be found in the sqlite output database, in the Config table, as well as in the
-github repo housing this document (\url{https://github.com/lsst-ts/opsim4_config/tree/baseline2018_dc_cl/config_run}).
+The details of all configuration parameters can be found in the sqlite output database (in the Config table) and online at 
+\url{https://github.com/lsst-ts/opsim4_config/tree/baseline2018_dc_cl/config_run}.
 
-The simulated survey output database for kraken\_2026 is available in the github repo housing this document, together with MAF analysis outputs.
-These MAF outputs can also be found online at \url{http://astro-lsst-01.astro.washington.edu:8080}.
+The simulated survey output database for kraken\_2026 is currently available at \url{http://astro-lsst-01.astro.washington.edu:8080}, 
+together with MAF analysis outputs. These will also be preserved in Docushare as part of a change control request to adopt
+kraken\_2026 as the new baseline, baseline2018b.
+
 
 %%%%%%%%%
 
