@@ -71,7 +71,7 @@ the effects of enabling dome crawl and extending the CL correction delay. Each o
 Angle bonus and Hour Angle max values used in baseline2018a, and the only differences in their configurations is the
 addition of dome crawl and the longer CL correction delay. We first generated a simulation with just the new dome crawl model
 enabled, pontus\_2003, to understand its effect in isolation. The second new simulation, kraken\_2026, has both the 
-dome crawl model enabled and the longer CL correction delay. We recommend adopting karken\_2026 as the a replacement
+dome crawl model enabled and the longer CL correction delay. We recommend adopting kraken\_2026 as the a replacement
 for baseline2018a.
 
 \begin{table}[htp]
@@ -320,9 +320,9 @@ of coadded depth across the sky is fairly uniform, as illustrated in \autoref{fi
 the SRD design value is 825). 
 
 \item The median trigonometric parallax and proper motion errors are
-0.73 mas and 0.17 mas/yr, respectively, for bright sources (limited by
-assumed systematic errors in relative astrometry of 10 mas), and 0.73
-mas and 0.56 mas/yr for points sources with $r=24$ (assuming a flat
+1.8 mas and 0.17 mas/yr, respectively, for bright sources (limited by
+assumed systematic errors in relative astrometry of 10 mas), and 7.1
+mas and 1.8 mas/yr for points sources with $r=24$ (assuming a flat
 spectral energy distribution), in the WFD fields. The variation of parallax
 and proper motion errors across the sky is visualized in \autoref{fig:baseline_parapm}.
 \end{enumerate}
@@ -373,7 +373,7 @@ The details of all configuration parameters can be found in the sqlite output da
 github repo housing this document (\url{https://github.com/lsst-ts/opsim4_config/tree/baseline2018_dc_cl/config_run}).
 
 The simulated survey output database for kraken\_2026 is available in the github repo housing this document, together with MAF analysis outputs. 
-These MAF outputs can also be found online at \url{http://astro-lsst-01.astro.washington.edu:8081}.
+These MAF outputs can also be found online at \url{http://astro-lsst-01.astro.washington.edu:8080}.
 
 %%%%%%%%%
 
@@ -388,7 +388,7 @@ These MAF outputs can also be found online at \url{http://astro-lsst-01.astro.wa
 \includegraphics[width=0.43\textwidth]{figures/kraken_2026_NVisits_i_band_HEAL_SkyMap} \\
 \includegraphics[width=0.43\textwidth]{figures/kraken_2026_NVisits_z_band_HEAL_SkyMap}
 \includegraphics[width=0.43\textwidth]{figures/kraken_2026_NVisits_y_band_HEAL_SkyMap}
-\caption{Number of visits per filter forkraken\_2026.
+\caption{Number of visits per filter for kraken\_2026.
 \label{fig:baseline_nvisits}}
 \end{figure}
 
