@@ -963,22 +963,20 @@ Scheduler is available at \url{https://lsst-sims.github.io/sims_ocs/}.
 Documentation about the LSST Metrics Analysis Framework (MAF) is available at \url{http://sims-maf.lsst.io}.  Documentation about running
 OpSim and MAF via docker is available at \url{http://ls.st/40m}.
 
-The git repository (\href{https://github.com/lsst-pst/survey_strategy/}{https://github.com/lsst-pst/survey\_strategy/}) hosting the source of this document also holds additional information relevant to the call for white papers. This includes:
-\begin{itemize}
-\item The baseline2018a simulated survey document, which describes the recent, post-COSEP, features enabled in OpSim, as well 
-as characteristics of the updated baseline simulated survey ('baseline2018a'). This document is available at \url{http://ls.st/3q5}, under 
-the baseline2018a-doc directory\footnote{Note, to download PDFs from github, simply click the "Download" button on the webpage that opens 
-after clicking the link to the PDF.}
-\item The `next candidate reference run' ({\it e.g.} the run that is likely to become baseline2018b) simulated survey document, which describes
-some additional updates in OpSim to increase simulation fidelity. These updates include simulating dome crawl, which increases the efficiency 
-of observing by about 3\%, and updating the optics corrections time delay to the currently expected requirements. This document is available at 
-\url{http://ls.st/cm9}, under the baseline2018b-doc directory.
-\item A summary of the alternate survey strategy simulations produced as examples for the call for white papers, listed below in Section~\ref{sec:surveys}.
-This document, including comparisons of a subset of metric analysis results, is available at \url{http://ls.st/ru8}, under the WPruns directory. 
-Additional plots and metric comparisons are available in this same directory, at \url{http://ls.st/blm}.
-\end{itemize}
+The git repository (\href{https://github.com/lsst-pst/survey_strategy/}{https://github.com/lsst-pst/survey\_strategy/}) hosting the source of this document also holds additional information relevant to the call for white papers, such as a summary of observing constraints. The contents of the repository are described in the \href{https://github.com/lsst-pst/survey_strategy/blob/master/README.md}{README}. 
 
-The full outputs of MAF analyses for the 2018a baseline survey, as well as the example runs demonstrating potential options for mini surveys (a subset of the runs described in Chapter 2 of the COSEP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}.  
+The baseline2018a simulated survey document describes the recent, post-COSEP, features enabled in OpSim, as well 
+as characteristics of the updated baseline simulated survey ('baseline2018a'). This document is available at \url{http://ls.st/Document-28453}.
+
+The `next candidate reference run' ({\it i.e.} the run that is likely to become baseline2018b) simulated survey document describes 
+recent updates in OpSim to increase simulation fidelity. These updates include simulating dome crawl, which increases the efficiency 
+of observing by about 3\%, and updating the optics corrections time delay to the currently expected requirements. This document is available at 
+\url{http://ls.st/Document-28715}.
+
+A summary of the alternate survey strategy simulations produced as examples for the call for white papers, listed below in Section~\ref{sec:surveys}
+is available at \url{http://ls.st/Document-28716}. Additional plots and metric comparison are available in the survey\_strategy github repo, at \url{http://ls.st/blm}.
+
+The full outputs of MAF analyses for the 2018a baseline survey, as well as the example runs generated for the call for white papers, are available at \url{http://astro-lsst-01.astro.washington.edu:8080}.  
 
 A short description of the current Deep Drilling mini surveys and links to further materials (including white papers submitted in response to the 2011 call for input on the DD strategy) are available on the LSST website at \href{https://www.lsst.org/scientists/survey-design/ddf}{http://ls.st/57q}. Additional posts on LSST Community can be found by searching for \href{https://community.lsst.org/search?q=deep%20drilling}{`deep drilling'}. 
 
@@ -1009,7 +1007,9 @@ questions and/or concerns. Messages posted to the mailing list are broadcasted t
 The same list will be used for white paper submission (see Section~\ref{sec:guidelines}). 
 
 Throughout the survey strategy design process there will be open community meetings. The first of these will be 
-at the LSST 2018 Project and Community Workshop in Tucson, AZ (August 13-17, 2018). Another highly relevant
+at the LSST 2018 Project and Community Workshop in Tucson, AZ (August 13-17, 2018). More information on this 
+meeting, including the agenda, is available at \url{https://project.lsst.org/meetings/lsst2018/}; note that the registration
+deadline is July 9, 2018. Another highly relevant
 meeting/workshop will be organized by LSST Corporation and the Simons Center for Computational Astrophysics
 at the Flatiron Institute in Manhattan, NY (September 17-19, 2018). To apply for this workshop, please fill out the 
 application form at \url{http://ls.st/cwg} by July 20, 2018. Finally, the Project will organize a dedicated session at the
@@ -1023,9 +1023,8 @@ OpSim; however, the Project does not have resources to provide help desk facilit
 
 \subsection{Additional Simulated Survey Strategies \label{sec:surveys}}
 
-By the time this call for white papers is officially released (June 30, 2018), we anticipate that we will provide a set of
-simulated surveys for the community to use as test cases. These simulated survey strategies will include (approximately
-and subject to last-minute updates): 
+With this call for white papers, we are providing a set of
+simulated surveys for the community to use as test cases. These simulated survey strategies will include (as of June 30, 2018): 
 \begin{itemize}
 \item The baseline survey strategy, with the main survey having a 18,000 deg$^2$ footprint, the North Ecliptic Spur, South Celestial Pole, Galactic Plane and Deep Drilling mini surveys operating in the current example baseline survey strategy manner (i.e., no ``rolling''). 
 \item A survey with a much larger main survey footprint (27,000 deg$^2$), defined by airmass limit $X<1.5$ and declination limits 
@@ -1034,8 +1033,11 @@ $-78^\circ< \delta < +18^\circ$, and including only the four-field Deep Drilling
 \item A survey similar to the current baseline, with the Galactic Plane at the main survey cadence (and the northern portion of the Galactic plane mini survey with $\delta>2^\circ$ removed).
 \item A survey similar to the current baseline, but only observing with single visits per night.
 \item A survey similar to the current baseline, but adding more Deep Drilling mini surveys to increase the number of DD fields to 9 (from 5). 
-\item A few examples of ``rolling cadence'' simulations of the main survey -- concentrating observations in bands of declination over varying numbers of years.
+\item A rolling cadence survey with two declination bands that divide the WFD survey area in half and alternate on/off every other year. The non-rolling WFD proposal was completely removed from this survey.
+\item A rolling cadence survey with two declination bands that divide the WFD survey area in half and alternate on/off every other year. The non-rolling WFD proposal was included in this survey at the 25$\%$ level, as a low-level, on-going, background. 
+\item A rolling cadence survey that observed the entire WFD area for the first and last two years of the survey. During the six years in between, the WFD area was divided into three declination bands observed every three years (i.e. each band is observed twice).
 \end{itemize}
+We anticipate that additional sample survey strategies will follow during the remainder of 2018, which may include changes reflecting updates to the scheduling software.
 
 
 
