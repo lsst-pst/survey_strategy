@@ -1,0 +1,6 @@
+|                                                                                 |   kraken_2026 |   pontus_2002 |
+|:--------------------------------------------------------------------------------|--------------:|--------------:|
+| Median Proper Motion Error @ 20.5 All visits RandomDitherPerNight HealpixSlicer |         0.156 |         0.179 |
+| Median Proper Motion Error @ 24.0 All visits RandomDitherPerNight HealpixSlicer |         1.693 |         1.894 |
+| Median Proper Motion Error @ 20.5 WFD RandomDitherPerNight HealpixSlicer        |         0.152 |         0.179 |
+| Median Proper Motion Error @ 24.0 WFD RandomDitherPerNight HealpixSlicer        |         1.585 |         1.895 |
