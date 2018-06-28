@@ -87,3 +87,10 @@
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_2rolling_decbands/config_run)
 - [comparison with baseline2018a](baseline2018a_mothra2045_comp/README.md)
 - [comparison with kraken_2026](kraken2026_mothra2045_comp/README.md)
+
+### `pontus_2502`
+- Rolling cadence
+- 2 alternating Dec bands switched every other year
+- WFD proposal in the background at 25% level.
+- [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_2rolling_decbands_wfdbg25p/config_run)
+- [comparison with kraken_2026](kraken2026_pontus2502_comp/README.md)
