@@ -16,7 +16,7 @@
 15. [Median Airmass WFD](#median-airmass-wfd)
 16. [Median Seeing WFD](#median-seeing-wfd)
 17. [Skymap comparisons](#skymap-comparisons)
-18. [Histrogram comparisons](#histrogram-comparisons)
+18. [Histogram comparisons](#histogram-comparisons)
 # fO
 |                                                       |   baseline2018a |   kraken_2026 |
 |:------------------------------------------------------|----------------:|--------------:|
@@ -192,8 +192,8 @@
 ![png](figures/thumb.kraken_2026_baseline2018a_Normalized_Proper_Motion_@_20_5_All_visits_HEAL_ComboSkyMap.png)
 - [Normalized Parallax at 22.4](figures/kraken_2026_baseline2018a_Normalized_Parallax_@_22_4_All_visits_HEAL_ComboSkyMap.pdf)
 ![png](figures/thumb.kraken_2026_baseline2018a_Normalized_Parallax_@_22_4_All_visits_HEAL_ComboSkyMap.png)
-# Histrogram comparisons
-### CoaddM5 r band HealPix Histrogram
+# Histogram comparisons
+### CoaddM5 r band HealPix Histogram
 ![png](figures/thumb.kraken_2026_baseline2018a_CoaddM5_r_band_HEAL_ComboHistogram.png)
 ### Slew Distance Histogram
 ![png](figures/thumb.kraken_2026_baseline2018a_Slew_Distance_Histogram_All_visits_ONED_ComboBinnedData.png)

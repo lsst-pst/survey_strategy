@@ -16,7 +16,7 @@
 15. [Median Airmass WFD](#median-airmass-wfd)
 16. [Median Seeing WFD](#median-seeing-wfd)
 17. [Skymap comparisons](#skymap-comparisons)
-18. [Histrogram comparisons](#histrogram-comparisons)
+18. [Histogram comparisons](#histogram-comparisons)
 # fO
 |                                                                            |   kraken_2026 |   pontus_2002 |
 |:---------------------------------------------------------------------------|--------------:|--------------:|
@@ -189,8 +189,8 @@
 ![png](figures/thumb.pontus_2002_kraken_2026_Normalized_Proper_Motion_@_20_5_All_visits_RandomDitherPerNight_HEAL_ComboSkyMap.png)
 - [Normalized Parallax at 22.4](figures/pontus_2002_kraken_2026_Normalized_Parallax_@_22_4_All_visits_RandomDitherPerNight_HEAL_ComboSkyMap.pdf)
 ![png](figures/thumb.pontus_2002_kraken_2026_Normalized_Parallax_@_22_4_All_visits_RandomDitherPerNight_HEAL_ComboSkyMap.png)
-# Histrogram comparisons
-### CoaddM5 r band HealPix Histrogram
+# Histogram comparisons
+### CoaddM5 r band HealPix Histogram
 ![png](figures/thumb.pontus_2002_kraken_2026_CoaddM5_RandomDitherPerNight_r_band_HEAL_ComboHistogram.png)
 ### Slew Distance Histogram
 ![png](figures/thumb.pontus_2002_kraken_2026_Slew_Distance_Histogram_All_visits_ONED_ComboBinnedData.png)
