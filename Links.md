@@ -14,7 +14,7 @@ The [LSST DMSR](http://ls.st/lse-61) (Data Management System Requirements) docum
 
 ### Community
 
-The [Observing Strategy White Paper](https://github.com/LSSTScienceCollaborations/ObservingStrategy) (OSWP) is a community-driven paper describing a wide variety of science cases and their implications for survey strategy. This paper is primarily aimed at helping define the main (90\%) WideFastDeep survey.
+The [Community Observing Strategy Evaluation Paper](https://github.com/LSSTScienceCollaborations/ObservingStrategy) (COSEP) is a community-driven paper describing a wide variety of science cases and their implications for survey strategy. This paper is currently primarily aimed at helping define the main (90\%) WideFastDeep survey, but is a living document intended to serve as a repository of survey strategy evaluation metrics, and so will evolve to also address mini surveys.
 
 The 2011 community-contributed Deep Drilling white papers are available and some other DD related information and links are available on the LSST.org [DD page](https://www.lsst.org/scientists/survey-design/ddf). 
 
