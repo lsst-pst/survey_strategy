@@ -26,9 +26,6 @@ These links below may not be that useful to the general public, but are useful r
 
 Survey Strategy Notes from Tiago on [confluence](https://confluence.lsstcorp.org/display/LTS/Survey+Strategy+-+Tiago+Ribeiro)
 
-Scheduler release [plan](https://confluence.lsstcorp.org/pages/viewpage.action?pageId=41781661)  (needs to be updated) <br>
-Another view of planned scheduler [capabilities](https://confluence.lsstcorp.org/display/SIM/SOCS-Scheduler+Capabilities)
-
 The [LSST scheduler requirements](https://docushare.lsst.org/docushare/dsweb/Get/LTS-347/Scheduler%20Requirements%20v4.2.1.pdf) document (LTS-347) describe the detailed requirements for the scheduling software. 
 
 The [LSST OCS-scheduler design](https://docushare.lsst.org/docushare/dsweb/Get/LTS-226/LTS226-SchedulerDesign-1.1.pdf) document (LTS-226) describes additional requirements and design considerations for the OCS and scheduler software. 
