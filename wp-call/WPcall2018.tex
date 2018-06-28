@@ -382,7 +382,7 @@ Regular survey reviews by the SSC & 2022-2032 \\
 
 
 \newpage
-\section{White paper submission guidelines} 
+\section{White paper submission guidelines} \label{sec:guidelines}
 
 
 \subsection{Who can submit a white paper?} 
@@ -440,7 +440,7 @@ to help illustrate some of these potential crossovers.
 
 \subsection{TeX template for submission \label{sec:textemplate}} 
 
-Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what could be learned if the proposed observations were obtained, relative to some baseline. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations\footnote{For more information on how survey simulations are created, please see the documentation on OpSim at \href{http://sims-opsim.lsst.io}{http://sims-opsim.lsst.io}.} to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. 
+Each proposed modification of the survey strategy must contain a Scientific Motivation, Technical Description, and Performance Evaluation section, instructions for which are expanded in the white paper submission template. The Scientific Motivation section is intended to explain why this survey strategy modification is important and what could be learned if the proposed observations were obtained, relative to some baseline. The Technical Description section details what observations are being requested and should provide enough detail to enable proper simulations\footnote{For more information on how survey simulations are created, please see the documentation on OpSim at \href{https://lsst-sims.github.io/sims_ocs/}{https://lsst-sims.github.io/sims\_ocs/}.} to be created, as well as additional information that can help in the process of combining similar but separate survey strategy modification requests. 
 
 The Performance Evaluation section must contain methods to evaluate the effectiveness of the survey strategy modifications, particularly in light of the potential effect of survey strategy changes proposed in other white papers. It is unlikely that any proposed cadence modification suggested in white papers will be carried out in its original form; thus metrics (along with threshold values for these figures of merit) to evaluate the science performance of non-ideal simulations are crucial.  Note that each white paper does not need to solve or address the global optimization problem, nor does it need to supply performance criteria across all science goals\footnote{Note that 
 the Project team cannot support individuals or groups wishing to run the Operations Simulator themselves. It is not required that authors of white papers run the proposed simulations themselves.}. The TeX submission template gives further instructions for each of these areas.
@@ -963,13 +963,24 @@ Scheduler is available at \url{https://lsst-sims.github.io/sims_ocs/}.
 Documentation about the LSST Metrics Analysis Framework (MAF) is available at \url{http://sims-maf.lsst.io}.  Documentation about running
 OpSim and MAF via docker is available at \url{http://ls.st/40m}.
 
-The 2018 baseline simulated survey document describes the recent, post-COSEP, features enabled in OpSim, as well 
-as characteristics of the updated baseline simulated survey. This document is available at \url{http://ls.st/3q5}.
+The git repository (\href{https://github.com/lsst-pst/survey_strategy/}{https://github.com/lsst-pst/survey\_strategy/}) hosting the source of this document also holds additional information relevant to the call for white papers. This includes:
+\begin{itemize}
+\item The baseline2018a simulated survey document, which describes the recent, post-COSEP, features enabled in OpSim, as well 
+as characteristics of the updated baseline simulated survey ('baseline2018a'). This document is available at \url{http://ls.st/3q5}, under 
+the baseline2018a-doc directory\footnote{Note, to download PDFs from github, simply click the "Download" button on the webpage that opens 
+after clicking the link to the PDF.}
+\item The `next candidate reference run' ({\it e.g.} the run that is likely to become baseline2018b) simulated survey document, which describes
+some additional updates in OpSim to increase simulation fidelity. These updates include simulating dome crawl, which increases the efficiency 
+of observing by about 3\%, and updating the optics corrections time delay to the currently expected requirements. This document is available at 
+\url{http://ls.st/cm9}, under the baseline2018b-doc directory.
+\item A summary of the alternate survey strategy simulations produced as examples for the call for white papers, listed below in Section~\ref{sec:surveys}.
+This document, including comparisons of a subset of metric analysis results, is available at \url{http://ls.st/ru8}, under the WPruns directory. 
+Additional plots and metric comparisons are available in this same directory, at \url{http://ls.st/blm}.
+\end{itemize}
 
-The outputs of MAF analyses for the 2018a baseline survey, as well as runs demonstrating potential options for mini surveys and Deep 
-Drilling fields (a subset of the runs described in Chapter 2 of the COSEP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}. 
+The full outputs of MAF analyses for the 2018a baseline survey, as well as the example runs demonstrating potential options for mini surveys (a subset of the runs described in Chapter 2 of the COSEP) are available \href{http://astro-lsst-01.astro.washington.edu:8080}{online} at \url{http://astro-lsst-01.astro.washington.edu:8080}.  
 
-A short description of the current Deep Drilling fields and links to further materials (including white papers submitted in response to the 2011 call for input on the DD strategy) are available on the LSST website at \href{https://www.lsst.org/scientists/survey-design/ddf}{http://ls.st/57q}. Additional posts on LSST Community can be found by searching for \href{https://community.lsst.org/search?q=deep%20drilling}{`deep drilling'}. 
+A short description of the current Deep Drilling mini surveys and links to further materials (including white papers submitted in response to the 2011 call for input on the DD strategy) are available on the LSST website at \href{https://www.lsst.org/scientists/survey-design/ddf}{http://ls.st/57q}. Additional posts on LSST Community can be found by searching for \href{https://community.lsst.org/search?q=deep%20drilling}{`deep drilling'}. 
 
 Additional information is available in the following presentations:
 \begin{itemize}
@@ -995,7 +1006,7 @@ An open, searchable resource for asking questions not addressed in this document
 
 There is a mailing list available (email: lsst-survey-strategy at lsstcorp.org) to contact the survey strategy team in case of specific 
 questions and/or concerns. Messages posted to the mailing list are broadcasted to the survey strategy team and archived. 
-The same list will be used for white paper submission (see Section 2.3). 
+The same list will be used for white paper submission (see Section~\ref{sec:guidelines}). 
 
 Throughout the survey strategy design process there will be open community meetings. The first of these will be 
 at the LSST 2018 Project and Community Workshop in Tucson, AZ (August 13-17, 2018). Another highly relevant

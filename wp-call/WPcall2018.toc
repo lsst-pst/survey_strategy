@@ -23,5 +23,5 @@
 \contentsline {subsection}{\numberline {B.3}Limiting depth and uncertainty estimates}{25}{subsection.B.3}
 \contentsline {section}{\numberline {C}Supplementary materials }{27}{appendix.C}
 \contentsline {subsection}{\numberline {C.1}Useful publications and websites }{27}{subsection.C.1}
-\contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{29}{subsection.C.2}
-\contentsline {subsection}{\numberline {C.3}Additional Simulated Survey Strategies }{30}{subsection.C.3}
+\contentsline {subsection}{\numberline {C.2}Communication about the LSST survey strategy}{30}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}Additional Simulated Survey Strategies }{31}{subsection.C.3}
