@@ -25,9 +25,9 @@
 - recreation of baseline using Python3 code, dome crawl, and new delay for OL correction
 - most likely new baseline
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/baseline2018_dc_cl/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_kraken2026_comp/README.md)
-- [dither comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_kraken2026_comp_dither/README.md)
-- [comparison with pontus_2003](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/pontus_2003_kraken2026_comp/README.md)
+- [comparison with baseline2018a](baseline2018a_kraken2026_comp/README.md)
+- [dither comparison with baseline2018a](baseline2018a_kraken2026_comp_dither/README.md)
+- [comparison with pontus_2003](pontus_2003_kraken2026_comp/README.md)
 
 
 ## Alternate survey strategies
@@ -36,46 +36,46 @@
 - WFD minimum and maximum dec limits increased by 1.5 degrees
 - possible new baseline
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/baseline2018_dc_cl_wfd15/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_colossus2665_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_colossus2665_comp/README.md)
-- [dither comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_colossus2665_comp_dither/README.md)
+- [comparison with baseline2018a](baseline2018a_colossus2665_comp/README.md)
+- [comparison with kraken_2026](kraken2026_colossus2665_comp/README.md)
+- [dither comparison with kraken_2026](kraken2026_colossus2665_comp_dither/README.md)
 
 ### `pontus_2002`
 - Simulation of a PanSTARRs like survey
 - WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_big_wfdonly/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_pontus2002_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_pontus2002_comp/README.md)
-- [dither comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_pontus2002_comp_dither/README.md)
+- [comparison with baseline2018a](baseline2018a_pontus2002_comp/README.md)
+- [comparison with kraken_2026](kraken2026_pontus2002_comp/README.md)
+- [dither comparison with kraken_2026](kraken2026_pontus2002_comp_dither/README.md)
 
 ### `colossus_2664`
 - WFD through GP
 - GP turned off
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_nogp/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_colossus2664_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_colossus2664_comp/README.md)
-- [dither comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_colossus2664_comp_dither/README.md)
+- [comparison with baseline2018a](baseline2018a_colossus2664_comp/README.md)
+- [comparison with kraken_2026](kraken2026_colossus2664_comp/README.md)
+- [dither comparison with kraken_2026](kraken2026_colossus2664_comp_dither/README.md)
 
 ### `colossus_2667`
 - single visits survey
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_nopairs/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_colossus2667_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_colossus2667_comp/README.md)
-- [dither comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_colossus2667_comp_dither/README.md)
+- [comparison with baseline2018a](baseline2018a_colossus2667_comp/README.md)
+- [comparison with kraken_2026](kraken2026_colossus2667_comp/README.md)
+- [dither comparison with kraken_2026](kraken2026_colossus2667_comp_dither/README.md)
 
 ### `pontus_2489`
 - "Many visits" survey
 -  20s visits with single snap in `g,r,i,z,y`
 -  40s visits with single snap in `u` band
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_manyvisits/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_pontus2489_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_pontus2489_comp/README.md)
+- [comparison with baseline2018a](baseline2018a_pontus2489_comp/README.md)
+- [comparison with kraken_2026](kraken2026_pontus2489_comp/README.md)
 
 ### `kraken_2035`
 - 9 DDFs
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_9ddfs)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_kraken2035_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_kraken2035_comp/README.md)
+- [comparison with baseline2018a](baseline2018a_kraken2035_comp/README.md)
+- [comparison with kraken_2026](kraken2026_kraken2035_comp/README.md)
 
 
 ## Rolling cadences
@@ -85,5 +85,5 @@
 - 2 alternating Dec bands switched every other year
 - No WFD proposal in the background.
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_2rolling_decbands/config_run)
-- [comparison with baseline2018a](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/baseline2018a_mothra2045_comp/README.md)
-- [comparison with kraken_2026](https://github.com/oboberg/lsst_notebooks/blob/master/whitepaper_runs/kraken2026_mothra2045_comp/README.md)
+- [comparison with baseline2018a](baseline2018a_mothra2045_comp/README.md)
+- [comparison with kraken_2026](kraken2026_mothra2045_comp/README.md)
