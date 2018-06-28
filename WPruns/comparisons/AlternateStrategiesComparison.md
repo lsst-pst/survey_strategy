@@ -94,3 +94,9 @@
 - WFD proposal in the background at 25% level.
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_2rolling_decbands_wfdbg25p/config_run)
 - [comparison with kraken_2026](kraken2026_pontus2502_comp/README.md)
+
+### `pontus_2502`
+- Rolling cadence
+- Full WFD first and last 2 years, 3 alternating dec bands in between
+- [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018a_3rolling_decbands_single_prop/config_run)
+- [comparison with kraken_2026](kraken2026_kraken2036_comp/README.md)
