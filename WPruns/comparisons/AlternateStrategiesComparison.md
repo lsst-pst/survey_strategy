@@ -5,7 +5,7 @@
 | [colossus_2665](#colossus_2665) | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Python 3 baseline2018a replacement (with dome crawl and OL), WFD area increased by 1.5 degrees north an south  |
 | [pontus_2002](#pontus_2002)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey                        |
 | [colossus_2664](#colossus_2664) | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | WFD cadence in GP. GP proposal turned off                                                  |
-| [colossus_2667](#colossus_2667) | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | No pairs survey                                                                            |
+| [colossus_2667](#colossus_2667) | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Single visits per night survey                                                                            |
 | [pontus_2489](#pontus_2489)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | "Many visits" 20s visits with single snap, 40s visits in u band )                          |
 | [kraken_2035](#kraken_2035])    | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | 9 Deep Drilling Fields (DDFs), 4 already decided + 5 additional                            |
 | [mothra_2045](#mothra_2045)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | 2 alternating Dec bands switched every other year, WFD off                                 |
