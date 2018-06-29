@@ -57,7 +57,7 @@
 - [dither comparison with kraken_2026](kraken2026_colossus2664_comp_dither/README.md)
 
 ### `colossus_2667`
-- single visits survey
+- single visits per night survey
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_nopairs/config_run)
 - [comparison with baseline2018a](baseline2018a_colossus2667_comp/README.md)
 - [comparison with kraken_2026](kraken2026_colossus2667_comp/README.md)
