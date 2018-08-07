@@ -93,6 +93,7 @@
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_nopairs/config_run)
 - [comparison with kraken_2026](kraken2026_kraken2044_comp/README.md)
 - [comparison with pontus_2002](pontus2002_kraken2044_comp/README.md)
+- [comparison with pontus_2002, mothra_2049, and nexus_2097](pontus2002_kraken2044_mothra2049_nexus2097_comp/README.md)
 
 
 ## Rolling cadences
