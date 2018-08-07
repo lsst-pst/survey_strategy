@@ -46,7 +46,7 @@
 
 ### `pontus_2002`
 - Simulation of a PanSTARRs like survey
-- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- WFD + DD WFD having 274000 deg sq (X<1.5, DecMin = -78, DecMax = +18)
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_big_wfdonly/config_run)
 - [comparison with baseline2018a](baseline2018a_pontus2002_comp/README.md)
 - [comparison with kraken_2026](kraken2026_pontus2002_comp/README.md)
@@ -88,7 +88,7 @@
 
 ### `kraken_2044`
 - Simulation of a PanSTARRs like survey
-- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- WFD + DD WFD having 274000 deg sq (X<1.5, DecMin = -78, DecMax = +18)
 - No pairs
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_nopairs/config_run)
 - [comparison with kraken_2026](kraken2026_kraken2044_comp/README.md)
@@ -122,7 +122,7 @@
 - Rolling cadence
 - 2 alternating Dec bands switched every other year
 - Simulation of a PanSTARRs like survey
-- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- WFD + DD WFD having 274000 deg sq (X<1.5, DecMin = -78, DecMax = +18)
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_2rolling_dec/config_run)
 - [comparison with kraken_2026](kraken2026_mothra2049_comp/README.md)
 - [comparison with pontus_2002](pontus2002_mothra2049_comp/README.md)
@@ -131,7 +131,7 @@
 - Rolling cadence
 - Full WFD first and last 2 years, 3 alternating dec bands in between
 - Simulation of a PanSTARRs like survey
-- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- WFD + DD WFD having 274000 deg sq (X<1.5, DecMin = -78, DecMax = +18)
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_3rolling_dec/config_run)
 - [comparison with kraken_2026](kraken2026_nexus2097_comp/README.md)
 - [comparison with pontus_2002](pontus2002_nexus2097_comp/README.md)
