@@ -6,11 +6,15 @@
 | [pontus_2002](#pontus_2002)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey                        |
 | [colossus_2664](#colossus_2664) | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | WFD cadence in GP. GP proposal turned off                                                  |
 | [colossus_2667](#colossus_2667) | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Single visits per night survey                                                                            |
-| [pontus_2489](#pontus_2489)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | "Many visits" 20s visits with single snap, 40s visits in u band )                          |
+| [pontus_2489](#pontus_2489)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | "Many visits" 20s visits with single snap, 40s visits in u band                         |
 | [kraken_2035](#kraken_2035])    | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | 9 Deep Drilling Fields (DDFs), 4 already decided + 5 additional                            |
 | [mothra_2045](#mothra_2045)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | 2 alternating Dec bands switched every other year, WFD off                                 |
 | [pontus_2502](#pontus_2502)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | 2 alternating Dec bands switched every other year, WFD on at 25% level                     |
 | [kraken_2036](#kraken_2036)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Full WFD first and last 2 years, 3 alternating dec bands in between                        |
+| [kraken_2042](#kraken_2042)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Single 30 second snaps in all filters                        |
+| [kraken_2044](#kraken_2044)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey, no pairs             |
+| [mothra_2049](#mothra_2049)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey, 2 alternating Dec bands switched every other year              |
+| [nexus_2097](#nexus_2097)       | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey, Full WFD first and last 2 years, 3 alternating dec bands in between              |
 
 
 # Simulations
@@ -77,6 +81,19 @@
 - [comparison with baseline2018a](baseline2018a_kraken2035_comp/README.md)
 - [comparison with kraken_2026](kraken2026_kraken2035_comp/README.md)
 
+### `kraken_2042`
+- Single 30 second snaps in all bands
+- [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_single_snaps_30sec/config_run)
+- [comparison with kraken_2026](kraken2026_kraken2042_comp/README.md)
+
+### `kraken_2044`
+- Simulation of a PanSTARRs like survey
+- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- No pairs
+- [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_nopairs/config_run)
+- [comparison with kraken_2026](kraken2026_kraken2044_comp/README.md)
+- [comparison with pontus_2002](pontus2002_kraken2044_comp/README.md)
+
 
 ## Rolling cadences
 
@@ -100,3 +117,21 @@
 - Full WFD first and last 2 years, 3 alternating dec bands in between
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018a_3rolling_decbands_single_prop/config_run)
 - [comparison with kraken_2026](kraken2026_kraken2036_comp/README.md)
+
+### `mothra_2049`
+- Rolling cadence
+- 2 alternating Dec bands switched every other year
+- Simulation of a PanSTARRs like survey
+- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_2rolling_dec/config_run)
+- [comparison with kraken_2026](kraken2026_mothra2049_comp/README.md)
+- [comparison with pontus_2002](pontus2002_mothra2049_comp/README.md)
+
+### `nexus_2097`
+- Rolling cadence
+- Full WFD first and last 2 years, 3 alternating dec bands in between
+- Simulation of a PanSTARRs like survey
+- WFD + DD WFD having 274000 deg sq (X<1.5, DeMin = -78, DecMax = +18)
+- [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_bigwfd_3rolling_dec/config_run)
+- [comparison with kraken_2026](kraken2026_nexus2097_comp/README.md)
+- [comparison with pontus_2002](pontus2002_nexus2097_comp/README.md)
