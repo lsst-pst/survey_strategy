@@ -151,6 +151,28 @@
 | Median CoaddM5 WFD z band HealpixSlicer |        25.72  |        25.668 |
 | Median CoaddM5 WFD i band HealpixSlicer |        26.618 |        26.452 |
 
+# Median FiveSigmaDepth
+|                                                          |   kraken_2026 |   mothra_2045 |
+|:---------------------------------------------------------|--------------:|--------------:|
+| Median Median fiveSigmaDepth WFD i band HealpixSlicer    |        23.691 |        23.665 |
+| Median Median fiveSigmaDepth WFD g band HealpixSlicer    |        24.646 |        24.615 |
+| Median Median fiveSigmaDepth WFD y band HealpixSlicer    |        21.997 |        21.908 |
+| Median Median fiveSigmaDepth WFD u band HealpixSlicer    |        23.337 |        23.256 |
+| Median Median fiveSigmaDepth WFD r band HealpixSlicer    |        24.263 |        24.245 |
+| Median Median fiveSigmaDepth WFD z band HealpixSlicer    |        22.783 |        22.701 |
+| Median Median fiveSigmaDepth WFD all bands HealpixSlicer |        23.492 |        23.101 |
+
+# Median Internight Gap
+|                                                           |   kraken_2026 |   mothra_2045 |
+|:----------------------------------------------------------|--------------:|--------------:|
+| Median Median Inter-Night Gap WFD i band HealpixSlicer    |        10.957 |         6.955 |
+| Median Median Inter-Night Gap WFD g band HealpixSlicer    |        25.858 |        19.897 |
+| Median Median Inter-Night Gap WFD y band HealpixSlicer    |         3.962 |         2.023 |
+| Median Median Inter-Night Gap WFD u band HealpixSlicer    |        23.959 |         4.984 |
+| Median Median Inter-Night Gap WFD r band HealpixSlicer    |         7.941 |         3.984 |
+| Median Median Inter-Night Gap WFD z band HealpixSlicer    |         5.994 |         2.495 |
+| Median Median Inter-Night Gap WFD all bands HealpixSlicer |         1.956 |         1.01  |
+
 # Median Airmass WFD
 |                                                   |   kraken_2026 |   mothra_2045 |
 |:--------------------------------------------------|--------------:|--------------:|
@@ -197,5 +219,5 @@
 ![png](figures/thumb.mothra_2045_kraken_2026_Zoom_Slew_Distance_Histogram_All_visits_ONED_ComboBinnedData.png)
 ### Slew Time Histogram
 ![png](figures/thumb.mothra_2045_kraken_2026_Slew_Time_Histogram_All_visits_ONED_ComboBinnedData.png)
-### Zoom Slew Time Histogram 
+### Zoom Slew Time Histogram
 ![png](figures/thumb.mothra_2045_kraken_2026_Zoom_Slew_Time_Histogram_All_visits_ONED_ComboBinnedData.png)
