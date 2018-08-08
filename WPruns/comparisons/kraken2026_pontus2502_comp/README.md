@@ -13,10 +13,12 @@
 12. [Proposal Fractions](#proposal-fractions)
 13. [Median Nvisits WFD](#median-nvisits-wfd)
 14. [Median CoaddM5 WFD](#median-coaddm5-wfd)
-15. [Median Airmass WFD](#median-airmass-wfd)
-16. [Median Seeing WFD](#median-seeing-wfd)
-17. [Skymap comparisons](#skymap-comparisons)
-18. [Histogram comparisons](#histogram-comparisons)
+15. [Median FiveSigmaDepth](#median-fivesigmadepth)
+16. [Median Internight Gap](#median-internight-gap)
+17. [Median Airmass WFD](#median-airmass-wfd)
+18. [Median Seeing WFD](#median-seeing-wfd)
+19. [Skymap comparisons](#skymap-comparisons)
+20. [Histogram comparisons](#histogram-comparisons)
 # fO
 |                                                       |   kraken_2026 |   pontus_2502 |
 |:------------------------------------------------------|--------------:|--------------:|
@@ -155,6 +157,28 @@
 | Median CoaddM5 WFD r band HealpixSlicer |        27.201 |        27.116 |
 | Median CoaddM5 WFD z band HealpixSlicer |        25.72  |        25.895 |
 
+# Median FiveSigmaDepth
+|                                                          |   kraken_2026 |   pontus_2502 |
+|:---------------------------------------------------------|--------------:|--------------:|
+| Median Median fiveSigmaDepth WFD i band HealpixSlicer    |        23.691 |        23.617 |
+| Median Median fiveSigmaDepth WFD g band HealpixSlicer    |        24.646 |        24.601 |
+| Median Median fiveSigmaDepth WFD y band HealpixSlicer    |        21.997 |        21.836 |
+| Median Median fiveSigmaDepth WFD u band HealpixSlicer    |        23.337 |        23.236 |
+| Median Median fiveSigmaDepth WFD r band HealpixSlicer    |        24.263 |        24.244 |
+| Median Median fiveSigmaDepth WFD z band HealpixSlicer    |        22.783 |        23.129 |
+| Median Median fiveSigmaDepth WFD all bands HealpixSlicer |        23.492 |        23.348 |
+
+# Median Internight Gap
+|                                                           |   kraken_2026 |   pontus_2502 |
+|:----------------------------------------------------------|--------------:|--------------:|
+| Median Median Inter-Night Gap WFD i band HealpixSlicer    |        10.957 |        11.936 |
+| Median Median Inter-Night Gap WFD g band HealpixSlicer    |        25.858 |        28.445 |
+| Median Median Inter-Night Gap WFD y band HealpixSlicer    |         3.962 |         1.05  |
+| Median Median Inter-Night Gap WFD u band HealpixSlicer    |        23.959 |        27.931 |
+| Median Median Inter-Night Gap WFD r band HealpixSlicer    |         7.941 |        11.968 |
+| Median Median Inter-Night Gap WFD z band HealpixSlicer    |         5.994 |         5.992 |
+| Median Median Inter-Night Gap WFD all bands HealpixSlicer |         1.956 |         1.883 |
+
 # Median Airmass WFD
 |                                                   |   kraken_2026 |   pontus_2502 |
 |:--------------------------------------------------|--------------:|--------------:|
@@ -201,5 +225,5 @@
 ![png](figures/thumb.kraken_2026_pontus_2502_Zoom_Slew_Distance_Histogram_All_visits_ONED_ComboBinnedData.png)
 ### Slew Time Histogram
 ![png](figures/thumb.kraken_2026_pontus_2502_Slew_Time_Histogram_All_visits_ONED_ComboBinnedData.png)
-### Zoom Slew Time Histogram 
+### Zoom Slew Time Histogram
 ![png](figures/thumb.kraken_2026_pontus_2502_Zoom_Slew_Time_Histogram_All_visits_ONED_ComboBinnedData.png)
