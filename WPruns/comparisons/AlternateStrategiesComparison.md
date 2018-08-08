@@ -85,6 +85,7 @@
 - Single 30 second snaps in all bands
 - [configuration repository](https://github.com/lsst-ts/opsim4_config/tree/whitepaper2018_single_snaps_30sec/config_run)
 - [comparison with kraken_2026](kraken2026_kraken2042_comp/README.md)
+-- [comparison with kraken_2026 and pontus_2489](kraken2026_pontus2489_kraken_2042_comp/README.md)
 
 ### `kraken_2044`
 - Simulation of a PanSTARRs like survey
