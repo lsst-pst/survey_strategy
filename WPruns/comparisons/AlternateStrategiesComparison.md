@@ -15,6 +15,7 @@
 | [kraken_2044](#kraken_2044)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey, no pairs             |
 | [mothra_2049](#mothra_2049)     | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey, 2 alternating Dec bands switched every other year              |
 | [nexus_2097](#nexus_2097)       | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes                | Simulation of a PanSTARRs like survey, Full WFD first and last 2 years, 3 alternating dec bands in between              |
+| [astro-lsst-01_2039](#astro-lsst-01_2039)       | 0.3           | 3.0   | 0.0     | 3      |     yes    | yes | No North Ecliptic Spur (NES) proposal|
 
 
 # Simulations
@@ -96,6 +97,10 @@
 - [comparison with pontus_2002](pontus2002_kraken2044_comp/README.md)
 - [comparison with pontus_2002, mothra_2049, and nexus_2097](pontus2002_kraken2044_mothra2049_nexus2097_comp/README.md)
 
+### `astro-lsst-01_2039`
+- No NES proposal included
+- [configuration repository](https://github.com/oboberg/scheduler_config/tree/whitepaper2018_nones/config_run)
+- [comparison with kraken_2026](kraken2026_astro-lsst-01_2039_comp/README.md)
 
 ## Rolling cadences
 
