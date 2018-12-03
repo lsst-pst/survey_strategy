@@ -1,6 +1,8 @@
 Titles of Submitted White Papers
 ---------------------------------
 
+A Big Sky Approach to Cadence Diplomacy
+
 Optimizing the LSST Observing Strategy for Dark Energy Science: DESC Recommendations for the Wide-Fast-Deep Survey
 
 Enabling Deep All-Sky Searches of Outer Solar System Objects
@@ -32,8 +34,6 @@ Blazars and Fast Radio Bursts with LSST
 Searching for white dwarf transits with LSST
 
 Presto-Color: An LSST Cadence for Explosive Physics & Fast Transients
-
-A Big Sky Approach to Cadence Diplomacy
 
 LSST Target of Opportunity proposal for locating a core collapse supernova in our galaxy triggered by a neutrino supernova alert
 
