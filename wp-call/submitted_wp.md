@@ -90,3 +90,5 @@ The Diverse Science Return from a Wide-Area Survey of the Galactic Plane
 unVEil the darknesS of The gAlactic buLgE (VESTALE)
 
 The Definitive Map of the Galactic bulge
+
+Mapping the Periphery and Variability of the Magellanic Clouds
