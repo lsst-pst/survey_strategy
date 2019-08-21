@@ -21,13 +21,16 @@ The 2011 community-contributed Deep Drilling white papers are available and some
 ### Scheduler
 
 A description of the [opsim v4 output database](https://lsst-sims.github.io/sims_ocs/database.html).
+The new survey simulations being created with the Feature Based Scheduler (new scheduler) are very similar, however "note" is an additional column that carries some of the equivalent 'proposalId' information, as much as relevant.
 
 These links below may not be that useful to the general public, but are useful resources while working on implementing new scheduler software (such as the feature-based scheduler). 
 
 Survey Strategy Notes from Tiago on [confluence](https://confluence.lsstcorp.org/display/LTS/Survey+Strategy+-+Tiago+Ribeiro)
 
-The [LSST scheduler requirements](https://docushare.lsst.org/docushare/dsweb/Get/LTS-347/Scheduler%20Requirements%20v4.2.1.pdf) document (LTS-347) describe the detailed requirements for the scheduling software. 
+The [LSST Scheduler Requirement](https://docushare.lsst.org/docushare/dsweb/Get/LSE-369) Document LSE-369 describes a current set of requirements for the scheduler.
 
-The [LSST OCS-scheduler design](https://docushare.lsst.org/docushare/dsweb/Get/LTS-226/LTS226-SchedulerDesign-1.1.pdf) document (LTS-226) describes additional requirements and design considerations for the OCS and scheduler software. 
+Obsolete? The [LSST scheduler requirements](https://docushare.lsst.org/docushare/dsweb/Get/LTS-347/Scheduler%20Requirements%20v4.2.1.pdf) document (LTS-347) describe the detailed requirements for the scheduling software. 
+
+Obsolete? The [LSST OCS-scheduler design](https://docushare.lsst.org/docushare/dsweb/Get/LTS-226/LTS226-SchedulerDesign-1.1.pdf) document (LTS-226) describes additional requirements and design considerations for the OCS and scheduler software. 
 
 The [2016 Scheduler SPIE](https://docushare.lsstcorp.org/docushare/dsweb/Get/Publication-131/) paper describes the development of the scheduler in opsim v4, while the [2016 SOCS SPIE](https://docushare.lsstcorp.org/docushare/dsweb/Get/Publication-116/) paper describes the development of the simulated OCS in opsim v4.
