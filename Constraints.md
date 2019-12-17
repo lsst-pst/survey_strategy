@@ -66,5 +66,12 @@ The current baseline includes Deep Drilling, North Ecliptic Spur, Galactic Plane
 
 - It is unlikely that the SRD requirements on the WFD (in particular, covering 18,000 sq deg with a median of 825 visits) can be met with less than 80% of the total survey time. The window of time required for the WFD is thus likely to be between 80-90%, with current simulations using about 86% of the total time for WFD.
 
+- It is desirable that the WFD reached the SRD-illustrative number of visits and coadded depths per filter:
+
+|  | u | g | r |  i | z | y |
+| - | - | - | - | - | - | - |
+|Nvis| 56 | 80 | 184 | 184 | 160 | 160 |
+|CoM5| 26.1| 27.4 | 27.5 | 26.8 | 26.1 | 24.9 |
+
 
 
