@@ -8,6 +8,11 @@ Here we list some outstanding questions where we would appriciate feedback from 
 
 We have several DDF strategies (baseline, DESC, AGN, Euclid). There are also proposals to ephasize a DDF in a single year, and de-emphasize other years.  What DDF observing strategy should be included in our simulations?
 
+## What's the best dithering strategy for the DDFs (both spatially and rotationally)?
+
+There is tension in that DM generally prefers larger dithers for calibration and co-addition purposes, while science cases prefer smaller dithers to preserve the area that reaches the deepest levels.
+
+
 ## What is the best camera rotational dithering strategy?
 
 In the baseline, we set the camera rotator to a random position between -80 and 80 degrees (relative to the telescope) each night. We also test constraining the camera to be +/- 45 degrees to make diffraction spikes fall along CCD rows and columns.  
@@ -61,13 +66,7 @@ Other surveys have often preferentially observed certain filters in "good seeing
 
 ## Should we adjust the survey footprint slightly to account for over/under subscription?
 
-Right now, we tend to use straight cuts in declination to define the survey area (easy to code and calculate areas covered). However, because of variable night length, weather downtime, and the placement of DDFs we have some regions of the sky that are oversubscribed and some (like the galactic plane) are undersubscribed. We could alter the limits of the WFD area to constrict in parts of the sky that are over-subscribed and flare where it is undersubscribed. This should result in a slightly more uniform WFD depth.
-We do not take much account of the atmospheric seeing. 
-Other surveys have often preferentially observed certain filters in "good seeing" conditions.  
-
-## What's the best dithering strategy for the DDFs (both spatially and rotationally)?
-
-There is tension in that DM generally prefers larger dithers for calibration and co-addition purposes, while science cases prefer smaller dithers to preserve the area that reaches the deepest levels.
+Right now, we tend to use straight cuts in declination to define the survey area (easy to code and calculate areas covered). However, because of variable night length, weather downtime, and the placement of DDFs we have some regions of the sky that are oversubscribed and some (like the galactic plane) are undersubscribed. We could alter the limits of the WFD area to constrict in parts of the sky that are over-subscribed and flare where it is undersubscribed. This should result in a slightly more uniform WFD depth. 
 
 ## Do periodic sources suffer from aliasing?
 
