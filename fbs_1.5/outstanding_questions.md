@@ -21,7 +21,7 @@ Relevant sub-questions:
 * How the total number of visits should be distributed between filters.  
 * Should we use dust extinction maps to define regions?
 * Should we de-emphasize the galactic anti-center?
-* Should we include some minimal coverage off the entire accesable sky for ToO potential?
+* Should we include some minimal coverage of the entire accesable sky for ToO potential?
 * How much contingency should we have on the WFD region? The SRD states we should reach 825 visits, how far over this value should our simulations end up?
 
 ## Do we need to use a rolling cadence?
@@ -34,7 +34,7 @@ We can vary the exposure times based on the observing conditions to help keep in
 
 ## Should visits be 1x30s or 2x15s?
 
-This probably has to wait until we have on-sky data. But represent a fairly large loss of the total available time (7%) if we need to take two snaps per visit.
+This probably has to wait until we have on-sky data. But it represent a fairly large loss of the total available time (7%) if we need to take two snaps per visit.
 
 ## Should we intentionally take observations at high airmass to measure DCR
 
@@ -69,7 +69,7 @@ Other surveys have often preferentially observed certain filters in "good seeing
 
 There is tension in that DM generally prefers larger dithers for calibration and co-addition purposes, while science cases prefer smaller dithers to preserve the area that reaches the deepest levels.
 
-## Do Periodic Sources Suffer From Aliasing?
+## Do periodic sources suffer from aliasing?
 
 The Bell et al white paper discussed scheduling to prevent aliasing of periodic sources. This is potentially a memory intensive problem to simulate. It would be good to see if there is a population of periodic sources that are currently suffering from aliasing and would drive a need to shift the timing of our observations?  Is there new science enabled by trying to avoid the current level of aliasing in LSST?
 
