@@ -11,8 +11,10 @@
 
 # Much of the text in this file is intended to be used in jupyter notebooks and thus is markdown.
 
+import numpy as np
 import pandas as pd
 from IPython.display import display_markdown
+import matplotlib.pyplot as plt
 
 ### METRICS FOR SHORT DISPLAY
 tablemetrics = ['fOArea fO All visits HealpixSlicer',
@@ -772,3 +774,80 @@ class FamilyInfo():
         display_markdown(self.comment[f], raw=True)
         print(f"Comparison run: {self.family_baseline[f]}")
         return d
+
+## Some utility functions to normalize a dataframe or plot it - useful for summar stat comparisons
+
+def norm_df(df, norm_run,
+            invert_cols=None, reverse_cols=None, mag_cols=None):
+    """
+    Normalize values in a DataFrame, based on the values in a given run.
+    Can normalize some columns (metric values) differently (invert_cols, reverse_cols, mag_cols)
+    if those columns are specified; this lets the final normalized dataframe 'look' the same way
+    in a plot (i.e. "up" is better (reverse_cols), they center on 1 (mag_cols), and the magnitude scales
+    as expected (invert_cols)).
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        The data frame containing the metric values to compare
+    norm_run: str
+        The name of the simulation to normalize to (typically family_baseline)
+    invert_cols: list
+        Columns (metric values) to convert to 1 / value
+    reverse_cols: list
+        Columns (metric values) to invert (-1 * value)
+    mag_cols: list
+        Columns (metrics values) to treat as magnitudes (1 + (difference from norm_run))
+
+    Returns
+    -------
+    pd.DataFrame
+        Normalized data frame
+    """
+    # Copy the dataframe but drop the columns containing only strings
+    out_df = df.copy()
+    if reverse_cols is not None:
+        out_df[reverse_cols] = -out_df[reverse_cols]
+    if invert_cols is not None:
+        out_df[invert_cols] = 1 / out_df[invert_cols]
+    if mag_cols is not None:
+        out_df[mag_cols] = 1 + out_df[mag_cols] - out_df[mag_cols].loc[norm_run]
+    else:
+        mag_cols = []
+    # which columns are strings?
+    string_cols = [c for c, t in zip(df.columns, df.dtypes) if t == 'object']
+    cols = [c for c in out_df.columns.values if not (c in mag_cols or c in string_cols)]
+    out_df[cols] = 1 + (out_df[cols] - out_df[cols].loc[norm_run]) / out_df[cols].loc[norm_run]
+    return out_df
+
+def plot(df, normed=True, style=None, figsize=(10, 5), run_nicknames=None):
+    """Plot a DataFrame of metric values.
+
+    Parameters
+    ---------
+    df: pd.DataFrame
+        The dataframe of metric values to plot
+    normed: bool, opt
+        Is the dataframe normalized or not? (default True)
+        If true, adds +/- 5% lines to output
+    style: list, opt
+        Optional list of line color/style values to use for the plotted metric values
+    figsize: tuple, opt
+        Figure size
+    run_nicknames: list, opt
+        Replace the run names in the dataframe with these nicknames
+    """
+    df.plot(figsize=figsize, style=style)
+    plt.legend(loc=(1.01, 0))
+    if normed:
+        plt.axhline(0.95, alpha=0.3, linestyle=':')
+        plt.axhline(1.0, alpha=0.3, linestyle='--')
+        plt.axhline(1.05, alpha=0.3, linestyle=':')
+    if run_nicknames is not None:
+        xnames = run_nicknames
+    else:
+        xnames = df.index.values
+    xi = np.arange(len(xnames))
+    plt.xticks(xi, xnames, rotation=90, fontsize='large')
+    plt.grid('k:', alpha=0.3)
+    plt.tight_layout()
