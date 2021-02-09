@@ -9,6 +9,8 @@
 # Data / dictionaries containing the family information include:
 # family  - comment - nicknames - family_baseline - family_version
 
+# Much of the text in this file is intended to be used in jupyter notebooks and thus is markdown.
+
 import pandas as pd
 from IPython.display import display_markdown
 
@@ -70,7 +72,7 @@ class FamilyInfo():
 
         # baselines -- this particular 'family' needs to be used differently than the rest.
         key = 'version_baselines'
-        c = f"{key} = Comparison baselines across each release. The major differences across 1.5, 1.6 to " \
+        c = f"**{key}** = Comparison baselines across each release. The major differences across 1.5, 1.6 to " \
             f"1.7 is whether we decide the default baseline for the release is 2x15s or 1x30s; however, " \
             f"in each release we have created both a 2x15s and a 1x30s baseline -- so any subtle " \
             f"changes due to updates in the telescope model or scheduler code can be evaluated by " \
@@ -95,7 +97,7 @@ class FamilyInfo():
 
         ### visit_time
         key = 'visit_time'
-        c = f"{key} = simulations bearing on the length of the individual visits. " \
+        c = f"**{key}** = simulations bearing on the length of the individual visits. " \
             "This demonstrates the impact of 1x30s vs. 2x15s visits (9% more visits). " \
             "The variable exposure run allows the exposure time per visit to vary " \
             "between 20-100 seconds to attempt to hold the single image visit depth roughly constant, " \
@@ -112,7 +114,7 @@ class FamilyInfo():
 
         ### u_long
         key = 'u_long'
-        c = f"{key} = simulations bearing on the length of the u-band exposure time. " \
+        c = f"**{key}** = simulations bearing on the length of the u-band exposure time. " \
             f"These simulations swap a single exposure per visit of variable length for each visit in *u* " \
             f"band. The number of *u* band visits is left unchanged, resulting in a shift of visits from " \
             f"other filters to compensate for the increase in time. (Note the DDF visits were left " \
@@ -139,7 +141,7 @@ class FamilyInfo():
 
         ## intranight
         key = 'intranight'
-        c = f"{key} = simulations bearing on the distribution of visits within a night. " \
+        c = f"**{key}** = simulations bearing on the distribution of visits within a night. " \
             "Snaps per visit (2x15s vs 1x30s) is included for completeness, but the other " \
             "simulations include variations on whether visits are in the same or mixed filters, " \
             "and the effect of devoting a fraction of time to obtaining an additional (third) visit " \
@@ -179,7 +181,7 @@ class FamilyInfo():
 
         ## pair_times
         key = 'pair_times'
-        c = f"{key} = these simulations explore the impact of varying the time between pairs of visits " \
+        c = f"**{key}** = these simulations explore the impact of varying the time between pairs of visits " \
             f"in a night. Varying the pair time changes the overall number of filter changes per night, " \
             f"so longer pair times result in more visits overall in the survey. Longer pair times are more " \
             f"vulnerable to interruption however, resulting in a lower fraction of visits occuring in pairs. " \
@@ -201,7 +203,7 @@ class FamilyInfo():
 
         ## twilight pairs
         key = 'twilight_pairs'
-        c = f"{key} = explore the effect of programming twilight observing in pairs, rather than " \
+        c = f"**{key}** = explore the effect of programming twilight observing in pairs, rather than " \
             f"single visits. The baseline chooses visits during twilight (-18 to -12 degrees solar " \
             f"altitude) one at a time using a greedy algorithm. This family programs visits during " \
             f"twilight in pairs, similarly to the remainder of the night but with a shorter return " \
@@ -226,7 +228,7 @@ class FamilyInfo():
 
         ## wfddepth
         key = 'wfd_depth'
-        c = f"{key} = evaluates the impact of scaling the fraction of survey time devoted to WFD (and thus " \
+        c = f"**{key}** = evaluates the impact of scaling the fraction of survey time devoted to WFD (and thus " \
             f"the number of visits per pointing in the WFD) up or down. For metrics which respond simply " \
             f"to number of visits, this is a useful family to demonstrate that effect. Metrics which " \
             f"require coverage outside the WFD but are still sensitive to number of visits will show more " \
@@ -264,7 +266,7 @@ class FamilyInfo():
 
         ## filter_dist
         key = 'filter_dist'
-        c = f"{key} = evaluate the impact of changing the balance of visits between filters. " \
+        c = f"**{key}** = evaluate the impact of changing the balance of visits between filters. " \
             "Note that this family uses a simplified footprint that is a simple stripe of Declination " \
             "corresponding to the traditional WFD declination limits but no NES or SCP and continuing " \
             "WFD over the GP. Generally we find transients and variable stars metrics favor bluer " \
@@ -292,7 +294,7 @@ class FamilyInfo():
 
         ### footprint (stage 1)
         key = 'footprint'
-        c = f"{key} = an initial large set of simulations exploring widely different options for the " \
+        c = f"**{key}** = an initial large set of simulations exploring widely different options for the " \
             "overall survey footprint. The fraction of time devoted to the WFD will necessarily vary " \
             "among these simulations; this is one of the parameters suitable for later fine-tuning. " \
             "All runs in this family use 1x30s visits. Some of these footprints contain a traditional " \
@@ -346,7 +348,7 @@ class FamilyInfo():
 
         ## footprint_tune
         key = 'footprint_tune'
-        c = f"{key} = a further exploration of the survey footprint, exploring options " \
+        c = f"**{key}** = a further exploration of the survey footprint, exploring options " \
             "for improving the basic setup used in v1.6 in the 'combo_dust' simulation. " \
             "We feel combo_dust had a lot of promise, as it improved metrics for a wide range " \
             "of science without impacting metrics (currently avaialable in MAF) dramatically. " \
@@ -386,7 +388,7 @@ class FamilyInfo():
 
         ### filter_cadence
         key = 'filter_cadence'
-        c = f"{key} = investigate the impact of reducing the gaps between g band visits over the month, " \
+        c = f"**{key}** = investigate the impact of reducing the gaps between g band visits over the month, " \
             f"(essentially down-weighting the lunar cycle by adding a requirement that fields receive " \
             f"visits in g band filter throughout each month). In order to avoid 'long gaps' in g band " \
             f"coverage, additional fill-in visits in g are requested in each night; there is a limit to " \
@@ -414,7 +416,7 @@ class FamilyInfo():
 
         ## rolling
         key = 'rolling'
-        c = f"{key} = Add a rolling cadence, where some parts of the sky receive a higher number " \
+        c = f"**{key}** = Add a rolling cadence, where some parts of the sky receive a higher number " \
             f"of visits during an 'on' season, followed by a lower number of visits during an 'off' " \
             f"season. During the first year and half, and the last year and half (or so), the sky is " \
             f"covered uniformly as normal. This 'intro' and 'outro' allows for better proper motion " \
@@ -483,7 +485,7 @@ class FamilyInfo():
 
         ## twilight_neo
         key = 'twilight_neo'
-        c = f"{key} = explore the impact of adding a twilight NEO survey, operating on various " \
+        c = f"**{key}** = explore the impact of adding a twilight NEO survey, operating on various " \
             f"timescales and thus requiring varying fraction of survey time. These twilight NEO surveys " \
             f"replace the set initially released in  v1.5, improving the twilight NEO mini-survey " \
             f"performance for NEOs by restricting visits to low solar " \
@@ -510,7 +512,7 @@ class FamilyInfo():
 
         ## shortexp
         key = 'shortexp'
-        c = f"{key} = explore the impact of adding 2 or 5 short exposures of 1 or 5 seconds each year " \
+        c = f"**{key}** = explore the impact of adding 2 or 5 short exposures of 1 or 5 seconds each year " \
             f"(in all 6 filters). The number of visits in the entire survey increases -- but some will " \
             f"be too short to be useful for some science -- the amount of time used for the mini-survey " \
             f"varies in each of these examples, from 0.5% to 5%."
@@ -530,9 +532,9 @@ class FamilyInfo():
 
         ## dcr
         key = 'dcr'
-        c = f"{key} = explore the impact of adding 1 or 2 high-airmass visits in various bandpasses " \
+        c = f"**{key}** = explore the impact of adding 1 or 2 high-airmass visits in various bandpasses " \
             f"each year, for the purpose of better-measuring differential chromatic refraction (helping " \
-            f"with AGN redshifts and the creation of difference image templates. "
+            f"with AGN redshifts and the creation of difference image templates). "
         self.comment[key] = c
         self.family[key] = ['dcr_nham1_ug_v1.5_10yrs',
                             'dcr_nham1_ugr_v1.5_10yrs',
@@ -553,7 +555,7 @@ class FamilyInfo():
 
         ## good_seeing
         key = 'good_seeing'
-        c = f"{key} = explore the effect of prioritizing achieving at least 1 'good seeing' image " \
+        c = f"**{key}** = explore the effect of prioritizing achieving at least 1 'good seeing' image " \
             f"in the specified bandpasses in each year. These simulations do improve the seeing " \
             f"distributions in the targeted bands, compared to baseline -- this improvement is most " \
             f"visible when comparing the achieved IQ against the standard baseline, within a given year. "
@@ -575,7 +577,7 @@ class FamilyInfo():
 
         ## spiders
         key = 'spiders'
-        c = f"{key} = This example simulation explores rotating the camera so that diffraction " \
+        c = f"**{key}** = This example simulation explores rotating the camera so that diffraction " \
             f"spikes are aligned with the X/Y directions of the CCD, to reduce artifacts in " \
             f"difference imaging."
         self.comment[key] = c
@@ -587,22 +589,23 @@ class FamilyInfo():
         ### DDF families
         # ddf sequences
         key = 'ddf'
-        c = f"{key} = Vary the sequences for DDF fields. The amount of time per DDF field varies " \
+        c = f"**{key}** = Vary the sequences for DDF fields. The amount of time per DDF field varies " \
             f"between some of these simulations."
         self.comment[key] = c
         self.family[key] = ['agnddf_v1.5_10yrs',
                             'descddf_v1.5_10yrs',
-                            # 'daily_ddf_v1.5_10yrs',
+                            'daily_ddf_v1.5_10yrs',
                             'baseline_v1.5_10yrs']
-        self.nicknames[key] = ['AGN sequences', 'DESC sequences',
-                               # 'Daily sequences',
+        self.nicknames[key] = ['AGN sequences',
+                               'DESC sequences',
+                               'Daily sequences',
                                'Baseline']
         self.family_baseline[key] = 'baseline_v1.5_10yrs'
         self.family_version[key] = '1.5'
 
         ### DDF dithers
         key = 'ddf_dithers'
-        c = f"{key} = Vary the translational dither offsets in the DDFs, from 0 to 2.0 degrees. " \
+        c = f"**{key}** = Vary the translational dither offsets in the DDFs, from 0 to 2.0 degrees. " \
             f"Smaller dithers will help the overall depth and uniformity, but larger dithers may be " \
             f"needed for calibration."
         self.comment[key] = c
@@ -626,7 +629,7 @@ class FamilyInfo():
         self.family_version[key] = '1.7'
 
         key = 'euclid_dithers'
-        c = f"{key} = vary the translational dither offsets to fill in the Euclid DDF footprint, as the " \
+        c = f"**{key}** = vary the translational dither offsets to fill in the Euclid DDF footprint, as the " \
             f"Euclid field is a double pointing for Rubin. These simulation vary the spatial dither both " \
             f"towards the second pointing and perpendicular to the second pointing. The perpendicular " \
             f"dithering is relatively small (and symmetric 'up' and 'down'). The dithering along the " \
@@ -648,7 +651,7 @@ class FamilyInfo():
 
         ## V1.6 potential schedulers (v16)
         key = 'potential_schedulers'
-        c = f"{key} = A series of simulations where we vary *multiple* survey strategies at once, " \
+        c = f"**{key}** = A series of simulations where we vary *multiple* survey strategies at once, " \
             "trying to combine the survey strategies that seemed useful to us (at the time anyway) to " \
             "reach a particular science goal. These simulations are like cross-sections of the families, " \
             "using bits and pieces to try to reach goals, rather than explore the impact of the various " \
@@ -691,7 +694,7 @@ class FamilyInfo():
         """
         ## filtercadence
         key = 'even_filters'
-        c = f"{key} = choose to observe in bluer bandpasses even when the moon is full. This was the first " \
+        c = f"**{key}** = choose to observe in bluer bandpasses even when the moon is full. This was the first " \
             f"round of simulations to investigate this effect - see also the 'cadence_drive' family. "
         self.family[key] = ['even_filters_alt_g_v1.6_10yrs',
                                   'even_filters_altv1.6_10yrs',
@@ -742,7 +745,24 @@ class FamilyInfo():
         # Read in the CSV file containing the summary stat information (
         self.summaries = pd.read_csv(csv_file, index_col=0)
 
+    def list_of_families(self):
+        """Print a list of the simulation groups under consideration, as of this time. """
+        # The families
+        total = 0
+        displaystring = ''
+        family_list = []
+        for k in self.family:
+            if k == 'version_baselines':
+                continue
+            family_list.append(k)
+            displaystring+= f"**{k}**, with {len(self.family[k])} simulations.<br>"
+            total += len(self.family[k])
+        display_markdown(displaystring, raw=True)
+        print(f'For {total} simulations in all.')
+        return family_list
+
     def family_info(self, f, normalized=False):
+        """Print some summary information about the family and return a high-level set of metrics."""
         r = self.family_version[f]
         d = pd.DataFrame(self.summaries[tablemetrics].loc[self.family[f]])
         if normalized:
