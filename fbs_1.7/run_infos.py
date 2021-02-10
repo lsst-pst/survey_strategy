@@ -20,6 +20,7 @@ import matplotlib.pyplot as plt
 tablemetrics = ['fOArea fO All visits HealpixSlicer',
                 'Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer',
                 # 'Nstars_no_crowding  y HealpixSlicer',
+                'Nvisits All',
                 'fONv MedianNvis fO All visits HealpixSlicer',
                 'Median NVisits u band HealpixSlicer',
                 'Median NVisits g band HealpixSlicer',
@@ -30,6 +31,7 @@ tablemetrics = ['fOArea fO All visits HealpixSlicer',
 tablenames = ['Area with >825 visits/pointing',
               'Unextincted area i>25.9',
               # 'Nstars y band (no crowding)',
+              'Nvisits total',
               'Median Nvisits over best 18k',
               'Median Nvis u band',
               'Median Nvis g band',
@@ -103,7 +105,7 @@ class FamilyInfo():
             "This demonstrates the impact of 1x30s vs. 2x15s visits (9% more visits). " \
             "The variable exposure run allows the exposure time per visit to vary " \
             "between 20-100 seconds to attempt to hold the single image visit depth roughly constant, " \
-            "but results in slightly fewer visits overall."
+            "but results in slightly fewer visits overall (although more visits per pointing within the WFD)."
         self.comment[key] = c
         self.family[key] = ['baseline_v1.5_10yrs',
                             'baseline_2snaps_v1.5_10yrs',
@@ -138,7 +140,7 @@ class FamilyInfo():
                                'u 1x40s',
                                'u 1x50s',
                                'u 1x60s']
-        self.family_baseline[key] = 'baseline_nexp2_1.7_10yrs'
+        self.family_baseline[key] = 'baseline_nexp2_v1.7_10yrs'
         self.family_version[key] = '1.7'
 
         ## intranight
@@ -194,13 +196,15 @@ class FamilyInfo():
                             'pair_times_22_v1.7_10yrs',
                             'pair_times_33_v1.7_10yrs',
                             'pair_times_44_v1.7_10yrs',
-                            'pair_times_55_v1.7_10yrs']
+                            'pair_times_55_v1.7_10yrs',
+                            'baseline_nexp2_v1.7_10yrs']
         self.nicknames[key] = ['11 minute pairs',
                                '22 minute pairs (baseline)',
                                '33 minute pairs',
                                '44 minute pairs',
-                               '55 minute pairs']
-        self.family_baseline[key] = 'pair_times_22_v1.7_10yrs'
+                               '55 minute pairs',
+                               'Baseline']
+        self.family_baseline[key] = 'baseline_nexp2_v1.7_10yrs'
         self.family_version[key] = '1.7'
 
         ## twilight pairs
@@ -273,7 +277,9 @@ class FamilyInfo():
             "corresponding to the traditional WFD declination limits but no NES or SCP and continuing " \
             "WFD over the GP. Generally we find transients and variable stars metrics favor bluer " \
             "distributions of filters while solar system and galaxy metrics prefer redder " \
-            "distributions of filters (particularly *i* band). "
+            "distributions of filters (particularly *i* band). <br> " \
+            " ** the comparison run for this family is NOT the baseline, but rather one of the filter_dist " \
+            "family, to avoid differences due to the footprint change. "
         self.comment[key] = c
         self.family[key] = ['filterdist_indx1_v1.5_10yrs',
                             'filterdist_indx2_v1.5_10yrs',
@@ -284,7 +290,7 @@ class FamilyInfo():
                             'filterdist_indx7_v1.5_10yrs',
                             'filterdist_indx8_v1.5_10yrs', ]
         self.nicknames[key] = ['Uniform',
-                               'Baseline',
+                               'Baseline-like',
                                'u heavy',
                                'g heavy',
                                'i heavy',
@@ -618,7 +624,8 @@ class FamilyInfo():
                             'ddf_dither0.70_v1.7_10yrs',
                             'ddf_dither1.00_v1.7_10yrs',
                             'ddf_dither1.50_v1.7_10yrs',
-                            'ddf_dither2.00_v1.7_10yrs']
+                            'ddf_dither2.00_v1.7_10yrs',
+                            'baseline_nexp2_v1.7_10yrs']
         self.nicknames[key] = ['0 dither',
                                '0.05 deg dither',
                                '0.10 deg dither',
@@ -626,8 +633,9 @@ class FamilyInfo():
                                '0.70 deg dither',
                                '1.00 deg dither',
                                '1.50 deg dither',
-                               '2.00 deg dither']
-        self.family_baseline[key] = 'ddf_dither0.70_v1.7_10yrs'
+                               '2.00 deg dither',
+                               'Baseline (0.70 deg)']
+        self.family_baseline[key] = 'baseline_nexp2_v1.7_10yrs'
         self.family_version[key] = '1.7'
 
         key = 'euclid_dithers'
@@ -642,13 +650,15 @@ class FamilyInfo():
                             'euclid_dither2_v1.7_10yrs',
                             'euclid_dither3_v1.7_10yrs',
                             'euclid_dither4_v1.7_10yrs',
-                            'euclid_dither5_v1.7_10yrs']
+                            'euclid_dither5_v1.7_10yrs',
+                            'baseline_nexp2_v1.7_10yrs']
         self.nicknames[key] = ['Direct -0.25/+1.0, Perp +/-0.25 (deg)',
                                'Direct -0.1/+1.0, Perp +/-0.25 (deg)',
                                'Direct -0.25/+1.0, Perp +/-0.10 (deg)',
                                'Direct -0.25/+1.5, Perp +/-0.25 (deg)',
-                               'Direct -0.25/+0.75, Perp +/-0.25 (deg']
-        self.family_baseline[key] = 'euclid_dither1_v1.7_10yrs'
+                               'Direct -0.25/+0.75, Perp +/-0.25 (deg',
+                               'Baseline (random)']
+        self.family_baseline[key] = 'baseline_nexp2_v1.7_10yrs'
         self.family_version[key] = '1.7'
 
         ## V1.6 potential schedulers (v16)
@@ -765,7 +775,6 @@ class FamilyInfo():
 
     def family_info(self, f, normalized=False):
         """Print some summary information about the family and return a high-level set of metrics."""
-        r = self.family_version[f]
         d = pd.DataFrame(self.summaries[tablemetrics].loc[self.family[f]])
         if normalized:
             d = d/self.summaries[tablemetrics].loc[self.family_baseline[f]]
@@ -774,6 +783,23 @@ class FamilyInfo():
         display_markdown(self.comment[f], raw=True)
         print(f"Comparison run: {self.family_baseline[f]}")
         return d
+
+    def plot_areaNvis(self, f):
+        metrics = tablemetrics[0:4]
+        names = tablenames[0:4]
+        d = self.summaries[metrics].loc[self.family[f]]
+        nd = norm_df(d, self.family_baseline[f])
+        nd.columns = names
+        plot(nd, normed=True, figsize=(10, 6), style=['k-', 'k:', 'r-', 'r:'])
+        plt.xlim(0, len(nd)-1)
+        xlims = plt.xlim()
+        if plt.ylim()[0] < 0.50:
+            plt.ylim(bottom=0.50)
+        if plt.ylim()[1] > 1.5:
+            plt.ylim(top=1.5)
+        plt.fill_between(xlims, 1.05, plt.ylim()[1], color='g', alpha=0.1)
+        plt.fill_between(xlims, 0.95, plt.ylim()[0], color='r', alpha=0.1)
+
 
 ## Some utility functions to normalize a dataframe or plot it - useful for summar stat comparisons
 
