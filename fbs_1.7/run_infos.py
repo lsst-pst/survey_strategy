@@ -422,6 +422,26 @@ class FamilyInfo():
         self.family_baseline[key] = 'baseline_nexp2_v1.7_10yrs'
         self.family_version[key] = '1.7'
 
+        key = 'alt_rolling'
+        c = f"**{key}** = a family of simulations that add alt-sched like nightly variations between " \
+            f"the northern and southern portions of the sky. For some members of the family, a 2-band " \
+            f"rolling cadence is also included (if 'roll' in the simulation name). Note that ALL of " \
+            f"these footprints are a shifted WFD - extended N/S and using dust extinction to delineate " \
+            f"the galactic plane. Few visits are placed into the GP or the NES or SCP. <br>" \
+            f"The baseline for this run is tricky to pick; the standard baseline is a very different " \
+            f"footprint, yet all runs in this family either add rolling OR add the alt-sched N/S " \
+            f"modulation. For purposes of identifying the effects of the alt-sched algorithm, the run " \
+            f"without alt-sched is chosen as the baseline.<br>"
+        self.comment[key] = c
+        self.family[key] = ['alt_dust_v1.5_10yrs',
+                                    'alt_roll_mod2_dust_sdf_0.20_v1.5_10yrs',
+                                    'roll_mod2_dust_sdf_0.20_v1.5_10yrs']
+        self.nicknames[key] = ['Alt-sched modulation, no rolling',
+                               'Alt-sched modulation, plus rolling',
+                               'Standard sched, plus rolling']
+        self.family_baseline[key] = 'roll_mod2_dust_sdf_0.20_v1.5_10yrs'
+        self.family_version[key] = '1.5'
+
         ## rolling
         key = 'rolling'
         c = f"**{key}** = Add a rolling cadence, where some parts of the sky receive a higher number " \
@@ -714,39 +734,27 @@ class FamilyInfo():
                                   'even_filtersv1.6_10yrs',
                                   'baseline_nexp1_v1.6_10yrs'
                                   ]
-        self.nicknames[key] = []
+        self.nicknames[key] = self.family[key]
         self.family_baseline[key] = 'baseline_nexp1_v1.6_10yrs'
         self.family_version[key] = '1.5'
         
-        self.comment['greedy'] = ''
+        self.comment['greedy'] = 'greedy = look at the impact of changing the `greedy` visits during 
+                                twilight to exclude the ecliptic. This should push all ecliptic visits 
+                                into pairs. This did not make a significant difference, and now we have 
+                                simulations that actually program pairs during twilight. '
         self.family['greedy'] = ['greedy_footprint_v1.5_10yrs',
                             'baseline_v1.5_10yrs']
         self.nicknames['greedy'] = ['greedy', 'baseline']
         self.family_baseline['greedy'] = 'baseline_v1.5_10yrs'
         self.family_version['greedy'] = '1.5'
         
-        self.comment['u60'] = ''
+        self.comment['u60'] = 'u60 = simulation extending u band visits to 60s but not doubling the number 
+                                of visits. This was pretty disastrous for transients. Replaced by u_long.'
         self.family['u60'] = ['u60_v1.5_10yrs',
                          'baseline_v1.5_10yrs']
         self.nicknames['u60'] = ['u60 fewer visits', 'baseline']
         self.family_baseline['u60'] = 'baseline_v1.5_10yrs'
-        self.family_version['u60'] = '1.5'
-        
-        self.comment['var_expt'] = ''
-        self.family['var_expt'] = ['var_expt_v1.5_10yrs',
-                              'baseline_v1.5_10yrs']
-        self.nicknames['var_expt'] = ['variable exposures', '1x30s']
-        self.family_baseline['var_expt'] = ['baseline_v1.5_10yrs']
-        self.family_version['1.5'] = '1.5'
-        
-        self.comment['alt_dust'] = ''
-        self.family['alt_dust'] = ['alt_dust_v1.5_10yrs',
-                              'alt_roll_mod2_dust_sdf_0.20_v1.5_10yrs',
-                              'bulges_bs_v1.5_10yrs',
-                              'baseline_v1.5_10yrs']
-        self.nicknames['alt_dust'] = []
-        self.family_baseline['alt_dust'] = 'bulges_bs_v1.5_10yrs'
-        self.family_version['alt_dust'] = '1.5'
+        self.family_version['u60'] = '1.5'        
         """
 
     def read_summary_csv(self, csv_file='all_summaries_2021_02_08.csv'):
