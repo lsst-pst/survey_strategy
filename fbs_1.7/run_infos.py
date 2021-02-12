@@ -854,7 +854,7 @@ def norm_df(df, norm_run,
     out_df[cols] = 1 + (out_df[cols] - out_df[cols].loc[norm_run]) / out_df[cols].loc[norm_run]
     return out_df
 
-def plot(df, normed=True, style=None, figsize=(10, 5), run_nicknames=None):
+def plot(df, normed=True, style=None, figsize=(10, 6), run_nicknames=None):
     """Plot a DataFrame of metric values.
 
     Parameters
@@ -883,5 +883,45 @@ def plot(df, normed=True, style=None, figsize=(10, 5), run_nicknames=None):
         xnames = df.index.values
     xi = np.arange(len(xnames))
     plt.xticks(xi, xnames, rotation=90, fontsize='large')
+    plt.xlim(0, len(xnames)-1)
     plt.grid('k:', alpha=0.3)
     plt.tight_layout()
+
+
+def fO_cutoff(df, norm_run):
+    """Calculate the Y value for a cutoff line where the fO metric fails SRD req.
+    This location changes according to the scaling from the baseline for the family.
+    """
+    srd_fO_cutoff = df['fONv MedianNvis fO All visits HealpixSlicer'].loc[norm_run]
+    srd_fO_cutoff = 825 / srd_fO_cutoff
+    return srd_fO_cutoff
+
+
+def special_family_plots(f, families):
+    if f == 'footprint':
+        # for footprints, let's add shading for similar kinds of footprints
+        ylims = plt.ylim()
+        plt.fill_between([0, 0.5], ylims[0], ylims[1], alpha=0.1, color='olive')
+        plt.fill_between([0.5, 6.5], ylims[0], ylims[1], alpha=0.1, color='mistyrose')
+        plt.fill_between([6.5, 9.5], ylims[0], ylims[1], alpha=0.1, color='yellowgreen')
+        plt.fill_between([9.5, 18], ylims[0], ylims[1], alpha=0.1, color='darkorange')
+    if f == 'rolling':
+        ylims = plt.ylim()
+        plt.fill_between([0, 0.5], ylims[0], ylims[1], alpha=0.1, color='olive')
+        plt.fill_between([0.5, 6.5], ylims[0], ylims[1], alpha=0.1, color='mistyrose')
+        plt.fill_between([6.5, 12.5], ylims[0], ylims[1], alpha=0.1, color='darkorange')
+        plt.fill_between([12.5, 18.5], ylims[0], ylims[1], alpha=0.1, color='lightgreen')
+        plt.fill_between([18.5, 25], ylims[0], ylims[1], alpha=0.1, color='darkgreen')
+    if f == 'potential schedulers':
+        ylims = plt.ylim()
+        # shade the nexp2 runs
+        xnames = families.family[f]
+        nexp2 = np.zeros(len(xnames))
+        for i, x in enumerate(xnames):
+            if 'nexp2' in x:
+                nexp2[i] = 1
+        shadesx1 = np.where(nexp2 == 1)[0] - 0.5
+        shadesx2 = np.where(nexp2 == 1)[0] + 0.5
+        for x1, x2 in zip(shadesx1, shadesx2):
+            plt.fill_between([x1, x2], ylims[0], ylims[1], alpha=0.1, color='olive')
+    return
