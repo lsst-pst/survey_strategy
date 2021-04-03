@@ -28,11 +28,11 @@ tablemetrics = ['fOArea fO All visits HealpixSlicer',
                 'Median NVisits i band HealpixSlicer',
                 'Median NVisits z band HealpixSlicer',
                 'Median NVisits y band HealpixSlicer', ]
-tablenames = ['Area with >825 visits/pointing',
+tablenames = ['Area with >825 visits/pointing (fO_Area)',
               'Unextincted area i>25.9',
               # 'Nstars y band (no crowding)',
               'Nvisits total',
-              'Median Nvisits over best 18k',
+              'Median Nvis over top 18k (fO_Nv Med)',
               'Median Nvis u band',
               'Median Nvis g band',
               'Median Nvis r band',
@@ -54,7 +54,8 @@ class FamilyInfo():
         # Overall baseline runs in each release.
         self.baselines_versions = {'1.5': 'baseline_v1.5_10yrs',  # 1x30s visits
                                    '1.6': 'baseline_nexp2_v1.6_10yrs',  # 2x15s visits
-                                   '1.7': 'baseline_nexp2_v1.7_10yrs'  # 2x15s visits
+                                   '1.7': 'baseline_nexp2_v1.7_10yrs',  # 2x15s visits
+                                   '1.7.1': 'baseline_nexp2_v1.7.1_10yrs', # 2x15s visits
                                    }
 
         # The simulations included in the survey strategy grouping
@@ -89,14 +90,16 @@ class FamilyInfo():
                             'baseline_nexp2_v1.6_10yrs',
                             'baseline_nexp1_v1.6_10yrs',
                             'baseline_nexp2_v1.7_10yrs',
-                            'baseline_nexp1_v1.7_10yrs']
+                            'baseline_nexp1_v1.7_10yrs',
+                            'baseline_nexp2_v1.7.1_10yrs']
         self.nicknames[key] = ['Baseline 2x15s v1.5',
                                'Baseline 1x30s v1.5',
                                'Baseline 2x15s v1.6',
                                'Baseline 1x30s v1.6',
                                'Baseline 2x15 v1.7',
-                               'Baseline 1x30s v1.7']
-        self.family_baseline[key] = 'baseline_nexp1_v1.7_10yrs'
+                               'Baseline 1x30s v1.7',
+                               'Baseline 2x15s v1.7.1']
+        self.family_baseline[key] = 'baseline_nexp2_v1.7_10yrs'
         self.family_version[key] = 'All'
 
         ### visit_time
@@ -514,10 +517,12 @@ class FamilyInfo():
         ## twilight_neo
         key = 'twilight_neo'
         c = f"**{key}** = explore the impact of adding a twilight NEO survey, operating on various " \
-            f"timescales and thus requiring varying fraction of survey time. These twilight NEO surveys " \
-            f"replace the set initially released in  v1.5, improving the twilight NEO mini-survey " \
+            f"timescales and thus requiring varying fraction of survey time. The v1.7 twilight NEO runs " \
+            f"replace the set initially released in v1.5, improving the twilight NEO mini-survey " \
             f"performance for NEOs by restricting visits to low solar " \
-            f"elongations. Twilight NEO visits are 1 second long, in r,i, and z filters."
+            f"elongations. Twilight NEO visits are 1 second long, in r,i, and z filters. These visits are " \
+            f"acquired in both morning and evening twilight, in sets of triplets separated by about " \
+            f"3 minutes."
         self.comment[key] = c
         self.family[key] = ['twi_neo_pattern1_v1.7_10yrs',
                             'twi_neo_pattern2_v1.7_10yrs',
@@ -723,6 +728,41 @@ class FamilyInfo():
         self.family_baseline[key] = 'baseline_nexp1_v1.6_10yrs'
         self.family_version[key] = '1.6'
 
+        key = 'new_rolling'
+        c = f"**{key}** = a family with more emphasis on the galactic plane, in various survey footprints, " \
+            f"and more specifically including rolling cadence in these variations in order to explore the " \
+            f"impact on transients in the galactic plane. This family also uses a rolling cadence " \
+            f"algorithm that is improved beyond the rolling cadence in the FBS 1.7 'rolling'. " \
+            f"The new rolling cadence algorithms are intended to suppress revisits within the same " \
+            f"night and thus more effectively decrease the length of inter-night gaps between visits." \
+            f"Because this family also includes small changes in the throughputs, the depths in some " \
+            f"bandpasses, particularly u band, have changed. Metrics should be compared against the " \
+            f"baseline_v1.7.1 baseline in general, and against the (included) non-rolling variant when " \
+            f"evaluating the particular impact of rolling cadence (rather than footprint variations). "
+        self.comment[key] = c
+        self.family[key] = ['baseline_nexp2_v1.7.1_10yrs',
+                            'rolling_nm_scale0.90_nslice2_fpw0.9_nrw1.0v1.7_10yrs',
+                            'rolling_nm_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs',
+                            'six_stripe_scale0.90_nslice6_fpw0.9_nrw0.0v1.7_10yrs',
+                            'full_disk_v1.7_10yrs',
+                            'full_disk_scale0.90_nslice2_fpw0.9_nrw1.0v1.7_10yrs',
+                            'full_disk_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs',
+                            'footprint_6_v1.7.1_10yrs',
+                            'bulge_roll_scale0.90_nslice2_fpw0.9_nrw1.0v1.7_10yrs',
+                            'bulge_roll_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs']
+        self.nicknames[key] = ['Traditional footprint, no rolling',
+                               'Traditional footprint, 2 band rolling',
+                               'Traditional footprint, 3 band rolling',
+                               'Traditional footprint, 6 band rolling',
+                               'WFD stripe -62<Dec<4.5, no rolling',
+                               'WFD stripe -62<Dec<4.5, 2 band rolling',
+                               'WFD stripe -62<Dec<4.5, 3 band rolling',
+                               'Dust limit WFD, bulge+bridge, no rolling',
+                               'Dust limit WFD, bulge+bridge, 2 band rolling',
+                               'Dust limit WFD, bulge+bridge, 3 bnad rolling']
+        self.family_baseline[key] = 'baseline_nexp2_v1.7.1_10yrs'
+        self.family_version[key] = '1.7.1'
+
         """
         ## filtercadence
         key = 'even_filters'
@@ -757,7 +797,7 @@ class FamilyInfo():
         self.family_version['u60'] = '1.5'        
         """
 
-    def read_summary_csv(self, csv_file='all_summaries_2021_02_08.csv'):
+    def read_summary_csv(self, csv_file='all_summaries_2021_02_09.csv'):
         """Read the summary stat csv file from disk.
         This file can be downloaded from:
         https://epyc.astro.washington.edu/~lynnej/opsim_downloads/all_summaries_2021_02_08.csv
@@ -898,6 +938,8 @@ def fO_cutoff(df, norm_run):
 
 
 def special_family_plots(f, families):
+    # These add shading over certain X ranges, that corresponds to broad-scale changes in the
+    # survey strategy for each of the families included. There are only a few where this is relevant.
     if f == 'footprint':
         # for footprints, let's add shading for similar kinds of footprints
         ylims = plt.ylim()
