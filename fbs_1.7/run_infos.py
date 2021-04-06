@@ -797,7 +797,7 @@ class FamilyInfo():
         self.family_version['u60'] = '1.5'        
         """
 
-    def read_summary_csv(self, csv_file='all_summaries_2021_02_09.csv'):
+    def read_summary_csv(self, csv_file='all_summaries_2021_04_02.csv'):
         """Read the summary stat csv file from disk.
         This file can be downloaded from:
         https://epyc.astro.washington.edu/~lynnej/opsim_downloads/all_summaries_2021_02_08.csv
