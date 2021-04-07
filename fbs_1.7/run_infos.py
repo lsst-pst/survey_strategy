@@ -49,7 +49,7 @@ class FamilyInfo():
     def __init__(self):
         """Where we set all the run information."""
         # Currently relevant runs from these releases will be included below
-        self.sim_versions = ['1.5', '1.6', '1.7']
+        self.sim_versions = ['1.5', '1.6', '1.7', '1.7.1']
 
         # Overall baseline runs in each release.
         self.baselines_versions = {'1.5': 'baseline_v1.5_10yrs',  # 1x30s visits
@@ -797,7 +797,7 @@ class FamilyInfo():
         self.family_version['u60'] = '1.5'        
         """
 
-    def read_summary_csv(self, csv_file='all_summaries_2021_04_02.csv'):
+    def read_summary_csv(self, csv_file='all_summaries_2021_04_07.csv'):
         """Read the summary stat csv file from disk.
         This file can be downloaded from:
         https://epyc.astro.washington.edu/~lynnej/opsim_downloads/all_summaries_2021_02_08.csv
