@@ -954,7 +954,7 @@ def special_family_plots(f, families):
         plt.fill_between([6.5, 12.5], ylims[0], ylims[1], alpha=0.1, color='darkorange')
         plt.fill_between([12.5, 18.5], ylims[0], ylims[1], alpha=0.1, color='lightgreen')
         plt.fill_between([18.5, 25], ylims[0], ylims[1], alpha=0.1, color='darkgreen')
-    if f == 'potential schedulers':
+    if f == 'potential_schedulers':
         ylims = plt.ylim()
         # shade the nexp2 runs
         xnames = families.family[f]
