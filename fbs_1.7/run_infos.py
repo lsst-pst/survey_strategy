@@ -743,23 +743,23 @@ class FamilyInfo():
         self.family[key] = ['baseline_nexp2_v1.7.1_10yrs',
                             'rolling_nm_scale0.90_nslice2_fpw0.9_nrw1.0v1.7_10yrs',
                             'rolling_nm_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs',
-                            'six_stripe_scale0.90_nslice6_fpw0.9_nrw0.0v1.7_10yrs',
                             'full_disk_v1.7_10yrs',
                             'full_disk_scale0.90_nslice2_fpw0.9_nrw1.0v1.7_10yrs',
                             'full_disk_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs',
                             'footprint_6_v1.7.1_10yrs',
                             'bulge_roll_scale0.90_nslice2_fpw0.9_nrw1.0v1.7_10yrs',
-                            'bulge_roll_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs']
+                            'bulge_roll_scale0.90_nslice3_fpw0.9_nrw1.0v1.7_10yrs',
+                            'six_stripe_scale0.90_nslice6_fpw0.9_nrw0.0v1.7_10yrs']
         self.nicknames[key] = ['Traditional footprint, no rolling',
                                'Traditional footprint, 2 band rolling',
                                'Traditional footprint, 3 band rolling',
-                               'Traditional footprint, 6 band rolling',
                                'WFD stripe -62<Dec<4.5, no rolling',
                                'WFD stripe -62<Dec<4.5, 2 band rolling',
                                'WFD stripe -62<Dec<4.5, 3 band rolling',
                                'Dust limit WFD, bulge+bridge, no rolling',
                                'Dust limit WFD, bulge+bridge, 2 band rolling',
-                               'Dust limit WFD, bulge+bridge, 3 bnad rolling']
+                               'Dust limit WFD, bulge+bridge, 3 bnad rolling',
+                               'Dust limit WFD, bulge+bridge, 6 band rolling']
         self.family_baseline[key] = 'baseline_nexp2_v1.7.1_10yrs'
         self.family_version[key] = '1.7.1'
 
