@@ -808,17 +808,18 @@ class FamilyInfo():
     def list_of_families(self):
         """Print a list of the simulation groups under consideration, as of this time. """
         # The families
-        total = 0
         displaystring = ''
         family_list = []
+        simlist = []
         for k in self.family:
             if k == 'version_baselines':
                 continue
             family_list.append(k)
             displaystring+= f"**{k}**, with {len(self.family[k])} simulations.<br>"
-            total += len(self.family[k])
+            simlist += self.family[k]
         display_markdown(displaystring, raw=True)
-        print(f'For {total} simulations in all.')
+        simlist = set(simlist)
+        print(f'For {len(simlist)} unique simulations in all.')
         return family_list
 
     def family_info(self, f, normalized=False):
