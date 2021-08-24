@@ -61,9 +61,8 @@ invert_cols['srd'] = ['Median Parallax Error (18k) Parallax Error @ 22.4 All vis
                       'Median Proper Motion Error (18k) Proper Motion Error @ 24.0 All visits HealpixSlicer', ]
 styles['srd'] = ['k-', 'c-', 'c:', 'r-', 'r:']
 
-metrics['Nvis'] = ['Nvisits All',
-                   'Nvisits Long Exp',
-                   'Nvisits Long WFD',
+metrics['Nvis'] = ['Nvisits All props',
+                   'Nvisits WFD',
                    'OpenShutterFraction All visits',
                    'Mean NVisits u band HealpixSlicer',
                    'Mean NVisits g band HealpixSlicer',
@@ -72,7 +71,7 @@ metrics['Nvis'] = ['Nvisits All',
                    'Mean NVisits z band HealpixSlicer',
                    'Mean NVisits y band HealpixSlicer',
                    ]
-short_names['Nvis'] = ['Nvisits (all)', 'Nvisits (long exp)', 'Nvisits (long exp WFD)',
+short_names['Nvis'] = ['Nvisits (all)',  'Nvisits (WFD)',
                        'OpenShutterFraction',
                        'Mean Nvisits u', 'Mean Nvisits g', 'Mean Nvisits r',
                        'Mean Nvisits i', 'Mean Nvisits z', 'Mean Nvisits y', ]
@@ -109,17 +108,15 @@ styles['cadence'] = ['b:', 'c--', 'r--', 'k--', ]  # 'g-.']
 metrics['tvs'] = ['Mean PeriodDetection P_0.5_Mag_21_Amp_0.05-0.1-1 HealpixSlicer',
                   # 'Mean PeriodDetection P_1.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer',
                   # 'Mean PeriodDetection P_2.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer',
-                  'Fast Microlensing  UserPointsSlicer',
+                  'Total detected Fast Microlensing  UserPointsSlicer',
                   # 'Slow Microlensing  UserPointsSlicer',
                   # 'KN_Detected  UserPointsSlicer',
                   # 'KN_PrePeak  UserPointsSlicer',
                   # 'KN_WellSampled  UserPointsSlicer',
                   # 'TDEsPopMetric__prepeak  UserPointsSlicer',
                   # 'TDEsPopMetric__some_color  UserPointsSlicer',
-                  'TDEsPopMetric__some_color_pu  UserPointsSlicer',
-                  # 'SNIa_Detected non-DD UserPointsSlicer',
-                  'SNIa_PrePeak non-DD UserPointsSlicer',
-                  'SNIa_WellSampled non-DD UserPointsSlicer',
+                  'Total detected TDEsPopMetric__some_color_pu  UserPointsSlicer',
+                  'Total detected SNNSNMetric_nSN  HealpixSlicer',
                   'N stars to Precision 0.20  r HealpixSlicer',
                   'N stars to Precision 0.20  y HealpixSlicer']
 short_names['tvs'] = ['Mean PeriodDetection P=0.5 days',
@@ -130,8 +127,7 @@ short_names['tvs'] = ['Mean PeriodDetection P=0.5 days',
                       # 'KN Detected', 'KN PrePeak', 'KN WellSampled',
                       # 'TDE PrePeak', 'TDE AnyColor',
                       'TDE AnyColor + u',
-                      # 'SNIa Detected',
-                      'SNIa PrePeak', 'SNIa WellSampled',
+                      'SNIa',
                       'Nstars Precision<0.2mag r', 'Nstars Precision<0.2mag y']
 styles['tvs'] = ['k-', 'c-', 'b:', 'g:', 'g--', 'm--', 'r--']
 
@@ -141,8 +137,7 @@ metrics['descWFD'] = ['Median ExgalM5_with_cuts i band non-DD year 10 HealpixSli
                       '3x2ptFoM ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer',
                       '3x2ptFoM_simple ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer',
                       'N Galaxies (all) DepthLimitedNumGalaxiesMetric i band galaxies non-DD HealpixSlicer',
-                      #'Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer',
-                      'Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime, filter i band non-DD HealpixSlicer'
+                      'Mean WeakLensingNvisits i band non-DD HealpixSlicer'
                       ]
 short_names['descWFD'] = ['Median coaddedM5 i band',
                           'RMS coaddedM5 i band',
