@@ -419,91 +419,6 @@ def get_family_descriptions(family_source=None):
     return families
 
 
-def old_describe_families(
-    family_source=None,
-    families=slice(None),
-    metric_summary=None,
-    table_metric_set=None,
-    plot_metric_set=None,
-):
-    """Display (in a jupyter on IPython notebook) family descirptions
-
-    Parameters
-    ----------
-    family_source : `str`
-        File name or URL for the json file from which to load the
-        family descriptinos.  If it is set to `None`, the data is
-        loaded from the URL specified by the
-        `archive.FAMILY_SOURCE` constant.
-    families : iterable ['str']
-        A list of family name for which to display descriptions.
-    metric_summary : `pandas.DataFrame` or None
-        If not none, source from which to report summary metrics.
-
-    """
-    family_source = FAMILY_SOURCE if family_source is None else family_source
-    family_df = get_family_descriptions(family_source).loc[families, :]
-
-    family_runs = family_df.explode(["run", "brief", "filepath"]).loc[
-        :, ["run", "brief", "filepath"]
-    ]
-
-    # If there is just one run in the family, we might
-    # get a pd.Series back rather than a pd.DataFrame.
-    # Make sure we have a DataFrame
-    if isinstance(family_runs, pd.Series):
-        family_runs = pd.DataFrame([family_runs])
-
-    for family_name, family in family_df.iterrows():
-        # Use awkward appending of each line to string rather
-        # than a tripple quote to keep flake8 from complaining
-        # about blanks at the end of lines, which are
-        # meaningful in markdown (and desired here).
-        description = "---\n"
-        description += f"{family.description}  \n"
-        description += f"**version**: {family.version}  \n"
-        description += "**runs**:  \n"
-
-        these_runs = family_runs.loc[[family_name], :]
-        if metric_summary is not None:
-            if table_metric_set is not None:
-                table_metric_summary = metric_summary.rename(
-                    columns=table_metric_set["short_name"]
-                )
-            else:
-                table_metric_summary = metric_summary
-            these_runs = these_runs.join(
-                table_metric_summary, on="run", how="left"
-            )
-
-        IPython.display.display_markdown(description, raw=True)
-        with pd.option_context("display.max_colwidth", 0):
-            IPython.display.display(
-                IPython.display.HTML(
-                    these_runs.set_index("run")
-                    .to_html()
-                    .replace("\\n", "<br>")
-                )
-            )
-
-    if plot_metric_set is not None:
-        baseline_run = get_family_descriptions(family_source).loc[
-            "baseline", "run"
-        ]
-        these_runs = sum(
-            family_df["run"],
-            [baseline_run],
-        )
-        fig, ax = maf.plot_run_metric(
-            metric_summary.loc[these_runs, :],
-            metric_set=plot_metric_set,
-            baseline_run=baseline_run,
-            vertical_quantity="value",
-            horizontal_quantity="run",
-        )
-        return fig, ax
-
-
 def describe_families(
     families,
     summary=None,
@@ -515,16 +430,28 @@ def describe_families(
 
     Parameters
     ----------
-    family_source : `str`
-        File name or URL for the json file from which to load the
-        family descriptinos.  If it is set to `None`, the data is
-        loaded from the URL specified by the
-        `archive.FAMILY_SOURCE` constant.
-    families : iterable ['str']
-        A list of family name for which to display descriptions.
-    metric_summary : `pandas.DataFrame` or None
-        If not none, source from which to report summary metrics.
+    families : `pandas.DataFrame`
+        Data family descriptions as returned by get_family_descriptions.
+    summary : `pandas.DataFrame`
+        Summary metrics for each run, as returned by get_metric_summaries.
+    table_metric_set : `pandas.DataFrame`
+        Metadata on metrics to be included in the table, with columns and
+        index as returned by get_metric_sets. None if no metrics should be
+        included in the table.
+    plot_metric_set : `pandas.DataFrame`
+        Metadata on metrics to be included in the plot, with columns and
+        index as returned by get_metric_sets. None if no plot should be
+        made.
+    baseline_run : `str`
+        The name of the run to use to normalize metrics in the plot.
+        None if normalization should be skipped.
 
+    Returns
+    -------
+    fig : `matplotlib.figure.Figure`
+        The plot figure.
+    ax : `matplotilb.axes.Axes`
+        The plot axes.
     """
     family_runs = families.explode(["run", "brief", "filepath"]).loc[
         :, ["run", "brief", "filepath"]
@@ -558,8 +485,11 @@ def describe_families(
             these_runs = these_runs.join(
                 table_metric_summary, on="run", how="left"
             )
-            if len(these_runs.columns)>5 and 'filepath' in these_runs.columns:
-                these_runs = these_runs.drop(columns=['filepath'])
+            if (
+                len(these_runs.columns) > 5
+                and "filepath" in these_runs.columns
+            ):
+                these_runs = these_runs.drop(columns=["filepath"])
 
         IPython.display.display_markdown(description, raw=True)
         with pd.option_context("display.max_colwidth", 0):
