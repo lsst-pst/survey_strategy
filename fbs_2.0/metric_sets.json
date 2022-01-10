@@ -1,0 +1,1028 @@
+[
+    {
+        "metric set":"srd",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"fONv MedianNvis",
+        "short_names_norm":"fONv MedianNvis",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"srd",
+        "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All visits HealpixSlicer",
+        "short_name":"Med Parallax Error @22.4",
+        "short_names_norm":"1 \/ Med Parallax Error @22.4",
+        "style":"c-",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"srd",
+        "metric":"Median Parallax Error (18k) Parallax Error @ 24.0 All visits HealpixSlicer",
+        "short_name":"Med Parallax Error @24.0",
+        "short_names_norm":"1 \/ Med Parallax Error @24.0",
+        "style":"c:",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"srd",
+        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All visits HealpixSlicer",
+        "short_name":"Med PM Error @20.5",
+        "short_names_norm":"1 \/ Med PM Error @20.5",
+        "style":"r-",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"srd",
+        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 24.0 All visits HealpixSlicer",
+        "short_name":"Med PM Error @24.0",
+        "short_names_norm":"1 \/Med PM Error @24.0",
+        "style":"r:",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Nvisits All",
+        "short_name":"Nvisits (all)",
+        "short_names_norm":"Nvisits (all)",
+        "style":"b-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Nvisits Long Exp",
+        "short_name":"Nvisits (long exp)",
+        "short_names_norm":"Nvisits (long exp)",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Nvisits Long WFD",
+        "short_name":"Nvisits (long exp WFD)",
+        "short_names_norm":"Nvisits (long exp WFD)",
+        "style":"r-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"OpenShutterFraction All visits",
+        "short_name":"OpenShutterFraction",
+        "short_names_norm":"OpenShutterFraction",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Mean NVisits u band HealpixSlicer",
+        "short_name":"Mean Nvisits u",
+        "short_names_norm":"Mean Nvisits u",
+        "style":"c:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Mean NVisits g band HealpixSlicer",
+        "short_name":"Mean Nvisits g",
+        "short_names_norm":"Mean Nvisits g",
+        "style":"g:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Mean NVisits r band HealpixSlicer",
+        "short_name":"Mean Nvisits r",
+        "short_names_norm":"Mean Nvisits r",
+        "style":"y:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Mean NVisits i band HealpixSlicer",
+        "short_name":"Mean Nvisits i",
+        "short_names_norm":"Mean Nvisits i",
+        "style":"r:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Mean NVisits z band HealpixSlicer",
+        "short_name":"Mean Nvisits z",
+        "short_names_norm":"Mean Nvisits z",
+        "style":"m:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Nvis",
+        "metric":"Mean NVisits y band HealpixSlicer",
+        "short_name":"Mean Nvisits y",
+        "short_names_norm":"Mean Nvisits y",
+        "style":"k:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"cadence",
+        "metric":"Median Median Intra-Night Gap  HealpixSlicer",
+        "short_name":"Intra-Night Gap",
+        "short_names_norm":"1 \/ Intra-Night Gap",
+        "style":"b:",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"cadence",
+        "metric":"Mean Median Inter-Night Gap u band HealpixSlicer",
+        "short_name":"Inter-Night Gap u",
+        "short_names_norm":"1 \/ Inter-Night Gap u",
+        "style":"c--",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"cadence",
+        "metric":"Mean Median Inter-Night Gap r band HealpixSlicer",
+        "short_name":"Inter-Night Gap r",
+        "short_names_norm":"1 \/ Inter-Night Gap r",
+        "style":"r--",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"cadence",
+        "metric":"Mean Median Inter-Night Gap y band HealpixSlicer",
+        "short_name":"Inter-Night Gap y",
+        "short_names_norm":"1 \/ Inter-Night Gap y",
+        "style":"k--",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"Mean PeriodDetection P_0.5_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
+        "short_name":"Mean PeriodDetection P=0.5 days",
+        "short_names_norm":"Mean PeriodDetection P=0.5 days",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"Fast Microlensing  UserPointsSlicer",
+        "short_name":"Fast microlensing",
+        "short_names_norm":"Fast microlensing",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"TDEsPopMetric__some_color_pu  UserPointsSlicer",
+        "short_name":"TDE AnyColor + u",
+        "short_names_norm":"TDE AnyColor + u",
+        "style":"b:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"SNIa_PrePeak non-DD UserPointsSlicer",
+        "short_name":"SNIa PrePeak",
+        "short_names_norm":"SNIa PrePeak",
+        "style":"g:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"SNIa_WellSampled non-DD UserPointsSlicer",
+        "short_name":"SNIa WellSampled",
+        "short_names_norm":"SNIa WellSampled",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"N stars to Precision 0.20  r HealpixSlicer",
+        "short_name":"Nstars Precision<0.2mag r",
+        "short_names_norm":"Nstars Precision<0.2mag r",
+        "style":"m--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"tvs",
+        "metric":"N stars to Precision 0.20  y HealpixSlicer",
+        "short_name":"Nstars Precision<0.2mag y",
+        "short_names_norm":"Nstars Precision<0.2mag y",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"descWFD",
+        "metric":"Median ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"Median coaddedM5 i band",
+        "short_names_norm":"Median coaddedM5 i band",
+        "style":"b-.",
+        "invert":false,
+        "mag":true
+    },
+    {
+        "metric set":"descWFD",
+        "metric":"Rms ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"RMS coaddedM5 i band",
+        "short_names_norm":"1 \/ RMS coaddedM5 i band",
+        "style":"b:",
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"descWFD",
+        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"Effective survey area",
+        "short_names_norm":"Effective survey area",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"descWFD",
+        "metric":"3x2ptFoM ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"3x2pt FoM",
+        "short_names_norm":"3x2pt FoM",
+        "style":"r-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"descWFD",
+        "metric":"N Galaxies (all) DepthLimitedNumGalaxiesMetric i band galaxies non-DD HealpixSlicer",
+        "short_name":"NGal in exgal footprint",
+        "short_names_norm":"NGal in exgal footprint",
+        "style":"m:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"descWFD",
+        "metric":"Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer",
+        "short_name":"Mean NVisits (WL)",
+        "short_names_norm":"Mean NVisits (WL)",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"galaxies",
+        "metric":"N Galaxies (all) GalaxyCountsMetric_extended i band HealpixSlicer",
+        "short_name":"NGal all sky",
+        "short_names_norm":"NGal all sky",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss PHA H=16.0",
+        "short_name":"Completeness PHA H<16.0",
+        "short_names_norm":"Completeness PHA H<16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss PHA H=22.0",
+        "short_name":"Completeness PHA H<22.0",
+        "short_names_norm":"Completeness PHA H<22.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+        "short_name":"Completeness NEO H<16.0",
+        "short_names_norm":"Completeness NEO H<16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+        "short_name":"Completeness NEO H<22.0",
+        "short_names_norm":"Completeness NEO H<22.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss MBA H=16.0",
+        "short_name":"Completeness MBA H<16.0",
+        "short_names_norm":"Completeness MBA H<16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss MBA H=21.0",
+        "short_name":"Completeness MBA H<21.0",
+        "short_names_norm":"Completeness MBA H<21.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss Trojan H=14.0",
+        "short_name":"Completeness Trojan H<14.0",
+        "short_names_norm":"Completeness Trojan H<14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss Trojan H=18.0",
+        "short_name":"Completeness Trojan H<18.0",
+        "short_names_norm":"Completeness Trojan H<18.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+        "short_name":"Completeness TNO H<6.0",
+        "short_names_norm":"Completeness TNO H<6.0",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso",
+        "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
+        "short_name":"Completeness TNO H<8.0",
+        "short_names_norm":"Completeness TNO H<8.0",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"fONv_med",
+        "short_names_norm":"fONv_med",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer",
+        "short_name":"WL",
+        "short_names_norm":"WL",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3x2ptFoM ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"3x2pt FoM",
+        "short_names_norm":"3x2pt FoM",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"SNIa_PrePeak non-DD UserPointsSlicer",
+        "short_name":"SNIa",
+        "short_names_norm":"SNIa",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"TDEsPopMetric__some_color_pu  UserPointsSlicer",
+        "short_name":"TDE",
+        "short_names_norm":"TDE",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Fast Microlensing  UserPointsSlicer",
+        "short_name":"Fast Microlensing",
+        "short_names_norm":"Fast Microlensing",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All visits HealpixSlicer",
+        "short_name":"Parallax",
+        "short_names_norm":"Parallax",
+        "style":null,
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All visits HealpixSlicer",
+        "short_name":"Proper motion",
+        "short_names_norm":"Proper motion",
+        "style":null,
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"N stars to Precision 0.20  r HealpixSlicer",
+        "short_name":"N Stars",
+        "short_names_norm":"N Stars",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"N Galaxies (all) GalaxyCountsMetric_extended i band HealpixSlicer",
+        "short_name":" N Galaxies",
+        "short_names_norm":" N Galaxies",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+        "short_name":"   NEO, big",
+        "short_names_norm":"   NEO, big",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+        "short_name":"   NEO, small",
+        "short_names_norm":"   NEO, small",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+        "short_name":"TNO, big",
+        "short_names_norm":"TNO, big",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss PHA H=16.0",
+        "short_name":"Completeness PHA H<16.0",
+        "short_names_norm":"Completeness PHA H<16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss PHA H=22.0",
+        "short_name":"Completeness PHA H<22.0",
+        "short_names_norm":"Completeness PHA H<22.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+        "short_name":"Completeness NEO H<16.0",
+        "short_names_norm":"Completeness NEO H<16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+        "short_name":"Completeness NEO H<22.0",
+        "short_names_norm":"Completeness NEO H<22.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss MBA H=16.0",
+        "short_name":"Completeness MBA H<16.0",
+        "short_names_norm":"Completeness MBA H<16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss MBA H=21.0",
+        "short_name":"Completeness MBA H<21.0",
+        "short_names_norm":"Completeness MBA H<21.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss Trojan H=14.0",
+        "short_name":"Completeness Trojan H<14.0",
+        "short_names_norm":"Completeness Trojan H<14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss Trojan H=18.0",
+        "short_name":"Completeness Trojan H<18.0",
+        "short_names_norm":"Completeness Trojan H<18.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+        "short_name":"Completeness TNO H<6.0",
+        "short_names_norm":"Completeness TNO H<6.0",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc",
+        "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
+        "short_name":"Completeness TNO H<8.0",
+        "short_names_norm":"Completeness TNO H<8.0",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion PHA H=16.0",
+        "short_name":"Fraction LC Inversion PHA H=16.0",
+        "short_names_norm":"Fraction LC Inversion PHA H=16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion PHA H=19.0",
+        "short_name":"Fraction LC Inversion PHA H=19.0",
+        "short_names_norm":"Fraction LC Inversion PHA H=19.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion NEO H=16.0",
+        "short_name":"Fraction LC Inversion NEO H=16.0",
+        "short_names_norm":"Fraction LC Inversion NEO H=16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion NEO H=19.0",
+        "short_name":"Fraction LC Inversion NEO H=19.0",
+        "short_names_norm":"Fraction LC Inversion NEO H=19.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion MBA H=16.0",
+        "short_name":"Fraction LC Inversion MBA H=16.0",
+        "short_names_norm":"Fraction LC Inversion MBA H=16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion MBA H=18.0",
+        "short_name":"Fraction LC Inversion MBA H=18.0",
+        "short_names_norm":"Fraction LC Inversion MBA H=18.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion Trojan H=14.0",
+        "short_name":"Fraction LC Inversion Trojan H=14.0",
+        "short_names_norm":"Fraction LC Inversion Trojan H=14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Lightcurve Inversion",
+        "metric":"FractionPop Lightcurve Inversion Trojan H=15.0",
+        "short_name":"Fraction LC Inversion Trojan H=15.0",
+        "short_names_norm":"Fraction LC Inversion Trojan H=15.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y PHA H=16.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) PHA H=16.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) PHA H=16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y PHA H=19.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) PHA H=19.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) PHA H=19.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y NEO H=16.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) NEO H=16.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) NEO H=16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y NEO H=19.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) NEO H=19.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) NEO H=19.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y MBA H=16.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) MBA H=16.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) MBA H=16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y MBA H=18.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) MBA H=18.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) MBA H=18.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y Trojan H=14.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) Trojan H=14.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) Trojan H=14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 2 of g, r or i, z or y Trojan H=15.0",
+        "short_name":"Fraction 3 of g and (r or i) and (z or y) Trojan H=15.0",
+        "short_names_norm":"Fraction 3 of g and (r or i) and (z or y) Trojan H=15.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 3 filters TNO H=6.0",
+        "short_name":"Fraction 3 filters TNO H=6.0",
+        "short_names_norm":"Fraction 3 filters TNO H=6.0",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 3 filters TNO H=7.0",
+        "short_name":"Fraction 3 filters TNO H=7.0",
+        "short_names_norm":"Fraction 3 filters TNO H=7.0",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy PHA H=16.0",
+        "short_name":"Fraction 4 of grizy PHA H=16.0",
+        "short_names_norm":"Fraction 4 of grizy PHA H=16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy PHA H=19.0",
+        "short_name":"Fraction 4 of grizy PHA H=19.0",
+        "short_names_norm":"Fraction 4 of grizy PHA H=19.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy NEO H=16.0",
+        "short_name":"Fraction 4 of grizy NEO H=16.0",
+        "short_names_norm":"Fraction 4 of grizy NEO H=16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy NEO H=19.0",
+        "short_name":"Fraction 4 of grizy NEO H=19.0",
+        "short_names_norm":"Fraction 4 of grizy NEO H=19.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy MBA H=16.0",
+        "short_name":"Fraction 4 of grizy MBA H=16.0",
+        "short_names_norm":"Fraction 4 of grizy MBA H=16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy MBA H=18.0",
+        "short_name":"Fraction 4 of grizy MBA H=18.0",
+        "short_names_norm":"Fraction 4 of grizy MBA H=18.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy Trojan H=14.0",
+        "short_name":"Fraction 4 of grizy Trojan H=14.0",
+        "short_names_norm":"Fraction 4 of grizy Trojan H=14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 of grizy Trojan H=15.0",
+        "short_name":"Fraction 4 of grizy Trojan H=15.0",
+        "short_names_norm":"Fraction 4 of grizy Trojan H=15.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 filters TNO H=6.0",
+        "short_name":"Fraction 4 filters TNO H=6.0",
+        "short_names_norm":"Fraction 4 filters TNO H=6.0",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 filters TNO H=7.0",
+        "short_name":"Fraction 4 filters TNO H=7.0",
+        "short_names_norm":"Fraction 4 filters TNO H=7.0",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy PHA H=16.0",
+        "short_name":"Fraction with grizy PHA H=16.0",
+        "short_names_norm":"Fraction with grizy PHA H=16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy PHA H=19.0",
+        "short_name":"Fraction with grizy PHA H=19.0",
+        "short_names_norm":"Fraction with grizy PHA H=19.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy NEO H=16.0",
+        "short_name":"Fraction with grizy NEO H=16.0",
+        "short_names_norm":"Fraction with grizy NEO H=16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy NEO H=19.0",
+        "short_name":"Fraction with grizy NEO H=19.0",
+        "short_names_norm":"Fraction with grizy NEO H=19.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy MBA H=16.0",
+        "short_name":"Fraction with grizy MBA H=16.0",
+        "short_names_norm":"Fraction with grizy MBA H=16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy MBA H=18.0",
+        "short_name":"Fraction with grizy MBA H=18.0",
+        "short_names_norm":"Fraction with grizy MBA H=18.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy Trojan H=14.0",
+        "short_name":"Fraction with grizy Trojan H=14.0",
+        "short_names_norm":"Fraction with grizy Trojan H=14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 of grizy Trojan H=15.0",
+        "short_name":"Fraction with grizy Trojan H=15.0",
+        "short_names_norm":"Fraction with grizy Trojan H=15.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 filters TNO H=6.0",
+        "short_name":"Fraction with 5 filters TNO H=6.0",
+        "short_names_norm":"Fraction with 5 filters TNO H=6.0",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 filters TNO H=7.0",
+        "short_name":"Fraction with 5 filters TNO H=7.0",
+        "short_names_norm":"Fraction with 5 filters TNO H=7.0",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy PHA H=16.0",
+        "short_name":"Fraction with ugrizy PHA H=16.0",
+        "short_names_norm":"Fraction with ugrizy PHA H=16.0",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy PHA H=19.0",
+        "short_name":"Fraction with ugrizy PHA H=19.0",
+        "short_names_norm":"Fraction with ugrizy PHA H=19.0",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy NEO H=16.0",
+        "short_name":"Fraction with ugrizy NEO H=16.0",
+        "short_names_norm":"Fraction with ugrizy NEO H=16.0",
+        "style":"b-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy NEO H=19.0",
+        "short_name":"Fraction with ugrizy NEO H=19.0",
+        "short_names_norm":"Fraction with ugrizy NEO H=19.0",
+        "style":"b--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy MBA H=16.0",
+        "short_name":"Fraction with ugrizy MBA H=16.0",
+        "short_names_norm":"Fraction with ugrizy MBA H=16.0",
+        "style":"y-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy MBA H=18.0",
+        "short_name":"Fraction with ugrizy MBA H=18.0",
+        "short_names_norm":"Fraction with ugrizy MBA H=18.0",
+        "style":"y--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy Trojan H=14.0",
+        "short_name":"Fraction with ugrizy Trojan H=14.0",
+        "short_names_norm":"Fraction with ugrizy Trojan H=14.0",
+        "style":"c-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 of ugrizy Trojan H=15.0",
+        "short_name":"Fraction with ugrizy Trojan H=15.0",
+        "short_names_norm":"Fraction with ugrizy Trojan H=15.0",
+        "style":"c--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 filters TNO H=6.0",
+        "short_name":"Fraction with 6 filters TNO H=6.0",
+        "short_names_norm":"Fraction with 6 filters TNO H=6.0",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 filters TNO H=7.0",
+        "short_name":"Fraction with 6 filters TNO H=7.0",
+        "short_names_norm":"Fraction with 6 filters TNO H=7.0",
+        "style":"r--",
+        "invert":false,
+        "mag":false
+    }
+]

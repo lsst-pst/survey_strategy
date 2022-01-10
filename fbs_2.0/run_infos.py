@@ -60,6 +60,16 @@ class FamilyInfo():
         print(f'For {len(simlist)} unique simulations in all.')
         return family_list
 
+    def family_data(self, f, normalized=False):
+        """Return all the data for hte family in question
+        """
+        d = pd.DataFrame(self.summaries.loc[self.family.loc[f]['run']])
+        if normalized:
+            d = d/self.summaries[tablemetrics].loc[self.family.loc[f]['reference']]
+        d['Briefly'] = self.family.loc[f]['brief']
+        return d
+
+
     def family_info(self, f, normalized=False):
         """Print some summary information about the family and return a high-level set of metrics."""
         d = pd.DataFrame(self.summaries[tablemetrics].loc[self.family.loc[f]['run']])

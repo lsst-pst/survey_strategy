@@ -55,9 +55,9 @@ def plot_sky(skymap, plotDict=None, slicer=maf.HealpixSlicer(64), maskBelow=0, l
     plotFunc = maf.HealpixSkyMap()
     if lamb:
         plotFunc.healpy_visufunc = hp.azeqview
-        plotFunc.healpy_visufunc_params['lamb'] = True
+        #plotFunc.healpy_visufunc_params['lamb'] = True
         plotFunc.healpy_visufunc_params['rot'] = (0, -90, 0)
-        plotFunc.healpy_visufunc_params['reso'] = 18
+        # plotFunc.healpy_visufunc_params['reso'] = 18
     t = ma.MaskedArray(data=np.array(skymap, float), mask=np.where(skymap > maskBelow, 0, 1))
     if plotDict is None:
         # Just because of how the slicer works, this cannot be None
