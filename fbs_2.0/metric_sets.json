@@ -1024,5 +1024,131 @@
         "style":"r--",
         "invert":false,
         "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"fOArea fO All visits HealpixSlicer",
+        "short_name":"Area with >825 visits\/pointing (fO_Area)",
+        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"Unextincted area i>25.9",
+        "short_names_norm":"Unextincted area i>25.9",
+        "style":"k:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"Nvisits All props",
+        "short_name":"Nvisits total",
+        "short_names_norm":"Nvisits total",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"Median Nvis over top 18k (fO_Nv Med)",
+        "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
+        "style":"r:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"fOArea fO All visits HealpixSlicer",
+        "short_name":"Area with >825 visits\/pointing (fO_Area)",
+        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"Unextincted area i>25.9",
+        "short_names_norm":"Unextincted area i>25.9",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Nvisits All props",
+        "short_name":"Nvisits total",
+        "short_names_norm":"Nvisits total",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"Median Nvis over top 18k (fO_Nv Med)",
+        "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits u band HealpixSlicer",
+        "short_name":"Median Nvis u band",
+        "short_names_norm":"Median Nvis u band",
+        "style":"c",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits g band HealpixSlicer",
+        "short_name":"Median Nvis g band",
+        "short_names_norm":"Median Nvis g band",
+        "style":"g",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits r band HealpixSlicer",
+        "short_name":"Median Nvis r band",
+        "short_names_norm":"Median Nvis r band",
+        "style":"y",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits i band HealpixSlicer",
+        "short_name":"Median Nvis i band",
+        "short_names_norm":"Median Nvis i band",
+        "style":"r",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits z band HealpixSlicer",
+        "short_name":"Median Nvis z band",
+        "short_names_norm":"Median Nvis z band",
+        "style":"m",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits y band HealpixSlicer",
+        "short_name":"Median Nvis y band",
+        "short_names_norm":"Median Nvis y band",
+        "style":"k",
+        "invert":false,
+        "mag":false
     }
 ]
