@@ -297,7 +297,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss PHA H=16.0",
         "short_name":"Completeness PHA H<16.0",
         "short_names_norm":"Completeness PHA H<16.0",
@@ -306,7 +306,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss PHA H=22.0",
         "short_name":"Completeness PHA H<22.0",
         "short_names_norm":"Completeness PHA H<22.0",
@@ -315,7 +315,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
         "short_name":"Completeness NEO H<16.0",
         "short_names_norm":"Completeness NEO H<16.0",
@@ -324,7 +324,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
         "short_name":"Completeness NEO H<22.0",
         "short_names_norm":"Completeness NEO H<22.0",
@@ -333,7 +333,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss MBA H=16.0",
         "short_name":"Completeness MBA H<16.0",
         "short_names_norm":"Completeness MBA H<16.0",
@@ -342,7 +342,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss MBA H=21.0",
         "short_name":"Completeness MBA H<21.0",
         "short_names_norm":"Completeness MBA H<21.0",
@@ -351,7 +351,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss Trojan H=14.0",
         "short_name":"Completeness Trojan H<14.0",
         "short_names_norm":"Completeness Trojan H<14.0",
@@ -360,7 +360,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss Trojan H=18.0",
         "short_name":"Completeness Trojan H<18.0",
         "short_names_norm":"Completeness Trojan H<18.0",
@@ -369,7 +369,7 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
         "short_name":"Completeness TNO H<6.0",
         "short_names_norm":"Completeness TNO H<6.0",
@@ -378,12 +378,48 @@
         "mag":false
     },
     {
-        "metric set":"sso",
+        "metric set":"SSO discovery",
         "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
         "short_name":"Completeness TNO H<8.0",
         "short_names_norm":"Completeness TNO H<8.0",
         "style":"r--",
         "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 22 (3x30)",
+        "short_names_norm": "NEO Nobj <= 22 (3x30)",
+        "style": "k:",
+        "invert": false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 25 (3x30)",
+        "short_names_norm": "NEO Nobj <= 25 (3x30)",
+        "style": "k-.",
+        "invert": false,
+        "mag":false
+    },
+        {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 3 pairs in 15 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 22 (3x15)",
+        "short_names_norm": "NEO Nobj <= 22 (3x15)",
+        "style": "r:",
+        "invert": false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 15 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 25 (3x15)",
+        "short_names_norm": "NEO Nobj <= 25 (3x15)",
+        "style": "r-.",
+        "invert": false,
         "mag":false
     },
     {
@@ -504,79 +540,79 @@
         "mag":false
     },
     {
-        "metric set":"sso disc",
-        "metric":"3 pairs in 15 nights detection loss PHA H=16.0",
-        "short_name":"Completeness PHA H<16.0",
-        "short_names_norm":"Completeness PHA H<16.0",
-        "style":"g-",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"sso disc",
-        "metric":"3 pairs in 15 nights detection loss PHA H=22.0",
-        "short_name":"Completeness PHA H<22.0",
-        "short_names_norm":"Completeness PHA H<22.0",
-        "style":"g--",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"sso disc",
+        "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
-        "short_name":"Completeness NEO H<16.0",
-        "short_names_norm":"Completeness NEO H<16.0",
+        "short_name":"Completeness NEO H<16.0 (3x15)",
+        "short_names_norm":"Completeness NEO H<16.0 (3x15)",
         "style":"b-",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"sso disc",
+        "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
-        "short_name":"Completeness NEO H<22.0",
-        "short_names_norm":"Completeness NEO H<22.0",
+        "short_name":"Completeness NEO H<22.0 (3x15)",
+        "short_names_norm":"Completeness NEO H<22.0 (3x15)",
         "style":"b--",
         "invert":false,
         "mag":false
     },
+       {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss NEO H=16.0",
+        "short_name":"Completeness NEO H<16.0 (3x30)",
+        "short_names_norm":"Completeness NEO H<16.0 (3x30)",
+        "style":"b:",
+        "invert":false,
+        "mag":false
+    },
     {
-        "metric set":"sso disc",
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+        "short_name":"Completeness NEO H<22.0",
+        "short_names_norm":"Completeness NEO H<22.0",
+        "style":"b-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss MBA H=16.0",
-        "short_name":"Completeness MBA H<16.0",
-        "short_names_norm":"Completeness MBA H<16.0",
+        "short_name":"Completeness MBA H<16.0 (3x15)",
+        "short_names_norm":"Completeness MBA H<16.0 (3x15)",
         "style":"y-",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"sso disc",
+        "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss MBA H=21.0",
-        "short_name":"Completeness MBA H<21.0",
-        "short_names_norm":"Completeness MBA H<21.0",
+        "short_name":"Completeness MBA H<21.0 (3x15)",
+        "short_names_norm":"Completeness MBA H<21.0 (3x15)",
         "style":"y--",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"sso disc",
-        "metric":"3 pairs in 15 nights detection loss Trojan H=14.0",
-        "short_name":"Completeness Trojan H<14.0",
-        "short_names_norm":"Completeness Trojan H<14.0",
-        "style":"c-",
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss MBA H=16.0",
+        "short_name":"Completeness MBA H<16.0 (3x30)",
+        "short_names_norm":"Completeness MBA H<16.0 (3x30)",
+        "style":"y:",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"sso disc",
-        "metric":"3 pairs in 15 nights detection loss Trojan H=18.0",
-        "short_name":"Completeness Trojan H<18.0",
-        "short_names_norm":"Completeness Trojan H<18.0",
-        "style":"c--",
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss MBA H=21.0",
+        "short_name":"Completeness MBA H<21.0 (3x30)",
+        "short_names_norm":"Completeness MBA H<21.0 (3x30)",
+        "style":"y-.",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"sso disc",
+        "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
         "short_name":"Completeness TNO H<6.0",
         "short_names_norm":"Completeness TNO H<6.0",
@@ -585,11 +621,29 @@
         "mag":false
     },
     {
-        "metric set":"sso disc",
+        "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
         "short_name":"Completeness TNO H<8.0",
         "short_names_norm":"Completeness TNO H<8.0",
         "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+        {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss TNO H=6.0",
+        "short_name":"Completeness TNO H<6.0 (3x30)",
+        "short_names_norm":"Completeness TNO H<6.0 (3x30)",
+        "style":"m-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss TNO H=8.0",
+        "short_name":"Completeness TNO H<8.0 (3x30)",
+        "short_names_norm":"Completeness TNO H<8.0 (3x30)",
+        "style":"m--",
         "invert":false,
         "mag":false
     },
