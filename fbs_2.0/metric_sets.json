@@ -388,37 +388,55 @@
     },
     {
         "metric set":"SSO NOBJ",
-        "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
-        "short_name":"NEO Nobj <= 22 (3x30)",
-        "short_names_norm": "NEO Nobj <= 22 (3x30)",
-        "style": "k:",
-        "invert": false,
-        "mag":false
-    },
-    {
-        "metric set":"SSO NOBJ",
-        "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
-        "short_name":"NEO Nobj <= 25 (3x30)",
-        "short_names_norm": "NEO Nobj <= 25 (3x30)",
-        "style": "k-.",
-        "invert": false,
-        "mag":false
-    },
-        {
-        "metric set":"SSO NOBJ",
         "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 3 pairs in 15 nights detection loss MoObjSlicer",
-        "short_name":"NEO Nobj <= 22 (3x15)",
-        "short_names_norm": "NEO Nobj <= 22 (3x15)",
-        "style": "r:",
+        "short_name":"NEO Nobj <= 22 (3x2x15)",
+        "short_names_norm": "NEO Nobj <= 22 (3x2x15)",
+        "style": "g:",
         "invert": false,
         "mag":false
     },
     {
         "metric set":"SSO NOBJ",
         "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 15 nights detection loss MoObjSlicer",
-        "short_name":"NEO Nobj <= 25 (3x15)",
-        "short_names_norm": "NEO Nobj <= 25 (3x15)",
+        "short_name":"NEO Nobj <= 25 (3x2x15)",
+        "short_names_norm": "NEO Nobj <= 25 (3x2x15)",
+        "style": "g-.",
+        "invert": false,
+        "mag":false
+    },
+        {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 22 (3x2x30)",
+        "short_names_norm": "NEO Nobj <= 22 (3x2x30)",
+        "style": "r:",
+        "invert": false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 25 (3x2x30)",
+        "short_names_norm": "NEO Nobj <= 25 (3x2x30)",
         "style": "r-.",
+        "invert": false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 6 detections in 60 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 22 (6x60)",
+        "short_names_norm": "NEO Nobj <= 22 (6x60)",
+        "style": "k:",
+        "invert": false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO NOBJ",
+        "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 6 detections in 60 nights detection loss MoObjSlicer",
+        "short_name":"NEO Nobj <= 25 (6x60)",
+        "short_names_norm": "NEO Nobj <= 25 (6x60)",
+        "style": "k-.",
         "invert": false,
         "mag":false
     },
