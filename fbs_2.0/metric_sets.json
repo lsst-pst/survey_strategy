@@ -1,5 +1,248 @@
 [
     {
+        "metric set":"radar",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"fONv_med",
+        "short_names_norm":"fONv_med",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer",
+        "short_name":"WL",
+        "short_names_norm":"WL",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3x2ptFoM ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"3x2pt FoM",
+        "short_names_norm":"3x2pt FoM",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"SNIa_PrePeak non-DD UserPointsSlicer",
+        "short_name":"SNIa",
+        "short_names_norm":"SNIa",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"TDEsPopMetric__some_color_pu  UserPointsSlicer",
+        "short_name":"TDE",
+        "short_names_norm":"TDE",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Fast Microlensing  UserPointsSlicer",
+        "short_name":"Fast Microlensing",
+        "short_names_norm":"Fast Microlensing",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All visits HealpixSlicer",
+        "short_name":"Parallax",
+        "short_names_norm":"Parallax",
+        "style":null,
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All visits HealpixSlicer",
+        "short_name":"Proper motion",
+        "short_names_norm":"Proper motion",
+        "style":null,
+        "invert":true,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"N stars to Precision 0.20  r HealpixSlicer",
+        "short_name":"N Stars",
+        "short_names_norm":"N Stars",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"N Galaxies (all) GalaxyCountsMetric_extended i band HealpixSlicer",
+        "short_name":" N Galaxies",
+        "short_names_norm":" N Galaxies",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+        "short_name":"   NEO, big",
+        "short_names_norm":"   NEO, big",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+        "short_name":"   NEO, small",
+        "short_names_norm":"   NEO, small",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"radar",
+        "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+        "short_name":"TNO, big",
+        "short_names_norm":"TNO, big",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"fOArea fO All visits HealpixSlicer",
+        "short_name":"Area with >825 visits\/pointing (fO_Area)",
+        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"Unextincted area i>25.9",
+        "short_names_norm":"Unextincted area i>25.9",
+        "style":"k:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"Nvisits All props",
+        "short_name":"Nvisits total",
+        "short_names_norm":"Nvisits total",
+        "style":"r-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"Median Nvis over top 18k (fO_Nv Med)",
+        "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
+        "style":"r:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"fOArea fO All visits HealpixSlicer",
+        "short_name":"Area with >825 visits\/pointing (fO_Area)",
+        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
+        "short_name":"Unextincted area i>25.9",
+        "short_names_norm":"Unextincted area i>25.9",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Nvisits All props",
+        "short_name":"Nvisits total",
+        "short_names_norm":"Nvisits total",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "short_name":"Median Nvis over top 18k (fO_Nv Med)",
+        "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
+        "style":null,
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits u band HealpixSlicer",
+        "short_name":"Median Nvis u band",
+        "short_names_norm":"Median Nvis u band",
+        "style":"c",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits g band HealpixSlicer",
+        "short_name":"Median Nvis g band",
+        "short_names_norm":"Median Nvis g band",
+        "style":"g",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits r band HealpixSlicer",
+        "short_name":"Median Nvis r band",
+        "short_names_norm":"Median Nvis r band",
+        "style":"y",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits i band HealpixSlicer",
+        "short_name":"Median Nvis i band",
+        "short_names_norm":"Median Nvis i band",
+        "style":"r",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits z band HealpixSlicer",
+        "short_name":"Median Nvis z band",
+        "short_names_norm":"Median Nvis z band",
+        "style":"m",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"short",
+        "metric":"Median NVisits y band HealpixSlicer",
+        "short_name":"Median Nvis y band",
+        "short_names_norm":"Median Nvis y band",
+        "style":"k",
+        "invert":false,
+        "mag":false
+    },
+    {
         "metric set":"srd",
         "metric":"fONv MedianNvis fO All visits HealpixSlicer",
         "short_name":"fONv MedianNvis",
@@ -387,6 +630,42 @@
         "mag":false
     },
     {
+        "metric set":"SSO discovery",
+        "metric":"3 pairs in 15 nights detection loss OCC_r5 H=8.0",
+        "short_name":"Completeness OCC_r5 H<8.0",
+        "short_names_norm":"Completeness OCC_r5 H<8.0",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO discovery",
+        "metric":"3 pairs in 15 nights detection loss OCC_r5 H=17.0",
+        "short_name":"Completeness OCC_r5 H<17.0",
+        "short_names_norm":"Completeness OCC_r5 H<17.0",
+        "style":"k--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO discovery",
+        "metric":"3 pairs in 15 nights detection loss OCC_r20 H=8.0",
+        "short_name":"Completeness OCC_r20 H<8.0",
+        "short_names_norm":"Completeness OCC_r20 H<8.0",
+        "style":"m-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"SSO discovery",
+        "metric":"3 pairs in 15 nights detection loss OCC_r20 H=12.0",
+        "short_name":"Completeness OCC_r20 H<12.0",
+        "short_names_norm":"Completeness OCC_r20 H<12.0",
+        "style":"m--",
+        "invert":false,
+        "mag":false
+    },
+    {
         "metric set":"SSO NOBJ",
         "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 3 pairs in 15 nights detection loss MoObjSlicer",
         "short_name":"NEO Nobj <= 22 (3x2x15)",
@@ -400,7 +679,7 @@
         "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 15 nights detection loss MoObjSlicer",
         "short_name":"NEO Nobj <= 25 (3x2x15)",
         "short_names_norm": "NEO Nobj <= 25 (3x2x15)",
-        "style": "g-.",
+        "style": "g--",
         "invert": false,
         "mag":false
     },
@@ -418,7 +697,7 @@
         "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 3 pairs in 30 nights detection loss MoObjSlicer",
         "short_name":"NEO Nobj <= 25 (3x2x30)",
         "short_names_norm": "NEO Nobj <= 25 (3x2x30)",
-        "style": "r-.",
+        "style": "r--",
         "invert": false,
         "mag":false
     },
@@ -427,7 +706,7 @@
         "metric":"Nobj <= 22.0 DifferentialCompleteness NEO 6 detections in 60 nights detection loss MoObjSlicer",
         "short_name":"NEO Nobj <= 22 (6x60)",
         "short_names_norm": "NEO Nobj <= 22 (6x60)",
-        "style": "k:",
+        "style": "k-",
         "invert": false,
         "mag":false
     },
@@ -436,125 +715,8 @@
         "metric":"Nobj <= 25.0 DifferentialCompleteness NEO 6 detections in 60 nights detection loss MoObjSlicer",
         "short_name":"NEO Nobj <= 25 (6x60)",
         "short_names_norm": "NEO Nobj <= 25 (6x60)",
-        "style": "k-.",
+        "style": "k--",
         "invert": false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
-        "short_name":"fONv_med",
-        "short_names_norm":"fONv_med",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer",
-        "short_name":"WL",
-        "short_names_norm":"WL",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"3x2ptFoM ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
-        "short_name":"3x2pt FoM",
-        "short_names_norm":"3x2pt FoM",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"SNIa_PrePeak non-DD UserPointsSlicer",
-        "short_name":"SNIa",
-        "short_names_norm":"SNIa",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"TDEsPopMetric__some_color_pu  UserPointsSlicer",
-        "short_name":"TDE",
-        "short_names_norm":"TDE",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"Fast Microlensing  UserPointsSlicer",
-        "short_name":"Fast Microlensing",
-        "short_names_norm":"Fast Microlensing",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All visits HealpixSlicer",
-        "short_name":"Parallax",
-        "short_names_norm":"Parallax",
-        "style":null,
-        "invert":true,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All visits HealpixSlicer",
-        "short_name":"Proper motion",
-        "short_names_norm":"Proper motion",
-        "style":null,
-        "invert":true,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"N stars to Precision 0.20  r HealpixSlicer",
-        "short_name":"N Stars",
-        "short_names_norm":"N Stars",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"N Galaxies (all) GalaxyCountsMetric_extended i band HealpixSlicer",
-        "short_name":" N Galaxies",
-        "short_names_norm":" N Galaxies",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
-        "short_name":"   NEO, big",
-        "short_names_norm":"   NEO, big",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
-        "short_name":"   NEO, small",
-        "short_names_norm":"   NEO, small",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"radar",
-        "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
-        "short_name":"TNO, big",
-        "short_names_norm":"TNO, big",
-        "style":null,
-        "invert":false,
         "mag":false
     },
     {
@@ -575,7 +737,7 @@
         "invert":false,
         "mag":false
     },
-       {
+    {
         "metric set":"sso disc options",
         "metric":"3 pairs in 30 nights detection loss NEO H=16.0",
         "short_name":"Completeness NEO H<16.0 (3x30)",
@@ -590,6 +752,24 @@
         "short_name":"Completeness NEO H<22.0",
         "short_names_norm":"Completeness NEO H<22.0",
         "style":"b-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"6 detections in 60 nights detection loss NEO H=16.0",
+        "short_name":"Completeness NEO H<16.0 (6in60)",
+        "short_names_norm":"Completeness NEO H<16.0 (6in60)",
+        "style":"k:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"6 detections in 60 nights detection loss NEO H=22.0",
+        "short_name":"Completeness NEO H<22.0 (6in60)",
+        "short_names_norm":"Completeness NEO H<22.0 (6in60)",
+        "style":"k-.",
         "invert":false,
         "mag":false
     },
@@ -652,7 +832,7 @@
         "metric":"3 pairs in 30 nights detection loss TNO H=6.0",
         "short_name":"Completeness TNO H<6.0 (3x30)",
         "short_names_norm":"Completeness TNO H<6.0 (3x30)",
-        "style":"m-",
+        "style":"r:",
         "invert":false,
         "mag":false
     },
@@ -661,7 +841,61 @@
         "metric":"3 pairs in 30 nights detection loss TNO H=8.0",
         "short_name":"Completeness TNO H<8.0 (3x30)",
         "short_names_norm":"Completeness TNO H<8.0 (3x30)",
-        "style":"m--",
+        "style":"r-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 15 nights detection loss OCC_r5 H=8.0",
+        "short_name":"Completeness OCC_r5 H<8.0 (3x15)",
+        "short_names_norm":"Completeness OCC_r5 H<8.0 (3x15)",
+        "style":"g-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 15 nights detection loss OCC_r5 H=17.0",
+        "short_name":"Completeness OCC_r5 H<17.0 (3x15)",
+        "short_names_norm":"Completeness OCC_r5 H<17.0 (3x15)",
+        "style":"g--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss OCC_r5 H=8.0",
+        "short_name":"Completeness OCC_r5 H<8.0 (3x30)",
+        "short_names_norm":"Completeness OCC_r5 H<8.0 (3x30)",
+        "style":"g:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"3 pairs in 30 nights detection loss OCC_r5 H=17.0",
+        "short_name":"Completeness OCC_r5 H<17.0 (3x30)",
+        "short_names_norm":"Completeness OCC_r5 H<17.0 (3x30)",
+        "style":"g-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"6 detections in 60 nights detection loss OCC_r5 H=8.0",
+        "short_name":"Completeness OCC_r5 H<8.0 (6in60)",
+        "short_names_norm":"Completeness OCC_r5 H<8.0 (6in60)",
+        "style":"c:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"6 detections in 60 nights detection loss OCC_r5 H=17.0",
+        "short_name":"Completeness OCC_r5 H<17.0 (6in60)",
+        "short_names_norm":"Completeness OCC_r5 H<17.0 (6in60)",
+        "style":"c-.",
         "invert":false,
         "mag":false
     },
@@ -828,6 +1062,42 @@
         "mag":false
     },
     {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 3 filters OCC_r5 H=8.0",
+        "short_name":"Fraction 3 filters OCC_r5 H=8.0",
+        "short_names_norm":"Fraction 3 filters OCC_r5 H=8.0",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 3 filters OCC_r5 H=14.0",
+        "short_name":"Fraction 3 filters OCC_r5 H=14.0",
+        "short_names_norm":"Fraction 3 filters OCC_r5 H=14.0",
+        "style":"k--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 3 filters OCC_r20 H=8.0",
+        "short_name":"Fraction 3 filters OCC_r20 H=8.0",
+        "short_names_norm":"Fraction 3 filters OCC_r20 H=8.0",
+        "style":"m-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 3 bands",
+        "metric":"FractionPop 3 filters OCC_r20 H=11.0",
+        "short_name":"Fraction 3 filters OCC_r20 H=11.0",
+        "short_names_norm":"Fraction 3 filters OCC_r20 H=11.0",
+        "style":"m--",
+        "invert":false,
+        "mag":false
+    },
+    {
         "metric set":"Fraction Pop 4 bands",
         "metric":"FractionPop 4 of grizy PHA H=16.0",
         "short_name":"Fraction 4 of grizy PHA H=16.0",
@@ -914,6 +1184,42 @@
         "short_name":"Fraction 4 filters TNO H=7.0",
         "short_names_norm":"Fraction 4 filters TNO H=7.0",
         "style":"r--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 filters OCC_r5 H=8.0",
+        "short_name":"Fraction 4 filters OCC_r5 H=8.0",
+        "short_names_norm":"Fraction 4 filters OCC_r5 H=8.0",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 filters OCC_r5 H=14.0",
+        "short_name":"Fraction 4 filters OCC_r5 H=14.0",
+        "short_names_norm":"Fraction 4 filters OCC_r5 H=14.0",
+        "style":"k--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 filters OCC_r20 H=8.0",
+        "short_name":"Fraction 4 filters OCC_r20 H=8.0",
+        "short_names_norm":"Fraction 4 filters OCC_r20 H=8.0",
+        "style":"m-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 4 bands",
+        "metric":"FractionPop 4 filters OCC_r20 H=11.0",
+        "short_name":"Fraction 4 filters OCC_r20 H=11.0",
+        "short_names_norm":"Fraction 4 filters OCC_r20 H=11.0",
+        "style":"m--",
         "invert":false,
         "mag":false
     },
@@ -1008,6 +1314,42 @@
         "mag":false
     },
     {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 filters OCC_r5 H=8.0",
+        "short_name":"Fraction 5 filters OCC_r5 H=8.0",
+        "short_names_norm":"Fraction 5 filters OCC_r5 H=8.0",
+        "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 filters OCC_r5 H=14.0",
+        "short_name":"Fraction 5 filters OCC_r5 H=14.0",
+        "short_names_norm":"Fraction 5 filters OCC_r5 H=14.0",
+        "style":"k--",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 filters OCC_r20 H=8.0",
+        "short_name":"Fraction 5 filters OCC_r20 H=8.0",
+        "short_names_norm":"Fraction 5 filters OCC_r20 H=8.0",
+        "style":"m-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"Fraction Pop 5 bands",
+        "metric":"FractionPop 5 filters OCC_r20 H=11.0",
+        "short_name":"Fraction 5 filters OCC_r20 H=11.0",
+        "short_names_norm":"Fraction 5 filters OCC_r20 H=11.0",
+        "style":"m--",
+        "invert":false,
+        "mag":false
+    },
+    {
         "metric set":"Fraction Pop 6 bands",
         "metric":"FractionPop 6 of ugrizy PHA H=16.0",
         "short_name":"Fraction with ugrizy PHA H=16.0",
@@ -1098,128 +1440,38 @@
         "mag":false
     },
     {
-        "metric set":"area",
-        "metric":"fOArea fO All visits HealpixSlicer",
-        "short_name":"Area with >825 visits\/pointing (fO_Area)",
-        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 filters OCC_r5 H=8.0",
+        "short_name":"Fraction 6 filters OCC_r5 H=8.0",
+        "short_names_norm":"Fraction 6 filters OCC_r5 H=8.0",
         "style":"k-",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"area",
-        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
-        "short_name":"Unextincted area i>25.9",
-        "short_names_norm":"Unextincted area i>25.9",
-        "style":"k:",
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 filters OCC_r5 H=14.0",
+        "short_name":"Fraction 6 filters OCC_r5 H=14.0",
+        "short_names_norm":"Fraction 6 filters OCC_r5 H=14.0",
+        "style":"k--",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"area",
-        "metric":"Nvisits All props",
-        "short_name":"Nvisits total",
-        "short_names_norm":"Nvisits total",
-        "style":"r-",
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 filters OCC_r20 H=8.0",
+        "short_name":"Fraction 6 filters OCC_r20 H=8.0",
+        "short_names_norm":"Fraction 6 filters OCC_r20 H=8.0",
+        "style":"m-",
         "invert":false,
         "mag":false
     },
     {
-        "metric set":"area",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
-        "short_name":"Median Nvis over top 18k (fO_Nv Med)",
-        "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
-        "style":"r:",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"fOArea fO All visits HealpixSlicer",
-        "short_name":"Area with >825 visits\/pointing (fO_Area)",
-        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
-        "short_name":"Unextincted area i>25.9",
-        "short_names_norm":"Unextincted area i>25.9",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Nvisits All props",
-        "short_name":"Nvisits total",
-        "short_names_norm":"Nvisits total",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
-        "short_name":"Median Nvis over top 18k (fO_Nv Med)",
-        "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
-        "style":null,
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Median NVisits u band HealpixSlicer",
-        "short_name":"Median Nvis u band",
-        "short_names_norm":"Median Nvis u band",
-        "style":"c",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Median NVisits g band HealpixSlicer",
-        "short_name":"Median Nvis g band",
-        "short_names_norm":"Median Nvis g band",
-        "style":"g",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Median NVisits r band HealpixSlicer",
-        "short_name":"Median Nvis r band",
-        "short_names_norm":"Median Nvis r band",
-        "style":"y",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Median NVisits i band HealpixSlicer",
-        "short_name":"Median Nvis i band",
-        "short_names_norm":"Median Nvis i band",
-        "style":"r",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Median NVisits z band HealpixSlicer",
-        "short_name":"Median Nvis z band",
-        "short_names_norm":"Median Nvis z band",
-        "style":"m",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"short",
-        "metric":"Median NVisits y band HealpixSlicer",
-        "short_name":"Median Nvis y band",
-        "short_names_norm":"Median Nvis y band",
-        "style":"k",
+        "metric set":"Fraction Pop 6 bands",
+        "metric":"FractionPop 6 filters OCC_r20 H=11.0",
+        "short_name":"Fraction 6 filters OCC_r20 H=11.0",
+        "short_names_norm":"Fraction 6 filters OCC_r20 H=11.0",
+        "style":"m--",
         "invert":false,
         "mag":false
     }
