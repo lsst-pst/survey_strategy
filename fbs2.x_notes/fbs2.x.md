@@ -45,12 +45,61 @@ Taking long gaps with no initial pairs seems like a major loss across the board.
 
 ## Presto ##
 
+Presto with a 1.2 or 2.0 hour gap is terrible for everything (as expected). 
+
+The 2.5, 3.0, 3.5, and 4.0 hour gaps show huge improvements for the Transient metric, but really hurt everything else, especially SNe and faint NEOs. 
+
+No major difference between the mix and regular presto variants. Regular presto is (g+r, r+i, i+z), mix is (g+i, r+z, i+y). The mix version gets a little higher transient score at 4 hours, but does a little worse at 2.5 hours. 
 
 
+The presto_half runs execute the presto tripple strategy half of the nights. 
 
-## Varied galactic plane weight ##
+
+## Varied galactic plane ##
+
+Pretty much just as expected. Giving less time to galactic plane helps cosmology metrics. Could use some more metrics that are sensitive to the galactic plane (we have microlensing, but not much else).
+
 
 ## Varied NES ##
+
+Many of the solar system metrics are fairly insensitive to the fraction of time spent on the NES. I'll leave it to the solar system collaboration to make the case for where they think the optimal fraction is. Might be some potential to shave a little bit of time off of NES.
+
+## Variable exposure time ##
+
+Surprisingly hurts SNe, Transients, and faint NEOs. 
+
+## North Stripe ##
+
+Adding coverage to the north. Very minor impact on most metrics, but it would probably only help us recover a handful of ToO events. And we probably want to keep the ToO chasing in the WFD area as much as possible anyway.
+
+## Carina ##
+
+Very minor impact, as expected.
+
+## Local Galaxies ##
+
+Extra g,r,i observations on some local galaxies. Very minor impact on metrics. Would be nice to have a metric that confirms these do a better job on the nearby galaxies.
+
+## short expsoures ##
+
+Including short exposures. Looks like we have short exposures and multiple short exposures. 
+Mulit short has a pretty large hit oin SNe metric. We don't have metrics that show the value of short exposures. The multi-short is probably no longer feasible because shutter will heat up.
+
+## Roman ##
+
+Observing RGES field for microlensing. Indeed, makes the fast microlensing metric go up. Virtually zero impact on the rest of the survey. Looks like these were 0.07% of the total time. 
+
+## Virgo ##
+
+Include the virgo cluster in WFD footprint. Very minor. So minor we added this to the 2.1 baseline.
+
+## SMC movie ##
+
+Very minor impact. This came out to 0.13% of the visits.
+
+## ToO ##
+
+Looks like we tested chasing 10 or 50 ToOs per year. Minor impact on the science metrics.
 
 
 
@@ -96,9 +145,15 @@ There doesn't seem to be much major science impact on adding the good seeing obs
 
 ## Action Items ##
 
-* SNe group needs to verify that our SNe metric is giving reasonable values (I still suspect an nside bug that is affecting absolute values, but relative values should be fine)
+* SNe group needs to verify that our SNe metric is giving reasonable values (I still suspect an nside bug that is affecting absolute number values, but relative values should be fine). Could also be a difference in "Number of SNe at median z" vs "cumulative SNe to median z".
 
 * Check with transient group about why transient score shows improvement on some of the galactic plane footprints.
 
 * The `roll_early` actually looks pretty good. This would be a good thing to let the rolling cadence team and MWLV fight about
+
+* Seems like we might be able to shave a little bit of time off the NES, good to let the Solar System group weigh in since I only looked at a few of their many metrics. Would be nice to know which metrics are NES sensitive.
+
+* As usual, we ran a lot of things that were requested. We think we did what was asked for, but we don't have any metrics from the community that clearly show an improvement.
+
+
 
