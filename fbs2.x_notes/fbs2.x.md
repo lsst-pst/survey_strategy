@@ -1,5 +1,8 @@
 # Notes on the v2.0 and v2.1 runs
 
+
+Lots of radar plots etc in notebooks: https://github.com/lsst-sims/sims_featureScheduler_runs2.1/blob/main/maf/combined_look.ipynb and https://github.com/lsst-sims/sims_featureScheduler_runs2.0/blob/main/maf/combined_look.ipynb
+
 ## Baseline-like Runs ##
 
 * New baseline includes rolling, which gives a substantial boost to SNe
@@ -11,7 +14,6 @@
 
 ## Bluer ##
 
-XXX--what was this trying to do again?
 
 I think this was supposed to give a boost to SNe, but it looks pretty small. Seems to hurt Transients and WL.
 
@@ -27,7 +29,7 @@ Taking longer u-band exposures.
 
 ## Rolling experiments ##
 
-We test rolling with different fractions of the sky (half, third, sixth), and two different strenths (50% and 90%). 
+We test rolling with different fractions of the sky (half, third, sixth), and two different strengths (50% and 90%). 
 Our baseline of half sky at 80-90% seems fairly close to ideal. Rolling with smaller area can boost SNe and TDE metrics, but at significant penalty for proper motions and faint NEOs.
 
 Turning off rolling gives a modest boost to astrometry metrics, but is very bad for almost all transients. 
@@ -52,7 +54,7 @@ The 2.5, 3.0, 3.5, and 4.0 hour gaps show huge improvements for the Transient me
 No major difference between the mix and regular presto variants. Regular presto is (g+r, r+i, i+z), mix is (g+i, r+z, i+y). The mix version gets a little higher transient score at 4 hours, but does a little worse at 2.5 hours. 
 
 
-The presto_half runs execute the presto tripple strategy half of the nights. 
+The presto_half runs execute the presto triple strategy half of the nights. 
 
 
 ## Varied galactic plane ##
@@ -80,10 +82,10 @@ Very minor impact, as expected.
 
 Extra g,r,i observations on some local galaxies. Very minor impact on metrics. Would be nice to have a metric that confirms these do a better job on the nearby galaxies.
 
-## short expsoures ##
+## short exposures ##
 
 Including short exposures. Looks like we have short exposures and multiple short exposures. 
-Mulit short has a pretty large hit oin SNe metric. We don't have metrics that show the value of short exposures. The multi-short is probably no longer feasible because shutter will heat up.
+Multi short has a pretty large hit on SNe metric. We don't have metrics that show the value of short exposures. The multi-short is probably no longer feasible because shutter will heat up.
 
 ## Roman ##
 
@@ -109,18 +111,39 @@ The new DDF experiments
 
 We still need more DDF metrics. The QSO one we are running now is depth-only, doesn't seem to have any cadence sensitivity.
 
-* For all the DDF-centric experiements, the final depths and number of visits are all comperable, typically plus/minus 0.1 mags. Can be outliers if the dither size is very large.
+* For all the DDF-centric experiments, the final depths and number of visits are all comparable, typically plus/minus 0.1 mags. Can be outliers if the dither size is very large.
 
 * Early pass with the AGN structure function uncertainty doesn't show much difference between runs. May need to tune kwarg parameters (e.g., what magnitude AGN should we be considering?)?
 
 * Doing shorter DDF sequences more often can boost the SNe metrics considerably, but it does result in a lower open shutter fraction because it adds more filter changes. Might be worth looking at observing daily, but only in 2-3 filters rather than all 5. That could maybe maintain the SNe improvement but recover much of the open shutter fraction. 
 
 
+Descriptions of each:
+
+* ddf_season_length_:  Varying the season length of the DDFs
+* ddf_double_: Half-length sequences twice as often, again varying season length
+* ddf_accourd: Accordion cadence varying total season length, low-cadence season length, and the low cadence
+* ddf_bright: Reduce constraint on when DDF sequences can be scheduled (allow shallow depth sequences to maintain cadence)
+* ddf_deep_rolling: From DESC. Daily cadence, each field observed for 2 full seasons
+* ddf_deep_u: The deep universal strategy from DESC. 
+* ddf_dither: Vary the DDF dither size
+* ddf_early_deep: From DESC, early deep rolling strategy with only 3 DDFs
+* ddf_euclid_moved: Moving the Euclid field to test RA-oversubscription
+* ddf_old_rot: Using the old camera rotational strategy
+* ddf_quad: Quarter-length sequences executed 4x as often
+* ddf_quad_subfilter: Like ddf_quad, but not doing all filters for each sequence to reduce filter change overhead
+* ddf_roll: Initial attempt at rolling DDFs
+
+
+## shave ##
+
+Varying the exopsure time of standard visits between 20 and 40 seconds. Going just slightly shorter in exposure time seems to have a large negative impact on the SNe metric, not sure why.
+
 ## Pencil Surveys ##
 
-The `pencil_fs2` run boosts the trainsient metric, but has a fairly significant impact on fO and SNe. The open shutter fraction is down to 68%. This is from not enforcing contiguous blobs. 
+The `pencil_fs2` run boosts the transient metric, but has a fairly significant impact on fO and SNe. The open shutter fraction is down to 68%. This is from not enforcing contiguous blobs. 
 
-The `pencil_fs1` run suffers from the scheduler not being able to easily conenct some of the desired pencil beam areas with other parts of the survey. Currently no metrics show a siginificant improvement over the baseline. The open shutter fraction drops all the way down to 67%. 
+The `pencil_fs1` run suffers from the scheduler not being able to easily connect some of the desired pencil beam areas with other parts of the survey. Currently no metrics show a significant improvement over the baseline. The open shutter fraction drops all the way down to 67%. 
 
 If there's a compelling metric that shows improvement with these runs, we can work on extending the scheduler to selectively enforce contiguous blobs and recover most of the lost open shutter fraction. 
 
@@ -132,7 +155,7 @@ The plane footprints can drastically lower fO, and not surprisingly decrease the
 
 Transients can get a boost, along with fast microlensing since the bulge often gets more coverage. 
 
-We need some metrics that can measure the science cases in the relevant footprint areas. Right now we have a few science cases taht improve, but these footprint changes are large enough that they impact SRD requirements and cosmology metrics fairly quickly.
+We need some metrics that can measure the science cases in the relevant footprint areas. Right now we have a few science cases that improve, but these footprint changes are large enough that they impact SRD requirements and cosmology metrics fairly quickly.
 
 ## Good seeing ##
 
