@@ -104,6 +104,7 @@ Very minor impact. This came out to 0.13% of the visits.
 Looks like we tested chasing 10 or 50 ToOs per year. Minor impact on the science metrics.
 
 
+# 2.1 Runs #
 
 ## DDF ##
 
@@ -137,7 +138,7 @@ Descriptions of each:
 
 ## shave ##
 
-Varying the exopsure time of standard visits between 20 and 40 seconds. Going just slightly shorter in exposure time seems to have a large negative impact on the SNe metric, not sure why.
+Varying the exposure time of standard visits between 20 and 40 seconds. Going just slightly shorter in exposure time seems to have a large negative impact on the SNe metric, not sure why.
 
 ## Pencil Surveys ##
 
@@ -177,6 +178,10 @@ There doesn't seem to be much major science impact on adding the good seeing obs
 * Seems like we might be able to shave a little bit of time off the NES, good to let the Solar System group weigh in since I only looked at a few of their many metrics. Would be nice to know which metrics are NES sensitive.
 
 * As usual, we ran a lot of things that were requested. We think we did what was asked for, but we don't have any metrics from the community that clearly show an improvement.
+
+* The DESC DDF requests can have very different filter distributions than our previous runs. Are there any other science cases that have filter distribution metrics (photo-z?)
+
+
 
 
 
