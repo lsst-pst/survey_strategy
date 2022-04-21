@@ -1,4 +1,528 @@
 {
+  "baseline": {
+    "run": [
+      "baseline_v2.1_10yrs",
+      "baseline_v2.0_10yrs",
+      "baseline_retrofoot_v2.0_10yrs",
+      "retro_baseline_v2.0_10yrs"
+    ],
+    "description": "**baseline** : The v2 baseline simulations. V2.0 and V2.1 feature a survey footprint with expanded dust-free area and WFD-level visits in the Galactic Bulge and Magellanic Clouds. Coverage of the Northern Ecliptic Spur, South Celestial Pole, and remainder of the Galactic Plane is maintained, at lower levels. Filter balance is modified in different areas of the sky. A 2-region rolling cadence is used in the dust-free WFD sky, to improve cadence. The v2.1 simulation adds coverage in the Virgo cluster and acquisition of good seeing images in r&i bands. The retro simulations are intended to provide a bridge from v1.X to v2.X, introducing modifications to the footprint and scheduler code separately and in stages.",
+    "version": "--",
+    "reference": "--",
+    "brief": [
+      "v2.1 baseline (+Virgo, good seeing)",
+      "v2.0 baseline",
+      "v1.x footprint but new code capabilities",
+      "v1.x baseline with rubin_sim (without new code capabilities)"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/baseline/baseline_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/baseline/baseline_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/retro/baseline_retrofoot_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/retro/retro_baseline_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "baseline/baseline_v2.1_10yrs.db",
+      "baseline/baseline_v2.0_10yrs.db",
+      "retro/baseline_retrofoot_v2.0_10yrs.db",
+      "retro/retro_baseline_v2.0_10yrs.db"
+    ]
+  },
+  "rolling": {
+    "run": [
+      "noroll_v2.0_10yrs",
+      "rolling_ns2_rw0.5_v2.0_10yrs",
+      "rolling_ns3_rw0.5_v2.0_10yrs",
+      "rolling_ns2_rw0.9_v2.0_10yrs",
+      "rolling_ns3_rw0.9_v2.0_10yrs",
+      "rolling_bulge_ns2_rw0.5_v2.0_10yrs",
+      "rolling_bulge_ns2_rw0.8_v2.0_10yrs",
+      "rolling_bulge_ns2_rw0.9_v2.0_10yrs",
+      "rolling_all_sky_ns2_rw0.9_v2.0_10yrs",
+      "roll_early_v2.0_10yrs",
+      "six_rolling_ns6_rw0.5_v2.0_10yrs",
+      "six_rolling_ns6_rw0.9_v2.0_10yrs",
+      "rolling_bulge_6_v2.0_10yrs"
+    ],
+    "description": "**rolling** : The rolling family covers a wide variety of rolling cadence variations. These are arranged in general estimation of the impact of the rolling cadence, from \"least\" to \"most\" - no_roll has no rolling cadence at all, then variations on the number of stripes (ns=2/3/6) are added, as as which areas of the sky (WFD only, adding the bulge WFD-area, all-sky). The strength of rolling is also varied (rw=50,80 or 90%).",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "v2.0 baseline with no rolling",
+      "Rolling half-sky (2 regions) 50%",
+      "Rolling third-sky (3 regions) 50%",
+      "Rolling half-sky (2 regions) 90%",
+      "Rolling third-sky (3 regions) 90%",
+      "Roll in the bulge with 2 regions, 50%",
+      "Roll in the bulge with 2 regions, 80%",
+      "Roll in the bulge with 2 regions, 90%",
+      "Roll on all parts of the sky",
+      "Start rolling year 1",
+      "Rolling in one-sixth sky (6 regions) 50%",
+      "Rolling in one-sixth sky (6 regions) 90%",
+      "Roll the bulge in 6 stripes (low-dust WFD in 2 regions)"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/noroll/noroll_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns2_rw0.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns3_rw0.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns2_rw0.9_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns3_rw0.9_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.8_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.9_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_all_sky/rolling_all_sky_ns2_rw0.9_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_early/roll_early_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_six/six_rolling_ns6_rw0.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_six/six_rolling_ns6_rw0.9_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "noroll/noroll_v2.0_10yrs.db",
+      "rolling/rolling_ns2_rw0.5_v2.0_10yrs.db",
+      "rolling/rolling_ns3_rw0.5_v2.0_10yrs.db",
+      "rolling/rolling_ns2_rw0.9_v2.0_10yrs.db",
+      "rolling/rolling_ns3_rw0.9_v2.0_10yrs.db",
+      "rolling_bulge/rolling_bulge_ns2_rw0.5_v2.0_10yrs.db",
+      "rolling_bulge/rolling_bulge_ns2_rw0.8_v2.0_10yrs.db",
+      "rolling_bulge/rolling_bulge_ns2_rw0.9_v2.0_10yrs.db",
+      "rolling_all_sky/rolling_all_sky_ns2_rw0.9_v2.0_10yrs.db",
+      "rolling_early/roll_early_v2.0_10yrs.db",
+      "rolling_six/six_rolling_ns6_rw0.5_v2.0_10yrs.db",
+      "rolling_six/six_rolling_ns6_rw0.9_v2.0_10yrs.db",
+      "rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
+    ]
+  },
+  "triplets": {
+    "run": [
+      "presto_gap1.5_v2.0_10yrs",
+      "presto_gap2.0_v2.0_10yrs",
+      "presto_gap2.5_v2.0_10yrs",
+      "presto_gap3.0_v2.0_10yrs",
+      "presto_gap3.5_v2.0_10yrs",
+      "presto_gap4.0_v2.0_10yrs",
+      "presto_gap1.5_mix_v2.0_10yrs",
+      "presto_gap2.0_mix_v2.0_10yrs",
+      "presto_gap2.5_mix_v2.0_10yrs",
+      "presto_gap3.0_mix_v2.0_10yrs",
+      "presto_gap3.5_mix_v2.0_10yrs",
+      "presto_gap4.0_mix_v2.0_10yrs",
+      "presto_half_gap1.5_v2.0_10yrs",
+      "presto_half_gap2.0_v2.0_10yrs",
+      "presto_half_gap2.5_v2.0_10yrs",
+      "presto_half_gap3.0_v2.0_10yrs",
+      "presto_half_gap3.5_v2.0_10yrs",
+      "presto_half_gap4.0_v2.0_10yrs",
+      "presto_half_gap1.5_mix_v2.0_10yrs",
+      "presto_half_gap2.0_mix_v2.0_10yrs",
+      "presto_half_gap2.5_mix_v2.0_10yrs",
+      "presto_half_gap3.0_mix_v2.0_10yrs",
+      "presto_half_gap3.5_mix_v2.0_10yrs",
+      "presto_half_gap4.0_mix_v2.0_10yrs",
+      "long_gaps_nightsoff7_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff6_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff5_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff4_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff3_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff2_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff1_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff0_delayed1827_v2.0_10yrs",
+      "long_gaps_nightsoff7_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff6_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff5_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff4_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff3_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff2_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff1_delayed-1_v2.0_10yrs",
+      "long_gaps_nightsoff0_delayed-1_v2.0_10yrs"
+    ],
+    "description": "**triplets** : These simulations add a third visit within each night, with variations on the time interval between the first pair of visits (standard separation of 33 minutes) to the third visit. The third visit is always acquired in the same filter as one of the earlier visits in the pair. The \"presto_gap\" runs take triplets all the time, at a set interval to the third visit and in the filter pairs described in the brief descriptions. The \"presto_half\" runs are similar, but only take triplets of visits about half of the time. The \"long_gaps\" runs vary the interval to the third visit, and generally have longer gaps of 2 to 7 hours. The long_gaps run take triplets at a variety of frequencies, ranging from every night to every few nights; in some simulations the triplets do not start until year 5.",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "Triples spaced 1.5 hours apart g+r,r+i,i+z initial pairs",
+      "Triples spaced 2.0 hours apart g+r,r+i,i+z initial pairs",
+      "Triples spaced 2.5 hours apart g+r,r+i,i+z initial pairs",
+      "Triples spaced 3.0 hours apart g+r,r+i,i+z initial pairs",
+      "Triples spaced 3.5 hours apart g+r,r+i,i+z initial pairs",
+      "Triples spaced 4.0 hours apart g+r,r+i,i+z initial pairs",
+      "Triples spaced 1.5 hours apart g+i,r+z,i+y initial pairs",
+      "Triples spaced 2.0 hours apart g+i,r+z,i+y initial pairs",
+      "Triples spaced 2.5 hours apart g+i,r+z,i+y initial pairs",
+      "Triples spaced 3.0 hours apart g+i,r+z,i+y initial pairs",
+      "Triples spaced 3.5 hours apart g+i,r+z,i+y initial pairs",
+      "Triples spaced 4.0 hours apart g+i,r+z,i+y initial pairs",
+      "Triples spaced 1.5 hours apart g+r,r+i,i+z initial pairs, triples every other night",
+      "Triples spaced 2.0 hours apart g+r,r+i,i+z initial pairs, triples every other night",
+      "Triples spaced 2.5 hours apart g+r,r+i,i+z initial pairs, triples every other night",
+      "Triples spaced 3.0 hours apart g+r,r+i,i+z initial pairs, triples every other night",
+      "Triples spaced 3.5 hours apart g+r,r+i,i+z initial pairs, triples every other night",
+      "Triples spaced 4.0 hours apart g+r,r+i,i+z initial pairs, triples every other night",
+      "Triples spaced 1.5 hours apart g+i,r+z,i+y initial pairs, triples every other night",
+      "Triples spaced 2.0 hours apart g+i,r+z,i+y initial pairs, triples every other night",
+      "Triples spaced 2.5 hours apart g+i,r+z,i+y initial pairs, triples every other night",
+      "Triples spaced 3.0 hours apart g+i,r+z,i+y initial pairs, triples every other night",
+      "Triples spaced 3.5 hours apart g+i,r+z,i+y initial pairs, triples every other night",
+      "Triples spaced 4.0 hours apart g+i,r+z,i+y initial pairs, triples every other night",
+      "Long gaps every 7 nights starting after year 5",
+      "Long gaps every 6 nights starting after year 5",
+      "Long gaps every 5 nights starting after year 5",
+      "Long gaps every 4 nights starting after year 5",
+      "Long gaps every 3 nights starting after year 5",
+      "Long gaps every 2 nights starting after year 5",
+      "Long gaps every other night starting after year 5",
+      "Long gaps every night starting after year 5",
+      "Long gaps every 7 nights",
+      "Long gaps every 6 nights",
+      "Long gaps every 5 nights",
+      "Long gaps every 4 nights",
+      "Long gaps every 3 nights",
+      "Long gaps every 2 nights",
+      "Long gaps every other night",
+      "Long gaps every night"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap1.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap4.0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap1.5_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.0_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.5_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.0_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.5_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap4.0_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap1.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.5_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap4.0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap1.5_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.0_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.5_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.0_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.5_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap4.0_mix_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff7_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff6_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff5_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff4_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff3_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff2_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff1_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff7_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff6_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff5_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff4_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff3_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff2_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff1_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "presto/presto_gap1.5_v2.0_10yrs.db",
+      "presto/presto_gap2.0_v2.0_10yrs.db",
+      "presto/presto_gap2.5_v2.0_10yrs.db",
+      "presto/presto_gap3.0_v2.0_10yrs.db",
+      "presto/presto_gap3.5_v2.0_10yrs.db",
+      "presto/presto_gap4.0_v2.0_10yrs.db",
+      "presto/presto_gap1.5_mix_v2.0_10yrs.db",
+      "presto/presto_gap2.0_mix_v2.0_10yrs.db",
+      "presto/presto_gap2.5_mix_v2.0_10yrs.db",
+      "presto/presto_gap3.0_mix_v2.0_10yrs.db",
+      "presto/presto_gap3.5_mix_v2.0_10yrs.db",
+      "presto/presto_gap4.0_mix_v2.0_10yrs.db",
+      "presto_half/presto_half_gap1.5_v2.0_10yrs.db",
+      "presto_half/presto_half_gap2.0_v2.0_10yrs.db",
+      "presto_half/presto_half_gap2.5_v2.0_10yrs.db",
+      "presto_half/presto_half_gap3.0_v2.0_10yrs.db",
+      "presto_half/presto_half_gap3.5_v2.0_10yrs.db",
+      "presto_half/presto_half_gap4.0_v2.0_10yrs.db",
+      "presto_half/presto_half_gap1.5_mix_v2.0_10yrs.db",
+      "presto_half/presto_half_gap2.0_mix_v2.0_10yrs.db",
+      "presto_half/presto_half_gap2.5_mix_v2.0_10yrs.db",
+      "presto_half/presto_half_gap3.0_mix_v2.0_10yrs.db",
+      "presto_half/presto_half_gap3.5_mix_v2.0_10yrs.db",
+      "presto_half/presto_half_gap4.0_mix_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff7_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff6_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff5_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff4_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff3_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff2_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff1_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff0_delayed1827_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff7_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff6_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff5_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff4_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff3_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff2_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff1_delayed-1_v2.0_10yrs.db",
+      "long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
+    ]
+  },
+  "long gaps no pairs": {
+    "run": [
+      "long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs",
+      "long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs",
+      "long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs"
+    ],
+    "description": "**long gaps no pairs** : The baseline survey strategy takes pairs of visits every few nights, wherethe pair is separated by about 33 minutes. The pairs are taken in mixed filters, for color measurements. These simulations extend the gap between the pair of visits, modifying it to a variable time period of between 2 to 7 hours. The pair of visits are both in the same filter, in any of griz (g+r, r+i, or i+z pairs). In some of the simulations, these long gap visits are obtained throughout the survey, while for other simulations the longer time separations do not start until year 5.",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "long gap pairs every 7 nights starting after year 5",
+      "long gap pairs every 6 nights starting after year 5",
+      "long gap pairs every 5 nights starting after year 5",
+      "Long gap pairs every 4 nights starting after year 5",
+      "Long gap pairs every 3 nights starting after year 5",
+      "Long gap pairs every 2 nights starting after year 5",
+      "Long gap pairs every other night starting after year 5",
+      "Long gap pairs every night starting after year 5",
+      "long gap pairs every 7 nights",
+      "long gap pairs every 6 nights",
+      "long gap pairs every 5 nights",
+      "Long gap pairs every 4 nights",
+      "Long gap pairs every 3 nights",
+      ", Long gap pairs every 2 nights",
+      ", Long gap pairs every other night",
+      "Long gap pairs every night"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "long_gaps_nopair/long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs.db",
+      "long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db"
+    ]
+  },
+  "bluer balance": {
+    "run": [
+      "bluer_indx0_v2.0_10yrs",
+      "bluer_indx1_v2.0_10yrs"
+    ],
+    "description": "**bluer balance** : The standard filter balance in the dust-free WFD in the baseline is {'u': 0.07, 'g': 0.09, 'r': 0.22, 'i': 0.22, 'z': 0.20, 'y': 0.20}. These simulations vary the filter balance, skewing it bluer. One simulation adds visits to g band,while the other adds visits to both u and g band, in each case by taking some visits from rizy.",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "More g - filter ratio in WFD of {'u': 0.07, 'g': 0.12, 'r': 0.21, 'i': 0.21, 'z': 0.19, 'y': 0.20}",
+      "More u and g - filter ratio in WFD of {'u': 0.08, 'g': 0.11, 'r': 0.21, 'i': 0.21, 'z': 0.19, 'y': 0.20}"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/bluer/bluer_indx0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/bluer/bluer_indx1_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "bluer/bluer_indx0_v2.0_10yrs.db",
+      "bluer/bluer_indx1_v2.0_10yrs.db"
+    ]
+  },
+  "longer u visits": {
+    "run": [
+      "long_u1_v2.0_10yrs",
+      "long_u2_v2.0_10yrs"
+    ],
+    "description": "**longer u visits** : The baseline survey uses 2x15s visits for all bands except u band. In the baseline, u band visits are 1x30s to reduce the effects of readnoise (which are most extreme in u, due to the low sky-background). These simulations extend the u band visit time further, to 1x50s. In one simulation, the total amount of survey time spent on u band is kept the same, so the number of visits is reduced accordingly. In the other simulation, more survey time is spent in u band in order to maintain the number of visits in u.",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "u band visits 1x50s, number of u visits same as baseline",
+      "u band visits 1x50s, fewer number of u visits"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_u/long_u1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_u/long_u2_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "long_u/long_u1_v2.0_10yrs.db",
+      "long_u/long_u2_v2.0_10yrs.db"
+    ]
+  },
+  "vary nes": {
+    "run": [
+      "vary_nes_nesfrac0.01_v2.0_10yrs",
+      "vary_nes_nesfrac0.05_v2.0_10yrs",
+      "vary_nes_nesfrac0.10_v2.0_10yrs",
+      "vary_nes_nesfrac0.15_v2.0_10yrs",
+      "vary_nes_nesfrac0.20_v2.0_10yrs",
+      "vary_nes_nesfrac0.25_v2.0_10yrs",
+      "vary_nes_nesfrac0.30_v2.0_10yrs",
+      "vary_nes_nesfrac0.35_v2.0_10yrs",
+      "vary_nes_nesfrac0.40_v2.0_10yrs",
+      "vary_nes_nesfrac0.45_v2.0_10yrs",
+      "vary_nes_nesfrac0.50_v2.0_10yrs",
+      "vary_nes_nesfrac0.55_v2.0_10yrs",
+      "vary_nes_nesfrac0.75_v2.0_10yrs",
+      "vary_nes_nesfrac1.00_v2.0_10yrs"
+    ],
+    "description": "**vary nes** : These simulations investigate the effect of varying the amount of survey time spent on covering the North Ecliptic Spur area. The baseline characteristics, including the ratio of visits over the remainder of the footprint, are kept the same. ",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "NES at 1% WFD level",
+      "NES at 5% WFD level",
+      "NES at 10% WFD level",
+      "NES at 15% WFD level",
+      "NES at 20% WFD level",
+      "NES at 25% WFD level",
+      "NES at 30% WFD level",
+      "NES at 35% WFD level",
+      "NES at 40% WFD level",
+      "NES at 45% WFD level",
+      "NES at 50% WFD level",
+      "NES at 55% WFD level",
+      "NES at 75% WFD level",
+      "NES at 100% WFD level"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.01_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.05_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.10_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.15_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.20_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.25_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.30_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.35_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.40_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.45_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.50_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.55_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.75_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "vary_nes/vary_nes_nesfrac0.01_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.05_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.10_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.15_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.20_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.25_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.30_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.35_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.40_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.45_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.50_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.55_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac0.75_v2.0_10yrs.db",
+      "vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
+    ]
+  },
+  "vary gp": {
+    "run": [
+      "vary_gp_gpfrac0.01_v2.0_10yrs",
+      "vary_gp_gpfrac0.05_v2.0_10yrs",
+      "vary_gp_gpfrac0.10_v2.0_10yrs",
+      "vary_gp_gpfrac0.15_v2.0_10yrs",
+      "vary_gp_gpfrac0.20_v2.0_10yrs",
+      "vary_gp_gpfrac0.25_v2.0_10yrs",
+      "vary_gp_gpfrac0.30_v2.0_10yrs",
+      "vary_gp_gpfrac0.35_v2.0_10yrs",
+      "vary_gp_gpfrac0.40_v2.0_10yrs",
+      "vary_gp_gpfrac0.45_v2.0_10yrs",
+      "vary_gp_gpfrac0.50_v2.0_10yrs",
+      "vary_gp_gpfrac0.55_v2.0_10yrs",
+      "vary_gp_gpfrac0.75_v2.0_10yrs",
+      "vary_gp_gpfrac1.00_v2.0_10yrs"
+    ],
+    "description": "**vary gp** : These simulations investigate the effect of varying the amount of survey time spent on covering the background (non-WFD-level) Galactic Plane area. The baseline characteristics, including the ratio of visits over the remainder of the footprint, are kept the same.",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
+    "brief": [
+      "Dusty plane at 1% WFD level",
+      "Dusty plane at 5% WFD level",
+      "Dusty plane at 10% WFD level",
+      "Dusty plane at 15% WFD level",
+      "Dusty plane at 20% WFD level",
+      "Dusty plane at 25% WFD level",
+      "Dusty plane at 30% WFD level",
+      "Dusty plane at 35% WFD level",
+      "Dusty plane at 40% WFD level",
+      "Dusty plane at 45% WFD level",
+      "Dusty plane at 50% WFD level",
+      "Dusty plane at 55% WFD level",
+      "Dusty plane at 75% WFD level",
+      "Dusty plane at 100% WFD level"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.01_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.05_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.10_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.15_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.20_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.25_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.30_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.35_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.40_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.45_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.50_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.55_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.75_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
+    ],
+    "filepath": [
+      "vary_gp/vary_gp_gpfrac0.01_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.05_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.10_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.15_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.20_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.25_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.30_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.35_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.40_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.45_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.50_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.55_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac0.75_v2.0_10yrs.db",
+      "vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
+    ]
+  },
   "galactic plane footprint": {
     "run": [
       "pencil_fs2_v2.1_10yrs",
@@ -76,54 +600,232 @@
       "footprints/plane_priority_priority1.2_pbt_v2.1_10yrs.db"
     ]
   },
-  "baseline": {
+  "vary expt": {
     "run": [
-      "baseline_v2.1_10yrs",
-      "baseline_v2.0_10yrs",
-      "baseline_retrofoot_v2.0_10yrs",
-      "retro_baseline_v2.0_10yrs"
+      "shave_20_v2.1_10yrs",
+      "shave_22_v2.1_10yrs",
+      "shave_25_v2.1_10yrs",
+      "shave_28_v2.1_10yrs",
+      "shave_30_v2.1_10yrs",
+      "shave_32_v2.1_10yrs",
+      "shave_35_v2.1_10yrs",
+      "shave_38_v2.1_10yrs",
+      "shave_40_v2.1_10yrs",
+      "vary_expt_v2.0_10yrs"
     ],
-    "description": "**baseline** : The v2 baseline simulations. V2.0 and V2.1 feature a survey footprint with expanded dust-free area and WFD-level visits in the Galactic Bulge and Magellanic Clouds. Coverage of the Northern Ecliptic Spur, South Celestial Pole, and remainder of the Galactic Plane is maintained, at lower levels. Filter balance is modified in different areas of the sky. A 2-region rolling cadence is used in the dust-free WFD sky, to improve cadence. The v2.1 simulation adds coverage in the Virgo cluster and acquisition of good seeing images in r&i bands. The retro simulations are intended to provide a bridge from v1.X to v2.X, introducing modifications to the footprint and scheduler code separately and in stages.",
+    "description": "**vary expt** : The baseline survey strategy uses 2x15s visits for grizy filters, and 1x30s visits for u band. The simulations in this family vary the exposure time per visit from 20 to 40 seconds, to evaluate the impact on various metrics of varying individual image depth (the \"shave_\" runs). In addition, there is one simulation (`vary_expt_v2.0_10yrs`) which uses variable exposure time per visit to attempt to make the individual image depth consistent - each visit in this simulation could have an exposure time of between 20 to 100 seconds.",
     "version": "--",
     "reference": "--",
     "brief": [
-      "v2.1 baseline (+Virgo, good seeing)",
-      "v2.0 baseline",
-      "v1.x footprint but new code capabilities",
-      "v1.x baseline with rubin_sim (without new code capabilities)"
+      "Reduce exposure time per visit to 20 seconds",
+      "Reduce exposure time per visit to 22 seconds",
+      "Reduce exposure time per visit to 25 seconds",
+      "Reduce exposure time per visit to 29 seconds",
+      "Keep exposure time per visit at 30 seconds",
+      "Extend exposure time per visit to 32 seconds",
+      "Extend exposure time per visit to 35 seconds",
+      "Extend exposure time per visit to 38 seconds",
+      "Extend exposure time per visit to 40 seconds",
+      "Vary the exposure times between 20 and 100s"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/baseline/baseline_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/baseline/baseline_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/retro/baseline_retrofoot_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/retro/retro_baseline_v2.0_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_22_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_28_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_32_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_35_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_38_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_40_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_expt/vary_expt_v2.0_10yrs.db"
     ],
     "filepath": [
-      "baseline/baseline_v2.1_10yrs.db",
-      "baseline/baseline_v2.0_10yrs.db",
-      "retro/baseline_retrofoot_v2.0_10yrs.db",
-      "retro/retro_baseline_v2.0_10yrs.db"
+      "shave/shave_20_v2.1_10yrs.db",
+      "shave/shave_22_v2.1_10yrs.db",
+      "shave/shave_25_v2.1_10yrs.db",
+      "shave/shave_28_v2.1_10yrs.db",
+      "shave/shave_30_v2.1_10yrs.db",
+      "shave/shave_32_v2.1_10yrs.db",
+      "shave/shave_35_v2.1_10yrs.db",
+      "shave/shave_38_v2.1_10yrs.db",
+      "shave/shave_40_v2.1_10yrs.db",
+      "vary_expt/vary_expt_v2.0_10yrs.db"
     ]
   },
-  "bluer balance": {
+  "good seeing": {
     "run": [
-      "bluer_indx0_v2.0_10yrs",
-      "bluer_indx1_v2.0_10yrs"
+      "good_seeing_gsw0.0_v2.1_10yrs",
+      "good_seeing_gsw1.0_v2.1_10yrs",
+      "good_seeing_gsw10.0_v2.1_10yrs",
+      "good_seeing_gsw20.0_v2.1_10yrs",
+      "good_seeing_gsw3.0_v2.1_10yrs",
+      "good_seeing_gsw50.0_v2.1_10yrs",
+      "good_seeing_gsw6.0_v2.1_10yrs",
+      "good_seeing_u_gsw0.0_v2.1_10yrs",
+      "good_seeing_u_gsw1.0_v2.1_10yrs",
+      "good_seeing_u_gsw10.0_v2.1_10yrs",
+      "good_seeing_u_gsw20.0_v2.1_10yrs",
+      "good_seeing_u_gsw3.0_v2.1_10yrs",
+      "good_seeing_u_gsw50.0_v2.1_10yrs",
+      "good_seeing_u_gsw6.0_v2.1_10yrs"
     ],
-    "description": "**bluer balance** : The standard filter balance in the dust-free WFD in the baseline is {'u': 0.07, 'g': 0.09, 'r': 0.22, 'i': 0.22, 'z': 0.20, 'y': 0.20}. These simulations vary the filter balance, skewing it bluer. One simulation adds visits to g band,while the other adds visits to both u and g band, in each case by taking some visits from rizy.",
+    "description": "**good seeing** : This family of simulations adds a requirement for 3 \"good seeing\" (seeing < 0.8 arcseconds) images per year, in various bandpasses. Note that `baseline_v2.1_10yrs` (and other v2.1 simulations) adds this requirement in r and i bands as the default.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Good seeing priority, with weight 0.0, grizy only",
+      "Good seeing priority, with weight 1.0, grizy only",
+      "Good seeing priority, with weight 10.0, grizy only",
+      "Good seeing priority, with weight 20.0, grizy only",
+      "Good seeing priority, with weight 3.0, grizy only",
+      "Good seeing priority, with weight 50.0, grizy only",
+      "Good seeing priority, with weight 6.0, grizy only",
+      "Good seeing priority, with weight 0.0, including ugri band",
+      "Good seeing priority, with weight 1.0, including ugri band",
+      "Good seeing priority, with weight 10.0, including ugri band",
+      "Good seeing priority, with weight 20.0, including ugri band",
+      "Good seeing priority, with weight 3.0, including ugri band",
+      "Good seeing priority, with weight 50.0, including ugri band",
+      "Good seeing priority, with weight 6.0, including ugri band"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
+      "good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db"
+    ]
+  },
+  "microsurveys": {
+    "run": [
+      "virgo_cluster_v2.0_10yrs",
+      "carina_v2.0_10yrs",
+      "smc_movie_v2.0_10yrs",
+      "roman_v2.0_10yrs",
+      "local_gal_bindx0_v2.0_10yrs",
+      "local_gal_bindx1_v2.0_10yrs",
+      "local_gal_bindx2_v2.0_10yrs",
+      "too_rate10_v2.0_10yrs",
+      "too_rate50_v2.0_10yrs",
+      "north_stripe_v2.0_10yrs",
+      "short_exp_v2.0_10yrs",
+      "multi_short_v2.0_10yrs",
+      "twilight_neo_nightpattern4v2.0_10yrs",
+      "twilight_neo_nightpattern7v2.0_10yrs",
+      "twilight_neo_nightpattern3v2.0_10yrs",
+      "twilight_neo_nightpattern6v2.0_10yrs",
+      "twilight_neo_nightpattern5v2.0_10yrs",
+      "twilight_neo_nightpattern2v2.0_10yrs",
+      "twilight_neo_nightpattern1v2.0_10yrs"
+    ],
+    "description": "**microsurveys** : There are special programs which can achieve additional science beyond or supporting the primary Rubin LSST science drivers, if provided specialized observing time via \"microsurveys\". These simulations investigate a subset of microsurvey proposals, described further in their brief descriptions.",
     "version": "2.0",
     "reference": "baseline_v2.0_10yrs",
     "brief": [
-      "More g - filter ratio in WFD of {'u': 0.07, 'g': 0.12, 'r': 0.21, 'i': 0.21, 'z': 0.19, 'y': 0.20}",
-      "More u and g - filter ratio in WFD of {'u': 0.08, 'g': 0.11, 'r': 0.21, 'i': 0.21, 'z': 0.19, 'y': 0.20}"
+      "Add the virgo cluster to WFD footprint",
+      "One week per year observing Carina",
+      "Two nights of observing the SMC in movie mode",
+      "Microsurvey of the Roman bulge field",
+      "Increase local galaxy coverage {'g': 0.5, 'r': 0.2, 'i': 0.1}",
+      "Increasing local galaxy coverage {'g': 1.0, 'r': 0.3, 'i': 0.1}",
+      "Increasing local galaxy coverage {'g': 1.5, 'r': 0.35, 'i': 0.2}",
+      "Follow up ToO alerts, 10 events per year",
+      "Follow up ToO alerts, 50 events per year",
+      "Add a north stripe to Dec +30",
+      "Take up to 3 short (5s) visits in year 1",
+      "Multiple (4) short (5s) exposures in each filter in a year, stop after 12.",
+      "Twilight neo observations 1 night on 3 off",
+      "Twilight neo observations 2 night on 4 off",
+      "Twilight neo observations 1 night on 2 off",
+      "Twilight neo observations 3 night on 4 off",
+      "Twilight neo observations 4 night on 4 off",
+      "Twilight neo observations every other night",
+      "Twilight neo observations every night"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/bluer/bluer_indx0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/bluer/bluer_indx1_v2.0_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/virgo_cluster/virgo_cluster_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/carina/carina_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/smc_movie/smc_movie_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/roman/roman_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/local_gals/local_gal_bindx0_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/local_gals/local_gal_bindx1_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/local_gals/local_gal_bindx2_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/ToO/too_rate10_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/ToO/too_rate50_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/north_stripe/north_stripe_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/short_exp/short_exp_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/multi_short/multi_short_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern4v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern7v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern3v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern6v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern5v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern2v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
     ],
     "filepath": [
-      "bluer/bluer_indx0_v2.0_10yrs.db",
-      "bluer/bluer_indx1_v2.0_10yrs.db"
+      "microsurveys/virgo_cluster/virgo_cluster_v2.0_10yrs.db",
+      "microsurveys/carina/carina_v2.0_10yrs.db",
+      "microsurveys/smc_movie/smc_movie_v2.0_10yrs.db",
+      "microsurveys/roman/roman_v2.0_10yrs.db",
+      "microsurveys/local_gals/local_gal_bindx0_v2.0_10yrs.db",
+      "microsurveys/local_gals/local_gal_bindx1_v2.0_10yrs.db",
+      "microsurveys/local_gals/local_gal_bindx2_v2.0_10yrs.db",
+      "microsurveys/ToO/too_rate10_v2.0_10yrs.db",
+      "microsurveys/ToO/too_rate50_v2.0_10yrs.db",
+      "microsurveys/north_stripe/north_stripe_v2.0_10yrs.db",
+      "microsurveys/short_exp/short_exp_v2.0_10yrs.db",
+      "microsurveys/multi_short/multi_short_v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern4v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern7v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern3v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern6v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern5v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern2v2.0_10yrs.db",
+      "microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
+    ]
+  },
+  "technical": {
+    "run": [
+      "march_start_v2.1_10yrs"
+    ],
+    "description": "**technical** : This family is primarily aimed at questions arising in the course of the project team work, but one simulation seemed interesting to make available to the community. This is the `march_start_v2.1_10yrs` run, which simulates a March 2023 start to the survey. This is impractical, but could serve as a useful off-season comparison to the baseline, which starts in October 2024. ",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Start the survey in March 2022"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/technical/march_start/march_start_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "technical/march_start/march_start_v2.1_10yrs.db"
     ]
   },
   "suppress repeats": {
@@ -163,58 +865,79 @@
       "suppress_repeats/no_repeat_rpw-100.0_v2.1_10yrs.db"
     ]
   },
-  "ddf roll": {
+  "ddf percent": {
     "run": [
-      "ddf_roll_slf0.20_v2.1_10yrs"
+      "ddf_frac_ddf_per0.6_v2.0_10yrs",
+      "ddf_frac_ddf_per1.6_v2.0_10yrs"
     ],
-    "description": "**ddf roll** : This family adds a rolling cadence to the DDFs, so that DD fields are observed more intensely in some years, less intensely in others.This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
+    "description": "**ddf percent** : The baseline survey strategy adds five Deep Drilling Fields, each allocated about 1% of the total survey observing time, for about 5% total. In these simulations, the amount of time allocated for DDFs is varied from 3 to 8%. It is worth noting that we anticipate implementing improvements on the DDF scheduling algorithm in the next six months, and will revisit more complicated DDF scheduling requests with that improvement in hand.This family uses \"original\" DDF scheduling, not the v2.1 pre-scheduled optimized visits.",
+    "version": "2.0",
+    "reference": "baseline_v2.0_10yrs",
     "brief": [
-      "Roll the DDF fields between years"
+      "DDF fraction of visits reduced to 3% of total",
+      "DDF fraction of visits increased to 8%"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf/ddf_frac_ddf_per0.6_v2.0_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
     ],
     "filepath": [
-      "ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+      "ddf/ddf_frac_ddf_per0.6_v2.0_10yrs.db",
+      "ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
     ]
   },
-  "ddf old rot": {
+  "ddf euclid moved": {
     "run": [
-      "ddf_old_rot_slf0.10_v2.1_10yrs",
-      "ddf_old_rot_slf0.15_v2.1_10yrs",
-      "ddf_old_rot_slf0.20_v2.1_10yrs",
-      "ddf_old_rot_slf0.25_v2.1_10yrs",
-      "ddf_old_rot_slf0.30_v2.1_10yrs",
-      "ddf_old_rot_slf0.35_v2.1_10yrs"
+      "ddf_euclid_moved_slf0.20_v2.1_10yrs"
     ],
-    "description": "**ddf old rot** : This family adds a validation or comparison option for the remainder of the v2.1 DDF simulations. In this family, the rotation angle is fixed so that rotTelPos is constant; in most v2.1 simulations, rotSkyPos is held fixed. Otherwise this family is similar to `ddf season length`, and uses pre-scheduled DDF visits.",
+    "description": "**ddf euclid moved** : This simulation moves the fifth DDF from Euclid South to an otherwise optimally (for non-competition between DDF locations purposes) located field. The purpose is to show that choosing Euclid South for the fifth DDF has little to no impact on the rest of the survey outside the DDF fields. This was demonstrated to the SCOC in slides located available at  https://docs.google.com/presentation/d/1TSKXsEX2Q3aY60dDVpc6Q9K2irxEyxQhVQBqLMetvag/edit#slide=id.p",
     "version": "2.1",
     "reference": "baseline_v2.1_10yrs",
     "brief": [
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.10",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.15",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.20",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.25",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.30",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.35"
+      "Move Euclid South DDF to single new \"easy-scheduling\" position"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
+      "ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
+    ]
+  },
+  "ddf season length": {
+    "run": [
+      "ddf_season_length_slf0.10_v2.1_10yrs",
+      "ddf_season_length_slf0.15_v2.1_10yrs",
+      "ddf_season_length_slf0.20_v2.1_10yrs",
+      "ddf_season_length_slf0.25_v2.1_10yrs",
+      "ddf_season_length_slf0.30_v2.1_10yrs",
+      "ddf_season_length_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf season length** : This family investigates the effect of varying the season length within the DDF fields. `season length fraction` reflects how much of the available season is used -- 0.1 indicates that 10% of the available season is removed at each end (for a total of 80% of the available season used for observations), while 0.3 would indicate that 40% of the total possible season is used. This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "DDF with season length fraction 0.10",
+      "DDF with season length fraction 0.15",
+      "DDF with season length fraction 0.20",
+      "DDF with season length fraction 0.25",
+      "DDF with season length fraction 0.30",
+      "DDF with season length fraction 0.35"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
+      "ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
+      "ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
+      "ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
+      "ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
+      "ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf double": {
@@ -252,6 +975,187 @@
       "ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
       "ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
       "ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
+    ]
+  },
+  "ddf quad": {
+    "run": [
+      "ddf_quad_slf0.10_v2.1_10yrs",
+      "ddf_quad_slf0.15_v2.1_10yrs",
+      "ddf_quad_slf0.20_v2.1_10yrs",
+      "ddf_quad_slf0.25_v2.1_10yrs",
+      "ddf_quad_slf0.30_v2.1_10yrs",
+      "ddf_quad_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf quad** : This family cuts the individual DDF sequences by four, resulting in brighter single night coadded depths, but an even shorter interval of nights between visits.This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Shorter (1/4) DDF sequences, season length fraction 0.10",
+      "Shorter (1/4) DDF sequences, season length fraction 0.15",
+      "Shorter (1/4) DDF sequences, season length fraction 0.20",
+      "Shorter (1/4) DDF sequences, season length fraction 0.25",
+      "Shorter (1/4) DDF sequences, season length fraction 0.30",
+      "Shorter (1/4) DDF sequences, season length fraction 0.35"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
+      "ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
+      "ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
+      "ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
+      "ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
+      "ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
+    ]
+  },
+  "ddf quad subfilter": {
+    "run": [
+      "ddf_quad_subfilter_slf0.10_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.15_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.20_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.25_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.30_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf quad subfilter** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. However, here only some filters are used in each DDF sequence, alternating between active filters on different nights.This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.10",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.15",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.20",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.25",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.30",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.35"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
+      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
+      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
+      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
+      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
+      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+    ]
+  },
+  "ddf bright": {
+    "run": [
+      "ddf_bright_slf0.10_v2.1_10yrs",
+      "ddf_bright_slf0.15_v2.1_10yrs",
+      "ddf_bright_slf0.20_v2.1_10yrs",
+      "ddf_bright_slf0.25_v2.1_10yrs",
+      "ddf_bright_slf0.30_v2.1_10yrs",
+      "ddf_bright_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf bright** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. In this family, the m5 limits for scheduling visits are relaxed, resulting in visits running more consistently throughout the lunar cycle even into bright time. This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "DDF quad-style sequences running through bright time, season length fraction 0.10",
+      "DDF quad-style sequences running through bright time, season length fraction 0.15",
+      "DDF quad-style sequences running through bright time, season length fraction 0.20",
+      "DDF quad-style sequences running through bright time, season length fraction 0.25",
+      "DDF quad-style sequences running through bright time, season length fraction 0.30",
+      "DDF quad-style sequences running through bright time, season length fraction 0.35"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
+      "ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
+      "ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
+      "ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
+      "ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
+      "ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
+    ]
+  },
+  "ddf dither": {
+    "run": [
+      "ddf_dither_size_slf0.20_md0.01_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md0.05_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md0.10_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md0.25_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md0.50_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md0.70_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md1.00_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md1.50_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md2.50_v2.1_10yrs",
+      "ddf_dither_size_slf0.20_md3.50_v2.1_10yrs"
+    ],
+    "description": "**ddf dither** : This family varies the dithering pattern for the DDF sequences, changing the max translational dither from 0.01 to 3.5 degrees. Increasing dither sizes are expected to improve calibration, while decreasing dither sizes may improve final coadded depth over the smaller total observed area.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "DDFs with variable dither offsets - max dither 0.01 deg",
+      "DDFs with variable dither offsets - max dither 0.05 deg",
+      "DDFs with variable dither offsets - max dither 0.10 deg",
+      "DDFs with variable dither offsets - max dither 0.25 deg",
+      "DDFs with variable dither offsets - max dither 0.50 deg",
+      "DDFs with variable dither offsets - max dither 0.70 deg",
+      "DDFs with variable dither offsets - max dither 1.00 deg",
+      "DDFs with variable dither offsets - max dither 1.50 deg",
+      "DDFs with variable dither offsets - max dither 2.50 deg",
+      "DDFs with variable dither offsets - max dither 3.50 deg"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
+      "ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
+    ]
+  },
+  "ddf roll": {
+    "run": [
+      "ddf_roll_slf0.20_v2.1_10yrs"
+    ],
+    "description": "**ddf roll** : This family adds a rolling cadence to the DDFs, so that DD fields are observed more intensely in some years, less intensely in others.This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Roll the DDF fields between years"
+    ],
+    "url": [
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
     ]
   },
   "ddf accordian": {
@@ -423,76 +1327,41 @@
       "ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.1_10yrs.db"
     ]
   },
-  "ddf deep rolling": {
+  "ddf old rot": {
     "run": [
-      "ddf_deep_rolling_slf0.20_v2.1_10yrs"
+      "ddf_old_rot_slf0.10_v2.1_10yrs",
+      "ddf_old_rot_slf0.15_v2.1_10yrs",
+      "ddf_old_rot_slf0.20_v2.1_10yrs",
+      "ddf_old_rot_slf0.25_v2.1_10yrs",
+      "ddf_old_rot_slf0.30_v2.1_10yrs",
+      "ddf_old_rot_slf0.35_v2.1_10yrs"
     ],
-    "description": "**ddf deep rolling** : This family is based on the `ddf deep universal` but adds a rolling cadence to the DDF fields. The rolling cadence simply observes each field for two seasons, and then stops, thus reducing the overall time requirement for the DDFs from the budget requested in `ddf deep universal`. This family uses pre-scheduled DDF visits.",
+    "description": "**ddf old rot** : This family adds a validation or comparison option for the remainder of the v2.1 DDF simulations. In this family, the rotation angle is fixed so that rotTelPos is constant; in most v2.1 simulations, rotSkyPos is held fixed. Otherwise this family is similar to `ddf season length`, and uses pre-scheduled DDF visits.",
     "version": "2.1",
     "reference": "baseline_v2.1_10yrs",
     "brief": [
-      "DESC deep universal sequences, with rolling - each DDF observed for 2 seasons"
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.10",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.15",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.20",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.25",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.30",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
-    ]
-  },
-  "ddf euclid moved": {
-    "run": [
-      "ddf_euclid_moved_slf0.20_v2.1_10yrs"
-    ],
-    "description": "**ddf euclid moved** : This simulation moves the fifth DDF from Euclid South to an otherwise optimally (for non-competition between DDF locations purposes) located field. The purpose is to show that choosing Euclid South for the fifth DDF has little to no impact on the rest of the survey outside the DDF fields. This was demonstrated to the SCOC in slides located available at  https://docs.google.com/presentation/d/1TSKXsEX2Q3aY60dDVpc6Q9K2irxEyxQhVQBqLMetvag/edit#slide=id.p",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Move Euclid South DDF to single new \"easy-scheduling\" position"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
-    ]
-  },
-  "longer u visits": {
-    "run": [
-      "long_u1_v2.0_10yrs",
-      "long_u2_v2.0_10yrs"
-    ],
-    "description": "**longer u visits** : The baseline survey uses 2x15s visits for all bands except u band. In the baseline, u band visits are 1x30s to reduce the effects of readnoise (which are most extreme in u, due to the low sky-background). These simulations extend the u band visit time further, to 1x50s. In one simulation, the total amount of survey time spent on u band is kept the same, so the number of visits is reduced accordingly. In the other simulation, more survey time is spent in u band in order to maintain the number of visits in u.",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "u band visits 1x50s, number of u visits same as baseline",
-      "u band visits 1x50s, fewer number of u visits"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_u/long_u1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_u/long_u2_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "long_u/long_u1_v2.0_10yrs.db",
-      "long_u/long_u2_v2.0_10yrs.db"
-    ]
-  },
-  "technical": {
-    "run": [
-      "march_start_v2.1_10yrs"
-    ],
-    "description": "**technical** : This family is primarily aimed at questions arising in the course of the project team work, but one simulation seemed interesting to make available to the community. This is the `march_start_v2.1_10yrs` run, which simulates a March 2023 start to the survey. This is impractical, but could serve as a useful off-season comparison to the baseline, which starts in October 2024. ",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Start the survey in March 2022"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/technical/march_start/march_start_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "technical/march_start/march_start_v2.1_10yrs.db"
+      "ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
+      "ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
+      "ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
+      "ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
+      "ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
+      "ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf deep universal": {
@@ -512,326 +1381,21 @@
       "ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
     ]
   },
-  "ddf season length": {
+  "ddf deep rolling": {
     "run": [
-      "ddf_season_length_slf0.10_v2.1_10yrs",
-      "ddf_season_length_slf0.15_v2.1_10yrs",
-      "ddf_season_length_slf0.20_v2.1_10yrs",
-      "ddf_season_length_slf0.25_v2.1_10yrs",
-      "ddf_season_length_slf0.30_v2.1_10yrs",
-      "ddf_season_length_slf0.35_v2.1_10yrs"
+      "ddf_deep_rolling_slf0.20_v2.1_10yrs"
     ],
-    "description": "**ddf season length** : This family investigates the effect of varying the season length within the DDF fields. `season length fraction` reflects how much of the available season is used -- 0.1 indicates that 10% of the available season is removed at each end (for a total of 80% of the available season used for observations), while 0.3 would indicate that 40% of the total possible season is used. This family uses pre-scheduled DDF visits.",
+    "description": "**ddf deep rolling** : This family is based on the `ddf deep universal` but adds a rolling cadence to the DDF fields. The rolling cadence simply observes each field for two seasons, and then stops, thus reducing the overall time requirement for the DDFs from the budget requested in `ddf deep universal`. This family uses pre-scheduled DDF visits.",
     "version": "2.1",
     "reference": "baseline_v2.1_10yrs",
     "brief": [
-      "DDF with season length fraction 0.10",
-      "DDF with season length fraction 0.15",
-      "DDF with season length fraction 0.20",
-      "DDF with season length fraction 0.25",
-      "DDF with season length fraction 0.30",
-      "DDF with season length fraction 0.35"
+      "DESC deep universal sequences, with rolling - each DDF observed for 2 seasons"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
-    ]
-  },
-  "vary gp": {
-    "run": [
-      "vary_gp_gpfrac0.01_v2.0_10yrs",
-      "vary_gp_gpfrac0.05_v2.0_10yrs",
-      "vary_gp_gpfrac0.10_v2.0_10yrs",
-      "vary_gp_gpfrac0.15_v2.0_10yrs",
-      "vary_gp_gpfrac0.20_v2.0_10yrs",
-      "vary_gp_gpfrac0.25_v2.0_10yrs",
-      "vary_gp_gpfrac0.30_v2.0_10yrs",
-      "vary_gp_gpfrac0.35_v2.0_10yrs",
-      "vary_gp_gpfrac0.40_v2.0_10yrs",
-      "vary_gp_gpfrac0.45_v2.0_10yrs",
-      "vary_gp_gpfrac0.50_v2.0_10yrs",
-      "vary_gp_gpfrac0.55_v2.0_10yrs",
-      "vary_gp_gpfrac0.75_v2.0_10yrs",
-      "vary_gp_gpfrac1.00_v2.0_10yrs"
-    ],
-    "description": "**vary gp** : These simulations investigate the effect of varying the amount of survey time spent on covering the background (non-WFD-level) Galactic Plane area. The baseline characteristics, including the ratio of visits over the remainder of the footprint, are kept the same.",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "Dusty plane at 1% WFD level",
-      "Dusty plane at 5% WFD level",
-      "Dusty plane at 10% WFD level",
-      "Dusty plane at 15% WFD level",
-      "Dusty plane at 20% WFD level",
-      "Dusty plane at 25% WFD level",
-      "Dusty plane at 30% WFD level",
-      "Dusty plane at 35% WFD level",
-      "Dusty plane at 40% WFD level",
-      "Dusty plane at 45% WFD level",
-      "Dusty plane at 50% WFD level",
-      "Dusty plane at 55% WFD level",
-      "Dusty plane at 75% WFD level",
-      "Dusty plane at 100% WFD level"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.01_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.05_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.10_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.15_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.20_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.25_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.30_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.35_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.40_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.45_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.50_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.55_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac0.75_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "vary_gp/vary_gp_gpfrac0.01_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.05_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.10_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.15_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.20_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.25_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.30_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.35_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.40_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.45_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.50_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.55_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.75_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
-    ]
-  },
-  "microsurveys": {
-    "run": [
-      "virgo_cluster_v2.0_10yrs",
-      "carina_v2.0_10yrs",
-      "smc_movie_v2.0_10yrs",
-      "roman_v2.0_10yrs",
-      "local_gal_bindx0_v2.0_10yrs",
-      "local_gal_bindx1_v2.0_10yrs",
-      "local_gal_bindx2_v2.0_10yrs",
-      "too_rate10_v2.0_10yrs",
-      "too_rate50_v2.0_10yrs",
-      "north_stripe_v2.0_10yrs",
-      "short_exp_v2.0_10yrs",
-      "multi_short_v2.0_10yrs",
-      "twilight_neo_nightpattern4v2.0_10yrs",
-      "twilight_neo_nightpattern7v2.0_10yrs",
-      "twilight_neo_nightpattern3v2.0_10yrs",
-      "twilight_neo_nightpattern6v2.0_10yrs",
-      "twilight_neo_nightpattern5v2.0_10yrs",
-      "twilight_neo_nightpattern2v2.0_10yrs",
-      "twilight_neo_nightpattern1v2.0_10yrs"
-    ],
-    "description": "**microsurveys** : There are special programs which can achieve additional science beyond or supporting the primary Rubin LSST science drivers, if provided specialized observing time via \"microsurveys\". These simulations investigate a subset of microsurvey proposals, described further in their brief descriptions.",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "Add the virgo cluster to WFD footprint",
-      "One week per year observing Carina",
-      "Two nights of observing the SMC in movie mode",
-      "Microsurvey of the Roman bulge field",
-      "Increase local galaxy coverage {'g': 0.5, 'r': 0.2, 'i': 0.1}",
-      "Increasing local galaxy coverage {'g': 1.0, 'r': 0.3, 'i': 0.1}",
-      "Increasing local galaxy coverage {'g': 1.5, 'r': 0.35, 'i': 0.2}",
-      "Follow up ToO alerts, 10 events per year",
-      "Follow up ToO alerts, 50 events per year",
-      "Add a north stripe to Dec +30",
-      "Take up to 3 short (5s) visits in year 1",
-      "Multiple (4) short (5s) exposures in each filter in a year, stop after 12.",
-      "Twilight neo observations 1 night on 3 off",
-      "Twilight neo observations 2 night on 4 off",
-      "Twilight neo observations 1 night on 2 off",
-      "Twilight neo observations 3 night on 4 off",
-      "Twilight neo observations 4 night on 4 off",
-      "Twilight neo observations every other night",
-      "Twilight neo observations every night"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/virgo_cluster/virgo_cluster_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/carina/carina_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/smc_movie/smc_movie_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/roman/roman_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/local_gals/local_gal_bindx0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/local_gals/local_gal_bindx1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/local_gals/local_gal_bindx2_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/ToO/too_rate10_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/ToO/too_rate50_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/north_stripe/north_stripe_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/short_exp/short_exp_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/multi_short/multi_short_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern4v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern7v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern3v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern6v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern5v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern2v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "microsurveys/virgo_cluster/virgo_cluster_v2.0_10yrs.db",
-      "microsurveys/carina/carina_v2.0_10yrs.db",
-      "microsurveys/smc_movie/smc_movie_v2.0_10yrs.db",
-      "microsurveys/roman/roman_v2.0_10yrs.db",
-      "microsurveys/local_gals/local_gal_bindx0_v2.0_10yrs.db",
-      "microsurveys/local_gals/local_gal_bindx1_v2.0_10yrs.db",
-      "microsurveys/local_gals/local_gal_bindx2_v2.0_10yrs.db",
-      "microsurveys/ToO/too_rate10_v2.0_10yrs.db",
-      "microsurveys/ToO/too_rate50_v2.0_10yrs.db",
-      "microsurveys/north_stripe/north_stripe_v2.0_10yrs.db",
-      "microsurveys/short_exp/short_exp_v2.0_10yrs.db",
-      "microsurveys/multi_short/multi_short_v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern4v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern7v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern3v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern6v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern5v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern2v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
-    ]
-  },
-  "ddf percent": {
-    "run": [
-      "ddf_frac_ddf_per0.6_v2.0_10yrs",
-      "ddf_frac_ddf_per1.6_v2.0_10yrs"
-    ],
-    "description": "**ddf percent** : The baseline survey strategy adds five Deep Drilling Fields, each allocated about 1% of the total survey observing time, for about 5% total. In these simulations, the amount of time allocated for DDFs is varied from 3 to 8%. It is worth noting that we anticipate implementing improvements on the DDF scheduling algorithm in the next six months, and will revisit more complicated DDF scheduling requests with that improvement in hand.This family uses \"original\" DDF scheduling, not the v2.1 pre-scheduled optimized visits.",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "DDF fraction of visits reduced to 3% of total",
-      "DDF fraction of visits increased to 8%"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf/ddf_frac_ddf_per0.6_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "ddf/ddf_frac_ddf_per0.6_v2.0_10yrs.db",
-      "ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
-    ]
-  },
-  "good seeing": {
-    "run": [
-      "good_seeing_gsw0.0_v2.1_10yrs",
-      "good_seeing_gsw1.0_v2.1_10yrs",
-      "good_seeing_gsw10.0_v2.1_10yrs",
-      "good_seeing_gsw20.0_v2.1_10yrs",
-      "good_seeing_gsw3.0_v2.1_10yrs",
-      "good_seeing_gsw50.0_v2.1_10yrs",
-      "good_seeing_gsw6.0_v2.1_10yrs",
-      "good_seeing_u_gsw0.0_v2.1_10yrs",
-      "good_seeing_u_gsw1.0_v2.1_10yrs",
-      "good_seeing_u_gsw10.0_v2.1_10yrs",
-      "good_seeing_u_gsw20.0_v2.1_10yrs",
-      "good_seeing_u_gsw3.0_v2.1_10yrs",
-      "good_seeing_u_gsw50.0_v2.1_10yrs",
-      "good_seeing_u_gsw6.0_v2.1_10yrs"
-    ],
-    "description": "**good seeing** : This family of simulations adds a requirement for 3 \"good seeing\" (seeing < 0.8 arcseconds) images per year, in various bandpasses. Note that `baseline_v2.1_10yrs` (and other v2.1 simulations) adds this requirement in r and i bands as the default.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Good seeing priority, with weight 0.0, grizy only",
-      "Good seeing priority, with weight 1.0, grizy only",
-      "Good seeing priority, with weight 10.0, grizy only",
-      "Good seeing priority, with weight 20.0, grizy only",
-      "Good seeing priority, with weight 3.0, grizy only",
-      "Good seeing priority, with weight 50.0, grizy only",
-      "Good seeing priority, with weight 6.0, grizy only",
-      "Good seeing priority, with weight 0.0, including ugri band",
-      "Good seeing priority, with weight 1.0, including ugri band",
-      "Good seeing priority, with weight 10.0, including ugri band",
-      "Good seeing priority, with weight 20.0, including ugri band",
-      "Good seeing priority, with weight 3.0, including ugri band",
-      "Good seeing priority, with weight 50.0, including ugri band",
-      "Good seeing priority, with weight 6.0, including ugri band"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db"
-    ]
-  },
-  "ddf quad subfilter": {
-    "run": [
-      "ddf_quad_subfilter_slf0.10_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.15_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.20_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.25_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.30_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf quad subfilter** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. However, here only some filters are used in each DDF sequence, alternating between active filters on different nights.This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.10",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.15",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.20",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.25",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.30",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.35"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+      "ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
     ]
   },
   "ddf early deep": {
@@ -857,566 +1421,6 @@
       "ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
       "ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
       "ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
-    ]
-  },
-  "ddf bright": {
-    "run": [
-      "ddf_bright_slf0.10_v2.1_10yrs",
-      "ddf_bright_slf0.15_v2.1_10yrs",
-      "ddf_bright_slf0.20_v2.1_10yrs",
-      "ddf_bright_slf0.25_v2.1_10yrs",
-      "ddf_bright_slf0.30_v2.1_10yrs",
-      "ddf_bright_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf bright** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. In this family, the m5 limits for scheduling visits are relaxed, resulting in visits running more consistently throughout the lunar cycle even into bright time. This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "DDF quad-style sequences running through bright time, season length fraction 0.10",
-      "DDF quad-style sequences running through bright time, season length fraction 0.15",
-      "DDF quad-style sequences running through bright time, season length fraction 0.20",
-      "DDF quad-style sequences running through bright time, season length fraction 0.25",
-      "DDF quad-style sequences running through bright time, season length fraction 0.30",
-      "DDF quad-style sequences running through bright time, season length fraction 0.35"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
-    ]
-  },
-  "ddf dither": {
-    "run": [
-      "ddf_dither_size_slf0.20_md0.01_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md0.05_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md0.10_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md0.25_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md0.50_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md0.70_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md1.00_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md1.50_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md2.50_v2.1_10yrs",
-      "ddf_dither_size_slf0.20_md3.50_v2.1_10yrs"
-    ],
-    "description": "**ddf dither** : This family varies the dithering pattern for the DDF sequences, changing the max translational dither from 0.01 to 3.5 degrees. Increasing dither sizes are expected to improve calibration, while decreasing dither sizes may improve final coadded depth over the smaller total observed area.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "DDFs with variable dither offsets - max dither 0.01 deg",
-      "DDFs with variable dither offsets - max dither 0.05 deg",
-      "DDFs with variable dither offsets - max dither 0.10 deg",
-      "DDFs with variable dither offsets - max dither 0.25 deg",
-      "DDFs with variable dither offsets - max dither 0.50 deg",
-      "DDFs with variable dither offsets - max dither 0.70 deg",
-      "DDFs with variable dither offsets - max dither 1.00 deg",
-      "DDFs with variable dither offsets - max dither 1.50 deg",
-      "DDFs with variable dither offsets - max dither 2.50 deg",
-      "DDFs with variable dither offsets - max dither 3.50 deg"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
-    ]
-  },
-  "triplets": {
-    "run": [
-      "presto_gap1.5_v2.0_10yrs",
-      "presto_gap2.0_v2.0_10yrs",
-      "presto_gap2.5_v2.0_10yrs",
-      "presto_gap3.0_v2.0_10yrs",
-      "presto_gap3.5_v2.0_10yrs",
-      "presto_gap4.0_v2.0_10yrs",
-      "presto_gap1.5_mix_v2.0_10yrs",
-      "presto_gap2.0_mix_v2.0_10yrs",
-      "presto_gap2.5_mix_v2.0_10yrs",
-      "presto_gap3.0_mix_v2.0_10yrs",
-      "presto_gap3.5_mix_v2.0_10yrs",
-      "presto_gap4.0_mix_v2.0_10yrs",
-      "presto_half_gap1.5_v2.0_10yrs",
-      "presto_half_gap2.0_v2.0_10yrs",
-      "presto_half_gap2.5_v2.0_10yrs",
-      "presto_half_gap3.0_v2.0_10yrs",
-      "presto_half_gap3.5_v2.0_10yrs",
-      "presto_half_gap4.0_v2.0_10yrs",
-      "presto_half_gap1.5_mix_v2.0_10yrs",
-      "presto_half_gap2.0_mix_v2.0_10yrs",
-      "presto_half_gap2.5_mix_v2.0_10yrs",
-      "presto_half_gap3.0_mix_v2.0_10yrs",
-      "presto_half_gap3.5_mix_v2.0_10yrs",
-      "presto_half_gap4.0_mix_v2.0_10yrs",
-      "long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs",
-      "long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs",
-      "long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff7_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff6_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff5_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff4_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff3_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff2_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff1_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff0_delayed1827_v2.0_10yrs",
-      "long_gaps_nightsoff7_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff6_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff5_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff4_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff3_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff2_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff1_delayed-1_v2.0_10yrs",
-      "long_gaps_nightsoff0_delayed-1_v2.0_10yrs"
-    ],
-    "description": "**triplets** : These simulations add a third visit within each night, with variations on the time interval between the first pair of visits (standard separation of 33 minutes) to the third visit. The third visit is always acquired in the same filter as one of the earlier visits in the pair. The \"presto_gap\" runs take triplets all the time, at a set interval to the third visit and in the filter pairs described in the brief descriptions. The \"presto_half\" runs are similar, but only take triplets of visits about half of the time. The \"long_gaps\" runs vary the interval to the third visit, and generally have longer gaps of 2 to 7 hours. The long_gaps run take triplets at a variety of frequencies, ranging from every night to every few nights; in some simulations the triplets do not start until year 5.",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "Triples spaced 1.5 hours apart g+r,r+i,i+z initial pairs",
-      "Triples spaced 2.0 hours apart g+r,r+i,i+z initial pairs",
-      "Triples spaced 2.5 hours apart g+r,r+i,i+z initial pairs",
-      "Triples spaced 3.0 hours apart g+r,r+i,i+z initial pairs",
-      "Triples spaced 3.5 hours apart g+r,r+i,i+z initial pairs",
-      "Triples spaced 4.0 hours apart g+r,r+i,i+z initial pairs",
-      "Triples spaced 1.5 hours apart g+i,r+z,i+y initial pairs",
-      "Triples spaced 2.0 hours apart g+i,r+z,i+y initial pairs",
-      "Triples spaced 2.5 hours apart g+i,r+z,i+y initial pairs",
-      "Triples spaced 3.0 hours apart g+i,r+z,i+y initial pairs",
-      "Triples spaced 3.5 hours apart g+i,r+z,i+y initial pairs",
-      "Triples spaced 4.0 hours apart g+i,r+z,i+y initial pairs",
-      "Triples spaced 1.5 hours apart g+r,r+i,i+z initial pairs, triples every other night",
-      "Triples spaced 2.0 hours apart g+r,r+i,i+z initial pairs, triples every other night",
-      "Triples spaced 2.5 hours apart g+r,r+i,i+z initial pairs, triples every other night",
-      "Triples spaced 3.0 hours apart g+r,r+i,i+z initial pairs, triples every other night",
-      "Triples spaced 3.5 hours apart g+r,r+i,i+z initial pairs, triples every other night",
-      "Triples spaced 4.0 hours apart g+r,r+i,i+z initial pairs, triples every other night",
-      "Triples spaced 1.5 hours apart g+i,r+z,i+y initial pairs, triples every other night",
-      "Triples spaced 2.0 hours apart g+i,r+z,i+y initial pairs, triples every other night",
-      "Triples spaced 2.5 hours apart g+i,r+z,i+y initial pairs, triples every other night",
-      "Triples spaced 3.0 hours apart g+i,r+z,i+y initial pairs, triples every other night",
-      "Triples spaced 3.5 hours apart g+i,r+z,i+y initial pairs, triples every other night",
-      "Triples spaced 4.0 hours apart g+i,r+z,i+y initial pairs, triples every other night",
-      "long gap pairs every 7 nights starting after year 5",
-      "long gap pairs every 7 nights",
-      "long gap pairs every 6 nights starting after year 5",
-      "long gap pairs every 6 nights",
-      "long gap pairs every 5 nights starting after year 5",
-      "long gap pairs every 5 nights",
-      "Long gap pairs every 4 nights starting after year 5",
-      "Long gap pairs every 4 nights",
-      "Long gap pairs every 3 nights starting after year 5",
-      "Long gap pairs every 3 nights",
-      "Long gap pairs every 2 nights starting after year 5",
-      ", Long gap pairs every 2 nights",
-      "Long gap pairs every other night starting after year 5",
-      ", Long gap pairs every other night",
-      "Long gap pairs every night starting after year 5",
-      "Long gap pairs every night",
-      "Long gaps every 7 nights starting after year 5",
-      "Long gaps every 6 nights starting after year 5",
-      "Long gaps every 5 nights starting after year 5",
-      "Long gaps every 4 nights starting after year 5",
-      "Long gaps every 3 nights starting after year 5",
-      "Long gaps every 2 nights starting after year 5",
-      "Long gaps every other night starting after year 5",
-      "Long gaps every night starting after year 5",
-      "Long gaps every 7 nights",
-      "Long gaps every 6 nights",
-      "Long gaps every 5 nights",
-      "Long gaps every 4 nights",
-      "Long gaps every 3 nights",
-      "Long gaps every 2 nights",
-      "Long gaps every other night",
-      "Long gaps every night"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap1.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap4.0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap1.5_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.0_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap2.5_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.0_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap3.5_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto/presto_gap4.0_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap1.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap4.0_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap1.5_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.0_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap2.5_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.0_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap3.5_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/presto_half/presto_half_gap4.0_mix_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff7_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff6_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff5_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff4_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff3_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff2_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff1_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed1827_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff7_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff6_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff5_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff4_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff3_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff2_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff1_delayed-1_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "presto/presto_gap1.5_v2.0_10yrs.db",
-      "presto/presto_gap2.0_v2.0_10yrs.db",
-      "presto/presto_gap2.5_v2.0_10yrs.db",
-      "presto/presto_gap3.0_v2.0_10yrs.db",
-      "presto/presto_gap3.5_v2.0_10yrs.db",
-      "presto/presto_gap4.0_v2.0_10yrs.db",
-      "presto/presto_gap1.5_mix_v2.0_10yrs.db",
-      "presto/presto_gap2.0_mix_v2.0_10yrs.db",
-      "presto/presto_gap2.5_mix_v2.0_10yrs.db",
-      "presto/presto_gap3.0_mix_v2.0_10yrs.db",
-      "presto/presto_gap3.5_mix_v2.0_10yrs.db",
-      "presto/presto_gap4.0_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap1.5_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.0_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.5_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.0_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.5_v2.0_10yrs.db",
-      "presto_half/presto_half_gap4.0_v2.0_10yrs.db",
-      "presto_half/presto_half_gap1.5_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.0_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.5_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.0_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.5_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap4.0_mix_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff7_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff6_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff5_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff4_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff3_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff2_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff1_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff0_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff7_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff6_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff5_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff4_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff3_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff2_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff1_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
-    ]
-  },
-  "vary expt": {
-    "run": [
-      "shave_20_v2.1_10yrs",
-      "shave_22_v2.1_10yrs",
-      "shave_25_v2.1_10yrs",
-      "shave_28_v2.1_10yrs",
-      "shave_30_v2.1_10yrs",
-      "shave_32_v2.1_10yrs",
-      "shave_35_v2.1_10yrs",
-      "shave_38_v2.1_10yrs",
-      "shave_40_v2.1_10yrs",
-      "vary_expt_v2.0_10yrs"
-    ],
-    "description": "**vary expt** : The baseline survey strategy uses 2x15s visits for grizy filters, and 1x30s visits for u band. The simulations in this family vary the exposure time per visit from 20 to 40 seconds, to evaluate the impact on various metrics of varying individual image depth (the \"shave_\" runs). In addition, there is one simulation (`vary_expt_v2.0_10yrs`) which uses variable exposure time per visit to attempt to make the individual image depth consistent - each visit in this simulation could have an exposure time of between 20 to 100 seconds.",
-    "version": "--",
-    "reference": "--",
-    "brief": [
-      "Reduce exposure time per visit to 20 seconds",
-      "Reduce exposure time per visit to 22 seconds",
-      "Reduce exposure time per visit to 25 seconds",
-      "Reduce exposure time per visit to 29 seconds",
-      "Keep exposure time per visit at 30 seconds",
-      "Extend exposure time per visit to 32 seconds",
-      "Extend exposure time per visit to 35 seconds",
-      "Extend exposure time per visit to 38 seconds",
-      "Extend exposure time per visit to 40 seconds",
-      "Vary the exposure times between 20 and 100s"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_22_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_28_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_32_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_35_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_38_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_40_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_expt/vary_expt_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "shave/shave_20_v2.1_10yrs.db",
-      "shave/shave_22_v2.1_10yrs.db",
-      "shave/shave_25_v2.1_10yrs.db",
-      "shave/shave_28_v2.1_10yrs.db",
-      "shave/shave_30_v2.1_10yrs.db",
-      "shave/shave_32_v2.1_10yrs.db",
-      "shave/shave_35_v2.1_10yrs.db",
-      "shave/shave_38_v2.1_10yrs.db",
-      "shave/shave_40_v2.1_10yrs.db",
-      "vary_expt/vary_expt_v2.0_10yrs.db"
-    ]
-  },
-  "long gaps no pairs": {
-    "run": [],
-    "description": "**long gaps no pairs** : The baseline survey strategy takes pairs of visits every few nights, wherethe pair is separated by about 33 minutes. The pairs are taken in mixed filters, for color measurements. These simulations extend the gap between the pair of visits, modifying it to a variable time period of between 2 to 7 hours. The pair of visits are both in the same filter, in any of griz (g+r, r+i, or i+z pairs). In some of the simulations, these long gap visits are obtained throughout the survey, while for other simulations the longer time separations do not start until year 5.",
-    "version": "--",
-    "reference": "--",
-    "brief": [],
-    "url": [],
-    "filepath": []
-  },
-  "ddf quad": {
-    "run": [
-      "ddf_quad_slf0.10_v2.1_10yrs",
-      "ddf_quad_slf0.15_v2.1_10yrs",
-      "ddf_quad_slf0.20_v2.1_10yrs",
-      "ddf_quad_slf0.25_v2.1_10yrs",
-      "ddf_quad_slf0.30_v2.1_10yrs",
-      "ddf_quad_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf quad** : This family cuts the individual DDF sequences by four, resulting in brighter single night coadded depths, but an even shorter interval of nights between visits.This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Shorter (1/4) DDF sequences, season length fraction 0.10",
-      "Shorter (1/4) DDF sequences, season length fraction 0.15",
-      "Shorter (1/4) DDF sequences, season length fraction 0.20",
-      "Shorter (1/4) DDF sequences, season length fraction 0.25",
-      "Shorter (1/4) DDF sequences, season length fraction 0.30",
-      "Shorter (1/4) DDF sequences, season length fraction 0.35"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
-    ]
-  },
-  "vary nes": {
-    "run": [
-      "vary_nes_nesfrac0.01_v2.0_10yrs",
-      "vary_nes_nesfrac0.05_v2.0_10yrs",
-      "vary_nes_nesfrac0.10_v2.0_10yrs",
-      "vary_nes_nesfrac0.15_v2.0_10yrs",
-      "vary_nes_nesfrac0.20_v2.0_10yrs",
-      "vary_nes_nesfrac0.25_v2.0_10yrs",
-      "vary_nes_nesfrac0.30_v2.0_10yrs",
-      "vary_nes_nesfrac0.35_v2.0_10yrs",
-      "vary_nes_nesfrac0.40_v2.0_10yrs",
-      "vary_nes_nesfrac0.45_v2.0_10yrs",
-      "vary_nes_nesfrac0.50_v2.0_10yrs",
-      "vary_nes_nesfrac0.55_v2.0_10yrs",
-      "vary_nes_nesfrac0.75_v2.0_10yrs",
-      "vary_nes_nesfrac1.00_v2.0_10yrs"
-    ],
-    "description": "**vary nes** : These simulations investigate the effect of varying the amount of survey time spent on covering the North Ecliptic Spur area. The baseline characteristics, including the ratio of visits over the remainder of the footprint, are kept the same. ",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "NES at 1% WFD level",
-      "NES at 5% WFD level",
-      "NES at 10% WFD level",
-      "NES at 15% WFD level",
-      "NES at 20% WFD level",
-      "NES at 25% WFD level",
-      "NES at 30% WFD level",
-      "NES at 35% WFD level",
-      "NES at 40% WFD level",
-      "NES at 45% WFD level",
-      "NES at 50% WFD level",
-      "NES at 55% WFD level",
-      "NES at 75% WFD level",
-      "NES at 100% WFD level"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.01_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.05_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.10_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.15_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.20_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.25_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.30_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.35_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.40_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.45_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.50_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.55_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac0.75_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "vary_nes/vary_nes_nesfrac0.01_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.05_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.10_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.15_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.20_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.25_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.30_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.35_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.40_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.45_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.50_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.55_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.75_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
-    ]
-  },
-  "rolling": {
-    "run": [
-      "noroll_v2.0_10yrs",
-      "rolling_ns2_rw0.5_v2.0_10yrs",
-      "rolling_ns3_rw0.5_v2.0_10yrs",
-      "rolling_ns2_rw0.9_v2.0_10yrs",
-      "rolling_ns3_rw0.9_v2.0_10yrs",
-      "rolling_bulge_ns2_rw0.5_v2.0_10yrs",
-      "rolling_bulge_ns2_rw0.8_v2.0_10yrs",
-      "rolling_bulge_ns2_rw0.9_v2.0_10yrs",
-      "rolling_all_sky_ns2_rw0.9_v2.0_10yrs",
-      "roll_early_v2.0_10yrs",
-      "six_rolling_ns6_rw0.5_v2.0_10yrs",
-      "six_rolling_ns6_rw0.9_v2.0_10yrs",
-      "rolling_bulge_6_v2.0_10yrs"
-    ],
-    "description": "**rolling** : The rolling family covers a wide variety of rolling cadence variations. These are arranged in general estimation of the impact of the rolling cadence, from \"least\" to \"most\" - no_roll has no rolling cadence at all, then variations on the number of stripes (ns=2/3/6) are added, as as which areas of the sky (WFD only, adding the bulge WFD-area, all-sky). The strength of rolling is also varied (rw=50,80 or 90%).",
-    "version": "2.0",
-    "reference": "baseline_v2.0_10yrs",
-    "brief": [
-      "v2.0 baseline with no rolling",
-      "Rolling half-sky (2 regions) 50%",
-      "Rolling third-sky (3 regions) 50%",
-      "Rolling half-sky (2 regions) 90%",
-      "Rolling third-sky (3 regions) 90%",
-      "Roll in the bulge with 2 regions, 50%",
-      "Roll in the bulge with 2 regions, 80%",
-      "Roll in the bulge with 2 regions, 90%",
-      "Roll on all parts of the sky",
-      "Start rolling year 1",
-      "Rolling in one-sixth sky (6 regions) 50%",
-      "Rolling in one-sixth sky (6 regions) 90%",
-      "Roll the bulge in 6 stripes (low-dust WFD in 2 regions)"
-    ],
-    "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/noroll/noroll_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns2_rw0.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns3_rw0.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns2_rw0.9_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling/rolling_ns3_rw0.9_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.8_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.9_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_all_sky/rolling_all_sky_ns2_rw0.9_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_early/roll_early_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_six/six_rolling_ns6_rw0.5_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_six/six_rolling_ns6_rw0.9_v2.0_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
-    ],
-    "filepath": [
-      "noroll/noroll_v2.0_10yrs.db",
-      "rolling/rolling_ns2_rw0.5_v2.0_10yrs.db",
-      "rolling/rolling_ns3_rw0.5_v2.0_10yrs.db",
-      "rolling/rolling_ns2_rw0.9_v2.0_10yrs.db",
-      "rolling/rolling_ns3_rw0.9_v2.0_10yrs.db",
-      "rolling_bulge/rolling_bulge_ns2_rw0.5_v2.0_10yrs.db",
-      "rolling_bulge/rolling_bulge_ns2_rw0.8_v2.0_10yrs.db",
-      "rolling_bulge/rolling_bulge_ns2_rw0.9_v2.0_10yrs.db",
-      "rolling_all_sky/rolling_all_sky_ns2_rw0.9_v2.0_10yrs.db",
-      "rolling_early/roll_early_v2.0_10yrs.db",
-      "rolling_six/six_rolling_ns6_rw0.5_v2.0_10yrs.db",
-      "rolling_six/six_rolling_ns6_rw0.9_v2.0_10yrs.db",
-      "rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
     ]
   }
 }
