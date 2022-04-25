@@ -118,7 +118,7 @@
     },
     {
         "metric set":"area",
-        "metric":"fOArea fO All visits HealpixSlicer",
+        "metric":"fOArea fO All sky HealpixSlicer",
         "short_name":"Area with >825 visits\/pointing (fO_Area)",
         "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
         "style":"k-",
@@ -136,7 +136,7 @@
     },
     {
         "metric set":"area",
-        "metric":"Nvisits All props",
+        "metric":"Nvisits All visits",
         "short_name":"Nvisits total",
         "short_names_norm":"Nvisits total",
         "style":"r-",
@@ -145,7 +145,7 @@
     },
     {
         "metric set":"area",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "metric":"fONv MedianNvis fO All sky HealpixSlicer",
         "short_name":"Median Nvis over top 18k (fO_Nv Med)",
         "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
         "style":"r:",
@@ -154,7 +154,7 @@
     },
     {
         "metric set":"short",
-        "metric":"fOArea fO All visits HealpixSlicer",
+        "metric":"fOArea fO All sky HealpixSlicer",
         "short_name":"Area with >825 visits\/pointing (fO_Area)",
         "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
         "style":null,
@@ -172,7 +172,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Nvisits All props",
+        "metric":"Nvisits All visits",
         "short_name":"Nvisits total",
         "short_names_norm":"Nvisits total",
         "style":null,
@@ -181,7 +181,7 @@
     },
     {
         "metric set":"short",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "metric":"fONv MedianNvis fO All sky HealpixSlicer",
         "short_name":"Median Nvis over top 18k (fO_Nv Med)",
         "short_names_norm":"Median Nvis over top 18k (fO_Nv Med)",
         "style":null,
@@ -190,7 +190,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Median NVisits u band HealpixSlicer",
+        "metric":"Median NVisits All sky u band HealpixSlicer",
         "short_name":"Median Nvis u band",
         "short_names_norm":"Median Nvis u band",
         "style":"c",
@@ -199,7 +199,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Median NVisits g band HealpixSlicer",
+        "metric":"Median NVisits All sky g band HealpixSlicer",
         "short_name":"Median Nvis g band",
         "short_names_norm":"Median Nvis g band",
         "style":"g",
@@ -208,7 +208,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Median NVisits r band HealpixSlicer",
+        "metric":"Median NVisits All sky r band HealpixSlicer",
         "short_name":"Median Nvis r band",
         "short_names_norm":"Median Nvis r band",
         "style":"y",
@@ -217,7 +217,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Median NVisits i band HealpixSlicer",
+        "metric":"Median NVisits All sky i band HealpixSlicer",
         "short_name":"Median Nvis i band",
         "short_names_norm":"Median Nvis i band",
         "style":"r",
@@ -226,7 +226,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Median NVisits z band HealpixSlicer",
+        "metric":"Median NVisits All sky z band HealpixSlicer",
         "short_name":"Median Nvis z band",
         "short_names_norm":"Median Nvis z band",
         "style":"m",
@@ -235,7 +235,7 @@
     },
     {
         "metric set":"short",
-        "metric":"Median NVisits y band HealpixSlicer",
+        "metric":"Median NVisits All sky y band HealpixSlicer",
         "short_name":"Median Nvis y band",
         "short_names_norm":"Median Nvis y band",
         "style":"k",
@@ -244,7 +244,7 @@
     },
     {
         "metric set":"srd",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "metric":"fONv MedianNvis fO All sky HealpixSlicer",
         "short_name":"fONv MedianNvis",
         "short_names_norm":"fONv MedianNvis",
         "style":"k-",
@@ -253,7 +253,7 @@
     },
     {
         "metric set":"srd",
-        "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All visits HealpixSlicer",
+        "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All sky HealpixSlicer",
         "short_name":"Med Parallax Error @22.4",
         "short_names_norm":"1 \/ Med Parallax Error @22.4",
         "style":"c-",
@@ -262,7 +262,7 @@
     },
     {
         "metric set":"srd",
-        "metric":"Median Parallax Error (18k) Parallax Error @ 24.0 All visits HealpixSlicer",
+        "metric":"Median Parallax Error (18k) Parallax Error @ 24.0 All sky HealpixSlicer",
         "short_name":"Med Parallax Error @24.0",
         "short_names_norm":"1 \/ Med Parallax Error @24.0",
         "style":"c:",
@@ -271,7 +271,7 @@
     },
     {
         "metric set":"srd",
-        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All visits HealpixSlicer",
+        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All sky HealpixSlicer",
         "short_name":"Med PM Error @20.5",
         "short_names_norm":"1 \/ Med PM Error @20.5",
         "style":"r-",
@@ -280,7 +280,7 @@
     },
     {
         "metric set":"srd",
-        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 24.0 All visits HealpixSlicer",
+        "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 24.0 All sky HealpixSlicer",
         "short_name":"Med PM Error @24.0",
         "short_names_norm":"1 \/Med PM Error @24.0",
         "style":"r:",

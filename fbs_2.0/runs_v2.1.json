@@ -8,7 +8,7 @@
     ],
     "description": "**baseline** : The v2 baseline simulations. V2.0 and V2.1 feature a survey footprint with expanded dust-free area and WFD-level visits in the Galactic Bulge and Magellanic Clouds. Coverage of the Northern Ecliptic Spur, South Celestial Pole, and remainder of the Galactic Plane is maintained, at lower levels. Filter balance is modified in different areas of the sky. A 2-region rolling cadence is used in the dust-free WFD sky, to improve cadence. The v2.1 simulation adds coverage in the Virgo cluster and acquisition of good seeing images in r&i bands. The retro simulations are intended to provide a bridge from v1.X to v2.X, introducing modifications to the footprint and scheduler code separately and in stages.",
     "version": "--",
-    "reference": "--",
+    "reference": "baseline_v2.1_10yrs",
     "brief": [
       "v2.1 baseline (+Virgo, good seeing)",
       "v2.0 baseline",
@@ -289,21 +289,21 @@
     "version": "2.0",
     "reference": "baseline_v2.0_10yrs",
     "brief": [
-      "long gap pairs every 7 nights starting after year 5",
-      "long gap pairs every 6 nights starting after year 5",
-      "long gap pairs every 5 nights starting after year 5",
+      "Long gaps pairs every 7 nights starting after year 5",
+      "Long gaps pairs every 6 nights starting after year 5",
+      "Long gap pairs every 5 nights starting after year 5",
       "Long gap pairs every 4 nights starting after year 5",
       "Long gap pairs every 3 nights starting after year 5",
       "Long gap pairs every 2 nights starting after year 5",
       "Long gap pairs every other night starting after year 5",
       "Long gap pairs every night starting after year 5",
-      "long gap pairs every 7 nights",
-      "long gap pairs every 6 nights",
-      "long gap pairs every 5 nights",
+      "Long gaps pairs every 7 nights",
+      "Long gaps pairs every 6 nights",
+      "Long gaps pairs every 5 nights",
       "Long gap pairs every 4 nights",
       "Long gap pairs every 3 nights",
-      ", Long gap pairs every 2 nights",
-      ", Long gap pairs every other night",
+      "Long gap pairs every 2 nights",
+      "Long gap pairs every other night",
       "Long gap pairs every night"
     ],
     "url": [
@@ -542,7 +542,7 @@
       "plane_priority_priority0.9_pbt_v2.1_10yrs",
       "plane_priority_priority1.2_pbt_v2.1_10yrs"
     ],
-    "description": "**galactic plane footprint** : These simulations use the galactic plane priority map, contributed by LSST-TVS science collaboration, as the basis for further variations on galactic plane coverage. Instead of a \"bulge area\" as in the baseline and vary gp family, different levels of priority of the galactic plane map are covered at WFD levels. In addition, pencil beam fields are added or not, in various simulations. ",
+    "description": "**galactic plane footprint** : These simulations use the galactic plane priority map, contributed by LSST SMLV & TVS science collaborations, as the basis for further variations on galactic plane coverage. Instead of a \"bulge area\" as in the baseline and vary gp family, different levels of priority of the galactic plane map are covered at WFD levels. In addition, pencil beam fields are added or not, in various simulations. ",
     "version": "2.1",
     "reference": "baseline_v2.1_10yrs",
     "brief": [
@@ -615,7 +615,7 @@
     ],
     "description": "**vary expt** : The baseline survey strategy uses 2x15s visits for grizy filters, and 1x30s visits for u band. The simulations in this family vary the exposure time per visit from 20 to 40 seconds, to evaluate the impact on various metrics of varying individual image depth (the \"shave_\" runs). In addition, there is one simulation (`vary_expt_v2.0_10yrs`) which uses variable exposure time per visit to attempt to make the individual image depth consistent - each visit in this simulation could have an exposure time of between 20 to 100 seconds.",
     "version": "--",
-    "reference": "--",
+    "reference": "baseline_v2.1_10yrs",
     "brief": [
       "Reduce exposure time per visit to 20 seconds",
       "Reduce exposure time per visit to 22 seconds",
