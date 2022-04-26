@@ -1,7 +1,7 @@
 [
     {
         "metric set":"radar",
-        "metric":"fONv MedianNvis fO All visits HealpixSlicer",
+        "metric":"fONv MedianNvis fO All sky HealpixSlicer",
         "short_name":"fONv_med",
         "short_names_norm":"fONv_med",
         "style":null,
@@ -10,7 +10,7 @@
     },
     {
         "metric set":"radar",
-        "metric":"Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer",
+        "metric":"Mean WeakLensingNvisits i band non-DD HealpixSlicer",
         "short_name":"WL",
         "short_names_norm":"WL",
         "style":null,
@@ -28,7 +28,7 @@
     },
     {
         "metric set":"radar",
-        "metric":"SNIa_PrePeak non-DD UserPointsSlicer",
+        "metric":"Total detected SNNSNMetric_nSN  HealpixSlicer",
         "short_name":"SNIa",
         "short_names_norm":"SNIa",
         "style":null,
@@ -119,9 +119,18 @@
     {
         "metric set":"area",
         "metric":"fOArea fO All sky HealpixSlicer",
-        "short_name":"Area with >825 visits\/pointing (fO_Area)",
-        "short_names_norm":"Area with >825 visits\/pointing (fO_Area)",
+        "short_name":"Area with >825 visits\/pointing (fO_Area 825)",
+        "short_names_norm":"Area with >825 visits\/pointing (fO_Area 825)",
         "style":"k-",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"area",
+        "metric":"fOArea_750 fO All sky HealpixSlicer",
+        "short_name":"Area with >750 visits\/pointing (fO_Area 750)",
+        "short_names_norm":"Area with >750 visits\/pointing (fO_Area 750)",
+        "style":"k--",
         "invert":false,
         "mag":false
     },
@@ -442,24 +451,6 @@
     },
     {
         "metric set":"tvs",
-        "metric":"SNIa_PrePeak non-DD UserPointsSlicer",
-        "short_name":"SNIa PrePeak",
-        "short_names_norm":"SNIa PrePeak",
-        "style":"g:",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"tvs",
-        "metric":"SNIa_WellSampled non-DD UserPointsSlicer",
-        "short_name":"SNIa WellSampled",
-        "short_names_norm":"SNIa WellSampled",
-        "style":"g--",
-        "invert":false,
-        "mag":false
-    },
-    {
-        "metric set":"tvs",
         "metric":"N stars to Precision 0.20  r HealpixSlicer",
         "short_name":"Nstars Precision<0.2mag r",
         "short_names_norm":"Nstars Precision<0.2mag r",
@@ -499,7 +490,7 @@
         "metric":"Effective Area (deg) ExgalM5_with_cuts i band non-DD year 10 HealpixSlicer",
         "short_name":"Effective survey area",
         "short_names_norm":"Effective survey area",
-        "style":"b-",
+        "style":"r-",
         "invert":false,
         "mag":false
     },
@@ -517,18 +508,45 @@
         "metric":"N Galaxies (all) DepthLimitedNumGalaxiesMetric i band galaxies non-DD HealpixSlicer",
         "short_name":"NGal in exgal footprint",
         "short_names_norm":"NGal in exgal footprint",
-        "style":"m:",
+        "style":"g:",
         "invert":false,
         "mag":false
     },
     {
         "metric set":"descWFD",
-        "metric":"Mean WeakLensingNvisits fiveSigmaDepth, visitExposureTime i band non-DD HealpixSlicer",
+        "metric":"Mean WeakLensingNvisits i band non-DD HealpixSlicer",
         "short_name":"Mean NVisits (WL)",
         "short_names_norm":"Mean NVisits (WL)",
-        "style":"g-",
+        "style":"m:",
         "invert":false,
         "mag":false
+    },
+    {
+        "metric set": "descWFD",
+        "metric": "Total detected SNNSNMetric_nSN  HealpixSlicer",
+        "short_name": "Total SNIa",
+        "short_names_norm": "Total SNIa",
+        "style": "k-",
+        "invert": false,
+        "mag": false
+    },
+    {
+        "metric set": "descWFD",
+        "metric": "Median SNNSNMetric_zlim  HealpixSlicer",
+        "short_name": "Median z_lim SNIa",
+        "short_names_norm": "Median z_lim SNIa",
+        "style": "k--",
+        "invert": false,
+        "mag": false
+    },
+    {
+        "metric set": "descWFD",
+        "metric": "Total detected SNSLMetric  HealpixSlicer",
+        "short_name": "Total SN-SL",
+        "short_names_norm": "Total SN-SL",
+        "style": "k:",
+        "invert": false,
+        "mag": false
     },
     {
         "metric set":"galaxies",
