@@ -16,16 +16,16 @@
       "v1.x baseline with rubin_sim (without new code capabilities)"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/baseline/baseline_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/baseline/baseline_v2.1_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/baseline/baseline_v2.0_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/retro/baseline_retrofoot_v2.0_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/retro/retro_baseline_v2.0_10yrs.db"
     ],
     "filepath": [
-      "baseline/baseline_v2.1_10yrs.db",
-      "baseline/baseline_v2.0_10yrs.db",
-      "retro/baseline_retrofoot_v2.0_10yrs.db",
-      "retro/retro_baseline_v2.0_10yrs.db"
+      "fbs_2.1/baseline/baseline_v2.1_10yrs.db",
+      "fbs_2.0/baseline/baseline_v2.0_10yrs.db",
+      "fbs_2.0/retro/baseline_retrofoot_v2.0_10yrs.db",
+      "fbs_2.0/retro/retro_baseline_v2.0_10yrs.db"
     ]
   },
   "rolling": {
@@ -78,19 +78,19 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
     ],
     "filepath": [
-      "noroll/noroll_v2.0_10yrs.db",
-      "rolling/rolling_ns2_rw0.5_v2.0_10yrs.db",
-      "rolling/rolling_ns3_rw0.5_v2.0_10yrs.db",
-      "rolling/rolling_ns2_rw0.9_v2.0_10yrs.db",
-      "rolling/rolling_ns3_rw0.9_v2.0_10yrs.db",
-      "rolling_bulge/rolling_bulge_ns2_rw0.5_v2.0_10yrs.db",
-      "rolling_bulge/rolling_bulge_ns2_rw0.8_v2.0_10yrs.db",
-      "rolling_bulge/rolling_bulge_ns2_rw0.9_v2.0_10yrs.db",
-      "rolling_all_sky/rolling_all_sky_ns2_rw0.9_v2.0_10yrs.db",
-      "rolling_early/roll_early_v2.0_10yrs.db",
-      "rolling_six/six_rolling_ns6_rw0.5_v2.0_10yrs.db",
-      "rolling_six/six_rolling_ns6_rw0.9_v2.0_10yrs.db",
-      "rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
+      "fbs_2.0/noroll/noroll_v2.0_10yrs.db",
+      "fbs_2.0/rolling/rolling_ns2_rw0.5_v2.0_10yrs.db",
+      "fbs_2.0/rolling/rolling_ns3_rw0.5_v2.0_10yrs.db",
+      "fbs_2.0/rolling/rolling_ns2_rw0.9_v2.0_10yrs.db",
+      "fbs_2.0/rolling/rolling_ns3_rw0.9_v2.0_10yrs.db",
+      "fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.5_v2.0_10yrs.db",
+      "fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.8_v2.0_10yrs.db",
+      "fbs_2.0/rolling_bulge/rolling_bulge_ns2_rw0.9_v2.0_10yrs.db",
+      "fbs_2.0/rolling_all_sky/rolling_all_sky_ns2_rw0.9_v2.0_10yrs.db",
+      "fbs_2.0/rolling_early/roll_early_v2.0_10yrs.db",
+      "fbs_2.0/rolling_six/six_rolling_ns6_rw0.5_v2.0_10yrs.db",
+      "fbs_2.0/rolling_six/six_rolling_ns6_rw0.9_v2.0_10yrs.db",
+      "fbs_2.0/rolling_bulge_6/rolling_bulge_6_v2.0_10yrs.db"
     ]
   },
   "triplets": {
@@ -224,46 +224,46 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
     ],
     "filepath": [
-      "presto/presto_gap1.5_v2.0_10yrs.db",
-      "presto/presto_gap2.0_v2.0_10yrs.db",
-      "presto/presto_gap2.5_v2.0_10yrs.db",
-      "presto/presto_gap3.0_v2.0_10yrs.db",
-      "presto/presto_gap3.5_v2.0_10yrs.db",
-      "presto/presto_gap4.0_v2.0_10yrs.db",
-      "presto/presto_gap1.5_mix_v2.0_10yrs.db",
-      "presto/presto_gap2.0_mix_v2.0_10yrs.db",
-      "presto/presto_gap2.5_mix_v2.0_10yrs.db",
-      "presto/presto_gap3.0_mix_v2.0_10yrs.db",
-      "presto/presto_gap3.5_mix_v2.0_10yrs.db",
-      "presto/presto_gap4.0_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap1.5_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.0_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.5_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.0_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.5_v2.0_10yrs.db",
-      "presto_half/presto_half_gap4.0_v2.0_10yrs.db",
-      "presto_half/presto_half_gap1.5_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.0_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap2.5_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.0_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap3.5_mix_v2.0_10yrs.db",
-      "presto_half/presto_half_gap4.0_mix_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff7_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff6_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff5_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff4_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff3_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff2_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff1_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff0_delayed1827_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff7_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff6_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff5_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff4_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff3_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff2_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff1_delayed-1_v2.0_10yrs.db",
-      "long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
+      "fbs_2.0/presto/presto_gap1.5_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap2.0_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap2.5_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap3.0_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap3.5_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap4.0_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap1.5_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap2.0_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap2.5_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap3.0_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap3.5_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto/presto_gap4.0_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap1.5_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap2.0_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap2.5_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap3.0_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap3.5_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap4.0_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap1.5_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap2.0_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap2.5_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap3.0_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap3.5_mix_v2.0_10yrs.db",
+      "fbs_2.0/presto_half/presto_half_gap4.0_mix_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff7_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff6_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff5_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff4_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff3_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff2_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff1_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff7_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff6_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff5_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff4_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff3_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff2_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff1_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps/long_gaps_nightsoff0_delayed-1_v2.0_10yrs.db"
     ]
   },
   "long gaps no pairs": {
@@ -325,22 +325,22 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db"
     ],
     "filepath": [
-      "long_gaps_nopair/long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs.db",
-      "long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db"
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff7_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff6_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff5_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff4_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff3_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff2_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff1_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed1827_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff7_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff6_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff5_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff4_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff3_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff2_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs.db",
+      "fbs_2.0/long_gaps_nopair/long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs.db"
     ]
   },
   "bluer balance": {
@@ -360,8 +360,8 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/bluer/bluer_indx1_v2.0_10yrs.db"
     ],
     "filepath": [
-      "bluer/bluer_indx0_v2.0_10yrs.db",
-      "bluer/bluer_indx1_v2.0_10yrs.db"
+      "fbs_2.0/bluer/bluer_indx0_v2.0_10yrs.db",
+      "fbs_2.0/bluer/bluer_indx1_v2.0_10yrs.db"
     ]
   },
   "longer u visits": {
@@ -381,8 +381,8 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/long_u/long_u2_v2.0_10yrs.db"
     ],
     "filepath": [
-      "long_u/long_u1_v2.0_10yrs.db",
-      "long_u/long_u2_v2.0_10yrs.db"
+      "fbs_2.0/long_u/long_u1_v2.0_10yrs.db",
+      "fbs_2.0/long_u/long_u2_v2.0_10yrs.db"
     ]
   },
   "vary nes": {
@@ -438,20 +438,20 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
     ],
     "filepath": [
-      "vary_nes/vary_nes_nesfrac0.01_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.05_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.10_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.15_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.20_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.25_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.30_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.35_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.40_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.45_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.50_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.55_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac0.75_v2.0_10yrs.db",
-      "vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.01_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.05_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.10_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.15_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.20_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.25_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.30_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.35_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.40_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.45_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.50_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.55_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac0.75_v2.0_10yrs.db",
+      "fbs_2.0/vary_nes/vary_nes_nesfrac1.00_v2.0_10yrs.db"
     ]
   },
   "vary gp": {
@@ -507,20 +507,20 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
     ],
     "filepath": [
-      "vary_gp/vary_gp_gpfrac0.01_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.05_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.10_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.15_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.20_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.25_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.30_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.35_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.40_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.45_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.50_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.55_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac0.75_v2.0_10yrs.db",
-      "vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.01_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.05_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.10_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.15_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.20_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.25_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.30_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.35_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.40_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.45_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.50_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.55_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac0.75_v2.0_10yrs.db",
+      "fbs_2.0/vary_gp/vary_gp_gpfrac1.00_v2.0_10yrs.db"
     ]
   },
   "galactic plane footprint": {
@@ -564,40 +564,40 @@
       "Add 20 small galactic plane pencil beam fields"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority1.2_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.9_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.6_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.4_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.3_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.2_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.1_pbf_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority1.2_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.9_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.6_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.4_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.3_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.2_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/plane_priority_priority0.1_pbt_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/pencil_fs2_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/footprints/pencil_fs1_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority1.2_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.9_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.6_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.4_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.3_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.2_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.1_pbf_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority1.2_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.9_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.6_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.4_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.3_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.2_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/plane_priority_priority0.1_pbt_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/pencil_fs2_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/footprints/pencil_fs1_v2.1_10yrs.db"
     ],
     "filepath": [
-      "footprints/plane_priority_priority1.2_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.9_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.6_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.4_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.3_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.2_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.1_pbf_v2.1_10yrs.db",
-      "footprints/plane_priority_priority1.2_pbt_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.9_pbt_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.6_pbt_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.4_pbt_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.3_pbt_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.2_pbt_v2.1_10yrs.db",
-      "footprints/plane_priority_priority0.1_pbt_v2.1_10yrs.db",
-      "footprints/pencil_fs2_v2.1_10yrs.db",
-      "footprints/pencil_fs1_v2.1_10yrs.db"
+      "fbs_2.1/footprints/plane_priority_priority1.2_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.9_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.6_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.4_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.3_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.2_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.1_pbf_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority1.2_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.9_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.6_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.4_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.3_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.2_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/plane_priority_priority0.1_pbt_v2.1_10yrs.db",
+      "fbs_2.1/footprints/pencil_fs2_v2.1_10yrs.db",
+      "fbs_2.1/footprints/pencil_fs1_v2.1_10yrs.db"
     ]
   },
   "vary expt": {
@@ -629,28 +629,28 @@
       "Vary the exposure times between 20 and 100s"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_22_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_28_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_32_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_35_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_38_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/shave/shave_40_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_22_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_28_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_32_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_35_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_38_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/shave/shave_40_v2.1_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/vary_expt/vary_expt_v2.0_10yrs.db"
     ],
     "filepath": [
-      "shave/shave_20_v2.1_10yrs.db",
-      "shave/shave_22_v2.1_10yrs.db",
-      "shave/shave_25_v2.1_10yrs.db",
-      "shave/shave_28_v2.1_10yrs.db",
-      "shave/shave_30_v2.1_10yrs.db",
-      "shave/shave_32_v2.1_10yrs.db",
-      "shave/shave_35_v2.1_10yrs.db",
-      "shave/shave_38_v2.1_10yrs.db",
-      "shave/shave_40_v2.1_10yrs.db",
-      "vary_expt/vary_expt_v2.0_10yrs.db"
+      "fbs_2.1/shave/shave_20_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_22_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_25_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_28_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_30_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_32_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_35_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_38_v2.1_10yrs.db",
+      "fbs_2.1/shave/shave_40_v2.1_10yrs.db",
+      "fbs_2.0/vary_expt/vary_expt_v2.0_10yrs.db"
     ]
   },
   "good seeing": {
@@ -690,36 +690,36 @@
       "Good seeing priority, with weight 10.0, including ugri band"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db"
     ],
     "filepath": [
-      "good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
-      "good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db"
+      "fbs_2.1/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_gsw1.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_gsw3.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_gsw6.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_gsw10.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db"
     ]
   },
   "microsurveys": {
@@ -790,25 +790,25 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
     ],
     "filepath": [
-      "microsurveys/virgo_cluster/virgo_cluster_v2.0_10yrs.db",
-      "microsurveys/carina/carina_v2.0_10yrs.db",
-      "microsurveys/smc_movie/smc_movie_v2.0_10yrs.db",
-      "microsurveys/roman/roman_v2.0_10yrs.db",
-      "microsurveys/local_gals/local_gal_bindx0_v2.0_10yrs.db",
-      "microsurveys/local_gals/local_gal_bindx1_v2.0_10yrs.db",
-      "microsurveys/local_gals/local_gal_bindx2_v2.0_10yrs.db",
-      "microsurveys/ToO/too_rate10_v2.0_10yrs.db",
-      "microsurveys/ToO/too_rate50_v2.0_10yrs.db",
-      "microsurveys/north_stripe/north_stripe_v2.0_10yrs.db",
-      "microsurveys/short_exp/short_exp_v2.0_10yrs.db",
-      "microsurveys/multi_short/multi_short_v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern4v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern7v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern3v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern6v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern5v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern2v2.0_10yrs.db",
-      "microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
+      "fbs_2.0/microsurveys/virgo_cluster/virgo_cluster_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/carina/carina_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/smc_movie/smc_movie_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/roman/roman_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/local_gals/local_gal_bindx0_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/local_gals/local_gal_bindx1_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/local_gals/local_gal_bindx2_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/ToO/too_rate10_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/ToO/too_rate50_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/north_stripe/north_stripe_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/short_exp/short_exp_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/multi_short/multi_short_v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern4v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern7v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern3v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern6v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern5v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern2v2.0_10yrs.db",
+      "fbs_2.0/microsurveys/twilight_neo/twilight_neo_nightpattern1v2.0_10yrs.db"
     ]
   },
   "technical": {
@@ -822,10 +822,10 @@
       "Start the survey in March 2022"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/technical/march_start/march_start_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/technical/march_start/march_start_v2.1_10yrs.db"
     ],
     "filepath": [
-      "technical/march_start/march_start_v2.1_10yrs.db"
+      "fbs_2.1/technical/march_start/march_start_v2.1_10yrs.db"
     ]
   },
   "suppress repeats": {
@@ -849,20 +849,20 @@
       "Baseline but suppress repeats of pointings within the night by rpw 100.0"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/suppress_repeats/no_repeat_rpw-1.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/suppress_repeats/no_repeat_rpw-2.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/suppress_repeats/no_repeat_rpw-5.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/suppress_repeats/no_repeat_rpw-10.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/suppress_repeats/no_repeat_rpw-20.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/suppress_repeats/no_repeat_rpw-100.0_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/suppress_repeats/no_repeat_rpw-1.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/suppress_repeats/no_repeat_rpw-2.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/suppress_repeats/no_repeat_rpw-5.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/suppress_repeats/no_repeat_rpw-10.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/suppress_repeats/no_repeat_rpw-20.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/suppress_repeats/no_repeat_rpw-100.0_v2.1_10yrs.db"
     ],
     "filepath": [
-      "suppress_repeats/no_repeat_rpw-1.0_v2.1_10yrs.db",
-      "suppress_repeats/no_repeat_rpw-2.0_v2.1_10yrs.db",
-      "suppress_repeats/no_repeat_rpw-5.0_v2.1_10yrs.db",
-      "suppress_repeats/no_repeat_rpw-10.0_v2.1_10yrs.db",
-      "suppress_repeats/no_repeat_rpw-20.0_v2.1_10yrs.db",
-      "suppress_repeats/no_repeat_rpw-100.0_v2.1_10yrs.db"
+      "fbs_2.1/suppress_repeats/no_repeat_rpw-1.0_v2.1_10yrs.db",
+      "fbs_2.1/suppress_repeats/no_repeat_rpw-2.0_v2.1_10yrs.db",
+      "fbs_2.1/suppress_repeats/no_repeat_rpw-5.0_v2.1_10yrs.db",
+      "fbs_2.1/suppress_repeats/no_repeat_rpw-10.0_v2.1_10yrs.db",
+      "fbs_2.1/suppress_repeats/no_repeat_rpw-20.0_v2.1_10yrs.db",
+      "fbs_2.1/suppress_repeats/no_repeat_rpw-100.0_v2.1_10yrs.db"
     ]
   },
   "ddf percent": {
@@ -882,8 +882,8 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
     ],
     "filepath": [
-      "ddf/ddf_frac_ddf_per0.6_v2.0_10yrs.db",
-      "ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
+      "fbs_2.0/ddf/ddf_frac_ddf_per0.6_v2.0_10yrs.db",
+      "fbs_2.0/ddf/ddf_frac_ddf_per1.6_v2.0_10yrs.db"
     ]
   },
   "ddf euclid moved": {
@@ -897,10 +897,10 @@
       "Move Euclid South DDF to single new \"easy-scheduling\" position"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
+      "fbs_2.1/ddf_euclid_moved/ddf_euclid_moved_slf0.20_v2.1_10yrs.db"
     ]
   },
   "ddf season length": {
@@ -924,20 +924,20 @@
       "DDF with season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
-      "ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
+      "fbs_2.1/ddf_1/ddf_season_length_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_season_length_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_season_length_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_season_length_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_season_length_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_season_length_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf double": {
@@ -961,20 +961,20 @@
       "Shorter (1/2) DDF sequences, season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
-      "ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
-      "ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
-      "ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
-      "ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
-      "ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
+      "fbs_2.1/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf quad": {
@@ -998,20 +998,20 @@
       "Shorter (1/4) DDF sequences, season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
-      "ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
+      "fbs_2.1/ddf_quad/ddf_quad_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad/ddf_quad_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad/ddf_quad_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad/ddf_quad_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad/ddf_quad_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad/ddf_quad_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf quad subfilter": {
@@ -1035,20 +1035,20 @@
       "Shorter DDF sequences with subsets of the filters, season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
-      "ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf bright": {
@@ -1072,20 +1072,20 @@
       "DDF quad-style sequences running through bright time, season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
-      "ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf dither": {
@@ -1117,28 +1117,28 @@
       "DDFs with variable dither offsets - max dither 3.50 deg"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
-      "ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.01_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.05_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.50_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md0.70_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md1.00_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md1.50_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md2.50_v2.1_10yrs.db",
+      "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
     ]
   },
   "ddf roll": {
@@ -1152,10 +1152,10 @@
       "Roll the DDF fields between years"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+      "fbs_2.1/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
     ]
   },
   "ddf accordian": {
@@ -1245,86 +1245,86 @@
       "DDFs with an accordian cadence: 0.4 season fraction, 0.4 low season fraction, 0.5 low season rate"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.1_10yrs.db",
-      "ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.1_10yrs.db"
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.1_10yrs.db",
+      "fbs_2.1/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.1_10yrs.db"
     ]
   },
   "ddf old rot": {
@@ -1348,20 +1348,20 @@
       "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.35"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
-      "ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf deep universal": {
@@ -1375,10 +1375,10 @@
       "DESC deep universal DDF sequences"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
+      "fbs_2.1/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
     ]
   },
   "ddf deep rolling": {
@@ -1392,10 +1392,10 @@
       "DESC deep universal sequences, with rolling - each DDF observed for 2 seasons"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
+      "fbs_2.1/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db"
     ]
   },
   "ddf early deep": {
@@ -1413,14 +1413,14 @@
       "DESC early deep rolling DDF cadences - z complete .80"
     ],
     "url": [
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.0/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
     ],
     "filepath": [
-      "ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
-      "ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
-      "ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
+      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
+      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
+      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
     ]
   }
 }
