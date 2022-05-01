@@ -267,7 +267,7 @@
         "metric set":"Nvis",
         "metric":"Nvisits All visits",
         "short_name":"Nvisits total",
-        "style":null,
+        "style":"k-",
         "invert":false,
         "mag":false
     },
@@ -339,7 +339,7 @@
         "metric set":"cadence",
         "metric":"Median Median Intra-Night Gap WFD HealpixSubsetSlicer",
         "short_name":"Median WFD Intra-Night Gap",
-        "style":"b:",
+        "style":"k-",
         "invert":true,
         "mag":false
     },
@@ -347,7 +347,7 @@
         "metric set":"cadence",
         "metric":"Median Median Inter-Night Gap WFD u band HealpixSubsetSlicer",
         "short_name":"Median WFD Inter-Night Gap u",
-        "style":"c--",
+        "style":"c:",
         "invert":true,
         "mag":false
     },
@@ -355,7 +355,7 @@
         "metric set":"cadence",
         "metric":"Median Median Inter-Night Gap WFD g band HealpixSubsetSlicer",
         "short_name":"Median WFD Inter-Night Gap g",
-        "style":"k--",
+        "style":"g:",
         "invert":true,
         "mag":false
     },
@@ -363,7 +363,7 @@
         "metric set":"cadence",
         "metric":"Median Median Inter-Night Gap WFD r band HealpixSubsetSlicer",
         "short_name":"Median WFD Inter-Night Gap r",
-        "style":"r--",
+        "style":"y:",
         "invert":true,
         "mag":false
     },
@@ -371,7 +371,7 @@
         "metric set":"cadence",
         "metric":"Median Median Inter-Night Gap WFD i band HealpixSubsetSlicer",
         "short_name":"Median WFD Inter-Night Gap i",
-        "style":"k--",
+        "style":"r:",
         "invert":true,
         "mag":false
     },
@@ -379,15 +379,15 @@
         "metric set":"cadence",
         "metric":"Median Median Inter-Night Gap WFD z band HealpixSubsetSlicer",
         "short_name":"Median Inter-Night Gap z",
-        "style":"k--",
+        "style":"m:",
         "invert":true,
         "mag":false
     },
     {
         "metric set":"cadence",
-        "metric":"Median Median Inter-Night Gap WFD r band HealpixSubsetSlicer",
+        "metric":"Median Median Inter-Night Gap WFD y band HealpixSubsetSlicer",
         "short_name":"Median WFD Inter-Night Gap y",
-        "style":"k--",
+        "style":"k:",
         "invert":true,
         "mag":false
     },
@@ -515,7 +515,7 @@
         "metric set":"galaxies",
         "metric":"N Galaxies (all) GalaxyCountsMetric_extended i HealpixSlicer",
         "short_name":"NGal all sky",
-        "style":null,
+        "style":"k--",
         "invert":false,
         "mag":false
     },
@@ -705,8 +705,8 @@
     },
     {
         "metric set":"sso disc options",
-        "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
-        "short_name":"Completeness NEO H<22.0",
+        "metric":"3 pairs in 30 nights detection loss NEO H=22.0",
+        "short_name":"Completeness NEO H<22.0 (3x30)",
         "style":"b-.",
         "invert":false,
         "mag":false
@@ -762,7 +762,7 @@
     {
         "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
-        "short_name":"Completeness TNO H<6.0",
+        "short_name":"Completeness TNO H<6.0 (3x15)",
         "style":"r-",
         "invert":false,
         "mag":false
@@ -770,12 +770,12 @@
     {
         "metric set":"sso disc options",
         "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
-        "short_name":"Completeness TNO H<8.0",
+        "short_name":"Completeness TNO H<8.0 (3x15)",
         "style":"r--",
         "invert":false,
         "mag":false
     },
-        {
+    {
         "metric set":"sso disc options",
         "metric":"3 pairs in 30 nights detection loss TNO H=6.0",
         "short_name":"Completeness TNO H<6.0 (3x30)",
@@ -788,6 +788,22 @@
         "metric":"3 pairs in 30 nights detection loss TNO H=8.0",
         "short_name":"Completeness TNO H<8.0 (3x30)",
         "style":"r-.",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"6 detections in 60 nights detection loss TNO H=6.0",
+        "short_name":"Completeness TNO H<6.0 (6in60)",
+        "style":"m:",
+        "invert":false,
+        "mag":false
+    },
+    {
+        "metric set":"sso disc options",
+        "metric":"6 detections in 60 nights detection loss TNO H=8.0",
+        "short_name":"Completeness TNO H<8.0 (6in60)",
+        "style":"m-.",
         "invert":false,
         "mag":false
     },
