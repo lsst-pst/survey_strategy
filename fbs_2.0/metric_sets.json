@@ -1614,5 +1614,245 @@
     "style":"b-.",
     "invert":false,
     "mag":false
+  },
+  {
+    "metric set":"N QSO",
+    "metric":"Total QSO QSONumberCountsMetric u band and non-DD HealpixSlicer",
+    "short_name":"N QSO u band",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"N QSO",
+    "metric":"Total QSO QSONumberCountsMetric g band and non-DD HealpixSlicer",
+    "short_name":"N QSO g band",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"N QSO",
+    "metric":"Total QSO QSONumberCountsMetric r band and non-DD HealpixSlicer",
+    "short_name":"N QSO r band",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"N QSO",
+    "metric":"Total QSO QSONumberCountsMetric i band and non-DD HealpixSlicer",
+    "short_name":"N QSO i band",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"N QSO",
+    "metric":"Total QSO QSONumberCountsMetric z band and non-DD HealpixSlicer",
+    "short_name":"N QSO z band",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"N QSO",
+    "metric":"Total QSO QSONumberCountsMetric y band and non-DD HealpixSlicer",
+    "short_name":"N QSO y band",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"Median AGN_TimeLag_100_days u band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_100_days u band",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"Median AGN_TimeLag_100_days g band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_100_days g band",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"Median AGN_TimeLag_100_days r band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_100_days r band",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"Median AGN_TimeLag_100_days i band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_100_days i band",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"Median AGN_TimeLag_100_days z band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_100_days z band",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"Median AGN_TimeLag_100_days y band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_100_days y band",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"AreaThreshold AGN_TimeLag_100_days u band HealpixSlicer",
+    "short_name":"AreaThreshold AGN_TimeLag_100_days u band",
+    "style":"c:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"AreaThreshold AGN_TimeLag_100_days g band HealpixSlicer",
+    "short_name":"AreaThreshold AGN_TimeLag_100_days g band",
+    "style":"g:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"AreaThreshold AGN_TimeLag_100_days r band HealpixSlicer",
+    "short_name":"AreaThreshold AGN_TimeLag_100_days r band",
+    "style":"y:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"AreaThreshold AGN_TimeLag_100_days i band HealpixSlicer",
+    "short_name":"AreaThreshold AGN_TimeLag_100_days i band",
+    "style":"r:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"AreaThreshold AGN_TimeLag_100_days z band HealpixSlicer",
+    "short_name":"AreaThreshold AGN_TimeLag_100_days z band",
+    "style":"m:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN timelag",
+    "metric":"AreaThreshold AGN_TimeLag_100_days y band HealpixSlicer",
+    "short_name":"AreaThreshold AGN_TimeLag_100_days y band",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"Median AGN SF_uncert u band HealpixSlicer",
+    "short_name":"Median AGN SF_uncert u band",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"Median AGN SF_uncert g band HealpixSlicer",
+    "short_name":"Median AGN SF_uncert g band",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"Median AGN SF_uncert r band HealpixSlicer",
+    "short_name":"Median AGN SF_uncert r band",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"Median AGN SF_uncert i band HealpixSlicer",
+    "short_name":"Median AGN SF_uncert i band",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"Median AGN SF_uncert z band HealpixSlicer",
+    "short_name":"Median AGN SF_uncert z band",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"Median AGN SF_uncert y band HealpixSlicer",
+    "short_name":"Median AGN SF_uncert y band",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"AreaThreshold AGN SF_uncert u band HealpixSlicer",
+    "short_name":"AreaThreshold AGN SF_uncert u band",
+    "style":"c:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"AreaThreshold AGN SF_uncert g band HealpixSlicer",
+    "short_name":"AreaThreshold AGN SF_uncert g band",
+    "style":"g:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"AreaThreshold AGN SF_uncert r band HealpixSlicer",
+    "short_name":"AreaThreshold AGN SF_uncert r band",
+    "style":"y:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"AreaThreshold AGN SF_uncert i band HealpixSlicer",
+    "short_name":"AreaThreshold AGN SF_uncert i band",
+    "style":"r:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"AreaThreshold AGN SF_uncert z band HealpixSlicer",
+    "short_name":"AreaThreshold AGN SF_uncert z band",
+    "style":"m:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF",
+    "metric":"AreaThreshold AGN SF_uncert y band HealpixSlicer",
+    "short_name":"AreaThreshold AGN SF_uncert y band",
+    "style":"k:",
+    "invert":false,
+    "mag":false
   }
 ]
