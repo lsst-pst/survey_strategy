@@ -136,7 +136,7 @@
       "long_gaps_nightsoff1_delayed-1_v2.0_10yrs",
       "long_gaps_nightsoff0_delayed-1_v2.0_10yrs"
     ],
-    "description": "**triplets** : These simulations add a third visit within each night, with variations on the time interval between the first pair of visits (standard separation of 33 minutes) to the third visit. The third visit is always acquired in the same filter as one of the earlier visits in the pair. The \"presto_gap\" runs take triplets all the time, at a set interval to the third visit and in the filter pairs described in the brief descriptions. The \"presto_half\" runs are similar, but only take triplets of visits about half of the time. The \"long_gaps\" runs vary the interval to the third visit, and generally have longer gaps of 2 to 7 hours. The long_gaps run take triplets at a variety of frequencies, ranging from every night to every few nights; in some simulations the triplets do not start until year 5.",
+    "description": "**triplets** : These simulations add a third visit within each night, with variations on the time interval between the first pair of visits (standard separation of 33 minutes) to the third visit. The third visit is always acquired in the same filter as one of the earlier visits in the pair. Only *some* of the visits in the night are taken in triplets; the first \"blob\" will be a triplet, and depending on the time available in the night and the gap length, sometimes additional blobs will be acquired in triplets. The \"presto_gap\" runs take triplets all the time, at a set interval to the third visit and in the filter pairs described in the brief descriptions. The \"presto_half\" runs are similar, but only take triplets of visits about half of the time. The \"long_gaps\" runs vary the interval to the third visit, and generally have longer gaps of 2 to 7 hours. The long_gaps run take triplets at a variety of frequencies, ranging from every night to every few nights; in some simulations the triplets do not start until year 5.",
     "version": "2.0",
     "reference": "baseline_v2.0_10yrs",
     "brief": [
@@ -285,7 +285,7 @@
       "long_gaps_np_nightsoff1_delayed-1_v2.0_10yrs",
       "long_gaps_np_nightsoff0_delayed-1_v2.0_10yrs"
     ],
-    "description": "**long gaps no pairs** : The baseline survey strategy takes pairs of visits every few nights, wherethe pair is separated by about 33 minutes. The pairs are taken in mixed filters, for color measurements. These simulations extend the gap between the pair of visits, modifying it to a variable time period of between 2 to 7 hours. The pair of visits are both in the same filter, in any of griz (g+r, r+i, or i+z pairs). In some of the simulations, these long gap visits are obtained throughout the survey, while for other simulations the longer time separations do not start until year 5.",
+    "description": "**long gaps no pairs** : The baseline survey strategy takes pairs of visits every few nights, wherethe pair is separated by about 33 minutes. The pairs are taken in mixed filters, for color measurements. These simulations extend the gap between the pair of visits, for the FIRST pair \"blob\" of the night, modifying it to a variable time period of between 2 to 7 hours. The pair of visits are both in the same filter, in any of griz (g+r, r+i, or i+z pairs). In some of the simulations, these long gap visits are obtained throughout the survey, while for other simulations the longer time separations do not start until year 5.",
     "version": "2.0",
     "reference": "baseline_v2.0_10yrs",
     "brief": [
