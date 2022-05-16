@@ -445,7 +445,7 @@
     "short_name":"Total detected DESC SNNSNMetric_nSN",
     "style":"y-",
     "invert":false,
-    "mag": false
+    "mag":false
   },
   {
     "metric set":"TVS short",
@@ -2124,6 +2124,102 @@
     "metric":"Median PeriodicStarModulationMetric dm 21 interval 30 RRc HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 21 interval 30 RRc",
     "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0",
+    "style":"c--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0",
+    "style":"g--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0",
+    "style":"y--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0",
+    "style":"b--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0",
+    "style":"b-",
     "invert":false,
     "mag":false
   }
