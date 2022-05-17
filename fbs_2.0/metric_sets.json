@@ -2366,5 +2366,125 @@
     "style":"k-",
     "invert":true,
     "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum ELAISS1, SNe_nSN  HealpixSubsetSlicer",
+    "short_name":"Sum SNe_nSN ELAISS1",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum XMM-LSS, SNe_nSN  HealpixSubsetSlicer",
+    "short_name":"Sum SNe_nSN XMM-LSS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum COSMOS, SNe_nSN  HealpixSubsetSlicer",
+    "short_name":"Sum SNe_nSN COSMOS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum ECDFS, SNe_nSN  HealpixSubsetSlicer",
+    "short_name":"Sum SNe_nSN ECDFS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum EDFS, SNe_nSN  HealpixSubsetSlicer",
+    "short_name":"Sum SNe_nSN EDFS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Median ELAISS1, SNe_zlim  HealpixSubsetSlicer",
+    "short_name":"Median SNe_zlim ELAISS1",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Median XMM-LSS, SNe_zlim  HealpixSubsetSlicer",
+    "short_name":"Median SNe_zlim XMM-LSS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Median COSMOS, SNe_zlim  HealpixSubsetSlicer",
+    "short_name":"Median SNe_zlim COSMOS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Median ECDFS, SNe_zlim  HealpixSubsetSlicer",
+    "short_name":"Median SNe_zlim ECDFS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Median EDFS, SNe_zlim  HealpixSubsetSlicer",
+    "short_name":"Median SNe_zlim EDFS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum SnL_ELAISS1  HealpixSubsetSlicer",
+    "short_name":"Sum SnL ELAISS1",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum SnL_XMM-LSS  HealpixSubsetSlicer",
+    "short_name":"Sum SnL XMM-LSS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum SnL_COSMOS  HealpixSubsetSlicer",
+    "short_name":"Sum SnL COSMOS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum SnL_ECDFS  HealpixSubsetSlicer",
+    "short_name":"Sum SnL ECDFS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DESC SN DDF",
+    "metric":"Sum SnL_EDFS  HealpixSubsetSlicer",
+    "short_name":"Sum SnL EDFS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
   }
 ]
