@@ -2128,99 +2128,243 @@
     "mag":false
   },
   {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0",
-    "style":"c--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0",
-    "style":"g--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0",
-    "style":"y--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0",
-    "style":"r--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5",
-    "style":"m--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0",
-    "style":"b--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0",
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ELAISS1 SFU, ELAISS1 u HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ELAISS1 u",
     "style":"c-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0",
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ELAISS1 SFU, ELAISS1 g HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ELAISS1 g",
     "style":"g-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0",
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ELAISS1 SFU, ELAISS1 r HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ELAISS1 r",
     "style":"y-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0",
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ELAISS1 SFU, ELAISS1 i HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ELAISS1 i",
     "style":"r-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5",
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ELAISS1 SFU, ELAISS1 z HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ELAISS1 z",
     "style":"m-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0",
-    "style":"b-",
-    "invert":false,
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ELAISS1 SFU, ELAISS1 y HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ELAISS1 y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, XMM-LSS SFU, XMM-LSS u HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert XMM-LSS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, XMM-LSS SFU, XMM-LSS g HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert XMM-LSS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, XMM-LSS SFU, XMM-LSS r HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert XMM-LSS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, XMM-LSS SFU, XMM-LSS i HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert XMM-LSS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, XMM-LSS SFU, XMM-LSS z HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert XMM-LSS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, XMM-LSS SFU, XMM-LSS y HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert XMM-LSS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, COSMOS SFU, COSMOS u HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert COSMOS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, COSMOS SFU, COSMOS g HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert COSMOS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, COSMOS SFU, COSMOS r HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert COSMOS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, COSMOS SFU, COSMOS i HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert COSMOS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, COSMOS SFU, COSMOS z HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert COSMOS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, COSMOS SFU, COSMOS y HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert COSMOS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ECDFS SFU, ECDFS u HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ECDFS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ECDFS SFU, ECDFS g HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ECDFS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ECDFS SFU, ECDFS r HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ECDFS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ECDFS SFU, ECDFS i HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ECDFS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ECDFS SFU, ECDFS z HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ECDFS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, ECDFS SFU, ECDFS y HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert ECDFS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, EDFS SFU, EDFS u HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert EDFS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, EDFS SFU, EDFS g HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert EDFS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, EDFS SFU, EDFS r HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert EDFS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, EDFS SFU, EDFS i HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert EDFS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, EDFS SFU, EDFS z HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert EDFS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"AGN SF DDF",
+    "metric":"Median AGN SF Uncert, EDFS SFU, EDFS y HealpixSubsetSlicer",
+    "short_name":"Median AGN SF Uncert EDFS y",
+    "style":"k-",
+    "invert":true,
     "mag":false
   }
 ]
