@@ -663,12 +663,12 @@
       "good_seeing_gsw20.0_v2.1_10yrs",
       "good_seeing_gsw50.0_v2.1_10yrs",
       "good_seeing_u_gsw0.0_v2.1_10yrs",
-      "good_seeing_u_gsw50.0_v2.1_10yrs",
-      "good_seeing_u_gsw20.0_v2.1_10yrs",
-      "good_seeing_u_gsw6.0_v2.1_10yrs",
-      "good_seeing_u_gsw3.0_v2.1_10yrs",
       "good_seeing_u_gsw1.0_v2.1_10yrs",
-      "good_seeing_u_gsw10.0_v2.1_10yrs"
+      "good_seeing_u_gsw3.0_v2.1_10yrs",
+      "good_seeing_u_gsw6.0_v2.1_10yrs",
+      "good_seeing_u_gsw10.0_v2.1_10yrs",
+      "good_seeing_u_gsw20.0_v2.1_10yrs",
+      "good_seeing_u_gsw50.0_v2.1_10yrs"
     ],
     "description": "**good seeing** : This family of simulations adds a requirement for 3 \"good seeing\" (seeing < 0.8 arcseconds) images per year, in various bandpasses. Note that `baseline_v2.1_10yrs` (and other v2.1 simulations) adds this requirement in r and i bands as the default.",
     "version": "2.1",
@@ -682,12 +682,12 @@
       "Good seeing priority, with weight 20.0, grizy only",
       "Good seeing priority, with weight 50.0, grizy only",
       "Good seeing priority, with weight 0.0, including ugri band",
-      "Good seeing priority, with weight 50.0, including ugri band",
-      "Good seeing priority, with weight 20.0, including ugri band",
-      "Good seeing priority, with weight 6.0, including ugri band",
-      "Good seeing priority, with weight 3.0, including ugri band",
       "Good seeing priority, with weight 1.0, including ugri band",
-      "Good seeing priority, with weight 10.0, including ugri band"
+      "Good seeing priority, with weight 3.0, including ugri band",
+      "Good seeing priority, with weight 6.0, including ugri band",
+      "Good seeing priority, with weight 10.0, including ugri band",
+      "Good seeing priority, with weight 20.0, including ugri band",
+      "Good seeing priority, with weight 50.0, including ugri band"
     ],
     "url": [
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
@@ -698,12 +698,12 @@
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
       "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
-      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db"
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
+      "http://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.1/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db"
     ],
     "filepath": [
       "fbs_2.1/good_seeing/good_seeing_gsw0.0_v2.1_10yrs.db",
@@ -714,12 +714,12 @@
       "fbs_2.1/good_seeing/good_seeing_gsw20.0_v2.1_10yrs.db",
       "fbs_2.1/good_seeing/good_seeing_gsw50.0_v2.1_10yrs.db",
       "fbs_2.1/good_seeing/good_seeing_u_gsw0.0_v2.1_10yrs.db",
-      "fbs_2.1/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db",
-      "fbs_2.1/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
-      "fbs_2.1/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
-      "fbs_2.1/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
       "fbs_2.1/good_seeing/good_seeing_u_gsw1.0_v2.1_10yrs.db",
-      "fbs_2.1/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db"
+      "fbs_2.1/good_seeing/good_seeing_u_gsw3.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw6.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw10.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw20.0_v2.1_10yrs.db",
+      "fbs_2.1/good_seeing/good_seeing_u_gsw50.0_v2.1_10yrs.db"
     ]
   },
   "microsurveys": {
