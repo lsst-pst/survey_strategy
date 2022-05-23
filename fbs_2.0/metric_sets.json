@@ -2486,5 +2486,197 @@
     "style":"m-",
     "invert":false,
     "mag":false
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median CoaddM5 WFD u band HealpixSubsetSlicer",
+    "short_name":"Median coadd depth u WFD",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median CoaddM5 WFD g band HealpixSubsetSlicer",
+    "short_name":"Median coadd depth g WFD",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median CoaddM5 WFD r band HealpixSubsetSlicer",
+    "short_name":"Median coadd depth r WFD",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median CoaddM5 WFD i band HealpixSubsetSlicer",
+    "short_name":"Median coadd depth i WFD",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median CoaddM5 WFD z band HealpixSubsetSlicer",
+    "short_name":"Median coadd depth z WFD",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median CoaddM5 WFD y band HealpixSubsetSlicer",
+    "short_name":"Median coadd depth y WFD",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Mean Median fiveSigmaDepth WFD u band HealpixSubsetSlicer",
+    "short_name":"Median single image depth u WFD",
+    "style":"c-.",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Mean Median fiveSigmaDepth WFD g band HealpixSubsetSlicer",
+    "short_name":"Median single image depth g WFD",
+    "style":"g-.",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Mean Median fiveSigmaDepth WFD r band HealpixSubsetSlicer",
+    "short_name":"Median single image depth r WFD",
+    "style":"y-.",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Mean Median fiveSigmaDepth WFD i band HealpixSubsetSlicer",
+    "short_name":"Median single image depth i WFD",
+    "style":"r-.",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Mean Median fiveSigmaDepth WFD z band HealpixSubsetSlicer",
+    "short_name":"Median single image depth z WFD",
+    "style":"m-.",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Mean Median fiveSigmaDepth WFD y band HealpixSubsetSlicer",
+    "short_name":"Median single image depth y WFD",
+    "style":"k-.",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median NVisits WFD u band HealpixSubsetSlicer",
+    "short_name":"Median NVisits u WFD",
+    "style":"c:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median NVisits WFD g band HealpixSubsetSlicer",
+    "short_name":"Median NVisits g WFD",
+    "style":"g:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median NVisits WFD r band HealpixSubsetSlicer",
+    "short_name":"Median NVisits r WFD",
+    "style":"y:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median NVisits WFD i band HealpixSubsetSlicer",
+    "short_name":"Median NVisits i WFD",
+    "style":"r:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median NVisits WFD z band HealpixSubsetSlicer",
+    "short_name":"Median NVisits z WFD",
+    "style":"m:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"WFD Depths",
+    "metric":"Median NVisits WFD y band HealpixSubsetSlicer",
+    "short_name":"Median NVisits y WFD",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Cadence  HealpixSlicer",
+    "short_name":"Median TDC_Cadence",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Season  HealpixSlicer",
+    "short_name":"Median TDC_Season",
+    "style":"y:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Campaign  HealpixSlicer",
+    "short_name":"Median TDC_Campaign",
+    "style":"b:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Rate  HealpixSlicer",
+    "short_name":"Median TDC_Rate",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Accuracy  HealpixSlicer",
+    "short_name":"Median TDC_Accuracy",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Precision  HealpixSlicer",
+    "short_name":"Median TDC_Precision",
+    "style":"r-",
+    "invert":true,
+    "mag":false
   }
 ]
