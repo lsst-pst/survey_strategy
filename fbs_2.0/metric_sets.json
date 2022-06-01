@@ -536,6 +536,14 @@
     "mag":false
   },
   {
+    "metric set":"DESC WFD",
+    "metric":"Total detected KNePopMetric__multi_color_detect  UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric__multi_color_detect",
+    "style":"g--",
+    "invert":false,
+    "mag":false
+  },
+  {
     "metric set":"galaxies",
     "metric":"N Galaxies (all) GalaxyCountsMetric_extended i HealpixSlicer",
     "short_name":"NGal all sky",
@@ -2488,6 +2496,294 @@
     "mag":false
   },
   {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Cadence  HealpixSlicer",
+    "short_name":"Median TDC_Cadence",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Season  HealpixSlicer",
+    "short_name":"Median TDC_Season",
+    "style":"y:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Campaign  HealpixSlicer",
+    "short_name":"Median TDC_Campaign",
+    "style":"b:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Rate  HealpixSlicer",
+    "short_name":"Median TDC_Rate",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Accuracy  HealpixSlicer",
+    "short_name":"Median TDC_Accuracy",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SL TDC",
+    "metric":"Median TDC_Precision  HealpixSlicer",
+    "short_name":"Median TDC_Precision",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"Stars",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 u HealpixSlicer",
+    "short_name":"N Stars u (crowding)",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"Stars",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 g HealpixSlicer",
+    "short_name":"N Stars g (crowding)",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"Stars",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 r HealpixSlicer",
+    "short_name":"N Stars r (crowding)",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"Stars",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 i HealpixSlicer",
+    "short_name":"N Stars i (crowding)",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"Stars",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 z HealpixSlicer",
+    "short_name":"N Stars z (crowding)",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"Stars",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 y HealpixSlicer",
+    "short_name":"N Stars y (crowding)",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0",
+    "style":"c--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0",
+    "style":"g--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0",
+    "style":"y--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP visit",
+    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0",
+    "style":"b--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP season",
+    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0  HealpixSlicer",
+    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_2-14hrs u band HealpixSlicer",
+    "short_name":"Median TgapsPercent_2-14hrs u band",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_2-14hrs g band HealpixSlicer",
+    "short_name":"Median TgapsPercent_2-14hrs g band",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_2-14hrs r band HealpixSlicer",
+    "short_name":"Median TgapsPercent_2-14hrs r band",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_2-14hrs i band HealpixSlicer",
+    "short_name":"Median TgapsPercent_2-14hrs i band",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_2-14hrs z band HealpixSlicer",
+    "short_name":"Median TgapsPercent_2-14hrs z band",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_2-14hrs y band HealpixSlicer",
+    "short_name":"Median TgapsPercent_2-14hrs y band",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_1day u band HealpixSlicer",
+    "short_name":"Median TgapsPercent_1day u band",
+    "style":"c:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_1day g band HealpixSlicer",
+    "short_name":"Median TgapsPercent_1day g band",
+    "style":"g:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_1day r band HealpixSlicer",
+    "short_name":"Median TgapsPercent_1day r band",
+    "style":"y:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_1day i band HealpixSlicer",
+    "short_name":"Median TgapsPercent_1day i band",
+    "style":"r:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_1day z band HealpixSlicer",
+    "short_name":"Median TgapsPercent_1day z band",
+    "style":"m:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS Tgaps",
+    "metric":"Median TgapsPercent_1day y band HealpixSlicer",
+    "short_name":"Median TgapsPercent_1day y band",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
     "metric set":"WFD Depths",
     "metric":"Median CoaddM5 WFD u band HealpixSubsetSlicer",
     "short_name":"Median coadd depth u WFD",
@@ -2632,195 +2928,163 @@
     "mag":false
   },
   {
-    "metric set":"SL TDC",
-    "metric":"Median TDC_Cadence  HealpixSlicer",
-    "short_name":"Median TDC_Cadence",
-    "style":"g:",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"SL TDC",
-    "metric":"Median TDC_Season  HealpixSlicer",
-    "short_name":"Median TDC_Season",
-    "style":"y:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"SL TDC",
-    "metric":"Median TDC_Campaign  HealpixSlicer",
-    "short_name":"Median TDC_Campaign",
-    "style":"b:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"SL TDC",
-    "metric":"Median TDC_Rate  HealpixSlicer",
-    "short_name":"Median TDC_Rate",
-    "style":"m-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"SL TDC",
-    "metric":"Median TDC_Accuracy  HealpixSlicer",
-    "short_name":"Median TDC_Accuracy",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"SL TDC",
-    "metric":"Median TDC_Precision  HealpixSlicer",
-    "short_name":"Median TDC_Precision",
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Inter-Night Gap, COSMOS note like DD:COSMOS% UserPointsSlicer",
+    "short_name":"Mean Median Inter-Night Gap, COSMOS note like DD:COSMOS% UserPointsSlicer",
     "style":"r-",
     "invert":true,
     "mag":false
   },
   {
-    "metric set":"Stars",
-    "metric":"Total N Stars, crowding N stars to Precision 0.20 u HealpixSlicer",
-    "short_name":"N Stars u (crowding)",
-    "style":"c-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"Stars",
-    "metric":"Total N Stars, crowding N stars to Precision 0.20 g HealpixSlicer",
-    "short_name":"N Stars g (crowding)",
-    "style":"g-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"Stars",
-    "metric":"Total N Stars, crowding N stars to Precision 0.20 r HealpixSlicer",
-    "short_name":"N Stars r (crowding)",
-    "style":"y-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"Stars",
-    "metric":"Total N Stars, crowding N stars to Precision 0.20 i HealpixSlicer",
-    "short_name":"N Stars i (crowding)",
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Inter-Night Gap, ECDFS note like DD:ECDFS% UserPointsSlicer",
+    "short_name":"Mean Median Inter-Night Gap, ECDFS note like DD:ECDFS% UserPointsSlicer",
     "style":"r-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"Stars",
-    "metric":"Total N Stars, crowding N stars to Precision 0.20 z HealpixSlicer",
-    "short_name":"N Stars z (crowding)",
-    "style":"m-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"Stars",
-    "metric":"Total N Stars, crowding N stars to Precision 0.20 y HealpixSlicer",
-    "short_name":"N Stars y (crowding)",
-    "style":"k-",
-    "invert":false,
-    "mag":false
-  },
-    {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_2_0",
-    "style":"c--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_5_0",
-    "style":"g--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_11_0",
-    "style":"y--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_20_0",
-    "style":"r--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_46_5",
-    "style":"m--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP visit",
-    "metric":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneVisitIntervalsTimescales_combined_map_Tau_73_0",
-    "style":"b--",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_10_0",
-    "style":"c-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_25_0",
-    "style":"g-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_55_0",
-    "style":"y-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_100_0",
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Inter-Night Gap, EDFS note like DD:EDFS% UserPointsSlicer",
+    "short_name":"Mean Median Inter-Night Gap, EDFS note like DD:EDFS% UserPointsSlicer",
     "style":"r-",
-    "invert":false,
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_232_5",
-    "style":"m-",
-    "invert":false,
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Inter-Night Gap, ELAISS1 note like DD:ELAISS1% UserPointsSlicer",
+    "short_name":"Mean Median Inter-Night Gap, ELAISS1 note like DD:ELAISS1% UserPointsSlicer",
+    "style":"r-",
+    "invert":true,
     "mag":false
   },
   {
-    "metric set":"GP season",
-    "metric":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0  HealpixSlicer",
-    "short_name":"Sum GalPlaneSeasonGapsTimescales_combined_map_Tau_365_0",
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Inter-Night Gap, XMM-LSS note like DD:XMM-LSS% UserPointsSlicer",
+    "short_name":"Mean Median Inter-Night Gap, XMM-LSS note like DD:XMM-LSS% UserPointsSlicer",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Season Length, COSMOS note like DD:COSMOS% UserPointsSlicer",
+    "short_name":"Mean Median Season Length, COSMOS note like DD:COSMOS% UserPointsSlicer",
     "style":"b-",
     "invert":false,
     "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Season Length, ECDFS note like DD:ECDFS% UserPointsSlicer",
+    "short_name":"Mean Median Season Length, ECDFS note like DD:ECDFS% UserPointsSlicer",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Season Length, EDFS note like DD:EDFS% UserPointsSlicer",
+    "short_name":"Mean Median Season Length, EDFS note like DD:EDFS% UserPointsSlicer",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Season Length, ELAISS1 note like DD:ELAISS1% UserPointsSlicer",
+    "short_name":"Mean Median Season Length, ELAISS1 note like DD:ELAISS1% UserPointsSlicer",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean Median Season Length, XMM-LSS note like DD:XMM-LSS% UserPointsSlicer",
+    "short_name":"Mean Median Season Length, XMM-LSS note like DD:XMM-LSS% UserPointsSlicer",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median COSMOS, Count all  HealpixSubsetSlicer",
+    "short_name":"Median COSMOS, Count all  HealpixSubsetSlicer",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median ECDFS, Count all  HealpixSubsetSlicer",
+    "short_name":"Median ECDFS, Count all  HealpixSubsetSlicer",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median EDFS, Count all  HealpixSubsetSlicer",
+    "short_name":"Median EDFS, Count all  HealpixSubsetSlicer",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median ELAISS1, Count all  HealpixSubsetSlicer",
+    "short_name":"Median ELAISS1, Count all  HealpixSubsetSlicer",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median XMM-LSS, Count all  HealpixSubsetSlicer",
+    "short_name":"Median XMM-LSS, Count all  HealpixSubsetSlicer",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median COSMOS, 5-sigma r r HealpixSubsetSlicer",
+    "short_name":"Median COSMOS, 5-sigma r r HealpixSubsetSlicer",
+    "style":"k:",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median ECDFS, 5-sigma r r HealpixSubsetSlicer",
+    "short_name":"Median ECDFS, 5-sigma r r HealpixSubsetSlicer",
+    "style":"k:",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median EDFS, 5-sigma r r HealpixSubsetSlicer",
+    "short_name":"Median EDFS, 5-sigma r r HealpixSubsetSlicer",
+    "style":"k:",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median ELAISS1, 5-sigma r r HealpixSubsetSlicer",
+    "short_name":"Median ELAISS1, 5-sigma r r HealpixSubsetSlicer",
+    "style":"k:",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median XMM-LSS, 5-sigma r r HealpixSubsetSlicer",
+    "short_name":"Median XMM-LSS, 5-sigma r r HealpixSubsetSlicer",
+    "style":"k:",
+    "invert":false,
+    "mag":true
   }
 ]
