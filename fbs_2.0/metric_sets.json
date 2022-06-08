@@ -31,6 +31,14 @@
     "invert":false,
     "mag":false
   },
+    {
+    "metric set":"radar",
+    "metric":"Sum PrestoKNe__scoreS  UserPointsSlicer",
+    "short_name":"Presto KNe",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
   {
     "metric set":"radar",
     "metric":"Total detected TDEsPopMetric__some_color_pu  UserPointsSlicer",
