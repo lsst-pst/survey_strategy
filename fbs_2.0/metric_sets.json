@@ -561,7 +561,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss PHA H=16.0",
+    "metric":"3 pairs in 15 nights detection loss PHA H<=16.0",
     "short_name":"Completeness PHA H<16.0",
     "style":"g-",
     "invert":false,
@@ -569,7 +569,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss PHA H=22.0",
+    "metric":"3 pairs in 15 nights detection loss PHA H<=22.0",
     "short_name":"Completeness PHA H<22.0",
     "style":"g--",
     "invert":false,
@@ -577,7 +577,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+    "metric":"3 pairs in 15 nights detection loss NEO H<=16.0",
     "short_name":"Completeness NEO H<16.0",
     "style":"b-",
     "invert":false,
@@ -585,7 +585,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+    "metric":"3 pairs in 15 nights detection loss NEO H<=22.0",
     "short_name":"Completeness NEO H<22.0",
     "style":"b--",
     "invert":false,
@@ -593,7 +593,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss MBA H=16.0",
+    "metric":"3 pairs in 15 nights detection loss MBA H<=16.0",
     "short_name":"Completeness MBA H<16.0",
     "style":"y-",
     "invert":false,
@@ -601,7 +601,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss MBA H=21.0",
+    "metric":"3 pairs in 15 nights detection loss MBA H<=21.0",
     "short_name":"Completeness MBA H<21.0",
     "style":"y--",
     "invert":false,
@@ -609,7 +609,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss Trojan H=14.0",
+    "metric":"3 pairs in 15 nights detection loss Trojan H<=14.0",
     "short_name":"Completeness Trojan H<14.0",
     "style":"c-",
     "invert":false,
@@ -617,7 +617,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss Trojan H=18.0",
+    "metric":"3 pairs in 15 nights detection loss Trojan H<=18.0",
     "short_name":"Completeness Trojan H<18.0",
     "style":"c--",
     "invert":false,
@@ -625,7 +625,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+    "metric":"3 pairs in 15 nights detection loss TNO H<=6.0",
     "short_name":"Completeness TNO H<6.0",
     "style":"r-",
     "invert":false,
@@ -633,7 +633,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
+    "metric":"3 pairs in 15 nights detection loss TNO H<=8.0",
     "short_name":"Completeness TNO H<8.0",
     "style":"r--",
     "invert":false,
@@ -641,7 +641,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss OCC_r5 H=8.0",
+    "metric":"3 pairs in 15 nights detection loss OCC_r5 H<=8.0",
     "short_name":"Completeness OCC_r5 H<8.0",
     "style":"k-",
     "invert":false,
@@ -649,7 +649,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss OCC_r5 H=17.0",
+    "metric":"3 pairs in 15 nights detection loss OCC_r5 H<=17.0",
     "short_name":"Completeness OCC_r5 H<17.0",
     "style":"k--",
     "invert":false,
@@ -657,7 +657,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss OCC_r20 H=8.0",
+    "metric":"3 pairs in 15 nights detection loss OCC_r20 H<=8.0",
     "short_name":"Completeness OCC_r20 H<8.0",
     "style":"m-",
     "invert":false,
@@ -665,7 +665,7 @@
   },
   {
     "metric set":"SSO discovery",
-    "metric":"3 pairs in 15 nights detection loss OCC_r20 H=12.0",
+    "metric":"3 pairs in 15 nights detection loss OCC_r20 H<=12.0",
     "short_name":"Completeness OCC_r20 H<12.0",
     "style":"m--",
     "invert":false,
@@ -721,7 +721,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+    "metric":"3 pairs in 15 nights detection loss NEO H<=16.0",
     "short_name":"Completeness NEO H<16.0 (3x15)",
     "style":"b-",
     "invert":false,
@@ -729,7 +729,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+    "metric":"3 pairs in 15 nights detection loss NEO H<=22.0",
     "short_name":"Completeness NEO H<22.0 (3x15)",
     "style":"b--",
     "invert":false,
@@ -737,7 +737,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss NEO H=16.0",
+    "metric":"3 pairs in 30 nights detection loss NEO H<=16.0",
     "short_name":"Completeness NEO H<16.0 (3x30)",
     "style":"b:",
     "invert":false,
@@ -745,7 +745,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss NEO H=22.0",
+    "metric":"3 pairs in 30 nights detection loss NEO H<=22.0",
     "short_name":"Completeness NEO H<22.0 (3x30)",
     "style":"b-.",
     "invert":false,
@@ -753,7 +753,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"6 detections in 60 nights detection loss NEO H=16.0",
+    "metric":"6 detections in 60 nights detection loss NEO H<=16.0",
     "short_name":"Completeness NEO H<16.0 (6in60)",
     "style":"k:",
     "invert":false,
@@ -761,7 +761,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"6 detections in 60 nights detection loss NEO H=22.0",
+    "metric":"6 detections in 60 nights detection loss NEO H<=22.0",
     "short_name":"Completeness NEO H<22.0 (6in60)",
     "style":"k-.",
     "invert":false,
@@ -769,7 +769,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss MBA H=16.0",
+    "metric":"3 pairs in 15 nights detection loss MBA H<=16.0",
     "short_name":"Completeness MBA H<16.0 (3x15)",
     "style":"y-",
     "invert":false,
@@ -777,7 +777,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss MBA H=21.0",
+    "metric":"3 pairs in 15 nights detection loss MBA H<=21.0",
     "short_name":"Completeness MBA H<21.0 (3x15)",
     "style":"y--",
     "invert":false,
@@ -785,7 +785,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss MBA H=16.0",
+    "metric":"3 pairs in 30 nights detection loss MBA H<=16.0",
     "short_name":"Completeness MBA H<16.0 (3x30)",
     "style":"y:",
     "invert":false,
@@ -793,7 +793,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss MBA H=21.0",
+    "metric":"3 pairs in 30 nights detection loss MBA H<=21.0",
     "short_name":"Completeness MBA H<21.0 (3x30)",
     "style":"y-.",
     "invert":false,
@@ -801,7 +801,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+    "metric":"3 pairs in 15 nights detection loss TNO H<=6.0",
     "short_name":"Completeness TNO H<6.0 (3x15)",
     "style":"r-",
     "invert":false,
@@ -809,7 +809,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss TNO H=8.0",
+    "metric":"3 pairs in 15 nights detection loss TNO H<=8.0",
     "short_name":"Completeness TNO H<8.0 (3x15)",
     "style":"r--",
     "invert":false,
@@ -817,7 +817,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss TNO H=6.0",
+    "metric":"3 pairs in 30 nights detection loss TNO H<=6.0",
     "short_name":"Completeness TNO H<6.0 (3x30)",
     "style":"r:",
     "invert":false,
@@ -825,7 +825,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss TNO H=8.0",
+    "metric":"3 pairs in 30 nights detection loss TNO H<=8.0",
     "short_name":"Completeness TNO H<8.0 (3x30)",
     "style":"r-.",
     "invert":false,
@@ -833,7 +833,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"6 detections in 60 nights detection loss TNO H=6.0",
+    "metric":"6 detections in 60 nights detection loss TNO H<=6.0",
     "short_name":"Completeness TNO H<6.0 (6in60)",
     "style":"m:",
     "invert":false,
@@ -841,7 +841,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"6 detections in 60 nights detection loss TNO H=8.0",
+    "metric":"6 detections in 60 nights detection loss TNO H<=8.0",
     "short_name":"Completeness TNO H<8.0 (6in60)",
     "style":"m-.",
     "invert":false,
@@ -849,7 +849,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss OCC_r5 H=8.0",
+    "metric":"3 pairs in 15 nights detection loss OCC_r5 H<=8.0",
     "short_name":"Completeness OCC_r5 H<8.0 (3x15)",
     "style":"g-",
     "invert":false,
@@ -857,7 +857,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 15 nights detection loss OCC_r5 H=17.0",
+    "metric":"3 pairs in 15 nights detection loss OCC_r5 H<=17.0",
     "short_name":"Completeness OCC_r5 H<17.0 (3x15)",
     "style":"g--",
     "invert":false,
@@ -865,7 +865,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss OCC_r5 H=8.0",
+    "metric":"3 pairs in 30 nights detection loss OCC_r5 H<=8.0",
     "short_name":"Completeness OCC_r5 H<8.0 (3x30)",
     "style":"g:",
     "invert":false,
@@ -873,7 +873,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"3 pairs in 30 nights detection loss OCC_r5 H=17.0",
+    "metric":"3 pairs in 30 nights detection loss OCC_r5 H<=17.0",
     "short_name":"Completeness OCC_r5 H<17.0 (3x30)",
     "style":"g-.",
     "invert":false,
@@ -881,7 +881,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"6 detections in 60 nights detection loss OCC_r5 H=8.0",
+    "metric":"6 detections in 60 nights detection loss OCC_r5 H<=8.0",
     "short_name":"Completeness OCC_r5 H<8.0 (6in60)",
     "style":"c:",
     "invert":false,
@@ -889,7 +889,7 @@
   },
   {
     "metric set":"SSO discovery options",
-    "metric":"6 detections in 60 nights detection loss OCC_r5 H=17.0",
+    "metric":"6 detections in 60 nights detection loss OCC_r5 H<=17.0",
     "short_name":"Completeness OCC_r5 H<17.0 (6in60)",
     "style":"c-.",
     "invert":false,
