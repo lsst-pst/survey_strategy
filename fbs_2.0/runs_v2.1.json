@@ -859,7 +859,7 @@
     ],
     "description": "**twilight neo 15s** : This microsurvey family is an update of the v2.0 twilight NEO microsurvey. The visits in the v2.0 simulations were 1s long; here they are updated to 15s long, so that the shutter is moving within the camera team specified requirements. The change also leads to a boost in NEO discoveries so should be considered a replacement for the v2.0 twilight NEO microsurvey. The additional visits here are low-solar elongation, high airmass 15s visits during morning and evening twilight. ",
     "version": "2.2",
-    "reference": "no_twilight_neo_v2.2_10yrs.db",
+    "reference": "no_twilight_neo_v2.2_10yrs",
     "brief": [
       "No twilight NEO visits, for a reference point for the twilight_neo runs in v2.2",
       "Add twilight NEO microsurvey, with 15s visits, in z band only. Attempt 3 visits per pointing per twilight. Twilight NEO observations: 1 night on, 3 nights off.",
