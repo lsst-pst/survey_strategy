@@ -31,7 +31,7 @@
     "invert":false,
     "mag":false
   },
-    {
+  {
     "metric set":"radar",
     "metric":"Sum PrestoKNe__scoreS  UserPointsSlicer",
     "short_name":"Presto KNe",
@@ -3094,5 +3094,149 @@
     "style":"k:",
     "invert":false,
     "mag":true
+  },
+  {
+    "metric set":"GP footprint",
+    "metric":"Sum GalplaneFootprintMetric_combined_map_NObsPriority  HealpixSlicer",
+    "short_name":"Sum GalplaneFootprintMetric_combined_map_NObsPriority",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP footprint",
+    "metric":"Sum GalplaneFootprintMetric_combined_map_Tau_2_0  HealpixSlicer",
+    "short_name":"Sum GalplaneFootprintMetric_combined_map_Tau_2_0",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP footprint",
+    "metric":"Sum GalplaneFootprintMetric_combined_map_Tau_5_0  HealpixSlicer",
+    "short_name":"Sum GalplaneFootprintMetric_combined_map_Tau_5_0",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP footprint",
+    "metric":"Sum GalplaneFootprintMetric_combined_map_Tau_11_0  HealpixSlicer",
+    "short_name":"Sum GalplaneFootprintMetric_combined_map_Tau_11_0",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP footprint",
+    "metric":"Sum GalplaneFootprintMetric_combined_map_Tau_46_5  HealpixSlicer",
+    "short_name":"Sum GalplaneFootprintMetric_combined_map_Tau_46_5",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP footprint",
+    "metric":"Sum GalplaneFootprintMetric_combined_map_Tau_73_0  HealpixSlicer",
+    "short_name":"Sum GalplaneFootprintMetric_combined_map_Tau_73_0",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"Mean GalplaneTimePerFilter_combined_map_u  HealpixSlicer",
+    "short_name":"Mean GalplaneTimePerFilter_combined_map_u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"Mean GalplaneTimePerFilter_combined_map_g  HealpixSlicer",
+    "short_name":"Mean GalplaneTimePerFilter_combined_map_g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"Mean GalplaneTimePerFilter_combined_map_r  HealpixSlicer",
+    "short_name":"Mean GalplaneTimePerFilter_combined_map_r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"Mean GalplaneTimePerFilter_combined_map_i  HealpixSlicer",
+    "short_name":"Mean GalplaneTimePerFilter_combined_map_i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"Mean GalplaneTimePerFilter_combined_map_z  HealpixSlicer",
+    "short_name":"Mean GalplaneTimePerFilter_combined_map_z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"Mean GalplaneTimePerFilter_combined_map_y  HealpixSlicer",
+    "short_name":"Mean GalplaneTimePerFilter_combined_map_y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"AreaThreshold GalplaneTimePerFilter_combined_map_u  HealpixSlicer",
+    "short_name":"AreaThreshold GalplaneTimePerFilter_combined_map_u",
+    "style":"c:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"AreaThreshold GalplaneTimePerFilter_combined_map_g  HealpixSlicer",
+    "short_name":"AreaThreshold GalplaneTimePerFilter_combined_map_g",
+    "style":"g:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"AreaThreshold GalplaneTimePerFilter_combined_map_r  HealpixSlicer",
+    "short_name":"AreaThreshold GalplaneTimePerFilter_combined_map_r",
+    "style":"y:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"AreaThreshold GalplaneTimePerFilter_combined_map_i  HealpixSlicer",
+    "short_name":"AreaThreshold GalplaneTimePerFilter_combined_map_i",
+    "style":"r:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"AreaThreshold GalplaneTimePerFilter_combined_map_z  HealpixSlicer",
+    "short_name":"AreaThreshold GalplaneTimePerFilter_combined_map_z",
+    "style":"m:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"GP filters",
+    "metric":"AreaThreshold GalplaneTimePerFilter_combined_map_y  HealpixSlicer",
+    "short_name":"AreaThreshold GalplaneTimePerFilter_combined_map_y",
+    "style":"k:",
+    "invert":false,
+    "mag":false
   }
 ]
