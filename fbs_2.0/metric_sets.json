@@ -9,7 +9,7 @@
   },
   {
     "metric set":"radar",
-    "metric":"Mean WeakLensingNvisits i band non-DD HealpixSlicer",
+    "metric":"Mean WeakLensingNvisits gri band non-DD HealpixSlicer",
     "short_name":"WL",
     "style":null,
     "invert":false,
@@ -89,7 +89,7 @@
   },
   {
     "metric set":"radar",
-    "metric":"3 pairs in 15 nights detection loss NEO H=16.0",
+    "metric":"3 pairs in 15 nights detection loss NEO H<=16.0",
     "short_name":"   NEO, big",
     "style":null,
     "invert":false,
@@ -97,7 +97,7 @@
   },
   {
     "metric set":"radar",
-    "metric":"3 pairs in 15 nights detection loss NEO H=22.0",
+    "metric":"3 pairs in 15 nights detection loss NEO H<=22.0",
     "short_name":"   NEO, small",
     "style":null,
     "invert":false,
@@ -105,7 +105,7 @@
   },
   {
     "metric set":"radar",
-    "metric":"3 pairs in 15 nights detection loss TNO H=6.0",
+    "metric":"3 pairs in 15 nights detection loss TNO H<=6.0",
     "short_name":"TNO, big",
     "style":null,
     "invert":false,
@@ -241,32 +241,32 @@
   },
   {
     "metric set":"SRD",
-    "metric":"Median Parallax Error (18k) Parallax Error @ 22.4 All sky HealpixSlicer",
-    "short_name":"Med Parallax Error @22.4",
+    "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 22.4 All sky HealpixSlicer",
+    "short_name":"Med Parallax Uncert @22.4",
     "style":"c-",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SRD",
-    "metric":"Median Parallax Error (18k) Parallax Error @ 24.0 All sky HealpixSlicer",
-    "short_name":"Med Parallax Error @24.0",
+    "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 24.0 All sky HealpixSlicer",
+    "short_name":"Med Parallax Uncert @24.0",
     "style":"c:",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SRD",
-    "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 20.5 All sky HealpixSlicer",
-    "short_name":"Med PM Error @20.5",
+    "metric":"Median Proper Motion Uncert (18k) Proper Motion Uncert @ 20.5 All sky HealpixSlicer",
+    "short_name":"Med PM Uncert @20.5",
     "style":"r-",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SRD",
-    "metric":"Median Proper Motion Error (18k) Proper Motion Error @ 24.0 All sky HealpixSlicer",
-    "short_name":"Med PM Error @24.0",
+    "metric":"Median Proper Motion Uncert (18k) Proper Motion Uncert @ 24.0 All sky HealpixSlicer",
+    "short_name":"Med PM Uncert @24.0",
     "style":"r:",
     "invert":true,
     "mag":false
@@ -410,7 +410,7 @@
   {
     "metric set":"TVS short",
     "metric":"Total detected MicrolensingMetric_detect tE 20_30 days UserPointsSlicer",
-    "short_name":"Microlensing (5-10 days)",
+    "short_name":"Microlensing (20-30 days)",
     "style":"b-",
     "invert":false,
     "mag":false
@@ -425,8 +425,8 @@
   },
   {
     "metric set":"TVS short",
-    "metric":"Total detected KNePopMetric__ztfrest_simple  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__ztfrest_simple",
+    "metric":"Total detected KNePopMetric_single__ztfrest_simple single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__ztfrest_simple",
     "style":"k:",
     "invert":false,
     "mag":false
@@ -457,7 +457,7 @@
   },
   {
     "metric set":"TVS short",
-    "metric":"Median PeriodicStarModulationMetric dm 20 interval 30 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 20 interval 30 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicModulation dm 20 interval 30 RRc",
     "style":"c--",
     "invert":false,
@@ -465,8 +465,8 @@
   },
   {
     "metric set":"TVS short",
-    "metric":"Mean PeriodDetection P_1.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P=0.5 days",
+    "metric":"Mean PeriodicDetect P_1.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P=0.5 days",
     "style":"c:",
     "invert":false,
     "mag":false
@@ -513,7 +513,7 @@
   },
   {
     "metric set":"DESC WFD",
-    "metric":"Mean WeakLensingNvisits i band non-DD HealpixSlicer",
+    "metric":"Mean WeakLensingNvisits gri band non-DD HealpixSlicer",
     "short_name":"Mean NVisits (WL)",
     "style":"m:",
     "invert":false,
@@ -545,8 +545,8 @@
   },
   {
     "metric set":"DESC WFD",
-    "metric":"Total detected KNePopMetric__multi_color_detect  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__multi_color_detect",
+    "metric":"Total detected KNePopMetric_all__multi_color_detect all models UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_all__multi_color_detect",
     "style":"g--",
     "invert":false,
     "mag":false
@@ -1481,22 +1481,6 @@
   },
   {
     "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 1_5 days UserPointsSlicer",
-    "short_name":"Fraction w\/ at least 10 points tE 1_5 day",
-    "style":"c:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 5_10 days UserPointsSlicer",
-    "short_name":"Fraction w\/ at least 10 points tE 5_10 day",
-    "style":"g:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
     "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 10_20 days UserPointsSlicer",
     "short_name":"Fraction w\/ at least 10 points tE 10_20 day",
     "style":"y:",
@@ -1521,49 +1505,9 @@
   },
   {
     "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 60_90 days UserPointsSlicer",
-    "short_name":"Fraction w\/ at least 10 points tE 60_90 day",
-    "style":"b:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 100_200 days UserPointsSlicer",
-    "short_name":"Fraction w\/ at least 10 points tE 100_200 day",
-    "style":"k:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
     "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 200_500 days UserPointsSlicer",
     "short_name":"Fraction w\/ at least 10 points tE 200_500 day",
     "style":"b:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ at least 10 points MicrolensingMetric_Npts tE 500_1000 days UserPointsSlicer",
-    "short_name":"Fraction w\/ at least 10 points tE 500_1000 day",
-    "style":"k:",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ sigma_tE\/tE < 0.1 MicrolensingMetric_Fisher tE 1_5 days UserPointsSlicer",
-    "short_name":"Fraction w\/ sigma_tE\/tE < 0.1 tE 1_5 day",
-    "style":"c-.",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ sigma_tE\/tE < 0.1 MicrolensingMetric_Fisher tE 5_10 days UserPointsSlicer",
-    "short_name":"Fraction w\/ sigma_tE\/tE < 0.1 tE 5_10 day",
-    "style":"g-.",
     "invert":false,
     "mag":false
   },
@@ -1593,33 +1537,9 @@
   },
   {
     "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ sigma_tE\/tE < 0.1 MicrolensingMetric_Fisher tE 60_90 days UserPointsSlicer",
-    "short_name":"Fraction w\/ sigma_tE\/tE < 0.1 tE 60_90 day",
-    "style":"b-.",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ sigma_tE\/tE < 0.1 MicrolensingMetric_Fisher tE 100_200 days UserPointsSlicer",
-    "short_name":"Fraction w\/ sigma_tE\/tE < 0.1 tE 100_200 day",
-    "style":"k-.",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
     "metric":"Fraction w\/ sigma_tE\/tE < 0.1 MicrolensingMetric_Fisher tE 200_500 days UserPointsSlicer",
     "short_name":"Fraction w\/ sigma_tE\/tE < 0.1 tE 200_500 day",
     "style":"b-.",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"TVS microlensing all",
-    "metric":"Fraction w\/ sigma_tE\/tE < 0.1 MicrolensingMetric_Fisher tE 500_1000 days UserPointsSlicer",
-    "short_name":"Fraction w\/ sigma_tE\/tE < 0.1 tE 500_1000 day",
-    "style":"k-.",
     "invert":false,
     "mag":false
   },
@@ -1961,56 +1881,56 @@
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__blue_color_detect  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__blue_color_detect",
+    "metric":"Total detected KNePopMetric_single__blue_color_detect single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__blue_color_detect",
     "style":"c--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__multi_color_detect  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__multi_color_detect",
+    "metric":"Total detected KNePopMetric_single__multi_color_detect single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__multi_color_detect",
     "style":"g--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__multi_detect  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__multi_detect",
+    "metric":"Total detected KNePopMetric_single__multi_detect single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__multi_detect",
     "style":"y--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__red_color_detect  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__red_color_detect",
+    "metric":"Total detected KNePopMetric_single__red_color_detect single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__red_color_detect",
     "style":"r--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__ztfrest_simple  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__ztfrest_simple",
+    "metric":"Total detected KNePopMetric_single__ztfrest_simple single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__ztfrest_simple",
     "style":"m--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__ztfrest_simple_blue  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__ztfrest_simple_blue",
+    "metric":"Total detected KNePopMetric_single__ztfrest_simple_blue single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__ztfrest_simple_blue",
     "style":"k--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS KNe",
-    "metric":"Total detected KNePopMetric__ztfrest_simple_red  UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric__ztfrest_simple_red",
+    "metric":"Total detected KNePopMetric_single__ztfrest_simple_red single model UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_single__ztfrest_simple_red",
     "style":"b--",
     "invert":false,
     "mag":false
@@ -2032,56 +1952,56 @@
     "mag":false
   },
   {
-    "metric set":"TVS PeriodDetect",
-    "metric":"Mean PeriodDetection P_0.5_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P_0.5_Mag_21_Amp_0.05-0.1-1",
+    "metric set":"TVS PeriodicDetect",
+    "metric":"Mean PeriodicDetect P_0.5_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P_0.5_Mag_21_Amp_0.05-0.1-1",
     "style":"y-.",
     "invert":false,
     "mag":false
   },
   {
-    "metric set":"TVS PeriodDetect",
-    "metric":"Mean PeriodDetection P_0.5_Mag_24_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P_0.5_Mag_24_Amp_0.05-0.1-1",
+    "metric set":"TVS PeriodicDetect",
+    "metric":"Mean PeriodicDetect P_0.5_Mag_24_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P_0.5_Mag_24_Amp_0.05-0.1-1",
     "style":"y--",
     "invert":false,
     "mag":false
   },
   {
-    "metric set":"TVS PeriodDetect",
-    "metric":"Mean PeriodDetection P_1.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P_1.0_Mag_21_Amp_0.05-0.1-1",
+    "metric set":"TVS PeriodicDetect",
+    "metric":"Mean PeriodicDetect P_1.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P_1.0_Mag_21_Amp_0.05-0.1-1",
     "style":"c-.",
     "invert":false,
     "mag":false
   },
   {
-    "metric set":"TVS PeriodDetect",
-    "metric":"Mean PeriodDetection P_1.0_Mag_24_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P_1.0_Mag_24_Amp_0.05-0.1-1",
+    "metric set":"TVS PeriodicDetect",
+    "metric":"Mean PeriodicDetect P_1.0_Mag_24_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P_1.0_Mag_24_Amp_0.05-0.1-1",
     "style":"c--",
     "invert":false,
     "mag":false
   },
   {
-    "metric set":"TVS PeriodDetect",
-    "metric":"Mean PeriodDetection P_2.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P_2.0_Mag_21_Amp_0.05-0.1-1",
+    "metric set":"TVS PeriodicDetect",
+    "metric":"Mean PeriodicDetect P_2.0_Mag_21_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P_2.0_Mag_21_Amp_0.05-0.1-1",
     "style":"g-.",
     "invert":false,
     "mag":false
   },
   {
-    "metric set":"TVS PeriodDetect",
-    "metric":"Mean PeriodDetection P_2.0_Mag_24_Amp_0.05-0.1-1 HealpixSlicer",
-    "short_name":"Mean PeriodDetection P_2.0_Mag_24_Amp_0.05-0.1-1",
+    "metric set":"TVS PeriodicDetect",
+    "metric":"Mean PeriodicDetect P_2.0_Mag_24_Amp_0.05-0.1-1 HealpixSlicer",
+    "short_name":"Mean PeriodicDetect P_2.0_Mag_24_Amp_0.05-0.1-1",
     "style":"g--",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 18 interval 15 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 18 interval 15 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 18 interval 15 RRc",
     "style":"c:",
     "invert":false,
@@ -2089,7 +2009,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 19 interval 15 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 19 interval 15 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 19 interval 15 RRc",
     "style":"g:",
     "invert":false,
@@ -2097,7 +2017,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 20 interval 15 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 20 interval 15 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 20 interval 15 RRc",
     "style":"y:",
     "invert":false,
@@ -2105,7 +2025,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 21 interval 15 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 21 interval 15 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 21 interval 15 RRc",
     "style":"r:",
     "invert":false,
@@ -2113,7 +2033,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 18 interval 30 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 18 interval 30 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 18 interval 30 RRc",
     "style":"c-",
     "invert":false,
@@ -2121,7 +2041,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 19 interval 30 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 19 interval 30 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 19 interval 30 RRc",
     "style":"g-",
     "invert":false,
@@ -2129,7 +2049,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 20 interval 30 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 20 interval 30 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 20 interval 30 RRc",
     "style":"y-",
     "invert":false,
@@ -2137,7 +2057,7 @@
   },
   {
     "metric set":"TVS PeriodModulation",
-    "metric":"Median PeriodicStarModulationMetric dm 21 interval 30 RRc HealpixSlicer",
+    "metric":"Median PeriodicStarModulationMetric dm 21 interval 30 RRc Year 1-2 HealpixSlicer",
     "short_name":"Median PeriodicStarModulationMetric dm 21 interval 30 RRc",
     "style":"r-",
     "invert":false,
