@@ -33,9 +33,17 @@
   },
   {
     "metric set":"radar",
-    "metric":"Sum PrestoKNe__scoreS  UserPointsSlicer",
-    "short_name":"Presto KNe",
-    "style":"k-",
+    "metric":"Total detected KNePopMetric_all__multi_detect all models UserPointsSlicer",
+    "short_name":"KNe all multi_detect",
+    "style":null,
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"radar",
+    "metric":"Total detected KNePopMetric_single__ztfrest_simple single model UserPointsSlicer",
+    "short_name":"KNe single ztfrest_simple",
+    "style":null,
     "invert":false,
     "mag":false
   },
@@ -90,7 +98,7 @@
   {
     "metric set":"radar",
     "metric":"3 pairs in 15 nights detection loss NEO H<=16.0",
-    "short_name":"   NEO, big",
+    "short_name":"NEO H<=16",
     "style":null,
     "invert":false,
     "mag":false
@@ -98,7 +106,7 @@
   {
     "metric set":"radar",
     "metric":"3 pairs in 15 nights detection loss NEO H<=22.0",
-    "short_name":"   NEO, small",
+    "short_name":"NEO H<=22",
     "style":null,
     "invert":false,
     "mag":false
@@ -106,7 +114,7 @@
   {
     "metric set":"radar",
     "metric":"3 pairs in 15 nights detection loss TNO H<=6.0",
-    "short_name":"TNO, big",
+    "short_name":"TNO H<=6",
     "style":null,
     "invert":false,
     "mag":false
@@ -419,7 +427,7 @@
     "metric set":"TVS short",
     "metric":"Sum PrestoKNe__scoreS  UserPointsSlicer",
     "short_name":"Sum PrestoKNe__scoreS",
-    "style":"k-",
+    "style":"k:",
     "invert":false,
     "mag":false
   },
@@ -427,7 +435,7 @@
     "metric set":"TVS short",
     "metric":"Total detected KNePopMetric_single__ztfrest_simple single model UserPointsSlicer",
     "short_name":"Total detected KNePopMetric_single__ztfrest_simple",
-    "style":"k:",
+    "style":"k-",
     "invert":false,
     "mag":false
   },
@@ -441,8 +449,8 @@
   },
   {
     "metric set":"TVS short",
-    "metric":"Total detected TDEsPopMetric__some_color  UserPointsSlicer",
-    "short_name":"Total detected TDEsPopMetric__some_color",
+    "metric":"Total detected TDEsPopMetric__some_color_pu  UserPointsSlicer",
+    "short_name":"Total detected TDEsPopMetric__some_color_pu",
     "style":"m:",
     "invert":false,
     "mag":false
@@ -1673,48 +1681,48 @@
   },
   {
     "metric set":"AGN timelag",
-    "metric":"AreaThreshold AGN_TimeLag_100_days u band HealpixSlicer",
-    "short_name":"AreaThreshold AGN_TimeLag_100_days u band",
+    "metric":"Median AGN_TimeLag_5_days u band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_5_days u band",
     "style":"c:",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"AGN timelag",
-    "metric":"AreaThreshold AGN_TimeLag_100_days g band HealpixSlicer",
-    "short_name":"AreaThreshold AGN_TimeLag_100_days g band",
+    "metric":"Median AGN_TimeLag_5_days g band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_5_days g band",
     "style":"g:",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"AGN timelag",
-    "metric":"AreaThreshold AGN_TimeLag_100_days r band HealpixSlicer",
-    "short_name":"AreaThreshold AGN_TimeLag_100_days r band",
+    "metric":"Median AGN_TimeLag_5_days r band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_5_days r band",
     "style":"y:",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"AGN timelag",
-    "metric":"AreaThreshold AGN_TimeLag_100_days i band HealpixSlicer",
-    "short_name":"AreaThreshold AGN_TimeLag_100_days i band",
+    "metric":"Median AGN_TimeLag_5_days i band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_5_days i band",
     "style":"r:",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"AGN timelag",
-    "metric":"AreaThreshold AGN_TimeLag_100_days z band HealpixSlicer",
-    "short_name":"AreaThreshold AGN_TimeLag_100_days z band",
+    "metric":"Median AGN_TimeLag_5_days z band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_5_days z band",
     "style":"m:",
     "invert":false,
     "mag":false
   },
   {
     "metric set":"AGN timelag",
-    "metric":"AreaThreshold AGN_TimeLag_100_days y band HealpixSlicer",
-    "short_name":"AreaThreshold AGN_TimeLag_100_days y band",
+    "metric":"Median AGN_TimeLag_5_days y band HealpixSlicer",
+    "short_name":"Median AGN_TimeLag_5_days y band",
     "style":"k:",
     "invert":false,
     "mag":false
