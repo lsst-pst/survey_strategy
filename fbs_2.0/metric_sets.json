@@ -3494,5 +3494,37 @@
     "style":"r--",
     "invert":true,
     "mag":false
+  },
+  {
+    "metric set":"TVS anomalies",
+    "metric":"Median FilterPairTGaps observationStartMJD, filter, fiveSigmaDepth  HealpixSlicer",
+    "short_name":"Median FilterPairTGaps",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS anomalies",
+    "metric":"Median Median fiveSigmaDepth All sky r band HealpixSlicer",
+    "short_name":"Median fiveSigmaDepth All sky r band",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"TVS anomalies",
+    "metric":"Total N Stars, crowding N stars to Precision 0.20 r HealpixSlicer",
+    "short_name":"Total N stars r band",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS anomalies",
+    "metric":"fOArea_750 fO All sky HealpixSlicer",
+    "short_name":"Area >750",
+    "style":"m-",
+    "invert":false,
+    "mag":false
   }
 ]
