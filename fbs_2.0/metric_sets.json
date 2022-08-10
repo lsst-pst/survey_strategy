@@ -97,6 +97,22 @@
   },
   {
     "metric set":"SCOC",
+    "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 22.4  HealpixSlicer",
+    "short_name":"Parallax",
+    "style":null,
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
+    "metric":"Median Proper Motion Uncert (18k) Proper Motion Uncert @ 20.5  HealpixSlicer",
+    "short_name":"Proper motion",
+    "style":null,
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
     "metric":"Mean WeakLensingNvisits gri band non-DD HealpixSlicer",
     "short_name":"WL",
     "style":null,
@@ -114,7 +130,7 @@
   {
     "metric set":"SCOC",
     "metric":"Total detected SNNSNMetric_nSN  HealpixSlicer",
-    "short_name":"SNIa",
+    "short_name":"SNIa N",
     "style":null,
     "invert":false,
     "mag":false
@@ -131,6 +147,14 @@
     "metric set":"SCOC",
     "metric":"Total detected KNePopMetric_single__ztfrest_simple single model UserPointsSlicer",
     "short_name":"KNe single ztfrest_simple",
+    "style":null,
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
+    "metric":"Total detected XRBPopMetric__early_detect  UserPointsSlicer",
+    "short_name":"XRB early detection",
     "style":null,
     "invert":false,
     "mag":false
@@ -161,22 +185,6 @@
   },
   {
     "metric set":"SCOC",
-    "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 22.4  HealpixSlicer",
-    "short_name":"Parallax",
-    "style":null,
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"SCOC",
-    "metric":"Median Proper Motion Uncert (18k) Proper Motion Uncert @ 20.5  HealpixSlicer",
-    "short_name":"Proper motion",
-    "style":null,
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"SCOC",
     "metric":"Total N Stars, crowding N stars to Precision 0.20 r HealpixSlicer",
     "short_name":"N Stars (r)",
     "style":null,
@@ -185,8 +193,40 @@
   },
   {
     "metric set":"SCOC",
+    "metric":"VolumeSum Brown Dwarf, L4  HealpixSlicer",
+    "short_name":"BrownDwarf (L4) vol",
+    "style":null,
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
+    "metric":"Sum young_stars  HealpixSlicer",
+    "short_name":"N YSO",
+    "style":null,
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
     "metric":"N Galaxies (all) DepthLimitedNumGalaxiesMetric i band galaxies non-DD HealpixSlicer",
-    "short_name":" N Galaxies (i)",
+    "short_name":"N Galaxies (i)",
+    "style":null,
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
+    "metric":"Area M_v>-6.4 LVDwarfs gi HealpixSlicer",
+    "short_name":"LVDwarf v>-6.4 area",
+    "style":null,
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SCOC",
+    "metric":"Area M_v>0.0 LVDwarfs gi SCP HealpixSlicer",
+    "short_name":"LVDwarf v>0.0 SCP area",
     "style":null,
     "invert":false,
     "mag":false
@@ -651,7 +691,23 @@
     "metric set":"galaxies",
     "metric":"N Galaxies (all) GalaxyCountsMetric_extended i HealpixSlicer",
     "short_name":"NGal all sky",
-    "style":"k--",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"Area M_v>-6.4 LVDwarfs gi HealpixSlicer",
+    "short_name":"LVDwarf v>-6.4 area",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"Area M_v>0.0 LVDwarfs gi SCP HealpixSlicer",
+    "short_name":"LVDwarf v>0.0 SCP area",
+    "style":"r-",
     "invert":false,
     "mag":false
   },
@@ -3500,6 +3556,14 @@
     "metric":"Median FilterPairTGaps observationStartMJD, filter, fiveSigmaDepth  HealpixSlicer",
     "short_name":"Median FilterPairTGaps",
     "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"TVS anomalies",
+    "metric":"Nvisits WFD",
+    "short_name":"Nvisits WFD",
+    "style":"b:",
     "invert":false,
     "mag":false
   },
