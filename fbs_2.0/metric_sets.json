@@ -688,30 +688,6 @@
     "mag":false
   },
   {
-    "metric set":"galaxies",
-    "metric":"N Galaxies (all) GalaxyCountsMetric_extended i HealpixSlicer",
-    "short_name":"NGal all sky",
-    "style":"k-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"galaxies",
-    "metric":"Area M_v>-6.4 LVDwarfs gi HealpixSlicer",
-    "short_name":"LVDwarf v>-6.4 area",
-    "style":"m-",
-    "invert":false,
-    "mag":false
-  },
-  {
-    "metric set":"galaxies",
-    "metric":"Area M_v>0.0 LVDwarfs gi SCP HealpixSlicer",
-    "short_name":"LVDwarf v>0.0 SCP area",
-    "style":"r-",
-    "invert":false,
-    "mag":false
-  },
-  {
     "metric set":"SSO discovery",
     "metric":"3 pairs in 15 nights detection loss PHA H<=16.0",
     "short_name":"Completeness PHA H<16.0",
@@ -3588,6 +3564,70 @@
     "metric":"fOArea_750 fO All sky HealpixSlicer",
     "short_name":"Area >750",
     "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"N Galaxies (all) GalaxyCountsMetric_extended u HealpixSlicer",
+    "short_name":"NGal all sky u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"N Galaxies (all) GalaxyCountsMetric_extended g HealpixSlicer",
+    "short_name":"NGal all sky g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"N Galaxies (all) GalaxyCountsMetric_extended r HealpixSlicer",
+    "short_name":"NGal all sky r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"N Galaxies (all) GalaxyCountsMetric_extended i HealpixSlicer",
+    "short_name":"NGal all sky i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"N Galaxies (all) GalaxyCountsMetric_extended z HealpixSlicer",
+    "short_name":"NGal all sky z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"N Galaxies (all) GalaxyCountsMetric_extended y HealpixSlicer",
+    "short_name":"NGal all sky y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"Area M_v>-6.4 LVDwarfs gi HealpixSlicer",
+    "short_name":"LVDwarf v>-6.4 area",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"galaxies",
+    "metric":"Area M_v>0.0 LVDwarfs gi SCP HealpixSlicer",
+    "short_name":"LVDwarf v>0.0 SCP area",
+    "style":"r--",
     "invert":false,
     "mag":false
   }
