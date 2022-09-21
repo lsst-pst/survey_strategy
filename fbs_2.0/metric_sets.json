@@ -621,7 +621,7 @@
     "short_name":"RMS coaddedM5 i band",
     "style":"b:",
     "invert":true,
-    "mag":false
+    "mag":true
   },
   {
     "metric set":"DESC WFD",
