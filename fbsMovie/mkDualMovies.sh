@@ -27,14 +27,14 @@ echo "python example_movie.py "$opsimRun".db --movieStepsize "$stepsize" --nside
 echo "python example_movie.py "$opsimRun".db --movieStepsize "$stepsize" --nside "$nside" --ips 5 \\
   --sqlConstraint '"$sqlconstraint"' --binned --outDir "$opsimRun"_"$sqlconstraint"_binned"
 
+# nvisits dual movie
 set metric = "N_Visits"
 
-# moviename should really be opsimRun but with all "." replaced with "_"
-set moviename = $opsimRun"_"$metric"_"$metadata"_HEAL_SkyMap_5.0_5.0.mp4"
+set movieroot = `echo $opsimRun | sed 's/\./_/g'`
+set moviename = $movieroot"_"$metric"_"$metadata"_HEAL_SkyMap_5.0_5.0.mp4"
 if $metadata == '' then
-  set moviename = $opsimRun"_"$metric"_HEAL_SkyMap_5.0_5.0.mp4"
+  set moviename = $movieroot"_"$metric"_HEAL_SkyMap_5.0_5.0.mp4"
 endif
-
 
 echo "ffmpeg -i "$opsimRun"_"$sqlconstraint"_cumulative/"$moviename" \\
  -i "$opsimRun"_"$sqlconstraint"_binned/"$moviename" \\
@@ -42,12 +42,12 @@ echo "ffmpeg -i "$opsimRun"_"$sqlconstraint"_cumulative/"$moviename" \\
  [right]; [background][left] overlay=shortest=1 [background+left]; [background+left][right] overlay=shortest=1:x=576 \\
  [left+right]' -map '[left+right]' -r 5  -pix_fmt yuv420p "$opsimRun"_"$metadata"_N_Visits.mp4"
 
+# coadd dual movie
 set metric = "Coaddm5"
-set moviename = $opsimRun"_"$metric"_"$metadata"_HEAL_SkyMap_5.0_5.0.mp4"
+set moviename = $movieroot"_"$metric"_"$metadata"_HEAL_SkyMap_5.0_5.0.mp4"
 if $metadata == '' then
-  set moviename = $opsimRun"_"$metric"_HEAL_SkyMap_5.0_5.0.mp4"
+  set moviename = $movieroot"_"$metric"_HEAL_SkyMap_5.0_5.0.mp4"
 endif
-
 
 echo "ffmpeg -i "$opsimRun"_"$sqlconstraint"_cumulative/"$moviename" \\
  -i "$opsimRun"_"$sqlconstraint"_binned/"$moviename" \\
