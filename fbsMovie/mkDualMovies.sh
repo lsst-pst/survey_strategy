@@ -7,6 +7,7 @@
 ## (edit this file to change the sql constraint).
 
 set opsimRun = $1
+
 # Example of sqlconstraint & metadata for filter=r
 # Because this is a somewhat stupid shell script, please provide the metadata translation of the sqlconstraint
 # (i.e. the string that MAF turns your sqlconstraint into in the output images)
@@ -20,13 +21,15 @@ set metadata = ''
 set stepsize = 30
 set nside = 64
 
-echo "python example_movie.py "$opsimRun" --movieStepsize "$stepsize" --nside "$nside" --ips 5 \\
+echo "python example_movie.py "$opsimRun".db --movieStepsize "$stepsize" --nside "$nside" --ips 5 \\
   --sqlConstraint '"$sqlconstraint"' --outDir "$opsimRun"_"$sqlconstraint"_cumulative"
 
-echo "python example_movie.py "$opsimRun" --movieStepsize "$stepsize" --nside "$nside" --ips 5 \\
+echo "python example_movie.py "$opsimRun".db --movieStepsize "$stepsize" --nside "$nside" --ips 5 \\
   --sqlConstraint '"$sqlconstraint"' --binned --outDir "$opsimRun"_"$sqlconstraint"_binned"
 
 set metric = "N_Visits"
+
+# moviename should really be opsimRun but with all "." replaced with "_"
 set moviename = $opsimRun"_"$metric"_"$metadata"_HEAL_SkyMap_5.0_5.0.mp4"
 if $metadata == '' then
   set moviename = $opsimRun"_"$metric"_HEAL_SkyMap_5.0_5.0.mp4"

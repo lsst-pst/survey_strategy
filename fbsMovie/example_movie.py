@@ -1,53 +1,3 @@
-from __future__ import print_function
-from builtins import str
-
-# DOCUMENTATION & EXAMPLES -CM
-#--------------------------------------------------------------
-# python example_movie.py opsimblitz2_1060_sqlite.db --ips 2
-# ips:
-#       The number of images to stitch together per second of video. If not specified, the default is 10.0.
-# default - automatically sets movieStepsize to default of 365.25 days
-# default - automatically sets fps to match ips = 2
-# default - automatically sets outDir to default Output. Will create directory if not already present.
-#
-#-------------------------------------------------------------
-# python example_movie.py opsimblitz2_1060_sqlite.db --ips 2 --binned
-# binned:
-#       This flag tells movie slicer to step though data in individual bins, rather than to create cumulative timesteps.
-#
-#-------------------------------------------------------------
-# python example_movie.py opsimblitz2_1060_sqlite.db --movieStepsize 20 --ips 6 --fps 6 --outDir myMovie --sqlConstraint "filter='g'"
-#(because we specified a relatively low step size this will be more computationally intensive but result in more usable images for a video)
-# movieStepsize:
-#       Movie slicer will step through data with a stride of 180 days. Higher step size means fewer steps to reach the end of the
-#       data, and fewer images. Conversely, a lower step size results in a greater number of images produced, and a greater number of calculations.
-#       At stepSize=1 a calculation is being made at each day.
-# fps:
-#       Can specify a fps. If fps is higher than ips it will 'copy' images to meet the fps requirement. If fps is lower than ips, it will cut out
-#       images from the sequence to maintain the fps. (note: it will still cover the same number of images in a second, it just has to choose which
-#       ones it can display.) As a rule of thumb a fps>30 is pointless, it takes more time, and isn't detectable to the human eye.
-# outDir:
-#       Can specify an output directory. If it doesn't already exist, it will make one.
-# filter:
-#       Can specify a filter. In this case it will pull data in the 'g' band.
-#
-#-------------------------------------------------------------
-# python example_movie.py opsimblitz2_1060_sqlite.db --skipComp --outDir myMovie --ips 4
-# skipComp
-#       Flag to skip computation. Will make a movie out of the existing images in a directory.
-#
-#-------------------------------------------------------------
-# python example_movie.py opsimblitz2_1060_sqlite.db -sc --outDir myMovie --movieLength 10
-# (may want to specify movieStepsize smaller than default of 365.25, or it will be very choppy and discontinuous for long movieLengths)
-# movieLength:
-#       Can specify the length of the video in seconds. will automatically calculate corresponding ips & fps.
-#
-#-------------------------------------------------------------
-
-# To modify the metrics calculated and used in the movie, edit the 'setupMetrics' section. The columns required from the
-# database will be propagated to getData automatically.
-
-
 import os, argparse
 import warnings
 import fnmatch
@@ -75,7 +25,8 @@ def setupMetrics(opsimName, metadata,  plotlabel=None, cumulative=False, verbose
     t = time.time()
     metricList = []
     plotDictList = []
-    #Simple metrics: coadded depth and number of visits
+    # Simple metrics: coadded depth and number of visits
+    # Modify metrics here and it should propagate elsewhere (as needed) automatically
     nvisitsMin = 0
     nvisitsMax = 1000 #300
     coaddMin = 25
@@ -268,7 +219,7 @@ if __name__ == '__main__':
     parser.add_argument("--decCol", type=str, default='fieldDec',
                         help="Name of Dec column (fieldDec / nondithered is default).")
     parser.add_argument("--binned", action = 'store_true', default=False, help="Create binned, non-cumulative movie.")
-    parser.add_argument("--outDir", type=str, default='Output', help="Output directory.")
+    parser.add_argument("--outDir", type=str, default=None, help="Output directory.")
     parser.add_argument("--ips", type=float, default = 10.0,
                         help="The number of images per second in the movie. "
                              "Will skip accordingly if fps is lower (set this first).")
@@ -285,6 +236,13 @@ if __name__ == '__main__':
 
     start_t = time.time()
 
+    opsimName = os.path.split(args.opsimDb)[-1].replace('.db', '')
+    sqlconstraint = args.sqlConstraint
+    metadata = sqlconstraint.replace('=', '').replace('filter', '').replace("'", '') \
+        .replace('"', '').replace('/', '.')
+
+    if args.outDir is None:
+        args.outDir = opsimName
     # Check if directory exists; create if appropriate.
     if not os.path.isdir(args.outDir):
         if args.skipComp:
@@ -292,11 +250,6 @@ if __name__ == '__main__':
                             %(args.outDir))
         else:
             os.mkdir(args.outDir)
-
-    opsimName = os.path.split(args.opsimDb)[-1].replace('.db', '')
-    sqlconstraint = args.sqlConstraint
-    metadata = sqlconstraint.replace('=', '').replace('filter', '').replace("'", '') \
-        .replace('"', '').replace('/', '.')
 
     # Define metrics, stackers and slicer so that we can see what columns we need from database.
     metricList, plotDictList = setupMetrics(opsimName, metadata,
