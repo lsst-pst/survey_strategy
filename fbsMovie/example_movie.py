@@ -13,7 +13,33 @@ import rubin_sim.maf as maf
 def dtime(time_prev):
    return (time.time() - time_prev, time.time())
 
-def setupMetrics(opsimName, metadata,  plotlabel=None, cumulative=False, verbose=False):
+def getBenchmarks(filtername, cumulative):
+    if cumulative:
+        runLength=10
+    if not cumulative:
+        runLength = 1
+    benchmarkVals = maf.scaleBenchmarks(runLength, benchmark="design")
+    benchmarkVals["coaddedDepth"] = maf.calcCoaddedDepth(
+        benchmarkVals["nvisits"], benchmarkVals["singleVisitDepth"]
+    )
+    nvisitsMin = 0
+    if filtername is None:
+        nvisitsMax = np.array(list(benchmarkVals['nvisits'].values())).sum() * 1.2
+    else:
+        nvisitsMax = benchmarkVals['nvisits'][filtername] * 1.2
+    nvisitsMax = int(np.ceil(nvisitsMax * 10) / 10)
+
+    if filtername is None:
+        coaddMin = None
+        coaddMax = None
+    else:
+        coaddMin = round(benchmarkVals['coaddedDepth'][filtername], 1) - 1.5
+        coaddMax = round(benchmarkVals['coaddedDepth'][filtername], 1) + 1
+
+    return nvisitsMin, nvisitsMax, coaddMin, coaddMax
+
+def setupMetrics(opsimName, metadata,  plotlabel=None, cumulative=False,
+                 filtername=None, verbose=False):
     """
     Define and instantiate metrics.
     """
@@ -27,24 +53,18 @@ def setupMetrics(opsimName, metadata,  plotlabel=None, cumulative=False, verbose
     plotDictList = []
     # Simple metrics: coadded depth and number of visits
     # Modify metrics here and it should propagate elsewhere (as needed) automatically
-    nvisitsMin = 0
-    nvisitsMax = 1000 #300
-    coaddMin = 25
-    coaddMax = 28
-    if not cumulative:
-        # Take a guess ... probably will need to be adjusted for your stepsize.
-        nvisitsMax = 90 # 15
-        coaddMin = 24.0
-        coaddMax = 26.5
+    nvisitsMin, nvisitsMax, coaddMin, coaddMax = getBenchmarks(filtername, cumulative)
+
     figsize = (8, 8)
     title = 'Simulation %s: %s' % (opsimName, metadata)
 
-    #metricList.append(maf.Coaddm5Metric('fiveSigmaDepth', metricName='Coaddm5Metric'))
-    #plotDictList.append({'colorMin':coaddMin, 'colorMax':coaddMax,
-    #                     'label': plotlabel, 'title': title, 'figsize': figsize})
+    if coaddMin is not None:
+        metricList.append(maf.Coaddm5Metric('fiveSigmaDepth', metricName='Coaddm5'))
+        plotDictList.append({'colorMin': coaddMin, 'colorMax': coaddMax,
+                             'label': plotlabel, 'title': title, 'figsize': figsize})
 
-    metricList.append(maf.CountMetric('observationStartMJD', metricName='N_Visits'))
-    plotDictList.append({'colorMin':nvisitsMin, 'colorMax':nvisitsMax,
+    metricList.append(maf.CountMetric('observationStartMJD', metricName='NVisits'))
+    plotDictList.append({'colorMin': nvisitsMin, 'colorMax': nvisitsMax,
                          'cbarFormat': '%d',
                           'label': plotlabel, 'title': title + 'NVisits', 'figsize': figsize})
     dt, t = dtime(t)
@@ -238,6 +258,11 @@ if __name__ == '__main__':
 
     opsimName = os.path.split(args.opsimDb)[-1].replace('.db', '')
     sqlconstraint = args.sqlConstraint
+    if 'filter' in sqlconstraint:
+        filtername = sqlconstraint.split('filter')[-1].replace('=', '')
+        filtername = filtername.replace('"', '').replace("'", '').lstrip(' ')[0]
+    else:
+        filtername = "all"
     metadata = sqlconstraint.replace('=', '').replace('filter', '').replace("'", '') \
         .replace('"', '').replace('/', '.')
 
@@ -253,7 +278,8 @@ if __name__ == '__main__':
 
     # Define metrics, stackers and slicer so that we can see what columns we need from database.
     metricList, plotDictList = setupMetrics(opsimName, metadata,
-                                            cumulative=args.cumulative)
+                                            cumulative=args.cumulative,
+                                            filtername=filtername)
     # Define any non-default stackers to be used.
     stackerList = setupStackers(args)
     # Define the slicer to be used at each step of the movie slicer.
