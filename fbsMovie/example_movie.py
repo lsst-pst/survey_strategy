@@ -114,7 +114,7 @@ def setupMovieSlicer(simdata, binsize = 365.0, cumulative=True, verbose=False):
     return ms
 
 
-def runSlices(opsimName, metadata, simdata, bins, args, verbose=False):
+def runSlices(opsimName, metricList, plotDictList, metadata, simdata, bins, args, filtername=None, verbose=False):
     """
     Set up and run the movie slicer, and at each step,
     setup the healpix slicer and run the metrics, creating and saving the plots.
@@ -138,9 +138,7 @@ def runSlices(opsimName, metadata, simdata, bins, args, verbose=False):
         years = int(times_from_start/365)
         days = times_from_start - years*365
         plotlabel = 'Year %d Day %.4f' %(years, days)
-        metricList, plotDictList = setupMetrics(opsimName, metadata,
-                                                cumulative=args.cumulative, plotlabel=plotlabel,
-                                                verbose=verbose)
+
         # Identify the subset of simdata in the movieslicer 'data slice'
         simdatasubset = simdata[movieslice['idxs']]
 
@@ -194,6 +192,8 @@ def stitchMovie(metricList, metadata, args):
     for outfileroot in outfileroots:
         # Identify filenames.
         plotfiles = fnmatch.filter(os.listdir(args.outDir), outfileroot + "*SkyMap.png")
+        if len(plotfiles) == 0:
+            print(f"Couldn't find files containing {outfileroot}")
         slicenum = plotfiles[0].replace(outfileroot, '').replace('_SkyMap.png', '').replace('_', '')
         sliceformat = '%s0%dd' %('%', len(slicenum))
         n_images = len(plotfiles)
@@ -294,7 +294,7 @@ if __name__ == '__main__':
         end_date = simdata['observationStartMJD'].max()
         bins = np.arange(start_date, end_date+args.movieStepsize/2.0, args.movieStepsize, float)
         # Run the movie slicer (and at each step, healpix slicer and calculate metrics).
-        gm = runSlices(opsimName, metadata, simdata, bins, args)
+        gm = runSlices(opsimName, metricList, plotDictList, metadata, simdata, bins, args)
 
     # Build movie.
     stitchMovie(metricList, metadata, args)
