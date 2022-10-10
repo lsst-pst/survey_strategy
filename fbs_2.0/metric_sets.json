@@ -3144,390 +3144,6 @@
     "mag":false
   },
   {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap u band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ELAISS1 u",
-    "style":"c-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap g band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ELAISS1 g",
-    "style":"g-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ELAISS1 r",
-    "style":"y-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap i band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ELAISS1 i",
-    "style":"r-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap z band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ELAISS1 z",
-    "style":"m-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap y band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ELAISS1 y",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Season Length all bands UserPointsSlicer",
-    "short_name":"Median Season Length ELAISS1",
-    "style":"k--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Median DD:ELAISS1 NVisits all bands HealpixSubsetSlicer",
-    "short_name":"Total NVisits ELAISS1",
-    "style":"r--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap u band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap XMM_LSS u",
-    "style":"c-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap g band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap XMM_LSS g",
-    "style":"g-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap XMM_LSS r",
-    "style":"y-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap i band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap XMM_LSS i",
-    "style":"r-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap z band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap XMM_LSS z",
-    "style":"m-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap y band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap XMM_LSS y",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Season Length all bands UserPointsSlicer",
-    "short_name":"Median Season Length XMM_LSS",
-    "style":"k--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Median DD:XMM_LSS NVisits all bands HealpixSubsetSlicer",
-    "short_name":"Total NVisits XMM_LSS",
-    "style":"r--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap u band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap COSMOS u",
-    "style":"c-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap g band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap COSMOS g",
-    "style":"g-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap COSMOS r",
-    "style":"y-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap i band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap COSMOS i",
-    "style":"r-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap z band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap COSMOS z",
-    "style":"m-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap y band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap COSMOS y",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Season Length all bands UserPointsSlicer",
-    "short_name":"Median Season Length COSMOS",
-    "style":"k--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Median DD:COSMOS NVisits all bands HealpixSubsetSlicer",
-    "short_name":"Total NVisits COSMOS",
-    "style":"r--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap u band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ECDFS u",
-    "style":"c-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap g band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ECDFS g",
-    "style":"g-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ECDFS r",
-    "style":"y-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap i band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ECDFS i",
-    "style":"r-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap z band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ECDFS z",
-    "style":"m-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap y band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap ECDFS y",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Season Length all bands UserPointsSlicer",
-    "short_name":"Median Season Length ECDFS",
-    "style":"k--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Median DD:ECDFS NVisits all bands HealpixSubsetSlicer",
-    "short_name":"Total NVisits ECDFS",
-    "style":"r--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap u band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap EDFS u",
-    "style":"c-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap g band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap EDFS g",
-    "style":"g-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap EDFS r",
-    "style":"y-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap i band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap EDFS i",
-    "style":"r-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap z band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap EDFS z",
-    "style":"m-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap y band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap EDFS y",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Season Length all bands UserPointsSlicer",
-    "short_name":"Median Season Length EDFS",
-    "style":"k--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Median DD:EDFS NVisits all bands HealpixSubsetSlicer",
-    "short_name":"Total NVisits EDFS",
-    "style":"r--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap u band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap WFD u",
-    "style":"c-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap g band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap WFD g",
-    "style":"g-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap r band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap WFD r",
-    "style":"y-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap i band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap WFD i",
-    "style":"r-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap z band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap WFD z",
-    "style":"m-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap y band UserPointsSlicer",
-    "short_name":"Median Inter-Night Gap WFD y",
-    "style":"k-",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Season Length all bands UserPointsSlicer",
-    "short_name":"Median Season Length WFD",
-    "style":"k--",
-    "invert":true,
-    "mag":false
-  },
-  {
-    "metric set":"DDF Cadence",
-    "metric":"Median DD:WFD NVisits all bands HealpixSubsetSlicer",
-    "short_name":"Total NVisits WFD",
-    "style":"r--",
-    "invert":true,
-    "mag":false
-  },
-  {
     "metric set":"TVS anomalies",
     "metric":"Median FilterPairTGaps observationStartMJD, filter, fiveSigmaDepth  HealpixSlicer",
     "short_name":"Median FilterPairTGaps",
@@ -3627,6 +3243,1486 @@
     "metric set":"galaxies",
     "metric":"Area M_v>0.0 LVDwarfs gi SCP HealpixSlicer",
     "short_name":"LVDwarf v>0.0 SCP area",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ELAISS1 all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ELAISS1 all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:XMM_LSS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days XMM_LSS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:COSMOS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days COSMOS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:ECDFS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days ECDFS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:EDFS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days EDFS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 100 days DDF",
+    "metric":"Mean AGN_TimeLag_100_days DD:WFD all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 100 days WFD all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ELAISS1 all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ELAISS1 all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:XMM_LSS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days XMM_LSS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:COSMOS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days COSMOS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:ECDFS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days ECDFS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:EDFS all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days EDFS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD u band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD u",
+    "style":"c-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD g band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD g",
+    "style":"g-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD r band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD r",
+    "style":"y-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD i band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD i",
+    "style":"r-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD z band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD z",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD y band HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD y",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"AGN TimeLag 5 days DDF",
+    "metric":"Mean AGN_TimeLag_5_days DD:WFD all bands HealpixSubsetSlicer",
+    "short_name":"AGN Timelag 5 days WFD all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNSL DDF",
+    "metric":"Sum SNSLMetric DD:ELAISS1 all bands HealpixSubsetSlicer",
+    "short_name":"SNSL total ELAISS1 all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNSL DDF",
+    "metric":"Sum SNSLMetric DD:XMM_LSS all bands HealpixSubsetSlicer",
+    "short_name":"SNSL total XMM_LSS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNSL DDF",
+    "metric":"Sum SNSLMetric DD:COSMOS all bands HealpixSubsetSlicer",
+    "short_name":"SNSL total COSMOS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNSL DDF",
+    "metric":"Sum SNSLMetric DD:ECDFS all bands HealpixSubsetSlicer",
+    "short_name":"SNSL total ECDFS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNSL DDF",
+    "metric":"Sum SNSLMetric DD:EDFS all bands HealpixSubsetSlicer",
+    "short_name":"SNSL total EDFS all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNSL DDF",
+    "metric":"Sum SNSLMetric DD:WFD all bands HealpixSubsetSlicer",
+    "short_name":"SNSL total WFD all",
+    "style":"b-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 CoaddM5 u band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ELAISS1 u",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 CoaddM5 g band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ELAISS1 g",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 CoaddM5 r band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ELAISS1 r",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 CoaddM5 i band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ELAISS1 i",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 CoaddM5 z band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ELAISS1 z",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 CoaddM5 y band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ELAISS1 y",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ELAISS1 Nvisits Per Night all bands OneDSlicer",
+    "short_name":"Nvisits (median) ELAISS1 all",
+    "style":"b:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS CoaddM5 u band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 XMM_LSS u",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS CoaddM5 g band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 XMM_LSS g",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS CoaddM5 r band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 XMM_LSS r",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS CoaddM5 i band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 XMM_LSS i",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS CoaddM5 z band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 XMM_LSS z",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS CoaddM5 y band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 XMM_LSS y",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:XMM_LSS Nvisits Per Night all bands OneDSlicer",
+    "short_name":"Nvisits (median) XMM_LSS all",
+    "style":"b:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS CoaddM5 u band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 COSMOS u",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS CoaddM5 g band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 COSMOS g",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS CoaddM5 r band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 COSMOS r",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS CoaddM5 i band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 COSMOS i",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS CoaddM5 z band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 COSMOS z",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS CoaddM5 y band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 COSMOS y",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:COSMOS Nvisits Per Night all bands OneDSlicer",
+    "short_name":"Nvisits (median) COSMOS all",
+    "style":"b:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS CoaddM5 u band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ECDFS u",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS CoaddM5 g band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ECDFS g",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS CoaddM5 r band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ECDFS r",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS CoaddM5 i band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ECDFS i",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS CoaddM5 z band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ECDFS z",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS CoaddM5 y band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 ECDFS y",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:ECDFS Nvisits Per Night all bands OneDSlicer",
+    "short_name":"Nvisits (median) ECDFS all",
+    "style":"b:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS CoaddM5 u band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 EDFS u",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS CoaddM5 g band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 EDFS g",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS CoaddM5 r band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 EDFS r",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS CoaddM5 i band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 EDFS i",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS CoaddM5 z band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 EDFS z",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS CoaddM5 y band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 EDFS y",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:EDFS Nvisits Per Night all bands OneDSlicer",
+    "short_name":"Nvisits (median) EDFS all",
+    "style":"b:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:WFD CoaddM5 u band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 WFD u",
+    "style":"c-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:WFD CoaddM5 g band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 WFD g",
+    "style":"g-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:WFD CoaddM5 r band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 WFD r",
+    "style":"y-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:WFD CoaddM5 i band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 WFD i",
+    "style":"r-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:WFD CoaddM5 z band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 WFD z",
+    "style":"m-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Depths",
+    "metric":"Median DD:WFD CoaddM5 y band HealpixSubsetSlicer",
+    "short_name":"CoaddedM5 WFD y",
+    "style":"k-",
+    "invert":false,
+    "mag":true
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap u band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap g band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap i band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap z band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap y band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ELAISS1 Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length ELAISS1",
+    "style":"k--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:ELAISS1 N Unique Nights all bands HealpixSubsetSlicer",
+    "short_name":"Num Nights ELAISS1",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:ELAISS1 NVisits all bands HealpixSubsetSlicer",
+    "short_name":"Total NVisits ELAISS1",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap u band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap g band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap i band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap z band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap y band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:XMM_LSS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length XMM_LSS",
+    "style":"k--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:XMM_LSS N Unique Nights all bands HealpixSubsetSlicer",
+    "short_name":"Num Nights XMM_LSS",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:XMM_LSS NVisits all bands HealpixSubsetSlicer",
+    "short_name":"Total NVisits XMM_LSS",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap u band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap g band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap i band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap z band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap y band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:COSMOS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length COSMOS",
+    "style":"k--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:COSMOS N Unique Nights all bands HealpixSubsetSlicer",
+    "short_name":"Num Nights COSMOS",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:COSMOS NVisits all bands HealpixSubsetSlicer",
+    "short_name":"Total NVisits COSMOS",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap u band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap g band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap i band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap z band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap y band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:ECDFS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length ECDFS",
+    "style":"k--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:ECDFS N Unique Nights all bands HealpixSubsetSlicer",
+    "short_name":"Num Nights ECDFS",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:ECDFS NVisits all bands HealpixSubsetSlicer",
+    "short_name":"Total NVisits ECDFS",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap u band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap g band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap i band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap z band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap y band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:EDFS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length EDFS",
+    "style":"k--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:EDFS N Unique Nights all bands HealpixSubsetSlicer",
+    "short_name":"Num Nights EDFS",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:EDFS NVisits all bands HealpixSubsetSlicer",
+    "short_name":"Total NVisits EDFS",
+    "style":"r--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Inter-Night Gap u band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD u",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Inter-Night Gap g band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD g",
+    "style":"g-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD r",
+    "style":"y-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Inter-Night Gap i band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD i",
+    "style":"r-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Inter-Night Gap z band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD z",
+    "style":"m-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Inter-Night Gap y band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD y",
+    "style":"k-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Mean DD:WFD Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length WFD",
+    "style":"k--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:WFD N Unique Nights all bands HealpixSubsetSlicer",
+    "short_name":"Num Nights WFD",
+    "style":"m--",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"DDF Cadence",
+    "metric":"Median DD:WFD NVisits all bands HealpixSubsetSlicer",
+    "short_name":"Total NVisits WFD",
     "style":"r--",
     "invert":false,
     "mag":false
