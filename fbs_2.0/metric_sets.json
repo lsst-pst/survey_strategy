@@ -4726,5 +4726,197 @@
     "style":"r--",
     "invert":false,
     "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Sum SNNSNMetric DD:ELAISS1_nSN DD:ELAISS1 all bands HealpixSubsetSlicer",
+    "short_name":"Total SNIa ELAISS1",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Median SNNSNMetric DD:ELAISS1_zlim DD:ELAISS1 all bands HealpixSubsetSlicer",
+    "short_name":"Median SNIa zlim ELAISS1",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ELAISS1 r band",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:ELAISS1 Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length ELAISS1",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Sum SNNSNMetric DD:XMM_LSS_nSN DD:XMM_LSS all bands HealpixSubsetSlicer",
+    "short_name":"Total SNIa XMM_LSS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Median SNNSNMetric DD:XMM_LSS_zlim DD:XMM_LSS all bands HealpixSubsetSlicer",
+    "short_name":"Median SNIa zlim XMM_LSS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap XMM_LSS r band",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:XMM_LSS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length XMM_LSS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Sum SNNSNMetric DD:COSMOS_nSN DD:COSMOS all bands HealpixSubsetSlicer",
+    "short_name":"Total SNIa COSMOS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Median SNNSNMetric DD:COSMOS_zlim DD:COSMOS all bands HealpixSubsetSlicer",
+    "short_name":"Median SNIa zlim COSMOS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap COSMOS r band",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:COSMOS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length COSMOS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Sum SNNSNMetric DD:ECDFS_nSN DD:ECDFS all bands HealpixSubsetSlicer",
+    "short_name":"Total SNIa ECDFS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Median SNNSNMetric DD:ECDFS_zlim DD:ECDFS all bands HealpixSubsetSlicer",
+    "short_name":"Median SNIa zlim ECDFS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap ECDFS r band",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:ECDFS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length ECDFS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Sum SNNSNMetric DD:EDFS_nSN DD:EDFS all bands HealpixSubsetSlicer",
+    "short_name":"Total SNIa EDFS",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Median SNNSNMetric DD:EDFS_zlim DD:EDFS all bands HealpixSubsetSlicer",
+    "short_name":"Median SNIa zlim EDFS",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap EDFS r band",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:EDFS Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length EDFS",
+    "style":"k:",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Sum SNNSNMetric DD:WFD_nSN DD:WFD all bands HealpixSubsetSlicer",
+    "short_name":"Total SNIa WFD",
+    "style":"k-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Median SNNSNMetric DD:WFD_zlim DD:WFD all bands HealpixSubsetSlicer",
+    "short_name":"Median SNIa zlim WFD",
+    "style":"m-",
+    "invert":false,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:WFD Median Inter-Night Gap r band UserPointsSlicer",
+    "short_name":"Median Inter-Night Gap WFD r band",
+    "style":"g:",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SNIa DDF",
+    "metric":"Mean DD:WFD Median Season Length all bands UserPointsSlicer",
+    "short_name":"Median Season Length WFD",
+    "style":"k:",
+    "invert":false,
+    "mag":false
   }
 ]
