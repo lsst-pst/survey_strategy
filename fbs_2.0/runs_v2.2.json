@@ -1775,43 +1775,6 @@
       "fbs_2.2/ddf_season_lengths/ddf_sl_0.4_g23.5_v2.2_10yrs.db"
     ]
   },
-  "ddf double": {
-    "run": [
-      "ddf_double_slf0.10_v2.1_10yrs",
-      "ddf_double_slf0.15_v2.1_10yrs",
-      "ddf_double_slf0.20_v2.1_10yrs",
-      "ddf_double_slf0.25_v2.1_10yrs",
-      "ddf_double_slf0.30_v2.1_10yrs",
-      "ddf_double_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf double** : This family cuts the individual DDF sequences in half, resulting in brighter single night coadded depths, but a shorter interval of nights between visits. This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Shorter (1/2) DDF sequences, season length fraction 0.10",
-      "Shorter (1/2) DDF sequences, season length fraction 0.15",
-      "Shorter (1/2) DDF sequences, season length fraction 0.20",
-      "Shorter (1/2) DDF sequences, season length fraction 0.25",
-      "Shorter (1/2) DDF sequences, season length fraction 0.30",
-      "Shorter (1/2) DDF sequences, season length fraction 0.35"
-    ],
-    "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "fbs_2.1/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
-      "fbs_2.1/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
-      "fbs_2.1/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
-      "fbs_2.1/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
-      "fbs_2.1/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
-      "fbs_2.1/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
-    ]
-  },
   "ddf quad": {
     "run": [
       "ddf_quad_slf0.10_v2.1_10yrs",
@@ -1882,80 +1845,6 @@
       "fbs_2.2/ddf_quad/ddf_quad_0.4_v2.2_10yrs.db"
     ]
   },
-  "ddf quad subfilter": {
-    "run": [
-      "ddf_quad_subfilter_slf0.10_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.15_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.20_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.25_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.30_v2.1_10yrs",
-      "ddf_quad_subfilter_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf quad subfilter** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. However, here only some filters are used in each DDF sequence, alternating between active filters on different nights.This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.10",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.15",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.20",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.25",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.30",
-      "Shorter DDF sequences with subsets of the filters, season length fraction 0.35"
-    ],
-    "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
-      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
-      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
-      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
-      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
-      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
-    ]
-  },
-  "ddf bright": {
-    "run": [
-      "ddf_bright_slf0.10_v2.1_10yrs",
-      "ddf_bright_slf0.15_v2.1_10yrs",
-      "ddf_bright_slf0.20_v2.1_10yrs",
-      "ddf_bright_slf0.25_v2.1_10yrs",
-      "ddf_bright_slf0.30_v2.1_10yrs",
-      "ddf_bright_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf bright** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. In this family, the m5 limits for scheduling visits are relaxed, resulting in visits running more consistently throughout the lunar cycle even into bright time. This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "DDF quad-style sequences running through bright time, season length fraction 0.10",
-      "DDF quad-style sequences running through bright time, season length fraction 0.15",
-      "DDF quad-style sequences running through bright time, season length fraction 0.20",
-      "DDF quad-style sequences running through bright time, season length fraction 0.25",
-      "DDF quad-style sequences running through bright time, season length fraction 0.30",
-      "DDF quad-style sequences running through bright time, season length fraction 0.35"
-    ],
-    "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "fbs_2.1/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
-      "fbs_2.1/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
-      "fbs_2.1/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
-      "fbs_2.1/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
-      "fbs_2.1/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
-      "fbs_2.1/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
-    ]
-  },
   "ddf dither": {
     "run": [
       "ddf_dither_size_slf0.20_md0.01_v2.1_10yrs",
@@ -2009,21 +1898,41 @@
       "fbs_2.1/ddf_dither/ddf_dither_size_slf0.20_md3.50_v2.1_10yrs.db"
     ]
   },
-  "ddf roll": {
+  "ddf old rot": {
     "run": [
-      "ddf_roll_slf0.20_v2.1_10yrs"
+      "ddf_old_rot_slf0.10_v2.1_10yrs",
+      "ddf_old_rot_slf0.15_v2.1_10yrs",
+      "ddf_old_rot_slf0.20_v2.1_10yrs",
+      "ddf_old_rot_slf0.25_v2.1_10yrs",
+      "ddf_old_rot_slf0.30_v2.1_10yrs",
+      "ddf_old_rot_slf0.35_v2.1_10yrs"
     ],
-    "description": "**ddf roll** : This family adds a rolling cadence to the DDFs, so that DD fields are observed more intensely in some years, less intensely in others.This family uses pre-scheduled DDF visits.",
+    "description": "**ddf old rot** : This family adds a validation or comparison option for the remainder of the v2.1 DDF simulations. In this family, the rotation angle is fixed so that rotTelPos is constant; in most v2.1 simulations, rotSkyPos is held fixed. Otherwise this family is similar to `ddf season length`, and uses pre-scheduled DDF visits.",
     "version": "2.1",
     "reference": "baseline_v2.1_10yrs",
     "brief": [
-      "Roll the DDF fields between years"
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.10",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.15",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.20",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.25",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.30",
+      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.35"
     ],
     "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
     ],
     "filepath": [
-      "fbs_2.1/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf accordian": {
@@ -2197,229 +2106,35 @@
   },
   "ddf accordian v2": {
     "run": [
-      "ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.2_10yrs",
       "ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.2_10yrs",
       "ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.2_10yrs",
       "ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.2_10yrs",
       "ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.2_10yrs",
-      "ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.2_10yrs",
-      "ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.2_10yrs",
-      "ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.2_10yrs"
+      "ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.2_10yrs"
     ],
     "description": "**ddf accordian v2** : This family adds an \"accordian\" low/high rate over each season approach to DDF cadence. The edges of each season are observed at a \"low\" rate while the center of the season is observed at a faster \"high\" rate. Each simulation is identified by a total season length fraction (as in `ddf season`) with a similar low season fraction (`lsf`) within that and a low season rate (lsr). Thus `ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.1_10yrs` would have a fairly short overall season (40% of the available season), a long low season (80% - so 20% high season), and a small low season rate (0.1), leaving most DDF visits concentrated in the center of the season. Conversely, `ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.1_10yrs` would have a long overall season, a short low season, and a high rate during the low season, resulting in a very mild accordian effect. This family uses pre-scheduled DDF visits, with a more desireable sequence than v2.1.",
     "version": "2.2",
     "reference": "baseline_v2.2_10yrs",
     "brief": [
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.1 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.1 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.1 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.2 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.2 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.2 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.3 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.3 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.3 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.4 low season fraction, 0.1 low season rate",
       "DDFs with an accordian cadence: 0.05 season fraction, 0.4 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.05 season fraction, 0.4 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.1 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.1 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.1 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.2 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.2 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.2 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.3 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.3 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.3 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.4 low season fraction, 0.1 low season rate",
       "DDFs with an accordian cadence: 0.10 season fraction, 0.4 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.10 season fraction, 0.4 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.20 season fraction, 0.3 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.20 season fraction, 0.3 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.20 season fraction, 0.3 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.20 season fraction, 0.4 low season fraction, 0.1 low season rate",
       "DDFs with an accordian cadence: 0.20 season fraction, 0.4 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.20 season fraction, 0.4 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.25 season fraction, 0.3 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.25 season fraction, 0.3 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.25 season fraction, 0.3 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.25 season fraction, 0.4 low season fraction, 0.1 low season rate",
       "DDFs with an accordian cadence: 0.25 season fraction, 0.4 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.25 season fraction, 0.4 low season fraction, 0.5 low season rate",
-      "DDFs with an accordian cadence: 0.30 season fraction, 0.4 low season fraction, 0.1 low season rate",
-      "DDFs with an accordian cadence: 0.30 season fraction, 0.4 low season fraction, 0.3 low season rate",
-      "DDFs with an accordian cadence: 0.30 season fraction, 0.4 low season fraction, 0.5 low season rate"
+      "DDFs with an accordian cadence: 0.30 season fraction, 0.4 low season fraction, 0.3 low season rate"
     ],
     "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.2_10yrs.db"
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.2_10yrs.db"
     ],
     "filepath": [
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.1_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.2_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.05_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.1_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.2_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.10_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "fbs_2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.20_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.3_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.1_v2.2_10yrs.db",
       "fbs_2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.25_lsf0.4_lsr0.5_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.1_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.2_10yrs.db",
-      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.2_10yrs.db"
-    ]
-  },
-  "ddf old rot": {
-    "run": [
-      "ddf_old_rot_slf0.10_v2.1_10yrs",
-      "ddf_old_rot_slf0.15_v2.1_10yrs",
-      "ddf_old_rot_slf0.20_v2.1_10yrs",
-      "ddf_old_rot_slf0.25_v2.1_10yrs",
-      "ddf_old_rot_slf0.30_v2.1_10yrs",
-      "ddf_old_rot_slf0.35_v2.1_10yrs"
-    ],
-    "description": "**ddf old rot** : This family adds a validation or comparison option for the remainder of the v2.1 DDF simulations. In this family, the rotation angle is fixed so that rotTelPos is constant; in most v2.1 simulations, rotSkyPos is held fixed. Otherwise this family is similar to `ddf season length`, and uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.10",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.15",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.20",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.25",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.30",
-      "DDF with old rotation dithers (constant rotTelPos), season length fraction 0.35"
-    ],
-    "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.10_v2.1_10yrs.db",
-      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.15_v2.1_10yrs.db",
-      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.20_v2.1_10yrs.db",
-      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.25_v2.1_10yrs.db",
-      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.30_v2.1_10yrs.db",
-      "fbs_2.1/ddf_old_rot/ddf_old_rot_slf0.35_v2.1_10yrs.db"
-    ]
-  },
-  "ddf desc": {
-    "run": [
-      "ddf_deep_rolling_slf0.20_v2.1_10yrs",
-      "ddf_deep_u_slf0.20_v2.1_10yrs"
-    ],
-    "description": "**ddf desc** : This family uses longer and more frequent nightly sequences for the DDFs. These sequences are described in a DESC DDF paper, and are roughly 41 visits per night every night during the season. This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "DESC deep universal sequences, with rolling - each DDF observed for 2 seasons (more g)",
-      "DESC deep universal DDF sequences"
-    ],
-    "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "fbs_2.1/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db",
-      "fbs_2.1/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
+      "fbs_2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.3_v2.2_10yrs.db"
     ]
   },
   "ddf desc v2": {
@@ -2441,31 +2156,6 @@
     "filepath": [
       "fbs_2.2/ddf_desc/ddf_deep_rolling_slf0.20_v2.2_10yrs.db",
       "fbs_2.2/ddf_desc/ddf_deep_univ_0.2_v2.2_10yrs.db"
-    ]
-  },
-  "ddf early deep": {
-    "run": [
-      "ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs",
-      "ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs",
-      "ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs"
-    ],
-    "description": "**ddf early deep** : This family reduces the overall number of DDFs to 3; XMM-LSS, COSMOS, and the double pointing EDFS. A deep nightly sequence and fast cadence is requested on these few fields.This family uses pre-scheduled DDF visits.",
-    "version": "2.1",
-    "reference": "baseline_v2.1_10yrs",
-    "brief": [
-      "DESC early deep rolling DDF cadences - z complete .70",
-      "DESC early deep rolling DDF cadences - z complete .75",
-      "DESC early deep rolling DDF cadences - z complete .80"
-    ],
-    "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
-    ],
-    "filepath": [
-      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
-      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
-      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
     ]
   },
   "ddf custom v2": {
