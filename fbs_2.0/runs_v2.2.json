@@ -624,8 +624,8 @@
       "plane_priority_priority0.3_pbt_v2.1_10yrs",
       "plane_priority_priority0.2_pbt_v2.1_10yrs",
       "plane_priority_priority0.1_pbt_v2.1_10yrs",
-      "pencil_fs2_v2.1_10yrs",
-      "pencil_fs1_v2.1_10yrs"
+      "pencil_fs1_v2.1_10yrs",
+      "pencil_fs2_v2.1_10yrs"
     ],
     "description": "**galactic plane footprint** : These simulations use the galactic plane priority map, contributed by LSST SMLV & TVS science collaborations, as the basis for further variations on galactic plane coverage. Instead of a \"bulge area\" as in the baseline and vary gp family, different levels of priority of the galactic plane map are covered at WFD levels. In addition, pencil beam fields are added or not, in various simulations. ",
     "version": "2.1",
@@ -645,8 +645,8 @@
       "Select galactic plane priority map above 0.3 threshold value, with map pencilbeam fields",
       "Select galactic plane priority map above 0.2 threshold value, with map pencilbeam fields",
       "Select galactic plane priority map above 0.1 threshold value, with map pencilbeam fields",
-      "Add 4 larger galactic plane pencil beam fields",
-      "Add 20 small galactic plane pencil beam fields"
+      "Add 20 small galactic plane pencil beam fields",
+      "Add 4 larger galactic plane pencil beam fields"
     ],
     "url": [
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/plane_priority_priority1.2_pbf_v2.1_10yrs.db",
@@ -663,8 +663,8 @@
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/plane_priority_priority0.3_pbt_v2.1_10yrs.db",
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/plane_priority_priority0.2_pbt_v2.1_10yrs.db",
       "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/plane_priority_priority0.1_pbt_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/pencil_fs2_v2.1_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/pencil_fs1_v2.1_10yrs.db"
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/pencil_fs1_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/footprints/pencil_fs2_v2.1_10yrs.db"
     ],
     "filepath": [
       "fbs_2.1/footprints/plane_priority_priority1.2_pbf_v2.1_10yrs.db",
@@ -681,8 +681,8 @@
       "fbs_2.1/footprints/plane_priority_priority0.3_pbt_v2.1_10yrs.db",
       "fbs_2.1/footprints/plane_priority_priority0.2_pbt_v2.1_10yrs.db",
       "fbs_2.1/footprints/plane_priority_priority0.1_pbt_v2.1_10yrs.db",
-      "fbs_2.1/footprints/pencil_fs2_v2.1_10yrs.db",
-      "fbs_2.1/footprints/pencil_fs1_v2.1_10yrs.db"
+      "fbs_2.1/footprints/pencil_fs1_v2.1_10yrs.db",
+      "fbs_2.1/footprints/pencil_fs2_v2.1_10yrs.db"
     ]
   },
   "galactic plane footprint v2": {
@@ -1284,38 +1284,54 @@
   },
   "ToO": {
     "run": [
-      "too_rate16_gz_nf1_v2.2_10yrs",
-      "too_rate16_gz_nf4_v2.2_10yrs",
-      "too_rate16_gzi_nf1_v2.2_10yrs",
-      "too_rate16_gzi_nf4_v2.2_10yrs",
-      "too_rate16_gzir_nf1_v2.2_10yrs",
-      "too_rate16_gzir_nf4_v2.2_10yrs",
-      "too_rate16_ugziry_nf1_v2.2_10yrs",
-      "too_rate16_ugziry_nf4_v2.2_10yrs",
-      "too_rate32_gz_nf1_v2.2_10yrs",
-      "too_rate32_gz_nf4_v2.2_10yrs",
-      "too_rate32_gzi_nf1_v2.2_10yrs",
-      "too_rate32_gzi_nf4_v2.2_10yrs",
-      "too_rate32_gzir_nf1_v2.2_10yrs",
-      "too_rate32_gzir_nf4_v2.2_10yrs",
-      "too_rate32_ugziry_nf1_v2.2_10yrs",
-      "too_rate32_ugziry_nf4_v2.2_10yrs",
-      "too_rate64_gz_nf1_v2.2_10yrs",
-      "too_rate64_gz_nf4_v2.2_10yrs",
-      "too_rate64_gzi_nf1_v2.2_10yrs",
-      "too_rate64_gzi_nf4_v2.2_10yrs",
-      "too_rate64_gzir_nf1_v2.2_10yrs",
-      "too_rate64_gzir_nf4_v2.2_10yrs",
-      "too_rate64_ugziry_nf1_v2.2_10yrs",
-      "too_rate64_ugziry_nf4_v2.2_10yrs",
-      "too_rate8_gz_nf1_v2.2_10yrs",
-      "too_rate8_gz_nf4_v2.2_10yrs",
-      "too_rate8_gzi_nf1_v2.2_10yrs",
-      "too_rate8_gzi_nf4_v2.2_10yrs",
-      "too_rate8_gzir_nf1_v2.2_10yrs",
-      "too_rate8_gzir_nf4_v2.2_10yrs",
-      "too_rate8_ugziry_nf1_v2.2_10yrs",
-      "too_rate8_ugziry_nf4_v2.2_10yrs"
+      "too_rate16_gz_nf1_v2.2_2yrs",
+      "too_rate16_gz_nf4_v2.2_2yrs",
+      "too_rate16_gz_nf5_v2.2_2yrs",
+      "too_rate16_gzi_nf1_v2.2_2yrs",
+      "too_rate16_gzi_nf4_v2.2_2yrs",
+      "too_rate16_gzi_nf5_v2.2_2yrs",
+      "too_rate16_gzir_nf1_v2.2_2yrs",
+      "too_rate16_gzir_nf4_v2.2_2yrs",
+      "too_rate16_gzir_nf5_v2.2_2yrs",
+      "too_rate16_ugziry_nf1_v2.2_2yrs",
+      "too_rate16_ugziry_nf4_v2.2_2yrs",
+      "too_rate16_ugziry_nf5_v2.2_2yrs",
+      "too_rate32_gz_nf1_v2.2_2yrs",
+      "too_rate32_gz_nf4_v2.2_2yrs",
+      "too_rate32_gz_nf5_v2.2_2yrs",
+      "too_rate32_gzi_nf1_v2.2_2yrs",
+      "too_rate32_gzi_nf4_v2.2_2yrs",
+      "too_rate32_gzi_nf5_v2.2_2yrs",
+      "too_rate32_gzir_nf1_v2.2_2yrs",
+      "too_rate32_gzir_nf4_v2.2_2yrs",
+      "too_rate32_gzir_nf5_v2.2_2yrs",
+      "too_rate32_ugziry_nf1_v2.2_2yrs",
+      "too_rate32_ugziry_nf4_v2.2_2yrs",
+      "too_rate32_ugziry_nf5_v2.2_2yrs",
+      "too_rate64_gz_nf1_v2.2_2yrs",
+      "too_rate64_gz_nf4_v2.2_2yrs",
+      "too_rate64_gz_nf5_v2.2_2yrs",
+      "too_rate64_gzi_nf1_v2.2_2yrs",
+      "too_rate64_gzi_nf4_v2.2_2yrs",
+      "too_rate64_gzi_nf5_v2.2_2yrs",
+      "too_rate64_gzir_nf1_v2.2_2yrs",
+      "too_rate64_gzir_nf4_v2.2_2yrs",
+      "too_rate64_gzir_nf5_v2.2_2yrs",
+      "too_rate64_ugziry_nf1_v2.2_2yrs",
+      "too_rate64_ugziry_nf4_v2.2_2yrs",
+      "too_rate64_ugziry_nf5_v2.2_2yrs",
+      "too_rate8_gz_nf1_v2.2_2yrs",
+      "too_rate8_gz_nf4_v2.2_2yrs",
+      "too_rate8_gz_nf5_v2.2_2yrs",
+      "too_rate8_gzi_nf1_v2.2_2yrs",
+      "too_rate8_gzi_nf4_v2.2_2yrs",
+      "too_rate8_gzi_nf5_v2.2_2yrs",
+      "too_rate8_gzir_nf1_v2.2_2yrs",
+      "too_rate8_gzir_nf4_v2.2_2yrs",
+      "too_rate8_gzir_nf5_v2.2_2yrs",
+      "too_rate8_ugziry_nf1_v2.2_2yrs",
+      "too_rate8_ugziry_nf4_v2.2_2yrs",
+      "too_rate8_ugziry_nf5_v2.2_2yrs"
     ],
     "description": "**ToO** : This microsurvey family explores additional variations on ToO implementations, to try to better understand their impact on the remainder of the survey.",
     "version": "2.2",
@@ -1323,104 +1339,152 @@
     "brief": [
       "ToO simulations with 16 events per year using gz bands; single pass",
       "ToO simulations with 16 events per year using gz bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 16 events per year using gz bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 16 events per year using gzi bands; single pass",
       "ToO simulations with 16 events per year using gzi bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 16 events per year using gzi bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 16 events per year using gzir bands; single pass",
       "ToO simulations with 16 events per year using gzir bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 16 events per year using gzir bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 16 events per year using ugziry bands; single pass",
       "ToO simulations with 16 events per year using ugziry bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 16 events per year using ugziry bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 32 events per year using gz bands; single pass",
       "ToO simulations with 32 events per year using gz bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 32 events per year using gz bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 32 events per year using gzi bands; single pass",
       "ToO simulations with 32 events per year using gzi bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 32 events per year using gzi bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 32 events per year using gzir bands; single pass",
       "ToO simulations with 32 events per year using gzir bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 32 events per year using gzir bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 32 events per year using ugziry bands; single pass",
       "ToO simulations with 32 events per year using ugziry bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 32 events per year using ugziry bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 64 events per year using gz bands; single pass",
       "ToO simulations with 64 events per year using gz bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 64 events per year using gz bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 64 events per year using gzi bands; single pass",
       "ToO simulations with 64 events per year using gzi bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 64 events per year using gzi bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 64 events per year using gzir bands; single pass",
       "ToO simulations with 64 events per year using gzir bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 64 events per year using gzir bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 64 events per year using ugziry bands; single pass",
       "ToO simulations with 64 events per year using ugziry bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 64 events per year using ugziry bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 8 events per year using gz bands; single pass",
       "ToO simulations with 8 events per year using gz bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 8 events per year using gz bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 8 events per year using gzi bands; single pass",
       "ToO simulations with 8 events per year using gzi bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 8 events per year using gzi bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 8 events per year using gzir bands; single pass",
       "ToO simulations with 8 events per year using gzir bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 8 events per year using gzir bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
       "ToO simulations with 8 events per year using ugziry bands; single pass",
-      "ToO simulations with 8 events per year using ugziry bands; 1hr, 2hr, 4hr obs."
+      "ToO simulations with 8 events per year using ugziry bands; 1hr, 2hr, 4hr obs.",
+      "ToO simulations with 8 events per year using ugziry bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night."
     ],
     "url": [
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzi_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzi_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzir_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzir_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_ugziry_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_ugziry_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gz_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gz_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzi_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzi_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzir_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzir_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_ugziry_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_ugziry_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gz_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gz_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzi_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzi_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzir_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzir_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_ugziry_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_ugziry_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gz_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gz_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzi_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzi_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzir_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzir_nf4_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_ugziry_nf1_v2.2_10yrs.db",
-      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_ugziry_nf4_v2.2_10yrs.db"
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzi_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzi_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzi_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzir_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzir_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gzir_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_ugziry_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_ugziry_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_ugziry_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gz_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gz_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gz_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzi_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzi_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzi_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzir_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzir_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_gzir_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_ugziry_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_ugziry_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate32_ugziry_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gz_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gz_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gz_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzi_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzi_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzi_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzir_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzir_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_gzir_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_ugziry_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_ugziry_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate64_ugziry_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gz_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gz_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gz_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzi_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzi_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzi_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzir_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzir_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_gzir_nf5_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_ugziry_nf1_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_ugziry_nf4_v2.2_2yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_ugziry_nf5_v2.2_2yrs.db"
     ],
     "filepath": [
-      "fbs_2.2/ToO/too_rate16_gz_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_gz_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_gzi_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_gzi_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_gzir_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_gzir_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_ugziry_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate16_ugziry_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_gz_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_gz_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_gzi_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_gzi_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_gzir_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_gzir_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_ugziry_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate32_ugziry_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_gz_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_gz_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_gzi_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_gzi_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_gzir_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_gzir_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_ugziry_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate64_ugziry_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_gz_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_gz_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_gzi_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_gzi_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_gzir_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_gzir_nf4_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_ugziry_nf1_v2.2_10yrs.db",
-      "fbs_2.2/ToO/too_rate8_ugziry_nf4_v2.2_10yrs.db"
+      "fbs_2.2/ToO/too_rate16_gz_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gz_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gz_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gzi_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gzi_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gzi_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gzir_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gzir_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_gzir_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_ugziry_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_ugziry_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate16_ugziry_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gz_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gz_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gz_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gzi_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gzi_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gzi_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gzir_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gzir_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_gzir_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_ugziry_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_ugziry_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate32_ugziry_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gz_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gz_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gz_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gzi_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gzi_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gzi_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gzir_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gzir_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_gzir_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_ugziry_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_ugziry_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate64_ugziry_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gz_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gz_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gz_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gzi_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gzi_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gzi_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gzir_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gzir_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_gzir_nf5_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_ugziry_nf1_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_ugziry_nf4_v2.2_2yrs.db",
+      "fbs_2.2/ToO/too_rate8_ugziry_nf5_v2.2_2yrs.db"
     ]
   },
   "technical": {
@@ -1775,6 +1839,43 @@
       "fbs_2.2/ddf_season_lengths/ddf_sl_0.4_g23.5_v2.2_10yrs.db"
     ]
   },
+  "ddf double": {
+    "run": [
+      "ddf_double_slf0.10_v2.1_10yrs",
+      "ddf_double_slf0.15_v2.1_10yrs",
+      "ddf_double_slf0.20_v2.1_10yrs",
+      "ddf_double_slf0.25_v2.1_10yrs",
+      "ddf_double_slf0.30_v2.1_10yrs",
+      "ddf_double_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf double** : This family cuts the individual DDF sequences in half, resulting in brighter single night coadded depths, but a shorter interval of nights between visits. This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Shorter (1/2) DDF sequences, season length fraction 0.10",
+      "Shorter (1/2) DDF sequences, season length fraction 0.15",
+      "Shorter (1/2) DDF sequences, season length fraction 0.20",
+      "Shorter (1/2) DDF sequences, season length fraction 0.25",
+      "Shorter (1/2) DDF sequences, season length fraction 0.30",
+      "Shorter (1/2) DDF sequences, season length fraction 0.35"
+    ],
+    "url": [
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.1/ddf_1/ddf_double_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_1/ddf_double_slf0.35_v2.1_10yrs.db"
+    ]
+  },
   "ddf quad": {
     "run": [
       "ddf_quad_slf0.10_v2.1_10yrs",
@@ -1843,6 +1944,80 @@
       "fbs_2.2/ddf_quad/ddf_quad_0.2_v2.2_10yrs.db",
       "fbs_2.2/ddf_quad/ddf_quad_0.3_v2.2_10yrs.db",
       "fbs_2.2/ddf_quad/ddf_quad_0.4_v2.2_10yrs.db"
+    ]
+  },
+  "ddf quad subfilter": {
+    "run": [
+      "ddf_quad_subfilter_slf0.10_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.15_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.20_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.25_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.30_v2.1_10yrs",
+      "ddf_quad_subfilter_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf quad subfilter** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. However, here only some filters are used in each DDF sequence, alternating between active filters on different nights.This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.10",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.15",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.20",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.25",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.30",
+      "Shorter DDF sequences with subsets of the filters, season length fraction 0.35"
+    ],
+    "url": [
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_quad_subfilter/ddf_quad_subfilter_slf0.35_v2.1_10yrs.db"
+    ]
+  },
+  "ddf bright": {
+    "run": [
+      "ddf_bright_slf0.10_v2.1_10yrs",
+      "ddf_bright_slf0.15_v2.1_10yrs",
+      "ddf_bright_slf0.20_v2.1_10yrs",
+      "ddf_bright_slf0.25_v2.1_10yrs",
+      "ddf_bright_slf0.30_v2.1_10yrs",
+      "ddf_bright_slf0.35_v2.1_10yrs"
+    ],
+    "description": "**ddf bright** : Similar to the ddf quad family, the sequences for individual DDFs are cut shorter by about 1/4 compared to baseline. In this family, the m5 limits for scheduling visits are relaxed, resulting in visits running more consistently throughout the lunar cycle even into bright time. This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "DDF quad-style sequences running through bright time, season length fraction 0.10",
+      "DDF quad-style sequences running through bright time, season length fraction 0.15",
+      "DDF quad-style sequences running through bright time, season length fraction 0.20",
+      "DDF quad-style sequences running through bright time, season length fraction 0.25",
+      "DDF quad-style sequences running through bright time, season length fraction 0.30",
+      "DDF quad-style sequences running through bright time, season length fraction 0.35"
+    ],
+    "url": [
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.10_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.15_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.25_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.30_v2.1_10yrs.db",
+      "fbs_2.1/ddf_bright/ddf_bright_slf0.35_v2.1_10yrs.db"
     ]
   },
   "ddf dither": {
@@ -2273,6 +2448,69 @@
       "fbs_2.2/ddf_accourd/ddf_accourd_sf0.30_lsf0.4_lsr0.5_v2.2_10yrs.db"
     ]
   },
+  "ddf roll": {
+    "run": [
+      "ddf_roll_slf0.20_v2.1_10yrs"
+    ],
+    "description": "**ddf roll** : This family adds a rolling cadence to the DDFs, so that DD fields are observed more intensely in some years, less intensely in others.This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "Roll the DDF fields between years"
+    ],
+    "url": [
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.1/ddf_roll/ddf_roll_slf0.20_v2.1_10yrs.db"
+    ]
+  },
+  "ddf desc": {
+    "run": [
+      "ddf_deep_rolling_slf0.20_v2.1_10yrs",
+      "ddf_deep_u_slf0.20_v2.1_10yrs"
+    ],
+    "description": "**ddf desc** : This family uses longer and more frequent nightly sequences for the DDFs. These sequences are described in a DESC DDF paper, and are roughly 41 visits per night every night during the season. This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "DESC deep universal sequences, with rolling - each DDF observed for 2 seasons (more g)",
+      "DESC deep universal DDF sequences"
+    ],
+    "url": [
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.1/ddf_deep_rolling/ddf_deep_rolling_slf0.20_v2.1_10yrs.db",
+      "fbs_2.1/ddf_deep_u/ddf_deep_u_slf0.20_v2.1_10yrs.db"
+    ]
+  },
+  "ddf early deep": {
+    "run": [
+      "ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs",
+      "ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs",
+      "ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs"
+    ],
+    "description": "**ddf early deep** : This family reduces the overall number of DDFs to 3; XMM-LSS, COSMOS, and the double pointing EDFS. A deep nightly sequence and fast cadence is requested on these few fields.This family uses pre-scheduled DDF visits.",
+    "version": "2.1",
+    "reference": "baseline_v2.1_10yrs",
+    "brief": [
+      "DESC early deep rolling DDF cadences - z complete .70",
+      "DESC early deep rolling DDF cadences - z complete .75",
+      "DESC early deep rolling DDF cadences - z complete .80"
+    ],
+    "url": [
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
+      "https://s3df.slac.stanford.edu/groups/rubin/static/sim-data/sims_featureScheduler_runs2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.70_v2.1_10yrs.db",
+      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.75_v2.1_10yrs.db",
+      "fbs_2.1/ddf_early_deep/ddf_early_deep_slf0.20_f10.60_f20.80_v2.1_10yrs.db"
+    ]
+  },
   "ddf desc v2": {
     "run": [
       "ddf_deep_rolling_slf0.20_v2.2_10yrs",
@@ -2309,6 +2547,35 @@
     ],
     "filepath": [
       "fbs_2.2/ddf_custom/ddf_custom_v2.2_10yrs.db"
+    ]
+  },
+  "draft v3": {
+    "run": [
+      "draft_connected_v2.99_10yrs",
+      "roll_early_v2.99_10yrs",
+      "dd6_v2.99_10yrs",
+      "low_gp_v2.99_10yrs"
+    ],
+    "description": "**draft v3** : Draft versions of simulations incorporating the SCOC Phase 2 recommendations for survey strategy.",
+    "version": "2.99",
+    "reference": "baseline_v2.2_10yrs",
+    "brief": [
+      "DDF at 7.5%, twilight NEO microsurvey, priority GP footprint.",
+      "Starting rolling early and increase suppress revisit weight. DDF at 7.5%, twilight NEO microsurvey, priority GP footprint.",
+      "DDF at 5%, twilight NEO microsurvey, priority GP footprint.",
+      "DDF at 7.5%, twilight NEO microsurvey, priority GP footprint but low nvisits."
+    ],
+    "url": [
+      "https://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.99/draft_connected_v2.99_10yrs.db",
+      "https://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.99/roll_early_v2.99_10yrs.db",
+      "https://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.99/dd6_v2.99_10yrs.db",
+      "https://epyc.astro.washington.edu/~lynnej/opsim_downloads/fbs_2.99/low_gp_v2.99_10yrs.db"
+    ],
+    "filepath": [
+      "fbs_2.99/draft_connected_v2.99_10yrs.db",
+      "fbs_2.99/roll_early_v2.99_10yrs.db",
+      "fbs_2.99/dd6_v2.99_10yrs.db",
+      "fbs_2.99/low_gp_v2.99_10yrs.db"
     ]
   }
 }
