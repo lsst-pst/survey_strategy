@@ -4913,48 +4913,48 @@
   },
   {
     "metric set":"SL IQ",
-    "metric":"Median Median seeingEff All sky g band HealpixSlicer",
-    "short_name":"Median SeeingFWHM g band",
+    "metric":"Median Min seeingEff All sky g band HealpixSlicer",
+    "short_name":"Med Min seeingEff g band",
     "style":"g-",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SL IQ",
-    "metric":"Median Median seeingEff Yr 1 g band HealpixSlicer",
-    "short_name":"Median SeeingFWHM g band Yr 1",
+    "metric":"Median Min seeingEff Yr 1 g band HealpixSlicer",
+    "short_name":"Med Min seeingEff g band Yr 1",
     "style":"g:",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SL IQ",
-    "metric":"Median Median seeingEff All sky r band HealpixSlicer",
-    "short_name":"Median SeeingFWHM r band",
+    "metric":"Median Min seeingEff All sky r band HealpixSlicer",
+    "short_name":"Med Min seeingEff r band",
     "style":"r-",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SL IQ",
-    "metric":"Median Median seeingEff Yr 1 r band HealpixSlicer",
-    "short_name":"Median SeeingFWHM r band Yr 1",
+    "metric":"Median Min seeingEff Yr 1 r band HealpixSlicer",
+    "short_name":"Med Min seeingEff r band Yr 1",
     "style":"r:",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SL IQ",
-    "metric":"Median Median seeingEff All sky i band HealpixSlicer",
-    "short_name":"Median SeeingFWHM i band",
+    "metric":"Median Min seeingEff All sky i band HealpixSlicer",
+    "short_name":"Med Min seeingEff i band",
     "style":"b-",
     "invert":true,
     "mag":false
   },
   {
     "metric set":"SL IQ",
-    "metric":"Median Median seeingEff Yr 1 i band HealpixSlicer",
-    "short_name":"Median SeeingFWHM i band Yr 1",
+    "metric":"Median Min seeingEff Yr 1 i band HealpixSlicer",
+    "short_name":"Med Min seeingEff i band Yr 1",
     "style":"b:",
     "invert":true,
     "mag":false
