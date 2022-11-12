@@ -1284,6 +1284,7 @@
   },
   "ToO": {
     "run": [
+      "baseline_v2.2_2yrs",
       "too_rate16_gz_nf1_v2.2_2yrs",
       "too_rate16_gz_nf4_v2.2_2yrs",
       "too_rate16_gz_nf5_v2.2_2yrs",
@@ -1335,8 +1336,9 @@
     ],
     "description": "**ToO** : This microsurvey family explores additional variations on ToO implementations, to try to better understand their impact on the remainder of the survey.",
     "version": "2.2",
-    "reference": "baseline_v2.2_10yrs",
+    "reference": "baseline_v2.2_2yrs",
     "brief": [
+      "v2.2 baseline first two years only",
       "ToO simulations with 16 events per year using gz bands; single pass",
       "ToO simulations with 16 events per year using gz bands; 1hr, 2hr, 4hr obs.",
       "ToO simulations with 16 events per year using gz bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night.",
@@ -1387,6 +1389,7 @@
       "ToO simulations with 8 events per year using ugziry bands; 1hr, 2hr, 4hr obs, and with follow up attempted on the next available night."
     ],
     "url": [
+      "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.2/baseline/baseline_v2.2_2yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf1_v2.2_2yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf4_v2.2_2yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate16_gz_nf5_v2.2_2yrs.db",
@@ -1437,6 +1440,7 @@
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.2/ToO/too_rate8_ugziry_nf5_v2.2_2yrs.db"
     ],
     "filepath": [
+      "fbs_2.2/baseline/baseline_v2.2_2yrs.db",
       "fbs_2.2/ToO/too_rate16_gz_nf1_v2.2_2yrs.db",
       "fbs_2.2/ToO/too_rate16_gz_nf4_v2.2_2yrs.db",
       "fbs_2.2/ToO/too_rate16_gz_nf5_v2.2_2yrs.db",
