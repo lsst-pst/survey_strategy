@@ -2563,7 +2563,8 @@
       "more_z_v2.99_10yrs",
       "light_roll_v2.99_10yrs",
       "draft2_rw0.5_v2.99_10yrs",
-      "draft2_rw0.9_v2.99_10yrs"
+      "draft2_rw0.9_v2.99_10yrs",
+      "draft2_rw0.9_uz_v2.99_10yrs"
     ],
     "description": "**draft v3** : Draft versions of simulations incorporating the SCOC Phase 2 recommendations for survey strategy.",
     "version": "2.99",
@@ -2577,7 +2578,8 @@
       "Like draft_connected but swap u/z/y instead of just u/z.",
       "Draft_connected footprint but full strength near-sun twilight microsurvey. Rolling flipped, roll strength 0.5, higher suppress revisits weight, more g in SCP/GP.",
       "Draft connected footprint, rolling weight 0.5, downweighted GP, more g in SCP/GP, DDF 7%,  rolling flipped + extra season at end, swap u/z/y, full strength near-sun twilight microsurvey.",
-      "Draft connected footprint, rolling weight 0.9, downweighted GP, more g in SCP/GP, DDF 7%,  rolling flipped + extra season at end, swap u/z/y, full strength near-sun twilight microsurvey."
+      "Draft connected footprint, rolling weight 0.9, downweighted GP, more g in SCP/GP, DDF 7%,  rolling flipped + extra season at end, swap u/z/y, full strength near-sun twilight microsurvey.",
+      "Draft connected footprint, rolling weight 0.9, downweighted GP, more g in SCP/GP, DDF 7%,  rolling flipped + extra season at end, swap ONLY u/z, full strength near-sun twilight microsurvey."
     ],
     "url": [
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/draft/draft_connected_v2.99_10yrs.db",
@@ -2588,7 +2590,8 @@
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/more_z/more_z_v2.99_10yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/light_roll/light_roll_v2.99_10yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/draft2/draft2_rw0.5_v2.99_10yrs.db",
-      "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/draft2/draft2_rw0.9_v2.99_10yrs.db"
+      "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/draft2/draft2_rw0.9_v2.99_10yrs.db",
+      "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0/draft2/draft2_rw0.9_uz_v2.99_10yrs.db"
     ],
     "filepath": [
       "fbs_3.0/draft/draft_connected_v2.99_10yrs.db",
@@ -2599,7 +2602,8 @@
       "fbs_3.0/more_z/more_z_v2.99_10yrs.db",
       "fbs_3.0/light_roll/light_roll_v2.99_10yrs.db",
       "fbs_3.0/draft2/draft2_rw0.5_v2.99_10yrs.db",
-      "fbs_3.0/draft2/draft2_rw0.9_v2.99_10yrs.db"
+      "fbs_3.0/draft2/draft2_rw0.9_v2.99_10yrs.db",
+      "fbs_3.0/draft2/draft2_rw0.9_uz_v2.99_10yrs.db"
     ]
   }
 }
