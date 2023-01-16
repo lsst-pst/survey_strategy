@@ -1,16 +1,18 @@
 {
   "baseline": {
     "run": [
+      "baseline_v3.0_10yrs",
       "baseline_v2.2_10yrs",
       "baseline_v2.1_10yrs",
       "baseline_v2.0_10yrs",
       "baseline_retrofoot_v2.0_10yrs",
       "retro_baseline_v2.0_10yrs"
     ],
-    "description": "**baseline** : The v2 baseline simulations. V2.0 and V2.1 feature a survey footprint with expanded dust-free area and WFD-level visits in the Galactic Bulge and Magellanic Clouds. Coverage of the Northern Ecliptic Spur, South Celestial Pole, and remainder of the Galactic Plane is maintained, at lower levels. Filter balance is modified in different areas of the sky. A 2-region rolling cadence is used in the dust-free WFD sky, to improve cadence. The v2.1 simulation adds coverage in the Virgo cluster and acquisition of good seeing images in r&i bands. The retro simulations are intended to provide a bridge from v1.X to v2.X, introducing modifications to the footprint and scheduler code separately and in stages.",
+    "description": "**baseline** : The v2-v3 baseline simulations. V2.0 and V2.1 feature a survey footprint with expanded dust-free area and WFD-level visits in the Galactic Bulge and Magellanic Clouds. Coverage of the Northern Ecliptic Spur, South Celestial Pole, and remainder of the Galactic Plane is maintained, at lower levels. Filter balance is modified in different areas of the sky. A 2-region rolling cadence is used in the dust-free WFD sky, to improve cadence. The v2.1 simulation adds coverage in the Virgo cluster and acquisition of good seeing images in r&i bands. The retro simulations are intended to provide a bridge from v1.X to v2.X, introducing modifications to the footprint and scheduler code separately and in stages. v3 changes the GP footprint, adds more time in the DDFs (7%) and adds a near-sun twilight microsurvey, as well as adding third visits per night every 7 nights.",
     "version": "--",
     "reference": "baseline_v2.1_10yrs",
     "brief": [
+      "V3 baseline simulation. This is the same as draft2_rw0.9_uz_v2.99_10yrs, which was adopted as the baseline simulation in the SCOC Phase 2 deliberations (see PSTN-055). It includes a two-region rolling cadence with weight 0.9, a connected galactic plane region, the DDFs at 7% of survey time, and a full strength near-sun twilight microsurvey. Filters swap between u/z during dark/bright time.",
       "v2.2 baseline (prescheduled DDFs)",
       "v2.1 baseline (+Virgo, good seeing)",
       "v2.0 baseline",
@@ -18,6 +20,7 @@
       "v1.x baseline with rubin_sim (without new code capabilities)"
     ],
     "url": [
+      "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs3.0//baseline/baseline/baseline_v3.0_10yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.2/baseline/baseline_v2.2_10yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.1/baseline/baseline_v2.1_10yrs.db",
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.0/baseline/baseline_v2.0_10yrs.db",
@@ -25,6 +28,7 @@
       "https://s3df.slac.stanford.edu/data/rubin/sim-data/sims_featureScheduler_runs2.0/retro/retro_baseline_v2.0_10yrs.db"
     ],
     "filepath": [
+      "fbs_3.0/baseline/baseline_v3.0_10yrs.db",
       "fbs_2.2/baseline/baseline_v2.2_10yrs.db",
       "fbs_2.1/baseline/baseline_v2.1_10yrs.db",
       "fbs_2.0/baseline/baseline_v2.0_10yrs.db",
