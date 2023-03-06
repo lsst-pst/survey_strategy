@@ -13,23 +13,23 @@ import rubin_sim.maf as maf
 def dtime(time_prev):
    return (time.time() - time_prev, time.time())
 
-def getBenchmarks(filtername, cumulative):
+def get_benchmarks(filtername, cumulative):
     if cumulative:
         runLength=10
     if not cumulative:
         runLength = 1
-    benchmarkVals = maf.scaleBenchmarks(runLength, benchmark="design")
-    benchmarkVals["coaddedDepth"] = maf.calcCoaddedDepth(
+    benchmarkVals = maf.scale_benchmarks(runLength, benchmark="design")
+    benchmarkVals["coaddedDepth"] = maf.calc_coadded_depth(
         benchmarkVals["nvisits"], benchmarkVals["singleVisitDepth"]
     )
     nvisitsMin = 0
-    if filtername is None:
+    if filtername is None or filtername == "all":
         nvisitsMax = np.array(list(benchmarkVals['nvisits'].values())).sum() * 1.2
     else:
         nvisitsMax = benchmarkVals['nvisits'][filtername] * 1.2
     nvisitsMax = int(np.ceil(nvisitsMax * 10) / 10)
 
-    if filtername is None:
+    if filtername is None or filtername == "all":
         coaddMin = None
         coaddMax = None
     else:
@@ -53,35 +53,24 @@ def setupMetrics(opsimName, metadata,  plotlabel=None, cumulative=False,
     plotDictList = []
     # Simple metrics: coadded depth and number of visits
     # Modify metrics here and it should propagate elsewhere (as needed) automatically
-    nvisitsMin, nvisitsMax, coaddMin, coaddMax = getBenchmarks(filtername, cumulative)
+    nvisitsMin, nvisitsMax, coaddMin, coaddMax = get_benchmarks(filtername, cumulative)
 
     figsize = (8, 8)
     title = 'Simulation %s: %s' % (opsimName, metadata)
 
     if coaddMin is not None:
-        metricList.append(maf.Coaddm5Metric('fiveSigmaDepth', metricName='Coaddm5'))
-        plotDictList.append({'colorMin': coaddMin, 'colorMax': coaddMax,
+        metricList.append(maf.Coaddm5Metric('fiveSigmaDepth', metric_name='Coaddm5'))
+        plotDictList.append({'color_min': coaddMin, 'color_max': coaddMax,
                              'label': plotlabel, 'title': title, 'figsize': figsize})
 
-    metricList.append(maf.CountMetric('observationStartMJD', metricName='NVisits'))
-    plotDictList.append({'colorMin': nvisitsMin, 'colorMax': nvisitsMax,
-                         'cbarFormat': '%d',
+    metricList.append(maf.CountMetric('observationStartMJD', metric_name='NVisits'))
+    plotDictList.append({'color_min': nvisitsMin, 'color_max': nvisitsMax,
+                         'cbar_format': '%d',
                           'label': plotlabel, 'title': title + 'NVisits', 'figsize': figsize})
     dt, t = dtime(t)
     if verbose:
         print('Set up metrics %f s' % (dt))
     return metricList, plotDictList
-
-def setupStackers(args, verbose=False):
-    """
-    Define and instantiate customized (not default) stackers.
-    """
-    stackerList = []
-    # Add here .. for example
-    # stackerList.append(stackers.RandomDitherStacker(maxDither=0.5, randomSeed=42)
-    if len(stackerList) == 0:
-        stackerList = None
-    return stackerList
 
 def setupHealpixSlicer(args, verbose=False):
     """
@@ -92,7 +81,7 @@ def setupHealpixSlicer(args, verbose=False):
     Returns the healpix slicer.
     """
     t = time.time()
-    hs = maf.HealpixSlicer(nside=args.nside, lonCol=args.raCol, latCol=args.decCol)
+    hs = maf.HealpixSlicer(nside=args.nside, lon_col=args.raCol, lat_col=args.decCol)
     dt, t = dtime(t)
     if verbose:
         print('Set up healpix slicer %f s' %(dt))
@@ -106,8 +95,8 @@ def setupMovieSlicer(simdata, binsize = 365.0, cumulative=True, verbose=False):
     Returns the movie slicer.
     """
     t = time.time()
-    ms = maf.MovieSlicer(sliceColName='observationStartMJD', binsize=binsize, cumulative=cumulative)
-    ms.setupSlicer(simdata)
+    ms = maf.MovieSlicer(slice_col_name='observationStartMJD', bin_size=binsize, cumulative=cumulative)
+    ms.setup_slicer(simdata)
     dt, t = dtime(t)
     if verbose:
         print('Set up movie slicer in %f s' %(dt))
@@ -121,7 +110,7 @@ def runSlices(opsimName, metricList, plotDictList, metadata, simdata, bins, args
     """
     # Set up movie slicer
     movieslicer = setupMovieSlicer(simdata, binsize = args.movieStepsize, cumulative=args.cumulative)
-    start_date = movieslicer[0]['slicePoint']['binLeft']
+    start_date = movieslicer[0]['slice_point']['bin_left']
     sliceformat = '%s0%dd' %('%', int(np.log10(len(movieslicer)))+1)
     # Run through the movie slicer slicePoints:
     for i, movieslice in enumerate(movieslicer):
@@ -133,7 +122,7 @@ def runSlices(opsimName, metricList, plotDictList, metadata, simdata, bins, args
                                         movieslice['slicePoint']['binRight']-start_date)
         """
         # Or add simple view of time to plot label.
-        times_from_start = movieslice['slicePoint']['binRight'] - (int(bins[0]) + 0.16 - 0.5)
+        times_from_start = movieslice['slice_point']['bin_right'] - (int(bins[0]) + 0.16 - 0.5)
         # Opsim years are 365 days (not 365.25)
         years = int(times_from_start/365)
         days = times_from_start - years*365
@@ -149,19 +138,19 @@ def runSlices(opsimName, metricList, plotDictList, metadata, simdata, bins, args
 
         for metric, plotDict in zip(metricList, plotDictList):
             bundles.append(maf.MetricBundle(metric, hs, constraint=args.sqlConstraint,
-                                           info_label=metadata, runName=opsimName, plotDict=plotDict,
-                                           plotFuncs=[maf.HealpixSkyMap()]))
+                                           info_label=metadata, run_name=opsimName, plot_dict=plotDict,
+                                           plot_funcs=[maf.HealpixSkyMap()]))
         # Remove (default) stackers from bundles, because we've already run them above on the original data.
         for mb in bundles:
             mb.stackerList = []
-        bundledict = maf.makeBundlesDictFromList(bundles)
+        bundledict = maf.make_bundles_dict_from_list(bundles)
         # Set up metricBundleGroup to handle metrics calculation + plotting
-        bg = maf.MetricBundleGroup(bundledict, args.opsimDb, outDir=args.outDir, resultsDb=None, saveEarly=False)
+        bg = maf.MetricBundleGroup(bundledict, args.opsimDb, out_dir=args.outDir, results_db=None, save_early=False)
         # Calculate metric data values for simdatasubset (this also sets up indexing in the slicer)
-        bg.setCurrent(args.sqlConstraint)
-        bg.runCurrent(constraint=args.sqlConstraint, simData=simdatasubset)
+        bg.set_current(args.sqlConstraint)
+        bg.run_current(constraint=args.sqlConstraint, sim_data=simdatasubset)
         # Plot data for this slice of the movie, adding slicenumber as a suffix for output plots
-        bg.plotAll(outfileSuffix=slicenumber, closefigs=True, dpi=72, thumbnail=False, figformat='png')
+        bg.plot_all(outfile_suffix=slicenumber, closefigs=True, dpi=72, thumbnail=False, fig_format='png')
         # Write the data -- uncomment if you want to do this.
         # sm.writeAll(outfileSuffix=slicenumber)
         if verbose:
@@ -217,8 +206,8 @@ def stitchMovie(metricList, metadata, args):
             warnings.warn('Will create movie, but FPS above 30 reduces performance '
                           'and is undetectable to the human eye.')
         # Create the movie.
-        movieslicer.makeMovie(outfileroot, sliceformat, plotType='SkyMap', figformat='png',
-                                outDir=args.outDir, ips=args.ips, fps=args.fps)
+        movieslicer.make_movie(outfileroot, sliceformat, plot_type='SkyMap', fig_format='png',
+                                out_dir=args.outDir, ips=args.ips, fps=args.fps)
 
 
 if __name__ == '__main__':
@@ -280,15 +269,13 @@ if __name__ == '__main__':
     metricList, plotDictList = setupMetrics(opsimName, metadata,
                                             cumulative=args.cumulative,
                                             filtername=filtername)
-    # Define any non-default stackers to be used.
-    stackerList = setupStackers(args)
     # Define the slicer to be used at each step of the movie slicer.
     subslicer = setupHealpixSlicer(args)
 
     if not args.skipComp:
         # Get data from database.
         dbcols = ['observationStartMJD', 'fiveSigmaDepth', args.raCol, args.decCol, 'rotSkyPos']
-        simdata = maf.getSimData(args.opsimDb, sqlconstraint, dbcols, stackers=stackerList)
+        simdata = maf.get_sim_data(args.opsimDb, sqlconstraint, dbcols)
         # Generate the bins for the movie slicer.
         start_date = simdata['observationStartMJD'].min()
         end_date = simdata['observationStartMJD'].max()

@@ -16,15 +16,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from matplotlib import ticker
-import colorcet as cc
 import healpy as hp
 from astropy.time import Time
-import datetime
 import pytz
 
 import rubin_sim.maf as maf
-from rubin_sim.utils import Site
-from rubin_sim.utils import approx_altAz2RaDec
+from rubin_sim.utils import Site, approx_alt_az2_ra_dec
 
 import warnings
 import fnmatch
@@ -38,6 +35,98 @@ filter_rgb_map = {
     "z": (209 / 256, 53 / 256, 43 / 256),
     "y": (142 / 256, 82 / 256, 159 / 256),
 }
+
+
+class FilterColorsMetric(maf.BaseMetric):
+    """
+    Generate a map of [filter number], [alpha] that simply shows the *most recent* visit filter
+    (in filter number) and an alpha map that scales the transparency according to how long ago
+    the visit occurred.
+    Parameters
+    ----------
+    tNow : `float`
+        Current time (implying the metric must be set up for each 'current time' the metric should be
+        run for -- because the results will be different for each time slice)
+    nightNow : `int`
+        Identify visits within this night, vs. earlier nights (for alpha map)
+    filterCol : `str`, opt
+        Name of the filter column. Default 'filter'.
+        This is translated into an integer between 0-6 for the 'color', which then is used in combination
+        with the colormap for the plot to generate colors in the visit plot.
+    timeCol : `str`, opt
+        Name of the time column. Default 'observationStartMJD'.
+    tStep : `float`, opt
+        Time gap to consider an observation occuring 'now'. This is set to 40s by default.
+    alpha_night : `float`, opt
+        Alpha value for visits occuring in the current night. Default 0.7.
+    alpha_prev : `float`, opt
+        Alpha value for visits occuring in the previous night. Default 0.3.
+    """
+
+    def __init__(
+            self,
+            tNow,
+            nightNow,
+            filterCol="filter",
+            timeCol="observationStartMJD",
+            nightCol="night",
+            tStep=40.0 / 60.0 / 60.0 / 24.0,
+            alpha_night=0.7,
+            alpha_prev=0.3,
+            metricName="FilterColors",
+            **kwargs,
+    ):
+        self.filterCol = filterCol
+        self.timeCol = timeCol
+        self.nightCol = nightCol
+        self.tNow = tNow
+        self.nightNow = nightNow
+        self.tStep = tStep
+        self.alpha_night = alpha_night
+        self.alpha_prev = alpha_prev
+        super().__init__(
+            col=[self.filterCol, self.timeCol, self.nightCol],
+            metric_name=metricName,
+            **kwargs,
+        )
+        self.metric_dtype = "object"
+        self.comment = "Metric to generate color/alpha for the FBS healpix movie"
+        self.filter_color_map = {"u": 0, "g": 1, "r": 2, "i": 3, "z": 4, "y": 5}
+
+    def run(self, data_slice, slice_point=None):
+        # Only count visits which occured prior to "now" --
+        # this is necessary because often this metric will be run with a data set which
+        # includes more visits than just 'now' and prior.
+        visits = data_slice[np.where(data_slice[self.timeCol] < self.tNow)]
+        if len(visits) == 0:
+            return self.badval
+        deltaNightMin = (self.nightNow - visits[self.nightCol]).min()
+        # Figure out if there are any visits we should consider as "now" (or now-ish)
+        deltaT = self.tNow - data_slice[self.timeCol]
+        visitNow = np.where(deltaT <= self.tStep)[0]
+        if len(visitNow) > 0:
+            # We have exact matches to this timestep, so use their colors directly and set alpha to >1.
+            fNow = data_slice[visitNow[0]][self.filterCol]
+            colorVal = self.filter_color_map[fNow]
+            alpha = 1.0
+        else:
+            # This part of the sky has only older exposures.
+            # Are they this night or previous night?
+            if deltaNightMin == 0:
+                alpha = self.alpha_night
+            else:
+                alpha = self.alpha_prev
+            # And then decide what color to use - the most recent visit
+            nearest = np.where(visits[self.timeCol] == visits[self.timeCol].max())[0]
+            fRecent = visits[nearest][self.filterCol][0]
+            colorVal = self.filter_color_map[fRecent]
+        return (colorVal, alpha)
+
+    def reduce_Color(self, metric_values):
+        return metric_values[0]
+
+    def reduce_Alpha(self, metric_values):
+        return metric_values[1]
 
 
 def makeColorMap():
@@ -62,20 +151,17 @@ def getData(opsDb, sqlconstraint):
         "night",
     ]
     # Get data from database.
-    simdata = opsDb.fetchMetricData(colnames, sqlconstraint)
+    #filterIndxStacker = maf.FilterIndxColorStacker()
+    simdata = maf.get_sim_data(opsDb, sqlconstraint, colnames), #stackers=[filterIndxStacker])
     if len(simdata) == 0:
         raise Exception("No simdata found matching constraint %s" % (sqlconstraint))
-    # Add stacker columns.
-    filterIndxStacker = FilterIndxColorStacker()
-    simdata = filterIndxStacker.run(simdata)
-    return simdata
+    return simdata[0]
 
 
 def setupMetrics(
     opsimName,
     metadata,
     constraint,
-    plotlabel="",
     tNow=0,
     nightNow=0,
     tStep=40.0 / 24.0 / 60.0 / 60.0,
@@ -89,7 +175,7 @@ def setupMetrics(
     figsize = (8, 6)
     s = maf.HealpixSlicer(nside=64)
     if not onlyFilterColors:
-        m = maf.CountMetric("observationStartMJD", metricName="Nvisits")
+        m = maf.CountMetric("observationStartMJD", metric_name="Nvisits")
         plotDict = {
             "colorMin": 0,
             "colorMax": nvisitsMax,
@@ -102,7 +188,7 @@ def setupMetrics(
             "figsize": figsize,
         }
         bundledict["nvisits"] = maf.MetricBundle(
-            m, s, constraint, runName=opsimName, plotDict=plotDict, metadata=metadata
+            m, s, constraint, run_name=opsimName, plot_dict=plotDict, info_label=metadata
         )
     m = FilterColorsMetric(tNow=tNow, nightNow=nightNow, tStep=tStep)
     plotDict = {
@@ -112,20 +198,20 @@ def setupMetrics(
         "fontsize": "large",
     }
     bundledict["colors"] = maf.MetricBundle(
-        m, s, constraint, runName=opsimName, plotDict=plotDict, metadata=metadata
+        m, s, constraint, run_name=opsimName, plot_dict=plotDict, info_label=metadata
     )
     if verbose:
-        print("Set up metrics %f s" % (dt))
+        print("Set up metrics")
     return bundledict
 
 
 def setupMovieSlicer(simdata, bins, verbose=False):
     movieslicer = maf.MovieSlicer(
-        sliceColName="observationStartMJD", bins=bins, cumulative=True
+        slice_col_name="observationStartMJD", bins=bins, cumulative=True
     )
-    movieslicer.setupSlicer(simdata)
+    movieslicer.setup_slicer(simdata)
     if verbose:
-        print("Set up movie slicers in %f s" % (dt))
+        print("Set up movie slicers")
     return movieslicer
 
 
@@ -148,7 +234,7 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
         if args.movieStepsize != 0:
             tstep = args.movieStepsize
         else:
-            tstep = ms["slicePoint"]["binRight"] - bins[i]
+            tstep = ms["slice_point"]["bin_right"] - bins[i]
             if tstep > 1:
                 tstep = 40.0 / 24.0 / 60.0 / 60.0
         # Identify the subset of simdata in the movieslicer 'data slice'
@@ -174,7 +260,6 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
             opsimName,
             metadata,
             constraint,
-            plotlabel=plotlabel,
             tNow=subsetSdata[visitNow]["observationStartMJD"],
             nightNow=subsetSdata[visitNow]["night"],
             tStep=tstep,
@@ -186,9 +271,9 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
             bundledict[mb].stackerList = []
         # Set up metricBundleGroup to handle metrics calculation + plotting
         bg = maf.MetricBundleGroup(
-            bundledict, opsDb, outDir=args.outDir, resultsDb=None, saveEarly=False
+            bundledict, opsDb, out_dir=args.outDir, results_db=None, save_early=False
         )
-        bg.runCurrent(constraint=constraint, simData=subsetSdata)
+        bg.run_current(constraint=constraint, sim_data=subsetSdata)
 
         # Plot data each metric, for this slice of the movie, adding slicenumber as a suffix for output plots.
         # Plotting here, rather than automatically via sliceMetric method because we're going to rotate the sky,
@@ -202,7 +287,7 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
         zenith_dec = lsst_site.latitude
         horizon_az = np.arange(0, 360, 1)
         horizon_alt = np.ones(len(horizon_az)) * 0  # 20
-        horizon_ra, horizon_dec = approx_altAz2RaDec(
+        horizon_ra, horizon_dec = approx_alt_az2_ra_dec(
             horizon_alt,
             horizon_az,
             lsst_site.latitude,
@@ -213,8 +298,8 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
         moon_dec = subsetSdata[visitNow]["moonDec"]
         moonPhase = subsetSdata[visitNow]["moonPhase"] / 100.0
         moon_alpha = np.max([moonPhase, 0.15])
-        sun_ra = np.degrees(subsetSdata[visitNow]["sunRA"])
-        sun_dec = np.degrees(subsetSdata[visitNow]["sunDec"])
+        sun_ra = subsetSdata[visitNow]["sunRA"]
+        sun_dec = subsetSdata[visitNow]["sunDec"]
         visit_ra = subsetSdata[visitNow]["fieldRA"]
         visit_dec = subsetSdata[visitNow]["fieldDec"]
 
@@ -223,19 +308,19 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
 
         for mb in bundledict.values():
             if "visits" in mb.metric.name:
-                fig = plt.figure(figsize=mb.plotDict["figsize"])
+                fig = plt.figure(figsize=mb.plot_dict["figsize"])
                 rot = (subsetSdata[visitNow]["observationStartLST"], 0, 0)
                 hp.mollview(
-                    bundledict["nvisits"].metricValues,
-                    min=mb.plotDict["colorMin"],
-                    max=mb.plotDict["colorMax"],
+                    bundledict["nvisits"].metric_values,
+                    min=mb.plot_dict["colorMin"],
+                    max=mb.plot_dict["colorMax"],
                     badcolor="white",
                     fig=fig.number,
-                    cmap=mb.plotDict["cmap"],
+                    cmap=mb.plot_dict["cmap"],
                     cbar=False,
                     flip="astro",
                     rot=rot,
-                    title=mb.plotDict["title"],
+                    title=mb.plot_dict["title"],
                 )
                 hp.graticule(dpar=30, dmer=30, alpha=0.5)
                 ll = hp.projscatter(
@@ -309,24 +394,24 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
                         location="bottom",
                         extendrect=True,
                     )
-                    cb.set_label(mb.plotDict["xlabel"], fontsize="large")
+                    cb.set_label(mb.plot_dict["xlabel"], fontsize="large")
                     tick_locator = ticker.MaxNLocator(nbins=10)
                     cb.locator = tick_locator
                     cb.update_ticks()
 
             elif "Color" in mb.metric.name and "_" not in mb.metric.name:
-                fig = plt.figure(figsize=mb.plotDict["figsize"])
+                fig = plt.figure(figsize=mb.plot_dict["figsize"])
                 hp.mollview(
-                    bundledict["FilterColors_Color"].metricValues,
+                    bundledict["FilterColors_Color"].metric_values,
                     fig=fig.number,
                     min=0,
                     max=5,
-                    alpha=bundledict["FilterColors_Alpha"].metricValues.filled(0),
+                    alpha=bundledict["FilterColors_Alpha"].metric_values.filled(0),
                     cmap=filterColorMap,
                     cbar=False,
                     flip="astro",
                     rot=rot,
-                    title=mb.plotDict["title"],
+                    title=mb.plot_dict["title"],
                 )
                 hp.graticule(dpar=30, dmer=30, alpha=0.5)
                 ll = hp.projscatter(
@@ -482,12 +567,12 @@ def stitchMovie(bundledict, args):
             else:
                 args.fps = 30
         # Create the movie.
-        movieslicer.makeMovie(
+        movieslicer.make_movie(
             outfileroot,
             sliceformat,
-            plotType="SkyMap",
-            figformat="png",
-            outDir=args.outDir,
+            plot_type="SkyMap",
+            fig_format="png",
+            out_dir=args.outDir,
             ips=args.ips,
             fps=args.fps,
         )
@@ -590,10 +675,10 @@ if __name__ == "__main__":
         verbose = False
         # Get db connection info, and connect to database.
         dbfile = os.path.join(args.dbDir, args.opsimDb)
-        oo = maf.OpsimDatabase(dbfile)
         sqlconstraint = args.sqlConstraint
         # Fetch the data from opsim.
-        simdata = getData(oo, sqlconstraint)
+        simdata = getData(dbfile, sqlconstraint)
+
         # Set up the time bins for the movie slicer.
         start_date = simdata["observationStartMJD"][0]
         if args.movieStepsize == 0:
@@ -612,12 +697,12 @@ if __name__ == "__main__":
                 sqlconstraint = sqlconstraint.replace("night =", "night <=")
             elif "night=" in sqlconstraint:
                 sqlconstraint = sqlconstraint.replace("night=", "night<=")
-            simdata = getData(oo, sqlconstraint)
+            simdata = getData(dbfile, sqlconstraint)
             # Update the first bin to be prior to the earliest opsim time.
             bins[0] = simdata["observationStartMJD"][0]
 
         # Run the movie slicer (and at each step, setup opsim slicer and calculate metrics).
-        runSlices(opsimName, metadata, simdata, bins, args, oo, verbose=verbose)
+        runSlices(opsimName, metadata, simdata, bins, args, dbfile, verbose=verbose)
 
     # Need to set up the metrics to get their names, but don't need to have realistic arguments.
     bundledict = setupMetrics(opsimName, metadata, args.sqlConstraint)
