@@ -68,10 +68,12 @@ foreach night ($nights)
     echo ' [tmp3][lsstlogo] overlay=shortest=0:x=1860:y=55"\' >> $comboCommand
     echo ' -r 30 -pix_fmt yuv420p -crf 18 -preset slower n'$night'/combo_30.0_30.mp4' >> $comboCommand
 
+    set firstFilterImage=`ls n"$night"/FilterColors_00*png | head -1`
+    set firstVisitImage=`ls n"$night"/Nvisits_00*png | head -1`
     echo 'ffmpeg -f lavfi -i color=c=white:s=2306x1078:d=1 \' >> $comboCommand
     echo ' -f lavfi -i color=c=black:s=2x1078:d=1\'  >> $comboCommand
-    echo ' -i n'$night'/FilterColors_000_SkyMap.png\'  >> $comboCommand
-    echo ' -i n'$night'/Nvisits_000_SkyMap.png\'  >> $comboCommand
+    echo ' -i '$firstFilterImage'\'  >> $comboCommand
+    echo ' -i '$firstVisitImage'\'  >> $comboCommand
     echo ' -i rubinlogo.png\' >> $comboCommand
     echo ' -i lsstLogo.png\'  >> $comboCommand
     echo ' -filter_complex "[0:v] setpts=PTS-STARTPTS [background];\'  >> $comboCommand
