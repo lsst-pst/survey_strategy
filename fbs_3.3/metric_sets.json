@@ -387,7 +387,7 @@
     "metric set":"SRD",
     "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 22.4 All sky HealpixSlicer",
     "short_name":"Med Parallax Uncert @22.4",
-    "style":"c-",
+    "style":"c:",
     "invert":true,
     "mag":false
   },
@@ -395,7 +395,15 @@
     "metric set":"SRD",
     "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 24.0 All sky HealpixSlicer",
     "short_name":"Med Parallax Uncert @24.0",
-    "style":"c:",
+    "style":"c-",
+    "invert":true,
+    "mag":false
+  },
+  {
+    "metric set":"SRD",
+    "metric":"Median Parallax Uncert (18k) Parallax Uncert @ 21.3 All sky y band only HealpixSlicer",
+    "short_name":"Med Parallax Uncert y only @21.3",
+    "style":"b:",
     "invert":true,
     "mag":false
   },
@@ -403,7 +411,7 @@
     "metric set":"SRD",
     "metric":"Median Proper Motion Uncert (18k) Proper Motion Uncert @ 20.5 All sky HealpixSlicer",
     "short_name":"Med PM Uncert @20.5",
-    "style":"r-",
+    "style":"r:",
     "invert":true,
     "mag":false
   },
@@ -411,7 +419,7 @@
     "metric set":"SRD",
     "metric":"Median Proper Motion Uncert (18k) Proper Motion Uncert @ 24.0 All sky HealpixSlicer",
     "short_name":"Med PM Uncert @24.0",
-    "style":"r:",
+    "style":"r-",
     "invert":true,
     "mag":false
   },
