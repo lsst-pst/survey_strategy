@@ -513,8 +513,8 @@
   },
   {
     "metric subset":"DESC WFD",
-    "metric":"Total detected KNePopMetric_all_ztfrest_simple_detect all models UserPointsSlicer",
-    "short_name":"Total detected KNePopMetric_all_ztfrest_simple_detect",
+    "metric":"Total detected KNePopMetric_all_ztfrest_simple all models UserPointsSlicer",
+    "short_name":"Total detected KNePopMetric_all_ztfrest_simple",
     "style":"g--",
     "invert":false,
     "mag":false
@@ -1473,8 +1473,8 @@
   },
   {
     "metric subset":"TVS KNe short",
-    "metric":"Total detected KNePopMetric_all_ztfrest_simple_detect all models UserPointsSlicer",
-    "short_name":"Total KNePopMetric_all_ztfrest_simple_detect (DESC)",
+    "metric":"Total detected KNePopMetric_all_ztfrest_simple all models UserPointsSlicer",
+    "short_name":"Total KNePopMetric_all_ztfrest_simple (DESC)",
     "style":"g--",
     "invert":false,
     "mag":false
@@ -4865,7 +4865,7 @@
   },
   {
     "metric subset":"SCOC",
-    "metric":"Total detected KNePopMetric_all_ztfrest_simple_detect all models UserPointsSlicer",
+    "metric":"Total detected KNePopMetric_all_ztfrest_simple all models UserPointsSlicer",      
     "short_name":"KNe all ztfrest",
     "style":null,
     "invert":false,
