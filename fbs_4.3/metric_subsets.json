@@ -3537,7 +3537,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap u band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap u band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 u",
     "style":"c-",
     "invert":true,
@@ -3545,7 +3545,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap g band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap g band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 g",
     "style":"g-",
     "invert":true,
@@ -3553,7 +3553,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 r",
     "style":"y-",
     "invert":true,
@@ -3561,7 +3561,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap i band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap i band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 i",
     "style":"r-",
     "invert":true,
@@ -3569,7 +3569,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap z band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap z band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 z",
     "style":"m-",
     "invert":true,
@@ -3577,7 +3577,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap y band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap y band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 y",
     "style":"k-",
     "invert":true,
@@ -3585,7 +3585,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ELAISS1 Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length ELAISS1",
     "style":"k--",
     "invert":false,
@@ -3609,7 +3609,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap u band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap u band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS u",
     "style":"c-",
     "invert":true,
@@ -3617,7 +3617,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap g band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap g band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS g",
     "style":"g-",
     "invert":true,
@@ -3625,7 +3625,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS r",
     "style":"y-",
     "invert":true,
@@ -3633,7 +3633,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap i band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap i band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS i",
     "style":"r-",
     "invert":true,
@@ -3641,7 +3641,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap z band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap z band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS z",
     "style":"m-",
     "invert":true,
@@ -3649,7 +3649,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap y band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap y band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS y",
     "style":"k-",
     "invert":true,
@@ -3657,7 +3657,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:XMM_LSS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length XMM_LSS",
     "style":"k--",
     "invert":false,
@@ -3681,7 +3681,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap u band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap u band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS u",
     "style":"c-",
     "invert":true,
@@ -3689,7 +3689,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap g band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap g band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS g",
     "style":"g-",
     "invert":true,
@@ -3697,7 +3697,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS r",
     "style":"y-",
     "invert":true,
@@ -3705,7 +3705,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap i band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap i band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS i",
     "style":"r-",
     "invert":true,
@@ -3713,7 +3713,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap z band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap z band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS z",
     "style":"m-",
     "invert":true,
@@ -3721,7 +3721,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap y band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap y band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS y",
     "style":"k-",
     "invert":true,
@@ -3729,7 +3729,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:COSMOS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length COSMOS",
     "style":"k--",
     "invert":false,
@@ -3753,7 +3753,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap u band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap u band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS u",
     "style":"c-",
     "invert":true,
@@ -3761,7 +3761,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap g band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap g band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS g",
     "style":"g-",
     "invert":true,
@@ -3769,7 +3769,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS r",
     "style":"y-",
     "invert":true,
@@ -3777,7 +3777,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap i band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap i band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS i",
     "style":"r-",
     "invert":true,
@@ -3785,7 +3785,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap z band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap z band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS z",
     "style":"m-",
     "invert":true,
@@ -3793,7 +3793,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap y band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap y band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS y",
     "style":"k-",
     "invert":true,
@@ -3801,7 +3801,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:ECDFS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length ECDFS",
     "style":"k--",
     "invert":false,
@@ -3825,7 +3825,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap u band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap u band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS u",
     "style":"c-",
     "invert":true,
@@ -3833,7 +3833,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap g band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap g band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS g",
     "style":"g-",
     "invert":true,
@@ -3841,7 +3841,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS r",
     "style":"y-",
     "invert":true,
@@ -3849,7 +3849,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap i band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap i band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS i",
     "style":"r-",
     "invert":true,
@@ -3857,7 +3857,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap z band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap z band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS z",
     "style":"m-",
     "invert":true,
@@ -3865,7 +3865,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap y band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap y band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS y",
     "style":"k-",
     "invert":true,
@@ -3873,7 +3873,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:EDFS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length EDFS",
     "style":"k--",
     "invert":false,
@@ -3897,7 +3897,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap u band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap u band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD u",
     "style":"c-",
     "invert":true,
@@ -3905,7 +3905,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap g band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap g band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD g",
     "style":"g-",
     "invert":true,
@@ -3913,7 +3913,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD r",
     "style":"y-",
     "invert":true,
@@ -3921,7 +3921,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap i band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap i band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD i",
     "style":"r-",
     "invert":true,
@@ -3929,7 +3929,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap z band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap z band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD z",
     "style":"m-",
     "invert":true,
@@ -3937,7 +3937,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Inter-Night Gap y band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap y band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD y",
     "style":"k-",
     "invert":true,
@@ -3945,7 +3945,7 @@
   },
   {
     "metric subset":"DDF Cadence",
-    "metric":"Mean DD:WFD Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length WFD",
     "style":"k--",
     "invert":false,
@@ -3985,7 +3985,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap ELAISS1 r band",
     "style":"g:",
     "invert":true,
@@ -3993,7 +3993,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:ELAISS1 Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:ELAISS1 Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length ELAISS1",
     "style":"k:",
     "invert":false,
@@ -4017,7 +4017,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap XMM_LSS r band",
     "style":"g:",
     "invert":true,
@@ -4025,7 +4025,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:XMM_LSS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:XMM_LSS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length XMM_LSS",
     "style":"k:",
     "invert":false,
@@ -4049,7 +4049,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap COSMOS r band",
     "style":"g:",
     "invert":true,
@@ -4057,7 +4057,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:COSMOS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:COSMOS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length COSMOS",
     "style":"k:",
     "invert":false,
@@ -4081,7 +4081,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap ECDFS r band",
     "style":"g:",
     "invert":true,
@@ -4089,7 +4089,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:ECDFS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:ECDFS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length ECDFS",
     "style":"k:",
     "invert":false,
@@ -4113,7 +4113,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap EDFS r band",
     "style":"g:",
     "invert":true,
@@ -4121,7 +4121,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:EDFS Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:EDFS Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length EDFS",
     "style":"k:",
     "invert":false,
@@ -4145,7 +4145,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:WFD Median Inter-Night Gap r band UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Inter-Night Gap r band UniSlicer",
     "short_name":"Median Inter-Night Gap WFD r band",
     "style":"g:",
     "invert":true,
@@ -4153,7 +4153,7 @@
   },
   {
     "metric subset":"SNIa DDF",
-    "metric":"Mean DD:WFD Median Season Length all bands UserPointsSlicer",
+    "metric":"Mean DD:WFD Median Season Length all bands UniSlicer",
     "short_name":"Median Season Length WFD",
     "style":"k:",
     "invert":false,
