@@ -21,7 +21,7 @@ from astropy.time import Time
 import pytz
 
 import rubin_sim.maf as maf
-from rubin_sim.utils import Site, approx_alt_az2_ra_dec
+from rubin_scheduler.utils import Site, approx_alt_az2_ra_dec
 
 import warnings
 import fnmatch
