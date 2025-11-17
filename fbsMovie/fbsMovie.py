@@ -13,6 +13,9 @@
 
 import os, argparse
 import numpy as np
+#import matplotlib
+#matplotlib.use("Cairo")
+
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from matplotlib import ticker
@@ -406,6 +409,7 @@ def runSlices(opsimName, metadata, simdata, bins, args, opsDb, verbose=False):
                     fig=fig.number,
                     min=0,
                     max=5,
+                    badcolor='white',
                     alpha=bundledict["FilterColors_Alpha"].metric_values.filled(0),
                     cmap=filterColorMap,
                     cbar=False,
@@ -687,8 +691,8 @@ if __name__ == "__main__":
             end_date = simdata["observationStartMJD"].max()
             bins = np.arange(
                 start_date,
-                end_date + args.movieStepSize / 2.0,
-                args.movieStepSize,
+                end_date + args.movieStepsize / 2.0,
+                args.movieStepsize,
                 float,
             )
         if args.addPreviousObs:
